@@ -31,7 +31,7 @@
 		<main class="main-content"> <!-- 主内容区 -->
             <section class="main-section"> <!-- 主内容区块 -->
 	            <div style="margin:20px;"><!-- 内容文字 -->
-					<img src="pic/title.png" alt="久远之绊">
+					<img src="pic/title.gif" alt="久远之绊">
 					<hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
 					<p align="center"><img border="0" src="pic/kuon.jpg"></p><br>
 		            <div class="ArticleText" style="text-align:left; max-width:700px;">
