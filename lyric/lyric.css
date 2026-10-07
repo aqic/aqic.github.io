@@ -4,9 +4,12 @@
    单纯 width:auto / inline-block / table 都会被其交叉轴拉伸机制撑满，
    min-width:max-content 则会撑破视口。
    整块居中靠 margin:0 auto 实现（父级已居中，此处可正常生效）。 */
+/* padding-top 为绝对定位的出处预留空间。
+   出处文字较长时会折行占两行高度（如「テレビ「うる星やつら」オープニング①(1981)」），
+   故预留 26(出处自身上边距) + 32(两行文字) + 18(与标题的间距) = 76px */
 .LyricBody
 	{position: relative; margin: 0 auto; text-align: left; box-sizing: border-box;
-	 padding-top: 42px; /* 为绝对定位的出处预留空间（出处自身 padding-top 26px + 行高 16px） */
+	 padding-top: 76px;
 	 font-family: Tahoma, Arial, 'MS Gothic', 'ＭＳ ゴシック', sans-serif;}
 /* 正文左右呼吸位 */
 .LyricBody > *
