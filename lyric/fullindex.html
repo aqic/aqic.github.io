@@ -14,14 +14,12 @@
             color: #FFFFFF;
             letter-spacing: 2px;
             margin: 10px 0;
+            text-align: center;
         }
 
-        .catalog-subtitle {
-            font-family: 'Palatino Linotype', Palatino, serif;
-            font-style: italic;
-            font-size: 13px;
-            color: #bbbbaa;
-            margin-bottom: 5px;
+        .catalog-title img {
+            vertical-align: middle;
+            margin: 0 8px;
         }
 
         /* 四栏歌词目录 */
@@ -66,39 +64,26 @@
             flex: 0 0 auto;
         }
 
-        /* 底部统计与隐藏入口 */
-        .catalog-foot {
+        /* 目录底部统计 */
+        .catalog-total {
             margin: 20px 0 10px;
             padding-top: 12px;
             border-top: 1px solid #E6D8AE;
-        }
-
-        .catalog-total {
             color: #FFFFEE;
             font-size: 14px;
-            margin: 0 0 10px;
-        }
-
-        .catalog-secret {
-            font-size: 13px;
+            text-align: center;
         }
 
         @media (max-width: 820px) {
-            .lyric-catalog {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
+            .lyric-catalog { grid-template-columns: repeat(3, minmax(0, 1fr)); }
         }
 
         @media (max-width: 620px) {
-            .lyric-catalog {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
+            .lyric-catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); }
         }
 
         @media (max-width: 420px) {
-            .lyric-catalog {
-                grid-template-columns: 1fr;
-            }
+            .lyric-catalog { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -127,7 +112,9 @@
         <main class="main-content"> <!-- 主内容区 -->
             <section class="main-section"> <!-- 主内容区块 -->
                 <div style="margin:20px; max-width:1000px;"> <!-- 内容文字 -->
-					<div class="catalog-title"><img src=a-g/ccsakura/images/ccsakura.gif align=center>～Anime Lyrics～<img src=o-w/ranma/images/ranma.gif align=center></div>
+                    <div class="catalog-title">
+                        <img src="a-g/ccsakura/images/ccsakura.gif" alt="魔卡少女樱">～Anime Lyrics～<img src="o-w/ranma/images/ranma.gif" alt="乱马">
+                    </div>
                     <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
 
                     <ul class="lyric-catalog"> <!-- 歌词目录 -->
@@ -184,9 +171,7 @@
                         <li><a href="h-n/lunar.html">Lunar</a><span class="count">3</span></li>
                     </ul>
 
-                    <div class="catalog-foot"> <!-- 目录底部 -->
-                        <p class="catalog-total">共收录歌词 314 首。</p>
-                    </div>
+                    <p class="catalog-total">共收录歌词 314 首。</p>
                 </div>
             </section>
         </main>
