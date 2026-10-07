@@ -1,0 +1,177 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+    <style>
+        /* 标题：图标与文字垂直居中 */
+        .catalog-head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .catalog-head img {
+            width: 48px;
+            height: 48px;
+        }
+
+        /* 专辑信息 */
+        .album-head {
+            max-width: 760px;
+            margin: 16px auto 4px;
+            text-align: left;
+        }
+
+        .album-title {
+            font-family: 'MS Mincho', 'Yu Mincho', serif;
+            font-size: 18px;
+            color: #E6D8AE;
+        }
+
+        .album-meta {
+            margin-top: 2px;
+            font-size: 13px;
+            color: #bbbbaa;
+        }
+
+        /* Disc 分组标题：Disc 1　see me (VOCAL-1)　[TYCY-5321]　14 首 */
+        .disc-head {
+            max-width: 760px;
+            margin: 26px auto 0;
+            padding-bottom: 6px;
+            text-align: left;
+            border-bottom: 1px solid #555540;
+        }
+
+        .disc-name {
+            font-family: 'MS Mincho', 'Yu Mincho', serif;
+            font-size: 17px;
+            color: #CC66FF;
+            margin-right: 10px;
+        }
+
+        .disc-sub {
+            font-size: 13px;
+            color: #bbbbaa;
+        }
+
+        /* 曲目列表：✦ 1.《歌名》 - 电视剧「橙路」片头曲(1987) */
+        .song-list {
+            list-style: none;
+            padding: 0;
+            margin: 8px auto 0;
+            max-width: 760px;
+            text-align: left; /* 清单左对齐（覆盖 .main-section 的居中） */
+            counter-reset: song; /* 编号计数器 */
+        }
+
+        .song-list li {
+            padding: 4px 10px;
+            line-height: 1.9;
+        }
+
+        /* CSS 计数器生成「✦ 1. 」序号（跨 Disc 连续编号） */
+        .song-list li::before {
+            counter-increment: song;
+            content: '✦ ' counter(song) ". ";
+            color: #E6D8AE;
+        }
+
+        .song-list a {
+            font-family: 'MS Mincho', 'Yu Mincho', serif;
+            font-size: 17px;
+        }
+
+        /* 出处说明：跟在歌名后，字号略小、颜色稍暗 */
+        .song-list .note {
+            margin-left: 8px;
+            font-size: 14px;
+            color: #bbbbaa;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 加载页头页脚的JavaScript -->
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div style="margin:20px;"> <!-- 内容文字 -->
+                    <div class="LyricCatalog catalog-head"><span>きまぐれオレンジ☆ロード（橙路）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head"> <!-- 专辑信息 -->
+                        <div class="album-title">《Singing Heart² sweet memories》</div>
+                        <div class="album-meta">全集 27 首　1993/9/17 发行</div>
+                    </div>
+                    <div class="disc-head"><span class="disc-name">Disc 1</span><span class="disc-sub">see me (VOCAL-1)　[TYCY-5321]　14 首</span></div>
+                    <ul class="song-list">
+						<li class="LyricItem"><a href="1.danceinthememories.html">《ダンス・イン・ザ・メモリーズ》</a><span class="note">- 电视剧「橙路」片尾曲(1987)</span></li>
+						<li class="LyricItem"><a href="2.likeasalviaflower.html">《サルビアの花のように》</a><span class="note">- 电视剧「橙路」插曲(1987)</span></li>
+						<li class="LyricItem"><a href="3.actressinthemirrage.html">《鏡の中のアクトレス》</a><span class="note">- 电视剧「橙路」插曲(1987)</span></li>
+						<li class="LyricItem"><a href="4.nightofsummerside.html">《Night of Summer Side》</a><span class="note">- 电视剧「橙路」片头曲(1987)</span></li>
+						<li class="LyricItem"><a href="5.chooseme.html">《Choose Me》</a><span class="note">- OVA「もぎたてスペシャル」片头曲</span></li>
+						<li class="LyricItem"><a href="6.dangeroustriangle.html">《危険なトライアングル》</a><span class="note">- 电视剧「橙路」插曲(1987)</span></li>
+						<li class="LyricItem"><a href="7.summermirage.html">《夏のミラージュ》</a><span class="note">- 电视剧「橙路」片尾曲(1987)</span></li>
+						<li class="LyricItem"><a href="8.sadheartisburning.html">《悲しいハートは燃えている》</a><span class="note">- 电视剧「橙路」片尾曲(1987)</span></li>
+						<li class="LyricItem"><a href="9.embracethatsky.html">《あの空を抱きしめて》</a><span class="note">- 剧场版1「あの日にかえりたい」片尾曲(1988)</span></li>
+						<li class="LyricItem"><a href="10.janina.html">《ジェニーナ》</a><span class="note">- 电视剧「橙路」插曲(1987)</span></li>
+						<li class="LyricItem"><a href="11.oncemoreanotheryesterday.html">《もうひとつのイエスタデイ》</a><span class="note">- 电视剧「橙路」插曲(1987)</span></li>
+						<li class="LyricItem"><a href="12.unreliableiloveyou.html">《不確かな I LOVE YOU》</a><span class="note">- 剧场版1「あの日にかえりたい」插曲(1988)</span></li>
+						<li class="LyricItem"><a href="13.likeabird.html">《鳥のように》</a><span class="note">- 剧场版1「あの日にかえりたい」插曲(1988)</span></li>
+						<li class="LyricItem"><a href="14.orangemystery.html">《オレンジ・ミステリー》</a><span class="note">- 电视剧「橙路」片头曲(1987)</span></li>
+                    </ul>
+                    <div class="disc-head"><span class="disc-name">Disc 2</span><span class="disc-sub">hear me (VOCAL-2)　[TYCY-5322]　13 首</span></div>
+                    <ul class="song-list">
+						<li class="LyricItem"><a href="15.lookbackmydarling.html">《ふり向いてマイ・ダーリン》</a><span class="note">- 电视剧「橙路」插曲(1987)</span></li>
+						<li class="LyricItem"><a href="16.tenderjealousy.html">《優しいジェラシ》</a><span class="note">- 专辑印象曲</span></li>
+						<li class="LyricItem"><a href="17.blueboyfriend.html">《青いボーイフレンド》</a><span class="note">- OVA「恋はステージ」插曲(1990)</span></li>
+						<li class="LyricItem"><a href="18.goldenhillroad.html">《こがね色の坂道》</a><span class="note">- 专辑印象曲</span></li>
+						<li class="LyricItem"><a href="19.again.html">《Again》</a><span class="note">- 专辑印象曲</span></li>
+						<li class="LyricItem"><a href="20.sometimesblue.html">《ときどきBlue》</a><span class="note">- OVA「もぎたてスペシャル」片尾曲</span></li>
+						<li class="LyricItem"><a href="21.whisperingmistynight.html">《Whispering Misty Night》</a><span class="note">- 专辑印象曲</span></li>
+						<li class="LyricItem"><a href="22.baysidedancer.html">《BAYSIDE DANCER》</a><span class="note">- 剧场版1「あの日にかえりたい」插曲(1988)</span></li>
+						<li class="LyricItem"><a href="23.nightandday.html">《NIGHT &amp; DAY》</a><span class="note">- OVA「もぎたてスペシャル」插曲</span></li>
+						<li class="LyricItem"><a href="24.loveontheborderline.html">《ギリギリ Love》</a><span class="note">- OVA「恋はステージ」插曲(1990)</span></li>
+						<li class="LyricItem"><a href="25.onemoretimeinmyheart.html">《この胸に One More Time》</a><span class="note">- 专辑印象曲</span></li>
+						<li class="LyricItem"><a href="26.gazeofthewind.html">《風のまなざし》</a><span class="note">- OVA「恋はステージ」插曲(1990)</span></li>
+						<li class="LyricItem"><a href="27.breakingheart.html">《ブレイキングハート》</a><span class="note">- 电视剧「橙路」插曲(1987)</span></li>
+                    </ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚通过JavaScript加载 -->
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>
