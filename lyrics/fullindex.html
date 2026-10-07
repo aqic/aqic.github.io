@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="zh-CN"> <!-- HTML根元素，设置语言为简体中文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Anime Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <!-- 加载页头页脚的JavaScript -->
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="ArticleText" style="max-width:750px; margin:20px;"> <!-- 内容文字 -->
+                    <p align="center"><b><u>～ Anime Lyrics ～</u></b></p>
+                    <p align="center" class="ArticleMemo">~~ Miss lonely yesterday and ~~ Bring you smile with tommorow ~~</p>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <ul style="list-style:none; padding:0; margin:20px 0; columns:3; column-gap:24px; line-height:1.9; text-align:left;"> <!-- 歌词目录 -->
+                        <li><a href="o-w/uy.html">福星小子</a><span class="ArticleMemo">（29）</span></li>
+                        <li><a href="h-n/maison.html">相聚一刻</a><span class="ArticleMemo">（14）</span></li>
+                        <li><a href="h-n/kor.html">橙路</a><span class="ArticleMemo">（27）</span></li>
+                        <li><a href="h-n/mermaid.html">人鱼传说</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="h-n/miyuki.html">美雪·美雪</a><span class="ArticleMemo">（3）</span></li>
+                        <li><a href="o-w/refrainblue.html">Refrain Blue</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="h-n/inuyasha.html">犬夜叉</a><span class="ArticleMemo">（4）</span></li>
+                        <li><a href="o-w/ranma.html">乱马</a><span class="ArticleMemo">（39）</span></li>
+                        <li><a href="o-w/romiou.html">罗密欧的蓝天</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="a-g/ghibli.html">GHIBLI专辑</a><span class="ArticleMemo">（18）</span></li>
+                        <li><a href="a-g/bssm.html">美少女战士</a><span class="ArticleMemo">（11）</span></li>
+                        <li><a href="a-g/ccsakura.html">魔卡少女樱</a><span class="ArticleMemo">（3）</span></li>
+                        <li><a href="a-g/fushigi.html">魔幻游戏</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="o-w/tenchi.html">天地无用</a><span class="ArticleMemo">（3）</span></li>
+                        <li><a href="h-n/miyu.html">吸血姫美夕</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="o-w/vga.html">电影少女</a><span class="ArticleMemo">（6）</span></li>
+                        <li><a href="a-g/bbn.html">万能文化猫娘</a><span class="ArticleMemo">（1）</span></li>
+                        <li><a href="a-g/blueseed.html">碧奇魂</a><span class="ArticleMemo">（1）</span></li>
+                        <li><a href="h-n/ixiu.html">聪明的一休</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="a-g/gsmikami.html">GS美神</a><span class="ArticleMemo">（4）</span></li>
+                        <li><a href="a-g/ceres.html">梦幻妖子</a><span class="ArticleMemo">（3）</span></li>
+                        <li><a href="o-w/sakurawar.html">樱花大战</a><span class="ArticleMemo">（1）</span></li>
+                        <li><a href="x-0/yy.html">银河英雄传说</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="a-g/atom.html">铁臂阿童木</a><span class="ArticleMemo">（1）</span></li>
+                        <li><a href="a-g/fss.html">五星物语</a><span class="ArticleMemo">（1）</span></li>
+                        <li><a href="o-w/robotech.html">太空堡垒</a><span class="ArticleMemo">（1）</span></li>
+                        <li><a href="o-w/tof.html">幻想传说</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="h-n/himiko.html">火魅子传</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="h-n/nadia.html">蓝宝石之谜</a><span class="ArticleMemo">（1）</span></li>
+                        <li><a href="a-g/amg.html">我的女神</a><span class="ArticleMemo">（15）</span></li>
+                        <li><a href="o-w/utena.html">少女革命</a><span class="ArticleMemo">（11）</span></li>
+                        <li><a href="h-n/lodoss.html">罗德岛战记</a><span class="ArticleMemo">（5）</span></li>
+                        <li><a href="x-0/3x3eyes.html">三只眼</a><span class="ArticleMemo">（6）</span></li>
+                        <li><a href="o-w/slayers.html">魔剑美神</a><span class="ArticleMemo">（8）</span></li>
+                        <li><a href="o-w/rayearth.html">魔法骑士</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="o-w/skywar.html">天空战记</a><span class="ArticleMemo">（5）</span></li>
+                        <li><a href="a-g/Escaflowne.html">天空的Esca...</a><span class="ArticleMemo">（13）</span></li>
+                        <li><a href="h-n/heandshe.html">他和她的故事</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="h-n/kakyusei.html">下级生</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="o-w/shenmu.html">莎木</a><span class="ArticleMemo">（1）</span></li>
+                        <li><a href="h-n/macross.html">Macross系列</a><span class="ArticleMemo">（7）</span></li>
+                        <li><a href="o-w/shouhuyuetian.html">守护月天</a><span class="ArticleMemo">（4）</span></li>
+                        <li><a href="o-w/saiyuki.html">最游记</a><span class="ArticleMemo">（1）</span></li>
+                        <li><a href="h-n/kitae.html">向北</a><span class="ArticleMemo">（1）</span></li>
+                        <li><a href="o-w/weib.html">Weiβ Kreuz</a><span class="ArticleMemo">（2）</span></li>
+                        <li><a href="o-w/toheart.html">To Heart</a><span class="ArticleMemo">（3）</span></li>
+                        <li><a href="o-w/touch.html">Touch</a><span class="ArticleMemo">（24）</span></li>
+                        <li><a href="a-g/air.html">A I R</a><span class="ArticleMemo">（3）</span></li>
+                        <li><a href="h-n/lovehina.html">Love Hina</a><span class="ArticleMemo">（3）</span></li>
+                        <li><a href="h-n/h2.html">H2</a><span class="ArticleMemo">（4）</span></li>
+                        <li><a href="h-n/lunar.html">Lunar</a><span class="ArticleMemo">（3）</span></li>
+                    </ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <p align="center">共收录歌词 314 首。</p>
+                    <p align="center" class="ArticleMemo"><a href="/mp3/mp3.html">隐秘的入口</a></p>
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚通过JavaScript加载 -->
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>
