@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>パジャマ・じゃまだ - うる星やつら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=10">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「うる星やつら」オープニング③(1983)</div>
+
+                    <div class="LyricTitle">パジャマ・じゃまだ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">成清加奈子</div>
+                    <div class="LyricStaff">作詞：康珍化<br>作曲：林哲司<br>編曲：椎名和夫</div>
+
+                    <div class="LyricText">
+<p>夢の中まで追いかけたくて　Bedの下に写真を入れた<br>
+　空に浮かんでイイとこなのに　キスしたとたん夢からさめた<br>
+　ギュット抱きしめてね　キット　ズット待ってるから<br>
+　ジット　はがゆくなる　パパパジャマ・じゃまだ！<br>
+　眠れないのよせつないダーリン　パパパジャマ・じゃまだ！<br>
+　裸の気持ち感じてダーリン　Hot ため息<br>
+　燃えちゃいそうな　青い夏の夜</p>
+
+<p>あなたに彼女いるってうわさ　めげたりしないすこしも私<br>
+　浮気な恋の翼よ早く　あの人ここへさらって来てね<br>
+　モットそばにいたい　ズット　いつも見つめてたい　ジット<br>
+　だけど今は　パパパジャマ・じゃまだ！<br>
+　ふたりの間なんにもない　パパパジャマ・じゃまだ！<br>
+　裸の気持ち気づいてダーリン　ちょっときわどい夢を見そうで<br>
+　眠れない夜ね</p>
+
+<p>パパパジャマ・じゃまだ！　まくら抱いてもせつないダーリン<br>
+　パパパジャマ・じゃまだ！　裸の気持ち感じてダーリン<br>
+　シュット流星燃えちゃいそうな　青い星の夜</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-urusei-yatsura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

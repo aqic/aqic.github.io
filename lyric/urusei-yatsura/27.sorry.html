@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Sorry... - うる星やつら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=10">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「うる星やつら」オープニング・テーマ(1987)</div>
+
+                    <div class="LyricTitle">Sorry...</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">成清加奈子</div>
+                    <div class="LyricStaff">作詞：森　雪之丞<br>作曲：つのだひろ<br>編曲：久保田光政</div>
+
+                    <div class="LyricText">
+<p>勝手にジェラシー　傷ついただけよ　誰にも優しいあなただから<br>
+　機嫌直せと　無邪気な瞳で　みつめたらだめよ…不意に<br>
+　頬ひっぱたいて　あせる顔みたくなる　…ＳＯＲＲＹ！</p>
+
+<p>恋のじゃじゃ馬　強がりのルージュに　真夜中涙が　にじむことは秘密なの<br>
+　いつかあなたに　そっとくちづけされ　素直な心を重ねあう日　待っているの</p>
+
+<p>ＳＯＲＲＹ…じゃじゃ馬言葉は反対の意味よ　だから「嫌い」なら「好き」<br>
+　「アカンベ」は「抱きしめて！」　ＳＯＲＲＹ！</p>
+
+<p>恋のじゃじゃ馬　生意気な笑顔に　せつない気持ちを隠している毎日よ<br>
+　シャワー浴びても　ハートから落ちない　あなたの面影　悔しいほど愛してるの</p>
+
+<p>ＳＯＲＲＹ…　黄昏の風に　臆病な私　飛ばしたいわ</p>
+
+<p>お願いＳＯＲＲＹ…じゃじゃ　馬言葉は反対の意味よ<br>
+　だから「じゃあね」なら「ずっと」　「サヨナラ」は「抱きしめて！」<br>
+　ＳＯＲＲＹ！ＳＯＲＲＹ！ＳＯＲＲＹ！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-urusei-yatsura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>
