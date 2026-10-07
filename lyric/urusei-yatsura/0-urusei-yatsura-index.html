@@ -21,7 +21,7 @@
             height: 48px;
         }
 
-        /* 曲目列表：1.《歌名》 - 电视剧「福星小子」片头曲①(1981) */
+        /* 曲目列表：✦ 1.《歌名》 - 电视剧「福星小子」片头曲①(1981) */
         .song-list {
             list-style: none;
             padding: 0;
@@ -32,16 +32,15 @@
         }
 
         .song-list li {
-            padding: 6px 10px;
-            border-bottom: 1px dotted rgba(230, 216, 174, 0.3);
+            padding: 4px 10px;
             line-height: 1.9;
         }
 
-        /* CSS 计数器生成「1. 」序号 */
+        /* CSS 计数器生成「✦ 1. 」序号 */
         .song-list li::before {
             counter-increment: song;
-            content: counter(song) ". ";
-            color: #9999FF;
+            content: '✦ ' counter(song) ". ";
+            color: #E6D8AE;
         }
 
         .song-list a {
