@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ふり向いてマイ・ダーリン - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード」挿入歌 (1987)</div>
+
+                    <div class="LyricTitle">ふり向いてマイ・ダーリン</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">藤代美奈子</div>
+                    <div class="LyricStaff">作詞：澤地隆<br>作曲：鷺巣詩郎<br>編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+<p>ふり向いてマイ・ダーリン<br>
+[I love you, so love me too]</p>
+<p>あっけらかんとあなた　とっておきの視線で<br>
+他の子ほめるなんて　ちょっと許せないわ</p>
+<p>積極的にわたし　突拍子もないほど<br>
+大袈裟なアピールで　しっかり愛しちゃう</p>
+<p>ガードレールわざとふらついて<br>
+片手をさしのべた綱渡り<br>
+[Darling, I need you]<br>
+[Darling, I want you]<br>
+[Love me and hold me tight]</p>
+<p>春でも夏でもスキ [大スキ]<br>
+秋でも冬でも　[いつも]　特別な愛をあげる<br>
+朝でも夜でもスキ [大スキ]<br>
+いつでもどこでも　ねえ<br>
+ふり向いてマイ・ダーリン<br>
+抱きしめてマイ・ダーリン<br>
+[I love you, so love me too]</p>
+<p>ぶっきらぼうにあなた　とってつけたみたいな<br>
+愛の言葉じゃなくて　もっとそばに来てよ</p>
+<p>圧倒的にわたし　一直線な恋で<br>
+不器用に走るから　ゆっくり見つめてね</p>
+<p>シューズの紐直すふりをして<br>
+時間かせきをした帰り道<br>
+[Darling, I need you]<br>
+[Darling, I want you]<br>
+[Love me and hold me tight]</p>
+<p>春でも夏でもスキ [大スキ]<br>
+秋でも冬でも　[いつも]　上級の愛をあげる<br>
+朝でも夜でもスキ [大スキ]<br>
+いつでもどこでも　ねえ<br>
+ふり向いてマイ・ダーリン<br>
+抱きしめてマイ・ダーリン</p>
+<p>ふり向いてマイ・ダーリン</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

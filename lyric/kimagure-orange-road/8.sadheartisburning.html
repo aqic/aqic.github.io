@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>悲しいハートは燃えている - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード」エンディング・テーマ (1987)</div>
+
+                    <div class="LyricTitle">悲しいハートは燃えている</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中原めいこ</div>
+                    <div class="LyricStaff">作詞：松本一起<br>作曲：井上大輔<br>編曲：新川　博</div>
+
+                    <div class="LyricText">
+<p>※悲しいハートは燃えているわ　「夏に始まり」<br>
+　抱いて抱いて抱いて fire love「秋に燃えつき」<br>
+　悲しいハートは燃えているわ　「冬に枯れてく」<br>
+　灼けて灼けて灼けて fire love</p>
+<p>最後のドライブの夜に　よそゆきの声わすれ<br>
+サヨナラを言った　水平線みつめて</p>
+<p>季節で変わるHit曲　慣れてゆくたび飽きる<br>
+貴方の横顔　そう言ってる</p>
+<p>本命待ってる貴方の部屋<br>
+気づくのが遅すぎた　あの日の telephone</p>
+<p>※くりかえし<br>
+　思い出の貴方消して stop stop stop</p>
+<p>優しいハートを見せないで　「星は輝き」<br>
+冷めて冷めて冷めて fire love　「夏は沈んで」<br>
+優しいハートを見せないで　「街は近づく」<br>
+止めて止めて止めて fire love</p>
+<p>二度とは帰らない車　ロックしてドア閉めた<br>
+貴方を残して海岸線　走った</p>
+<p>私は愛されていると勝手に誤解してた<br>
+避暑地のムードに酔っていたわ</p>
+<p>本命以外になりたくない<br>
+だけど今あきらめて　少しは happy end</p>
+<p>※くりかえし<br>
+　思い出の貴方消して stop stop stop</p>
+<p>悲しいハートは燃えているわ<br>
+[Don't leave me alone holding on to my heart]<br>
+悲しいハートは燃えているわ<br>
+[Don't leave me alone holding on to my heart]<br>
+悲しいハートは燃えているわ<br>
+[Don't leave me alone holding on to my heart]<br>
+悲しいハートは燃えているわ<br>
+[Don't leave me, don't leave me alone holding on to my heart]</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

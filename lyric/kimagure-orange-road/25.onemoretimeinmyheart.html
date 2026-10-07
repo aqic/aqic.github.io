@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>この胸に One More Time - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード」イメージ・ソング (1987)</div>
+
+                    <div class="LyricTitle">この胸に One More Time</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">長島秀幸</div>
+                    <div class="LyricStaff">作詞：TETSU<br>作曲：長島秀幸<br>編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+<p>熱い風吹き抜けた街を　夕闇が包んで行く<br>
+車停めて見つめる海が　あの頃の二人を思い出させるよ<br>
+ラジオから長れる　懐かし rhythm & blues<br>
+胸を締めつける　切ない melody</p>
+<p>☆[Don't say good-bye my girl] 忘れないさ<br>
+　[Never shinin' my heart] あのときめき<br>
+　[Don't say good-bye my love] この胸に just one more time [One more time]</p>
+<p>微笑みの陰に揺れてる　淋しさに気付かないで<br>
+重ねすぎた俺の我がままが　こらえてた涙を溢れさせたのか？<br>
+Stardust light も独りじゃ feel so blue<br>
+捨ててしまいたい　悲しい memories</p>
+<p>★[Don't say good-bye my girl] 同じ夢を<br>
+　[Never shinin' my heart] 追い駆けてた<br>
+　[Don't say good-bye my love] いつの日か just one more time [Memories of you]</p>
+<p>過ぎて行く季節の中で　思い出は色あせても<br>
+愛している悲しいほどに　届かない想いを</p>
+<p>☆ ★ ☆ ★ くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

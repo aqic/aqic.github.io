@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>鏡の中のアクトレス - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード」挿入歌 (1987)</div>
+
+                    <div class="LyricTitle">鏡の中のアクトレス</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中原めいこ</div>
+                    <div class="LyricStaff">作詞：中原めいこ<br>作曲：中原めいこ<br>編曲：西平　彰</div>
+
+                    <div class="LyricText">
+<p>いつもならアナタのサイドシートで<br>
+車を滑らす precious night<br>
+キャンセルの電話に嘘の匂い<br>
+気づかぬふりで切ったわ</p>
+<p>かわいたあとのマニキュアの色<br>
+虚しく夜を飾るだけ</p>
+<p>★A-HA-HA<br>
+　鏡の中のアクトレス<br>
+　ハッキリ言えばいいのに<br>
+　ためらいが耳もとでささやく<br>
+　'Cause I love you<br>
+　鏡の中のアクトレス<br>
+　演じるたびに素顔が<br>
+　離れて行く<br>
+　You've broken my heart</p>
+<p>ランプだけ燈した bed room で<br>
+私は誰を見てるの<br>
+慣れて行くふたりが失くしたのは<br>
+お互いへのイマジネーション</p>
+<p>あなたは多分ドライなままの<br>
+私を望んでいるだけ</p>
+<p>☆A-HA-HA<br>
+　鏡の中のアクトレス<br>
+　いっそ泣けたらいいのに<br>
+　強がりがセリフを変えて行く<br>
+　'Cause I love you<br>
+　鏡の中のアクトレス<br>
+　罪の深さに気づいて<br>
+　戻れないわ<br>
+　You've broken my heart</p>
+<p>★ ☆ くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

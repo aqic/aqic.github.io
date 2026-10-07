@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風のまなざし - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジロード　恋はステージ」挿入歌 (1990)</div>
+
+                    <div class="LyricTitle">風のまなざし</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坪倉唯子</div>
+                    <div class="LyricStaff">作詞：SHOW<br>作曲・編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+<p>負けず嫌いのロンリーハート<br>
+そっとカバンつ詰め込んだ夜　旅に出かけた<br>
+抱えきれない Joy ＆ Pain　熱いビートにのっけて唄う<br>
+Lonely Hearts Club Band</p>
+<p>星が夜空を流れ　月が君を照らせば<br>
+街のノイズが消えてしまう　You just call me</p>
+<p>※君はどこ？　風の街　まなざしもつかめない<br>
+　明日は "north west south east" 気まぐれ<br>
+　いつだって　風の中　行き先はつかめない<br>
+　「弱いのよ」　恋に落ちる前に…カッコつけさせて</p>
+<p>赤いルージュをひいて<br>
+ちょっと大人を気取って唄う<br>
+Lonely Hearts Culb Band<br>
+いつも君の瞳に　映る人は誰なの？<br>
+少し気になるけれど<br>
+今は "I believe you in my road"</p>
+<p>君はまだ風の中　やさしさもつかめない<br>
+明日は "north west south east" 気まぐれ<br>
+いつだって　風の中　行き先はつかめない<br>
+「わかるでしょう」<br>
+恋に落ちる前に…グッと抱きしめて</p>
+<p>※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

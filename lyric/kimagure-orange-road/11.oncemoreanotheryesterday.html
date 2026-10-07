@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>もうひとつのイエスタデイ - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード」挿入歌 (1987)</div>
+
+                    <div class="LyricTitle">もうひとつのイエスタデイ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">和田加奈子</div>
+                    <div class="LyricStaff">作詞：湯川れい子<br>作曲：小田裕一郎<br>編曲：入江　純</div>
+
+                    <div class="LyricText">
+<p>One more chance　いま<br>
+耳元で<br>
+何か　ひとこと　囁いて<br>
+Your yesterdays　なぜ<br>
+色褪せて<br>
+きらめき　失くす</p>
+<p>深いまなざし　海の色<br>
+窓にそむけて　戻らない<br>
+Your yesterdays　ああ<br>
+もう　二度と<br>
+あの日　帰れない</p>
+<p>※浴室〈バスルーム〉　鏡に<br>
+　真っ赤な　ラヴ・レター<br>
+　口紅で書いたわ<br>
+　貴方の　部屋で<br>
+　Still Love you　今も　私は<br>
+　Yes, once more, Another yesterday</p>
+<p>Your yesterdays　また<br>
+鮮やかな　気配の中で</p>
+<p>遠い渚で　頬寄せた<br>
+同じ　鼓動を　聞きながら<br>
+Your yesterdays　ああ<br>
+砂時計<br>
+こころ　こぼれてく</p>
+<p>ペンシル持つたびに<br>
+濡れるわ　マイ・ダイアリー<br>
+季節　華やぐほど<br>
+遠のく　yesterday<br>
+Still My heart　どこも行けない<br>
+Yes, once more, Another yesterday</p>
+<p>※くりかえし</p>
+<p>Yes, once more, another yesterday</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

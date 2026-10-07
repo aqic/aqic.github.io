@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>オレンジ・ミステリー - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード」オープニング・テーマ (1987)</div>
+
+                    <div class="LyricTitle">オレンジ・ミステリー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">長島秀幸</div>
+                    <div class="LyricStaff">作詞：売野雅勇<br>作曲：NOBODY<br>編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+<p>きらめく海へ　Tシャツのまま<br>
+君は翔んだね　キスをよけるように</p>
+<p>濡れたスカートの　白い花びら<br>
+青い水面に　広がってくよ</p>
+<p>片目閉じて　僕のものに<br>
+なってあげると言ったのに……</p>
+<p>※Oh Baby, Tell Me Tell me　気まぐれだね<br>
+　[Tell me love you, tell me that you need me]<br>
+　Tell Me, Tell Me　夏の天使<br>
+　[Tell me lover, tell me that you love me]<br>
+　Oh Baby, Tell Me Tell Me　恋をしてる<br>
+　[Tell me love you, tell me that you need me]<br>
+　Tell Me, Tell Me　君はミステリー<br>
+　[Tell me lover, tell me that you love me]</p>
+<p>夏が終れば　さよならよって<br>
+悪戯っぽく　僕を見つめたね</p>
+<p>渚に倒した　バイクに映る<br>
+空に落ちてく　君の涙</p>
+<p>分らないね　君って娘は<br>
+優しさだけじゃ縛れない</p>
+<p>Oh Baby, Tell Me Tell Me　気まぐれだね<br>
+[Tell me love you, tell me that you need me]<br>
+Tell Me, Tell Me　君が好きさ<br>
+[Tell me lover, tell me that you love me]<br>
+Oh Baby, Tell Me Tell Me　近づくほど<br>
+[Tell me love you, tell me that you need me]<br>
+Tell Me, Tell Me　君はミステリー<br>
+[Tell me lover, tell me that you love me]</p>
+<p>※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

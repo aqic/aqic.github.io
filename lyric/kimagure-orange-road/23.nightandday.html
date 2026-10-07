@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>NIGHT &amp; DAY - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード　もぎたてスペシャル」挿入歌</div>
+
+                    <div class="LyricTitle">NIGHT &amp; DAY</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Bluew</div>
+                    <div class="LyricStaff">作詞・作曲：片山圭司<br>編曲：Bluew</div>
+
+                    <div class="LyricText">
+<p>ジンジンジンジン　うずいてた teen age dream<br>
+街角でもてあました俺達<br>
+嫌いだ好きだと　マジになって　なぐり合った<br>
+愛しき日々　あの頃</p>
+<p>ヘタなかけひきしたって　どうせ<br>
+パッとパッと　しないなら<br>
+あり余る力だけを信じて</p>
+<p>Night & day 踊れ踊れ<br>
+[We are dancin' in the heavy street]<br>
+言葉なんていらない<br>
+[We are dancin' in the heavy street]<br>
+単純でいい[oh]　錯覚でいい[oh]<br>
+Night & day 踊れ踊れ<br>
+[Dancin' all together] Night & day</p>
+<p>ジンジンジンジン　いやな奴だぜ telephone<br>
+Twenty age 時計に追いかけられ<br>
+綺麗な事ばかりじゃないヨネ　誰も皆<br>
+わかってるさ　今さら</p>
+<p>過激な街で生きてくならば<br>
+もっともっと　タフになれ<br>
+熱い心をみだらにさらして</p>
+<p>※Night & day 踊れ踊れ<br>
+　[We are dancin' in the heavy street]<br>
+　涙なんて捨てちゃえ<br>
+　[We are dancin' in the heavy street]<br>
+　まだまださ baby [oh]　おちつくな baby [oh]<br>
+　Night & day 踊れ踊れ<br>
+　[Dancin' all together] Night & day</p>
+<p>マジになれる瞬間があれば<br>
+きっときっと　とべる your heart<br>
+流されそうな未来を　けどばし</p>
+<p>※くりかえし</p>
+<p>Night & day 踊れ踊れ<br>
+Night & day 踊れ踊れ<br>
+Night & day, Night & day, Night & day<br>
+Night & day 踊れ踊れ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

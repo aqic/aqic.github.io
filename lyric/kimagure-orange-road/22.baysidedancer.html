@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>BAYSIDE DANCER - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジロード」挿入歌 (1988)</div>
+
+                    <div class="LyricTitle">BAYSIDE DANCER</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">古谷　徹</div>
+                    <div class="LyricStaff">作詞：澤池　隆<br>作曲・編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+<p>フェンスにもたれてる君の向こう<br>
+コンビナートの夜景が広がるのさ<br>
+「遊びでしょ…」なんて　微笑んだあとで<br>
+背中では少し　泣いていた？<br>
+揺れていた？　隠してた？<br>
+素顔がわからないよ<br>
+いたずらな瞳でステップ踏み<br>
+俺の腕をスルリとかわすんだね<br>
+「本気だよ…」なんて　届かない言葉<br>
+海からの風にかき消された</p>
+<p>※Lonely Game, Lonely Night　愛に臆病だから<br>
+　Loneky Girl, Lonely Boy　恋の手前でふたり<br>
+　Lonely Game, Lonely Night　愛をさぐり合うだけ<br>
+　Loneky Girl, Lonely Boy　恋に優しすぎるね<br>
+　防波堤を綱渡りで踊った顔は　幼かったよ　Bayside Dancer</p>
+<p>コーラのあき缶を君は投げて<br>
+コンクリートの街で夢追うのさ<br>
+「今夜だけ…」なんて　つぶやいたあとで<br>
+心では少し　笑ってた？<br>
+だましてた？　隠してた？<br>
+素敵にきまぐれだよ<br>
+おどける仕草でウィンクして<br>
+俺のキスをジョークに変えるんだね<br>
+「さびしいよ…」なんて　似合わない台詞<br>
+ジェット機の音がうばい去った</p>
+<p>Lonely Game, Lonely Night　愛に不器用だから<br>
+Loneky Girl, Lonely Boy　恋の手前でふたり<br>
+Lonely Game, Lonely Night　愛をさがしているだけ<br>
+Loneky Girl, Lonely Boy　恋に傷つけないで<br>
+水に映るビルのあかり見つめる顔が　大人びてたよ　Baysade Dancer</p>
+<p>※繰返し<br>
+　海岸沿い駐めた車　乗り込む顔が　うつ向いてたよ　Bayside Dancer</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>優しいジェラシ - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード」イメージ・ソング</div>
+
+                    <div class="LyricTitle">優しいジェラシ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">富沢美智恵、本多知恵子</div>
+                    <div class="LyricStaff">作詞：澤地隆<br>作曲・編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+<p>生意気ざかりですもの<br>
+おまけに照れ家ですもの<br>
+憎まれ口の数々<br>
+おおめに見てほしいんです</p>
+<p>そう素敵な誰かに<br>
+誘われちゃったなんて　ウソ　ウソ<br>
+でも　あなたはいつでも<br>
+くやしいほど　冷たいほど<br>
+余裕たっぷりに笑ってる</p>
+<p>※ちょっとジェラシー　優しいジェラシ<br>
+　感じてくれなくちゃずるいわ<br>
+　もっとジェラシー　優しいジェラシ<br>
+　くれないと知らないから…<br>
+　キライよ…　スキなの…<br>
+　待って！　歩くの早すぎる<br>
+　あしたはきっと素直に愛してるって<br>
+　ヤボな意地っぱり捨てて言えるかもね</p>
+<p>ときめきざかりですもの<br>
+いわゆるオトメですもの<br>
+恥じらう恋の表現<br>
+ななめに曲がってるんです</p>
+<p>ねえ　かわいい彼女が<br>
+いるんでしょって聞いて　ソワ　ソワ<br>
+けど　わたしはいつでも<br>
+強がりだけ　負けん気だけ<br>
+一人ジタバタとわめいてる</p>
+<p>ちょっとジェラシー　優しいジェラシ<br>
+感じてくれなくちゃイヤだわ<br>
+もっとジェラシー　優しいジェラシ<br>
+くれないと寂しいから…</p>
+<p>来ないで…　キスして…<br>
+待って！　背伸びをしすぎてる<br>
+あしたはきっと上手に愛してるって<br>
+ヤボな見栄っぱり捨てて言えるかもね</p>
+<p>※くりかえし</p>
+<p>あしたはきっと上手に愛してるって<br>
+ヤボな見栄っぱり捨てて言えるかもね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

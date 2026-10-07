@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ダンス・イン・ザ・メモリーズ - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード」エンディング・テーマ (1987)</div>
+
+                    <div class="LyricTitle">ダンス・イン・ザ・メモリーズ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中原めいこ</div>
+                    <div class="LyricStaff">作詞：中原めいこ<br>作曲：中原めいこ<br>編曲：西平　彰</div>
+
+                    <div class="LyricText">
+<p>☆I just dance in the sweet memories<br>
+　[He's my one and only, You never can tell]<br>
+　I just dance in the sweet memories<br>
+　[Sweet memories]</p>
+<p>雪が踊るホームへ<br>
+息を切らして駆けて来る<br>
+遠い日のステーション</p>
+<p>会えない日々が写真のように<br>
+アナタを微笑みに変えたの</p>
+<p>◇I just dance in the sweet memories<br>
+　傷ついて愛し方を<br>
+　I just dance in the sweet memories<br>
+　覚えて行くのね</p>
+<p>もうしばらくはきっと<br>
+夢の中をさまようでしょう<br>
+地図さえも持たず</p>
+<p>今ならわかる<br>
+アナタの背中の意味が<br>
+だけど届かないわ</p>
+<p>◇ くりかえし</p>
+<p>曇りガラスの心のドアを開いて<br>
+翼をくれた人</p>
+<p>◆I just dance in the sweet memories<br>
+　きらめきを忘れないわ<br>
+　I just dance in the sweet memories<br>
+　夢から醒めても</p>
+<p>◆ くりかえし</p>
+<p>★I just dance in the sweet memories<br>
+　[Every time I think of you, I'm missing the days]<br>
+　I just dance in the sweet memories<br>
+　[Sweet memories]</p>
+<p>☆ ★ くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

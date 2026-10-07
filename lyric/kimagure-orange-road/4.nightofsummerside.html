@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Night of Summer Side - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード」オープニング・テーマ (1987)</div>
+
+                    <div class="LyricTitle">Night of Summer Side</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">池田政典</div>
+                    <div class="LyricStaff">作詞：売野雅勇<br>作曲：NOBODY<br>編曲：新川博</div>
+
+                    <div class="LyricText">
+<p>アクセルの悲鳴さ軋むタイヤから…<br>
+見知らぬ女〈きみ〉乗せ飛び出したクーペ<br>
+[Before the summer takes you... Right now!]</p>
+<p>追いかける影を振り切りドア締めた<br>
+君は「どこでもいいから走って！」と</p>
+<p>出逢はハイウェイ・ジャンクション<br>
+港が見える頃<br>
+恋に落ちたと気づいた</p>
+<p>Take me to Summer Side<br>
+口づけより優しさが欲しいと<br>
+Night of Summer Side<br>
+あどけなさで拒否〈かく〉した瞳は<br>
+大人だったね</p>
+<p>波のない入江並ぶマストの影<br>
+肩を抱いて桟橋を歩いたよ<br>
+[Before the summer takes you... Right now!]</p>
+<p>気まずさは苦手なのと急に笑い<br>
+腕をすりぬけたね踊るみたいに</p>
+<p>優しさはぐらかし何を探してるの<br>
+恋に理由はいらない…</p>
+<p>Take me to Summer Side<br>
+誘うようにデッキへと飛んだね<br>
+Night of Summer Side<br>
+背中そらし誰のものにもね<br>
+ならないわよってキスしたね</p>
+<p>急がないと夏が終りそうだよって<br>
+知らない顔で口説くよ</p>
+<p>Take me to Summer Side<br>
+淋しさより口づけが欲しいと<br>
+Night of Summer Side<br>
+振り返った君の眼差しは<br>
+大人だったね</p>
+<p>[Fall in your life... Lost in the light...]</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

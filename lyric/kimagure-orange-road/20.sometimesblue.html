@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ときどきBlue - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード　もぎたてスペシャル」エンディング・テーマ</div>
+
+                    <div class="LyricTitle">ときどきBlue</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">橘　友賀</div>
+                    <div class="LyricStaff">作詞：湯川れい子<br>作曲：小田裕一郎<br>編曲：入江　純</div>
+
+                    <div class="LyricText">
+<p>あなたが言うほど<br>
+気楽じゃないのよ<br>
+わたしだってたまには<br>
+感傷的になったりして</p>
+<p>彼女のことでしょ？<br>
+気にしてるんでしょ？<br>
+わたし知っていたけれど<br>
+平和主義だからね</p>
+<p>ほら　二人で立った歩道橋<br>
+ねえ　夜明けって久しぶり<br>
+この恋も　Dance Dance してよ</p>
+<p>※Sweet Kiss しても　ときどき Blue な My Heart<br>
+　Kiss だけじゃ　ほんとは不安なのよ<br>
+　Sweet Kiss しても　ときどき Blue な My Love<br>
+　Kiss のあと　無理してはしゃいでみるの<br>
+　ときどき Blue</p>
+<p>あなたはいつでも<br>
+優柔不断よ<br>
+わたしならばおかげで<br>
+楽天的だからいいけど</p>
+<p>彼女はどうなの？<br>
+どっちが好きなの？<br>
+あなたちょっととぼけて<br>
+秘密主義みたいね</p>
+<p>ほら　動き始めたビルの街<br>
+そう　誰だって迷ってる<br>
+人生の Chance Chance 待つの</p>
+<p>Boy Friend だけど　ときどき Blue な My Heart<br>
+Friend なんて　ほんとは不満なのよ<br>
+Boy Friend だけど　ときどき Blue な My Heart<br>
+Friend ならば　どうして胸が痛むの<br>
+ときどき Blue</p>
+<p>※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

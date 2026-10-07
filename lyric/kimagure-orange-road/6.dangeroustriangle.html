@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>危険なトライアングル - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード」挿入歌 (1987)</div>
+
+                    <div class="LyricTitle">危険なトライアングル</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">池田政典</div>
+                    <div class="LyricStaff">作詞：売野雅勇<br>作曲：和泉常寛<br>編曲：新川　博</div>
+
+                    <div class="LyricText">
+<p>蒼い雨上がりの街が<br>
+君の瞳で濡れているよ<br>
+待たせたこと怒るふりで<br>
+深い悲しみを隠し</p>
+<p>君は知っていたね<br>
+僕の胸に射したうつろう影を<br>
+他の女〈ひと〉に動きかけた<br>
+愛の裏側さ</p>
+<p>傷つく他に A love made of the glass<br>
+できない愛選ばせたのは僕さ</p>
+<p>出逢いを罪とTriangle of love<br>
+言わせないさ<br>
+君の涙をキスで奪って…</p>
+<p>夏は淋しいね　と空に残る<br>
+切ない君の声さ<br>
+ため息ごと　夜が街に<br>
+そっと降り積もる</p>
+<p>責める言葉を A love made of the glass<br>
+言ってくれよ　哀しすぎるね君は</p>
+<p>愛の形がTriangle of love<br>
+わからなくて<br>
+傷をつけたよ夏の破片〈カケラ〉で</p>
+<p>生きる証しを A love made of the glass<br>
+探すように<br>
+君を抱くのさ強く</p>
+<p>許してくれとTriangle of love<br>
+聴こえぬ声胸に耳当て<br>
+君は聴いてる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>
