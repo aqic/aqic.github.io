@@ -24,21 +24,21 @@
 .LyricItem
 	{font-size: 14px; color: #BFFFBF;}
 .LyricPerformer
-	{font-size: 14px; font-weight: bolder; line-height: 20px; color: #BFFFBF;}
+	{font-size: 15px; font-weight: bolder; line-height: 21px; color: #BFFFBF;}
 .LyricStaff
-	{font-size: 14px; line-height: 20px; color: #DFFFFF;}
-/* 歌词：行距 26px，段间 26px（宽度由外层 .LyricBody 的 table 决定） */
+	{font-size: 15px; line-height: 21px; color: #DFFFFF;}
+/* 歌词：行距 28px，段间 28px（宽度由外层 .LyricBody 的 table 决定） */
 .LyricText
-	{font-size: 14px; line-height: 26px; margin-top: 26px;}
+	{font-size: 15px; line-height: 28px; margin-top: 28px;}
 .LyricText p
-	{margin: 0 0 26px;}
+	{margin: 0 0 28px;}
 .LyricText p:last-child
 	{margin-bottom: 0;}
 /* 页尾装饰线与返回链接 */
 .LyricFootRule
 	{width: auto; margin: 20px 14px 0; border: 0; border-top: 1px solid #E6D8AE;}
 .LyricBack
-	{font-size: 14px; text-align: left; margin-top: 14px;}
+	{font-size: 13px; text-align: left; margin-top: 14px;}
 .LyricMemo
 	{font-size: 14px; color: #bbbbaa;}
 .LyricVideo
