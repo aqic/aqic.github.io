@@ -37,7 +37,7 @@
 
         .lyric-catalog li {
             display: flex;
-            align-items: baseline;
+            align-items: center;
             padding: 4px 8px;
             min-width: 0;
         }
@@ -62,7 +62,6 @@
         /* 引导点线：填满名称与数量之间的全部空隙，用重复背景点阵而非固定数量的点字符 */
         .lyric-catalog .dots {
             flex: 1 1 auto;
-            align-self: center;
             height: 1em;
             margin: 0 4px;
             background-image: radial-gradient(circle, #bbbbaa 1px, transparent 1px);
@@ -72,9 +71,13 @@
         }
 
         .lyric-catalog .count {
+            flex: 0 0 auto;
+            /* 固定宽度并右对齐，使个位数与两位数在右端对齐整齐 */
+            min-width: 2.2em;
+            padding-left: 4px;
             font-size: 12px;
             color: #9999FF;
-            flex: 0 0 auto;
+            text-align: right;
         }
 
         /* 目录底部统计 */
