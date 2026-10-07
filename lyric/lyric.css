@@ -1,12 +1,11 @@
 /* 自定义.用于歌词部分 */
-/* 歌词正文块：日文按等宽黑体渲染（拉丁字符仍走 Tahoma），整体左对齐
+/* 歌词正文块：日文按等宽黑体渲染（拉丁字符仍走 Tahoma），文字内部左对齐、整块居中
    注意：父级 .main-section 是 flex 列容器（align-items:center），
    单纯 width:auto / inline-block / table 都会被其交叉轴拉伸机制撑满，
    min-width:max-content 则会撑破视口。
-   最终方案：宽度交给 HTML 的 style 属性显式声明（按该曲歌词最长行量出），
-   CSS 只负责对齐与排版。 */
+   整块居中靠 margin:0 auto 实现（父级已居中，此处可正常生效）。 */
 .LyricBody
-	{margin: 0 auto 0 0; text-align: left; box-sizing: border-box;
+	{margin: 0 auto; text-align: left; box-sizing: border-box;
 	 font-family: Tahoma, Arial, 'MS Gothic', 'ＭＳ ゴシック', sans-serif;}
 /* 正文左右呼吸位 */
 .LyricBody > *
