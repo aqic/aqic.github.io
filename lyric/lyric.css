@@ -23,8 +23,15 @@
 	{width: auto; margin: 0 14px 6px; border: 0; border-top: 2px solid #CC66FF;}
 .LyricItem
 	{font-size: 14px; color: #BFFFBF;}
+/* 演唱：名字前的圆点用 CSS 绘制（直径 13px）
+   不用字符 ●(U+25CF)—— Tahoma 无此字形会回退到 MS Gothic 的细线小点，
+   各平台回退字体不同导致大小不一；改用 border-radius 圆形可保证稳定一致。 */
 .LyricPerformer
 	{font-size: 15px; font-weight: bolder; line-height: 21px; color: #BFFFBF;}
+.LyricPerformer::before
+	{content: ''; display: inline-block; width: 13px; height: 13px;
+	 margin-right: 3px; border-radius: 50%; background: #BFFFBF;
+	 vertical-align: -1px;}
 .LyricStaff
 	{font-size: 15px; line-height: 21px; color: #DFFFFF;}
 /* 歌词：行距 28px，段间 28px（宽度由外层 .LyricBody 的 table 决定） */
