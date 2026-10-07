@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ラムのラブソング - うる星やつら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../lyric.css">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div style="margin:20px; max-width:700px;"> <!-- 内容文字 -->
+                    <p style="text-align:center;"><a href="index.html">← 曲目一覧</a></p>
+
+                    <div class="LyricTitle" style="text-align:center;">ラムのラブソング</div>
+                    <div class="LyricProvenance" style="text-align:center;">テレビ「うる星やつら」オープニング①(1981)</div>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricPerformer" style="text-align:center;">●松谷祐子</div>
+                    <div class="LyricStaff" style="text-align:center;">作詞：伊藤アキラ<br>作曲・編曲：小林泉美</div>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricText">
+<p>※あんまりソワソワしないで　あなたはいつでもキョロキョロ<br>
+　よそ見をするのはやめてよ　わたしが誰よりいちばん</p>
+
+<p>好きよ…　好きよ…　好きよ…<br>
+星たちが輝く夜ふけ　夢見るのあなたの全て<br>
+愛してもあなたは知らんぷりで　今ごろは誰かに夢中</p>
+
+<p>ああ　男の人って　いくつも愛を持っているのね<br>
+ああ　あちこちにバラまいて　私を悩ませるわ</p>
+
+<p>※繰り返し</p>
+
+<p>ああ　男の人って　何人好きな人がほしいの<br>
+ああ　わたしだけ愛してよ　いつでもひとりだけを</p>
+
+<p>※繰り返し</p>
+
+<p>わたしがいつでもいちばん　あなたの全てが<br>
+好きよ…　好きよ…　好きよ…<br>
+いちばん好きよ</p>
+                    </div>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+                    <p class="LyricMemo" style="text-align:center;">
+                        うる星やつら（Urusei Yatsura）歌詞集
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>
