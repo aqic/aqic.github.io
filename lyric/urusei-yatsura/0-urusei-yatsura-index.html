@@ -48,6 +48,65 @@
             font-size: 17px;
         }
 
+/* 专辑信息 */
+        .album-head {
+            max-width: 760px;
+            margin: 16px auto 4px;
+            text-align: left;
+        }
+
+        .album-title {
+            font-family: 'MS Mincho', 'Yu Mincho', serif;
+            font-size: 18px;
+            color: #E6D8AE;
+        }
+
+        .album-meta {
+            margin-top: 2px;
+            font-size: 13px;
+            color: #bbbbaa;
+        }
+
+        /* 分组标题：Disc 1 / Disc 2 / 单曲 */
+        .disc-head {
+            max-width: 760px;
+            margin: 26px auto 0;
+            padding-bottom: 6px;
+            text-align: left;
+            border-bottom: 1px solid #555540;
+        }
+
+        .disc-name {
+            font-family: 'MS Mincho', 'Yu Mincho', serif;
+            font-size: 17px;
+            color: #CC66FF;
+            margin-right: 10px;
+        }
+
+        .disc-sub {
+            font-size: 13px;
+            color: #bbbbaa;
+        }
+
+        /* 单曲区的年份小标题 */
+        .year-head {
+            max-width: 760px;
+            margin: 18px auto 0;
+            padding-left: 10px;
+            text-align: left;
+            font-family: 'MS Mincho', 'Yu Mincho', serif;
+            font-size: 15px;
+            color: #BFFFBF;
+            border-left: 3px solid #BFFFBF;
+        }
+
+        /* 缺歌词的曲目：仅列歌名，灰显不可点 */
+        .song-list .LyricMissing .mtitle {
+            font-family: 'MS Mincho', 'Yu Mincho', serif;
+            font-size: 17px;
+            color: #777766;
+        }
+
         /* 出处说明：跟在歌名后，字号略小、颜色稍暗 */
         .song-list .note {
             margin-left: 8px;
@@ -84,36 +143,67 @@
                     <div class="LyricCatalog catalog-head"><img src="../images/lum.gif"><span>うる星やつら（福星小子）</span></div>
                     <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
 
-                    <ul class="song-list"> <!-- 曲目列表 -->
-						<li class="LyricItem"><a href="1.lumslovesong.html">《ラムのラブソング》</a><span class="note">- 电视剧「福星小子」片头曲①(1981)</span></li>
-						<li class="LyricItem"><a href="2.uchuuwataihen.html">《宇宙は大ヘンだ！》</a><span class="note">- 电视剧「福星小子」片尾曲①(1981)</span></li>
-						<li class="LyricItem"><a href="3.dansingStar.html">《Dansing Star》</a><span class="note">- 电视剧「福星小子」片头曲②(1982)</span></li>
-						<li class="LyricItem"><a href="4.kokorobosoi.html">《心細いな》</a><span class="note">- 电视剧「福星小子」片尾曲②(1982)</span></li>
-						<li class="LyricItem"><a href="5.hoshizora.html">《星空サイクリング》</a><span class="note">- 电视剧「福星小子」片尾曲③(1982)</span></li>
-						<li class="LyricItem"><a href="6.pajama.html">《パジャマ・じゃまだ》</a><span class="note">- 电视剧「福星小子」片头曲③(1983)</span></li>
+                    <div class="disc-head"><span class="disc-name">Disc 1</span><span class="disc-sub">see me (VOCAL-1)　[PCCK-20119 Disc 1]　15 首</span></div>
+
+                    <div class="album-head"><div class="album-title">《「うる星やつら」アニメ主題歌&amp;キャラソン大全集》</div><div class="album-meta">ポニーキャニオン　PCCK-20119　2015/8/19　Disc 1 十五曲 ＋ Disc 2 十五曲（含 2 首非歌曲音轨）</div>
+                    </div>
+                    <ul class="song-list">
+						<li class="LyricItem"><a href="1.lumslovesong.html">《ラムのラブソング》</a><span class="note">- 电视剧片头曲①(1981)</span></li>
+						<li class="LyricItem"><a href="2.uchuuwataihen.html">《宇宙は大ヘンだ！》</a><span class="note">- 电视剧片尾曲①(1981)</span></li>
+						<li class="LyricItem"><a href="4.kokorobosoi.html">《心細いな》</a><span class="note">- 电视剧片尾曲②(1982)</span></li>
+						<li class="LyricItem"><a href="5.hoshizora.html">《星空サイクリング》</a><span class="note">- 电视剧片尾曲③(1982)</span></li>
 						<li class="LyricItem"><a href="7.iiyouandlove.html">《I, I, You &amp; Love》</a><span class="note">- 剧场版1「Only You」片头曲(1983)</span></li>
-						<li class="LyricItem"><a href="8.marugarinta.html">《マルガリータ》</a><span class="note">- 电视剧「福星小子」插曲(1983)</span></li>
-						<li class="LyricItem"><a href="9.lumsballad.html">《ラムのバラード》</a><span class="note">- 剧场版1「Only You」插曲(1983)</span></li>
-						<li class="LyricItem"><a href="10.kagefuminowarutsu.html">《影ふみのワルツ》</a><span class="note">- 剧场版1「Only You」插曲(1983)</span></li>
-						<li class="LyricItem"><a href="11.chanceonlove.html">《Chance On Love》</a><span class="note">- 电视剧「福星小子」片头曲④(1984)</span></li>
-						<li class="LyricItem"><a href="12.rocktheplanet.html">《Rock The Planet》</a><span class="note">- 电视剧「福星小子」片头曲⑤(1984)</span></li>
-						<li class="LyricItem"><a href="13.koinomoebius.html">《恋のメビウス》</a><span class="note">- 电视剧「福星小子」片尾曲④(1984)</span></li>
-						<li class="LyricItem"><a href="14.umewalovememore.html">《夢は Love me more》</a><span class="note">- 电视剧「福星小子」片尾曲⑤(1984)</span></li>
-						<li class="LyricItem"><a href="15.openinvitation.html">《Open Invitation》</a><span class="note">- 电视剧「福星小子」片尾曲⑥(1984)</span></li>
-						<li class="LyricItem"><a href="16.everyday.html">《Everyday》</a><span class="note">- 电视剧「福星小子」片尾曲⑦(1984)</span></li>
+						<li class="LyricItem"><a href="3.dansingStar.html">《Dancing Star》</a><span class="note">- 电视剧片头曲②(1982)</span></li>
+						<li class="LyricItem"><a href="14.umewalovememore.html">《夢は Love me more》</a><span class="note">- 电视剧片尾曲⑤(1984)</span></li>
+						<li class="LyricItem"><a href="6.pajama.html">《パジャマ・じゃまだ!!》</a><span class="note">- 电视剧片头曲③(1983)</span></li>
+						<li class="LyricItem"><a href="13.koinomoebius.html">《恋のメビウス》</a><span class="note">- 电视剧片尾曲④(1984)</span></li>
+						<li class="LyricItem"><a href="11.chanceonlove.html">《Chance on Love》</a><span class="note">- 电视剧片头曲④(1984)</span></li>
+						<li class="LyricItem"><a href="15.openinvitation.html">《Open Invitation》</a><span class="note">- 电视剧片尾曲⑥(1984)</span></li>
+						<li class="LyricItem"><a href="12.rocktheplanet.html">《Rock the Planet》</a><span class="note">- 电视剧片头曲⑤(1984)</span></li>
+						<li class="LyricItem"><a href="16.everyday.html">《Every Day》</a><span class="note">- 电视剧片尾曲⑦(1984)</span></li>
+						<li class="LyricItem"><a href="21.asobase.html">《殿方ごめん遊ばせ》</a><span class="note">- 电视剧片头曲⑥(1985)</span></li>
+						<li class="LyricItem"><a href="23.goodluck.html">《Good Luck～ / 永遠より愛をこめて～》</a><span class="note">- 电视剧片尾曲⑧(1985)</span></li>
+                    </ul>
+                    <div class="disc-head"><span class="disc-name">Disc 2</span><span class="disc-sub">hear me (VOCAL-2)　[PCCK-20119 Disc 2]　12 首</span></div>
+                    <ul class="song-list">
 						<li class="LyricItem"><a href="17.aiwabuumeran.html">《愛はブーメラン》</a><span class="note">- 剧场版2「Beautiful Dreamer」片尾曲(1984)</span></li>
-						<li class="LyricItem"><a href="18.husijikirei.html">《ふしぎ・きれい》</a><span class="note">- 电视剧「福星小子」插曲(1984)</span></li>
-						<li class="LyricItem"><a href="19.rameirodorimu.html">《ラメ色ドリーム》</a><span class="note">- 剧场版2「Beautiful Dreamer」插曲(1984)</span></li>
-						<li class="LyricItem"><a href="20.beginthebeautiful.html">《BIGIN THE 綺麗》</a><span class="note">- 剧场版2「Beautiful Dreamer」主题曲(1984)</span></li>
-						<li class="LyricItem"><a href="21.asobase.html">《殿方ご免あそばせ》</a><span class="note">- 电视剧「福星小子」片头曲⑥(1985)</span></li>
-						<li class="LyricItem"><a href="22.borntobefree.html">《Born To Be Free》</a><span class="note">- 剧场版3「Remember My Love」片头曲(1985)</span></li>
-						<li class="LyricItem"><a href="23.goodluck.html">《Good Luck～ / 永遠より愛をこめて～》</a><span class="note">- 电视剧「福星小子」片尾曲⑧(1985)</span></li>
-						<li class="LyricItem"><a href="24.remembermylove.html">《Remember my love》</a><span class="note">- 剧场版3「Remember My Love」片尾曲(1985)</span></li>
+						<li class="LyricItem"><a href="22.borntobefree.html">《Born to Be Free》</a><span class="note">- 剧场版3「Remember My Love」片头曲(1985)</span></li>
+						<li class="LyricItem"><a href="24.remembermylove.html">《Remember My Love》</a><span class="note">- 剧场版3「Remember My Love」片尾曲(1985)</span></li>
 						<li class="LyricItem"><a href="25.melancholy.html">《メランコリーの軌跡》</a><span class="note">- 剧场版4「Lum the Forever」片尾曲(1986)</span></li>
-						<li class="LyricItem"><a href="26.monotoonnonatsu.html">《モノトーンの夏》</a><span class="note">- 电视剧「福星小子」1987年版片头曲(1987)</span></li>
-						<li class="LyricItem"><a href="27.sorry.html">《Sorry...》</a><span class="note">- 电视剧「福星小子」1987年版片头曲(1987)</span></li>
-						<li class="LyricItem"><a href="28.starson.html">《Stars On》</a><span class="note">- OAV片头曲(1988)</span></li>
 						<li class="LyricItem"><a href="29.sukikirai.html">《好き・嫌い》</a><span class="note">- 剧场版5「The Final Chapter」主题曲(1988)</span></li>
+						<li class="LyricItem"><a href="20.beginthebeautiful.html">《BEGIN THE 綺麗》</a><span class="note">- 剧场版2「Beautiful Dreamer」主题曲(1984)</span></li>
+						<li class="LyricItem LyricMissing"><span class="mtitle">《Sweet Dream》</span><span class="note">- 剧场版2「Beautiful Dreamer」插曲(1984)（歌词待补）</span></li>
+						<li class="LyricItem LyricMissing"><span class="mtitle">《ロマンスが痛い》</span><span class="note">- 剧场版2「Beautiful Dreamer」插曲(1984)（歌词待补）</span></li>
+						<li class="LyricItem"><a href="9.lumsballad.html">《ラムのバラード》</a><span class="note">- 剧场版1「Only You」插曲(1983)</span></li>
+						<li class="LyricItem LyricMissing"><span class="mtitle">《恋にダンス!ダンス!ダンス!》</span><span class="note">- 剧场版1「Only You」印象歌(1983)（歌词待补）</span></li>
+						<li class="LyricItem"><a href="18.husijikirei.html">《ふしぎ・きれい》</a><span class="note">- 电视剧插曲(1984)</span></li>
+						<li class="LyricItem LyricMissing"><span class="mtitle">《ア・リ・ガ・ト! - 星のMemory -》</span><span class="note">- 电视剧第195话印象歌(1986)（歌词待补）</span></li>
+                    </ul>
+                    <div class="disc-head"><span class="disc-name">单曲</span><span class="disc-sub">未收录于合辑的正式歌曲　按年份排列　10 首</span></div>
+                    <div class="year-head">1981</div>
+                    <ul class="song-list">
+						<li class="LyricItem LyricMissing"><span class="mtitle">《コズミック・サイクラー》</span><span class="note">- 电视剧插曲(第37话)（歌词待补）</span></li>
+						<li class="LyricItem LyricMissing"><span class="mtitle">《ムーンライト・コースター》</span><span class="note">- 电视剧插曲(第39话)（歌词待补）</span></li>
+						<li class="LyricItem LyricMissing"><span class="mtitle">《時代おくれの酒場》</span><span class="note">- 电视剧插曲(第112话)（歌词待补）</span></li>
+						<li class="LyricItem LyricMissing"><span class="mtitle">《ハーフムーンはときめき色》</span><span class="note">- 电视剧插曲(第182话)（歌词待补）</span></li>
+                    </ul>
+                    <div class="year-head">1983</div>
+                    <ul class="song-list">
+						<li class="LyricItem"><a href="8.marugarinta.html">《マルガリータ》</a><span class="note">- 电视剧插曲(第65话)</span></li>
+						<li class="LyricItem"><a href="10.kagefuminowarutsu.html">《影ふみのワルツ》</a><span class="note">- 剧场版1「Only You」插曲(1983)</span></li>
+                    </ul>
+                    <div class="year-head">1984</div>
+                    <ul class="song-list">
+						<li class="LyricItem"><a href="19.rameirodorimu.html">《ラメ色ドリーム》</a><span class="note">- 剧场版2「Beautiful Dreamer」插曲(1984)</span></li>
+                    </ul>
+                    <div class="year-head">1987</div>
+                    <ul class="song-list">
+						<li class="LyricItem"><a href="26.monotoonnonatsu.html">《モノトーンの夏》</a><span class="note">- 1987年版 OVA 片头曲(1987)</span></li>
+						<li class="LyricItem"><a href="27.sorry.html">《Sorry...》</a><span class="note">- 1987年版 OVA 片尾曲(1987)</span></li>
+                    </ul>
+                    <div class="year-head">1988</div>
+                    <ul class="song-list">
+						<li class="LyricItem"><a href="28.starson.html">《Stars On》</a><span class="note">- OAV「Ikare Sherbet」片头曲(1988)</span></li>
                     </ul>
                     <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
 
