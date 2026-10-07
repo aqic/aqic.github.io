@@ -63,7 +63,6 @@
         .lyric-catalog .dots {
             flex: 1 1 auto;
             height: 1em;
-            margin: 0 2px;
             background-image: radial-gradient(circle, #bbbbaa 1px, transparent 1px);
             background-size: 6px 6px;
             background-repeat: repeat-x;
@@ -72,12 +71,18 @@
 
         .lyric-catalog .count {
             flex: 0 0 auto;
-            /* 宽度恰好容纳两位数字（1.2em ≈ 14.4px），
-               使点线能一直延伸到数字前，不留多余空隙 */
+            /* 固定宽度容纳两位数字并右对齐，使个位数与两位数右端齐平 */
             min-width: 1.2em;
             font-size: 12px;
             color: #9999FF;
             text-align: right;
+            /* 背景点阵填满整个框，填掉个位数右对齐后左侧留下的空隙；
+               text-shadow 用同色描边把数字描实，遮住笔画缝隙间透出的点 */
+            background-image: radial-gradient(circle, #bbbbaa 1px, transparent 1px);
+            background-size: 6px 6px;
+            background-repeat: repeat-x;
+            background-position: 0 center;
+            text-shadow: 0 0 1px #9999FF, 0 0 1px #9999FF;
         }
 
         /* 目录底部统计 */
