@@ -6,8 +6,16 @@
     box-sizing: border-box;
 }
 
-body {
+html {
+    /* 背景固定层：随视口铺满、不随文档滚动。
+       body 改为透明，滚动时格子保持静止 */
     background: #000000 url('/image/back.gif') repeat;
+    /* 背景图钉在视口上（等价于 html 的 fixed），滚动时不动 */
+    background-attachment: fixed;
+}
+
+body {
+    background: transparent;
     color: #FFFFFF;
     font-family: Tahoma, Arial, sans-serif;
     font-size: 16px;
