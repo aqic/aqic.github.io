@@ -75,6 +75,28 @@
             flex: 0 0 auto;
         }
 
+        /* 分组小标题 */
+        .catalog-subhead {
+            margin: 22px 0 6px;
+            font-size: 15px;
+            letter-spacing: 2px;
+            color: #E6D8AE;
+            text-align: center;
+            border-bottom: 1px dashed #555540;
+            padding-bottom: 5px;
+        }
+
+        /* 未整理条目：只列名字，无链接无数量，灰显区别于可点击条目 */
+        .lyric-catalog li.pending {
+            color: #A8A896;
+            font-size: 15px;
+            font-family: Tahoma, Arial, 'MS Gothic', '\uff2d\uff33 \u30b4\u30b7\u30c3\u30af', 'Yu Gothic', sans-serif;
+        }
+
+        .lyric-catalog li.pending::before {
+            color: #8A8A78;
+        }
+
         /* 目录底部统计 */
         .catalog-total {
             margin: 20px 0 10px;
@@ -130,62 +152,145 @@
                     </div>
                     <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
 
-                    <ul class="lyric-catalog"> <!-- 歌词目录 -->
+                    <p class="catalog-subhead">已整理</p>
+
+                    <ul class="lyric-catalog"> <!-- 已整理（附歌词数量） -->
                         <li><a href="urusei-yatsura/0-urusei-yatsura-index.html">福星小子</a><span class="count">(29)</span></li>
                         <li><a href="kimagure-orange-road/0-kimagure-orange-road-index.html">橙路</a><span class="count">(27)</span></li>
                         <li><a href="miyuki/0-miyuki-index.html">美雪·美雪</a><span class="count">(20)</span></li>
                         <li><a href="galaxy-express-999/0-galaxy-express-999-index.html">银河铁道999</a><span class="count">(7)</span></li>
                         <li><a href="shenmue/0-shenmue-index.html">莎木</a><span class="count">(2)</span></li>
                         <li><a href="elf/0-elf-index.html">ELF（エルフ）</a><span class="count">(21)</span></li>
-                        <li><a href="h-n/maison.html">相聚一刻</a><span class="count">(14)</span></li>
-                        <li><a href="h-n/mermaid.html">人鱼传说</a><span class="count">(2)</span></li>
-                        <li><a href="h-n/inuyasha.html">犬夜叉</a><span class="count">(4)</span></li>
-                        <li><a href="o-w/ranma.html">乱马</a><span class="count">(39)</span></li>
-                        <li><a href="o-w/romiou.html">罗密欧的蓝天</a><span class="count">(2)</span></li>
-                        <li><a href="a-g/ghibli.html">GHIBLI专辑</a><span class="count">(18)</span></li>
-                        <li><a href="a-g/bssm.html">美少女战士</a><span class="count">(11)</span></li>
-                        <li><a href="a-g/ccsakura.html">魔卡少女樱</a><span class="count">(3)</span></li>
-                        <li><a href="a-g/fushigi.html">魔幻游戏</a><span class="count">(2)</span></li>
-                        <li><a href="o-w/tenchi.html">天地无用</a><span class="count">(3)</span></li>
-                        <li><a href="h-n/miyu.html">吸血姫美夕</a><span class="count">(2)</span></li>
-                        <li><a href="o-w/vga.html">电影少女</a><span class="count">(6)</span></li>
-                        <li><a href="a-g/bbn.html">万能文化猫娘</a><span class="count">(1)</span></li>
-                        <li><a href="a-g/blueseed.html">碧奇魂</a><span class="count">(1)</span></li>
-                        <li><a href="h-n/ixiu.html">聪明的一休</a><span class="count">(2)</span></li>
-                        <li><a href="a-g/gsmikami.html">GS美神</a><span class="count">(4)</span></li>
-                        <li><a href="a-g/ceres.html">梦幻妖子</a><span class="count">(3)</span></li>
-                        <li><a href="o-w/sakurawar.html">樱花大战</a><span class="count">(1)</span></li>
-                        <li><a href="x-0/yy.html">银河英雄传说</a><span class="count">(2)</span></li>
-                        <li><a href="a-g/atom.html">铁臂阿童木</a><span class="count">(1)</span></li>
-                        <li><a href="a-g/fss.html">五星物语</a><span class="count">(1)</span></li>
-                        <li><a href="o-w/robotech.html">太空堡垒</a><span class="count">(1)</span></li>
-                        <li><a href="o-w/tof.html">幻想传说</a><span class="count">(2)</span></li>
-                        <li><a href="h-n/himiko.html">火魅子传</a><span class="count">(2)</span></li>
-                        <li><a href="h-n/nadia.html">蓝宝石之谜</a><span class="count">(1)</span></li>
-                        <li><a href="a-g/amg.html">我的女神</a><span class="count">(15)</span></li>
-                        <li><a href="o-w/utena.html">少女革命</a><span class="count">(11)</span></li>
-                        <li><a href="h-n/lodoss.html">罗德岛战记</a><span class="count">(5)</span></li>
-                        <li><a href="x-0/3x3eyes.html">三只眼</a><span class="count">(6)</span></li>
-                        <li><a href="o-w/slayers.html">魔剑美神</a><span class="count">(8)</span></li>
-                        <li><a href="o-w/rayearth.html">魔法骑士</a><span class="count">(2)</span></li>
-                        <li><a href="o-w/skywar.html">天空战记</a><span class="count">(5)</span></li>
-                        <li><a href="a-g/Escaflowne.html">天空的Escaflowne</a><span class="count">(13)</span></li>
-                        <li><a href="h-n/heandshe.html">他和她的故事</a><span class="count">(2)</span></li>
-                        <li><a href="h-n/kakyusei.html">下级生</a><span class="count">(2)</span></li>
-                        <li><a href="h-n/macross.html">Macross系列</a><span class="count">(7)</span></li>
-                        <li><a href="o-w/shouhuyuetian.html">守护月天</a><span class="count">(4)</span></li>
-                        <li><a href="o-w/saiyuki.html">最游记</a><span class="count">(1)</span></li>
-                        <li><a href="h-n/kitae.html">向北</a><span class="count">(1)</span></li>
-                        <li><a href="o-w/weib.html">Weiβ Kreuz</a><span class="count">(2)</span></li>
-                        <li><a href="o-w/toheart.html">To Heart</a><span class="count">(3)</span></li>
-                        <li><a href="o-w/touch.html">Touch</a><span class="count">(24)</span></li>
-                        <li><a href="a-g/air.html">A I R</a><span class="count">(3)</span></li>
-                        <li><a href="h-n/lovehina.html">Love Hina</a><span class="count">(3)</span></li>
-                        <li><a href="h-n/h2.html">H2</a><span class="count">(4)</span></li>
-                        <li><a href="h-n/lunar.html">Lunar</a><span class="count">(3)</span></li>
                     </ul>
 
-                    <p class="catalog-total">共收录歌词 344 首。</p>
+                    <p class="catalog-subhead">未整理（歌词整理中，暂无页面）</p>
+
+                    <ul class="lyric-catalog lyric-catalog-pending">
+                        <li class="pending">Ajimu~海岸物语~</li>
+                        <li class="pending">CLAMP</li>
+                        <li class="pending">EVA&amp;天鹰战士</li>
+                        <li class="pending">F&amp;C</li>
+                        <li class="pending">GHIBLI专辑</li>
+                        <li class="pending">GS美神</li>
+                        <li class="pending">Green Green</li>
+                        <li class="pending">H2</li>
+                        <li class="pending">I've</li>
+                        <li class="pending">I·C·O</li>
+                        <li class="pending">KEY</li>
+                        <li class="pending">KID</li>
+                        <li class="pending">LEAF</li>
+                        <li class="pending">Love Hina</li>
+                        <li class="pending">Lunar</li>
+                        <li class="pending">SONY 系列</li>
+                        <li class="pending">Snow Drop</li>
+                        <li class="pending">Sp-janis</li>
+                        <li class="pending">Wind</li>
+                        <li class="pending">X战记</li>
+                        <li class="pending">eX-Driver</li>
+                        <li class="pending">marigold系列</li>
+                        <li class="pending">一骑当千</li>
+                        <li class="pending">万能文化猫娘</li>
+                        <li class="pending">三只眼</li>
+                        <li class="pending">不思议游戏</li>
+                        <li class="pending">乱马</li>
+                        <li class="pending">五星物语</li>
+                        <li class="pending">人形电脑天使心</li>
+                        <li class="pending">人鱼传说</li>
+                        <li class="pending">他和她的故事</li>
+                        <li class="pending">任性桃天使</li>
+                        <li class="pending">全金属狂潮</li>
+                        <li class="pending">初音岛</li>
+                        <li class="pending">千年女优</li>
+                        <li class="pending">变形金刚</li>
+                        <li class="pending">名侦探柯南</li>
+                        <li class="pending">含羞草</li>
+                        <li class="pending">吸血姫美夕</li>
+                        <li class="pending">圣天空战记</li>
+                        <li class="pending">地狱先生</li>
+                        <li class="pending">垃圾巷的斯汀</li>
+                        <li class="pending">城市猎人</li>
+                        <li class="pending">天上天下</li>
+                        <li class="pending">天使怪盗</li>
+                        <li class="pending">天地无用</li>
+                        <li class="pending">天空战记</li>
+                        <li class="pending">太空堡垒</li>
+                        <li class="pending">夫妻成长日记</li>
+                        <li class="pending">女神的圣斗士</li>
+                        <li class="pending">妹妹公主</li>
+                        <li class="pending">守护月天</li>
+                        <li class="pending">寻找满月</li>
+                        <li class="pending">少女革命</li>
+                        <li class="pending">幻想传说</li>
+                        <li class="pending">废弃公主</li>
+                        <li class="pending">异度装甲</li>
+                        <li class="pending">往北</li>
+                        <li class="pending">恐龙特急克赛号</li>
+                        <li class="pending">我为歌狂</li>
+                        <li class="pending">我的女神</li>
+                        <li class="pending">拜托了老师</li>
+                        <li class="pending">拜托了！双子星</li>
+                        <li class="pending">掌上女侍小梅</li>
+                        <li class="pending">新白雪姬传说</li>
+                        <li class="pending">星之声</li>
+                        <li class="pending">最游记</li>
+                        <li class="pending">最终兵器少女</li>
+                        <li class="pending">月咏</li>
+                        <li class="pending">朝雾的巫女</li>
+                        <li class="pending">木偶师左近</li>
+                        <li class="pending">机动战士高达</li>
+                        <li class="pending">梦中相逢</li>
+                        <li class="pending">梦幻妖子</li>
+                        <li class="pending">梦幻拉拉</li>
+                        <li class="pending">棋魂</li>
+                        <li class="pending">棒球英豪</li>
+                        <li class="pending">棘手拍档</li>
+                        <li class="pending">森林好小子</li>
+                        <li class="pending">樱花大战</li>
+                        <li class="pending">水果篮子</li>
+                        <li class="pending">水色</li>
+                        <li class="pending">浪客剑心</li>
+                        <li class="pending">海贼王</li>
+                        <li class="pending">游戏王</li>
+                        <li class="pending">灌篮高手</li>
+                        <li class="pending">火魅子传</li>
+                        <li class="pending">煌罗万象</li>
+                        <li class="pending">犬夜叉</li>
+                        <li class="pending">狼雨</li>
+                        <li class="pending">猫眼三姐妹</li>
+                        <li class="pending">瑠璃色的雪</li>
+                        <li class="pending">电影少女</li>
+                        <li class="pending">白色十字架</li>
+                        <li class="pending">白色相簿</li>
+                        <li class="pending">相聚一刻</li>
+                        <li class="pending">碧奇魂</li>
+                        <li class="pending">罗密欧的蓝天</li>
+                        <li class="pending">罗德岛战记</li>
+                        <li class="pending">美少女战士</li>
+                        <li class="pending">美鸟伴身旁</li>
+                        <li class="pending">翼神传说</li>
+                        <li class="pending">聪明的一休</li>
+                        <li class="pending">蓝宝石之谜</li>
+                        <li class="pending">蓝色战栗</li>
+                        <li class="pending">超时空要塞</li>
+                        <li class="pending">超级偶像铃铛猫</li>
+                        <li class="pending">逮捕令</li>
+                        <li class="pending">铁臂阿童木</li>
+                        <li class="pending">铃音</li>
+                        <li class="pending">银河英雄传说</li>
+                        <li class="pending">阳光普照</li>
+                        <li class="pending">青出于蓝</li>
+                        <li class="pending">高桥短篇集</li>
+                        <li class="pending">魔剑美神</li>
+                        <li class="pending">魔力女管家</li>
+                        <li class="pending">魔卡少女樱</li>
+                        <li class="pending">魔法骑士</li>
+                        <li class="pending">魔神坛斗士</li>
+                        <li class="pending">鲁莽天使</li>
+                        <li class="pending">黑夜来临</li>
+                        <li class="pending">黑街2人组</li>
+                    </ul>
+
+                    <p class="catalog-total">已整理歌词 106 首　·　另有 122 部作品整理中（未计入）</p>
                 </div>
             </section>
         </main>
