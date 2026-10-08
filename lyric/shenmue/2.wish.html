@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Wish... - 莎木</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「シェンムー 一章 横須賀」オリジナルサウンドトラック(2000)　Disc2 収録</div>
+
+                    <div class="LyricTitle">Wish...</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">山本由美子(Yumiko Yamamoto)</div>
+                    <div class="LyricStaff">作詞：Yumi Asada(浅田由美)<br>作曲：Ryuji Iuchi(井内竜次)</div>
+
+                    <div class="LyricText">
+<p>いつか見た夢のように<br>
+頬を撫でて通り過ぎる<br>
+海へつながる舗道<br>
+潮の香り運ぶよ</p>
+<p>愛しさが優しい嘘つかせる前に<br>
+寂しさを今抱いて欲しいのに</p>
+<p>I wish you'll always be here with me.<br>
+幾つの夜を越えても<br>
+こみあげる切なさは<br>
+行くあてもないままで</p>
+<p>Don't leave me alone,<br>
+till "mornin' star" we'll see.<br>
+この胸は揺れてるけど<br>
+まだ帰りたくない<br>
+星が消えるまでもう少し<br>
+（そばにいさせて）</p>
+<p>めぐる季節の中で<br>
+流されそうになったときも<br>
+きっとこの気持ちだけ<br>
+甘い香り残すよ</p>
+<p>背中から聴いた鼓動<br>
+泣きたくなった<br>
+祈りにも似た想い<br>
+抱きしめて</p>
+<p>I wish you'll always be by my side.<br>
+幾つの夜を越えても<br>
+眠れずに膝を抱え<br>
+淋しさもてあますだけ</p>
+<p>Don't leave me alone,<br>
+you see my feel inside. 変わらない強い瞳<br>
+でも戻らないと<br>
+分かっているから<br>
+もう少し（このままでいて）</p>
+<p>I miss you...</p>
+<p>If you will always be by my side,<br>
+there is no sorrows and tears in my eyes,<br>
+can't live without you,<br>
+why did you have to decide.<br>
+You won't be aware of my pains and lies.</p>
+<p>Don't leave me alone, stay with me.<br>
+But I know don't look back.<br>
+I'll remember you forever.</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-shenmue-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

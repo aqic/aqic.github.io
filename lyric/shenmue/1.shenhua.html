@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>莎花～江清日抱花歌～ - 莎木</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">DCゲーム「シェンムー 一章 横須賀」挿入歌／イメージソング(1999)</div>
+
+                    <div class="LyricTitle">莎花～江清日抱花歌～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">伊織</div>
+                    <div class="LyricStaff">作詞：浅田由美<br>作曲：井内竜次<br>編曲：松尾早人</div>
+
+                    <div class="LyricText">
+<p>きらめく山嶺 湧き出す 冷たい水は<br>
+白露 纒（まと）った 聖らかな森に 染み入る</p>
+<p>気高い姿で 吹き誇る その花の<br>
+寄せ合う花びら 薄紫に輝きて<br>
+吹き荒ぶ風にさえ 無垢（むく）な瞳は消せない</p>
+<p>光が集まる 優しい梢（こずえ）の下で<br>
+幼い心に 不思議な力 宿りて</p>
+<p>豊かに灌（そそ）いだ 蛍の河の流れに<br>
+抱かれて眠れば 遥かな面影 何処（いずこ）</p>
+<p><a href="images/shenmu.jpg">Click Here To See The Pic of This Lyric</a></p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-shenmue-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>
