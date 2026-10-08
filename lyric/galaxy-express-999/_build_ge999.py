@@ -261,7 +261,7 @@ INDEX_TPL = '''<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
         .song-list li {{ padding: 4px 10px; line-height: 1.9; }}
         .song-list li::before {{
             counter-increment: song;
-            content: '\\u2606 ' counter(song) ". ";
+            content: '✦ ' counter(song) ". ";
             color: #E6D8AE;
         }}
         .song-list a {{ font-family: 'MS Mincho', 'Yu Mincho', serif; font-size: 17px; }}
