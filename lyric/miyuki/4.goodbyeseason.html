@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Good-bye シーズン - みゆき</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「みゆき」エンディング・テーマ (1983)</div>
+
+                    <div class="LyricTitle">Good-bye シーズン</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">H2O</div>
+                    <div class="LyricStaff">作詞：山川 啟介<br>作曲：鈴木 ギサブロー<br>編曲：星 勝</div>
+
+                    <div class="LyricText">
+<p>ガラス細工の都会に<br>
+夏の終りの雨<br>
+君の横顔に　退屈が翳る<br>
+とてもきれいになってな<br>
+知らない人のよう<br>
+心でぼくは　サヨナラを言うよ</p>
+<p>Woo Baby　このまち都会を出てゆくぼくと<br>
+新しい愛　目で追う君<br>
+Goodbye Season<br>
+いつか住所のない手紙<br>
+Season<br>
+君の扉に届くだろう<br>
+ああ　つらいけれど今夜は<br>
+ソファーで眠るよ</p>
+<p>ちょうど４年たつね<br>
+君と出会ってから<br>
+兄弟みたいに　若さを歩いた<br>
+最初のキスはぼくが<br>
+教えてあげてけど<br>
+今では君が　教えるジェラシー</p>
+<p>Woo Baby　学園祭のポスアーに<br>
+１年前の　二人がいる<br>
+Goodbye Season　友達は<br>
+夢を卒業<br>
+Season　ぼくは自由を追いかける<br>
+ああ　誰のせいでもないさ<br>
+大人になるのは</p>
+<p>Goodbye Season　まだ青い<br>
+季節のように<br>
+Season　気の早い枯葉が濡れる<br>
+ああ　息を呑むほど君は<br>
+美しいなれよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

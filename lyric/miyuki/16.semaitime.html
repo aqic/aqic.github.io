@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>サマータイム・ランデブー - みゆき</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「みゆき」挿入歌・イメージソング (1983)</div>
+
+                    <div class="LyricTitle">サマータイム・ランデブー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">スマート・ルッキン</div>
+                    <div class="LyricStaff">作詞：和久井 光司、大山 潤子<br>作曲：和久井 光司<br>編曲：スマート‧ルッキン</div>
+
+                    <div class="LyricText">
+<p>嫌いな訳じゃないけど<br>
+ちょっと待ってね Make love<br>
+恋に焦がされた素肌<br>
+木陰で休ませて</p>
+<p>それから日傘さして<br>
+西陽射す庭<br>
+長いキスしてね<br>
+舌がとけるまで</p>
+<p>もう少しの辛抱よ<br>
+ちょっと待ってね Make love<br>
+木綿のドレス選びに<br>
+一緒に街へ出て</p>
+<p>夏向きの彼だと<br>
+みんなが ほめたら<br>
+そっと肩抱いて<br>
+負けを認めるわ</p>
+<p>あぁあ サマータイム‧ランデブー<br>
+あぁあ 月の下で今宵は<br>
+あぁあ サマータイム‧ランデブー<br>
+あぁあ 空高く飛ばしてよ<br>
+Can you see me? ジョークはStop!</p>
+<p>ちょっと待ってね Make love<br>
+ちょっと待ってね Make love</p>
+<p>夏向きの彼だと<br>
+みんなが ほめたら<br>
+そっと肩抱いて<br>
+負けを認めるわ</p>
+<p>あぁあ サマータイム‧ランデブー<br>
+あぁあ 月の下で今宵は<br>
+あぁあ サマータイム‧ランデブー<br>
+あぁあ 空高く飛ばしてよ<br>
+Can you see me?</p>
+<p>あぁあ サマータイム‧ランデブー<br>
+あぁあ 月の下で今宵は<br>
+あぁあ サマータイム‧ランデブー<br>
+あぁあ 空高く飛ばしてよ<br>
+Can you see me? ジョークはStop!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

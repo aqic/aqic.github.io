@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>想い出がいっぱい - みゆき</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「みゆき」エンディング・テーマ (1983)</div>
+
+                    <div class="LyricTitle">想い出がいっぱい</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">H2O</div>
+                    <div class="LyricStaff">作詞：阿木燿子<br>作曲：鈴木キサブロー</div>
+
+                    <div class="LyricText">
+<p>古いアルバムの中に<br>
+隠れて想い出がいっぱい<br>
+無邪気な　笑顔の下の<br>
+日付けは　遥かなメモリー</p>
+<p>時は無限のつながりで<br>
+終りを思いもしないね<br>
+手に届く宇宙は<br>
+限りなく澄んで<br>
+君を　包んでいた</p>
+<p>※大人の階段昇る<br>
+　君はまだシンデレラーさ<br>
+　幸福〈幸せ〉は<br>
+　誰かがきっと<br>
+　運んでくれると<br>
+　信じてるね<br>
+　少女だったといつの日か<br>
+　思う時がくるのさ</p>
+<p>キラリ木洩れ陽のような<br>
+眩しい想い出がいっぱい<br>
+一人だけ横向く　記念写真だね<br>
+恋を　夢見る頃</p>
+<p>硝子〈ガラス〉の階段降りる<br>
+硝子の靴シンデレラーさ<br>
+踊り場で　足を止めて<br>
+時計の音　気にしている<br>
+少女だったと懐かしく<br>
+振り向く日があるのさ</p>
+<p>※くりかえし</p>
+<p>少女だったと懐かしく<br>
+振り向く日があるのさ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

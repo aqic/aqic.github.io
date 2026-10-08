@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>サントワマミイ - みゆき</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「みゆき」挿入歌・イメージソング (1983)</div>
+
+                    <div class="LyricTitle">サントワマミイ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ヴァージンＶＳ</div>
+                    <div class="LyricStaff">作詞：アダモ（訳詞：岩谷 時子）<br>作曲：アダモ<br>編曲：ヴァージンＶＳ</div>
+
+                    <div class="LyricText">
+<p>街に出れば男が誘い<br>
+ただ意味なくつきまとうけど<br>
+この私が行きつくとこは<br>
+あなたの胸他にないのよ</p>
+<p>サントワマミー　風のように大空をさまよう恋<br>
+サントワマミー　悲しくて目の前が暗くなる<br>
+サントワマミー</p>
+<p>楽しい夢のようなあの頃を想い出せば<br>
+サントワマミー　寂しくて暗くなる<br>
+サントワマミー</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

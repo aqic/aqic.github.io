@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夢の途中 - みゆき</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「みゆき」挿入歌・イメージソング (1983)</div>
+
+                    <div class="LyricTitle">夢の途中</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">来生 たかお</div>
+                    <div class="LyricStaff">作詞：来生 たかお＆来生 えつこ<br>作曲：来生 たかお＆来生 えつこ<br>編曲：星 勝</div>
+
+                    <div class="LyricText">
+<p>さよならは別れの言葉じゃなくて<br>
+再び逢うまでの遠い約束</p>
+<p>現在を嘆いても　胸を痛めても<br>
+ほんの夢の途中</p>
+<p>このまま　何時間でも　抱いていたいけど<br>
+ただこのまま　冷たい頬を　暖めたいけど</p>
+<p>都会は　秒刻みのあわただしさ<br>
+恋もコンクリートの篭の中</p>
+<p>君がめぐり逢う　愛に疲れたら<br>
+きっともどっておいで</p>
+<p>愛した　男たちを　思い出に替えて<br>
+いつの日にか　僕のことを思い出すがいい<br>
+ただ心の　片隅にでも　小さくメモして</p>
+<p>スーツケースいっぱいにつめこんだ<br>
+希望という名の重い荷物を</p>
+<p>君は軽々と　きっと持ち上げて<br>
+笑顔見せるだろう</p>
+<p>愛した　男たちを　輝きに替えて<br>
+いつの日にか　僕のことを思い出すがいい<br>
+ただ心の　片隅にでも　小さくメモして</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

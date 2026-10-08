@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>想い出がいっぱい（日中対訳） - みゆき</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「みゆき」エンディング・テーマ (1983)</div>
+
+                    <div class="LyricTitle">想い出がいっぱい（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">H2O</div>
+                    <div class="LyricStaff">作詞：阿木燿子<br>作曲：鈴木キサブロー</div>
+
+                    <div class="LyricText">
+<p>(古いアルバムの中に)<br>
+泛黄的相册中<br>
+(隠れて想い出がいっぱい)<br>
+隐藏着满满的回忆<br>
+(無邪気な　笑顔の下の)<br>
+有着纯真笑颜的日子<br>
+(日付けは　遥かなメモリー )<br>
+似成遥不可及的过去<br>
+(時は無限のつながりで)<br>
+时间是无限的环环相扣<br>
+(終りを思いもしないね)<br>
+永不结束的牵链<br>
+(手に届く宇宙は)<br>
+触手可及的宇宙啊<br>
+(限りなく澄んで)<br>
+无垠清澄<br>
+(君を　包んでいた )<br>
+而你，远在那无限的中央<br>
+(※大人の階段昇る)<br>
+※攀登着通向成熟的阶梯<br>
+(君はまだシンデレラーさ)<br>
+现在的你啊，还只是个灰姑娘<br>
+(幸福〈幸せ〉は)<br>
+但总有一天<br>
+(誰かがきっと)<br>
+你会迎来<br>
+(運んでくれると)<br>
+背负着幸福的白马<br>
+(信じてるね)<br>
+相信吧<br>
+(少女だったといつの日か)<br>
+虽然仍是豆蔻年华<br>
+(思う時がくるのさ)<br>
+梦想的时刻终会降临</p>
+<p>(キラリ木洩れ陽のような)<br>
+星星点点闪耀的回忆<br>
+(眩しい想い出がいっぱい)<br>
+如树叶间透出的阳光<br>
+(一人だけ横向く　記念写真だね)<br>
+纪念照片上玲珑的侧面<br>
+(恋を　夢見る頃)<br>
+正是梦中倾心刹那的景象<br>
+(硝子〈ガラス〉の階段降りる)<br>
+穿着玻璃舞鞋的灰姑娘啊<br>
+(硝子の靴シンデレラーさ)<br>
+迈下晶莹的阶梯<br>
+(踊り場で　足を止めて)<br>
+舞台上飞扬的脚步<br>
+(時計の音　気にしている)<br>
+催促的钟声把它停下<br>
+(少女だったと懐かしく)<br>
+经历了少女如花的岁月<br>
+(振り向く日があるのさ)<br>
+总能留下值得回味的芬芳<br>
+(※くりかえし)<br>
+※重复</p>
+<p>(少女だったと懐かしく)<br>
+经历了少女如花的岁月<br>
+(振り向く日があるのさ)<br>
+总能留下值得回味的芬芳</p>
+<p>译:Neophoenix<br>
+ps:感谢Hondat在翻译过程中的大力协助^^</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>振り向けば Broken Heart - みゆき</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「みゆき」挿入歌・イメージソング (1983)</div>
+
+                    <div class="LyricTitle">振り向けば Broken Heart</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">H2O</div>
+                    <div class="LyricStaff">作詞：秋元 康<br>作曲：和泉 常寛<br>編曲：星 勝</div>
+
+                    <div class="LyricText">
+<p>緩い坂道あたり　遠くに港が見える<br>
+愛が痛くて二人<br>
+背中を向け合ったままで<br>
+もうこれ以上　話す言葉ないね</p>
+<p>君が好きだと言った<br>
+小さな教会の前で<br>
+古いオルガン聞いて<br>
+誓ったことなど幻<br>
+ああ　”さよなら”　先に言うのは<br>
+君？　僕？</p>
+<p>Broken Heart　涙が瞳をぬらし<br>
+Broken Heart　名前も呼べずに抱いた<br>
+震えてる肩先がすべてだった</p>
+<p>赤く染まった舖道　落葉は過ぎてく季節<br>
+恋の終わりはいつも<br>
+ふりむきたくなるもんだね<br>
+もうこれ以上　愛せないさ誰も</p>
+<p>いつか会えるよなんて<br>
+なんだか悲しいセリフを<br>
+無理に言い出す前に<br>
+いつもと変わらぬ感じで<br>
+ああ強がり言い続けてた<br>
+君？　僕？</p>
+<p>Broken Heart　やさしい瞳に涙<br>
+Broken Heart　名前も呼べずに抱いた<br>
+少しずつ　遠ざかる　あの頃だった</p>
+<p>Broken Heart　やさしい瞳に涙<br>
+Broken Heart　名前も呼べずに抱いた<br>
+いつまでも　いつまでも　青春だった</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

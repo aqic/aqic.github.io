@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>10%の雨予報 - みゆき</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「みゆき」オープニング・テーマ (1983)</div>
+
+                    <div class="LyricTitle">10%の雨予報</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">H2O</div>
+                    <div class="LyricStaff">作詞：阿木 燿子<br>作曲：鈴木 キサブロー<br>編曲：萩田 光雄</div>
+
+                    <div class="LyricText">
+<p>裸足のまま 踊りたいね<br>
+今日は Blue sky<br>
+白い雲はアクセサリィ 流れてく</p>
+<p>乙女心は不思議さ<br>
+雲行きがすぐ変わるよ<br>
+さっきまでは 幸福の高気圧さ</p>
+<p>何を考えているの 君の瞳の中には<br>
+10%の雨予報 涙が隠されている</p>
+<p>everyday you are my angel<br>
+everynight you are my devil<br>
+移り気に惑わされて<br>
+ぼくだって 晴のち雨</p>
+<p>everyday you are my angel<br>
+everynight you are my devil<br>
+気まぐれは君の魅力の一つさ</p>
+<p>頬づえつく ピンクの爪<br>
+きっとBlue day<br>
+カフェテラスで笑い声が途切れがち</p>
+<p>女の人は謎だね<br>
+ダイアナの月の女神<br>
+日曜日は予想では 低気圧さ</p>
+<p>はらはらし通しなのさ 君の瞳を横切る<br>
+10%の雨予報 傘を用意しなくちゃ</p>
+<p>everyday you are my angel<br>
+everynight you are my devil<br>
+悪戯と意地悪とが<br>
+混じり合って 雨のち晴</p>
+<p>everyday you are my angel<br>
+everynight you are my devil<br>
+今泣いたカラス またすぐ笑って</p>
+<p>I love you you are my angel<br>
+I love you you are my devil<br>
+気まぐれは君の魅力の一つさ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

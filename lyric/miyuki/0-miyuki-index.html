@@ -1,0 +1,175 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+    <style>
+        /* 标题：图标与文字垂直居中 */
+        .catalog-head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .catalog-head img {
+            width: 48px;
+            height: 48px;
+        }
+
+        /* 作品信息 */
+        .album-head {
+            max-width: 760px;
+            margin: 16px auto 4px;
+            text-align: left;
+        }
+
+        .album-title {
+            font-family: 'MS Mincho', 'Yu Mincho', serif;
+            font-size: 18px;
+            color: #E6D8AE;
+        }
+
+        .album-meta {
+            margin-top: 2px;
+            font-size: 13px;
+            color: #bbbbaa;
+        }
+
+        /* 分组标题：片头曲 / 片尾曲 / 插入歌 */
+        .disc-head {
+            max-width: 760px;
+            margin: 26px auto 0;
+            padding-bottom: 6px;
+            text-align: left;
+            border-bottom: 1px solid #555540;
+        }
+
+        .disc-name {
+            font-family: 'MS Mincho', 'Yu Mincho', serif;
+            font-size: 17px;
+            color: #CC66FF;
+            margin-right: 10px;
+        }
+
+        .disc-sub {
+            font-size: 13px;
+            color: #bbbbaa;
+        }
+
+        /* 曲目列表 */
+        .song-list {
+            list-style: none;
+            padding: 0;
+            margin: 8px auto 0;
+            max-width: 760px;
+            text-align: left;
+            counter-reset: song;
+        }
+
+        .song-list li {
+            padding: 4px 10px;
+            line-height: 1.9;
+        }
+
+        .song-list li::before {
+            counter-increment: song;
+            content: '\2606 ' counter(song) ". ";
+            color: #E6D8AE;
+        }
+
+        .song-list a {
+            font-family: 'MS Mincho', 'Yu Mincho', serif;
+            font-size: 17px;
+        }
+
+        /* 出处说明 */
+        .song-list .note {
+            margin-left: 8px;
+            font-size: 14px;
+            color: #bbbbaa;
+        }
+
+        /* 存疑标记 */
+        .song-list .suspect {
+            font-size: 12px;
+            color: #CC6699;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div style="margin:20px;"> <!-- 内容文字 -->
+                    <div class="LyricCatalog catalog-head"><img src="../images/miyuki.gif" alt="美雪美雪"><span>美雪美雪（みゆき）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head"> <!-- 作品信息 -->
+                        <div class="album-title">《みゆき》美雪美雪</div>
+                        <div class="album-meta">あだち充　1983/3/31 – 1984/4/20　全 37 集　主题歌 4 首 ＋ 插入歌 15 首</div>
+                    </div>
+
+                    <div class="disc-head"><span class="disc-name">片头曲</span><span class="disc-sub">オープニング・テーマ　1 首</span></div>
+                    <ul class="song-list">
+						<li class="LyricItem"><a href="1.ame.html">《10%の雨予報》</a><span class="note">- 电视剧片头曲(1983)</span></li>
+                    </ul>
+                    <div class="disc-head"><span class="disc-name">片尾曲</span><span class="disc-sub">エンディング・テーマ　4 首</span></div>
+                    <ul class="song-list">
+						<li class="LyricItem"><a href="2.lotsofmemories.html">《想い出がいっぱい》</a>-<a href="20.lotsofmemories-bilingual.html">（中译）</a><span class="note">- 电视剧片尾曲·前期(第1–13、20–22话)</span></li>
+						<li class="LyricItem"><a href="3.summerholiday.html">《サマー・ホリデー》</a><span class="note">- 电视剧片尾曲·中期(第14–19话)</span></li>
+						<li class="LyricItem"><a href="4.goodbyeseason.html">《Good-bye シーズン》</a><span class="note">- 电视剧片尾曲·后期(第23–37话)</span></li>
+                    </ul>
+                    <div class="disc-head"><span class="disc-name">插入歌</span><span class="disc-sub">挿入歌・イメージソング（詳細不明）　15 首</span></div>
+                    <ul class="song-list">
+						<li class="LyricItem"><a href="5.boy.html">《ロンリーボーイ・ロンリーガール》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="6.brokenheart.html">《振り向けば Broken Heart》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="7.dream.html">《夢のラジオシティ》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="8.girl.html">《官能少女》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="9.goodbyeday.html">《Goodbye day》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="10.hello.html">《HELLO VIBRATION》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="11.jipushi.html">《ジプシー・ラ》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="12.keserasera.html">《ケ・セラ・セラ》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="13.lily.html">《百合コレクション》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="14.mamii.html">《サントワマミイ》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="15.saraba.html">《さらば青春のハイウェイ》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="16.semaitime.html">《サマータイム・ランデブー》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="17.ume.html">《夢の途中》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="18.want.html">《ウィンター・バスストップ》</a><span class="note">- 电视剧插曲/印象歌(1983)</span></li>
+						<li class="LyricItem"><a href="19.yohdeiru.html">《霧笛が俺を呼んでいる》</a><span class="note">- 电视剧插曲/印象歌(1983)</span> <span class="suspect">※出处待考</span></li>
+                    </ul>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>
