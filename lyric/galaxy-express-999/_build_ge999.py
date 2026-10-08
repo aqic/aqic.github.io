@@ -1,8 +1,13 @@
 # -*- coding: utf-8 -*-
 import os
 
-SRC = r"E:/Documents/GitHub/aqic.github.io/lyric/银河铁道999"
-DST = r"E:/Documents/GitHub/aqic.github.io/lyric/galaxy-express-999"
+# 基于脚本自身位置定位，便于在本目录内独立复用：
+#   BASE = 本脚本所在目录 (galaxy-express-999)
+#   DST  = 输出 HTML / 索引 / _map.py 到本目录
+#   SRC  = 源歌词 txt 放在本目录下的 src/ 子目录（与脚本同级）
+BASE = os.path.dirname(os.path.abspath(__file__))
+DST = BASE
+SRC = os.path.join(BASE, "src")
 IMG = "galaxy-express-999.gif"
 INDEX = "0-galaxy-express-999-index.html"
 
@@ -187,16 +192,22 @@ def bilingual_page(s, body):
 
 # ---------------- 生成 ----------------
 os.makedirs(DST, exist_ok=True)
+os.makedirs(SRC, exist_ok=True)
 
-for s in SONGS:
-    b = body_html(os.path.join(SRC, s["src"]))
-    with open(os.path.join(DST, f'{s["no"]}.{s["slug"]}.html'), "w", encoding="utf-8") as f:
-        f.write(lyric_page(s, b))
-    if s["zh"]:
-        bb = bilingual_twoblocks(os.path.join(SRC, s["src"]), os.path.join(SRC, s["zh"]))
-        with open(os.path.join(DST, f'{s["no"]}.{s["slug"]}-bilingual.html'), "w", encoding="utf-8") as f:
-            f.write(bilingual_page(s, bb))
-    print("built", s["no"], s["slug"], "zh=", bool(s["zh"]))
+_missing = [s["src"] for s in SONGS if not os.path.exists(os.path.join(SRC, s["src"]))]
+if _missing:
+    print(f"[warn] 源目录缺少歌词 txt，跳过歌词页生成：{SRC}")
+    print("        缺失：", _missing)
+else:
+    for s in SONGS:
+        b = body_html(os.path.join(SRC, s["src"]))
+        with open(os.path.join(DST, f'{s["no"]}.{s["slug"]}.html'), "w", encoding="utf-8") as f:
+            f.write(lyric_page(s, b))
+        if s["zh"]:
+            bb = bilingual_twoblocks(os.path.join(SRC, s["src"]), os.path.join(SRC, s["zh"]))
+            with open(os.path.join(DST, f'{s["no"]}.{s["slug"]}-bilingual.html'), "w", encoding="utf-8") as f:
+                f.write(bilingual_page(s, bb))
+        print("built", s["no"], s["slug"], "zh=", bool(s["zh"]))
 
 # ---------------- 索引页 ----------------
 by_no = {s["no"]: s for s in SONGS}
@@ -340,7 +351,10 @@ def check_indent(path):
     return bad
 
 print("--- 缩进规则校验 ---")
-for s in SONGS:
-    b = check_indent(os.path.join(SRC, s["src"]))
-    print(s["slug"], "违规:", b if b else "0")
+if _missing:
+    print("源文件缺失，跳过缩进校验。")
+else:
+    for s in SONGS:
+        b = check_indent(os.path.join(SRC, s["src"]))
+        print(s["slug"], "违规:", b if b else "0")
 print("ALL DONE")
