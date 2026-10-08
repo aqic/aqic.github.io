@@ -18,7 +18,7 @@ IDEOSP = "\u3000"
 
 # ---- 歌曲元数据（已对照网上资料订正出处/制作）----
 SONGS = [
-    # ===== アルバム「élf ANIMATION SONG FILE」(KSCA-59134 / 2000-07-21) 全15曲・収録順 =====
+    # ===== アルバム「élf ANIMATION SONG FILE」(KSCA-59134 / 2000-07-21) 収録順 14 曲（+ 外链 1） =====
     dict(no=1, slug="everybrandnewday", src="elf-everybrandnewday.txt",
          title="Every Brand-new Day",
          prov="アルバム「élf ANIMATION SONG FILE」収録<br>TV アニメーション「下級生」オープニングテーマ",
@@ -108,59 +108,49 @@ SONGS = [
          performer="そのざき みえ（園崎未恵）",
          staff="",
          zh=None),
-    dict(no=15, slug="mimi", src="elf-mimi.txt",
-         title="耳をすませば",
-         prov="アルバム「élf ANIMATION SONG FILE」収録<br>「Reflain Blue」エンディングテーマ",
-         performer="岡本ひかり",
-         staff="",
-         zh="elf-mimi_中.txt"),
     # ===== アルバム未収録の単曲（ゲーム別） =====
-    dict(no=16, slug="haru", src="elf-haru.txt",
+    # --- 同級生２ ---
+    dict(no=15, slug="haru", src="elf-haru.txt",
          title="春を待つ季節",
          prov="Sega Saturn 版「同級生２」エンディングテーマ",
          performer="鳴澤 唯（CV：松下 美由紀）",
          staff="作詞：ドン・マッコウ<br>作・編曲：岩垂 德行",
          zh=None),
-    dict(no=17, slug="natsu", src="elf-natsu.txt",
+    dict(no=16, slug="natsu", src="elf-natsu.txt",
          title="夏色のシソデレラ",
          prov="PC Engine 版「同級生２」主題歌",
          performer="小野寺麻理子（田中美沙）／小野綾子（黒川さとみ）<br>笠原留美（仁科くるみ）／丹下 桜（鈴木美穂）",
          staff="作詞：溝口 功<br>作曲・編曲：岩垂德行",
          zh=None),
-    dict(no=18, slug="onemoment", src="elf-onemoment.txt",
+    dict(no=17, slug="onemoment", src="elf-onemoment.txt",
          title="One Moment（Vocal Version）",
          prov="「同級生II」",
          performer="寺尾友美",
          staff="",
          zh="elf-onemoment_中.txt"),
-    dict(no=19, slug="sweetonyou", src="elf-sweetonyou.txt",
+    dict(no=18, slug="sweetonyou", src="elf-sweetonyou.txt",
          title="Sweet on You（Vocal Version）",
          prov="「同級生II」",
          performer="寺尾友美",
          staff="",
          zh="elf-sweetonyou_中.txt"),
     # ===== エルフ版 下級生 =====
-    dict(no=20, slug="summergirl", src="elf-summergirl.txt",
+    # --- TV アニメーション 下級生 ---
+    dict(no=19, slug="summergirl", src="elf-summergirl.txt",
          title="Summer Girl",
          prov="TV アニメーション「下級生」第5～7話　持田真歩子 テーマソング<br>収録「下級生 オリジナルサウンドトラック」",
          performer="ちざわゆうこ、轟太郎＆淡野保昌",
          staff="作詞：松本はるこ<br>作曲・編曲：轟太郎",
          zh=None),
-    dict(no=21, slug="onethingiknow", src="elf-onethingiknow.txt",
+    dict(no=20, slug="onethingiknow", src="elf-onethingiknow.txt",
          title="One thing I know",
          prov="「下級生」(1999)",
          performer="ちざわゆうこ、轟太郎＆淡野保昌",
          staff="作詞：松本はるこ<br>作曲・編曲：轟太郎",
          zh=None),
     # ===== Reflain Blue =====
-    dict(no=22, slug="omoiteumi", src="elf-omoiteumi.txt",
-         title="想い出の海",
-         prov="「リフレインブルー」エンディング・テーマ",
-         performer="REIKA",
-         staff="",
-         zh="elf-omoiteumi_中.txt"),
-    # ===== らいむいろ戦記譚 =====
-    dict(no=23, slug="rinka", src="elf-rinka.txt",
+    # --- らいむいろ戦記譚 ---
+    dict(no=21, slug="rinka", src="elf-rinka.txt",
          title="凛花",
          prov="「らいむいろ戦記譚」オープニングテーマ (2003)",
          performer="らいむ隊",
@@ -169,12 +159,17 @@ SONGS = [
 ]
 
 # 索引分组（每组合计数器重置，沿用 urusei / 橙路 风格）
+# 外链条目：歌词页已删除，直接指向站内其他专区的对应页面
+EXT_MIMI = 100   # 编号占位（不生成歌词页）
+EXTLINKS = {
+    EXT_MIMI: dict(title="耳をすませば", href="/galgame/refrainblue/ovasong.html", note="Reflain Blue ED"),
+}
+
 GROUPS = [
-    ("アルバム「élf ANIMATION SONG FILE」", "KSCA-59134 / 2000-07-21　全 15 曲（収録順）", list(range(1, 16))),
-    ("同級生２", "アルバム未収録の単曲　4 首", [16, 17, 18, 19]),
-    ("TV アニメーション 下級生", "アルバム未収録の単曲　2 首", [20, 21]),
-    ("Reflain Blue ／ リフレインブルー", "アルバム未収録の単曲　1 首", [22]),
-    ("らいむいろ戦記譚", "1 首", [23]),
+    ("アルバム「élf ANIMATION SONG FILE」", "KSCA-59134 / 2000-07-21　全 15 曲（収録順）", list(range(1, 15)) + [EXT_MIMI]),
+    ("同級生２", "アルバム未収録の単曲　4 首", [15, 16, 17, 18]),
+    ("TV アニメーション 下級生", "アルバム未収録の単曲　2 首", [19, 20]),
+    ("らいむいろ戦記譚", "1 首", [21]),
 ]
 
 # 未収録（歌詞未入手）：只列条目、不生成歌词页
@@ -375,18 +370,20 @@ NOTE = {
     "rureto": "エルフ版下級生 特典", "seamoonlight": "エルフ版下級生 特典",
     "tokimeki": "エルフ版下級生 OP", "light": "同級生２ EXTRA BOX 特典",
     "suki2": "同級生２ Special 卒業生 ED", "voices": "YU-NO 第1・2幕 ED",
-    "mimi": "Reflain Blue ED",
     # アルバム未収録の単曲
     "haru": "SS版 ED", "natsu": "PCE版 主題歌",
     "onemoment": "同級生II", "sweetonyou": "同級生II",
-    "summergirl": "第5～7話 挿入歌", "onethingiknow": "挿入歌",
-    "omoiteumi": "ED", "rinka": "OP",
+    "summergirl": "第5～7話 挿入歌", "onethingiknow": "挿入歌", "rinka": "OP",
 }
 for gname, gsub, nums in GROUPS:
     items = []
     for n in nums:
+        if n in EXTLINKS:                      # 外链条目（歌词页在别的专区）
+            e = EXTLINKS[n]
+            items.append(f'\t\t\t\t\t<li class="LyricItem"><a href="{e["href"]}">《{e["title"]}》</a><span class="note">- {e["note"]}</span></li>')
+            continue
         s = by_no[n]
-        zh_link = f'-<a href="{s["no"]}.{s["slug"]}-bilingual.html">（中译）</a>' if s["zh"] else ""
+        zh_link = f'＆<a href="{s["no"]}.{s["slug"]}-bilingual.html">(中译)</a>' if s["zh"] else ""
         items.append(f'\t\t\t\t\t<li class="LyricItem"><a href="{s["no"]}.{s["slug"]}.html">《{s["title"]}》</a>{zh_link}<span class="note">- {NOTE[s["slug"]]}</span></li>')
     group_html.append(f'''                    <div class="disc-head"><span class="disc-name">{gname}</span><span class="disc-sub">{gsub}</span></div>
                     <ul class="song-list">
@@ -459,7 +456,7 @@ INDEX_TPL = '''<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
 
                     <div class="album-head">
                         <div class="album-title">《ELF エルフ》</div>
-                        <div class="album-meta">élf（エルフ）作品主題歌集　已収録 23 首（专辑 15 ＋ 単曲 8）／未収録 4 首</div>
+                        <div class="album-meta">élf（エルフ）作品主題歌集　已収録 21 首（专辑 14 ＋ 単曲 7）／外链 1 首／未収録 4 首</div>
                     </div>
 
 {groups}
