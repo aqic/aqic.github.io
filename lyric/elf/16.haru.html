@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>春を待つ季節 - ELF</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Sega Saturn 版「同級生２」エンディングテーマ</div>
+
+                    <div class="LyricTitle">春を待つ季節</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">鳴澤 唯（CV：松下 美由紀）</div>
+                    <div class="LyricStaff">作詞：ドン・マッコウ<br>作・編曲：岩垂 德行</div>
+
+                    <div class="LyricText">
+<p>朝早い通學路　人影まばらで<br>
+白い息　手のひらでふくらみ消えてゆく<br>
+友達の關係　續けられそうにない<br>
+せつなさがつぶやいた　心だきしめ<br>
+あなたが好きなの<br>
+ずいぶん前から<br>
+春を待つよに　あなたを待っているのよ<br>
+野に咲くの花のよに</p>
+<p>動きだす交差點　無口な人並<br>
+ショーウイドウ　やせっぽちな夢が移っている<br>
+いつかはほころぶ　淡い陽射しうけて<br>
+来ないことってると　空に言ったの<br>
+あなたはどうなの<br>
+なにを想っているの<br>
+答えみつかるの　私は待っているのよ<br>
+この春を待つ季節</p>
+<p>友達の關係　續けられそうにない<br>
+せつなさがつぶやいた　心だきしめ<br>
+あなたが好きなの<br>
+ずいぶん前から<br>
+春を待つよに　あなたを待っているのよ<br>
+あなたはどうなの<br>
+何を想ってるの<br>
+答えみつかるの　私は待っているのよ</p>
+<p>白い息手のひらで　ふくらみ消えてゆく</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-elf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

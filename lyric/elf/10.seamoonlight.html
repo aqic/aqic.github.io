@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Sea －月のあかり－ - ELF</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「élf ANIMATION SONG FILE」収録<br>「エルフ版 下級生」MUSIC GRAFFITI 特典</div>
+
+                    <div class="LyricTitle">Sea －月のあかり－</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">菊地 由美</div>
+                    <div class="LyricStaff"></div>
+
+                    <div class="LyricText">
+<p>波の音がする　あなたの胸<br>
+頰を寄せて　目を閉じたら　時が止まった</p>
+<p>手探りで　歩いてた　迷路の中で<br>
+探してた　ぬくもりに　やっと出逢えた</p>
+<p>夢を見てもいいの？　ふたりの未来が<br>
+永遠に　重なり合うことを<br>
+見上げた横顔が　微笑みをくれる<br>
+このままで　離さないで　このままずっと</p>
+<p>これから始まる　物語の<br>
+行き先を　決めるのは　ふたりの想い</p>
+<p>人込みの中で　はぐれた日は<br>
+立ち止まる　私のこと　見つけにきてね</p>
+<p>晴れた日も　雨の日も　受けとめながら<br>
+大切に　この恋を　育てて行こう</p>
+<p>夢を見てもいいの？　ふたりの気持ちが<br>
+永遠に　重なり合うことを<br>
+言葉じゃ足りなくて　傳えきれなくて<br>
+こんなにも　あなたのこと　愛してることを</p>
+<p>窗を叩く風　月のあかり<br>
+伸びてゆく　二つの影　ひとつに溶けた<br>
+波の音がする　あなたの胸<br>
+頰を寄せて　目を閉じたら　涙溢れた</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-elf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

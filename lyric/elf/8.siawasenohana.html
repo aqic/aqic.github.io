@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>幸せの花束 - ELF</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「élf ANIMATION SONG FILE」収録<br>「ビ・ヨンド」エンディングテーマ</div>
+
+                    <div class="LyricTitle">幸せの花束</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">そのざき みえ（園崎未恵）</div>
+                    <div class="LyricStaff"></div>
+
+                    <div class="LyricText">
+<p>「生きる」って難しい　頭を抱えたくなるね<br>
+全部投げ出してどこか遠くへ逃げ出したい<br>
+砂を嚙むよな日々が　ずっと續いてゆくようで<br>
+心細くなる自分の未来　ねえ　どうなるの…？</p>
+<p>バシッと決まらなくても　カッコ惡くてもかまわない<br>
+やる気が問題　やることが大事　ねぇ　そうでしょ</p>
+<p>夢の種を蒔こうよ　素敵に育てたなら<br>
+抱えきれないほどの　幸せの花束</p>
+<p>気持ちいい風が吹く場所であなたと出会えたら<br>
+照れくさくたって勇気を出して声かけよう<br>
+怖じけづいたらそこで「OUT!」のサイン點いちゃうよ<br>
+何も始まらず終わってしまう　それじゃ最惡！</p>
+<p>自分が素敵になれば　相手に気持ち屆くんだね<br>
+出たとこ勝負も強気で行ったら　大丈夫</p>
+<p>TOUGH な心になろう　失敗にくじけない<br>
+女の子はいつでも　ガンバリ屋の天使</p>
+<p>夢の種を蒔こうよ　素敵に育てたなら<br>
+抱えきれないほどの　幸せの花束</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-elf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

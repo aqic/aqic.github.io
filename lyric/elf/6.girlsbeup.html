@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Girls be UP! - ELF</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「élf ANIMATION SONG FILE」収録<br>TV アニメーション「下級生」エンディングテーマ</div>
+
+                    <div class="LyricTitle">Girls be UP!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">あっぷ²</div>
+                    <div class="LyricStaff">作詞：山崎明子<br>作曲：pap_lu<br>編曲：岩室晶子</div>
+
+                    <div class="LyricText">
+<p>つかんで（GO UP!）<br>
+その手に（CATCH UP!）ヒミツのちから<br>
+この思いだけは　離さない</p>
+<p>もしあなたが　こっち見たら<br>
+クールな視線で　惑わすの<br>
+とっておきの　シャイな笑顔<br>
+そっと見せれば　成功ね</p>
+<p>ゆっくり　まだ　夢を紡ぎたい<br>
+確かなもの　ほら近くに<br>
+手をのばして</p>
+<p>つかんで（GO UP!）<br>
+その手に（CATCH UP!）ヒミツのちから<br>
+じっとしてられない　ハートが　踴り出すよ<br>
+迷って（WHAT'S UP?）<br>
+恋して（GET UP!）泣いたりしても<br>
+この想いだけは　離さない</p>
+<p>急なデート　あわてないで<br>
+心の準備は　してあるの</p>
+<p>大切だよ　ほかの何よりも<br>
+そんな気持ち　あなただけに<br>
+そう　傳えて</p>
+<p>歌って（GO UP!）<br>
+はじけて（JUMP UP!）星になりたい<br>
+見ているだけじゃイヤ　いっしょに　飛び出そうよ<br>
+ウィンク（MAKE UP!）<br>
+投げたら（HURRY UP!）とりこにさせる<br>
+この想いだけは　負けないよ</p>
+<p>つかんで（GO UP!）<br>
+その手に（CATCH UP!）ヒミツのちから<br>
+この思いだけは　離さない<br>
+歌って（GO UP!）<br>
+はじけて（JUMP UP!）星になりたい<br>
+この想いだけは　負けないよ　負けないよ</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-elf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

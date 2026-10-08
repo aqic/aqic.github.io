@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Every Brand-new Day - ELF</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「élf ANIMATION SONG FILE」収録<br>TV アニメーション「下級生」オープニングテーマ</div>
+
+                    <div class="LyricTitle">Every Brand-new Day</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">安達まり</div>
+                    <div class="LyricStaff">作詞：藤林聖子<br>作曲：くにたけみゆき<br>編曲：高橋一之</div>
+
+                    <div class="LyricText">
+<p>Every Brand-new Day　少しずづ<br>
+Every Step by step　生まれ変わる<br>
+Every Brand-new Day　私らしく新しく<br>
+今日がはじまる</p>
+<p>崩れ落ちそうなココロ<br>
+あわててつなぎ止めてるいつも<br>
+逃げ出しそうな言葉<br>
+何度も傳えようとしてるキミに</p>
+<p>気持ちの糸が全部<br>
+キミに繫がっている<br>
+彈かれる度の聽こえる<br>
+メロディ　抱きしめて</p>
+<p>Every Brand-new Day　少しずづ<br>
+Every Step by step　溶け始めた<br>
+Every Brand-new Day　私らしくささやかな<br>
+恋がはじまる</p>
+<p>破裂しそうなココロ<br>
+深呼吸して押さえるいつも<br>
+切れぎれになる言葉<br>
+何處へも迷わないようにキミへ</p>
+<p>気持ちの風が全部<br>
+キミに逢いたがってる<br>
+搖れ惑う度に聽こえる<br>
+メロディ　優しくて</p>
+<p>Every Brand-new Day　少しずづ<br>
+Every Step by step　生まれ変わる<br>
+Every Brand-new Day　私らしく新しく<br>
+今日がはじまる</p>
+<p>Every Brand-new Day　少しずづ<br>
+Every Step by step　溶け始めた<br>
+Every Brand-new Day　私らしくささやかな<br>
+恋がはじまる</p>
+<p>Every Brand-new Day　少しずづ<br>
+Every Step by step　近づいてる<br>
+Every Brand-new Day　私らしけ誇らしく<br>
+理想の自分に</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-elf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

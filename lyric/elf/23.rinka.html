@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>凛花 - ELF</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らいむいろ戦記譚」オープニングテーマ (2003)</div>
+
+                    <div class="LyricTitle">凛花</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">らいむ隊</div>
+                    <div class="LyricStaff"></div>
+
+                    <div class="LyricText">
+<p>進め！　日の国の空　命　麗しく<br>
+歌え！　ライムの戦士　報われぬ血を流せ</p>
+<p>生き抜く者の定めよ<br>
+死に行く者の定めよ<br>
+その手を離せますか</p>
+<p>護国の戦花(はな)びら　咲き誇れ<br>
+明治の乙女の　気概あれ<br>
+波打つ　維新の風と散る<br>
+防人となれ</p>
+<p>祈れ！　慟哭の友　命　果てるまで<br>
+守れ！　ライムの戦士　報われぬ恋の果て</p>
+<p>勝ち抜く者の涙よ<br>
+負け行く者の涙よ<br>
+想いは同じですか</p>
+<p>さらなる時代の夜明け前<br>
+まばゆき命の声を聴け<br>
+沸き立つ勇志の旗を持つ<br>
+防人となれ</p>
+<p>生き抜く者の定めよ<br>
+死に行く者の定めよ<br>
+その手を離せますか</p>
+<p>護国の戦花(はな)びら　咲き誇れ<br>
+明治の乙女の　気概あれ<br>
+波打つ　維新の風と散る<br>
+防人となれ</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-elf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>FACES - ELF</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「élf ANIMATION SONG FILE」収録<br>「この世の果てで恋を唄う少女 YU-NO」第３幕・第４幕 エンディングテーマ</div>
+
+                    <div class="LyricTitle">FACES</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">そのざき みえ（園崎未恵）</div>
+                    <div class="LyricStaff">作詞：六ツ見純代<br>作曲・編曲：坂本昌之</div>
+
+                    <div class="LyricText">
+<p>見知らぬ顔で埋まった世界は今日も<br>
+答えの出ない爭い抱え續ける</p>
+<p>大事な愛しさは季節を越えられず<br>
+去ってゆくけど</p>
+<p>覺醒（めざ）めてゆく脆い時代の中<br>
+約束の旅が始まって<br>
+壞れながら胸に刻んでいる<br>
+不確かな現実（いま）と自分のため</p>
+<p>探したつもりでいても探されている<br>
+知らずにいれば今頃　無邪気でいれた</p>
+<p>選んでいることが新たなつながりを<br>
+強くしてゆく</p>
+<p>失う程深く求めている<br>
+せつなさは心碎くけど<br>
+境界線越えて挑んでゆく<br>
+終わりなき未来（あす）と戰うため</p>
+<p>覺醒（めざ）めてゆく脆い時代の中<br>
+約束の旅が始まって<br>
+壞れながら胸に刻んでいる<br>
+不確かな現実（いま）と自分のため</p>
+<p>失う程深く求めている<br>
+せつなさは心碎くけど<br>
+境界線越えて挑んでゆく<br>
+終わりなき未来（あす）と戰うため</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-elf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

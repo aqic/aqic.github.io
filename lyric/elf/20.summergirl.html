@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Summer Girl - ELF</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">TV アニメーション「下級生」第5～7話　持田真歩子 テーマソング<br>収録「下級生 オリジナルサウンドトラック」</div>
+
+                    <div class="LyricTitle">Summer Girl</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ちざわゆうこ、轟太郎＆淡野保昌</div>
+                    <div class="LyricStaff">作詞：松本はるこ<br>作曲・編曲：轟太郎</div>
+
+                    <div class="LyricText">
+<p>Let me tell you summer girl, how much I love you;<br>
+Let me tell you summer girl, I'm falling in love with you, summer girl;<br>
+Summer girl, oh my summer girl.</p>
+<p>Let me hold you summer girl, how much I need you,<br>
+Let me hold you summer girl, I'm falling in love with you, summer girl;<br>
+Oh my summer girl.</p>
+<p>What would I say? What would I do? To see you smile at me.<br>
+What would I face? Just stay beside you, oh my summer girl.</p>
+<p>Let me tell you summer girl, how much I love you;<br>
+Let me tell you summer girl, I'm falling in love with you, summer angel;<br>
+Uuu...Summer girl, summer girl<br>
+Oh my summer girl...(Repeat)</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-elf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

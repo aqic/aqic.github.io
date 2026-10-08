@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>One thing I know - ELF</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「下級生」(1999)</div>
+
+                    <div class="LyricTitle">One thing I know</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ちざわゆうこ、轟太郎＆淡野保昌</div>
+                    <div class="LyricStaff">作詞：松本はるこ<br>作曲・編曲：轟太郎</div>
+
+                    <div class="LyricText">
+<p>When i feel painful in my heart. I just sit down and feel the breeze.<br>
+When i feel fearful in my heart. I just sit down and hear the song of birds.</p>
+<p>Don't talk, don't moven don't say a word.<br>
+One thing i know this pain will go.<br>
+Don't rush, don't call, don't ask, don't say a word.<br>
+One thing i know this fear will go.</p>
+<p>When i feel painful in my heart. I just sit down and see the sky.<br>
+When i feel fearful in my heart. I just sit down and feel the warm sun light.</p>
+<p>Don't talk, don't move, don't say a word.<br>
+One thing i know this pain will go.<br>
+Don't rush, don't call, don't ask, don't say a word.<br>
+One thing i know this fear will go.</p>
+<p>and time to start with the hope</p>
+<p>When i feel painful in my heart. I just sit down and see the clouds.<br>
+When i feel fearful in my heart. I just sit down and see the water flows.</p>
+<p>Don't talk. don't move, don't say a word.<br>
+One thing i know this pain will go.<br>
+Don't rush, don't call, don't ask, don't say a word.<br>
+One thing i know this fear will go.</p>
+<p>When i feel painful in my heart. I just sit down and feel the breeze.<br>
+When i feel fearful in my heart. I just sit down and hear the song of birds.</p>
+<p>Don't talk, don't move, don't say a word.<br>
+One thing i know this pain will go.<br>
+Don't rush, don't call, don't ask, don't say a word.<br>
+One thing i know this fear will go.</p>
+<p>and time to start with the hope.</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-elf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

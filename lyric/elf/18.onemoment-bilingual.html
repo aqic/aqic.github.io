@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>One Moment（Vocal Version）（日中対訳） - ELF</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「同級生II」</div>
+
+                    <div class="LyricTitle">One Moment（Vocal Version）（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">寺尾友美</div>
+                    <div class="LyricStaff"></div>
+
+                    <div class="LyricText">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">日本語</div>
+<p>窗を叩く雨　目が覺めた朝<br>
+冬の小鳥や猫きおやすみ<br>
+曇る硝子越しに<br>
+そっと触れてみる<br>
+頬を伝う涙　せつない…</p>
+<p>※せまい籠の中の　私は小鳥ね<br>
+　このままじゃ　何處へもいけないわ<br>
+　戀を語り合ってる　女の子たちには<br>
+　私のこの想い　小夜曲</p>
+<p>壁にかけたまま　真新しい制服<br>
+冬の空に傾ぐ　オリオソ座<br>
+ミラーシェイド越しに<br>
+微笑むあなた<br>
+頬を伝う涙　せつない…</p>
+<p>※くりかえし</p>
+<p>※くりかえし</p>
+<p>岬まで飛んで行きたいな</p>
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+<p>雨点敲击着窗　而醒来的早朝<br>
+冬天的小鸟及猫都还睡着<br>
+隔着蒙蒙玻璃　试着轻轻靠上去<br>
+顺着脸颊流下的泪　令人难过...</p>
+<p>※我就像狭窄笼中的　小鸟哪<br>
+　这样下去　那里也去不得啊<br>
+　对热恋中的　女孩子们而言<br>
+　我的这心情　就如小夜曲般扫兴而难以了解</p>
+<p>壁上挂着　全新制服<br>
+冬季天空中倾斜着　射手座<br>
+透过镜上阴影　看到了微笑的你<br>
+顺着脸颊流下的泪　令人难过...</p>
+<p>Repeat ※twice</p>
+<p>好想飞到天边去</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-elf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>
