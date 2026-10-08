@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>銀河鉄道999（日中対訳） - 銀河鉄道999</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「銀河鉄道999」オープニング(1978)</div>
+
+                    <div class="LyricTitle">銀河鉄道999（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ささきいさお(佐々木 功)、杉並兒童合唱團</div>
+                    <div class="LyricStaff">作詞：橋本淳<br>作曲：平尾昌晃<br>編曲：青木望</div>
+
+                    <div class="LyricText">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">日本語</div>
+<p>汽車は闇をぬけて　光の海へ<br>
+夢がちらばる　無限の宇宙さ<br>
+星の架け橋　わたってゆこう</p>
+<p>☆ひとは誰でも　しあわせさがす<br>
+　旅人のようなもの<br>
+　希望の星に　めぐりあうまで<br>
+　歩きつづけるだろう<br>
+　きっといつかは　君も出会うさ<br>
+　青い小鳥に</p>
+<p>汽車は銀河をこえ　さいはてめざす<br>
+星は宇宙の　停車驛なんだ<br>
+君を招くよ　夢の軌道が<br>
+さすらい人の　すんだ瞳に<br>
+生命が燃えているよ<br>
+心の歌を　くちずさむよに<br>
+歩きつづけるだろう<br>
+泣いてるような　星のかなたに<br>
+青い小鳥が</p>
+<p>☆くりかえし</p>
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+<p>火車脫出灰暗星雲　航向光之海<br>
+那夢想四散　無限的宇宙啊<br>
+渡過星星架起的橋</p>
+<p>☆人(總)是　尋找著幸福<br>
+　像旅人般的東西<br>
+　在與希望之星　相逢之前<br>
+　只能不停奔走吧<br>
+　總有一天　你也会見到的<br>
+　那青鳥</p>
+<p>火車越過銀河　指向最深處<br>
+星星就是宇宙的　車站<br>
+夢的軌道向你招著手啊<br>
+漂泊的人　那澄澈的眼中<br>
+生命正燃燒著<br>
+(他們是)邊哼唱著心之歌<br>
+邊持續著旅途的吧<br>
+如哭泣著一般　在星星彼方<br>
+的青鳥</p>
+<p>☆反覆</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-galaxy-express-999-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

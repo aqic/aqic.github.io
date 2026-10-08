@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>THE GALAXY EXPRESS - 銀河鉄道999</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場版1「銀河鉄道999」エンディング(1979)</div>
+
+                    <div class="LyricTitle">THE GALAXY EXPRESS</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ゴダイゴ</div>
+                    <div class="LyricStaff">作詞：奈良橋陽子、山川啟介<br>作曲：タケカワユキヒデ</div>
+
+                    <div class="LyricText">
+<p>さあ行くんだ　その顔を上げて<br>
+新しい風に　心を洗おう<br>
+古い夢は　置いて行くがいい<br>
+ふたたび始まる　ドラマのために<br>
+あの人はもう　思い出だけど<br>
+君を遠くで　見つめてる</p>
+<p>The Galaxy Express 999<br>
+Will take you on a journey<br>
+A never ending journey<br>
+A journey to the stars</p>
+<p>そうさ君は　気づいてしまった<br>
+やすらぎよりも　素晴らしいものに<br>
+地平線に　消える瞳には<br>
+いつしかまぶしい　男の光<br>
+あの人の目が　うなづいていたよ<br>
+別れも　愛のひとつだと</p>
+<p>The Galaxy Express 999<br>
+Will take you on a journey<br>
+A never ending journey<br>
+A journey to the stars</p>
+<p>The Galaxy Express 999<br>
+Will take you on a journey<br>
+A never ending journey<br>
+A journey to the stars</p>
+<p>The Galaxy Express 999<br>
+Will take you on a journey<br>
+A never ending journey<br>
+A journey to the stars</p>
+<p>The Galaxy Express 999<br>
+Will take you on a journey<br>
+A never ending journey<br>
+A journey to the stars</p>
+<p>The Galaxy Express 999<br>
+Will take you on a journey<br>
+A never ending journey<br>
+A journey to the stars</p>
+<p>The Galaxy Express 999<br>
+Will take you on a journey<br>
+A never ending journey<br>
+A journey to the stars</p>
+<p>The Galaxy Express 999<br>
+Will take you on a journey<br>
+A never ending journey<br>
+A journey to the stars…</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-galaxy-express-999-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

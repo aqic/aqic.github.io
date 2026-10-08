@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>銀河鉄道999 - 銀河鉄道999</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「銀河鉄道999」オープニング(1978)</div>
+
+                    <div class="LyricTitle">銀河鉄道999</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ささきいさお(佐々木 功)、杉並兒童合唱團</div>
+                    <div class="LyricStaff">作詞：橋本淳<br>作曲：平尾昌晃<br>編曲：青木望</div>
+
+                    <div class="LyricText">
+<p>汽車は闇をぬけて　光の海へ<br>
+夢がちらばる　無限の宇宙さ<br>
+星の架け橋　わたってゆこう</p>
+<p>☆ひとは誰でも　しあわせさがす<br>
+　旅人のようなもの<br>
+　希望の星に　めぐりあうまで<br>
+　歩きつづけるだろう<br>
+　きっといつかは　君も出会うさ<br>
+　青い小鳥に</p>
+<p>汽車は銀河をこえ　さいはてめざす<br>
+星は宇宙の　停車驛なんだ<br>
+君を招くよ　夢の軌道が<br>
+さすらい人の　すんだ瞳に<br>
+生命が燃えているよ<br>
+心の歌を　くちずさむよに<br>
+歩きつづけるだろう<br>
+泣いてるような　星のかなたに<br>
+青い小鳥が</p>
+<p>☆くりかえし</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-galaxy-express-999-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

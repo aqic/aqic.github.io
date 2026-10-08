@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Brave Love～ - 銀河鉄道999</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場版3「エターナル・ファンタジー」主題歌(1998)</div>
+
+                    <div class="LyricTitle">Brave Love～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">THE ALFEE</div>
+                    <div class="LyricStaff">作詞・作曲：高見沢俊彦<br>編曲：THE ALFEE</div>
+
+                    <div class="LyricText">
+<p>Can You Hear Me?<br>
+聞こえるかい<br>
+この胸の熱い鼓動が<br>
+偶然のときめきに<br>
+愛は動き始める</p>
+<p>だからいつまでも　少年の瞳で<br>
+明日を見つめてく<br>
+勇気忘れないで</p>
+<p>あ星がきらめく一瞬に<br>
+人は生まれ　消えてゆく<br>
+刻まれる History　夢は一つさ</p>
+<p>愛するためにBravely Fight!<br>
+あきらめないでDestiny<br>
+約束された場所が<br>
+心のUtopia<br>
+未来はけして君を裏切らない</p>
+<p>Can You See Me?<br>
+見えるかい<br>
+希望という名のDream Station<br>
+銀河の海を渡る<br>
+流星のファンタジア</p>
+<p>やがて孤獨な闇が<br>
+その行く手遮ろうとも<br>
+信じた夢だけは<br>
+誰にも讓らないで</p>
+<p>あメビウスの輪の中から<br>
+逃げ出せないままでいる<br>
+時の謎を解く鍵を探して彷徨う</p>
+<p>愛するためにBravely Fight!<br>
+あきらめないでDestiny<br>
+約束された場所が<br>
+二人のUtopia<br>
+未来はけして君を裏切らない</p>
+<p>Get Back To My Love!<br>
+Brave is Your Heart<br>
+その胸に　よみがえれ！<br>
+宇宙（ソラ）に擴がるノスタルジア<br>
+君だけを信じたい</p>
+<p>愛するためにBravely Fight!<br>
+あきらめないでDestiny<br>
+約束された場所が<br>
+永遠のUtopia<br>
+未来はけして君を裏切らない</p>
+<p>Gep up & Go!!<br>
+LaLaLa Galaxy Express 999<br>
+Gep up & Go!!<br>
+LaLaLa Galaxy Express 999</p>
+<p>Gep up & Go!!<br>
+LaLaLa Galaxy Express 999<br>
+Gep up & Go!!<br>
+LaLaLa Galaxy Express 999…</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-galaxy-express-999-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

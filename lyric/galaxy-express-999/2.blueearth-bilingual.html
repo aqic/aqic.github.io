@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>青い地球（日中対訳） - 銀河鉄道999</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「銀河鉄道999」エンディング(1978)</div>
+
+                    <div class="LyricTitle">青い地球（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ささきいさお(佐々木 功)、杉並兒童合唱團</div>
+                    <div class="LyricStaff">作詞：橋本淳<br>作曲：平尾昌晃<br>編曲：青木望</div>
+
+                    <div class="LyricText">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">日本語</div>
+<p>目をとじて　想い出す<br>
+母さんの面影<br>
+遠くはなれた　青い地球よ<br>
+やすらかに眠れ<br>
+メーテル<br>
+またひとつ　星が消えるよ<br>
+赤く　赤く　燃えて<br>
+銀河を流れるように<br>
+銀河を流れるように</p>
+<p>淋しげな　ほほえみが<br>
+母さんに似てるよ<br>
+遠く宇宙に　散らばる星に<br>
+話しかけてるの<br>
+メーテル<br>
+いつの日にか　しあわせつかむよ<br>
+熱く　熱く　燃えた<br>
+生命が輝くように<br>
+生命が輝くように</p>
+<p>メーテル<br>
+母さんを見てるみたいだ<br>
+青く　青く　澄んだ<br>
+瞳に勇気がわくよ<br>
+瞳に勇気がわくよ</p>
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+<p>閉上眼　就想起<br>
+媽媽的面容<br>
+遙遠的　藍色地球啊<br>
+安穩的睡著</p>
+<p>メーテル<br>
+又有顆　星星消失了啊<br>
+火紅　火紅的　燃燒著<br>
+就如同淌流於銀河上般<br>
+淌流於銀河上般</p>
+<p>那寂寞的　笑容<br>
+就像媽媽一樣<br>
+在遙遠宇宙中　四散的星星間<br>
+與我說話的</p>
+<p>メーテル<br>
+何時能　得到幸福呢<br>
+熾熱　熾熱的　燃燒<br>
+如同生命發出光輝般<br>
+生命發出光輝般</p>
+<p>メーテル<br>
+好像看到了媽媽了<br>
+湛藍　湛藍　而清澄的<br>
+眼中湧現出勇気了<br>
+眼中湧現出勇気了</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-galaxy-express-999-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

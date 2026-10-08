@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+    <style>
+        /* 标题：图标与文字垂直居中 */
+        .catalog-head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .catalog-head img { width: 48px; height: 48px; }
+        .album-head { max-width: 760px; margin: 16px auto 4px; text-align: center; }
+        .album-title { font-family: 'MS Mincho', 'Yu Mincho', serif; font-size: 18px; color: #E6D8AE; }
+        .album-meta { margin-top: 2px; font-size: 13px; color: #bbbbaa; }
+        .disc-head {
+            max-width: 760px; margin: 26px auto 0; padding-bottom: 6px;
+            text-align: center; border-bottom: 1px solid #555540;
+        }
+        .disc-name { font-family: 'MS Mincho', 'Yu Mincho', serif; font-size: 17px; color: #CC66FF; margin-right: 10px; }
+        .disc-sub { font-size: 13px; color: #bbbbaa; }
+        .song-list {
+            list-style: none; padding: 0; margin: 8px auto 0; max-width: 760px;
+            text-align: left; counter-reset: song;
+        }
+        .song-list li { padding: 4px 10px; line-height: 1.9; }
+        .song-list li::before {
+            counter-increment: song;
+            content: '\u2606 ' counter(song) ". ";
+            color: #E6D8AE;
+        }
+        .song-list a { font-family: 'MS Mincho', 'Yu Mincho', serif; font-size: 17px; }
+        .song-list .note { margin-left: 8px; font-size: 14px; color: #bbbbaa; }
+        .LyricMemo { max-width: 760px; margin: 18px auto 0; font-size: 13px; color: #bbbbaa; line-height: 1.8; }
+    </style>
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><img src="../images/999.gif"><span>銀河鉄道999（ギャラクシー・エクスプレス999）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《銀河鉄道999》</div>
+                        <div class="album-meta">松本零士原作　テレビアニメ(1978–1981) ＋ 劇場版3作　已收录 7 首代表曲</div>
+                    </div>
+
+                    <div class="disc-head"><span class="disc-name">TVアニメ</span><span class="disc-sub">テレビシリーズ(1978–1981)　主題歌 2 首</span></div>
+                    <ul class="song-list">
+					<li class="LyricItem"><a href="1.galaxyexpress999.html">《銀河鉄道999》</a>-<a href="1.galaxyexpress999-bilingual.html">（中译）</a><span class="note">- オープニング(1978)</span></li>
+					<li class="LyricItem"><a href="2.blueearth.html">《青い地球》</a>-<a href="2.blueearth-bilingual.html">（中译）</a><span class="note">- エンディング(1978)</span></li>
+                    </ul>
+                    <div class="disc-head"><span class="disc-name">劇場版1「銀河鉄道999」</span><span class="disc-sub">1979年公開　主題関連 3 首</span></div>
+                    <ul class="song-list">
+					<li class="LyricItem"><a href="3.takingoff.html">《TAKING OFF!》</a><span class="note">- 挿入歌(1979)</span></li>
+					<li class="LyricItem"><a href="4.thege999.html">《THE GALAXY EXPRESS》</a><span class="note">- エンディング(1979)</span></li>
+					<li class="LyricItem"><a href="5.yasaxii.html">《やさしくしないで》</a>-<a href="5.yasaxii-bilingual.html">（中译）</a><span class="note">- 挿入歌(1979)</span></li>
+                    </ul>
+                    <div class="disc-head"><span class="disc-name">劇場版2「さよなら銀河鉄道999」</span><span class="disc-sub">1981年公開　1 首</span></div>
+                    <ul class="song-list">
+					<li class="LyricItem"><a href="6.sayonara.html">《SAYONARA》</a><span class="note">- エンディング(1981)</span></li>
+                    </ul>
+                    <div class="disc-head"><span class="disc-name">劇場版3「エターナル・ファンタジー」</span><span class="disc-sub">1998年公開　1 首</span></div>
+                    <ul class="song-list">
+					<li class="LyricItem"><a href="7.bravelove.html">《Brave Love～》</a><span class="note">- 主題歌(1998)</span></li>
+                    </ul>
+                    <p class="LyricMemo">※ 本辑仅收录 OP/ED 与剧场版主题・插入歌等 7 首代表曲。TV 插入歌集（『銀河鉄道999 主題歌・挿入歌集』CS-7096）及剧场版其他插入歌（如「想い出涙色」「LOVE LIGHT」「さよなら」等）另有未收录曲目。</p>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

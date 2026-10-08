@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>TAKING OFF! - 銀河鉄道999</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場版1「銀河鉄道999」挿入歌(1979)</div>
+
+                    <div class="LyricTitle">TAKING OFF!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ゴダイゴ</div>
+                    <div class="LyricStaff">作詞：奈良橋陽子、山川啟介<br>作曲：タケカワユキヒデ</div>
+
+                    <div class="LyricText">
+<p>明日の汽笛が君にも<br>
+聞こえるだろう<br>
+汗ばむ夢の切符を　握りしめろ<br>
+年老いた大地を　思いきり蹴って<br>
+星たちの彼方へ　さあ飛び立て<br>
+I'm leaving,I'm flying<br>
+I'm taking off to the unknown<br>
+新しい星を　さがすんだ<br>
+TAKING OFF TAKING OFF<br>
+誰も行かない未来へ</p>
+<p>若さが光を追いぬき　走りつづける<br>
+自由をたたえ広がる　まぶしい闇<br>
+君だけを待ってる　何かがあるはず<br>
+美しい銀河の　消える果てに<br>
+I'm leaving,I'm flying<br>
+I'm taking off to the unknown<br>
+見慣れたきのうは　ふりむくな</p>
+<p>TAKING OFF TAKING OFF<br>
+誰も行かない未来へ</p>
+<p>TAKING OFF TAKING OFF<br>
+誰も行かない未来へ</p>
+<p>TAKING OFF TAKING OFF<br>
+誰も行かない未来へ…</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-galaxy-express-999-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

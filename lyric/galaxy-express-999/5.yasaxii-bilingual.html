@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>やさしくしないで（日中対訳） - 銀河鉄道999</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場版1「銀河鉄道999」挿入歌(1979)</div>
+
+                    <div class="LyricTitle">やさしくしないで（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">かおりくみこ</div>
+                    <div class="LyricStaff">作詞：中原葉子<br>作曲：中村泰<br>編曲：青木望</div>
+
+                    <div class="LyricText">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">日本語</div>
+<p>何が欲しいというの<br>
+私　それとも愛<br>
+翼癒す鳥たちも<br>
+私を欲しいと騷がしい<br>
+壞れたおもちゃ箱を<br>
+子供みたいに<br>
+抱えこんで　涙ぐんで<br>
+それでどうなるの</p>
+<p>何が欲しいというの<br>
+私　それとも愛<br>
+疲れはてた心には<br>
+優しくしないで　させないで<br>
+誰でも昔話　一つや二つ<br>
+大事そうに語るけれど<br>
+それでどうなるの</p>
+<p>誰でも昔話　一つや二つ<br>
+大事そうに語るけれど<br>
+それでどうなるの</p>
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+<p>到底想要什么呢<br>
+是我还是爱<br>
+抚慰翅膀的鸟儿们<br>
+也喧闹着想要我<br>
+就像抱着弄坏了玩具箱的孩子<br>
+紧紧地抱在怀里含着眼泪<br>
+那又能怎么样呢</p>
+<p>到底想要什么呢<br>
+是我还是爱<br>
+疲惫已极的心灵<br>
+不要待它温柔<br>
+别对它温柔<br>
+谁都有一两件往事<br>
+虽然像珍宝一般的倾诉着<br>
+那又能怎么样呢</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-galaxy-express-999-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>
