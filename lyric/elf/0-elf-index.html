@@ -7,40 +7,7 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/lyric/lyric.css?v=11">
     <link rel="icon" href="/image/logo.webp" type="image">
-    <style>
-        /* 标题：图标与文字垂直居中 */
-        .catalog-head {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-        .catalog-head img { width: 48px; height: 48px; }
-        .album-head { max-width: 760px; margin: 16px auto 4px; text-align: center; }
-        .album-title { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 18px; color: #E6D8AE; }
-        .album-meta { margin-top: 2px; font-size: 13px; color: #bbbbaa; }
-        .disc-head {
-            max-width: 760px; margin: 26px auto 0; padding-bottom: 6px;
-            text-align: center; border-bottom: 1px solid #555540;
-        }
-        .disc-name { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 17px; color: #CC66FF; margin-right: 10px; }
-        .disc-sub { font-size: 13px; color: #bbbbaa; }
-        .song-list {
-            list-style: none; padding: 0; margin: 8px auto 0; max-width: 760px;
-            text-align: left; counter-reset: song;
-        }
-        .song-list li { padding: 4px 10px; line-height: 1.9; }
-        .song-list li::before {
-            counter-increment: song;
-            content: '✦ ' counter(song) ". ";
-            color: #E6D8AE;
-        }
-        .song-list a { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 17px; }
-        .song-list .note { margin-left: 8px; font-size: 14px; color: #bbbbaa; font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; }
-        .song-list-missing li { opacity: .7; }
-        .song-list-missing li::before { color: #8a8a7a; }
-        .LyricMemo { max-width: 760px; margin: 18px auto 0; font-size: 13px; color: #bbbbaa; line-height: 1.8; text-align: left; }
-    </style>
+    <link rel="stylesheet" href="/lyric/index.css?v=1">
 </head>
 
 <body>

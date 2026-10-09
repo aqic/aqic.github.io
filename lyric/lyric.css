@@ -54,7 +54,6 @@
 	{width: auto; margin: 20px 14px 0; border: 0; border-top: 1px solid #E6D8AE;}
 .LyricBack
 	{font-size: 13px; text-align: left; margin-top: 14px;}
-.LyricMemo
-	{font-size: 14px; color: #bbbbaa;}
+/* .LyricMemo（歌单页底部备注）已移至 /lyric/index.css，避免两处重复定义 */
 .LyricVideo
 	{color: #DFFFFF;}
