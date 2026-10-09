@@ -179,7 +179,7 @@ else:
 # ---------------- 索引页 ----------------
 by_no = {s["no"]: s for s in SONGS}
 group_html = []
-NOTE = {"shenhua": "插曲／印象曲(1999)", "wish": "原声收录(2000)"}
+NOTE = {"shenhua": "插曲／印象歌(1999)", "wish": "原声收录(2000)"}
 for gname, gsub, nums in GROUPS:
     items = []
     for n in nums:
@@ -249,7 +249,7 @@ INDEX_TPL = '''<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
             font-size: 17px;
             color: #777766;
         }}
-        .LyricMemo {{ max-width: 760px; margin: 18px auto 0; font-size: 13px; color: #bbbbaa; line-height: 1.8; }}
+        .LyricMemo {{ max-width: 760px; margin: 18px auto 0; font-size: 13px; color: #bbbbaa; line-height: 1.8; text-align: left; }}
     </style>
 </head>
 
