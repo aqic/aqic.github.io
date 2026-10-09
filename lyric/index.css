@@ -29,17 +29,7 @@
 .disc-name { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif; font-size: 17px; color: #CC66FF; margin-right: 10px; }
 .disc-sub { font-size: 13px; color: #bbbbaa; font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif; }
 
-/* ===== 单曲区的年份小标题（urusei-yatsura） ===== */
-.year-head {
-    max-width: 760px;
-    margin: 18px auto 0;
-    padding-left: 10px;
-    text-align: left;
-    font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif;
-    font-size: 15px;
-    color: #BFFFBF;
-    border-left: 3px solid #BFFFBF;
-}
+/* 注：原 .year-head（年份小标题）已随 urusei 单曲区改为 TV/剧场版/OVA 分组而停用，已移除 */
 
 /* ===== 曲目列表：✦ 1.《歌名》 - 出处(年份) =====
    编号由 CSS 计数器生成，跨分组连续；✦ 为 U+2726（实心四芒星），勿写成 U+2606 空心星 */
@@ -70,10 +60,6 @@
     font-size: 17px;
     color: #777766;
 }
-/* 旧式缺歌词列表（elf） */
-.song-list-missing li { opacity: .7; }
-.song-list-missing li::before { color: #8a8a7a; }
-
 /* 存疑标记（miyuki） */
 .song-list .suspect { font-size: 12px; color: #CC6699; }
 
