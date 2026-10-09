@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Dancing Star - うる星やつら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=12">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「うる星やつら」オープニング②(1982)</div>
+
+                    <div class="LyricTitle">Dancing Star</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">小泉泉美</div>
+                    <div class="LyricStaff">作詞：伊藤アキラ<br>作曲：小林泉美<br>編曲：安西史孝</div>
+
+                    <div class="LyricText">
+<p>都会が寝静まるころ　男はさそり座に変る<br>女は乙女座になる　おどれ Dancing Dancing Night<br>心をくすぐる指を　ふたりはたくみにすべらせ<br>不思議な宇宙の果てで　おどれ Dancing Dancing Star<br>もう一度あなたから　愛してるよなんて言ってよ<br>こんな時誰だって　嘘でも夢がほしいの<br>すぐ夜明けがくる　愛が消えてゆく<br>すぐ一人になる　ただそれが怖いの<br>短く燃え尽きる夜　男は星屑に変る<br>女は流星になる　おどれ Dancing Dancing Star</p>
+<p>思い切り抱きしめて　帰したくないなんて言ってよ<br>今夜こそ二人きり　口付けだけに酔いたい<br>ほら私の目にあなたが映って　ほら私の目にあなたが美しい<br>短く燃え尽きる夜　男は星屑に変る<br>女は流星になる　おどれ Dancing Dancing Star</p>
+<p>都会が寝静まるころ　男はさそり座に変る<br>女は乙女座になる　おどれ Dancing Dancing Night<br>短く燃え尽きる夜　男は星屑に変る<br>女は流星になる　おどれ Dancing Dancing Star<br>おどれ Dancing Dancing Star　おどれ Dancing Dancing Star</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-urusei-yatsura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

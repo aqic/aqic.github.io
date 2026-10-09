@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>マルガリータ - うる星やつら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=12">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「うる星やつら」挿入歌(1983)</div>
+
+                    <div class="LyricTitle">マルガリータ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ヘレン笹野</div>
+                    <div class="LyricStaff">作詞：安藤芳彦<br>作曲：小林泉美</div>
+
+                    <div class="LyricText">
+<p>誰でもすぐ恋に落ちる　それが不思議なカクテル<br>マルガリータ　冷えた二人醒めた心<br>試してみて　どうぞこのカクテル<br>一口めで目がうるんできて　二口めでじっとしてられない<br>夢見る心　頬をよせあった　あのころのように<br>二人は激しい愛のとりこ　どうぞ二人で<br>お飲みなさいな　魔法のカクテル<br>情熱のマルガリータ</p>
+<p>それは遠い南の国　恋の都のカクテル<br>マルガリータ　片想いにしずんだ夜<br>試してみて　どうぞこのカクテル<br>一口めで忘れられそう　二口めで心がよみがえる<br>誰かに声かけ　踊りだしそうよ<br>きっと朝までに　すてきな恋人見つかるでしょう<br>だからあなたも　お飲みなさいな<br>不思議なカクテル　灼熱のマルガリータ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-urusei-yatsura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>HELLO VIBRATION - みゆき</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=12">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「みゆき」挿入歌・イメージソング (1983)</div>
+
+                    <div class="LyricTitle">HELLO VIBRATION</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">H2O</div>
+                    <div class="LyricStaff">作詞：ちあき 哲也<br>作曲：星 勝<br>編曲：星 勝</div>
+
+                    <div class="LyricText">
+<p>Baby あなたにめぐり逢えたとたん<br>
+馬鹿だね こんなに<br>
+好きになってしまった<br>
+Ooh...<br>
+Baby いくつか傷のついた胸は<br>
+つきあうはかなさ<br>
+きっと知っていたのに</p>
+<p>恋は Hello Vibrations<br>
+いつも 惑いの初恋 Vibrations</p>
+<p>Baby 聞きたい そして聞き出せない<br>
+どこまで本気か<br>
+いいさ 時にまかせて<br>
+Ooh...<br>
+Baby 踊れば 夜は光る翼<br>
+このまま月へも<br>
+２人飛んでゆけそう</p>
+<p>恋は Hello Vibrations<br>
+熱もあの日の初恋 Vibrations</p>
+<p>だからHello Vibrations<br>
+せめてあなたも感じて Vibrations<br>
+Let's Get Gether</p>
+<p>Baby １日 それは1,000の月日<br>
+嫌だね 待つのは<br>
+急にひとりぼっちで<br>
+Ooh...<br>
+Baby あなたのどこにそんな力<br>
+今では愛へと<br>
+迷い込んだみたいさ</p>
+<p>恋は Hello Vibrations<br>
+いつも 惑いの初恋 Vibrations</p>
+<p>だからHello Vibrations<br>
+せめてあなたも感じて Vibrations<br>
+Let's Get Gether</p>
+<p>いちどは失くしたすべてが<br>
+鮮やかに 今 Vibration</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

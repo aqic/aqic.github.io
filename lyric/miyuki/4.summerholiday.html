@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>サマー・ホリデー - みゆき</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=12">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「みゆき」エンディング・テーマ (1983)</div>
+
+                    <div class="LyricTitle">サマー・ホリデー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">河合 美智子</div>
+                    <div class="LyricStaff">作詞：中里 綴<br>作曲：吉田 勝彥<br>編曲：星 勝</div>
+
+                    <div class="LyricText">
+<p>もうすぐはいる夏休み<br>
+私を誘ってほしいの<br>
+あなたは先に School days<br>
+卒業してゆく人</p>
+<p>届いたかしらラブレター<br>
+返事を待っているの<br>
+おちつきのない毎日<br>
+プランだけ先走り</p>
+<p>Summer holiday 過ごしたいな<br>
+あなたと夏休み<br>
+Summer holiday 過ごしたいな<br>
+白いボート 沖にだして<br>
+そのまま流されてもいい</p>
+<p>鏡の前でつけてみる<br>
+買ったばかりの水着<br>
+波に濡れたら微妙に<br>
+色が変わるはずよ</p>
+<p>夏の盛りの街角で<br>
+偶然見たふたり連れ<br>
+楽しそうに笑うあなた<br>
+お似合いのガール‧フレンド</p>
+<p>Summer holiday もう終わる<br>
+悲しい夏休み<br>
+Summer holiday もう終わる<br>
+涙ぐんで にじむ景色<br>
+待ち疲れただけの季節</p>
+<p>Summer holiday もう終わる<br>
+悲しい夏休み<br>
+Summer holiday もう終わる<br>
+白いままの肌を見つめ<br>
+大人びてゆくの私<br>
+大人びてゆくの私</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

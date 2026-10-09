@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>BIGIN THE 綺麗 - うる星やつら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=12">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場用「うる星やつら　オンリー・ユー」主題歌</div>
+
+                    <div class="LyricTitle">BIGIN THE 綺麗</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">UL-SAYS</div>
+                    <div class="LyricStaff">作詞：松井五郎<br>作曲・編曲：羽田一郎</div>
+
+                    <div class="LyricText">
+<p>天使がはじいてた　恋の矢の代わり　乙女の願い事　かなえるのはなに？<br>ごきげんな太陽　瞳にまぶして　まれにみる微笑み　誰にあげましょう</p>
+<p>愛はたった一つの　（そうね）　わたしだけの宝石　（そうね）<br>大丈夫よ　輝くまでがんばろう</p>
+<p>あなたとHAPPYEND　したいからいま　つよい決心(きもち)で　BIGIN THE 綺麗<br>誰でも１００％　素敵になれる　いつも夢中で　あなたを愛したい</p>
+<p>風のSHOW WINDOW　見つけた夏服　ときめく予感から　なにかがはじまる</p>
+<p>だから魔法のように　（そうね）　運命は変わるもの　（そうね）<br>元気だけは　忘れないでがんばろう</p>
+<p>あなたをひとりじめに　したいからいま　かなり本気で　BIGIN THE 綺麗<br>憧れ追いかける　気持ちが好きよ　いつも自分に　夢中になりたい</p>
+<p>愛があれば何でも　（そうよ）　できないことはないわ　（そうよ）<br>大丈夫よ　手に手をとりがんばろう</p>
+<p>あなたとHAPPYEND　したいからいま　つよい決心で　BIGIN THE 綺麗<br>誰でも１００％　素敵になれる　いつもかわいい　わたしをあげたい</p>
+<p>あなたをひとりじめに　したいからいま　かなり本気で　BIGIN THE 綺麗<br>憧れ追いかける　気持ちが好きよ　いつも夢中で　あなたを愛したい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-urusei-yatsura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

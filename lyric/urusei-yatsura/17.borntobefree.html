@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Born To Be Free - うる星やつら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=12">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場用「うる星やつら３　リメンバー・マイ・ラブ」オープニング(1985)</div>
+
+                    <div class="LyricTitle">Born To Be Free</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ステファニー</div>
+                    <div class="LyricStaff">作詞：Ralph McCathy<br>作曲：タケカワユキヒデ<br>編曲：土方隆行</div>
+
+                    <div class="LyricText">
+<p>No more runnin' for cover　We've got one another<br>One sweet dream we can borrow　At least until tomorrow</p>
+<p>Well we made it this far　There ain't no stopping us now<br>Some people say there's no way to win　We will anyhow</p>
+<p>※ We were born to be free　We make our own destiny<br>　We'll live and love as we please　'Cuz we were born to be free</p>
+<p>Deep in the heart of darkness　We found the luckiest star<br>Kiss me baby, let's get started　We're goin' just as we are</p>
+<p>In the heat of the night　When there ain't nobody around<br>Makin' a break for the light　Till dawn comes tumblin' down</p>
+<p>※　繰返し</p>
+<p>In the heat of the night　There ain't nobody around<br>Makin' a break for the light　Till dawn comes tumblin' down</p>
+<p>※　繰返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-urusei-yatsura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>
