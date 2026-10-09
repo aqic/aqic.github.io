@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Hold On - SONY 系列</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">やるドラ「サンパギータ」エンディング</div>
+
+                    <div class="LyricTitle">Hold On</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Marine（マリーン）</div>
+                    <div class="LyricStaff">作詞：新井明子<br>作曲：青木秀一<br>編曲：田代隆広</div>
+
+                    <div class="LyricText">
+<p>夜が終わらなければ　いいと思った<br>
+二度と目覺めなくても　いいと思った</p>
+<p>あなたの胸に　抱かれたときの<br>
+鼓動が　心　溶かす</p>
+<p>※Hold on もう迷わずに<br>
+　Youe love 進んでゆける<br>
+　あなたと出会えた　場所から始める<br>
+　Hold on 会いたい気持ち<br>
+　Your love 痛みに変わる<br>
+　約束した日のあなたの声を<br>
+　耳に残して</p>
+<p>いつも過ちばかり　くり返していた<br>
+私　導いたのは　あなたの強さ</p>
+<p>子供の頃に　感じたような<br>
+柔らかな手で　つつむ</p>
+<p>Hold on 幸せなんて<br>
+Your love 知らなくていい<br>
+凍えた思いは過去に消えていた<br>
+Hold on 二人で生きた<br>
+Your love 時を抱きしめ<br>
+もう一度あなたに会える時まで<br>
+振り返らない</p>
+<p>※Repeat</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sony-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

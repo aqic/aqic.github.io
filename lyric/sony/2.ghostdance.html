@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>GHOST DANCE - SONY 系列</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">やるドラ「雪割りの花」エンディング</div>
+
+                    <div class="LyricTitle">GHOST DANCE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Yu-Kalie</div>
+                    <div class="LyricStaff">作詞‧曲：岩村ゆかり<br>編曲：上村佳弘 & 今井了介</div>
+
+                    <div class="LyricText">
+<p>いつか伝え聞いた　はるか遠い森の雪どけ<br>
+蒼い月の光　凍えそうな背中を照らしてる</p>
+<p>ささやかな思い出の　かけらを踏みしめ<br>
+精靈たちの囁きに　両手を組み祈りを捧げる</p>
+<p>記憶の片すみに　かすかに残る<br>
+静かに語り合った　２人の日々よ ...ooh...</p>
+<p>愛を知っただけで　こんなに淋しいものかと<br>
+冬が過ぎ去った時から　あなたはまた思い始める</p>
+<p>河は流れ始める　春の訪れを告げるために<br>
+赤い夕なぎに陽炎　ぼんやりと横顔映し出す</p>
+<p>忘れてた幼い頃　痛めた傷あと<br>
+族長たちの哀しみに　今もその心を震わす</p>
+<p>記憶のかたすみに　かすかに見える<br>
+静かに舞い踊る　２人のゴースト‧ダンス ...ooh...</p>
+<p>いつか伝え聞いた　はるか遠い森の雪どけ<br>
+蒼い月の光 ...ooh...</p>
+<p>いつか伝え聞いた　はるかな雪どけ<br>
+蒼い月の光 ...ooh...</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sony-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>
