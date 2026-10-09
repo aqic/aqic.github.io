@@ -3,8 +3,9 @@
    加载顺序：/style.css → /lyric/lyric.css → /lyric/index.css，故本表可覆盖前两者。
    注意：父级 .main-section 是「text-align:center + flex 列居中」，
    整块内容靠 max-width + margin:0 auto 居中，内部文字再按需左对齐。
-   日文字体统一 MS Gothic（ゴシック/黑体），拉丁字符仍走 Tahoma/Arial，
-   故字体栈中 MS Gothic 不放在第一位。 */
+   字体策略：日文假名/日文汉字 → MS Gothic（ゴシック/黑体）；
+   简体专有字（剧/场/题/关等，日文字体无字形）→ Microsoft YaHei（同为黑体风格），
+   两者衔接后风格统一；若不加雅黑回退，简体字会掉进宋体造成一行字体混杂。 */
 
 /* ===== 标题：图标与文字垂直居中 ===== */
 .catalog-head {
@@ -17,7 +18,7 @@
 
 /* ===== 作品 / 专辑信息 ===== */
 .album-head { max-width: 760px; margin: 16px auto 4px; text-align: center; }
-.album-title { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 18px; color: #E6D8AE; }
+.album-title { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif; font-size: 18px; color: #E6D8AE; }
 .album-meta { margin-top: 2px; font-size: 13px; color: #bbbbaa; }
 
 /* ===== 分组标题：Disc 1 / 片头曲 / 单曲 / 未收录 ===== */
@@ -25,8 +26,8 @@
     max-width: 760px; margin: 26px auto 0; padding-bottom: 6px;
     text-align: center; border-bottom: 1px solid #555540;
 }
-.disc-name { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 17px; color: #CC66FF; margin-right: 10px; }
-.disc-sub { font-size: 13px; color: #bbbbaa; }
+.disc-name { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif; font-size: 17px; color: #CC66FF; margin-right: 10px; }
+.disc-sub { font-size: 13px; color: #bbbbaa; font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif; }
 
 /* ===== 单曲区的年份小标题（urusei-yatsura） ===== */
 .year-head {
@@ -34,7 +35,7 @@
     margin: 18px auto 0;
     padding-left: 10px;
     text-align: left;
-    font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif;
+    font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif;
     font-size: 15px;
     color: #BFFFBF;
     border-left: 3px solid #BFFFBF;
@@ -53,19 +54,19 @@
     content: '✦ ' counter(song) ". ";
     color: #E6D8AE;
 }
-.song-list a { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 17px; }
+.song-list a { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif; font-size: 17px; }
 
 /* 出处说明：跟在歌名后，字号略小、颜色稍暗。
    必须显式声明字体栈，否则继承 body 的 Tahoma/Arial（无 MS Gothic），
    汉字与 ① 会回退宋体，造成同一行字体混杂 */
 .song-list .note {
     margin-left: 8px; font-size: 14px; color: #bbbbaa;
-    font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif;
+    font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif;
 }
 
 /* 缺歌词的曲目：仅列歌名，灰显不可点 */
 .song-list .LyricMissing .mtitle {
-    font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif;
+    font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif;
     font-size: 17px;
     color: #777766;
 }
