@@ -32,7 +32,7 @@ SONGS = [
 
 # 索引分组（每组合计数器重置，沿用 urusei / 橙路 风格）
 GROUPS = [
-    ("主題歌・挿入歌", "「シェンムー」関連　2 首", [1, 2]),
+    ("主题曲・插曲", "「莎木」相关　2 首", [1, 2]),
 ]
 
 # ---------------- 解析工具 ----------------
@@ -179,16 +179,29 @@ else:
 # ---------------- 索引页 ----------------
 by_no = {s["no"]: s for s in SONGS}
 group_html = []
-NOTE = {"shenhua": "挿入歌／イメージソング(1999)", "wish": "サウンドトラック収録(2000)"}
+NOTE = {"shenhua": "插曲／印象曲(1999)", "wish": "原声收录(2000)"}
 for gname, gsub, nums in GROUPS:
     items = []
     for n in nums:
         s = by_no[n]
-        zh_link = f'-<a href="{s["no"]}.{s["slug"]}-bilingual.html">（中译）</a>' if s["zh"] else ""
+        zh_link = f'＆<a href="{s["no"]}.{s["slug"]}-bilingual.html">(中译)</a>' if s["zh"] else ""
         items.append(f'\t\t\t\t\t<li class="LyricItem"><a href="{s["no"]}.{s["slug"]}.html">《{s["title"]}》</a>{zh_link}<span class="note">- {NOTE[s["slug"]]}</span></li>')
     group_html.append(f'''                    <div class="disc-head"><span class="disc-name">{gname}</span><span class="disc-sub">{gsub}</span></div>
                     <ul class="song-list">
 {chr(10).join(items)}
+                    </ul>''')
+
+# 未收录曲目：灰显不可点（沿用 urusei 既有原则）
+MISSING = [
+    ("You're my only…… ～シェンムーのささやき～", "主题曲(1999)／歌：Kuming"),
+]
+_missing_items = [
+    f'\t\t\t\t\t<li class="LyricItem LyricMissing"><span class="mtitle">《{t}》</span><span class="note">- {note}（未收录）</span></li>'
+    for t, note in MISSING
+]
+group_html.append(f'''                    <div class="disc-head"><span class="disc-name">未收录</span><span class="disc-sub">歌词未入手{len(MISSING)} 首</span></div>
+                    <ul class="song-list">
+{chr(10).join(_missing_items)}
                     </ul>''')
 
 INDEX_TPL = '''<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
@@ -229,7 +242,13 @@ INDEX_TPL = '''<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
             color: #E6D8AE;
         }}
         .song-list a {{ font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 17px; }}
-        .song-list .note {{ margin-left: 8px; font-size: 14px; color: #bbbbaa; }}
+        .song-list .note {{ margin-left: 8px; font-size: 14px; color: #bbbbaa; font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; }}
+        /* 缺歌词的曲目：仅列歌名，灰显不可点 */
+        .song-list .LyricMissing .mtitle {{
+            font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif;
+            font-size: 17px;
+            color: #777766;
+        }}
         .LyricMemo {{ max-width: 760px; margin: 18px auto 0; font-size: 13px; color: #bbbbaa; line-height: 1.8; }}
     </style>
 </head>
@@ -259,7 +278,7 @@ INDEX_TPL = '''<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
                     </div>
 
 {groups}
-                    <p class="LyricMemo">※ 本地收录 2 首（「莎花～江清日抱花歌～」／「Wish...」）。莎木系列另一首 vocal 主题曲「You're my only…… ～シェンムーのささやき～」（歌：Kuming，1999年8月4日発売单曲）暂无歌词，未收录。</p>
+                    <p class="LyricMemo">※ 本辑收录 2 首已整理歌词，另列 1 首暂无歌词的曲目。</p>
 
                     <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
 

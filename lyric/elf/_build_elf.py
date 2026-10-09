@@ -18,7 +18,7 @@ IDEOSP = "\u3000"
 
 # ---- 歌曲元数据（已对照网上资料订正出处/制作）----
 SONGS = [
-    # ===== アルバム「élf ANIMATION SONG FILE」(KSCA-59134 / 2000-07-21) 収録順 14 曲（+ 外链 1） =====
+    # ===== 专辑「élf ANIMATION SONG FILE」(KSCA-59134 / 2000-07-21) 收录顺序 14 首（+ 外链 1） =====
     dict(no=1, slug="everybrandnewday", src="elf-everybrandnewday.txt",
          title="Every Brand-new Day",
          prov="アルバム「élf ANIMATION SONG FILE」収録<br>TV アニメーション「下級生」オープニングテーマ",
@@ -108,7 +108,7 @@ SONGS = [
          performer="そのざき みえ（園崎未恵）",
          staff="",
          zh=None),
-    # ===== アルバム未収録の単曲（ゲーム別） =====
+    # ===== 专辑未收录的单曲（按游戏分） =====
     # --- 同級生２ ---
     dict(no=15, slug="haru", src="elf-haru.txt",
          title="春を待つ季節",
@@ -166,16 +166,16 @@ EXTLINKS = {
 }
 
 GROUPS = [
-    ("アルバム「élf ANIMATION SONG FILE」", "KSCA-59134 / 2000-07-21　全 15 曲（収録順）", list(range(1, 15)) + [EXT_MIMI]),
-    ("同級生２", "アルバム未収録の単曲　4 首", [15, 16, 17, 18]),
-    ("TV アニメーション 下級生", "アルバム未収録の単曲　2 首", [19, 20]),
+    ("专辑「élf ANIMATION SONG FILE」", "KSCA-59134 / 2000-07-21　全 15 首（收录顺序）", list(range(1, 15)) + [EXT_MIMI]),
+    ("同級生２", "专辑未收录的单曲　4 首", [15, 16, 17, 18]),
+    ("电视动画「下級生」", "专辑未收录的单曲　2 首", [19, 20]),
     ("らいむいろ戦記譚", "1 首", [21]),
 ]
 
-# 未収録（歌詞未入手）：只列条目、不生成歌词页
+# 未收录（歌词未入手）：只列条目、不生成歌词页
 MISSING = [
     dict(title="羽のない天使", note="エルフ版 下級生 ED2", performer="茶山莉子"),
-    dict(title="Motion", note="エルフ版 下級生 挿入歌", performer="安達まり"),
+    dict(title="Motion", note="エルフ版 下級生 插曲", performer="安達まり"),
     dict(title="アイシテル…！", note="恋姫 2001年 続第1巻 ED", performer="Millio"),
     dict(title="Forever Precious Love", note="恋姫 2001年 続第2巻 ED", performer="Millio"),
 ]
@@ -362,18 +362,18 @@ else:
 by_no = {s["no"]: s for s in SONGS}
 group_html = []
 NOTE = {
-    # アルバム「élf ANIMATION SONG FILE」収録曲（带上所属作品，便于辨识）
-    "everybrandnewday": "TVアニメ下級生 OP", "eternal": "ドラゴンナイト４ ED",
-    "face": "YU-NO 第3・4幕 ED", "color": "同級生２ TV編集版 OP",
-    "suki": "エルフ版下級生 ED", "girlsbeup": "TVアニメ下級生 ED",
-    "naze": "恋姫 ED", "siawasenohana": "ビ・ヨンド ED",
+    # 专辑「élf ANIMATION SONG FILE」收录曲（带上所属作品，便于辨识）
+    "everybrandnewday": "TVアニメ下級生 片头曲", "eternal": "ドラゴンナイト４ 片尾曲",
+    "face": "YU-NO 第3・4幕 片尾曲", "color": "同級生２ TV編集版 片头曲",
+    "suki": "エルフ版下級生 片尾曲", "girlsbeup": "TVアニメ下級生 片尾曲",
+    "naze": "恋姫 片尾曲", "siawasenohana": "ビ・ヨンド 片尾曲",
     "rureto": "エルフ版下級生 特典", "seamoonlight": "エルフ版下級生 特典",
-    "tokimeki": "エルフ版下級生 OP", "light": "同級生２ EXTRA BOX 特典",
-    "suki2": "同級生２ Special 卒業生 ED", "voices": "YU-NO 第1・2幕 ED",
-    # アルバム未収録の単曲
-    "haru": "SS版 ED", "natsu": "PCE版 主題歌",
+    "tokimeki": "エルフ版下級生 片头曲", "light": "同級生２ EXTRA BOX 特典",
+    "suki2": "同級生２ Special 卒業生 片尾曲", "voices": "YU-NO 第1・2幕 片尾曲",
+    # 专辑未收录的单曲
+    "haru": "SS版 片尾曲", "natsu": "PCE版 主题曲",
     "onemoment": "同級生II", "sweetonyou": "同級生II",
-    "summergirl": "第5～7話 挿入歌", "onethingiknow": "挿入歌", "rinka": "OP",
+    "summergirl": "第5～7话 插曲", "onethingiknow": "插曲", "rinka": "片头曲",
 }
 for gname, gsub, nums in GROUPS:
     items = []
@@ -428,7 +428,7 @@ INDEX_TPL = '''<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
             color: #E6D8AE;
         }}
         .song-list a {{ font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 17px; }}
-        .song-list .note {{ margin-left: 8px; font-size: 14px; color: #bbbbaa; }}
+        .song-list .note {{ margin-left: 8px; font-size: 14px; color: #bbbbaa; font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; }}
         .song-list-missing li {{ opacity: .7; }}
         .song-list-missing li::before {{ color: #8a8a7a; }}
         .LyricMemo {{ max-width: 760px; margin: 18px auto 0; font-size: 13px; color: #bbbbaa; line-height: 1.8; }}
@@ -456,11 +456,11 @@ INDEX_TPL = '''<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
 
                     <div class="album-head">
                         <div class="album-title">《ELF エルフ》</div>
-                        <div class="album-meta">élf（エルフ）作品主題歌集　已収録 21 首（专辑 14 ＋ 単曲 7）／外链 1 首／未収録 4 首</div>
+                        <div class="album-meta">élf（エルフ）作品主题曲集　已收录 21 首（专辑 14 ＋ 单曲 7）／外链 1 首／未收录 4 首</div>
                     </div>
 
 {groups}
-                    <p class="LyricMemo">※ 排列：アルバム「élf ANIMATION SONG FILE」全 15 曲（収録順）→ アルバム未収録の単曲（ゲーム別）→ 未収録。<br>※ 已収録 23 首（专辑 15 ＋ 単曲 8）；末组 4 首歌詞未入手，仅列条目、未建页。<br>※ 源数据订正：「ENTERNAL」→「ETERNAL」、编曲者「浅野保昌」→「淡野保昌」；PUA 私用区字符已还原（咲／込／呪）。</p>
+                    <p class="LyricMemo">※ 排列：专辑「élf ANIMATION SONG FILE」全 15 首（收录顺序）→ 专辑未收录的单曲（按游戏分）→ 未收录。<br>※ 已收录 23 首（专辑 15 ＋ 单曲 8）；末组 4 首歌词未入手，仅列条目、未建页。<br>※ 源数据订正：「ENTERNAL」→「ETERNAL」、编曲者「浅野保昌」→「淡野保昌」；PUA 私用区字符已还原（咲／込／呪）。</p>
 
                     <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
 
@@ -480,8 +480,8 @@ INDEX_TPL = '''<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
 if MISSING:
     items = []
     for m in MISSING:
-        items.append('\t\t\t\t\t<li class="LyricItem LyricMissing">《%s》<span class="note">- %s／歌：%s　（未収録）</span></li>' % (m["title"], m["note"], m["performer"]))
-    group_html.append(f'''                    <div class="disc-head"><span class="disc-name">未収録（歌詞未入手）</span><span class="disc-sub">{len(MISSING)} 首</span></div>
+        items.append('\t\t\t\t\t<li class="LyricItem LyricMissing">《%s》<span class="note">- %s／歌：%s　（未收录）</span></li>' % (m["title"], m["note"], m["performer"]))
+    group_html.append(f'''                    <div class="disc-head"><span class="disc-name">未收录</span><span class="disc-sub">歌词未入手　{len(MISSING)} 首</span></div>
                     <ul class="song-list song-list-missing">
 {chr(10).join(items)}
                     </ul>''')

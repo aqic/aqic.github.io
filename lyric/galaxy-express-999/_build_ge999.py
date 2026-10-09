@@ -212,19 +212,47 @@ else:
 # ---------------- 索引页 ----------------
 by_no = {s["no"]: s for s in SONGS}
 group_html = []
-NOTE = {"galaxyexpress999": "オープニング(1978)", "blueearth": "エンディング(1978)",
-        "takingoff": "挿入歌(1979)", "thege999": "エンディング(1979)",
-        "yasaxii": "挿入歌(1979)", "sayonara": "エンディング(1981)",
-        "bravelove": "主題歌(1998)"}
+NOTE = {"galaxyexpress999": "片头曲(1978)", "blueearth": "片尾曲(1978)",
+        "takingoff": "插曲(1979)", "thege999": "片尾曲(1979)",
+        "yasaxii": "插曲(1979)", "sayonara": "片尾曲(1981)",
+        "bravelove": "主题曲(1998)"}
+# 未收录曲目：灰显不可点（沿用 urusei 既有原则）
+MISSING = [
+    ("ぼくの行く道", "TV 插入歌集(1979)"),
+    ("夢のスリーナイン", "TV 插入歌集(1979)"),
+    ("ふ・る・さ・と", "TV 插入歌集(1979)"),
+    ("目をとじて", "TV 插入歌集(1979)"),
+    ("銀河哀歌", "TV 插入歌集(1979)"),
+    ("人生の停車駅", "TV 插入歌集(1979)"),
+    ("ぼくのメーテル", "TV 插入歌集(1979)"),
+    ("鉄郎の子守唄", "TV 插入歌集(1979)"),
+    ("想い出涙色", "电视剧插曲(1978)"),
+    ("レリューズのテーマ", "电视剧插曲(1978)"),
+    ("遥かな母への賛歌", "电视剧插曲(1979)"),
+    ("あこがれへの旅", "电视剧插曲(1979)"),
+    ("惑星メーテルのテーマ", "电视剧插曲(1979)"),
+    ("LOVE LIGHT", "剧场版2「さよなら銀河鉄道999」插曲(1981)"),
+    ("光と影のオブジェ", "剧场版2「さよなら銀河鉄道999」插曲(1981)"),
+]
 for gname, gsub, nums in GROUPS:
     items = []
     for n in nums:
         s = by_no[n]
-        zh_link = f'-<a href="{s["no"]}.{s["slug"]}-bilingual.html">（中译）</a>' if s["zh"] else ""
+        zh_link = f'＆<a href="{s["no"]}.{s["slug"]}-bilingual.html">(中译)</a>' if s["zh"] else ""
         items.append(f'\t\t\t\t\t<li class="LyricItem"><a href="{s["no"]}.{s["slug"]}.html">《{s["title"]}》</a>{zh_link}<span class="note">- {NOTE[s["slug"]]}</span></li>')
     group_html.append(f'''                    <div class="disc-head"><span class="disc-name">{gname}</span><span class="disc-sub">{gsub}</span></div>
                     <ul class="song-list">
 {chr(10).join(items)}
+                    </ul>''')
+
+# 未收录曲目统一列在末尾一组
+_missing_items = [
+    f'\t\t\t\t\t<li class="LyricItem LyricMissing"><span class="mtitle">《{t}》</span><span class="note">- {note}（未收录）</span></li>'
+    for t, note in MISSING
+]
+group_html.append(f'''                    <div class="disc-head"><span class="disc-name">未收录</span><span class="disc-sub">暂无歌词　{len(MISSING)} 首</span></div>
+                    <ul class="song-list">
+{chr(10).join(_missing_items)}
                     </ul>''')
 
 INDEX_TPL = '''<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
@@ -265,7 +293,13 @@ INDEX_TPL = '''<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
             color: #E6D8AE;
         }}
         .song-list a {{ font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 17px; }}
-        .song-list .note {{ margin-left: 8px; font-size: 14px; color: #bbbbaa; }}
+        .song-list .note {{ margin-left: 8px; font-size: 14px; color: #bbbbaa; font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; }}
+        /* 缺歌词的曲目：仅列歌名，灰显不可点 */
+        .song-list .LyricMissing .mtitle {{
+            font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif;
+            font-size: 17px;
+            color: #777766;
+        }}
         .LyricMemo {{ max-width: 760px; margin: 18px auto 0; font-size: 13px; color: #bbbbaa; line-height: 1.8; }}
     </style>
 </head>
@@ -291,11 +325,11 @@ INDEX_TPL = '''<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
 
                     <div class="album-head">
                         <div class="album-title">《銀河鉄道999》</div>
-                        <div class="album-meta">松本零士原作　テレビアニメ(1978–1981) ＋ 劇場版3作　已收录 7 首代表曲</div>
+                        <div class="album-meta">松本零士原作　电视剧动画(1978–1981) ＋剧场版3作　已收录 7 首代表曲</div>
                     </div>
 
 {groups}
-                    <p class="LyricMemo">※ 本辑仅收录 OP/ED 与剧场版主题・插入歌等 7 首代表曲。TV 插入歌集（『銀河鉄道999 主題歌・挿入歌集』CS-7096）及剧场版其他插入歌（如「想い出涙色」「LOVE LIGHT」「さよなら」等）另有未收录曲目。</p>
+                    <p class="LyricMemo">※ 本辑收录 7 首已整理歌词，另列 15 首暂无歌词的曲目（TV 插入歌集 CS-7096 及剧场版插曲等）。</p>
 
                     <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
 
