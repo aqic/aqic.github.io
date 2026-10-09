@@ -14,6 +14,11 @@
             margin: 8px 0 14px;
             font-weight: bold;
         }
+        .main-section {
+            text-align: left;
+            align-items: stretch;
+            justify-content: flex-start;
+        }
         .cat-title {
             color: #FFC53B;
             font-size: 18px;
@@ -39,18 +44,6 @@
             align-items: center;
             gap: 12px;
             padding: 8px 10px;
-            cursor: pointer;
-            list-style: none;
-        }
-        .friend-summary::-webkit-details-marker { display: none; }
-        .friend-summary::before {
-            content: '▸';
-            color: #E6D8AE;
-            font-size: 14px;
-            transition: transform .2s;
-        }
-        .friend-item[open] > .friend-summary::before {
-            content: '▾';
         }
         .friend-banner {
             height: 31px;
@@ -67,7 +60,7 @@
             font-size: 14px;
         }
         .friend-detail {
-            padding: 0 12px 12px 36px;
+            padding: 0 12px 12px 12px;
         }
         .friend-row {
             margin: 5px 0;
@@ -114,11 +107,11 @@
                 <div class="link-grid">
 
                     <!-- 1-A 樱花飞舞的季节 -->
-                    <details class="friend-item">
-                        <summary class="friend-summary">
+                    <div class="friend-item">
+                        <div class="friend-summary">
                             <img class="friend-banner" src="pic/sakuralogo.gif" alt="樱花飞舞的季节">
                             <span class="friend-name">樱花飞舞的季节<br><span class="friend-webmaster">(雨晨)</span></span>
-                        </summary>
+                        </div>
                         <div class="friend-detail">
                             <div class="friend-row"><span class="friend-label">站长</span>雨晨</div>
                             <div class="friend-row"><span class="friend-label">地址</span><a href="http://www.sakurasky.net/" target="_blank" rel="noopener">http://www.sakurasky.net/</a></div>
@@ -126,14 +119,14 @@
                             <div class="friend-row"><span class="friend-label">内容</span>日文游戏专题</div>
                             <div class="friend-row"><span class="friend-label">简介</span>差不多是大陆最早的日文游戏专题站了，内容多多。</div>
                         </div>
-                    </details>
+                    </div>
 
                     <!-- 1-B lalalll's Blog结月小站 -->
-                    <details class="friend-item">
-                        <summary class="friend-summary">
+                    <div class="friend-item">
+                        <div class="friend-summary">
                             <img class="friend-banner" src="https://lalalll-lalalll.github.io/images/MerpisMe.png" alt="lalalll's Blog结月小站">
                             <span class="friend-name">lalalll's Blog结月小站<br><span class="friend-webmaster">(lalalll)</span></span>
-                        </summary>
+                        </div>
                         <div class="friend-detail">
                             <div class="friend-row"><span class="friend-label">站长</span>lalalll</div>
                             <div class="friend-row"><span class="friend-label">地址</span><a href="https://lalalll-lalalll.github.io/" target="_blank" rel="noopener">https://lalalll-lalalll.github.io/</a></div>
@@ -141,192 +134,9 @@
                             <div class="friend-row"><span class="friend-label">内容</span>个人博客</div>
                             <div class="friend-row"><span class="friend-label">简介</span>lalalll 的结月小站博客。</div>
                         </div>
-                    </details>
+                    </div>
 
                 </div>
-
-                <!-- 第二类：其余链接（有保留图片的排前，未保留的排后） -->
-                <div class="cat-title">其余链接</div>
-
-                <!-- 2-1 -->
-                <details class="friend-item">
-                    <summary class="friend-summary">
-                        <img class="friend-banner" src="pic/banner1-full.gif" alt="Kimagure Productions">
-                        <span class="friend-name">Kimagure Productions <span class="friend-webmaster">(Stephen Tsai)</span></span>
-                    </summary>
-                    <div class="friend-detail">
-                        <div class="friend-row"><span class="friend-label">站长</span>Stephen Tsai</div>
-                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://www.geocities.com/Tokyo/Ginza/1604" target="_blank" rel="noopener">http://www.geocities.com/Tokyo/Ginza/1604</a></div>
-                        <div class="friend-row"><span class="friend-label">语言</span>英文</div>
-                        <div class="friend-row"><span class="friend-label">内容</span>同好小说·橙校/美少女战士乱马</div>
-                        <div class="friend-row"><span class="friend-label">简介</span>《橙校》原作者 Stephen Tsai 的主页。除《橙校》外，其作品还有《美少女战士乱马》（也曾有漫画版）。</div>
-                    </div>
-                </details>
-
-                <!-- 2-2 -->
-                <details class="friend-item">
-                    <summary class="friend-summary">
-                        <img class="friend-banner" src="pic/banner2-full.jpg" alt="春日恭介">
-                        <span class="friend-name">??? <span class="friend-webmaster">(春日恭介)</span></span>
-                    </summary>
-                    <div class="friend-detail">
-                        <div class="friend-row"><span class="friend-label">站长</span>春日恭介</div>
-                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://www.geocities.com/Tokyo/Subway/5376" target="_blank" rel="noopener">http://www.geocities.com/Tokyo/Subway/5376</a></div>
-                        <div class="friend-row"><span class="friend-label">语言</span>中文繁体</div>
-                        <div class="friend-row"><span class="friend-label">内容</span>动漫专题·橙路</div>
-                        <div class="friend-row"><span class="friend-label">简介</span>??? 很神秘吗？另一个连接：<a href="http://i.am/kasugakyosuke/" target="_blank" rel="noopener">http://i.am/kasugakyosuke/</a></div>
-                    </div>
-                </details>
-
-                <!-- 2-3 -->
-                <details class="friend-item">
-                    <summary class="friend-summary">
-                        <img class="friend-banner" src="pic/banner5.gif" alt="永远的扉">
-                        <span class="friend-name">永远的扉 <span class="friend-webmaster">(猫之眼)</span></span>
-                    </summary>
-                    <div class="friend-detail">
-                        <div class="friend-row"><span class="friend-label">站长</span>猫之眼</div>
-                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://newaftertime.yeah.net/" target="_blank" rel="noopener">http://newaftertime.yeah.net/</a></div>
-                        <div class="friend-row"><span class="friend-label">语言</span>中文简体</div>
-                        <div class="friend-row"><span class="friend-label">内容</span>综合动漫</div>
-                        <div class="friend-row"><span class="friend-label">简介</span>计算机动画、图片、等等……看看去！</div>
-                    </div>
-                </details>
-
-                <!-- 2-4 -->
-                <details class="friend-item">
-                    <summary class="friend-summary">
-                        <img class="friend-banner" src="pic/banner7.gif" alt="白色的独角兽">
-                        <span class="friend-name">白色的独角兽 <span class="friend-webmaster">(JUNO)</span></span>
-                    </summary>
-                    <div class="friend-detail">
-                        <div class="friend-row"><span class="friend-label">站长</span>JUNO</div>
-                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://wuhp.yeah.net/" target="_blank" rel="noopener">http://wuhp.yeah.net/</a></div>
-                        <div class="friend-row"><span class="friend-label">语言</span>简体中文</div>
-                        <div class="friend-row"><span class="friend-label">内容</span>综合动漫</div>
-                        <div class="friend-row"><span class="friend-label">简介</span>不必怀疑，你将看到的是一只真正的白色的独角兽。喜欢动漫、游戏和同人小说的朋友请往里闪！</div>
-                    </div>
-                </details>
-
-                <!-- 2-5 -->
-                <details class="friend-item">
-                    <summary class="friend-summary">
-                        <img class="friend-banner" src="pic/banner8-full.gif" alt="Abcb web site">
-                        <span class="friend-name">Abcb web site <span class="friend-webmaster">(Jyh Lih)</span></span>
-                    </summary>
-                    <div class="friend-detail">
-                        <div class="friend-row"><span class="friend-label">站长</span>Jyh Lih</div>
-                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://tacocity.com.tw/Abcb/" target="_blank" rel="noopener">http://tacocity.com.tw/Abcb/</a></div>
-                        <div class="friend-row"><span class="friend-label">语言</span>繁体中文</div>
-                        <div class="friend-row"><span class="friend-label">内容</span>动漫专题·橙路</div>
-                        <div class="friend-row"><span class="friend-label">简介</span>古灵精怪音乐、新闻、介绍等。《古灵精怪》的相关资料。</div>
-                    </div>
-                </details>
-
-                <!-- 2-6 -->
-                <details class="friend-item">
-                    <summary class="friend-summary">
-                        <img class="friend-banner" src="pic/banner11.jpg" alt="回忆的街角">
-                        <span class="friend-name">回忆的街角 <span class="friend-webmaster">(Metalyuki)</span></span>
-                    </summary>
-                    <div class="friend-detail">
-                        <div class="friend-row"><span class="friend-label">站长</span>Metalyuki</div>
-                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://kyoto.yeah.net" target="_blank" rel="noopener">http://kyoto.yeah.net</a></div>
-                        <div class="friend-row"><span class="friend-label">语言</span>简体中文</div>
-                        <div class="friend-row"><span class="friend-label">内容</span>家用机美少女游戏专题</div>
-                        <div class="friend-row"><span class="friend-label">简介</span>PS，DC，PS2美少女游戏介绍。</div>
-                    </div>
-                </details>
-
-                <!-- 2-7 -->
-                <details class="friend-item">
-                    <summary class="friend-summary">
-                        <img class="friend-banner" src="pic/nobanner.gif" alt="回憶的紅草帽">
-                        <span class="friend-name">回憶的紅草帽 <span class="friend-webmaster">(死神)</span></span>
-                    </summary>
-                    <div class="friend-detail">
-                        <div class="friend-row"><span class="friend-label">站长</span>死神</div>
-                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://home.pchome.com.tw/click/andy1315" target="_blank" rel="noopener">http://home.pchome.com.tw/click/andy1315</a></div>
-                        <div class="friend-row"><span class="friend-label">语言</span>繁体中文</div>
-                        <div class="friend-row"><span class="friend-label">内容</span>动漫专题·橙路</div>
-                        <div class="friend-row"><span class="friend-label">简介</span>（正在等站长自己写出来……）。</div>
-                    </div>
-                </details>
-
-                <!-- 2-8 -->
-                <details class="friend-item">
-                    <summary class="friend-summary">
-                        <img class="friend-banner" src="pic/nobanner.gif" alt="永遠的夏天">
-                        <span class="friend-name">永遠的夏天 <span class="friend-webmaster">(BBG)</span></span>
-                    </summary>
-                    <div class="friend-detail">
-                        <div class="friend-row"><span class="friend-label">站长</span>BBG</div>
-                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://home.pchome.com.tw/my/bbg0123h/home.htm" target="_blank" rel="noopener">http://home.pchome.com.tw/my/bbg0123h/home.htm</a></div>
-                        <div class="friend-row"><span class="friend-label">语言</span>繁体中文</div>
-                        <div class="friend-row"><span class="friend-label">内容</span>橙路(古靈精怪)介紹</div>
-                        <div class="friend-row"><span class="friend-label">简介</span>有許多BBG自己做以及從網路收集的一些圖片、音樂、螢幕保護程式 等等……</div>
-                    </div>
-                </details>
-
-                <!-- 2-9 -->
-                <details class="friend-item">
-                    <summary class="friend-summary">
-                        <img class="friend-banner" src="pic/nobanner.gif" alt="玻璃魔法堂">
-                        <span class="friend-name">玻璃魔法堂 <span class="friend-webmaster">(楠月)</span></span>
-                    </summary>
-                    <div class="friend-detail">
-                        <div class="friend-row"><span class="friend-label">站长</span>楠月</div>
-                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://glassmagic.51.net" target="_blank" rel="noopener">http://glassmagic.51.net</a></div>
-                        <div class="friend-row"><span class="friend-label">语言</span>简体中文</div>
-                        <div class="friend-row"><span class="friend-label">内容</span>漫画介紹</div>
-                        <div class="friend-row"><span class="friend-label">简介</span>玻璃魔法堂……</div>
-                    </div>
-                </details>
-
-                <!-- 2-10 -->
-                <details class="friend-item">
-                    <summary class="friend-summary">
-                        <img class="friend-banner" src="pic/nobanner.gif" alt="飞鸟动漫">
-                        <span class="friend-name">飞鸟动漫 <span class="friend-webmaster">(高楼暝色)</span></span>
-                    </summary>
-                    <div class="friend-detail">
-                        <div class="friend-row"><span class="friend-label">站长</span>高楼暝色</div>
-                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://flyersss.y365.com" target="_blank" rel="noopener">http://flyersss.y365.com</a></div>
-                        <div class="friend-row"><span class="friend-label">语言</span>简体中文</div>
-                        <div class="friend-row"><span class="friend-label">内容</span>漫画</div>
-                        <div class="friend-row"><span class="friend-label">简介</span><a href="http://flyersss.y365.com/wodeziliao.htm" target="_blank" rel="noopener">我够不够蟀哦？？？</a>……-_-b</div>
-                    </div>
-                </details>
-
-                <!-- 2-11 -->
-                <details class="friend-item">
-                    <summary class="friend-summary">
-                        <img class="friend-banner" src="pic/nobanner.gif" alt="高桥联盟">
-                        <span class="friend-name">高桥联盟 <span class="friend-webmaster">(bacai)</span></span>
-                    </summary>
-                    <div class="friend-detail">
-                        <div class="friend-row"><span class="friend-label">站长</span>bacai</div>
-                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://www.t-rumiko.com" target="_blank" rel="noopener">http://www.t-rumiko.com</a></div>
-                        <div class="friend-row"><span class="friend-label">语言</span>简体中文</div>
-                        <div class="friend-row"><span class="friend-label">内容</span>漫画专题</div>
-                        <div class="friend-row"><span class="friend-label">简介</span>系统介绍高桥三部曲同时希望搜集更多的介绍高桥的网站</div>
-                    </div>
-                </details>
-
-                <!-- 2-12 -->
-                <details class="friend-item">
-                    <summary class="friend-summary">
-                        <img class="friend-banner" src="pic/nobanner.gif" alt="译站">
-                        <span class="friend-name">译站 <span class="friend-webmaster">(suezou)</span></span>
-                    </summary>
-                    <div class="friend-detail">
-                        <div class="friend-row"><span class="friend-label">站长</span>suezou</div>
-                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://transtation.126.com" target="_blank" rel="noopener">http://transtation.126.com</a></div>
-                        <div class="friend-row"><span class="friend-label">语言</span>简体中文</div>
-                        <div class="friend-row"><span class="friend-label">内容</span>同人翻译</div>
-                        <div class="friend-row"><span class="friend-label">简介</span></div>
-                    </div>
-                </details>
 
                 <div class="link-memo">
                     如果您愿意和我们交换联接，请给我们<a href="mailto:orangestar@btamail.net.cn">来信</a>或是在留言版上留言！<br>
@@ -335,6 +145,184 @@
                     ——站名，站长名，地址，主要内容，简介。<br>
                     我们站现在的站名是<span style="color:#FFB400;">橙色流星</span>。
                 </div>
+
+                <!-- 第二类：曾经的友情链接（有保留图片的排前，未保留的排后） -->
+                <div class="cat-title">曾经的友情链接（均已关闭）</div>
+
+                <!-- 2-1 -->
+                <div class="friend-item">
+                    <div class="friend-summary">
+                        <img class="friend-banner" src="pic/banner1-full.gif" alt="Kimagure Productions">
+                        <span class="friend-name">Kimagure Productions <span class="friend-webmaster">(Stephen Tsai)</span></span>
+                    </div>
+                    <div class="friend-detail">
+                        <div class="friend-row"><span class="friend-label">站长</span>Stephen Tsai</div>
+                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://www.geocities.com/Tokyo/Ginza/1604" target="_blank" rel="noopener">http://www.geocities.com/Tokyo/Ginza/1604</a></div>
+                        <div class="friend-row"><span class="friend-label">语言</span>英文</div>
+                        <div class="friend-row"><span class="friend-label">内容</span>同好小说·橙校/美少女战士乱马</div>
+                        <div class="friend-row"><span class="friend-label">简介</span>《橙校》原作者 Stephen Tsai 的主页。除《橙校》外，其作品还有《美少女战士乱马》（也曾有漫画版）。</div>
+                    </div>
+                </div>
+
+                <!-- 2-2 -->
+                <div class="friend-item">
+                    <div class="friend-summary">
+                        <img class="friend-banner" src="pic/banner2-full.jpg" alt="春日恭介">
+                        <span class="friend-name">??? <span class="friend-webmaster">(春日恭介)</span></span>
+                    </div>
+                    <div class="friend-detail">
+                        <div class="friend-row"><span class="friend-label">站长</span>春日恭介</div>
+                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://www.geocities.com/Tokyo/Subway/5376" target="_blank" rel="noopener">http://www.geocities.com/Tokyo/Subway/5376</a></div>
+                        <div class="friend-row"><span class="friend-label">语言</span>中文繁体</div>
+                        <div class="friend-row"><span class="friend-label">内容</span>动漫专题·橙路</div>
+                        <div class="friend-row"><span class="friend-label">简介</span>??? 很神秘吗？另一个连接：<a href="http://i.am/kasugakyosuke/" target="_blank" rel="noopener">http://i.am/kasugakyosuke/</a></div>
+                    </div>
+                </div>
+
+                <!-- 2-3 -->
+                <div class="friend-item">
+                    <div class="friend-summary">
+                        <img class="friend-banner" src="pic/banner5.gif" alt="永远的扉">
+                        <span class="friend-name">永远的扉 <span class="friend-webmaster">(猫之眼)</span></span>
+                    </div>
+                    <div class="friend-detail">
+                        <div class="friend-row"><span class="friend-label">站长</span>猫之眼</div>
+                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://newaftertime.yeah.net/" target="_blank" rel="noopener">http://newaftertime.yeah.net/</a></div>
+                        <div class="friend-row"><span class="friend-label">语言</span>中文简体</div>
+                        <div class="friend-row"><span class="friend-label">内容</span>综合动漫</div>
+                        <div class="friend-row"><span class="friend-label">简介</span>计算机动画、图片、等等……看看去！</div>
+                    </div>
+                </div>
+
+                <!-- 2-4 -->
+                <div class="friend-item">
+                    <div class="friend-summary">
+                        <img class="friend-banner" src="pic/banner7.gif" alt="白色的独角兽">
+                        <span class="friend-name">白色的独角兽 <span class="friend-webmaster">(JUNO)</span></span>
+                    </div>
+                    <div class="friend-detail">
+                        <div class="friend-row"><span class="friend-label">站长</span>JUNO</div>
+                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://wuhp.yeah.net/" target="_blank" rel="noopener">http://wuhp.yeah.net/</a></div>
+                        <div class="friend-row"><span class="friend-label">语言</span>简体中文</div>
+                        <div class="friend-row"><span class="friend-label">内容</span>综合动漫</div>
+                        <div class="friend-row"><span class="friend-label">简介</span>不必怀疑，你将看到的是一只真正的白色的独角兽。喜欢动漫、游戏和同人小说的朋友请往里闪！</div>
+                    </div>
+                </div>
+
+                <!-- 2-5 -->
+                <div class="friend-item">
+                    <div class="friend-summary">
+                        <img class="friend-banner" src="pic/banner8-full.gif" alt="Abcb web site">
+                        <span class="friend-name">Abcb web site <span class="friend-webmaster">(Jyh Lih)</span></span>
+                    </div>
+                    <div class="friend-detail">
+                        <div class="friend-row"><span class="friend-label">站长</span>Jyh Lih</div>
+                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://tacocity.com.tw/Abcb/" target="_blank" rel="noopener">http://tacocity.com.tw/Abcb/</a></div>
+                        <div class="friend-row"><span class="friend-label">语言</span>繁体中文</div>
+                        <div class="friend-row"><span class="friend-label">内容</span>动漫专题·橙路</div>
+                        <div class="friend-row"><span class="friend-label">简介</span>古灵精怪音乐、新闻、介绍等。《古灵精怪》的相关资料。</div>
+                    </div>
+                </div>
+
+                <!-- 2-6 -->
+                <div class="friend-item">
+                    <div class="friend-summary">
+                        <img class="friend-banner" src="pic/banner11.jpg" alt="回忆的街角">
+                        <span class="friend-name">回忆的街角 <span class="friend-webmaster">(Metalyuki)</span></span>
+                    </div>
+                    <div class="friend-detail">
+                        <div class="friend-row"><span class="friend-label">站长</span>Metalyuki</div>
+                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://kyoto.yeah.net" target="_blank" rel="noopener">http://kyoto.yeah.net</a></div>
+                        <div class="friend-row"><span class="friend-label">语言</span>简体中文</div>
+                        <div class="friend-row"><span class="friend-label">内容</span>家用机美少女游戏专题</div>
+                        <div class="friend-row"><span class="friend-label">简介</span>PS，DC，PS2美少女游戏介绍。</div>
+                    </div>
+                </div>
+
+                <!-- 2-7 -->
+                <div class="friend-item">
+                    <div class="friend-summary">
+                        <span class="friend-name">回憶的紅草帽 <span class="friend-webmaster">(死神)</span></span>
+                    </div>
+                    <div class="friend-detail">
+                        <div class="friend-row"><span class="friend-label">站长</span>死神</div>
+                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://home.pchome.com.tw/click/andy1315" target="_blank" rel="noopener">http://home.pchome.com.tw/click/andy1315</a></div>
+                        <div class="friend-row"><span class="friend-label">语言</span>繁体中文</div>
+                        <div class="friend-row"><span class="friend-label">内容</span>动漫专题·橙路</div>
+                        <div class="friend-row"><span class="friend-label">简介</span>（正在等站长自己写出来……）。</div>
+                    </div>
+                </div>
+
+                <!-- 2-8 -->
+                <div class="friend-item">
+                    <div class="friend-summary">
+                        <span class="friend-name">永遠的夏天 <span class="friend-webmaster">(BBG)</span></span>
+                    </div>
+                    <div class="friend-detail">
+                        <div class="friend-row"><span class="friend-label">站长</span>BBG</div>
+                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://home.pchome.com.tw/my/bbg0123h/home.htm" target="_blank" rel="noopener">http://home.pchome.com.tw/my/bbg0123h/home.htm</a></div>
+                        <div class="friend-row"><span class="friend-label">语言</span>繁体中文</div>
+                        <div class="friend-row"><span class="friend-label">内容</span>橙路(古靈精怪)介紹</div>
+                        <div class="friend-row"><span class="friend-label">简介</span>有許多BBG自己做以及從網路收集的一些圖片、音樂、螢幕保護程式 等等……</div>
+                    </div>
+                </div>
+
+                <!-- 2-9 -->
+                <div class="friend-item">
+                    <div class="friend-summary">
+                        <span class="friend-name">玻璃魔法堂 <span class="friend-webmaster">(楠月)</span></span>
+                    </div>
+                    <div class="friend-detail">
+                        <div class="friend-row"><span class="friend-label">站长</span>楠月</div>
+                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://glassmagic.51.net" target="_blank" rel="noopener">http://glassmagic.51.net</a></div>
+                        <div class="friend-row"><span class="friend-label">语言</span>简体中文</div>
+                        <div class="friend-row"><span class="friend-label">内容</span>漫画介紹</div>
+                        <div class="friend-row"><span class="friend-label">简介</span>玻璃魔法堂……</div>
+                    </div>
+                </div>
+
+                <!-- 2-10 -->
+                <div class="friend-item">
+                    <div class="friend-summary">
+                        <span class="friend-name">飞鸟动漫 <span class="friend-webmaster">(高楼暝色)</span></span>
+                    </div>
+                    <div class="friend-detail">
+                        <div class="friend-row"><span class="friend-label">站长</span>高楼暝色</div>
+                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://flyersss.y365.com" target="_blank" rel="noopener">http://flyersss.y365.com</a></div>
+                        <div class="friend-row"><span class="friend-label">语言</span>简体中文</div>
+                        <div class="friend-row"><span class="friend-label">内容</span>漫画</div>
+                        <div class="friend-row"><span class="friend-label">简介</span><a href="http://flyersss.y365.com/wodeziliao.htm" target="_blank" rel="noopener">我够不够蟀哦？？？</a>……-_-b</div>
+                    </div>
+                </div>
+
+                <!-- 2-11 -->
+                <div class="friend-item">
+                    <div class="friend-summary">
+                        <span class="friend-name">高桥联盟 <span class="friend-webmaster">(bacai)</span></span>
+                    </div>
+                    <div class="friend-detail">
+                        <div class="friend-row"><span class="friend-label">站长</span>bacai</div>
+                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://www.t-rumiko.com" target="_blank" rel="noopener">http://www.t-rumiko.com</a></div>
+                        <div class="friend-row"><span class="friend-label">语言</span>简体中文</div>
+                        <div class="friend-row"><span class="friend-label">内容</span>漫画专题</div>
+                        <div class="friend-row"><span class="friend-label">简介</span>系统介绍高桥三部曲同时希望搜集更多的介绍高桥的网站</div>
+                    </div>
+                </div>
+
+                <!-- 2-12 -->
+                <div class="friend-item">
+                    <div class="friend-summary">
+                        <span class="friend-name">译站 <span class="friend-webmaster">(suezou)</span></span>
+                    </div>
+                    <div class="friend-detail">
+                        <div class="friend-row"><span class="friend-label">站长</span>suezou</div>
+                        <div class="friend-row"><span class="friend-label">地址</span><a href="http://transtation.126.com" target="_blank" rel="noopener">http://transtation.126.com</a></div>
+                        <div class="friend-row"><span class="friend-label">语言</span>简体中文</div>
+                        <div class="friend-row"><span class="friend-label">内容</span>同人翻译</div>
+                        <div class="friend-row"><span class="friend-label">简介</span></div>
+                    </div>
+                </div>
+
             </section>
         </main>
 
