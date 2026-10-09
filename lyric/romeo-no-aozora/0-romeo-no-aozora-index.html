@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+    <style>
+        /* 标题：图标与文字垂直居中 */
+        .catalog-head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .catalog-head img { width: 48px; height: 48px; }
+        .album-head { max-width: 760px; margin: 16px auto 4px; text-align: center; }
+        .album-title { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 18px; color: #E6D8AE; }
+        .album-meta { margin-top: 2px; font-size: 13px; color: #bbbbaa; }
+        .disc-head {
+            max-width: 760px; margin: 26px auto 0; padding-bottom: 6px;
+            text-align: center; border-bottom: 1px solid #555540;
+        }
+        .disc-name { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 17px; color: #CC66FF; margin-right: 10px; }
+        .disc-sub { font-size: 13px; color: #bbbbaa; }
+        .song-list {
+            list-style: none; padding: 0; margin: 8px auto 0; max-width: 760px;
+            text-align: left; counter-reset: song;
+        }
+        .song-list li { padding: 4px 10px; line-height: 1.9; }
+        .song-list li::before {
+            counter-increment: song;
+            content: '✦ ' counter(song) ". ";
+            color: #E6D8AE;
+        }
+        .song-list a { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 17px; }
+        .song-list .note { margin-left: 8px; font-size: 14px; color: #bbbbaa; }
+        .LyricMemo { max-width: 760px; margin: 18px auto 0; font-size: 13px; color: #bbbbaa; line-height: 1.8; }
+    </style>
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><img src="../images/romeo-no-aozora.gif"><span>ロミオの青い空（ロミオのあおいそら）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《ロミオの青い空》</div>
+                        <div class="album-meta">世界名作劇場　フジテレビ系テレビアニメ(1995)　已收录 2 首主題歌</div>
+                    </div>
+
+                    <div class="disc-head"><span class="disc-name">テレビアニメ「ロミオの青い空」</span><span class="disc-sub">世界名作劇場(1995)　主題歌 2 首</span></div>
+                    <ul class="song-list">
+					<li class="LyricItem"><a href="1.sorae.html">《空へ…》</a>＆<a href="1.sorae-bilingual.html">(中译)</a><span class="note">- オープニング(1995)</span></li>
+					<li class="LyricItem"><a href="2.sisichao.html">《Si Si Ciao ～ロマナの丘で～》</a><span class="note">- エンディング(1995)</span></li>
+                    </ul>
+                    <p class="LyricMemo">※ 本辑仅收录 OP/ED 2 首主題歌（均由笠原弘子演唱）。插入歌（「君がいるから」「あなたの話を聞かせて」「英雄のマーチ」「Only Truth」「涙の向こうへ」等）另有未收录。</p>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

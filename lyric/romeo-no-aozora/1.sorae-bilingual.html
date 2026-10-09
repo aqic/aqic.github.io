@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>空へ…（日中対訳） - ロミオの青い空</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=11">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「ロミオの青い空」オープニング(1995)</div>
+
+                    <div class="LyricTitle">空へ…（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">笠原弘子</div>
+                    <div class="LyricStaff">作詞：佐藤ありす<br>作曲：岩崎琢<br>編曲：若草恵</div>
+
+                    <div class="LyricText">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">日本語</div>
+<p>
+街並　見おろすのさ<br>
+一番高い場所で　涙や悲しみなど<br>
+すぐに消えてしまうから<br>
+鳥や風や光は　みんな友達<br>
+僕の夢を　遠く遠く<br>
+どこまでも運んでく</p>
+<p>※心のblue sky　翼で<br>
+　自由に　飛びたい<br>
+　はるかな　blue sky<br>
+　空は明日へ　続いている</p>
+<p>流れる　白い雲に<br>
+いつでも話しかける<br>
+答える声が胸に　聞こえるんだ<br>
+信じたら<br>
+広い空に比べて　今は小さな<br>
+僕の夢も　いつかいつか<br>
+空中に拡がるよ<br>
+両手にblue sky　伸ばして<br>
+一つになりたい<br>
+輝くblue sky　空に優しく<br>
+抱かれながら</p>
+<p>（※　繰返し）</p>
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+<p>
+在高处俯瞰街道<br>
+泪和悲伤　全随之而逝<br>
+鸟儿﹑风和日光　都是好友<br>
+将我的梦想　载到天涯海角</p>
+<p>※想展翅在心内的蓝天自由飞翔<br>
+　遥远的　蓝天　明朝依旧　持续</p>
+<p>不时和流动的白云交谈<br>
+相信在胸中能听到回答<br>
+和广大的天空相比<br>
+尚微小的　我的梦想也<br>
+终能　扩展空中<br>
+两手伸向天空　与之合为一体<br>
+就这么被明亮的蓝天拥抱</p>
+<p>※反复</p>                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-romeo-no-aozora-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>
