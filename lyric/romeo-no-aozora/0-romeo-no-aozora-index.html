@@ -36,7 +36,13 @@
             color: #E6D8AE;
         }
         .song-list a { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; font-size: 17px; }
-        .song-list .note { margin-left: 8px; font-size: 14px; color: #bbbbaa; }
+        .song-list .note { margin-left: 8px; font-size: 14px; color: #bbbbaa; font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif; }
+        /* 缺歌词的曲目：仅列歌名，灰显不可点 */
+        .song-list .LyricMissing .mtitle {
+            font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif;
+            font-size: 17px;
+            color: #777766;
+        }
         .LyricMemo { max-width: 760px; margin: 18px auto 0; font-size: 13px; color: #bbbbaa; line-height: 1.8; }
     </style>
 </head>
@@ -62,16 +68,23 @@
 
                     <div class="album-head">
                         <div class="album-title">《ロミオの青い空》</div>
-                        <div class="album-meta">世界名作劇場　フジテレビ系テレビアニメ(1995)　已收录 2 首主題歌</div>
+                        <div class="album-meta">世界名作剧场　富士电视台系列电视动画(1995)　已收录 2 首主题曲</div>
                     </div>
 
-                    <div class="disc-head"><span class="disc-name">テレビアニメ「ロミオの青い空」</span><span class="disc-sub">世界名作劇場(1995)　主題歌 2 首</span></div>
+                    <div class="disc-head"><span class="disc-name">电视动画「ロミオの青い空」</span><span class="disc-sub">世界名作剧场(1995)　主题曲 2 首</span></div>
                     <ul class="song-list">
-					<li class="LyricItem"><a href="1.sorae.html">《空へ…》</a>＆<a href="1.sorae-bilingual.html">(中译)</a><span class="note">- オープニング(1995)</span></li>
-					<li class="LyricItem"><a href="2.sisichao.html">《Si Si Ciao ～ロマナの丘で～》</a><span class="note">- エンディング(1995)</span></li>
+					<li class="LyricItem"><a href="1.sorae.html">《空へ…》</a>＆<a href="1.sorae-bilingual.html">(中译)</a><span class="note">- 片头曲(1995)</span></li>
+					<li class="LyricItem"><a href="2.sisichao.html">《Si Si Ciao ～ロマナの丘で～》</a><span class="note">- 片尾曲(1995)</span></li>
                     </ul>
-                    <p class="LyricMemo" align=left>※ 本辑仅收录 OP/ED 2 首主題歌。<br>
-					※ 插入歌（「君がいるから」「あなたの話を聞かせて」「英雄のマーチ」「Only Truth」「涙の向こうへ」）等歌词暂未收录。</p>
+                    <div class="disc-head"><span class="disc-name">未收录</span><span class="disc-sub">暂无歌词　5 首</span></div>
+                    <ul class="song-list">
+					<li class="LyricItem LyricMissing"><span class="mtitle">《君がいるから》</span><span class="note">- 插曲／中文《因为有你》（未收录）</span></li>
+					<li class="LyricItem LyricMissing"><span class="mtitle">《あなたの話を聞かせて》</span><span class="note">- 插曲／中文《倾听你的话》（未收录）</span></li>
+					<li class="LyricItem LyricMissing"><span class="mtitle">《英雄のマーチ》</span><span class="note">- 插曲／中文《英雄的进行曲》（未收录）</span></li>
+					<li class="LyricItem LyricMissing"><span class="mtitle">《Only Truth》</span><span class="note">- 插曲／中文《Only Truth》（未收录）</span></li>
+					<li class="LyricItem LyricMissing"><span class="mtitle">《涙の向こうへ》</span><span class="note">- 插曲／中文《往眼泪的那一方》（未收录）</span></li>
+                    </ul>
+                    <p class="LyricMemo">※ 本辑收录 2 首已整理歌词（均由笠原弘子演唱），另列 5 首暂无歌词的插曲。</p>
 
                     <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
 
