@@ -3,9 +3,16 @@
    加载顺序：/style.css → /lyric/lyric.css → /lyric/index.css，故本表可覆盖前两者。
    注意：父级 .main-section 是「text-align:center + flex 列居中」，
    整块内容靠 max-width + margin:0 auto 居中，内部文字再按需左对齐。
-   字体策略：日文假名/日文汉字 → MS Gothic（ゴシック/黑体）；
-   简体专有字（剧/场/题/关等，日文字体无字形）→ Microsoft YaHei（同为黑体风格），
-   两者衔接后风格统一；若不加雅黑回退，简体字会掉进宋体造成一行字体混杂。 */
+
+   字体策略（2026-10-10 用户定标准）：
+   页面绝大部分是日文原文，一律用日文字体 --jp（MS Gothic ゴシック，不带雅黑回退，
+   避免简体字形被日文字体接管后字形不对）；
+   只有「中文译名」和「(中译)」链接两处中文用 --cn（微软雅黑）。
+   两套栈互不混用，同一行内不会再出现两种字形。 */
+:root {
+    --jp: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif;
+    --cn: 'Microsoft YaHei', 'MS Gothic', 'ＭＳ ゴシック', sans-serif;
+}
 
 /* ===== 标题：图标与文字垂直居中 ===== */
 .catalog-head {
@@ -15,24 +22,26 @@
     gap: 10px;
 }
 .catalog-head img { width: 48px; height: 48px; }
+/* 页头标题拆两段：日文原名走日文字体，中文译名走雅黑 */
+.catalog-head .jp { font-family: var(--jp); }
+.catalog-head .cn { font-family: var(--cn); }
 
 /* ===== 作品 / 专辑信息 ===== */
-.album-head { max-width: 760px; margin: 16px auto 4px; text-align: center; }
-.album-title { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif; font-size: 18px; color: #E6D8AE; }
-/* 必须显式声明字体栈并带雅黑回退：否则继承 body 的 Tahoma/Arial（无 MS Gothic），
-   行内简体字（原作/集/作/首等）会掉进宋体，与日文汉字形成一行两字体 */
+.album-head { max-width: 760px; margin: 16px auto 4px; text-align: center; font-family: var(--jp); }
+.album-title { font-family: var(--jp); font-size: 18px; color: #E6D8AE; }
+/* 作品说明行：全部日文原文，故只挂日文字体栈（不再需要雅黑回退） */
 .album-meta {
     margin-top: 2px; font-size: 13px; color: #bbbbaa;
-    font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif;
+    font-family: var(--jp);
 }
 
-/* ===== 分组标题：Disc 1 / 片头曲 / 单曲 / 未收录 ===== */
+/* ===== 分组标题：Disc 1 / 电视剧片头曲 / 未收录 ===== */
 .disc-head {
     max-width: 760px; margin: 26px auto 0; padding-bottom: 6px;
     text-align: center; border-bottom: 1px solid #555540;
 }
-.disc-name { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif; font-size: 17px; color: #CC66FF; margin-right: 10px; }
-.disc-sub { font-size: 13px; color: #bbbbaa; font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif; }
+.disc-name { font-family: var(--jp); font-size: 17px; color: #CC66FF; margin-right: 10px; }
+.disc-sub { font-size: 13px; color: #bbbbaa; font-family: var(--jp); }
 /* 多枚组专辑的信息行（福星小子 / 橙路 2CD）：专辑名加粗，与下方 Disc 1 / Disc 2 拉开层级 */
 .disc-head .album-name { font-weight: bold; }
 
@@ -45,34 +54,36 @@
     text-align: left; /* 覆盖 .main-section 的居中 */
     counter-reset: song;
 }
-.song-list li { padding: 4px 10px; line-height: 1.9; }
+.song-list li { padding: 4px 10px; line-height: 1.9; font-family: var(--jp); }
 .song-list li::before {
     counter-increment: song;
     content: '✦ ' counter(song) ". ";
     color: #E6D8AE;
 }
-.song-list a { font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif; font-size: 17px; }
+.song-list a { font-family: var(--jp); font-size: 17px; }
+/* 「(中译)」链接是页面里唯一的中文，单独挂雅黑 */
+.song-list a.cn { font-family: var(--cn); }
 
-/* 出处说明：跟在歌名后，字号略小、颜色稍暗。
-   必须显式声明字体栈，否则继承 body 的 Tahoma/Arial（无 MS Gothic），
-   汉字与 ① 会回退宋体，造成同一行字体混杂 */
+/* 出处说明：跟在歌名后，字号略小、颜色稍暗。全部日文原文，只挂日文字体栈 */
 .song-list .note {
     margin-left: 8px; font-size: 14px; color: #bbbbaa;
-    font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif;
+    font-family: var(--jp);
 }
 
 /* 缺歌词的曲目：仅列歌名，灰显不可点 */
 .song-list .LyricMissing .mtitle {
-    font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif;
+    font-family: var(--jp);
     font-size: 17px;
     color: #777766;
 }
 /* 存疑标记（miyuki） */
-.song-list .suspect { font-size: 12px; color: #CC6699; }
+.song-list .suspect { font-size: 12px; color: #CC6699; font-family: var(--jp); }
 
-/* ===== 底部备注 ===== */
+/* ===== 底部备注 / 返回链接 ===== */
 .LyricMemo {
     max-width: 760px; margin: 18px auto 0; font-size: 13px;
     color: #bbbbaa; line-height: 1.8;
     text-align: left; /* 覆盖 .main-section 的居中，与列表左边界对齐 */
+    font-family: var(--jp);
 }
+.LyricBack { font-family: var(--jp); }
