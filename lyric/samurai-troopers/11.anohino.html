@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>あの日のフォトグラフ - 鎧伝サムライトルーパー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">鎧伝サムライトルーパー CD ドラマCD「天空伝」(1989)</div>
+
+                    <div class="LyricTitle">あの日のフォトグラフ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">森口博子</div>
+                    <div class="LyricStaff">作曲：渡辺なつみ<br>作曲：芦沢和則<br>編曲：矢野立美</div>
+
+                    <div class="LyricText">
+						<p>
+							放課後のグランドで肩を並べながら<br>
+							ライバルを決めている　あの日のフォトグラフ<br>
+							人並に変わってく　僕を許さずに<br>
+							今も輝いていて　少年の瞳たやさずに<br>
+							時がいくつ流れて　色あせたとしても<br>
+							永遠に鮮やかな　あの日のフォトグラフ</p>
+						<p>
+							傷ついた心さえ　夕映えの季節に溶けて<br>
+							夢に破れた時も　眠れぬ時も<br>
+							いつも忘れたくない寂しさを分けた仲間たち</p>
+						<p>
+							時がいくつ流れて　色あせたとしても<br>
+							永遠に鮮やかな　あの日のフォトグラフ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-samurai-troopers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

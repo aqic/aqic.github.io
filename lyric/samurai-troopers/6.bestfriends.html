@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>BEST FRIENDS - 鎧伝サムライトルーパー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「鎧伝サムライトルーパー」挿入歌(1988)</div>
+
+                    <div class="LyricTitle">BEST FRIENDS</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">SAMURAI BOYS&amp;GIRLS</div>
+                    <div class="LyricStaff">作詞：安藤芳彦<br>作曲：西村智博<br>編曲：戸塚修</div>
+
+                    <div class="LyricText">
+						<p>
+							どんな悲しい事も　誰かがいれば<br>
+							一人で過ごすよりも楽になれる<br>
+							そんな夜は迷わないで<br>
+							どうか　この僕を呼んでくれ　すぐに行くから<br>
+							夜はやがて終わるよ　だから顔を上げて<br>
+							朝陽の輝きが　君を待っている</p>
+						<p>
+							きっと嬉しい時も　誰かがいれば<br>
+							一人で過ごすよりも　もっと楽しい<br>
+							Best Friend　Best Friend　名前呼べば<br>
+							すぐにあの頃に帰れるさ　仲間達と<br>
+							冬に枯れた森は　春に眼を覚ますよ<br>
+							Wow wow wow　百の陽差し浴びて　秋に蘇る</p>
+						<p>
+							いつも僕達は感じてる　夢の力を<br>
+							空の広さよりも　大きなものがある　Wow wow wow<br>
+							心を許し合う　仲間を見つけた<br>
+							夜はやがて終わるよ　だから顔を上げて　Wow wow wow<br>
+							朝陽の輝きが　君を待っている　夜が明けて行く</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-samurai-troopers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

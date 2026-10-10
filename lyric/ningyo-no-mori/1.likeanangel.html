@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>Like an angel（日中対訳） - 人魚の森</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OVA「人魚の森」オープニング(1991)</div>
+
+                    <div class="LyricTitle">Like an angel（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">石川知亜紀</div>
+                    <div class="LyricStaff">作詞、作曲：石川知亜紀<br>編曲：加藤みちあき<br>発売元：HiBOOM VR</div>
+
+                    <div class="LyricText">
+						<p>
+							{Oh please come down like an angel</p>
+						<p>
+							朝の人ごみを眺めて　コーヒー飲んでいる<br>
+							焦りなどないかのように　人には見えるだろう<br>
+							今　目のに前に後戻りできない時間が<br>
+							確かに流れてることを　私は知ってる</p>
+						<p>
+							まるで今日しかないという　生き方をしてみたとき<br>
+							最初に何が見えるだろう</p>
+						<p>
+							Oh please come down like an angel<br>
+							それがどんなに小さな光でもいい<br>
+							姿を見せて欲しい}</p>
+						<p>
+							何もできない一日が　終わっていくこと<br>
+							誰感性にするような　今がいやだから</p>
+						<p>
+							目の前のひとの流れに　逆らって歩くような<br>
+							心をどこかで持っていたい</p>
+						<p>
+							{Oh please come down like an angel<br>
+							今の気持ちそのまま話せる<br>
+							そんな人に出会いたい}</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+							<p>
+								像天使般降临我身边吧</p>
+							<p>
+								眺望着清晨的人群　缀饮着咖啡<br>
+								人们总会觉得　我是那样悠然自得<br>
+								现在　眼前那一去不复返的时间<br>
+								我清楚地感觉到　正从指尖溜走</p>
+							<p>
+								曾尝试过　纵情今日的生活之时<br>
+								最初能看到些什么呢</p>
+							<p>
+								像天使般降临我身边吧<br>
+								即使是多么微弱的光芒也好<br>
+								想看看你的样子</p>
+							<p>
+								像天使般降临我身边吧<br>
+								能以现在这样的心情来交流<br>
+								想与那样的人约会</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ningyo-no-mori-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

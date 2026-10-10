@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>レインボー・パラダイス - 鎧伝サムライトルーパー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「鎧伝サムライトルーパー」挿入歌(1988)</div>
+
+                    <div class="LyricTitle">レインボー・パラダイス</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">SAMURAI BOYS&amp;GIRLS</div>
+                    <div class="LyricStaff">作詞：安藤芳彦<br>作曲：和泉一弥<br>編曲：戸塚修</div>
+
+                    <div class="LyricText">
+						<p>
+							秘密の港に集まって　南の海へと繰り出そう<br>
+							歌い出したヒーロー達　みんなで盛り上がれ<br>
+							宝の島でも探そうか　海賊なんかにゃ負けないぜ<br>
+							南風に吹かれながら　世界を一回り　Oh!<br>
+							夢のパラダイスを　探そうよ　風を掴め<br>
+							遠いパラダイスへ　虹をかけよう</p>
+						<p>
+							今夜の料理はバーベキュー　ワイワイガヤガヤ大騒ぎ<br>
+							下手な歌が？？　ドキドキするけれど<br>
+							心の鎧を脱ぎ捨てて　今夜は朝まで盛り上がれ<br>
+							夜が明けても　夢は残る　心の片隅に　Oh!<br>
+							遠いパラダイスは　気がつけば眼の前さ<br>
+							夢のパラダイスへ　虹をかけよう<br>
+							Rainbow Paradise　Rainbow Paradise　Paradise!</p>
+						<p>
+							いろんな仲間が集まって　いろんな時間を過ごしたね<br>
+							また会おうと約束して　笑顔で別れよう<br>
+							遠いパラダイスは　気がつけば眼の前さ<br>
+							夢のパラダイスへ　虹をかけよう<br>
+							Rainbow Paradise　Rainbow Paradise</p>
+						<p>
+							Oh!　遠いパラダイスは僕達の中にある<br>
+							夢のパラダイスへ　虹をかけよう<br>
+							Oh!　遠いパラダイスは君達の中にある<br>
+							夢のパラダイスへ　虹をかけよう<br>
+							Rainbow Paradise　Rainbow Paradise　Bye-bye!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-samurai-troopers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

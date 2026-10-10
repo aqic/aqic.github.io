@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>キャラバン（友情） - 天空戦記シュラト</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「天空戦記シュラト」エンディング②(1990)</div>
+
+                    <div class="LyricTitle">キャラバン（友情）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">清水咲斗子</div>
+                    <div class="LyricStaff">作詞：工藤崇<br>作曲：渡辺博也<br>編曲：渡辺博也</div>
+
+                    <div class="LyricText">
+						<p>
+							はるかな道で行き交う人は<br>
+							風紋を心に刻むけど<br>
+							語らぬままに同じ夢見て<br>
+							旅していけるのはほんのわずか </p>
+						<p>
+							ときには想って　その分憎んで<br>
+							やがて心通って </p>
+						<p>
+							Just like moon &sun　裏と表さ<br>
+							たとえ傷つけあっても<br>
+							愛という水を分け合い<br>
+							乾くことを知らない友情 </p>
+						<p>
+							果てない道はやがていくつに<br>
+							さよならも言わずに別れるけど </p>
+						<p>
+							ひとりはなおさら　心に感じる<br>
+							結ばれてる力を </p>
+						<p>
+							Just like moon &sun　裏と表さ<br>
+							たとえ離れていても<br>
+							夢という旅の果てまで<br>
+							背くことを知らない友情 </p>
+						<p>
+							All we shall be stars<br>
+							夜空を埋めて<br>
+							それぞれの輝きを<br>
+							自慢気に語り合う日を誓って今<br>
+							手を振る友情</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-shurato-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

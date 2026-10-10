@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>SHINING SOUL - 天空戦記シュラト</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「天空戦記シュラト」オープニング①(1989)</div>
+
+                    <div class="LyricTitle">SHINING SOUL</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">清水關斗子</div>
+                    <div class="LyricStaff">　</div>
+
+                    <div class="LyricText">
+						<p>
+							今 熱い魂を 解き放て未来へと<br>
+							失つた真實を求めて<br>
+							誓い合う友情に襲い来る暗黑を<br>
+							燒き尽くせ 燃え上がる炎を<br>
+							どんな悲しみの后も 深い暗を越えて<br>
+							はるかに朝日が 天と地を染めるように <br>
+							KEEP ON SHINING SHINING 輝きを<br>
+							KEEP ON SHINING YOUR EYES<br>
+							KEEP ON SHOOTING SHOOTING 解き放て<br>
+							KEEP ON SHOOTING YOUR SLUL<br>
+							熱く燃える想いを </p>
+						<p>
+							怒りより優しさで泪よりその汗で<br>
+							奪われた永遠を求めて<br>
+							握りしめた拳で忍び寄る暗黑を<br>
+							打ち碎け その愛の力で<br>
+							こらえきれない痛みも ホロ苦さに變えて<br>
+							真つ赤な夕陽か 天と地を染めるように </p>
+						<p>
+							KEEP ON SEARCHING SEARCHING あきらめず<br>
+							KEEP ON SEARCHING YOUR LOVE<br>
+							KEEP ON SHOOTING SHOOTING 解き放て<br>
+							KEEP ON SHOOTING YOUR SLUL<br>
+							熱く燃える想いを </p>
+						<p>
+							どんな悲しみの后も 深い黑を越えて<br>
+							はるかに朝日が 天と地を染めるように </p>
+						<p>
+							KEEP ON SHINING SHINING 輝きを<br>
+							KEEP ON SHINING YOUR EYES<br>
+							KEEP ON SHOOTING SHOOTING 解き放て<br>
+							KEEP ON SHOOTING YOUR SLUL<br>
+							熱く燃える想いを</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-shurato-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

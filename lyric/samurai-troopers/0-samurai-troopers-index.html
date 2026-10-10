@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">鎧伝サムライトルーパー</span><span class="cn">（魔神坛斗士）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《鎧伝サムライトルーパー》</div>
+                        <div class="album-meta">名古屋テレビ・テレビ朝日系列 テレビアニメ(1988–1989)　全 39 話 ＋ OVA 3 作</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">テレビアニメ</span><span class="disc-sub">9 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.stardusteyes.html">《スターダスト・アイズ》</a><span class="note">- オープニング①(1988)</span></li>
+						<li class="LyricItem"><a href="2.samuraiheart.html">《サムライ・ハート》</a><span class="note">- オープニング②(1989)</span></li>
+						<li class="LyricItem"><a href="3.faraway.html">《FAR AWAY》</a><span class="note">- エンディング①(1988)</span></li>
+						<li class="LyricItem"><a href="4.befree.html">《BE FREE!》</a><span class="note">- エンディング②(1989)</span></li>
+						<li class="LyricItem"><a href="5.nomap.html">《地図のない旅へ》</a><span class="note">- 挿入歌(1988)</span></li>
+						<li class="LyricItem"><a href="6.bestfriends.html">《BEST FRIENDS》</a><span class="note">- 挿入歌(1988)</span></li>
+						<li class="LyricItem"><a href="7.midnightparty.html">《MIDNIGHT PARTY》</a><span class="note">- 挿入歌(1988)</span></li>
+						<li class="LyricItem"><a href="8.rainbow.html">《レインボー・パラダイス》</a><span class="note">- 挿入歌(1988)</span></li>
+						<li class="LyricItem"><a href="9.kamen.html">《仮面の下の涙》</a><span class="note">- 挿入歌(1988)</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">OVA</span><span class="disc-sub">1 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="10.tsukamaeteite.html">《つかまえていて》</a><span class="note">- OVA3「MESSAGE」主題歌(1991)</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">CD</span><span class="disc-sub">5 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="11.anohino.html">《あの日のフォトグラフ》</a><span class="note">- ドラマCD「天空伝」(1989)</span></li>
+						<li class="LyricItem"><a href="12.morei.html">《暮れ急ぐ街》</a><span class="note">- CD(1989)</span></li>
+						<li class="LyricItem"><a href="13.someday.html">《SOME DAY》</a><span class="note">- ドラマCD「月」(1991)</span></li>
+						<li class="LyricItem"><a href="14.skydreamer.html">《SKY DREAMER》</a><span class="note">- CD(1989)</span></li>
+						<li class="LyricItem"><a href="15.rainylazymorning.html">《Rainy Lazy Morning》</a><span class="note">- CD(1989)</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>永遠の涙 - 人魚の森</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OVA「人魚の傷」主題歌(1993)</div>
+
+                    <div class="LyricTitle">永遠の涙</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">持田真樹(?新居昭乃)</div>
+                    <div class="LyricStaff">作詞：松本一起<br>作曲：都留教博<br>編曲：都留教博</div>
+
+                    <div class="LyricText">
+						<p>
+							瘠せた天地を振り向く<br>
+							預言者が時を悲しむ<br>
+							二つの瞳と二つの耳で<br>
+							なぜ未來を見ないかと<br>
+							青い星座は輝く<br>
+							人々の罪を背負って<br>
+							命があふれる心の中に<br>
+							また夜明けを捧げてる<br>
+							美しい人よ行かないで<br>
+							百年の先で会いたいけれど<br>
+							私は一人きりの永遠の旅</p>
+						<p>
+							空は孤独を夢見て<br>
+							近づいた夜を振り切る<br>
+							地上に漂うカラスの海は<br>
+							また炎を吹き上げる<br>
+							新しい人よ泣かないで<br>
+							千年を越えて待ち受けていた<br>
+							涙を口にした時に<br>
+							有り触れた日々を取り上げられた<br>
+							私は一人きりの永遠の旅</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ningyo-no-mori-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

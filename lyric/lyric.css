@@ -13,6 +13,13 @@
 	{position: relative; margin: 0 auto; text-align: left; box-sizing: border-box;
 	 padding-top: 76px;
 	 font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif;}
+/* ===== 双语页：中文訳部分单独走中文字体 =====
+   日文部分仍是上面的 MS Gothic 栈；中文译文可能夹杂 ※ (、) 等日文符号，
+   雅黑在前可以保证简体字取正字形，符号与假名再回退 MS Gothic。
+   block 用法：整段「中文訳」区块 <div class="LyricCN">；
+   inline 用法：逐行交错的双语页 <span class="LyricCN">中文行</span>。 */
+.LyricCN
+	{font-family: 'Microsoft YaHei', 'MS Gothic', 'ＭＳ ゴシック', sans-serif;}
 /* 正文左右呼吸位 */
 .LyricBody > *
 	{margin-left: 14px; margin-right: 14px;}

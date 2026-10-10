@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>水たまり（日中対訳） - 人魚の森</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OVA「人魚の森」エンディング(1991)</div>
+
+                    <div class="LyricTitle">水たまり（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">kayoko</div>
+                    <div class="LyricStaff">作詞：kayoko<br>作曲：kayoko&amp;小宮山伸介<br>編曲：小宮山伸介<br>発売元：cutting edge</div>
+
+                    <div class="LyricText">
+						<p>
+							昔の事だとは　まだ片付けられない<br>
+							いつまでかかるの、と　あなたは笑うけど<br>
+							どれくらい　覚えている　ひどく泣きながら<br>
+							どれくらい　覚えている　「あの事」と言えば</p>
+						<p>
+							いつまでもまだ　うつむいて<br>
+							飛び越えられない　水たまり<br>
+							わからなくなる　もしかすると<br>
+							変われないのは私だけかな</p>
+						<p>
+							昔の事だとは　まだ片付けられない</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+							<p>
+								对于往昔　还无法收拾心情<br>
+								你笑着说　要等到什么时候呢<br>
+								可是　失声痛哭的时候　你还记得多少<br>
+								若说起“那件事”　你又记得多少</p>
+							<p>
+								像往常一样　你又低下头<br>
+								无法跳过的水洼啊<br>
+								彼此会变得陌生　也许<br>
+								不会改变的唯有我吧</p>
+							<p>
+								对于往昔　还无法收拾心情</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ningyo-no-mori-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

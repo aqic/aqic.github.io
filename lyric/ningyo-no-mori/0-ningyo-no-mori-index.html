@@ -1,0 +1,62 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">人魚の森</span><span class="cn">（人鱼传说）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《人魚の森／人魚の傷》</div>
+                        <div class="album-meta">高橋留美子原作　OVA「人魚の森」(1991)／「人魚の傷」(1993)</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">「人魚の森」</span><span class="disc-sub">4 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.likeanangel.html">《Like an angel》</a>＆<a href="1.likeanangel-bilingual.html" class="cn">(中)</a><span class="note">- オープニング(1991)</span></li>
+						<li class="LyricItem"><a href="2.mizutamari.html">《水たまり》</a>＆<a href="2.mizutamari-bilingual.html" class="cn">(中)</a><span class="note">- エンディング(1991)</span></li>
+						<li class="LyricItem"><a href="3.toki.html">《時の漂泊》</a>＆<a href="3.toki-bilingual.html" class="cn">(中)</a><span class="note">- 挿入歌(1991)</span></li>
+						<li class="LyricItem"><a href="4.borntoloveyou.html">《森をぬけて-Born to love you-》</a><span class="note">- 挿入歌(1991)</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">「人魚の傷」</span><span class="disc-sub">2 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="5.beadsoftears.html">《Beads of tears》</a>＆<a href="5.beadsoftears-bilingual.html" class="cn">(中)</a><span class="note">- オープニング(1993)</span></li>
+						<li class="LyricItem"><a href="6.eiennonamida.html">《永遠の涙》</a><span class="note">- 主題歌(1993)</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

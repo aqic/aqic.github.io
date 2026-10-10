@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>FAR AWAY - 鎧伝サムライトルーパー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「鎧伝サムライトルーパー」エンディング①(1988)</div>
+
+                    <div class="LyricTitle">FAR AWAY</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">浦西真理子</div>
+                    <div class="LyricStaff">　</div>
+
+                    <div class="LyricText">
+						<p>
+							So faraway　切ないくらい君を　抱きしめていたいけど<br>
+							So faraway　ピリオドの風走る　Twilight zone　You are the wonderer.</p>
+						<p>
+							シャツに顔をうずめて Oh,loneliness<br>
+							潮騒の中 飛ばすバイク　？？の夜<br>
+							このまま時が止まれば Oh,happiness<br>
+							笑顔のままで生きていけそうで<br>
+							Hello!　未来の国から　Hello!　君を誘う声<br>
+							不思議な力でアクセルかける<br>
+							So faraway　切ないくらい君を　抱きしめていたいけど<br>
+							So faraway　ピリオドの風走る　Twilight zone　You are the wonderer.</p>
+						<p>
+							何が一番大事　Oh,loneliness<br>
+							答はいつも風の中で　踊っている<br>
+							それを捕まえたくて　Oh,happiness<br>
+							腕を伸ばすよ　青春のメモリー<br>
+							Hello!　瞳を閉じれば　Hello!　いつも会えるけど<br>
+							背中にイニシャル　指が震える<br>
+							So faraway　泣いちゃいけない　君の勇気が好きだから<br>
+							So faraway　夢の彼方へ　Faraway　faraway　You are the wonderer.</p>
+						<p>
+							So faraway　私も行かなきゃ　胸に星の地図を広げて<br>
+							So faraway　夢を探しに　Faraway　faraway　We are the wonderer.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-samurai-troopers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

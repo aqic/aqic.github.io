@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>森をぬけて-Born to love you- - 人魚の森</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OVA「人魚の森」挿入歌(1991)</div>
+
+                    <div class="LyricTitle">森をぬけて-Born to love you-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">深津繪里</div>
+                    <div class="LyricStaff">作詞：山田ひろし<br>作曲：間瀨憲治<br>編曲：鳥山雄司</div>
+
+                    <div class="LyricText">
+						<p>
+							今　風がささやいて消えた<br>
+							その手を　離しちゃいけないよ、と<br>
+							なぜ　胸は痛むのだろうね<br>
+							私に　何を傳えたいというの?<br>
+							夜の深さ<br>
+							空の青さ<br>
+							そのすべてを　教えてくれた<br>
+							あなたを今　見つめてる</p>
+						<p>
+							※めぐり逢うために　歩き續けてた<br>
+							　この腕の中へ<br>
+							　愛しあうために　生きれてきたこと<br>
+							　気つかせてくれた</p>
+						<p>
+							今、あなたのふれたすべてを<br>
+							こんなに　いとしく感じている<br>
+							ただ　あなたの悲しい日日を<br>
+							知らずに　眠ったことがくやしい<br>
+							何を見たの?<br>
+							誰といたの?<br>
+							幼い日の　あなたを見つけ<br>
+							抱きしめたいと思うの<br>
+							めぐり逢うために　ひとりきりだった<br>
+							いまならば　わかる<br>
+							何も聞かないで　ほほえんでくれる<br>
+							やさしさの中で<br>
+							『永遠』という<br>
+							言葉を信じてみたい<br>
+							はじめて　思った<br>
+							二度と離さない　ここにいたうだけ<br>
+							それだけでいいの<br>
+							何もこわくない　あなたの瞳に<br>
+							わたしが映れば</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ningyo-no-mori-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

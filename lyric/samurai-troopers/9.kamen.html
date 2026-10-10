@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>仮面の下の涙 - 鎧伝サムライトルーパー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「鎧伝サムライトルーパー」挿入歌(1988)</div>
+
+                    <div class="LyricTitle">仮面の下の涙</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">小杉十朗太、梁田清之、松本保典、二又一生</div>
+                    <div class="LyricStaff">作詞：安藤芳彦<br>作曲：和泉一弥<br>編曲：戸塚修</div>
+
+                    <div class="LyricText">
+						<p>
+							悪役なんていつも　悲しい運命(サダメ)の Lonely Guy<br>
+							最後はいつだって英雄にやられてしまう<br>
+							たまには俺達にも拍手を送っておくれ<br>
+							仮面に隠してる素顔は見せない<br>
+							何故　俺達は憎まれ役ばかり　いつも心の片隅で泣いている<br>
+							ヒーローになりたい　格好良くいきたい<br>
+							いつの日か願いを叶えて　Oh,my god<br>
+							ヒーローになりたい　格好良く決めたい<br>
+							夕焼けを背にして　笑ってみたい</p>
+						<p>
+							ぼやくのはやめとけよ　お前の気持ちは解る<br>
+							涙は似合わない　俺達は悪役なのさ<br>
+							いつかは俺達にも　明るい未来もくるさ<br>
+							慰めてくれるな　余計に悲しい<br>
+							この悪の道　胸を張って進め　それが男の生きる道　青春さ<br>
+							ヒーローは要らない　このままでかまわない<br>
+							俺達がいなけりゃ　始まらないぜ<br>
+							ヒーローにサヨナラ　泣き言は言わない<br>
+							この胸に隠した　叶わぬ願い</p>
+						<p>
+							ヒーローになりたい　格好良くいきたい<br>
+							いつの日か願いを叶えて　Oh,my god<br>
+							ヒーローになりたい　格好良く決めたい<br>
+							夕焼けを背にして　笑ってみたい<br>
+							ヒーローは要らない　このままでかまわない<br>
+							俺達がいなけりゃ　始まらないぜ<br>
+							ヒーローにサヨナラ　泣き言は言わない<br>
+							この胸に隠した　叶わぬ願い</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-samurai-troopers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

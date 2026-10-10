@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>KEEP YOUR PURE LOVE - 天空戦記シュラト</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OVA「天空戦記シュラト 創世への暗闘」オープニング(1991)</div>
+
+                    <div class="LyricTitle">KEEP YOUR PURE LOVE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">清水咲斗子</div>
+                    <div class="LyricStaff">　</div>
+
+                    <div class="LyricText">
+						<p>
+							夢の中で見た微笑みを追え　きっと確かな It's pure love.Oh,yeah! <br>
+							巡り会う日まで　胸の炎を　消しちゃいけない　Keep on pure love.Oh yeah! <br>
+							燃えるような　記憶をたどれ　熱い鼓動の中 <br>
+							Keep your pure love.　Keep your pure love.　誰かが呼んでる <br>
+							Fight,fight,fight. Misty future　あの微笑みを <br>
+							探して　光ある未来 </p>
+						<p>
+							信じてればいつか　無限の力　夢に近づけ Just a spark　Oh yeah! <br>
+							思い描ければ　明日は手の中　立ち止まらずに Keep on running,oh yeah! <br>
+							迷い出せば　影が追いつく　時が追い越して行く <br>
+							Keep on running.　Keep on running.　後ろを見ないで <br>
+							Step by step　Stepping future　腕を伸ばして <br>
+							つかめよ　光ある未来 </p>
+						<p>
+							Keep your pure love.　Keep your pure love.　誰かが呼んでる <br>
+							Fight,fight,fight. Misty future　あの微笑みを <br>
+							探して　光ある未来</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-shurato-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

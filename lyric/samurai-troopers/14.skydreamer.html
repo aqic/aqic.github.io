@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>SKY DREAMER - 鎧伝サムライトルーパー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">鎧伝サムライトルーパー CD CD(1989)</div>
+
+                    <div class="LyricTitle">SKY DREAMER</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">竹村拓</div>
+                    <div class="LyricStaff">作詞：安藤芳彦<br>作曲：泉美一弥<br>編曲：戸塚修</div>
+
+                    <div class="LyricText">
+						<p>
+							遠い空の真ん中で　誰かを待っている<br>
+							一人僕の呟きは　空しく響くだけ　Wow Wowow<br>
+							I'm so lonely.　見上げれば流れ星<br>
+							願い事一つも見つからない　僕なのさ<br>
+							星に抱かれたドリーマー　やがて目覚める時<br>
+							僕が無くしたもの　この手に掴むだろう<br>
+							孤独なドリーマー　青い光の中<br>
+							心震わせても　言葉さえ　届かない　For me</p>
+						<p>
+							僕のことを呼んでいる　微かな声がする　Wow Wow<br>
+							I'm so lonely.　あの夜の流れ星<br>
+							何も言えないまま　見つめていた僕だった<br>
+							明日を無くしたドリーマー　今は一人空で<br>
+							心閉ざしたまま　夢見る僕だけど<br>
+							いつかはドリーマー　君に出会える時<br>
+							微笑み取り戻す　その時を信じたい　For you</p>
+						<p>
+							星に抱かれたドリーマー　やがて目覚める時<br>
+							僕が無くしたもの　この手に掴むだろう<br>
+							いつかはドリーマー　君に出会える時<br>
+							微笑み取り戻す　その時を信じたい　For you</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-samurai-troopers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

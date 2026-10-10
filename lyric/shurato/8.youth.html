@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>青春のファイアー - 天空戦記シュラト</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">天空戦記シュラト イメージソング(1989)</div>
+
+                    <div class="LyricTitle">青春のファイアー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">関　俊彦</div>
+                    <div class="LyricStaff">作詞:水谷啓二<br>作曲:前田克樹<br>編曲:神林早人</div>
+
+                    <div class="LyricText">
+						<p>
+							まわりくどい考えよりも<br>
+							身体で感じる痛みが いいよ<br>
+							試した時 強い Beat in my heart<br>
+							ズッシリとつかめる確かさがいい</p>
+						<p>
+							胸を熱くさせるものを 求めて<br>
+							俺は生きたい<br>
+							理屈とか 宿命(さだめ)とか<br>
+							そんなもんじゃないぜ</p>
+						<p>
+							シャクティから 繰り出せば 炎を上げる<br>
+							俺の拳は 青春のFire Ball<br>
+							今だから 今こその 俺で輝き続けていたい<br>
+							Go my way</p>
+						<p>
+							タントラに祈りを込めたら<br>
+							怒りもやがて愛へと変わる<br>
+							光る涙の後が Heat my heart<br>
+							大切な何か 見えてくるだろう</p>
+						<p>
+							胸の熱くさせるものを 求めて<br>
+							俺は生きたい<br>
+							理屈とか定めとかそんなもんじゃないぜ</p>
+						<p>
+							シャクティから繰り出せば 火花の散らす<br>
+							俺の明日は青春のFire Ball<br>
+							今だから今こその炎の上げて俺の青春<br>
+							Go my way</p>
+						<p>
+							胸の熱くさせるものを求めて俺は生きたい<br>
+							理屈とか 宿命(さだめ)とか<br>
+							そんなもんじゃないぜ</p>
+						<p>
+							It's the way I love.It's the way I live.<br>
+							火花の散らす 俺の明日は<br>
+							青春のFire Ball<br>
+							It's the way I love.It's the way I live.<br>
+							炎の上げて 俺の青春 Fire Ball</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-shurato-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

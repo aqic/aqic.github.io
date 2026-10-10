@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">天空戦記シュラト</span><span class="cn">（天空战记）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《天空戦記シュラト》</div>
+                        <div class="album-meta">テレビ東京系列 テレビアニメ(1989–1990)　全 38 話 ＋ OVA 6 作</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">テレビアニメ</span><span class="disc-sub">4 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.shiningsoul.html">《SHINING SOUL》</a><span class="note">- オープニング①(1989)</span></li>
+						<li class="LyricItem"><a href="2.truth.html">《Truth》</a><span class="note">- オープニング②(1989)</span></li>
+						<li class="LyricItem"><a href="3.sandmap.html">《砂塵の迷図》</a><span class="note">- エンディング①(1989)</span></li>
+						<li class="LyricItem"><a href="4.caravan.html">《キャラバン（友情）》</a><span class="note">- エンディング②(1990)</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">OVA</span><span class="disc-sub">1 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="5.keepyourpurelove.html">《KEEP YOUR PURE LOVE》</a><span class="note">- OVA「創世への暗闘」オープニング(1991)</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">イメージソング</span><span class="disc-sub">3 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="6.koi.html">《恋・無双華》</a><span class="note">- イメージソング(1989)</span></li>
+						<li class="LyricItem"><a href="7.hikariaru.html">《光りある世界へ》</a><span class="note">- イメージソング(1989)</span></li>
+						<li class="LyricItem"><a href="8.youth.html">《青春のファイアー》</a><span class="note">- イメージソング(1989)</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

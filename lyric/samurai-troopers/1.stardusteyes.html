@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>スターダスト・アイズ - 鎧伝サムライトルーパー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「鎧伝サムライトルーパー」オープニング①(1988)</div>
+
+                    <div class="LyricTitle">スターダスト・アイズ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">浦西真理子</div>
+                    <div class="LyricStaff">作詞：三浦徳子<br>作曲：茂村泰彦</div>
+
+                    <div class="LyricText">
+						<p>
+							愛...ちぎれてく　Angel Heart<br>
+							空に吠えるよ　All night long<br>
+							Eyes...この街はいつも　瞳　哀しくて</p>
+						<p>
+							砕け散った月を　いつかつなぎとめて　夜空へ飾りたい<br>
+							考えるより先に走り出してみれば　裸の君がいる<br>
+							心のYOROIは 暖かくはないさ<br>
+							It's the time!　Do the best!　勇気の向こう側へ...</p>
+						<p>
+							愛...ちぎれてく　Angel Heart<br>
+							空に吠えるよ　All night long<br>
+							Eyes...この街はいつも　スターダスト　降らせてる</p>
+						<p>
+							真夜中の部屋で泣いてちゃ駄目さ　ガラスのジェネレーション<br>
+							一人じゃ出来ないけど　君とならばOK　めぐり逢い　呼んでいる<br>
+							心はソルジャー　やさしさ隠してる<br>
+							It's the time!　Do the best!　明日の向こう側へ...</p>
+						<p>
+							心のスターダスト　きらめきたがってる<br>
+							It's the time!　Do the best!　愛を集めながら<br>
+							愛...ちぎれてく　Angel Heart<br>
+							空に吠えるよ　All night long<br>
+							Eyes...この街はいつも　スターダスト　降らせてる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-samurai-troopers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

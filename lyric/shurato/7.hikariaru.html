@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>光りある世界へ - 天空戦記シュラト</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">天空戦記シュラト イメージソング(1989)</div>
+
+                    <div class="LyricTitle">光りある世界へ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島本須美/水谷優子/林原めぐみ/井上和彦/
+関俊　彦/山寺宏一/堀内賢雄/子安武人</div>
+                    <div class="LyricStaff">作詞: 水谷啓二<br>作曲: 田村仙蔵<br>編曲: 山本健司</div>
+
+                    <div class="LyricText">
+						<p>
+							晴れた空につながる<br>
+							どこかじゃ 雨が 激しく降りてるかもしれない</p>
+						<p>
+							そうさ 今どこかで誰かが<br>
+							悲しい雨に打たれて 救いを求めている</p>
+						<p>
+							なぜ 傷つけるのか<br>
+							限りのある命をただ意味もなく<br>
+							いつか気付き 振り返れば <br>
+							収り戻せない光</p>
+						<p>
+							*Bright 愛を信じ 人を愛し すべての命を<br>
+							カギは君のこころひとつ<br>
+							扉開いて 光ある世界へ</p>
+						<p>
+							空にそびえる幹を<br>
+							その目で見たら 君にも<br>
+							信じてもらえろだろう</p>
+						<p>
+							鳥が舞い 獣が駆け抜け<br>
+							同じ光りにすべてが<br>
+							抱かれてる世界を</p>
+						<p>
+							なぜ 許せないのか<br>
+							限りのない光をただすこしずつ<br>
+							同じように譲り合えば<br>
+							すべてが 輝きだす</p>
+						<p>
+							Bright 未来（あした）を信じ 友を愛し すべてがまぶしく<br>
+							カギは君のこころひとつ<br>
+							扉開いて 光ある世界へ</p>
+						<p>
+							* repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-shurato-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

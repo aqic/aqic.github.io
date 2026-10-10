@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>Truth - 天空戦記シュラト</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「天空戦記シュラト」オープニング②(1989)</div>
+
+                    <div class="LyricTitle">Truth</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">清水咲斗子</div>
+                    <div class="LyricStaff">作詞：水谷啓二<br>作曲：渡辺博也<br>編曲：渡辺博也</div>
+
+                    <div class="LyricText">
+						<p>
+							なぜ独りきり時空（とき）に運ばれ<br>
+							なぜ独りだけ苦しみ背負う<br>
+							許し合う愛　それも闘い<br>
+							謎解く力　拳に宿る </p>
+						<p>
+							みなぎるソーマを闇にぶつけろ<br>
+							ヴェーダに祈りを　オンシュラソワカ </p>
+						<p>
+							Fighting for Truth, Fighting for Lone,<br>
+							雲を蹴散らすのさ<br>
+							めざそう　めざそう　光の世界を </p>
+						<p>
+							SHAKTY′s the Soul SHAKTY′s the Force,<br>
+							輝く戦士達<br>
+							いつかは　永久（とわ）へと光輝け<br>
+							（シュラト！） </p>
+						<p>
+							なぜ独りきり闇に運ばれ<br>
+							なぜ独りだけ憎しみ背負う<br>
+							怒りを超えて注ぎこむ慈悲<br>
+							謎解くカギは掌の中 </p>
+						<p>
+							ふたつの運命重ね合うとき<br>
+							遥かな記憶が光を放つ </p>
+						<p>
+							Fighting for Truth, Fighting for Lone,<br>
+							呪縛を打ち砕け<br>
+							めざそうめざそう光の世界を<br>
+							SHAKTY′s the Soul SHAKTY′s the Force,<br>
+							輝く戦士達<br>
+							新たな運命光輝け<br>
+							（シュラト！） </p>
+						<p>
+							Fighting for Truth, Fighting for Lone,<br>
+							呪縛を打ち砕け<br>
+							めざそうめざそう光の世界を </p>
+						<p>
+							SHAKTY′s the Soul SHAKTY′s the Force,<br>
+							輝く戦士達<br>
+							いつかは　永久（とわ）へと光輝け<br>
+							（シュラト！）</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-shurato-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

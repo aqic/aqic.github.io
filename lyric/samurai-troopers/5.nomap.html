@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视视口设置 -->
+    <title>地図のない旅へ - 鎧伝サムライトルーパー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビアニメ「鎧伝サムライトルーパー」挿入歌(1988)</div>
+
+                    <div class="LyricTitle">地図のない旅へ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">サムライボーイズ＆ガールズ</div>
+                    <div class="LyricStaff">　</div>
+
+                    <div class="LyricText">
+						<p>
+							数え切れない時間を過ごして　解り合えない二人に気づいて<br>
+							唇　噛んでる　うつむいた夜　So Bad<br>
+							押さえきれない気持ちを抱えて　なくしかけてた自分を探して<br>
+							旅立つ夜明けを　待ち続けてた　Oh,Yeah.<br>
+							飾らない言葉で何かを伝えたい　いつか君も　この気持ちが解る<br>
+							Be myself.　Be myself.　孤独を恐れずに<br>
+							Try again. Try again,　君も歩き出せよ<br>
+							Good-bye love. Good-bye love.　孤独と引換に　明日をつかめ</p>
+						<p>
+							君を愛した理由に気づいて　柄じゃないほど真面目に悩んで<br>
+							も一度　全てを捨ててしまおう　Oh,girl<br>
+							二度と合えない人ならなおさら　忘れられない恋ならなおさら<br>
+							素直な気持ちで見つめ合いたい　Oh,Yeah.<br>
+							戻れない昨日に縛られていないで　まぶしい朝　冷たい風　浴びて<br>
+							Be myself.　Be myself.　一人で生きること<br>
+							Try again. Try again,　誰にも出来るはず<br>
+							Good-bye love. Good-bye love.　寂しさを知っている　二つの心</p>
+						<p>
+							Be myself.　Be myself.　地図などない旅へ<br>
+							Try again. Try again,　果てしのない旅へ<br>
+							Good-bye love. Good-bye love.　孤独を恐れずに　明日をつかめ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-samurai-troopers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>
