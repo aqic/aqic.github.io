@@ -58,8 +58,8 @@
         .lyric-catalog a:hover {
             text-decoration: none;
             font-size: 16px;
-            /* 拉丁字符仍走 Tahoma，日文统一回退到 MS Gothic */
-            font-family: Tahoma, Arial, 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', sans-serif;
+            /* 与歌单页一致：日文与简体中文统一走 MS Gothic ＋雅黑回退 */
+            font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif;
             min-width: 0;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -67,12 +67,13 @@
         }
 
         /* 名称后的歌词数量
-           不设 font-family，整段随全站 Tahoma（半角括号 Tahoma 有字形，无字体回退）；
+           同样按歌单页字体栈（雅黑回退，避免与站名字体混杂）；
            配合父级 align-items:center 与名称按盒模型居中对齐 */
         .lyric-catalog .count {
             font-size: 12px;
             color: #9999FF;
             flex: 0 0 auto;
+            font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif;
         }
 
         /* 分组小标题 */
@@ -90,7 +91,7 @@
         .lyric-catalog li.pending {
             color: #A8A896;
             font-size: 15px;
-            font-family: Tahoma, Arial, 'MS Gothic', '\uff2d\uff33 \u30b4\u30b7\u30c3\u30af', 'Yu Gothic', sans-serif;
+            font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif;
         }
 
         .lyric-catalog li.pending::before {
