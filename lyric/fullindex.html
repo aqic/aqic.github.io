@@ -76,7 +76,8 @@
             font-family: 'MS Gothic', 'ＭＳ ゴシック', 'Yu Gothic', 'Microsoft YaHei', sans-serif;
         }
 
-        /* 分组小标题 */
+        /* 分组小标题 / 写在前面的话
+           长段落需要能在 max-width 内正常折行，故显式允许换行并防止长串溢出 */
         .catalog-subhead {
             margin: 22px 0 6px;
             font-size: 15px;
@@ -85,6 +86,11 @@
             text-align: left;
             border-bottom: 1px dashed #555540;
             padding-bottom: 5px;
+            /* 中文长段折行：不换行会把容器撑宽，超长串也允许断行 */
+            white-space: normal;
+            overflow-wrap: break-word;
+            word-break: break-word;
+            line-height: 1.9;
         }
 
         /* 未整理条目：只列名字，无链接无数量，灰显区别于可点击条目 */
@@ -145,7 +151,7 @@
 
         <main class="main-content"> <!-- 主内容区 -->
             <section class="main-section"> <!-- 主内容区块 -->
-                <div style="margin:20px; max-width:1000px;"> <!-- 内容文字 -->
+                <div style="margin:20px auto; max-width:800px; width:100%;"> <!-- 内容文字 -->
                     <div class="catalog-title">
                         <img src="images/ccsakura.gif" alt="魔卡少女樱">
                         <span>Anime & Game Lyrics</span>
