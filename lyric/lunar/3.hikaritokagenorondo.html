@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>光と影のロンド - ルナ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ルナ Silver Star Story」</div>
+
+                    <div class="LyricTitle">光と影のロンド</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							伝説　消える記憶<br>
+							終わるのないペイジエント<br>
+							孤独のふかい不快眠り<br>
+							いつか目覚める時が<br>
+							今　忘れられた古い本<br>
+							過去だけつづられてる</p>
+						<p>
+							光と影のロンド　月は雲に溶けてく<br>
+							風のね　旅の調べ<br>
+							知らない異国の町で<br>
+							誰かがきっと待っていると<br>
+							囁くように　そっと使える</p>
+						<p>
+							☆青き月、妖精と空を踊る<br>
+							　未来はそう私の心で<br>
+							　暗い影　嵐をつれて来たとしても<br>
+							　光を灯すの</p>
+						<p>
+							流星が金の弓をひくと<br>
+							銀河の海に　そっとこぎ出す</p>
+						<p>
+							青い月。妖精は歌をかまで<br>
+							予感はそう明朗を彷徨い</p>
+						<p>
+							終わりない光と影のロンドの中<br>
+							私を誘うの</p>
+						<p>
+							☆繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lunar-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

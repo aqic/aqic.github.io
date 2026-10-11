@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>最後の蛍 - 藍より青し</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Drama CD Opening Theme</div>
+
+                    <div class="LyricTitle">最後の蛍</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川澄绫子</div>
+                    <div class="LyricStaff">Lyrics : Aida Takeshi<br>Music : Itou Nobuo<br>Arrangement : Itou Nobuo</div>
+
+                    <div class="LyricText">
+						<p>
+							風の音色が聴こえます　こんな夜は月を浴びて<br>
+							縁側で思うことはそう　まだ見ぬあなたのこと<br>
+							名残惜しそうに過ぎる　季節を見送るたび<br>
+							胸に秘めた物語　頁を連ねました</p>
+						<p>
+							今は遠く離れて　暮らす二人　繋ぐのは<br>
+							朧げな糸<br>
+							恋にならない轍</p>
+						<p>
+							宵の闇を縫って光る<br>
+							最後の蛍さえ<br>
+							あなたとめぐり逢う<br>
+							道は　きっと　照らせない<br>
+							けれど　二人　同じ空で<br>
+							距離は近くなるの<br>
+							その日を待って　夢を見ます</p>
+						<p>
+							庭先で手をかざしたら　蛍が停りました<br>
+							指先から淡く　光がこぼれてます</p>
+						<p>
+							この指からあなたへ　糸を引いて待ったなら<br>
+							私はそれを<br>
+							辿って飛んでいくの</p>
+						<p>
+							月は素知らぬ顔をして<br>
+							夜に満ちかけている<br>
+							枕もとのささやき<br>
+							恋の　行方　揺れてる<br>
+							いいえ　私　信じてます<br>
+							いつかめぐり逢うと<br>
+							思いを抱いて　夢を見ます</p>
+						<p>
+							宵の闇を縫って光る<br>
+							最後の蛍さえ<br>
+							あなたとめぐり逢う<br>
+							道は　きっと　照らせない<br>
+							けれど　二人　同じ空で<br>
+							距離は近くなるの<br>
+							その日を待って　夢を見ます</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-aiyoriaoshi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

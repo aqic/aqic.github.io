@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夢の卵（日中対訳） - ラーゼフォン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Rahxephon TV ED]</div>
+
+                    <div class="LyricTitle">夢の卵（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							おしえて愛はいま　おしえてどこにあるの<br>
+							おしえて人はいつ目覚める</p>
+						<p>
+							答えて月はなぜ　答えて滅びゆくの<br>
+							答えてまぼろしはどこに</p>
+						<p>
+							響く合う歌が時の扉を<br>
+							ゆらめかせて</p>
+						<p>
+							Ah Rahxephon Fly me to the music</p>
+						<p>
+							かなえて夢の果て　かなえて人の心<br>
+							かなえて時はいつ輝く</p>
+						<p>
+							ゆるぎない翼に未来の言葉と<br>
+							愛する者を</p>
+						<p>
+							Ah Rahxephon Fly me to the music<br>
+							Ah Rahxephon Fly me to the music</p>
+						<p>
+							答えてまぼろしは<br>
+							答えてどこに</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							当你能看清梦幻的真实<br>
+							当你能感受到爱的真谛<br>
+							你就能听到召唤的声音<br>
+							在那遥远的地方</p>
+						<p>
+							一切都不真实，永恒的事物并不存在<br>
+							没有什么能包容一切 ，无罪并不存在<br>
+							没有真理 ，没有答案<br>
+							继续沉睡着</p>
+						<p>
+							天空是那样的高，黑夜是如此的深沉<br>
+							在那深处正等待着时机<br>
+							去寻找世界的真理<br>
+							啊 Rahxephon 带我飞向乐章</p>
+						<p>
+							生活是灿烂的，生活是冷漠的<br>
+							生活是迷题，生活是悲哀<br>
+							生活是祈祷，生活是发问<br>
+							继续沉默着</p>
+						<p>
+							这个循环由一首平静的歌结束<br>
+							这个循环为你而洁净<br>
+							去寻找世界的真理<br>
+							啊 Rahxephon 带我飞向乐章</p>
+						<p>
+							当你能体会到梦幻的真谛<br>
+							你就能感觉到永恒……</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-rahxephon-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

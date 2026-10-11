@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>大家差不多 - </title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">大家差不多</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							你不要斜起眼睛看着我，我不过说你最近话很多，<br>
+							也许你觉得自己很洒脱，可是你比我老爸还罗嗦。<br>
+							你不要斜起眼睛看着我，我不过说你和她没结果，<br>
+							看见她你连路也会走错，在我面前还装什么酷哥哥。<br>
+							心里想什么，当面对你说，就是要证明你的缺点比我多，<br>
+							其实我也知道，大家差不多，洒不洒脱没有一点点把握。<br>
+							心里想什么，当面对你说，拖一分钟都让我觉得很难过，<br>
+							其实你也知道，这是为什么，客客气气太容易寂寞。</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-musicup-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

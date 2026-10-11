@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Somewhere - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Somewhere</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桑岛法子</div>
+
+                    <div class="LyricText">
+						<p>
+							somewhere in the world<br>
+							somewhere in the dark<br>
+							I can hear the voice that calls my name<br>
+							might be a memory<br>
+							might be my future<br>
+							might be a love waiting for me</p>
+						<p>
+							rock me gently<br>
+							hug me tenderly<br>
+							'til the morning breaks and night fades away<br>
+							I've spent my time in vain trapped inside pain<br>
+							don't let me down,help me see the light</p>
+						<p>
+							feeling bitter and twisted all along<br>
+							wading through an empty life too long<br>
+							I close my eyes listen to the wind<br>
+							longing to belong to a higher place</p>
+						<p>
+							let me hear your voice<br>
+							let me be with you<br>
+							when the shadow falls down on me<br>
+							like a bird singing<br>
+							like a breeze blowing<br>
+							it's calling me<br>
+							from some where in the world</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

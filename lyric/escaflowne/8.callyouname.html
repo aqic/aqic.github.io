@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Call Your Name - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」</div>
+
+                    <div class="LyricTitle">Call Your Name</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本真綾</div>
+                    <div class="LyricStaff">作詞：坂本真綾<br>作曲／編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							青い空が嬉しくて　ふいに駆け出してしまった人<br>
+							雨の日に友達から打ち明け話をされた人<br>
+							飼ってたネコを死なせた人<br>
+							命の終わりを知ってる人<br>
+							君は僕なんだ<br>
+							僕は君なんだ</p>
+						<p>
+							海を見ていたら突然に強気になって叫んだ人<br>
+							見えない約束を信じてひたすら旅を続ける人<br>
+							運が悪いとぼやく人<br>
+							何かが違うと悩む人<br>
+							君は僕なんだ<br>
+							僕は君なんだ</p>
+						<p>
+							かわいい人を守りたい　弱い自分にさわりたい<br>
+							今まで一度もしたことのない　さよならの言い方<br>
+							口からこぼれ落ちたうた<br>
+							からだの内側で光る原石<br>
+							君は僕なんだ<br>
+							僕は君なんだ</p>
+						<p>
+							これからのこと考えながら　いつのまにか寝てしまったとき<br>
+							壊れないと思ってたものが　あっけなくこわれちゃったとき<br>
+							わざと悪いことをしたいとき<br>
+							夕焼けが胸にはいった時<br>
+							君は僕なんだ<br>
+							僕は君なんだ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

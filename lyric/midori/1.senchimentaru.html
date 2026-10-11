@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>センチメンタル - 美鳥の日々</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">センチメンタル</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">CooRie</div>
+                    <div class="LyricStaff">作詞・作曲/rino<br>編曲/鈴木雅也</div>
+
+                    <div class="LyricText">
+						<p>
+							胸をうつ鼓動　ため息も染まる願い<br>
+							見つめてるだけで　熱くて<br>
+							臆病になる　「恋」は間違い探し？</p>
+						<p>
+							君のその不器用な優しさ<br>
+							独り占めしたくて　カラカラ舞う雫たち</p>
+						<p>
+							駆け抜けるように　溢れる想いだけ信じて<br>
+							いつか特別になりたい　おもいっきり受け止めてよね<br>
+							色違いに舞う　心の旋律は君のもとへと<br>
+							響いてく　抱きしめて　愛しき日々を</p>
+						<p>
+							大げさに笑う　そのたびに触れる痛み<br>
+							本当の私　いつから捜そうとしてたんだろう<br>
+							嘘じゃないのに…</p>
+						<p>
+							涙も笑顔も同じだけね　君を灼きつけてく<br>
+							答えなんてあるのかな</p>
+						<p>
+							追い風の向こう　先回りして見つけたいな<br>
+							君に今すぐ会いたいよ　あくびしてごまかさないで<br>
+							結んだ記憶　先っぽがケンカしてる<br>
+							二つの心模様　複雑は「好き」のカタチね</p>
+						<p>
+							見つめたい</p>
+						<p>
+							駆け抜けるように　溢れる想いだけ信じて<br>
+							いつか特別になりたい　おもいっきり受け止めてよね<br>
+							色違いに舞う　心の旋律は君のもとへと<br>
+							響いてく　愛しき日々を</p>
+						<p>
+							追い風の向こう　先回りして見つけたいな<br>
+							君に今すぐ会いたいよ　あくびしてごまかさないで<br>
+							結んだ記憶　先っぽがケンカしてる<br>
+							二つの心模様　複雑は「好き」のカタチね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-midori-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

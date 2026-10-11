@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>梦の中へ - 彼氏彼女の事情</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">彼氏彼女の事情</div>
+
+                    <div class="LyricTitle">梦の中へ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">榎本温子
+鈴木千尋</div>
+                    <div class="LyricStaff">作詞：井上陽水<br>作曲：井上陽水</div>
+
+                    <div class="LyricText">
+						<p>
+							探しものは何ですか<br>
+							みつけにくいものですか<br>
+							カバンの中も　机の中も<br>
+							探したけれどみつからないのに</p>
+						<p>
+							まだまだ探す气ですか<br>
+							それより仆と踊りませんか<br>
+							梦の中へ　梦の中へ<br>
+							行ってみたいと思いませんか<br>
+							ウウウ一　ウウウ一<br>
+							ウウウ一　さあ一</p>
+						<p>
+							休むことも許されず<br>
+							笑うことは止められて<br>
+							はいつくばって<br>
+							はいつくばって<br>
+							一体　何を探しているのか<br>
+							探すのをやめた時<br>
+							みつかることもよくある話で<br>
+							踊りましょう　梦の中へ<br>
+							行ってみたいと思いませんか<br>
+							ウウウ一　ウウウ一<br>
+							ウウウ一　さあ一</p>
+						<p>
+							探しものは何ですか<br>
+							まだまだ探す气ですか<br>
+							梦の中へ　梦の中へ<br>
+							行ってみたいと思いませんか<br>
+							ウウウ一　ウウウ一<br>
+							ウウウ一　さあ一<br>
+							あ一ウウウ一(梦の中へ)<br>
+							ウウウ一(梦の中へ)</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-heandshe-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

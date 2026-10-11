@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">デ・ジ・キャラット</span><span class="cn">（超级偶像铃铛猫）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+					<div class="disc-head"><span class="disc-name">デ・ジ・キャラット</span><span class="disc-sub">22 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.onemunasai.html">《おねむなさい～うさだの子守唄～》</a></li>
+						<li class="LyricItem"><a href="2.konoyubitomare.html">《この指とまれ！》</a></li>
+						<li class="LyricItem"><a href="3.sakurasakura.html">《さくら　さくら》</a></li>
+						<li class="LyricItem"><a href="4.shabondeseshibon.html">《シャボン・デ・セ・シ・ボン》</a></li>
+						<li class="LyricItem"><a href="5.ondo.html">《デ・ジ・キャラット音頭》</a></li>
+						<li class="LyricItem"><a href="6.powerfulsummer.html">《パワフルサマー》</a></li>
+						<li class="LyricItem"><a href="7.babylady.html">《Baby? Lady?》</a><span class="note">- Puchiko song</span></li>
+						<li class="LyricItem"><a href="8.boysbefight.html">《Boys Be...Fight!》</a><span class="note">- Dejiko song</span></li>
+						<li class="LyricItem"><a href="9.cutie.html">《CUTIE》</a></li>
+						<li class="LyricItem"><a href="10.happysmilehello.html">《HAPPY! SMILE! HELLO!》</a></li>
+						<li class="LyricItem"><a href="11.happyday.html">《Happy Day》</a><span class="note">- Ending Theme</span></li>
+						<li class="LyricItem"><a href="12.hiphopvegetable.html">《Hip-Hop*Vegetable》</a><span class="note">- Puchiko song</span></li>
+						<li class="LyricItem"><a href="13.lovepyokorasama.html">《LOVE　ピョコラ様》</a></li>
+						<li class="LyricItem"><a href="14.notalone.html">《Not Alone～君はひとりじゃない～》</a></li>
+						<li class="LyricItem"><a href="15.partynight.html">《PARTY NIGHT》</a></li>
+						<li class="LyricItem"><a href="16.pnwv.html">《PARTY NIGHT -WHITE VERSION-》</a></li>
+						<li class="LyricItem"><a href="17.spicygirl.html">《Spicy Girl》</a></li>
+						<li class="LyricItem"><a href="18.welcome.html">《Welcome!》</a></li>
+						<li class="LyricItem"><a href="19.onlyoneno1.html">《only one, No.1》</a><span class="note">- Opening Theme</span></li>
+						<li class="LyricItem"><a href="20.seeyouseeyou.html">《see you see you》</a></li>
+						<li class="LyricItem"><a href="21.forayours.html">《女神になりたい ～for a yours～》</a></li>
+						<li class="LyricItem"><a href="22.jounetsu.html">《情熱のPARADISE》</a></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

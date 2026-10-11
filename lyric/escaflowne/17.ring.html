@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>指輪 - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」(1996)</div>
+
+                    <div class="LyricTitle">指輪</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本真綾</div>
+
+                    <div class="LyricText">
+						<p>
+							涙があとからあふれだして<br>
+							最後の笑顔がにじんで見えないの<br>
+							行かないで　行かないで　ここにいて<br>
+							宙へ　光　駆け抜けてゆく</p>
+						<p>
+							こんなに小さな私だけど<br>
+							あなたを誰より精一杯愛した<br>
+							ありがとう　幾つもの　大切な気持ち<br>
+							手渡してくれたよね</p>
+						<p>
+							「その時ずっと、私は消えかけた飛行機雲を見ていた・・・」</p>
+						<p>
+							忘れないで　ひとりじゃない<br>
+							離れても手をつないでいる<br>
+							はじめての恋　はじめて知った<br>
+							こんな悲しみが在ること</p>
+						<p>
+							何かが消滅しても何かが再び宿って<br>
+							別れにくれた微笑みは強く生きようというあなたからのメッセージ</p>
+						<p>
+							いつかきっと逢える<br>
+							ふたりならば<br>
+							遠くても　瞳見つめ合う<br>
+							希望と夢のすべてを賭けて<br>
+							約束をしようよ<br>
+							あの日の激しさを抱いて<br>
+							明日咲く未来を生きる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

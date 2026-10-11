@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Moon - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©Key 2003 KeySoundLabel / Spica/Hanabi/Moon</div>
+
+                    <div class="LyricTitle">Moon</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lia</div>
+                    <div class="LyricStaff">作詞：key(junMedia)<br>構成：key(JunMaeda)<br>アレンジ：Takumaru</div>
+
+                    <div class="LyricText">
+						<p>
+							あの日海に還した<br>
+							あの日月が見ていた<br>
+							古ぼけた街角<br>
+							佇んでた君が消える</p>
+						<p>
+							産まれてきた喜び<br>
+							憎しみまで歌ってた<br>
+							風に乗って海を渡る</p>
+						<p>
+							怖くない　震えた腕で抱く<br>
+							痛みさえ夢のように覚えた</p>
+						<p>
+							遠くあの海に僕たちは浮かぶ舟だ<br>
+							流されてゆく命に身を委ねてた</p>
+						<p>
+							あの日空が光った<br>
+							あの日時が止まった<br>
+							陸に響き渡った<br>
+							命たちの生きた証</p>
+						<p>
+							アーカテトナリ<br>
+							アースナニナリテ</p>
+						<p>
+							怖くない　震えた手を離す<br>
+							心だけはとともに沈めてしまう</p>
+						<p>
+							遠くあの海に僕たちは浮かぶ舟だ<br>
+							流された火の揺れる間をたゆたってた</p>
+						<p>
+							あの日海は返した<br>
+							あの日君が笑った<br>
+							変わる世界回った<br>
+							あたまの火を抱いて巡れ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

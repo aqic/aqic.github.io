@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>月ひとつ - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">月ひとつ</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							寂しげな月ひとつ<br>
+							貴方のところで見る頃は<br>
+							キレイな満月になっているだろう</p>
+						<p>
+							この羽ふるわせて 旅立つ鳥は今<br>
+							愛される理由を景色に探してた</p>
+						<p>
+							あなたを愛してから 抱かれた胸の奥の<br>
+							一枚の絵の中 帰りたい海を見つけた</p>
+						<p>
+							月はいくつあるの?<br>
+							一人の部屋へと帰る道<br>
+							それぞれの夜を見守ってくれた</p>
+						<p>
+							こんな月明かりに 飛び立つ鳥は今<br>
+							どこまでも自由に 愛したい気持ちだけ</p>
+						<p>
+							あなたを愛してから 見上げた空の地図に<br>
+							手をかざして笑う もう一つの月をみつけた</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

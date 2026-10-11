@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>終わらない夏休み - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま１／２ 超無差別決戦！ 乱馬チームＶＳ伝説の鳳凰」</div>
+
+                    <div class="LyricTitle">終わらない夏休み</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">らんま１／２　ＤｏＣｏ</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲・編曲：安田　毅</div>
+
+                    <div class="LyricText">
+						<p>
+							（全員）<br>
+							ずっと好きでいてね<br>
+							終わらない夏休み</p>
+						<p>
+							（あかね）<br>
+							日時計刻んでた　まぶしい太陽が<br>
+							海に沈んで　止まった時間<br>
+							（らんま）ブルー・グレイの　鮮やかな色<br>
+							心に残したままで<br>
+							（シャンプー）<br>
+							わたしをずっと　抱いていたから<br>
+							（なびき）<br>
+							熱く火照った　あなたの肩に<br>
+							（かすみ）<br>
+							そっとやさしく　口づけをして<br>
+							（３姉妹）<br>
+							この夏を　閉じ込めていた</p>
+						<p>
+							（全員）<br>
+							ずっと好きでいるね<br>
+							ときめいた夏休み<br>
+							ずっと好きでいてね<br>
+							終わらない夏休み</p>
+						<p>
+							（なびき）<br>
+							麦わらの帽子が<br>
+							（かすみ）<br>
+							風にさらわれても<br>
+							（あかね）<br>
+							追いかけないで<br>
+							（３姉妹）<br>
+							離れたくない<br>
+							（シャンプー）<br>
+							そろいの浴衣　打ち上げ花火<br>
+							思い出　たくさんできた<br>
+							（らんま）<br>
+							送らないでと　ゆうべ済ませた<br>
+							さよならなのに　姿見せたね<br>
+							（あかね）<br>
+							走るバスから　身を乗り出して<br>
+							（かすみ）<br>
+							手を振れば　風が応えた</p>
+						<p>
+							（なびき）<br>
+							ずっと忘れないよ<br>
+							はしゃいでた君のこと<br>
+							（全員）<br>
+							ちいさなフォトスタンド<br>
+							あなたが笑っている<br>
+							ずっと好きでいるよ<br>
+							写真に手書きの文字<br>
+							ずっと好きでいてね<br>
+							終わらない夏休み</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

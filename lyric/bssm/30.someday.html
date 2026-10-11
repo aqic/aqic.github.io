@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Someday･･･Someday･･･ - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">オーディオ「美少女戦士セーラームーン In Another Dream」 印象歌（１９９２）</div>
+
+                    <div class="LyricTitle">Someday･･･Someday･･･</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">久川綾</div>
+                    <div class="LyricStaff">作詞／小口由紀子<br>作編曲／村上聖</div>
+
+                    <div class="LyricText">
+						<p>
+							春一番が　部屋にそよいで　何だかいい気持ち　光のShower　あふれてる<br>
+							机の上に広げた本の　ページをめくる風<br>
+							うつむいていた　気持ちまで　笑顔に変わるの</p>
+						<p>
+							※Dreamin'　恋のチャンスは　Tell me　辞書にはないの<br>
+							　は・や・く　ＮＯＴＥ閉じて<br>
+							　Dreamin'　髪が揺れたら　For you　リンスの香り　な・に・か　予感がするの</p>
+						<p>
+							つま先立ちで　歩く舗道に　すれ違う恋人達(こいびと)<br>
+							はしゃぎながら　ささやくの<br>
+							いつか誰かに　優しい声で　名前を呼ばれたら<br>
+							最上級の微笑みで　答えてみたいな<br>
+							Dreamin'　恋の魔法の　Tell me　今がチャンスね　そ・っ・と　願いかける</p>
+						<p>
+							＃Dreamin'　不思議なくらい　For you　素直な気持ち　わ・た・し　早く見つけて</p>
+						<p>
+							軽くまばたきをした　その瞬間　世界が変わるの<br>
+							淡い色のワンピース　白いローファー　"恋して…みたいな"</p>
+						<p>
+							※繰返し</p>
+						<p>
+							＃繰返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

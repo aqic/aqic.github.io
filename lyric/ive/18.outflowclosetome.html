@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Close to me… - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">effect ～悪魔の仔～ (C)裸足少女</div>
+
+                    <div class="LyricTitle">Close to me…</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：高瀬一矢<br>編曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							(love you, I miss you, close to me...)</p>
+						<p>
+							(love you, I miss you, close to you...)</p>
+						<p>
+							降り止まない冷たい雨<br>
+							胸の隙間に染みて<br>
+							傷つけるよ<br>
+							一人きりで生きてきたの…<br>
+							そんな強がりは もう言えないほど</p>
+						<p>
+							「今は泣いていいよ。」<br>
+							あなたの言葉が心の扉を叩く</p>
+						<p>
+							今も廻るこの世界 瞳の中<br>
+							ずっとずっと 寂しさを抱えていた<br>
+							Now I say "love you, I miss you, close to me..."<br>
+							言いかけてる<br>
+							ねぇ 私を変えてくものが ここに在るの？</p>
+						<p>
+							偽らずに生きていたい…<br>
+							そんな言葉はいつか かき消された<br>
+							私の目に映るのもは<br>
+							みんな雨粒のようなグレイだった</p>
+						<p>
+							「誰か助けてよ…」とつぶやいたあの日<br>
+							あなたと出会えた だから…</p>
+						<p>
+							今も廻るこの世界 光の中<br>
+							握った手をもう二度と離さないで<br>
+							Please, please say "love you, I miss you, close to you..."<br>
+							届けたいよ<br>
+							ねぇ 本当は強くないから 抱きしめてて</p>
+						<p>
+							(love you, I miss you, close to me...)</p>
+						<p>
+							(love you, I miss you, close to you...)</p>
+						<p>
+							「もう、泣かないで…」と涙を拭った指先<br>
+							心に触れた</p>
+						<p>
+							今も廻るこの世界 瞳の中<br>
+							ずっとずっと　寂しさを抱えていた<br>
+							Now I say "love you, I miss you, close to me..."<br>
+							言いかけてる<br>
+							ねぇ 私を変えてくものが ここに在るの？</p>
+						<p>
+							廻り続ける二人 光の中<br>
+							握った手をもう二度と離さないで<br>
+							Please, please say "love you, I miss you, close to you..."<br>
+							届けたいよ<br>
+							ねぇ 本当は強くないから 抱きしめてて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>JUMP～メイっぱい抱きしめて - HAND MAID メイ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Hand Maid May</div>
+
+                    <div class="LyricTitle">JUMP～メイっぱい抱きしめて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">P-chicks</div>
+                    <div class="LyricStaff">作詞：大八木弘雄<br>作曲：大八木弘雄<br>編曲：大八木弘雄、大久保 薫</div>
+
+                    <div class="LyricText">
+						<p>
+							Shaking my hands ここにいるから<br>
+							今すぐ Please メイっぱい抱きしめて<br>
+							小さなこの胸に　芽生えた温もりギュッと</p>
+						<p>
+							「上手くいかない」なんて　落ち込んだりしないで go-go<br>
+							心に青空　広げて乗り切ろうよ<br>
+							さよなら Lonely in my life<br>
+							いつでも Happy day my live</p>
+						<p>
+							つらいことばっかでうつむきがちな日は go-go<br>
+							笑顔ではりきって　思い出を増やそうよ<br>
+							いつもの Rainy day my life<br>
+							いつでも Good days in my life<br>
+							ためらわないで　さあガンバッテ　くじけずに</p>
+						<p>
+							Shaking my hands ここにいるから<br>
+							憧れにメイっぱい Jump して<br>
+							あなたの目に映る　景色メモリーするの<br>
+							Feeling my kick アシスト決めても<br>
+							肝心なとこで Miss して<br>
+							胸が痛むけど　経験上曇り後晴れ</p>
+						<p>
+							「届かぬ想い」なんて　あきらめたりしないで go-go<br>
+							まだまだ分かんないよ　言葉で伝えようよ<br>
+							いつもの Rainy day my life<br>
+							いつでも Good days in my life<br>
+							ためらわないで　さあガンバッテ　くじけずに</p>
+						<p>
+							Shaking my hands ここにいるから<br>
+							今すぐ Please メイっぱい抱きしめて<br>
+							小さなこの胸に　芽生えた温もりギュッと<br>
+							Feeling my kiss somebody はじめて<br>
+							大切な人って気付いて<br>
+							そばにいたいから　もうちょっと　背伸びしてみよう</p>
+						<p>
+							Shaking my hands ここにいるから<br>
+							憧れに背一杯 Jump して<br>
+							あなたの目に映る　景色メモリーするの<br>
+							Feeling my kick アシスト決めても<br>
+							肝心なとこで Miss して<br>
+							胸が痛むけど　経験上曇り後晴れ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-handmaidmay-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

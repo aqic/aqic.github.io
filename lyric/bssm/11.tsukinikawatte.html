@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>月にかわっておしおきよ - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「美少女戦士セーラームーン」 イメージソング（１９９２）</div>
+
+                    <div class="LyricTitle">月にかわっておしおきよ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">三石琴乃・富沢美智恵・久川綾</div>
+                    <div class="LyricStaff">作編曲／有澤孝紀</div>
+
+                    <div class="LyricText">
+						<p>
+							「風吹く街の中　不思議な敵が迫り来る<br>
+							　誘惑　騙し　裏切り　餌食を求め魔の手を伸ばす」<br>
+							「キャダッキャダッ！　相手はステキッな美少年」<br>
+							「だからなんなの？」戸惑っている時じゃない」<br>
+							「つらいけど、勇気を出して変身しちゃう<br>
+							　ムーン・プリズム・パワー・メイクアップ<br>
+							　愛と正義の美少女戦士が　月に代わっておしおきよ」</p>
+						<p>
+							※「私たち今日は　ご機嫌ななめ　近寄ると怖いわよ<br>
+							　　みんなの心が一つになれば　愛は勝つ」<br>
+							　「シャボンスプレー」「悪霊退散」「ムーン・ティアラ・アクション」<br>
+							　「女の子を小馬鹿にしたら許さない」</p>
+						<p>
+							「夜の闇切り裂いて　不気味な影が襲い来る<br>
+							　暴力　破壊　殺人　我がまま勝手に乱暴づくし」<br>
+							「キャダッキャダッ！　相手は怖ぁーい妖魔たち」<br>
+							「それでビビるの？」逃げ回ってちゃいけないわ」<br>
+							「イヤだけど、敗れかぶれで戦っちゃうもん<br>
+							　ムーン・プリズム・パワー・メイクアップ<br>
+							　夢と希望の美少女戦士が　月に代わっておしおきよ」</p>
+						<p>
+							「私たち　なぜだかむしゃくしゃするの　いじめっ子　消えなさい<br>
+							　みんなの心がバラバラだって　悪を討つ」<br>
+							「シャボンスプレー」「悪霊退散」「ムーン・ティアラ・アクション」<br>
+							「女の子は泣いてばっかりいないのよ」</p>
+						<p>
+							※繰返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

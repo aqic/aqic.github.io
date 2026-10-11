@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>好きなのに！ - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">魔女の宅急便</div>
+
+                    <div class="LyricTitle">好きなのに！</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">宝野 ありか</div>
+                    <div class="LyricStaff">作詞：麻生 圭子<br>作曲・編曲：久石 譲</div>
+
+                    <div class="LyricText">
+						<p>
+							きみのこと、きみのこと<br>
+							好きなのに、好きなのに<br>
+							すれ違う街の角<br>
+							プイッ　と横向く</p>
+						<p>
+							冷たくされるほど<br>
+							気になるの、気になるの<br>
+							悪口、言うけれど<br>
+							ホン気じゃない、ない、ない</p>
+						<p>
+							Ｄｉｎｇ　Ｄｉｎｇ　と離れる<br>
+							背中と背中で<br>
+							ふたりは同じ恋<br>
+							ねえ感じているのに<br>
+							どういうつもりなの？<br>
+							あーあ、見ててイライラする<br>
+							（ゴメンね）</p>
+						<p>
+							Ｄｉｎｇ　Ｄｉｎｇ　と近づく<br>
+							ハートとハートに<br>
+							ふたりは気づかずに<br>
+							ほらぶつかってしまう<br>
+							はじめての恋って<br>
+							あーあ、誰でもおんなじね<br>
+							（不思議ね）</p>
+						<p>
+							振り向いて、振り向いて<br>
+							話したい、話したい<br>
+							その笑顔、もっと長く</p>
+						<p>
+							見つめたいよ</p>
+						<p>
+							やさしく、やさしく<br>
+							したいのに、したいのに<br>
+							あなたがきっかけを<br>
+							つくってくれたなら</p>
+						<p>
+							Ｄｉｎｇ　Ｄｉｎｇ　と離れる<br>
+							背中と背中で<br>
+							ふたりはテレパシー<br>
+							あぁ送っているのに<br>
+							神様はいじわる<br>
+							あーあ、届かずに消えるの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

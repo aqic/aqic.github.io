@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>わたし万物百不思議 - 少女革命ウテナ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「少女革命ウテナ」</div>
+
+                    <div class="LyricTitle">わたし万物百不思議</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">J.A.シーザー</div>
+
+                    <div class="LyricText">
+						<p>
+							顔の賦　首の賦　髪の賦<br>
+							爪の賦　胴の賦<br>
+							両手の賦　両足の賦<br>
+							全身の賦</p>
+						<p>
+							つまり紋章<br>
+							人体紋章学</p>
+						<p>
+							鏡の中のその姿<br>
+							複雑微妙な有職文様<br>
+							黒字白斑　宮廷作法<br>
+							白地黒斑　楯形模様</p>
+						<p>
+							人が着かざる難解象徴<br>
+							バロック技巧の歴史の芸術</p>
+						<p>
+							火蜥蜴(サラマンドラ)<br>
+							ドラゴン　豪猪<br>
+							聖体　秘蹟<br>
+							信仰　美徳<br>
+							閉じ込められた<br>
+							薔薇の奇跡<br>
+							人獣花<br>
+							真珠　宝石<br>
+							人間　年齢<br>
+							花麦十字架</p>
+						<p>
+							金.銀.紫.緑.赤.青.黒<br>
+							金.銀.紫.緑.赤.青.黒</p>
+						<p>
+							アルハンブラ<br>
+							イスパハン<br>
+							カセルタ<br>
+							リンダーホフ<br>
+							シュヴァル<br>
+							ボマルツォ<br>
+							フローラ<br>
+							マティアス<br>
+							ヴェエルサイユ<br>
+							オベリスク<br>
+							ザーメック<br>
+							イゾラ.ベッラ<br>
+							アンフィテアトロ<br>
+							オルフェウスグロッタ<br>
+							ノイシュヴァ.シュタイン<br>
+							サンタ.マリア.デラ.コンチェツィオーネ</p>
+						<p>
+							洞窟　彫像　噴水　庭園　宮殿<br>
+							青銅　壁画　架空　古城　別荘</p>
+						<p>
+							いたるところで<br>
+							生きる　生きてる<br>
+							自分の姿</p>
+						<p>
+							遠くに近くに<br>
+							わたし百不思議<br>
+							近くで遠くで<br>
+							わたし百不思議<br>
+							万物ワタシ百不思議<br>
+							世界ワタシ百不思議</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-utena-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

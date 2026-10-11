@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>振り向いてもいいですか - 藍より青し</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Drama CD Ending Theme</div>
+
+                    <div class="LyricTitle">振り向いてもいいですか</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川澄绫子</div>
+                    <div class="LyricStaff">Lyrics : Aida Takeshi<br>Music : Itou Nobuo<br>Arrangement : Itou Nobuo</div>
+
+                    <div class="LyricText">
+						<p>
+							木漏れ日　歩いてたら<br>
+							可笑しな夢を見たんです<br>
+							急にあなた　私の元<br>
+							去っていく夢です<br>
+							あまりに可笑しすぎて<br>
+							涙が急にこぼれたら<br>
+							どうしたの？って背中から<br>
+							優しい声がする</p>
+						<p>
+							ねえ　いいですか<br>
+							もう　いいですか<br>
+							私が振り向いた　そこに<br>
+							立っているのはあなただと信じて<br>
+							いいですか　本当に</p>
+						<p>
+							ねえ　いいですか<br>
+							もう　いいですか<br>
+							私が振り向いた　季節の中<br>
+							あなたはいつも微笑んで<br>
+							いてください　どうか</p>
+						<p>
+							今まで　会えなかった<br>
+							時間よりも　出会ってからの<br>
+							時が増えるようにもっと<br>
+							あなたの　側にいる</p>
+						<p>
+							ねえ　いいですか<br>
+							もう　いいですか<br>
+							私が振り向いた　背中越しに<br>
+							あなたはきっと微笑んで<br>
+							いてくれます　きっと</p>
+						<p>
+							あなたの心に　寂しさがあるのなら　すぐ<br>
+							私の胸　預けていい<br>
+							あなたを守りたい</p>
+						<p>
+							ねえ　いいですか<br>
+							もう　いいですか<br>
+							私が振り向いた　そこに<br>
+							立っているのはあなただと信じて<br>
+							いいですか　本当に</p>
+						<p>
+							ねえ　いいですか<br>
+							もう　いいですか<br>
+							私が振り向いた　時にあなた<br>
+							微笑んで、くれるでしょうか<br>
+							ずっとですよ　ずっと</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-aiyoriaoshi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

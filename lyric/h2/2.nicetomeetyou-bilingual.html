@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>絶対　会えてよかった（日中対訳） - H2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「H2」エンディング・テーマ</div>
+
+                    <div class="LyricTitle">絶対　会えてよかった（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">吉村真樹</div>
+                    <div class="LyricStaff">作詞：西脇 唯<br>作曲：南 利一<br>編曲：岩崎 文紀</div>
+
+                    <div class="LyricText">
+						<p>
+							水たまりを飛び越える　ひらりとひとつ<br>
+							辛いこと　こんな風に　追い越したいな<br>
+							歩道橋をかけのぼる　あなたを真似て……<br>
+							晴れた空に負けてない　気持でいたいな</p>
+						<p>
+							「なんでいい顔　してるんだろう」<br>
+							出会った時に思った　悔しいくらい</p>
+						<p>
+							＊「絶対　会えてよかった」そんな強さでいこうよ<br>
+							　一人でいると気づくよ　まぶしい思いの先に<br>
+							　昨日　今日　そして明日　ふえてく笑顔<br>
+							　あなたを見るだけでほら　瞳がやさしくなる</p>
+						<p>
+							「おはよう」の声の調子　明るい朝は<br>
+							ほっとする何かがほら　心を動くよ</p>
+						<p>
+							思いつくまま　進んでゆける<br>
+							無防備な　でも　勝気な　背中でいたい</p>
+						<p>
+							「絶対　これでよかった」　そんな強さでいこうよ<br>
+							会いたい時に気づくよ　後押ししてくれる「かぜ」<br>
+							投げ出したくなるときに　教えてくれる<br>
+							あなたならどうするのかな……胸が暖かくなる</p>
+						<p>
+							＊くりかえし</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							闪耀在水塘上的一点金光 独行的时候千万小心<br>
+							真想如此这般超越艰苦 在回想耀眼的事情前<br>
+							跑上天桥学你的样子 过去 现在 甚到永远<br>
+							也想让自己有不输给晴空的心情 都带着笑脸面对<br>
+							那种表情一定怡然自得吧 我只因为想要见到你<br>
+							相会的时候心想好后悔 眼神就顿时温柔了<br>
+							『还是见面的好』<br>
+							继续坚强的努力下去</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-h2-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Let me be with you - 一騎当千</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">エンディングテーマ</div>
+
+                    <div class="LyricTitle">Let me be with you</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">shela</div>
+                    <div class="LyricStaff">作詞曲： F.Thomander ・ A.Wikstrom ・J.Shultze<br>編曲： Cobra Endo ・ Kurt Howell<br>訳詞： Tatsuji Ueda</div>
+
+                    <div class="LyricText">
+						<p>
+							あの日(ひ) 同(おな)じ 未来(みらい)を 信(しん)じた<br>
+							ふたりは いつしか<br>
+							揺(ゆ)れる 互(たが)いの 心(こころ) 確(たし)かな<br>
+							絆(きずな)で 結(むす)んだ<br>
+							巡(めぐ)る 季節(きせつ)の 中(なか)を 並(なら)んで 歩(ある)きたい</p>
+						<p>
+							Let me be with you<br>
+							分(わ)かり合(あ)う たび<br>
+							素直(すなお)になれた 君(きみ)となら<br>
+							Let me be with you<br>
+							春(はる)の 囁(ささや)き<br>
+							星(ほし)の 煌(きら)めき 愛(あい)せるでしょう<br>
+							Let me be with you<br>
+							長(なが)い 眠(ねむ)れぬ 夜(よる)は 何度(なんど)も</p>
+						<p>
+							キスしてくれたね<br>
+							そうして 私(わたし)は やがて ほんとの<br>
+							幸(しあわ)せを 知(し)った<br>
+							雨(あめ)が 虹(にじ)へと 変(か)わり そして 花(はな)を 育(はぐく)むように</p>
+						<p>
+							Let me be with you<br>
+							かけがえのない<br>
+							大切(たいせつ)な 時間(とき) 抱(だ)きしめて<br>
+							Let me be with you<br>
+							朝(あさ)の ときめき<br>
+							夢(ゆめ)の ぬくもり 感(かん)じるまま<br>
+							Let me be with you<br>
+							Let me be with you</p>
+						<p>
+							君(きみ)と 巡(めぐ)り逢(あ)う ために<br>
+							生(う)まれた世界(せかい) 見(み)つめてる<br>
+							Let me be with you<br>
+							分(わ)かり合(あ)う たび<br>
+							素直(すなお)になれた 君(きみ)となら<br>
+							Let me be with you<br>
+							朝(あさ)の ときめき<br>
+							夢(ゆめ)の ぬくもり 感(かん)じるまま<br>
+							Let me be with you<br>
+							愛(あい)せるでしょう<br>
+							Let me be with you</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ikkitousen-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

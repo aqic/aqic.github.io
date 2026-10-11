@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>さかさまの虹 - ロードス島戦記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">さかさまの虹</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">石桥千惠</div>
+                    <div class="LyricStaff">作詞・作曲：新居昭乃<br>編曲：新居昭乃、保刈久明</div>
+
+                    <div class="LyricText">
+						<p>
+							朝の虹が沈む湖<br>
+							甘いミツをくれる花びら<br>
+							水は冷たい<br>
+							でもとてもやさしい</p>
+						<p>
+							泳いで逆さまの虹を踊ろう<br>
+							泳いでたどり着きたいの<br>
+							その近くへ</p>
+						<p>
+							透けて见える瞳の奥の<br>
+							未来つなぐ空气静かに<br>
+							はねるさかなの音だけ<br>
+							こだまする</p>
+						<p>
+							泳いで逆さまの虹を渡ろう<br>
+							泳いでたどり着きたいの<br>
+							その近くへ</p>
+						<p>
+							水の炎<br>
+							苍ざめた指のあいだ<br>
+							いつか私のこと包み橢む<br>
+							痛いほど</p>
+						<p>
+							泳いで鼓动も溶けるの<br>
+							さざ波に<br>
+							泳いでその腕の中で<br>
+							虹を见る</p>
+						<p>
+							泳いで逆さまの虹を渡ろう<br>
+							泳いでたどり着きたいの<br>
+							その近くへ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lodoss-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

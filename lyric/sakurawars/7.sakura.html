@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>さくら - サクラ大戦</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「サクラ大戦」真宮寺さくらエンディングテーマ</div>
+
+                    <div class="LyricTitle">さくら</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">真宮寺さくら(横山智佐)</div>
+                    <div class="LyricStaff">作詞：広井王子<br>作曲：田中公平<br>編曲：岸村正実</div>
+
+                    <div class="LyricText">
+						<p>
+							花に咲きます　希望の桜<br>
+							花も風も　咲かせます<br>
+							ひらりはらりと　夢ふくらませ<br>
+							あなたとわたし　つなぎましょ</p>
+						<p>
+							夏に咲きます　眩しい桜<br>
+							愛と勇気が　咲かせます<br>
+							きらりきらりと　夢輝かせ<br>
+							明日の虹を　渡りましょ</p>
+						<p>
+							強く激しく　やさしくさくら<br>
+							咲いてみせます　さくら　さくら<br>
+							さくら色</p>
+						<p>
+							秋に咲きます　くれない桜<br>
+							赤い夕日に　咲かせます<br>
+							破り破られ　夢くじけても<br>
+							涙をふいて　歌いましょ</p>
+						<p>
+							冬に咲きます　雪割り桜<br>
+							無垢なこころで　咲かせます<br>
+							高く険しく　夢遠くても<br>
+							あなたがいれば　登れます</p>
+						<p>
+							強く激しく　やさしくさくら<br>
+							咲いてみせます　さくら　さくら<br>
+							さくら色</p>
+						<p>
+							強く激しく　やさしくさくら<br>
+							咲いてみせます　さくら　さくら<br>
+							さくら色</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sakurawars-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>バリバリ・おてんば - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">バリバリ・おてんば</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高木礼子 ＆ 小林由美子</div>
+
+                    <div class="LyricText">
+						<p>
+							ご町内のみなさん　今夜はお祭りよ　勝手にやぐら組んじゃった<br>
+							綿あめにチョコバナナ　ヨーヨーもしたいし<br>
+							日本の心　味わいましょう</p>
+						<p>
+							おてんバリバリ　人生　怖いもん無し<br>
+							ワッショイ！［ワッショイ！］<br>
+							楽しい事は全部　つまみ食いしよう</p>
+						<p>
+							はめ外して　一緒に　騒ぎましょ　願いは　世界平和</p>
+						<p>
+							ねじりはちまきで　さらしちょっとセクシー　いなせな美少女参上<br>
+							射的ならまかせてよ　二丁拳恪∥鞑郡物L　嵐を呼ぶ</p>
+						<p>
+							やったもん勝ち　人生　年中無休<br>
+							ワッショイ！［ワッショイ！］<br>
+							中途半端してたら　カビがはえるわ</p>
+						<p>
+							若いうちに　冒険　あたしらの　元気は　天下無敵</p>
+						<p>
+							おてんバリバリ　人生　怖いもん無し<br>
+							ワッショイ！［ワッショイ！］<br>
+							しかられたら笑って　誤魔化せばいい<br>
+							歴史は今　ここで　動き出す　目指すは　世界制覇</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

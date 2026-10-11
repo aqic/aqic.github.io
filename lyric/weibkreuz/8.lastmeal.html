@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>最後の晩餐 - ヴァイス・クロイツ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">最後の晩餐</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							●キャンドルは　月明かり<br>
+							　 燭台にナイフ<br>
+							　 憎しみを　貪った<br>
+							　 哀しみのドレス</p>
+						<p>
+							　 静寂を　揺さぶった<br>
+							　 絶望のワイン<br>
+							　 大いなる　時の果て<br>
+							　 ひび割れた　グラス</p>
+						<p>
+							　 どんなオペラも謳えずに<br>
+							　 今夜舞台は終わるだろう<br>
+							　どんな画家さえ描けずに<br>
+							　今夜世界は終わるだろう</p>
+						<p>
+							　 愛を語って　人は偽りを<br>
+							　 流し続ける<br>
+							　 飢えにも　気付かずに</p>
+						<p>
+							◎テーブルに　並んでる<br>
+							　残酷な果実<br>
+							　聖杯に　満ちている<br>
+							　憐憫の涙</p>
+						<p>
+							　 争いに　血塗られた<br>
+							　 美しい　絵皿<br>
+							　 慟哭に　縛られた<br>
+							　 かりそめの　自由</p>
+						<p>
+							　 どんな調べにも奏でずに<br>
+							　きっと歴史は絶えるだろう<br>
+							　どんな台詞も聞こえずに<br>
+							　きっと幕さえ閉じるだろう</p>
+						<p>
+							　 何を夢見て　人は欲望を<br>
+							　 肥やし続ける<br>
+							　 朝など　来ないのに</p>
+						<p>
+							　 Repeat●◎●◎</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-weibkreuz-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

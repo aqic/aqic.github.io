@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>sailing day - ONE PIECE</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">sailing day</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">BUMP OF CHICKEN</div>
+                    <div class="LyricStaff">作詞：藤原基央<br>作曲：藤原基央<br>編曲：BUMP OF CHICKEN</div>
+
+                    <div class="LyricText">
+						<p>
+							目を閉じたその中に　見えた<br>
+							微かな眩しさを<br>
+							掴み取ろうとした　愚かなドリーマー</p>
+						<p>
+							伸ばした手は　閉じた目に<br>
+							写らなくて　途方に暮れる<br>
+							射程距離から　随分遠く　滲む</p>
+						<p>
+							どうにかまだ　僕は僕を　辞めないで　生きている<br>
+							たった一度　笑えるなら　何度でも　泣いたっていいや</p>
+						<p>
+							精一杯　運命に抵抗<br>
+							正解・不正解の判断　自分だけに許された権利</p>
+						<p>
+							sailing day　舵を取れ<br>
+							夜明けを待たないで　帆を張った　愚かなドリーマー</p>
+						<p>
+							数えたら　キリが無い程の　危険や不安でさえも<br>
+							愛して迎え撃った　呆れたビリーヴァー</p>
+						<p>
+							目を開いたその先に　見える<br>
+							確かな眩しさが<br>
+							空になったハートに　理由を注ぐ</p>
+						<p>
+							そうしてまた　僕は僕の　背中を押していく<br>
+							たった一つ　掴む為に　幾つでも　失うんだ</p>
+						<p>
+							精一杯　存在の証明<br>
+							過ちも　間違いも　自分だけに価値のある財宝</p>
+						<p>
+							sailing day　舵を取れ<br>
+							哀しみも　絶望も　拾っていく　呆れたビリーヴァー</p>
+						<p>
+							誰もが皆　それぞれの船を出す<br>
+							それぞれの見た　眩しさが　灯台なんだ</p>
+						<p>
+							そうだよ　まだ　僕は僕の　魂を持ってる<br>
+							たった一秒　生きる為に<br>
+							いつだって　命懸け　当たり前だ</p>
+						<p>
+							精一杯　存在の証明<br>
+							敗北も　後悔も　自分だけに意味のある財宝</p>
+						<p>
+							sailing day　舵を取れ<br>
+							冒険の日々全て　拾っていく　呆れたビリーヴァー</p>
+						<p>
+							精一杯　運命に抵抗<br>
+							決して消えはしない　僕だけを照らし出す灯台</p>
+						<p>
+							sailing day　舵を取れ<br>
+							嵐の中　嬉しそうに　帆を張った　愚かなドリーマー</p>
+						<p>
+							誰もがビリーヴァー</p>
+						<p>
+							永遠のドリーマー</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onepiece-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

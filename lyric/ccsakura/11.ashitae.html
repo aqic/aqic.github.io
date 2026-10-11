@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>明日へのメロディー - カードキャプターさくら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">明日へのメロディー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">CHAKA</div>
+                    <div class="LyricStaff">作詞：CHAKA<br>作曲：鷺巣詩郎<br>編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+						<p>
+							届けて　その声を<br>
+							伝えて　今すぐに<br>
+							いそいで　ここに来て<br>
+							感じて　まだ見ぬ力　信じて欲しいの<br>
+							夢のつづきが　ほら<br>
+							歌ってる　明日へのメロディー</p>
+						<p>
+							届けて　この声を<br>
+							伝えて　今すぐに<br>
+							いそいで　ここに来て<br>
+							不思議な　懐かしい鼓動　聞こえているでしょう？<br>
+							遠い記憶を今<br>
+							つないでく　物語が始まる</p>
+						<p>
+							言えなかった　言葉<br>
+							両手にあふれてる<br>
+							心のダイアリー<br>
+							めくればいつでも<br>
+							あなたがそばに<br>
+							いたの</p>
+						<p>
+							見えない　約束だ<br>
+							出会った　わたしたち<br>
+							教えて　そのわけを<br>
+							あの日の　誓いを今も　覚えているでしょう？<br>
+							見上げた　この空に<br>
+							どこまでも　希望の虹をかけよう</p>
+						<p>
+							届けて　この声を<br>
+							伝えて　今すぐに<br>
+							いそいで　ここに来て<br>
+							感じて　胸の微熱を　わかっていたでしょう？<br>
+							夢のつづきが　ほら<br>
+							歌ってる　明日へのメロディー</p>
+						<p>
+							恋する　奇蹟<br>
+							秘密をほどいて<br>
+							あなたのもとへ<br>
+							走る</p>
+						<p>
+							届けて　その声を<br>
+							伝えて　今すぐに<br>
+							初めて　見た様な<br>
+							知らない　輝く未来　探しに行きましょう<br>
+							何も　恐れないで<br>
+							一緒なら　くじけずに行けるから</p>
+						<p>
+							届けて　この声を<br>
+							伝えて　今すぐに<br>
+							いそいで　ここに来て<br>
+							感じて　胸の微熱を　わかっていたでしょう？<br>
+							夢のつづきが　ほら<br>
+							歌ってる　明日へのメロディー</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ccsakura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

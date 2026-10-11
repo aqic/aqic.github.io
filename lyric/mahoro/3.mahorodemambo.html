@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>まほろDEまんぼー - まほろまてぃっく</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">まほろまてぃっくED</div>
+
+                    <div class="LyricTitle">まほろDEまんぼー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">とりおまてぃっく
+（菊池由美＆水野愛日＆真田アサミ）</div>
+                    <div class="LyricStaff">作詞：くまのきよみ<br>作曲：増田俊郎<br>編曲：増田俊郎</div>
+
+                    <div class="LyricText">
+						<p>
+							さあさ　チョットよってらっしゃい　「まほろまてぃっく」<br>
+							あんな事　こんな事件　ハートにキック<br>
+							なんじゃコリャ　ビックラこいた<br>
+							乙女の純情　ゴーイン（強引）でもいい　奪ってほしいのっ</p>
+						<p>
+							「エッチなのはいけないと思います」</p>
+						<p>
+							Excellent Brilliant　まほろまショック<br>
+							毎度　毎度　お騒がせ　まだまだ続く<br>
+							ほんじゃまか？　お祭りさわぎ<br>
+							ワガママ　泣き虫　女の子は叱ってほしいのっ</p>
+						<p>
+							「オラオラオラ　しばくぞ　コラ～」</p>
+						<p>
+							お料理でも　お掃除でも　鳴呼　まほろさんにはかなわない！<br>
+							でもいつかは　私たちも　スーパーレディになるから<br>
+							歌おう　みんなで踊ろ　このミュージック<br>
+							あんな顔　こんな笑顔　青空高く　待ってました　こっからが勝負<br>
+							乙女はよくばり　あれも　これも　全部がほしいのっ</p>
+						<p>
+							「あ～まほろさんかわいい！　しかもきれいな肌」<br>
+							「まほろさんステキ！　いつか私も」<br>
+							「深雪ちゃんも凛ちゃんも大変だね。<br>
+							　あ～あおなかへった。バクッ　ウォ～ッ」「またたべてる～」</p>
+						<p>
+							さあさ　チョットよってらっしゃい　「まほろまてぃっく」<br>
+							あんな事　こんな事件　ハートにキック<br>
+							ちょっと待って　ねえ待たないで<br>
+							乙女の悶絶　フラチな夢　わかって欲しいのっ</p>
+						<p>
+							「う～ん　ボディアタック爆烈よ～！」</p>
+						<p>
+							小っちゃな胸　おっきな瞳　鳴呼　まほろさんを知ってるかい？<br>
+							正体不明　天下無敵　みんなが　名前を呼んでる</p>
+						<p>
+							もっともっと　熱くなぁれ　まほろDEまんぼー<br>
+							来週も　再来週も　チャンネルロック<br>
+							待ってました　こっからが勝負<br>
+							乙女の悦び　ねえあなたも　叫んでほしいのっ<br>
+							さあ一緒に「まほろまてぃっくLOVE!!」</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-mahoro-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

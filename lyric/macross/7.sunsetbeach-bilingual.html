@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Sunset Beach（日中対訳） - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ</div>
+
+                    <div class="LyricTitle">Sunset Beach（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">飯島真理</div>
+                    <div class="LyricStaff">作詞：阿佐　茜<br>作曲：羽田健太郎<br>編曲：羽田健太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							つれなく歩く　あなたの後を<br>
+							ふくれっつらして　追ってゆく<br>
+							ギラギラ続く　白い砂浜<br>
+							あいつに惚れてるって<br>
+							いうけれど<br>
+							あなたの方が　好きなのよ<br>
+							いつも一緒の Sunset Beach</p>
+						<p>
+							潮風吹いて　Big Wave<br>
+							私の心に　住みつきだした<br>
+							あいつが陽気に　はねまわる<br>
+							波乗り　太陽　ペンダント<br>
+							Sunset Beach の昼下がり</p>
+						<p>
+							サーフボードを　頭にのせて<br>
+							陽に焼けた肌　得意気な<br>
+							あいつをとりまく　あの娘たち<br>
+							私のあげた　ペンダント<br>
+							いつの間にやら　別のもの<br>
+							一人さみしい Sunset Beach</p>
+						<p>
+							波風やんで　トワイライト<br>
+							熱さの残る　素足の浜辺<br>
+							浮気なあいつを　あきらめて<br>
+							素敵な　あなたを　待っている<br>
+							Sunset Beach は夢の中</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							我在无情的你的背后<br>
+							嘟着嘴追赶过去<br>
+							闪闪发亮连接的白色沙滩<br>
+							说我是爱上那家伙<br>
+							其实我是喜欢你的喔<br>
+							经常一起的黄昏沙滩</p>
+						<p>
+							海风吹起卷起巨浪<br>
+							(缺)<br>
+							乘着浪　太阳　项链的垂饰<br>
+							黄昏海滩的午后</p>
+						<p>
+							把充浪板放在头上<br>
+							围绕在因晒黑皮肤儿扬扬得意的<br>
+							那家伙身边的姑娘们<br>
+							我送给他的项链饰<br>
+							不知何时改戴别的东西<br>
+							一个人的孤单的黄昏沙滩</p>
+						<p>
+							海风停息　夕阳微光<br>
+							赤脚踏在还发热的沙滩<br>
+							我要放弃那见异思迁的家伙<br>
+							等待完美的你<br>
+							黄昏沙滩 有如在梦中</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Ｚ・時をこえて - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ朝日系アニメーション「機動戦士Ｚガンダム」オープニングテーマ</div>
+
+                    <div class="LyricTitle">Ｚ・時をこえて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">鮎川麻弥</div>
+                    <div class="LyricStaff">作詞：井荻麟<br>作曲：ニールセダカ<br>編曲：渡辺博也</div>
+
+                    <div class="LyricText">
+						<p>
+							今は動けない　それが運命（さだめ）だけど<br>
+							あきらめはしない　もう目覚めたから<br>
+							燃えるときめきは　時代を写し<br>
+							色あざやかに　燃えさかる炎</p>
+						<p>
+							Crying　今は見えなくとも<br>
+							Searching　道しるべは浮かぶ</p>
+						<p>
+							I wanna have a pure time<br>
+							Everyone's a noble mind</p>
+						<p>
+							暗い街角　ひらく空から<br>
+							ひどく虚ろに　星がゆれても<br>
+							そこに残った　若さ取り出し<br>
+							Believing a sign of Z<br>
+							beyond the hard times from now</p>
+						<p>
+							刻の海　越えて　宇宙（そら）の傷口（きず）見れば<br>
+							人の過ちを　知ることもあるさ<br>
+							今を見るだけで　悲しむのやめて<br>
+							光に任せ　飛んでみるもいいさ</p>
+						<p>
+							Crying　今は見えなくとも<br>
+							Searching　道しるべは浮かぶ</p>
+						<p>
+							I wanna have a pure time<br>
+							Everyone's a noble mind</p>
+						<p>
+							肩が触れ合い　言葉なくして<br>
+							刻が残した　熱い命を<br>
+							この手のひらで　明日に残そう<br>
+							Believing a sign of Z<br>
+							beyond the hard times from now</p>
+						<p>
+							Crying　今は見えなくとも<br>
+							Searching　人を変えてゆく</p>
+						<p>
+							I wanna have a pure time<br>
+							Everyone's a noble mind</p>
+						<p>
+							乾く唇　濡れているなら<br>
+							刻を乗り越え　熱い時代へと<br>
+							移るだろうと　信じているから<br>
+							Believing a sign of Z<br>
+							beyond the hard times from now</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

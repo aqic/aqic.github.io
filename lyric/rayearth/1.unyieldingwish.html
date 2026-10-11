@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ゆずれない願い - 魔法騎士レイアース</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「魔法騎士レイアース」 オープニング・テーマ (1994)</div>
+
+                    <div class="LyricTitle">ゆずれない願い</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">田村直美</div>
+                    <div class="LyricStaff">作詞：田村直美<br>作曲：田村直美、石川寛門<br>編曲：鷹羽仁、井上龍仁</div>
+
+                    <div class="LyricText">
+						<p>
+							止まらない未来を目指して<br>
+							ゆずれない願いを抱きしめて</p>
+						<p>
+							海の色が紅く染まってゆく<br>
+							無重力状態<br>
+							このまま　風にさらわれたい</p>
+						<p>
+							いつも跳べないハードルを<br>
+							負けない気持ちで　クリアしてきたけど<br>
+							出し切れない実力は　誰のせい？</p>
+						<p>
+							※止まらない未来を目指して<br>
+							　ゆずれない願いを抱きしめて<br>
+							　色褪せない心の地図　光にかざそう</p>
+						<p>
+							どれだけ泣けば　朝に出逢えるの<br>
+							孤独な夜　初めて限界を感じた日</p>
+						<p>
+							きっと恋に落ちるのは<br>
+							まばたきみたいな　一瞬の情熱だけど<br>
+							愛に続く坂道で　強さ覚えたい</p>
+						<p>
+							止まらない未来を夢見て<br>
+							口を閉ざし　瞳を光らせてきたけれど<br>
+							もっと大きな　優しさが見えた</p>
+						<p>
+							飛べないハードルを<br>
+							負けない気持ちで　クリアしてきたけど<br>
+							スタートライン立つたびに　怯えていた</p>
+						<p>
+							止まらない未来を描いて　腕を伸ばし心を開いて</p>
+						<p>
+							※繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-rayearth-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

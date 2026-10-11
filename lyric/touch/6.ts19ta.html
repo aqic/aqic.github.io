@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>タッチ - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ CrossRoad 風のゆくえ オリジナルサウンドトラック</div>
+
+                    <div class="LyricTitle">タッチ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">芹澤 廣明</div>
+                    <div class="LyricStaff">作詞：康 珍化<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							呼吸を止めて一秒あなた<br>
+							真剣な目をしたから<br>
+							そこから何も聞けなくなるの<br>
+							星屑ロンリネス</p>
+						<p>
+							きっと愛する人を大切にして<br>
+							知らずに臆病なのね<br>
+							落ちた涙も見ないフリ</p>
+						<p>
+							すれちがいやまわり道を<br>
+							あと何回過ぎたら２人はふれあうの</p>
+						<p>
+							お願いタッチ タッチ ここにタッチ<br>
+							あなたから （タッチ）<br>
+							手をのばして 受け取ってよ<br>
+							ためいきの花だけ束ねたブーケ</p>
+						<p>
+							愛さなければ 淋しさなんて<br>
+							知らずに過ぎてゆくのに<br>
+							そっと悲しみに こんにちは<br>
+							 あなたがくれた 淋しさ全部<br>
+							移ってしまえばいいね<br>
+							２人で肩を並べたけれど<br>
+							星屑ロンリネス</p>
+						<p>
+							一人涙と笑顔はかってみたら<br>
+							涙が少し重くて<br>
+							ダメね 横顔で泣いてみた</p>
+						<p>
+							青春はね 心のあざ<br>
+							知りすぎてるあなたに思いは空回り</p>
+						<p>
+							お願いタッチ タッチ ここにタッチ<br>
+							せつなくて （タッチ）<br>
+							手をのばして 受け取ってよ<br>
+							ためいきの花だけ束ねたブーケ</p>
+						<p>
+							呼吸を止めて一秒あなた<br>
+							真剣な目をしたから<br>
+							そこから何も聞けなくなるの<br>
+							星屑ロンリネス</p>
+						<p>
+							誰も愛さなければ 淋しさなんて<br>
+							知らずに過ぎてゆくのに<br>
+							そっと悲しみに こんにちは</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

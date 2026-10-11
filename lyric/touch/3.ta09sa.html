@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>さよならの贈り物 - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ２ ～さよならの贈り物～ オリジナルサウンドトラック</div>
+
+                    <div class="LyricTitle">さよならの贈り物</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ブレッド＆バター</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							風吹くスタジアム　俯く影がふたつ<br>
+							冷たい人ねって　君の頬が濡れた</p>
+						<p>
+							あいつの一番大事な<br>
+							人を好きになった罰だね<br>
+							僕だけ泣けばいい</p>
+						<p>
+							グラブで隠したサインさ<br>
+							君が好きさ好きさ好きさって<br>
+							胸でつぶやくよ</p>
+						<p>
+							ボードに並んでく<br>
+							僕の愛さゼロが・・・  ひとりにしてくれよ　切なく背中向けた<br>
+							涙に気づいたら　君が不幸になる</p>
+						<p>
+							この恋い終わりを告げても<br>
+							君を君を思う日々がAh<br>
+							僕には始まるよ</p>
+						<p>
+							ボードに名前が消えるね<br>
+							愛は愛は愛は切ない<br>
+							夏の残像さ　夢さ</p>
+						<p>
+							誰も悲しみのヒーローさ<br>
+							青い傷を胸に刻んで<br>
+							真夏にすれ違う</p>
+						<p>
+							誰も悲しみのヒーローさ<br>
+							愛は愛は愛は哀しい<br>
+							生きる誇りだね</p>
+						<p>
+							さよなら・・・それだけが<br>
+							僕の贈り物さ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

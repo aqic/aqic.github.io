@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Whenever I Think of You - 天使な小生意気</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Whenever I Think of You</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">三枝夕夏 IN db</div>
+                    <div class="LyricStaff">作詞　三枝夕夏<br>作曲　徳永暁人<br>編曲　徳永暁人</div>
+
+                    <div class="LyricText">
+						<p>
+							突然のスコール　海沿いのカフェ<br>
+							途切れる会話から気付いて欲しい　この気持ち<br>
+							ソーダ水　光る泡は　まるで人魚姫<br>
+							そっけない返事も　いたずらに波がさらってゆく<br>
+							それでも</p>
+						<p>
+							Whenever I think of you<br>
+							こんなに強い自分に出逢えた　夏の扉<br>
+							笑顔はうれしい　時に浮かべるものじゃなくて<br>
+							淋しさ隠す手段と思っていた<br>
+							素直になるって　そんなに難しい事じゃない</p>
+						<p>
+							おそろいのストラップ　揺らしながら<br>
+							メールチェックばかり　ケンカの理由は何なの？<br>
+							すくっては　指の隙間こぼれ落ちる<br>
+							砂のよう形ない　愛にくじけそうになるけど<br>
+							それでも</p>
+						<p>
+							Whenever I think of you<br>
+							君が想う恋の行方うまくいかない事<br>
+							なぐさめるフリして本当はね　喜んでる<br>
+							しょせん恋愛なんて　自己満足<br>
+							君を苦しめてでも　この想いは譲れない</p>
+						<p>
+							Whenever I think of you<br>
+							何も言わずに　今夜だけは抱きしめて欲しい<br>
+							笑顔はうれしい　時に浮かべるものじゃなくて<br>
+							淋しさ隠す手段と思っていた<br>
+							素直になるって　そんなに難しい事じゃない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-cheekyangel-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

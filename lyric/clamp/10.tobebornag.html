@@ -1,0 +1,106 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>To be born again for your sake - CLAMP</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">To be born again for your sake</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							Blowing the past away on fluttering clouds<br>
+							Letting the future ride on flowing winds<br>
+							Fearlessly, unceasingly, patiently</p>
+						<p>
+							To be born again in your arms</p>
+						<p>
+							To be born again for my sake<br>
+							Once again to wait to be born in a golden egg<br>
+							Once again to be able to fly with silver wings<br>
+							Unhurriedly, tenaciously, intimately</p>
+						<p>
+							To be born again in your arms</p>
+						<p>
+							To be born again for your sake<br>
+							To turn the bliss of our meeting into a gentle light<br>
+							And the parting that's sure to come into smothering rain<br>
+							Like the little, indigo flower that blooms in delicate shade</p>
+						<p>
+							To be born again in your arms</p>
+						<p>
+							Your taking my hand and my not shaking it off<br>
+							Our two paths merging to become one as blending minds<br>
+							To be born again for my sake</p>
+						<p>
+							To be born again in your arms</p>
+						<p>
+							Not averting your eyes, not letting go<br>
+							Embracing all the fortitude of will and the frailty of prayers</p>
+						<p>
+							To be born again in your arms</p>
+						<p>
+							To be born again for my sake<br>
+							When my not minding the loneliness<br>
+							Was only the ignorance of my bliss with you<br>
+							When my pain of loneliness<br>
+							Was but my learning to fear of losing you</p>
+						<p>
+							So then, I will be born again in your arms</p>
+						<p>
+							To be born again for my sake<br>
+							As old shells crumble off and newborn tears fall on a cheek<br>
+							With your embrace open my ethereal wings<br>
+							To be born again for you alone</p>
+						<p>
+							To be born again in your arms</p>
+						<p>
+							Letting me forget with your voice and your touch<br>
+							Breaking off the chains that bind my heart and feet</p>
+						<p>
+							To be born again in your arms</p>
+						<p>
+							To be born again in your sake<br>
+							As ember that just caught should not be put out or misplaced<br>
+							My thoughts just born should not be dissipated or broken apart<br>
+							In this cradle you guard over<br>
+							To start again from scratch</p>
+						<p>
+							To be born again for my sake<br>
+							To be born again in your arms</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-clamp-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

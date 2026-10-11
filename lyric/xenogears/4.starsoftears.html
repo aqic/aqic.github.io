@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>STARS OF TEARS ～優しく星ぞ降りしきる～ - ゼノギアス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Xenogears」</div>
+
+                    <div class="LyricTitle">STARS OF TEARS ～優しく星ぞ降りしきる～</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							Your fingertips Moving gently to my heart<br>
+							The force of Life goes on and on<br>
+							The song remains<br>
+							Like a haunting melody<br>
+							Of angel music held in chains</p>
+						<p>
+							(*)<br>
+							And I ask you<br>
+							Can we ease the pain of those who lost (The force of life goes on)<br>
+							Can we know the cause of all this sorry (Tears of Loneliness)<br>
+							Can we catch the tears of a broken wrold<br>
+							Falling down upon the earth...</p>
+						<p>
+							The waves of time take me deeper into you<br>
+							A haze as blue as summer skies<br>
+							And turn to find<br>
+							The key will not unlock the door<br>
+							This broken bird away it flies</p>
+						<p>
+							* repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-xenogears-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

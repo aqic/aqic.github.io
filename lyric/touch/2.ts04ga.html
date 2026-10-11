@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ガラスの青春 - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ ～背番号のないエース～ オリジナルサウンドトラック タッチ Original Song Book ２</div>
+
+                    <div class="LyricTitle">ガラスの青春</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ラフ＆レディ</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							青春は金色の夏のオーロラ<br>
+							君が消えたフィルムの上に<br>
+							たったひとつだけ動かない影<br>
+							誰の帰りを待ってるの</p>
+						<p>
+							涙で口づけた<br>
+							君がささやくよ<br>
+							人には帰れない<br>
+							場所があるね...きっと</p>
+						<p>
+							ガラスのティーンエイジ<br>
+							青春ってね<br>
+							Wow wow サイレンに震えている<br>
+							まぶしいガラスだね</p>
+						<p>
+							涙の重さ支えきれず<br>
+							一瞬の夏が壊れてくよ<br>
+							煌めきながら  君が口笛で投げた小石が<br>
+							胸に銀の波紋を描く<br>
+							遠ざかるほどに輝き出すね<br>
+							何気ないつぶやきさえも</p>
+						<p>
+							レンズに突き出した<br>
+							笑顔のVサイン<br>
+							二度とは帰れない<br>
+							場所を指しているよ</p>
+						<p>
+							ガラスのティーンエイジ<br>
+							時の波が<br>
+							壊していった砂の城に<br>
+							光る青春の破片</p>
+						<p>
+							指を触れたら傷つくよって<br>
+							哀しい声が風を止めた<br>
+							振り向く空で</p>
+						<p>
+							ガラスのティーンエイジ<br>
+							青春ってね<br>
+							Wow wow サイレンに震えている<br>
+							まぶしいガラスだね</p>
+						<p>
+							涙の重さ支えきれず<br>
+							一瞬の夏が壊れてくよ<br>
+							ガラスのティーンエイジ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

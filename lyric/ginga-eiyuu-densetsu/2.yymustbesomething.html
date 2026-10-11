@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Must be something - 銀河英雄伝説</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Galaxy hero Legends</div>
+
+                    <div class="LyricTitle">Must be something</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricStaff">作詞：姬野真也<br>作曲：姬野真也<br>編曲：風戶慎介</div>
+
+                    <div class="LyricText">
+						<p>
+							Sometimes it gets so hard without you<br>
+							It seems to me the whole world's away<br>
+							Do you know that you have a clue<br>
+							Why I was born to live this windy day?</p>
+						<p>
+							See the clouds spin around tonight<br>
+							In the derkeing sky as if it's alive<br>
+							And I think of you, oh, you holding me tight<br>
+							Now feel your warmth revlve...</p>
+						<p>
+							It must be something<br>
+							That comes, flooding into my heart<br>
+							There must be something<br>
+							That leads me through the space between.<br>
+							It seems so far away<br>
+							We've come, but it's only a start<br>
+							Tonight for you I pray<br>
+							To the brightest star on the heavenly screen...</p>
+						<p>
+							This time I hope you won't be brave<br>
+							Oh, please don't sail out to the stormy sea<br>
+							No more flowers for a hero's grave<br>
+							But only grass will hide it all in green</p>
+						<p>
+							I saw you hurt in my dream<br>
+							I saw you bleed and I'm awake<br>
+							I think I heard somebody scream<br>
+							Right through my heart with an ache...</p>
+						<p>
+							It must be something<br>
+							That comes, flooding into my heart<br>
+							There must be something<br>
+							That leads me through the space between.<br>
+							It seems so far away<br>
+							We've come, but it's only a start<br>
+							Tonight for you I pray<br>
+							To the brightest star on the heavenly screen...</p>
+						<p>
+							It must be something<br>
+							That comes, flooding into my heart<br>
+							There must be something<br>
+							That leads me through the space between.<br>
+							It must be something<br>
+							That comes, flooding into my heart<br>
+							It must be something</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ginga-eiyuu-densetsu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

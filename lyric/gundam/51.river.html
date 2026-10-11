@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>RIVER - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">RIVER</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">石井竜也</div>
+                    <div class="LyricStaff">作詞︰石井竜也<br>作曲︰石井竜也<br>編曲︰石井竜也</div>
+
+                    <div class="LyricText">
+						<p>
+							何もかも上手　行かない　もどかしさに<br>
+							焦る気持ちを押さえて<br>
+							はがゆさと苛立しさに　心乱れ<br>
+							抱え込んだ膝小僧<br>
+							悔しさをこらえて　涙に震えて<br>
+							泣いた夜か明ける</p>
+						<p>
+							そう<br>
+							確かに君の言う通りだよ<br>
+							今なら引　返せるけれども<br>
+							つまらない意地を張りけてる<br>
+							步　始めた以上　諦めない<br>
+							もう一度　この手にチャンスを．．．<br>
+							全てこの胸の中にしまったおこう<br>
+							夢を叶うまで．．．</p>
+						<p>
+							やるせない儚さに　身をゆだねるほど<br>
+							そんな危うい時代に<br>
+							あがいても手の届かない　岸を目指<br>
+							無我夢中で泳いだ<br>
+							流れに逆らう　声も上げられない<br>
+							行き止まりの場所で</p>
+						<p>
+							そう<br>
+							愛　全てを助けるとは　思わない<br>
+							だけど君の微笑み<br>
+							心を癒すその唇に　立　上がる勇気を<br>
+							もらうのさ<br>
+							もう一度　この手にチャンスを．．．<br>
+							川の流れは今日も激しいけれど<br>
+							きみの手は離さない<br>
+							いつも　この胸の中の愛を信じていよう<br>
+							夢を叶うまで．．．</p>
+						<p>
+							そう<br>
+							愛　全てを助けるとは　思わない<br>
+							だけど君の微笑み<br>
+							心を癒すその唇に　立　上がる勇気を<br>
+							もらうのさ<br>
+							確かに君の言う通りだよ<br>
+							今なら引　返せるけれども<br>
+							つまらない意地を張りけてる<br>
+							步　始めた以上　諦めない<br>
+							もう一度　この手にチャンスを．．．<br>
+							川の流れは今日も激しいけれど<br>
+							きみの手は離さない<br>
+							いつも　この胸の中の愛を信じていよう<br>
+							夢　叶うまで．．．</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

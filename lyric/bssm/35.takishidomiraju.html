@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>タキシード･ミラージュ - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">美少女戦士セーラームーンＳ</div>
+
+                    <div class="LyricTitle">タキシード･ミラージュ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">三石琴乃、富沢美智恵
+久川綾、篠原恵美、深見梨加</div>
+                    <div class="LyricStaff">作詞：武内直子<br>作曲：小坂明子<br>編曲：林有三</div>
+
+                    <div class="LyricText">
+						<p>
+							三日月のシャアレに星のピアス外して<br>
+							どうしよう胸が胸がいっぱい<br>
+							花火が星に成っても恋が闇え消えても<br>
+							お願いよキスを止めないで<br>
+							ビロオドの香で盗んでもいい<br>
+							このハアト銀河で出会った恋よ</p>
+						<p>
+							＊夜更けのマント広げれば虹色<br>
+							　もっともっと愛してる<br>
+							　タキシイドミラアジュ<br>
+							　タキシイドミラアジュ</p>
+						<p>
+							カナリアのオルゴウルソットフェイドアウト<br>
+							どうしよう胸が胸が詰まるの<br>
+							涙が星に成っても回転木馬消えても<br>
+							お願いよキスを止めないで<br>
+							ビロオドの視線で包まれたいの<br>
+							このハアト銀河で誓った恋よ</p>
+						<p>
+							花びらの嵐抱きしめて優しく<br>
+							ずっとずっと消えないで<br>
+							タキシイドミラアジュ</p>
+						<p>
+							＊繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

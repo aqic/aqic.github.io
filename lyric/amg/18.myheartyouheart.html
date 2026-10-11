@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>My Heart言い出せない、Your Heart確かめたい - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ああっ女神さまっ」</div>
+
+                    <div class="LyricTitle">My Heart言い出せない、Your Heart確かめたい</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Goddess Family Club
+(井上喜久子、冬馬由美、久川　綾)</div>
+                    <div class="LyricStaff">作詞：長谷川たか<br>作曲・編曲：安田　武</div>
+
+                    <div class="LyricText">
+						<p>
+							恋にならないね側にいる抱けじゃ<br>
+							謎お描けても<br>
+							鈍感な人だから<br>
+							夏の服お着て春の海に来た<br>
+							あなたのShirtで優しく庇って</p>
+						<p>
+							My Heart 言出せない<br>
+							Please kiss 仕手って<br>
+							Day dream 夢は膨らみ<br>
+							空に高く消えら</p>
+						<p>
+							女のこは誰だって幸せに生れる<br>
+							恋が始まれば輝き出す<br>
+							譬え涙流してもあなたの生なら<br>
+							胸お傷めても悲しくない</p>
+						<p>
+							秘密持ちたいな罪お感じたい<br>
+							あなたのニュス知ってても<br>
+							知らん振り<br>
+							秋に時見えて冬に悩んでも<br>
+							大事な恋が実ればいいよね</p>
+						<p>
+							Your Heart 確かめんたい<br>
+							Believe 触れた指お<br>
+							True Love 初めてだから<br>
+							ほうが熱く燃える</p>
+						<p>
+							女のこは恋したら<br>
+							美しく生れる<br>
+							赤い口紅も必要ない<br>
+							眠れなくてすごしても<br>
+							夢ばかり見てる<br>
+							思う気持ちだけあふれている</p>
+						<p>
+							女のこは誰だって幸せに生れる<br>
+							愛が漲れば無敵になる<br>
+							譬え涙流してもあなたの生なら<br>
+							胸お傷めても優しくなる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

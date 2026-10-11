@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Love Destiny - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Love Destiny</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							アイタイLove Love Love Love（アイアイアイアイ）のに<br>
+							アエナイLove Love Love（アイアイアイ）今夜は<br>
+							窓を打つ雨より激しい嵐に揺れてる<br>
+							アエナイLove Love Love Love（アイアイアイアイ）から<br>
+							もっと愛Love Love Love（アイアイアイ）つのるよ<br>
+							燃え尽きてもいい　これが最後の真実</p>
+						<p>
+							初めての出会いは平凡だったけど<br>
+							会う度に過去の誰よりも惹かれてく<br>
+							こんな気持ちの訳　うまく言えないけど<br>
+							運命の恋と　人は呼ぶのでしょう<br>
+							ひとみ　閉じたら　ふたりになれる<br>
+							今たとえ　この部屋ひとりでも<br>
+							It's my only destiny<br>
+							アイタイLove Love Love Love（アイアイアイアイ）のに<br>
+							アエナイLove Love Love（アイアイアイ）今夜は<br>
+							勝手にあふれてく激情を止められない<br>
+							だからLove Love Love（アイアイアイ）アイタイ<br>
+							だけどLove Love Love（アイアイアイ）アエナイ<br>
+							もう戻れはしない　これが最後の真実</p>
+						<p>
+							誰かを思う時　苦しくなるなんてね<br>
+							これまでの自分が　次々に崩れてく<br>
+							ポーズとは裏腹　巻き込まれてゆく感じ<br>
+							見えない力で　引き寄せられてゆく<br>
+							ひとみ　そらさず　ふたりになれた<br>
+							あの夜の鼓動　忘れない<br>
+							It's my last destiny</p>
+						<p>
+							アイタイLove Love Love Love（アイアイアイアイ）のに<br>
+							アエナイLove Love Love（アイアイアイ）今夜は<br>
+							窓を打つ雨より激しい嵐に揺れてる<br>
+							アエナイLove Love Love Love（アイアイアイアイ）から<br>
+							もっと愛Love Love Love（アイアイアイ）つのるよ<br>
+							燃え尽きてもいい　これが最後の真実</p>
+						<p>
+							ねえ不思議　彼を想って泣ける夜があるって<br>
+							まるで　Love Song</p>
+						<p>
+							だからLove Love Love（アイアイアイ）アイタイ<br>
+							だけどLove Love Love（アイアイアイ）アエナイ<br>
+							もう戻れはしない　これが最後の真実</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

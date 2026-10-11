@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>恋心 - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©2002 KeySoundLabel / Birthday Song,Requiem</div>
+
+                    <div class="LyricTitle">恋心</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lia</div>
+                    <div class="LyricStaff">作詞：key(junMedia)<br>構成：key(junMedia)<br>アレンジ：RyoOkabe</div>
+
+                    <div class="LyricText">
+						<p>
+							どんな君を好きでいたか　もう思い出せない<br>
+							永遠を信じてた日に見つけた恋心</p>
+						<p>
+							楡の木陰に隠れて僕を呼んでた</p>
+						<p>
+							どこまでも続いてゆく悲しい景色　君と笑ってた</p>
+						<p>
+							10年たっても僕は木陰で待っていた<br>
+							どんなに君を好きだったか　今も覚えている</p>
+						<p>
+							いつかこの身が滅びても僕は夢見る</p>
+						<p>
+							どこまでも続いてゆく悲しい景色　君と笑ってた<br>
+							いつまでもそばにいるよ　夢の中で君と笑ってた</p>
+						<p>
+							ふたりには出会いを<br>
+							ふたりには花を<br>
+							ふたりには季節を<br>
+							ふたりにはゆく日を<br>
+							ふたりには闇を<br>
+							ふたりには眠りを</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

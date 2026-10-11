@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>It's for you - 天使な小生意気</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">エンディングテーマ２</div>
+
+                    <div class="LyricTitle">It's for you</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">三枝夕夏 IN db</div>
+                    <div class="LyricStaff">作詞：三枝夕夏<br>作曲：川島だりあ<br>編曲：池田大介</div>
+
+                    <div class="LyricText">
+						<p>
+							In the early mornin'rain 浅い眠りに 移ろう君の気まぐれな愛<br>
+							時々ってね 感動的でも 時々ってね つらいよ<br>
+							数えきれない愛の言葉を 囁いたその口唇はもう<br>
+							ごまかすように私の中で 激しく熱く泳ぐだけ<br>
+							恋愛に勝ち負けなどないなんて嘘だよ いつだって背中越しの愛</p>
+						<p>
+							胸につのるこの想い<br>
+							それは私の大事なもの It's for you<br>
+							悲しき恋 恋のカケラ<br>
+							You were mine， crazy for you</p>
+						<p>
+							昨日のためのマニキュア落とす 鏡に映る無力な私<br>
+							言い訳の電話に「気にしないで」と<br>
+							この強がりは誰のため?<br>
+							君への嘘うまくなりました 自分への嘘うまくなりました every night</p>
+						<p>
+							胸につのるこの想い<br>
+							それは私の讓れぬもの It's for you<br>
+							悲しき恋 恋の雫<br>
+							You were mine， crazy for you</p>
+						<p>
+							せつなさが人に 夢与えるように<br>
+							淋しさが君に 今愛求めているの?</p>
+						<p>
+							胸につのるこの想い<br>
+							それは私の宝もの It's for you<br>
+							悲しき恋 恋の静寂<br>
+							You were mine， crazy for you</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-cheekyangel-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

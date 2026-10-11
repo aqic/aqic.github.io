@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>約束 - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Macross2</div>
+
+                    <div class="LyricTitle">約束</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">笠原弘子</div>
+                    <div class="LyricStaff">作詞：松宮恭子<br>作・編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+						<p>
+							いつも　忘れない<br>
+							信じあうことを<br>
+							それがあなたとの<br>
+							遠い約束よ<br>
+							今は　サヨナラと<br>
+							手をふるから<br>
+							軽く　ほほえんでいてね<br>
+							そのまま……</p>
+						<p>
+							ひとりひとり　道はちがう<br>
+							だけど　皆んな<br>
+							同じ夢をみて　生きてるわ<br>
+							そうよ　信じてる<br>
+							愛しあうことを<br>
+							それが生きている<br>
+							熱い輝きね<br>
+							今は　サヨナラと<br>
+							手をふるから<br>
+							そっと　見送っていてね<br>
+							おねがい……</p>
+						<p>
+							走るように　時は流れ<br>
+							いつか　きっと<br>
+							夢のような日がくることを……<br>
+							忘れられない　まなざし<br>
+							恋の傷あとも<br>
+							きっと　キラめく　思い出だから<br>
+							そうよ　信じてる<br>
+							限りない未来を<br>
+							心つなぎあう<br>
+							熱いときめきを<br>
+							皆んな　それぞれに<br>
+							輝いてる<br>
+							そうね　この宇宙の<br>
+							星のようだわ<br>
+							決して　忘れない<br>
+							信じあうことを<br>
+							それがあなたとの<br>
+							遠い約束よ<br>
+							今は　サヨナラと<br>
+							手をふるから<br>
+							軽く　ほほえんでいてね<br>
+							そのまま……</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

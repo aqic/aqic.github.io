@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>失った時間の中に - 幻想魔伝 最遊記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">最遊記サントラＣＤ収録曲</div>
+
+                    <div class="LyricTitle">失った時間の中に</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高橋忠史</div>
+                    <div class="LyricStaff">作詞：松本一起<br>作曲：中村由利子<br>編曲：中村由利子</div>
+
+                    <div class="LyricText">
+						<p>
+							さぁ　心に羅針盤立て<br>
+							瞳を閉じれば誘われてゆく</p>
+						<p>
+							Ah　誰かが決めた道より<br>
+							傷ついても遠回りする</p>
+						<p>
+							確かに一人じゃ生きられないけれど<br>
+							孤独も時に信じられる</p>
+						<p>
+							take it all dream　失った時間と<br>
+							take it future　引き替えに未来が<br>
+							take it all fight　きっとこの先には<br>
+							I'll catch on love　待ってる人がいる</p>
+						<p>
+							さぁ　夜明けと交差する空<br>
+							この地上に輝きを呼ぶ</p>
+						<p>
+							Ah　汚れた服を脱ぎ捨て<br>
+							風のシャワー　身を浄めたい</p>
+						<p>
+							正しいことだと思ってしたことが<br>
+							涙に染まることもあった</p>
+						<p>
+							take it all heat　その瞬間を感じて<br>
+							take it burning　行く先を決めたい<br>
+							take it all chance　愛だとか夢とか<br>
+							I'll be a bad boy　言葉には出来ない</p>
+						<p>
+							take it all dream　失った時間と<br>
+							take it future　引き替えに未来が<br>
+							take it all fight　きっとこの先には<br>
+							I'll catch on love　待ってる人がいる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saiyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

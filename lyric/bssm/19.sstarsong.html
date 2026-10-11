@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>セーラースターソング - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「美少女戦士セーラームーンS」オープニング・テーマ</div>
+
+                    <div class="LyricTitle">セーラースターソング</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">花沢加絵</div>
+                    <div class="LyricStaff">作詞：武内直子<br>作曲：荒木将器<br>編曲：HAL</div>
+
+                    <div class="LyricText">
+						<p>
+							悲しみが今　セーラースマイル<br>
+							奇跡をおこすの　セーラーウイング<br>
+							誰だって　輝く星をもつ<br>
+							負けない！　明日へ　セーラーエール<br>
+							絶対！　つかまえる！　セーラースター<br>
+							この誓い　とどけ　銀河まで</p>
+						<p>
+							あなたが　消えたその時から<br>
+							探しつずける旅が始まった<br>
+							きばんだ地図には ステンシルの天使の絵<br>
+							指さす　先はダークなコロセウムがまってる<br>
+							震える　胸には　あの日の秘密のキス<br>
+							どうなに辛い　さだめでも<br>
+							追いつずけるから</p>
+						<p>
+							※後悔はしない　セーラーアイズ<br>
+							　あなたについてく　セーラーウイング<br>
+							　この歌は　星の道しるべ<br>
+							　負けない！　明日へ　セーラーエール<br>
+							　絶対！　見つけるよ！　セーラースター<br>
+							　天使の羽で　飛び立つの</p>
+						<p>
+							一人で走る　見知らぬ道<br>
+							やっとたどりついたこの砦に<br>
+							フラスコのそこ　あなたがのこして行った<br>
+							試練の星の人かけらさあ　呪文を唱えよう</p>
+						<p>
+							これは二人のミラクルなさだめ<br>
+							過去も、未来も飛び越えて　追い付いて見せる</p>
+						<p>
+							苦しさが今　セーラーアイズ<br>
+							奇跡を起こすの　セーラーウイング<br>
+							だれだって　運命の星をもつ<br>
+							負けない！　明日え　セーラーエール<br>
+							絶対！　捕まえる！　セーラースター<br>
+							この誓い　とどけ　銀河まで</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>字宙の挂け桥 - 銀河英雄伝説</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Galaxy Hero's Legends</div>
+
+                    <div class="LyricTitle">字宙の挂け桥</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">小椋佳</div>
+                    <div class="LyricStaff">作詞：小椋佳<br>作曲：小椋佳<br>編曲：川边真</div>
+
+                    <div class="LyricText">
+						<p>
+							君の哀しみは　君だけのものか<br>
+							君の背负う孤独は　君の命かぎりか<br>
+							确かに　胜手に　产み落とされた命<br>
+							意味も　价值も　予えられない尽に</p>
+						<p>
+							君の眼差しは　何处まで届いてるか<br>
+							云の果てる地平か　星の消える宇宙か<br>
+							确かに　胜手に　乐しんでいい世界<br>
+							欲に　押され　突き进むのも自由</p>
+						<p>
+							君の乐しみは　君だけのものか<br>
+							君の抱く憧れは　君の命かぎりか<br>
+							人とか　呼ばれる　挂け替えのない命<br>
+							君の　後に　续く幼い姿</p>
+						<p>
+							君の大部分　过去からの授かり物<br>
+							自分と思う殪ど　もらいものの魂<br>
+							命と　时代を　引き继ぐ未来人へ<br>
+							君は　何を　手渡すと言うのだろう</p>
+						<p>
+							君の乐しみは　君だけのものか<br>
+							君の抱く憧れは　君の命かぎりか<br>
+							谁もが　それぞれ　否应无しに主役<br>
+							气づか　ないか　宇宙の挂け桥だと</p>
+						<p>
+							君の一生は　宇宙の一瞬の粒<br>
+							けれどその辉きは　全ての星に届く<br>
+							时代の　挂け桥　精一杯の命<br>
+							虹の　色を　越えて光り投げよう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ginga-eiyuu-densetsu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

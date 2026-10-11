@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>愛することを教えて - 夢で逢えたら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">愛することを教えて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">金月真美</div>
+                    <div class="LyricStaff">作詞：ＨＡＮＡＫＯ<br>作曲：金住重里<br>編曲：金住重里<br>(英文翻译的字幕，日文及假名不详)</div>
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							My heart is always watching you.</p>
+						<p>
+							With a little hesitation...<br>
+							...my heartbeat is getting closer to you<br>
+							I start running as the wind whirls up in the air.<br>
+							When truth is revealed...<br>
+							...the bright light pierces my heart.<br>
+							Because I cannot tell you how I really feel.</p>
+						<p>
+							Believe in my feelings for you.<br>
+							Believe in what you see in your dream.<br>
+							We finally found each other.<br>
+							I can see nothing but you.</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-yumede-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

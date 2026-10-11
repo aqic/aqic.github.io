@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>地球の果て - 最終兵器彼女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">地球の果て</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">折笠富美子</div>
+                    <div class="LyricStaff">作詞：公星トロウ<br>作曲：見良津健雄</div>
+
+                    <div class="LyricText">
+						<p>
+							ひとりぼっちで待ってた ずっと<br>
+							いつかあなたに出會える日を</p>
+						<p>
+							もし あなたを失えば私<br>
+							このまま無くなってしまう...<br>
+							あなたと一つでいたい 溶け合っていたい<br>
+							この一瞬が終わらないように</p>
+						<p>
+							二人だけで 二人だけの地球(ほし)で<br>
+							いつも いつも 永遠に二人で</p>
+						<p>
+							愛している この命が終わったとしても<br>
+							あなたとを愛し續けたい ずっと</p>
+						<p>
+							あなたと離れてるだけで 私<br>
+							心が消えてしまいそう<br>
+							他には何も要らない あなただけいれば<br>
+							空も雲も街も 花さえも</p>
+						<p>
+							どんな時も 側にいて欲しい<br>
+							ひとりきりでは消えてしまいそうなの</p>
+						<p>
+							愛している この地球(ほし)が終わったとしても<br>
+							あなたと 二人でこのまま ずっと</p>
+						<p>
+							二人だけで 二人だけの地球(ほし)で<br>
+							いつも いつも 永遠に二人で</p>
+						<p>
+							愛している この地球(ほし)が終わったとしても<br>
+							あなとを愛し續けたい ずっと</p>
+						<p>
+							I want to be with you<br>
+							I feel lonely without you</p>
+						<p>
+							I want to be with you<br>
+							I feel helpless without you....</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saishuuheiki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

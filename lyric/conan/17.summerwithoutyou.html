@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君がいない夏 - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ED 71話～83話</div>
+
+                    <div class="LyricTitle">君がいない夏</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">DEEN</div>
+                    <div class="LyricStaff">作詞・作曲：小松未歩<br>編曲：池田大介</div>
+
+                    <div class="LyricText">
+						<p>
+							つらい朝はうんざりするね<br>
+							つまづいても楽しく生きてゆくよ<br>
+							繰り出そう　追いかけてはるかな夢を<br>
+							どんなに離れていてもわかる</p>
+						<p>
+							忘れかけてた甘い夏の日を<br>
+							あれからどれくらいの時間がたつの ?<br>
+							大好きだったあの笑顔だけはしばらく近くで重ねあう日々を<br>
+							ahh　もう戻れない時を小さく祈っている</p>
+						<p>
+							今は遠い優しい君を<br>
+							打ち寄せてる穏やかな波がさらう<br>
+							何もかも　思い出を失くしたせいさ<br>
+							あの日のように輝く夢も</p>
+						<p>
+							忘れかけてた甘い夏の日も<br>
+							いつかは二人の胸によみがえる<br>
+							少し大人になれる気がしてた　それぞれ違う人生を選ぶ事で<br>
+							ahh　もう戻らない時を小さく祈っている</p>
+						<p>
+							鮮やかすぎる　君がいない夏<br>
+							あの声　あの仕草が　広がってく<br>
+							言葉になんかできなくてもいい　こぼれた日差しに心がにじんだ<br>
+							ahh　もう戻れない時を小さく祈っている</p>
+						<p>
+							ahh　もう戻れない時を小さく祈っている</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

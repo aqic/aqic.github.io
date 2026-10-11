@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風の旋律(うた) - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">風の旋律(うた)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本千夏</div>
+                    <div class="LyricStaff">作詞：柚木美祐<br>作曲：家原正嗣<br>編曲：戸塚　修</div>
+
+                    <div class="LyricText">
+						<p>
+							ｓｔｏｐ　夢を見てたの　美しく永い夢<br>
+							ｓｔｏｐ　深く静かに　悲しみを眠らせて<br>
+							　優しさに揺れてたなら<br>
+							　幸せだったはず　でも<br>
+							時が動く　胸が騒ぐ　風の中で<br>
+							誰かが呼ぶ声が聴こえる<br>
+							この身体に　この心に熱く走る<br>
+							生命が今目覚めてく</p>
+						<p>
+							ｓｔｏｐ　人は弱いね　争って憎みあう<br>
+							ｓｔｏｐ　でも愛だけは　何もかも越えるはず<br>
+							　運命が引き寄せるよ<br>
+							　確かに君のもとへと<br>
+							その笑顔を　その涙を　そのすべてを<br>
+							ただ１つの勇気に変えて<br>
+							傷つくのも恐れないさ　どんな時も<br>
+							守るよ　守ってみせる</p>
+						<p>
+							Ａｈ　生まれてきた意味を<br>
+							Ａｈ　初めて知った</p>
+						<p>
+							この身体に　この心に光る君を<br>
+							ただ１つの生きる証しに<br>
+							その笑顔を　その涙を　そのすべてを<br>
+							守るよ　守ってみせる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

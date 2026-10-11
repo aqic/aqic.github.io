@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ラムネ色の夏 - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ラムネ色の夏</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">堀江由衣</div>
+
+                    <div class="LyricText">
+						<p>
+							なんかイヤなことばかり　続く気分で<br>
+							となりの芝生がほら　青く見えてる</p>
+						<p>
+							つまんない顔はすい寄せる　磁石みたい　すい寄せる<br>
+							また新しい憂鬱の種</p>
+						<p>
+							だから　ラムネ色の夏の空見上げながら<br>
+							一番熱い太陽　感じながら<br>
+							駆け出してゆこう　はしゃぎたい気持ち<br>
+							１ミリもかくさないで</p>
+						<p>
+							水着の白い跡と　夏の想い出<br>
+							残しておこう　今しか残せないから<br>
+							グラスのソーダの　泡が消えるように<br>
+							夏が通り過ぎて　はじける前に</p>
+						<p>
+							アスファルトの上には　揺れる蜃気楼<br>
+							迷ってばかりの　ほら　こころみたいね</p>
+						<p>
+							口じゃ強気のくせしてね　むしゃくしゃして悩んだり<br>
+							変わりたいと願うのに</p>
+						<p>
+							だから　ラムネ色の夏の空見上げながら<br>
+							一番熱い太陽　抱きしめたら<br>
+							駆け出してゆこう　追いかけてゆこう<br>
+							かわいた風に吹かれ</p>
+						<p>
+							線路盲韦窑蓼铯辘取ˉ互撙紊〓?<br>
+							サンダルの素足と　朝露の色を<br>
+							この胸の中に焼きつけていこう<br>
+							今日は２度とない　きらめきだから<br>
+							だから　ラムネ色の夏の空見上げながら<br>
+							一番熱い太陽　感じながら<br>
+							駆け出してゆこう　はしゃぎたい気持ち<br>
+							１ミリもかくさないで</p>
+						<p>
+							水着の白い跡と　夏の想い出<br>
+							残しておこう　今しか残せないから<br>
+							グラスのソーダの　泡が消えるように<br>
+							夏が通り過ぎて　消えちゃう前に</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

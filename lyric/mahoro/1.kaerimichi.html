@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>かえりみち - まほろまてぃっく</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">まほろまてぃっく OP</div>
+
+                    <div class="LyricTitle">かえりみち</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川澄綾子</div>
+                    <div class="LyricStaff">作詞：くまのきよみ<br>作曲：増田俊郎<br>編曲：増田俊郎</div>
+
+                    <div class="LyricText">
+						<p>
+							まなざし　そっと　ひとつ<br>
+							誰にもみつからぬように<br>
+							ふんわり時間だけが　流れては消えてく</p>
+						<p>
+							ねえ…　きっと『願い言葉』は　空へと届いて<br>
+							後悔も涙も　想い出になるはず</p>
+						<p>
+							ならんで歩いた　この道<br>
+							いつか　いつか　此処に帰ってくるよ<br>
+							なにげなく振り向いたら　ほら君の笑顔</p>
+						<p>
+							深呼吸　そっと　ひとつ<br>
+							臆病な　わたし許して<br>
+							ずっと一緒にいるよ　そういって横向く</p>
+						<p>
+							ああ…　君と過ごした季節　ひどくきらめいて<br>
+							まぶしくて滲んだ　なにも見えなくなる</p>
+						<p>
+							ふたりで歩いた　この道<br>
+							鼻歌まじり　まんまるお月さま<br>
+							忘れないよ　いつまでも<br>
+							あのときの笑顔</p>
+						<p>
+							ならんで歩いた　この道<br>
+							いつか　いつか　此処に帰ってくるよ<br>
+							聞こえているかな　声が<br>
+							大好きな君へ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-mahoro-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

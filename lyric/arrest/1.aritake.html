@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ありったけの情热で - 逮捕しちゃうぞ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ありったけの情热で</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							いつもの笑颜が好きよ　ありったけの情热で<br>
+							君をため息から　きっと守ってあげる</p>
+						<p>
+							夕暮れの街并みが<br>
+							サイドミラ　流れる<br>
+							梦信じながら　每日走った道</p>
+						<p>
+							雨の日も风の日も<br>
+							投げ出したくなった日も<br>
+							そばにいて君は　ほほえんでくれたよね</p>
+						<p>
+							いつもの景色が好きよ　君とみてる　あの空が<br>
+							だから自信もって　君にだったら出来る<br>
+							いつもの笑颜が好きよ　ありったけの情热で<br>
+							君をため息から　きっと守ってあげる</p>
+						<p>
+							思い出はつづれ织り<br>
+							へんてつも无いけど<br>
+							もし盗まれたら　未来の果てまでゆく</p>
+						<p>
+							まっすぐなあこがれで<br>
+							人ごみ越えていこう<br>
+							颜をみていると　うまく言えないけれど</p>
+						<p>
+							いつもの二人が好きよ　めぐり会えた　この街が<br>
+							だから明日ここで　もっとステキになれる<br>
+							いつもの笑颜が好きよ　ありったけの情热で<br>
+							君を悲しみから　きっと守ってみせる</p>
+						<p>
+							いつもの景色が好きよ　君とみてる　あの空が<br>
+							だから自信もって　君にだったら出来る<br>
+							いつもの笑颜が好きよ　ありったけの情热で<br>
+							君をため息から　きっと守ってあげる</p>
+						<p>
+							いつもの二人が好きよ　めぐり会えた　この街が<br>
+							だから明日ここで　もっとステキになれる<br>
+							いつもの笑颜が好きよ　ありったけの情热で<br>
+							君を悲しみから　きっと守ってみせる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-arrest-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

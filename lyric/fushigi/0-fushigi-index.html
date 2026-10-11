@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">ふしぎ遊戯</span><span class="cn">（不思议游戏）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《ふしぎ遊戯》</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">アルバム</span><span class="disc-sub">7 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.itsuka.html">《いつか逢えるから》</a><span class="note">- ふしぎ遊戯 CDBOOKS 美朱IM</span></li>
+						<li class="LyricItem"><a href="2.itochiisakineai.html">《いと小さき願い》</a><span class="note">- ふしぎ遊戯 CDBOOKS 張宿IM</span></li>
+						<li class="LyricItem"><a href="3.fulliloveyou.html">《全てに我愛你》</a><span class="note">- ふしぎ遊戯 CDBOOKS 鬼宿+美朱 IM</span></li>
+						<li class="LyricItem"><a href="4.kiminitado.html">《君にたどる道》</a><span class="note">- ふしぎ遊戯 CDBOOKS 鬼宿 IM</span></li>
+						<li class="LyricItem"><a href="5.kimiomamoritai.html">《君を守りたい》</a><span class="note">- ふしぎ遊戯 CDBOOKS 鬼宿 IM</span></li>
+						<li class="LyricItem"><a href="6.foreverlight.html">《永遠の光》</a><span class="note">- ふしぎ遊戯 CDBOOKS 鬼宿 IM</span></li>
+						<li class="LyricItem"><a href="7.kamiyo.html">《神よ歴史変えてくれ》</a><span class="note">- ふしぎ遊戯 CDBOOKS 心宿 IM</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">その他</span><span class="disc-sub">55 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="8.formylove.html">《いとおしい人のために》</a>＆<a href="8.formylove-bilingual.html" class="cn">(中)</a><span class="note">- 「ふしぎ遊戯」オープニングテーマ</span></li>
+						<li class="LyricItem"><a href="9.thefusiontomyemotions.html">《ときめきの導火線》</a><span class="note">- 「ふしぎ遊戯」エンディングテーマ</span></li>
+						<li class="LyricItem"><a href="10.ochiyanokosai.html">《おちゃのこさいさい変幻自在》</a></li>
+						<li class="LyricItem"><a href="11.soxite.html">《そして、闇の先に》</a></li>
+						<li class="LyricItem"><a href="12.hutaridake.html">《ふたりだけ》</a></li>
+						<li class="LyricItem"><a href="13.metsuchiyaha.html">《めっちゃハジけて　ガッツとばして》</a></li>
+						<li class="LyricItem"><a href="14.fushigi.html">《わかっていたはず》</a></li>
+						<li class="LyricItem"><a href="15.aligatou.html">《Aligatou が深くなる》</a></li>
+						<li class="LyricItem"><a href="16.bestfriend.html">《Best Friend》</a></li>
+						<li class="LyricItem"><a href="17.blueeyes.html">《Blue eyes...blue》</a></li>
+						<li class="LyricItem"><a href="18.destiny.html">《Destiny》</a></li>
+						<li class="LyricItem"><a href="19.dobes.html">《Do=Bes がやってくる》</a><span class="note">- 「ふしぎ遊戯」～ 翼宿キャラクターソング</span></li>
+						<li class="LyricItem"><a href="20.everlasting.html">《Everlasting Story》</a></li>
+						<li class="LyricItem"><a href="21.heartnikira.html">《Heartにキラ星咲かしたれ！！》</a></li>
+						<li class="LyricItem"><a href="22.iwish.html">《I Wish . . .》</a></li>
+						<li class="LyricItem"><a href="23.mizukagami.html">《MIZU - KAGAMI》</a></li>
+						<li class="LyricItem"><a href="24.nevergetaway.html">《Never Get Away》</a></li>
+						<li class="LyricItem"><a href="25.psforeverlove.html">《PS：愛って永遠ですか？》</a></li>
+						<li class="LyricItem"><a href="26.perfectworld.html">《Perfect World》</a></li>
+						<li class="LyricItem"><a href="27.promiselove.html">《Promise Love》</a></li>
+						<li class="LyricItem"><a href="28.seed.html">《Seed ～種子～》</a></li>
+						<li class="LyricItem"><a href="29.star.html">《Star》</a></li>
+						<li class="LyricItem"><a href="30.still.html">《Still》</a></li>
+						<li class="LyricItem"><a href="31.voice.html">《Voice》</a></li>
+						<li class="LyricItem"><a href="32.winner.html">《WINNER》</a></li>
+						<li class="LyricItem"><a href="33.eyes.html">《eyes》</a></li>
+						<li class="LyricItem"><a href="34.girlfantasy.html">《乙女爛漫》</a></li>
+						<li class="LyricItem"><a href="35.hutatsuno.html">《二つの鼓動》</a></li>
+						<li class="LyricItem"><a href="36.legendstory.html">《伝言》</a></li>
+						<li class="LyricItem"><a href="37.bokuno.html">《僕の宇宙に君がいる》</a></li>
+						<li class="LyricItem"><a href="38.setsunakutemo.html">《切なくても . . .ずっと》</a></li>
+						<li class="LyricItem"><a href="39.kimigahohoemu.html">《君が微笑むなら》</a></li>
+						<li class="LyricItem"><a href="40.starontheground.html">《地上の星座》</a></li>
+						<li class="LyricItem"><a href="41.yoruga.html">《夜が明ける前に》</a></li>
+						<li class="LyricItem"><a href="42.nokedan.html">《夜想曲(ノクターン)》</a></li>
+						<li class="LyricItem"><a href="43.umekamoxirenai.html">《夢かもしれない》</a></li>
+						<li class="LyricItem"><a href="44.lefthand.html">《左手の記憶》</a></li>
+						<li class="LyricItem"><a href="45.xiawaseni.html">《幸せになろうね》</a></li>
+						<li class="LyricItem"><a href="46.wander.html">《彷徨》</a></li>
+						<li class="LyricItem"><a href="47.aitoiunama.html">《愛という名の聖戦(たたかい)に. .》</a></li>
+						<li class="LyricItem"><a href="48.denohira.html">《手のひらの中の輝き》</a></li>
+						<li class="LyricItem"><a href="49.ashitanowatshi.html">《明日の私を信じたい》</a></li>
+						<li class="LyricItem"><a href="50.tsukinonaiyoru.html">《月のない夜》</a></li>
+						<li class="LyricItem"><a href="51.mizutachino.html">《氷たちの自尊心 (プライド)》</a></li>
+						<li class="LyricItem"><a href="52.noruyouri.html">《祈るように愛してる》</a></li>
+						<li class="LyricItem"><a href="53.soragamoeru.html">《空が見える》</a></li>
+						<li class="LyricItem"><a href="54.iitsutae.html">《紅い伝承 (いいつたえ)》</a></li>
+						<li class="LyricItem"><a href="55.hnfy.html">《花鳥風月》</a></li>
+						<li class="LyricItem"><a href="56.aoiarashi.html">《蒼い嵐》</a></li>
+						<li class="LyricItem"><a href="57.ashiatoni.html">《足あとに開く花》</a></li>
+						<li class="LyricItem"><a href="58.sadamenohoshi.html">《運命(さだめ)の星》</a></li>
+						<li class="LyricItem"><a href="59.pleaseshake.html">《震えて下さい》</a></li>
+						<li class="LyricItem"><a href="60.bluefreedom.html">《青い自由、白い望み》</a></li>
+						<li class="LyricItem"><a href="61.kazenouta.html">《風の旋律(うた)》</a></li>
+						<li class="LyricItem"><a href="62.blackmoon.html">《黒い月》</a></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

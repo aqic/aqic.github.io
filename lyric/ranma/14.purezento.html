@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>プレゼント - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま1/2 熱闘編」エンディング・テーマ(1990)</div>
+
+                    <div class="LyricTitle">プレゼント</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">東京少年</div>
+                    <div class="LyricStaff">作詞：笹野みちる<br>作曲：手代木克仁<br>編曲：東京少年</div>
+
+                    <div class="LyricText">
+						<p>
+							※受けとってMy song<br>
+							　僕の　ささやかなプレゼント<br>
+							　受けとってMy song<br>
+							　僕の　ちっぽけなプレゼントさ<br>
+							　送るよ　I love you</p>
+						<p>
+							目覚ましが鳴るよ<br>
+							朝の光が　差し込んでくるよ<br>
+							すずめ達　ピイピイ　はしゃいで歌うよ</p>
+						<p>
+							ここんとこずっと<br>
+							てつ夜続きで　がんばってたけど<br>
+							やっとあがったよ　君に見せたいもの</p>
+						<p>
+							ほんのちょっと<br>
+							手アカのついてるものだけど<br>
+							いいかな？　素敵でしょ！</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							時々は僕も<br>
+							さびしくなって　たまらなくなるよ<br>
+							そんなとき　ちょっと　君のこと歌うよ</p>
+						<p>
+							なんて気分　支えられてるよその歌に<br>
+							いつでも　素敵だな！</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							なんて気分　歌声重なる　今ここで<br>
+							この場所で　素敵だな！</p>
+						<p>
+							受けとってMy song<br>
+							僕の　ささやかなプレゼント<br>
+							受けとってMy song<br>
+							僕の　ちっぽけなプレゼント<br>
+							受けとってMy song<br>
+							僕の　ささやかなプレゼント<br>
+							受けとってMy song<br>
+							僕の　ちっぽけなプレゼントさ<br>
+							送るよ　I love you</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>愛は流れる - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ</div>
+
+                    <div class="LyricTitle">愛は流れる</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">飯島真理</div>
+                    <div class="LyricStaff">作詞：阿佐茜<br>作曲・編曲：羽田健太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							時が流れる　愛が流れる<br>
+							わたしの前を　哀しい顔して<br>
+							あなたはきっと　戦さに行くのね</p>
+						<p>
+							男たちはみんな　憑れたように<br>
+							口許ひきしめ　瞳を燃やし<br>
+							足並みをそろえて</p>
+						<p>
+							わたしはきっと　置き去られるわ<br>
+							戦さのために　誇りのために<br>
+							時は流れる　愛は流れる<br>
+							朽ち果てる　わたしは…</p>
+						<p>
+							時が流れる　愛が流れる<br>
+							あなたの前を　むなしい顔をして<br>
+							わたしはずっと　戦さを憎むわ<br>
+							女たちはみんな　立ち直っていくわ<br>
+							歯をくいしばり　背すじをのばして<br>
+							子供らのために</p>
+						<p>
+							あなたはきっと　帰ってくるわ<br>
+							戦さをやめて　生きるために<br>
+							時は流れる　愛は流れる<br>
+							朽ち果てる　まえには…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>それが、愛でしょう（日中対訳） - フルメタル・パニック!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Fullmetal Panic 2 Fmoff</div>
+
+                    <div class="LyricTitle">それが、愛でしょう（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">下川みくに（FLIGHT MASTER）</div>
+                    <div class="LyricStaff">作詞：下川みくに<br>作曲・編曲：Sin<br>コーラスアレンジ：吉田久美子</div>
+
+                    <div class="LyricText">
+						<p>
+							例えばね　涙がこぼれる日には<br>
+							その背中を　ひとりじめしたいけど</p>
+						<p>
+							{優しさは時々　残酷だから<br>
+							求める程　こたえを見失う}</p>
+						<p>
+							{雨上がりの街　虹が見えるなら<br>
+							今　歩き出そう　何かが始まる}</p>
+						<p>
+							{君がいるから　明日があるから<br>
+							一人きりじゃ生きてゆけないから<br>
+							こんなに近くに感じる　それが、愛でしょう<br>
+							涙の数の痛みを　君は知ってるから<br>
+							透き通るその目の中に　確かな意味を探して<br>
+							笑顔見つけたい}</p>
+						<p>
+							何も言わないでも　こんな気持ちが<br>
+							君の胸に伝わればいいのに</p>
+						<p>
+							少しずつ街は色を変えるけど<br>
+							ほら想い出がまたひとつ増えた</p>
+						<p>
+							君の言葉のひとつひとつを<br>
+							今は抱きしめられるからきっと<br>
+							二人で重ね合っていく　それが、愛でしょう<br>
+							誰も知らない　明日が待っているとしても<br>
+							大丈夫　もう泣かないで<br>
+							君と手と手をつないで<br>
+							歩いてくずっと</p>
+						<p>
+							ふとした瞬間　つのる気持ちじゃなく<br>
+							少しづつ　育てていくものだね<br>
+							愛する気持ちは</p>
+						<p>
+							君がいるから　明日があるから<br>
+							一人きりじゃ生きてゆけないから<br>
+							こんなに近くに感じる　それが、愛でしょう<br>
+							涙の数の痛みを　君は知ってるから<br>
+							透き通るその目の中に<br>
+							確かな意味を探して　笑顔見つけたい</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							温存只是暂时的　所以残酷<br>
+							越是追求　越是迷失答案</p>
+						<p>
+							雨后的街头　如果能看见彩虹<br>
+							现在　出去走走吧　有什么开始了？</p>
+						<p>
+							因为有你　因为有明天<br>
+							因为一个人是无法生存的<br>
+							如此近的感觉　这就是爱吧<br>
+							多少眼泪的痛楚　你是知道的<br>
+							在那透明的眼眸中　寻找确定的意义<br>
+							想找到笑容</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fullmetal-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

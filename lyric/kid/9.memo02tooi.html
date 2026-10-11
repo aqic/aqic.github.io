@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>遠いこの空から - KID</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Memories Off 2nd</div>
+
+                    <div class="LyricTitle">遠いこの空から</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">白河　ほたる﹙水樹　奈々﹚</div>
+                    <div class="LyricStaff">作詞：志倉千代丸<br>作曲：志倉千代丸<br>編曲：吉原かつみ</div>
+
+                    <div class="LyricText">
+						<p>
+							真夜中に目を覺ました　想い出のドアを選ぶ<br>
+							それが悲しいものでも　隠さずに開けてみる</p>
+						<p>
+							笑ったり泣いたりした　數の分がけ愛しい<br>
+							人は皆すべてをきっと　幸せに変えられる</p>
+						<p>
+							なみば涸れるとイイな　強がりも消えればイイな<br>
+							白く輝く季節　出逢った場所　あなたに会いたい…</p>
+						<p>
+							looking for a way in sky<br>
+							今は遠いけど　耳を澄ませば<br>
+							あの川のせせらぎも<br>
+							あなたの優しい声も<br>
+							聞こえるから<br>
+							looking for a way in dream<br>
+							まっすぐに気持ち<br>
+							飛んで行きたい<br>
+							兩手じゃ足りない「好き」<br>
+							今すぐに傳えたい　メロディに乘って</p>
+						<p>
+							曲がりくねる　この道で　あなたに出逢った事が<br>
+							今の私を作って　そして愛を信じた</p>
+						<p>
+							少し髮を切ったら意味は無いのになんだがね<br>
+							急に淋しくなってオルゴールを奥にしまったの</p>
+						<p>
+							looking for a way in sky<br>
+							サヨナラも言えず　ここに居るけど<br>
+							澤山の不安から<br>
+							向き合う勇気を今ここに預けて<br>
+							looking for a way in dream<br>
+							見えない力で　引き寄せられる<br>
+							聽こえはじめてたメロディ<br>
+							その意味を確かめて　いま約束を…</p>
+						<p>
+							そしてまた二人だけの<br>
+							想い出が生まれてゆく<br>
+							笑ったり泣いたりして<br>
+							その全部に「幸せ」と言うよ<br>
+							so I believe…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kid-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

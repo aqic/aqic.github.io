@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Love　angel - 煌羅万象</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">エンディング</div>
+
+                    <div class="LyricTitle">Love　angel</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">A-my with MION</div>
+                    <div class="LyricStaff">作詞：岡田美音<br>作曲：岡田美音<br>編曲：岡田美音・高島智明</div>
+
+                    <div class="LyricText">
+						<p>
+							Love angel　奇跡を起こして　この胸に<br>
+							弾ける　恋の矢　私を打ち抜いて</p>
+						<p>
+							鍵をかけて　飛び出した朝に<br>
+							いつもと違う光景が<br>
+							今日の占い　悪くもないと<br>
+							タメ息　ごまかしたりして　笑っちゃうよ</p>
+						<p>
+							新しい出会いが　僕らの願い叶えると<br>
+							信じているよ　ステキな恋を　飾らない自分でいよう</p>
+						<p>
+							Love angel　キラめく夜空の星達<br>
+							みんなの心に　たくさんちりばめて<br>
+							Believe your soul　こわれかけた夢も<br>
+							いたずらな天使に　少し微笑んだら<br>
+							明日へと続く　この扉開けてみよう</p>
+						<p>
+							一人孤独が　寂しいなんて<br>
+							甘えて　誰かに寄り添う<br>
+							そんな　依存心　捨てきれずいた<br>
+							弱くて　小さな自分が映った</p>
+						<p>
+							形のない未来へと　進むだけ<br>
+							誰かを愛せる気持ちが　僕らを救う<br>
+							いつか輝きだす　love stone</p>
+						<p>
+							Believe my soul　あふれる思いを届けて<br>
+							どこかで　僕らは強くつながってる<br>
+							Just my life　いつも大事なものだけ<br>
+							見つめて　迷わない　キミに向かっている<br>
+							気まぐれな　天使に　運命預けてみよう</p>
+						<p>
+							Trust your mind<br>
+							愛も夢も　とても大切で<br>
+							Chase of chance<br>
+							何もない現在　変わりたいから</p>
+						<p>
+							Love angel　キラめく夜空の星達<br>
+							みんなの心に　たくさんちりばめて<br>
+							Believe your soul　こわれかけた夢も<br>
+							いたずらな天使に　少し微笑んだら<br>
+							明日へと続く　この扉開けてみよう<br>
+							LaLaLa</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-psychic-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

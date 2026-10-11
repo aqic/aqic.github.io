@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>そして、闇の先に - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">そして、闇の先に</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">緑川 光</div>
+                    <div class="LyricStaff">作詞：里乃塚玲央<br>作曲：まきのさぶろう<br>編曲：まきのさぶろう</div>
+
+                    <div class="LyricText">
+						<p>
+							遠く　聞こえてるよ<br>
+							夜明けの　気配がする<br>
+							どうやら　勝てたらしい<br>
+							苦しい<br>
+							戦いに　また</p>
+						<p>
+							そして　闇の中に<br>
+							廃墟が　見えて来るよ<br>
+							そこには　誇らしげな<br>
+							歌さえない</p>
+						<p>
+							☆だけど　愛は　来るよ<br>
+							　岡を越えて<br>
+							　空を越えて<br>
+							　きっと　戻る　からと<br>
+							　言った言葉<br>
+							　つながってる<br>
+							　オーオオオオオ</p>
+						<p>
+							ふっと　思っていた<br>
+							このまま　死ぬのだろう<br>
+							重たい　傷引きずり<br>
+							立てないとき<br>
+							だけど　愛は　来るよ<br>
+							運命(ほし)を越えて<br>
+							時空(とき)を越えて<br>
+							ずっと　待って　いると<br>
+							答えた声<br>
+							途切れてない<br>
+							オーオオオオオ<br>
+							何度も生まれ<br>
+							変わって会おう</p>
+						<p>
+							☆ REPEAT</p>
+						<p>
+							そして　闇の先に<br>
+							光が　見えて来るよ<br>
+							そこには　今日がいっぱい<br>
+							開けている</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

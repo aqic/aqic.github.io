@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>おねむなさい～うさだの子守唄～ - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">おねむなさい～うさだの子守唄～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Hikami Kyouko</div>
+                    <div class="LyricStaff">Lyrics : Hisakazu Kanon<br>Music : M Rie<br>Arrangement : Iwamoto Masaki</div>
+
+                    <div class="LyricText">
+						<p>
+							ストレス溜まって　眠れない夜には<br>
+							美しすぎるあたしの夢を見なさい</p>
+						<p>
+							ひざ枕をして　耳をほじほじして<br>
+							夢の中なら出血大サービス</p>
+						<p>
+							でもでもでも　あんまりお調子に乗らないで<br>
+							あたしはそう　そんじょそこらの女じゃない<br>
+							世界の憧れ　ラビ・アン・ローズ</p>
+						<p>
+							さあさ　おねむなさい　ぐっすりと<br>
+							今日の疲れを　残しちゃダメ<br>
+							このあたしじゃ　ご不満なの？<br>
+							いい根性ね</p>
+						<p>
+							ちょっと風邪気味で　昼真っから寝るなら<br>
+							家庭的なあたしの夢はいかが</p>
+						<p>
+							おでこで熱をみて　パジャマ着替えさせて<br>
+							おかゆ作ってふ～ふ～だってするわ</p>
+						<p>
+							でもでもでも　秘密にしといて　二人だけの<br>
+							誰かが知ったら　きっと嫉妬されまくって<br>
+							世界を敵にさせちゃうわ</p>
+						<p>
+							さあさ　おねむなさい　ぐっすりと<br>
+							こわくないから目をつぶって<br>
+							眠るまで　そばにいて<br>
+							見守ってあげる</p>
+						<p>
+							みんなを幸せにする　世界が待ってたラビ・アン・ローズ</p>
+						<p>
+							さあさ　おねむなさい　ぐっすりと<br>
+							さっさと寝やがれ　寝ちまえ<br>
+							このあたしじゃ　ご不満なの？<br>
+							いい根性ね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

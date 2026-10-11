@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風の妖精 - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">風の谷のナウシカ</div>
+
+                    <div class="LyricTitle">風の妖精</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">安田 成美</div>
+                    <div class="LyricStaff">作詞：松本 隆<br>作曲：細野 晴臣<br>編曲：白井 良明</div>
+
+                    <div class="LyricText">
+						<p>
+							あなた淋しさのほとりにいて<br>
+							ちょっとブルーに沈んでるのね<br>
+							そんな時は私を呼んで<br>
+							元気づけてあげるわ</p>
+						<p>
+							ゆうべ羽を痛めた鳥さえ<br>
+							今朝は陽気に飛びまわるのよ<br>
+							もしあなたが傷ついてたら<br>
+							ねえ救けてあげるわ</p>
+						<p>
+							風の妖精　ガラスの翼ひろげ<br>
+							銀河の海を飛んでゆきたい<br>
+							風の妖精　何にも出来ないけど<br>
+							あなたのために生きてみたいの</p>
+						<p>
+							昔大きな戦争があり<br>
+							花もみんな姿消したけど<br>
+							風の中に一輪咲いた<br>
+							その強さが愛しい</p>
+						<p>
+							風の妖精　ガラスの翼ひろげ<br>
+							気流にのって舞い上るのよ<br>
+							風の妖精　何にも出来ないけど<br>
+							あなたのために生きてみたいの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

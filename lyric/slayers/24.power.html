@@ -1,0 +1,112 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Power of Unlimited - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「スレイヤーズ」</div>
+
+                    <div class="LyricTitle">Power of Unlimited</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Mabical Vox</div>
+
+                    <div class="LyricText">
+						<p>
+							keep on going on a journey for a long time<br>
+							I know it's my destiny from my birth<br>
+							but I never feel so lonely, never scared and cry<br>
+							somebody will be waiting for me</p>
+						<p>
+							On my way, it's stormy night, I can see no light<br>
+							but I never stop my long journey<br>
+							yes, my blood is already boiling to the limit<br>
+							Nobody can hurt my body and soul</p>
+						<p>
+							All I ever look for, something you looking for<br>
+							never give up to hold it so firmly<br>
+							it's my life, it's myself<br>
+							I will go to the top, I will be the winner of my life</p>
+						<p>
+							* Fly away<br>
+							I know the meaning of ture liberty<br>
+							so can feel the power of infinity<br>
+							whatever happens to me<br>
+							I can get it over with a smile</p>
+						<p>
+							Fly away<br>
+							I know the meaning of true liberty<br>
+							so can feel the power of infinity<br>
+							Don't stop believing it till the day<br>
+							I can get my dream</p>
+						<p>
+							@ Wandering to find out my dream, Beat a wrong!<br>
+							Try again</p>
+						<p>
+							do not use this power to the vice ever<br>
+							in my mind, reason whisper to me<br>
+							If I find out somebody to flatter the evil<br>
+							He is my enemy just right away</p>
+						<p>
+							I can change idle days to the glorious days<br>
+							with my magic to make the exciting world<br>
+							it's so easy to be happy, easy to be wild<br>
+							Do you want the precious talent of mine?</p>
+						<p>
+							some of my friends say they would be myself<br>
+							cause I can do anything so certainly<br>
+							be so tough, it's OK!<br>
+							I will go to the end, I will be the winner of my life</p>
+						<p>
+							* Repeat</p>
+						<p>
+							**Fly away<br>
+							I know the meaning of true liberty<br>
+							so can feel the power of infinity<br>
+							let's keep the faith together till the day<br>
+							we can get our dreams</p>
+						<p>
+							@ Repeat</p>
+						<p>
+							* Repeat</p>
+						<p>
+							* Repeat</p>
+						<p>
+							**Repeat</p>
+						<p>
+							@ Repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

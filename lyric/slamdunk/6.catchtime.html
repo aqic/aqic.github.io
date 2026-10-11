@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>煌めく瞬间に捕われて - SLAM DUNK</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">煌めく瞬间に捕われて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">影山ヒロノブ</div>
+                    <div class="LyricStaff">作詞：高桥美铃．川岛だりあ<br>作曲：川岛だりあ<br>編曲：明石昌夫</div>
+
+                    <div class="LyricText">
+						<p>
+							散　な梦に　目を觉ます<br>
+							日射しの强い朝</p>
+						<p>
+							お气に入りの曲　闻きながら<br>
+							洗い立てのシャツ　腕をとおす</p>
+						<p>
+							昨夜（ゆうべ）のアイツ<br>
+							疲れた声だった<br>
+							“刺激が欲しい”　“今を坏したい”<br>
+							おちぶれないで</p>
+						<p>
+							煌めく瞬间に　捕われ<br>
+							梦中でいたい<br>
+							後悔する　素敌じゃない<br>
+							一人じゃないし　Wow<br>
+							あふれだす　泪が<br>
+							美しければ<br>
+							人はまた　终わらぬ旅に<br>
+							时を费やせるから</p>
+						<p>
+							今日は少しだけ　远回りして<br>
+							驿までを步こう</p>
+						<p>
+							见惯れない景色が　嬉しくて<br>
+							カドの古着屋へ　ふと入ってみる</p>
+						<p>
+							いつもと违う　角度で镜を<br>
+							のぞいてみる<br>
+							きっとそこに　新しい　何かが…</p>
+						<p>
+							煌めく瞬间に　捕われ<br>
+							梦中でいたい<br>
+							後悔する　素敌じゃない<br>
+							一人じゃないし　Wow<br>
+							あふれだす　泪が<br>
+							美しければ<br>
+							人はまた　终わらぬ旅に<br>
+							时を费やせるから</p>
+						<p>
+							煌めく瞬间に　捕われ<br>
+							梦中でいたい<br>
+							後悔する　素敌じゃない<br>
+							一人じゃないし　Wow<br>
+							あふれだす　泪が<br>
+							美しければ<br>
+							人はまた　终わらぬ旅に<br>
+							时を费やせるから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slamdunk-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

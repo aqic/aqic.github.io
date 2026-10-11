@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>青空 - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">A I R</div>
+
+                    <div class="LyricTitle">青空</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lia</div>
+                    <div class="LyricStaff">作詞：Key<br>作曲：Key<br>編曲：折護伸治</div>
+
+                    <div class="LyricText">
+						<p>
+							あの海どこまでも青かった遠くまで<br>
+							あの道どこまでも続いてたまっすぐに</p>
+						<p>
+							一番早く素直に笑った者勝ち<br>
+							一番好きなあのひと笑ってる</p>
+						<p>
+							誰よりも遠くにいってもここからまた笑ってくれる？<br>
+							瞳を閉じればふっと夏の日の匂い</p>
+						<p>
+							あの川　遊んでる　ふたりきり泥だらけ<br>
+							あの雲　追っている　届いたら幸せと</p>
+						<p>
+							一番早くこの坂のぼった者勝ち<br>
+							一番好きなあの場所目指して</p>
+						<p>
+							たくさんの思い出がある<br>
+							他にはなにもいらないぐらい<br>
+							瞳を閉じればすぐあの海の匂い</p>
+						<p>
+							また夏がくる銀色に光る<br>
+							水面に映すふたりぶんの影</p>
+						<p>
+							誰よりも遠くにいってもここからまた笑ってくれる？<br>
+							瞳を閉じればふっとあの夏の日の青空</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

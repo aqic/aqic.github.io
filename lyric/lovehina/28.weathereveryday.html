@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>毎日がお天気 - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">毎日がお天気</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">堀江由衣（成瀬川なる）</div>
+                    <div class="LyricStaff">作詞：有森聡美<br>作曲：櫻井真一<br>編曲：T.J</div>
+
+                    <div class="LyricText">
+						<p>
+							木漏れ日からキラキラ　差し込んでる光が<br>
+							体中を騒ぎながら　いっぱい照らして<br>
+							曇りのち雨の　冴えない気持ちにも届けてくれる<br>
+							その温かくて　夢が溢れている日差しを浴びて</p>
+						<p>
+							ぐんぐん進んでいくよ<br>
+							この心に希望（たいよう）　しっかり抱きしめて<br>
+							今日も明日も歩くよ<br>
+							虹をかけて渡ろう　どんな時でも</p>
+						<p>
+							夜空の中キラキラ　瞬いている星達<br>
+							嵐の後、泣いた後みたいに　優しく<br>
+							目を覚ます心　涙の数よりも強くなるから</p>
+						<p>
+							ぐんぐん進んでいくよ<br>
+							この心に希望（あした）を　しっかり抱きしめて<br>
+							誰より自分に負けない<br>
+							情熱を忘れずに　笑顔でいたい</p>
+						<p>
+							ぐんぐん進んでいくよ<br>
+							この心に希望（たいよう）　しっかり抱きしめて<br>
+							加速しながら走れば<br>
+							あの虹も遠くない　今日が来るから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ファイナル・ソルジャー&lt;br&gt;[FINAL SOLDIER] - 聖闘士星矢</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[聖闘士星矢 / 挿入歌]</div>
+
+                    <div class="LyricTitle">ファイナル・ソルジャー&lt;br&gt;[FINAL SOLDIER]</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">歌：堀江 美都子
+コーラス：MAKE-UP</div>
+                    <div class="LyricStaff">作詞：竜 真知子<br>作曲/編曲：藤田 大土</div>
+
+                    <div class="LyricText">
+						<p>
+							走り出したら  もう止められない<br>
+							君の瞳に  燃えてるファイティング・スピリッツ<br>
+							どこへ行くのか  答えられないまま<br>
+							目の前の敵をただ  倒してゆくだけ</p>
+						<p>
+							少年の日は  いつも  迷路の真ん中<br>
+							夢を求めて  さまよう<br>
+							それでも  Don't give up<br>
+							明日も  Don't give up</p>
+						<p>
+							覚えておこう  君のまなざしを<br>
+							そのひたむきさ  心に刻んで<br>
+							いつもまっすぐ  生きてゆく気持ちは<br>
+							いつまでも忘れない  胸のモニュメント</p>
+						<p>
+							少年の日は  いつも  短いメモリー<br>
+							すぎる月日が  悔しい<br>
+							それでも  Don't give up<br>
+							明日も  Don't give up</p>
+						<p>
+							いつもまっすぐ  生きてゆく気持ちは<br>
+							いつまでも忘れない  胸のモニュメント</p>
+						<p>
+							少年の日は  いつも  短いメモリー<br>
+							すぎる月日が  悔しい<br>
+							それでも  Don't give up<br>
+							明日も  Don't give up</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saintseiya-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

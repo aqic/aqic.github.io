@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>瞬の色をかえて - 火魅子伝</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「火魅子伝」エンディング・テーマ(1999)</div>
+
+                    <div class="LyricTitle">瞬の色をかえて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">奥土居美可</div>
+                    <div class="LyricStaff">作詞・作曲：奥土居美可<br>編曲：Michael Bonowan</div>
+
+                    <div class="LyricText">
+						<p>
+							何を守る？何を目指してるの？<br>
+							手にする物は幻かも知れないのに<br>
+							同じ世界の遠いひとだちだけど<br>
+							夢も弱いところもきっと見てるよ</p>
+						<p>
+							「evergreen and pure imagination」<br>
+							舞い降りるメッセイジ<br>
+							築ける私でいたい<br>
+							今までの想い解放されて<br>
+							次の旅立ちはいつ？</p>
+						<p>
+							瞬の色をかえる力を私にください<br>
+							一人きりを自由と感じられる強さを<br>
+							「keep it in my mind」<br>
+							誰もが目指すものを見つけられるはず<br>
+							繰り返す景色をなげでさず光を<br>
+							掴むまで抱きしめていこう</p>
+						<p>
+							理想制限その中で笑いたい<br>
+							手にしたものは幻かも知れないけど<br>
+							どんな気持を克服したときに<br>
+							自分自身を乗り越えて行けるんだろう</p>
+						<p>
+							「evergreen and pure imagination」<br>
+							私をきざんでいく<br>
+							なれない地球の片隅で<br>
+							心のすべて燃やし尽くせるような<br>
+							次の旅立ちはいつ？</p>
+						<p>
+							瞬の色をかえる力を私にください<br>
+							とおりすぎたっせかいに微笑みかけよう<br>
+							「keep it in my mind」<br>
+							今がまだ途中だから悲しみに暮れない<br>
+							限りない空絵とのばらせて光を<br>
+							掴むまで抱きしめていこう</p>
+						<p>
+							瞬の色をかえる力を私にください<br>
+							通り過ぎた世界に微笑みかけよう<br>
+							「ah start me up」<br>
+							誰もが永遠で真実を望むとき<br>
+							この手を取ってね力を重ねて<br>
+							愛は今動き始める</p>
+						<p>
+							瞬の色をかえて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-himiko-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

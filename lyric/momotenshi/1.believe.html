@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Believe - かってに桃天使</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「かってに桃天使!～Dancing Blade」 オープニング・テーマ</div>
+
+                    <div class="LyricTitle">Believe</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桑島 法子</div>
+                    <div class="LyricStaff">作詞：及川眠子<br>作曲：朝井泰生<br>編曲：朝井泰生</div>
+
+                    <div class="LyricText">
+						<p>
+							I believe Again たとえ命が<br>
+							大地に倒れ 燃え盡きても<br>
+							何度でも生まれ変わるよ<br>
+							私の意味を見つけるために</p>
+						<p>
+							人はどこへ還るの<br>
+							はるかな時を旅したあとで<br>
+							夜空をそっと見上げ<br>
+							またたく星に問いかける</p>
+						<p>
+							悲しみとはがゆさが<br>
+							つづれ織るような日日のなかで<br>
+							だけど信じていたい<br>
+							魂という永遠を</p>
+						<p>
+							天使に生まれることを夢見てた<br>
+							この心はいつか<br>
+							輝く未來をめざして羽ばたく<br>
+							羽根を手に入れた</p>
+						<p>
+							I believe Again もしも世界が<br>
+							祈りの果てに 消え去っても<br>
+							くりかえす 想いの波は<br>
+							きっと鼓動を刻んでみせる</p>
+						<p>
+							何を求め生きるの<br>
+							泣きたい気持ちをこらえながら<br>
+							思いどおりいかない<br>
+							運命を恨んでいたけど</p>
+						<p>
+							痛みのすべてが私の證と<br>
+							思えたそのときに<br>
+							體を流れる血潮の熱さが<br>
+							愛しく感じた</p>
+						<p>
+							I believe Again たとえ命が<br>
+							大地に倒れ 燃え盡きても<br>
+							何度でも生まれ変わるよ<br>
+							私の意味を見つける</p>
+						<p>
+							I believe Again もしも世界が<br>
+							祈りの果てに 消え去っても<br>
+							くりかえす 想いの波は<br>
+							きっと鼓動を刻んでみせる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-momotenshi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

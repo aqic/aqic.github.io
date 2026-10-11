@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Never die - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Never die</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">奥井雅美</div>
+
+                    <div class="LyricText">
+						<p>
+							頭の中がまっ白で　一歩も前すすめない時は<br>
+							無理して頂上むくことはない<br>
+							うつむいて　たまった涙吐き出して</p>
+						<p>
+							足下に広がる　自分だけの　one-way road<br>
+							それが未来へ導いてくれる</p>
+						<p>
+							なんとかなるもんだ　なるハズだ<br>
+							誰もが泣きながら生まれて来た<br>
+							この荊棘の世界<br>
+							ひとりきり歩いて行く<br>
+							選ばれたんだ　強さをあたえられてる君は</p>
+						<p>
+							たち打ちできない相手だと<br>
+							わかっちゃいるけどぶつかって<br>
+							夢も希望も粉々に砕け散って<br>
+							何度　動けなくなっても</p>
+						<p>
+							Never die　滲みついた勇気つみ重ねた<br>
+							one-way road<br>
+							それが未来へ導いてくれる</p>
+						<p>
+							傷つくことだって意味がある<br>
+							痛いってカンカク忘れかけてる　この歪な世界<br>
+							ひとりきり歩いて行く<br>
+							選ばれたんだ　きっとやさしさ伝えるために</p>
+						<p>
+							どんな役立たずでも<br>
+							そこに"存在している"ことだけで<br>
+							輝けることわかった今では</p>
+						<p>
+							なんとかなるもんだ　なるハズだ<br>
+							誰もがバカにしたりされたりの<br>
+							この虚飾の世界<br>
+							ひとりきり歩いて行く<br>
+							選ばれたんだ　強さをあたえられてる君は</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

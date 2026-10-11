@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>愛情 - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ああっ女神さまっ」</div>
+
+                    <div class="LyricTitle">愛情</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">井上喜久子</div>
+
+                    <div class="LyricText">
+						<p>
+							「彼人の愛を我に与えたまえ」</p>
+						<p>
+							初夏の黄昏の空はほんのりと微妙な色図解で<br>
+							あなたの眩しい横顔もまた<br>
+							ほんのりとピンクに染まっています<br>
+							あぁ…　嬉しい…<br>
+							愛情が見えていますよ</p>
+						<p>
+							「すき」よりも大きくて<br>
+							「愛してる」よりふかいんです<br>
+							あなたの愛情はいつだって海のように大きくて<br>
+							そして海の青さよりずっと深い目をして<br>
+							私のことだけを見守ってくれるんですよね</p>
+						<p>
+							もうすぐ南の空に星が瞬きはじめます<br>
+							ねえ、少し肌寒くはないですか？<br>
+							あなたの肩にそっとスエタアをかけてあげます<br>
+							愛情を形にかえられるって<br>
+							なんて素敵なことなんでしょうね…</p>
+						<p>
+							私はあなたのためにここにいます<br>
+							決して離れることはありません</p>
+						<p>
+							毀れそうな夢も受け止めるの<br>
+							愛は水の鏡壊せないの</p>
+						<p>
+							遠い波を背にまぶた閉じる<br>
+							出逢う前の過去未来になる</p>
+						<p>
+							果てしない海ふたりきりなら<br>
+							やがて泡になっても離れないでしょう</p>
+						<p>
+							腕に抱かれながら眠り落ちてく<br>
+							生まれ変わるような目覚めになる</p>
+						<p>
+							こぼれそうな夢も受け止める人（彼の人の愛を）<br>
+							どうぞ永久の愛を（我に）与えたまえ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

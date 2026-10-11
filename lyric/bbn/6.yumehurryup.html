@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夢 Hurry Up - 万能文化猫娘</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ＯＶＡ「万能文化猫娘」新オープニングテーマ</div>
+
+                    <div class="LyricTitle">夢 Hurry Up</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+                    <div class="LyricStaff">作詞：有森聡子<br>作曲：原一博<br>編曲：Vink</div>
+
+                    <div class="LyricText">
+						<p>
+							キラリと光る流れ星　見上げた空に見つけても<br>
+							願いが唱えきれなかった<br>
+							あれもしたいし　こうしたい…あれこれ欲張りなMy heart<br>
+							夢が溢れて零（こぼ）れ出す</p>
+						<p>
+							私の夢達　乗せて　銀河を走るコースター<br>
+							スピードぐんぐん上げて　どこまでも走り続けるから</p>
+						<p>
+							Get up　しっかり明日を<br>
+								見つめてアクセルを踏まなきゃ、今日も<br>
+							Get up　にっくき雲河を<br>
+								スルリと抜けてゆくわ</p>
+						<p>
+							遠く無限に広がった　宇宙にも負けないくらい<br>
+							パワーを持って　旅をするの<br>
+							ゴールに着いた　その日から　次のターゲットを目指し<br>
+							また走り出す　どこまでも</p>
+						<p>
+							時々　嵐の渦に　ハートがびしょ濡れになり<br>
+							幾つも涙の粒を落としても　挫けたりしないよ</p>
+						<p>
+							Get up　しっかり瞳を<br>
+								開けて行き先を見つけるの、そうよ<br>
+							Get up　すっきり晴れてる<br>
+								未来へ急げ　Hurry up!</p>
+						<p>
+							私の夢達　乗せて　銀河を走るコースター<br>
+							スピードぐんぐん上げて　どこまでも走り続けるから</p>
+						<p>
+							Get up　しっかり明日を<br>
+								見つめてアクセルを踏まなきゃ、今日も<br>
+							Get up　にっくき雲河を<br>
+								スルリと抜けてゆくわ</p>
+						<p>
+							Get up　しっかり瞳を<br>
+								開けて行き先を見つけるの、そうよ<br>
+							Get up　すっきり晴れてる<br>
+								未来へ急げ　Hurry up!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bbn-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

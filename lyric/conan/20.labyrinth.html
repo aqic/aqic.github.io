@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>迷宮のラヴァーズ - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ED 27～51話</div>
+
+                    <div class="LyricTitle">迷宮のラヴァーズ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">heath</div>
+                    <div class="LyricStaff">作詞：森雪之丞<br>作曲：heath<br>編曲：heath、Yuji Sugiyama</div>
+
+                    <div class="LyricText">
+						<p>
+							Love is burning　ハートに咲かせた薔薇は<br>
+							闇を焼き尽くす　たったひとつの炎</p>
+						<p>
+							壁だらけの　街を<br>
+							ゲームの様な　迷路を<br>
+							ピエロの気分で　彷徨う</p>
+						<p>
+							悲しみの　破片を<br>
+							踏まないように　すり抜け<br>
+							二人は未来に　恋した</p>
+						<p>
+							今夜謎をひとつ<br>
+							解き明かせばまた　おまえに<br>
+							Hurry up !　素顔が<br>
+							Hurry up !　戻ってくる</p>
+						<p>
+							真夜中に　おまえが<br>
+							シルクを脱いだ　裸身で<br>
+							奏でる吐息の　旋律</p>
+						<p>
+							目を閉じて　二人は<br>
+							愛しあうほど　傷つく<br>
+							だまし絵の夜へ　飛び込む</p>
+						<p>
+							夢に仕掛けられた<br>
+							ナイフが胸を刺す前に<br>
+							Hurry up !　捩れた<br>
+							Hurry up !　罠を暴け</p>
+						<p>
+							Love is passion　両手に溢れる愛を<br>
+							闇に投げつけて　光抱きしめたい<br>
+							Love is burning　迷宮で交わすKissは<br>
+							楽園へ続く　たったひとつの扉</p>
+						<p>
+							消えた愛を嘆き<br>
+							天使が身を投げる前に<br>
+							Hurry up !　世界の<br>
+							Hurry up !　時間を戻せ</p>
+						<p>
+							Love is passion　孤独にやつれた声も<br>
+							おまえのためなら　詩に変わるだろう<br>
+							Love is burning　ハートに咲かせた薔薇は<br>
+							闇を焼き尽くす　たったひとつの炎</p>
+						<p>
+							Love is passion　両手に溢れる愛を<br>
+							闇に投げつけて　光抱きしめたい<br>
+							Love is burning　迷宮で交わすKissは<br>
+							楽園へ続く　たったひとつの扉</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

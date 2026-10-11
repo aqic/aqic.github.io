@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>I DOLL～Song for eternity～ - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Unknown</div>
+
+                    <div class="LyricTitle">I DOLL～Song for eternity～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">汐音 愛（KOTOKO)</div>
+                    <div class="LyricStaff">作詞：汐音 愛（KOTOKO)<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							夢を乗せた白い翼　風をはらむ<br>
+							この大地から　遙か遠くへ<br>
+							今　高く高く飛び立つよ</p>
+						<p>
+							駆け出す歩道　つまずいた膝の傷も<br>
+							いつかは消えて　上手く歩けるようになれるかな？</p>
+						<p>
+							小さなこの手に　力込めて<br>
+							重たい扉　押し開けられる<br>
+							そんな勇気を　神様どうかもっと下さい</p>
+						<p>
+							君の中に生まれている　夢のかけら<br>
+							気付いたなら　輝き出す<br>
+							励ましながら　優しい言葉が舞い降りる</p>
+						<p>
+							君の側で　歌う日々が　明日からも<br>
+							続くようにと　君を愛する　永遠まで祈りつづける</p>
+						<p>
+							描いた夢の大きさに　前も見えず<br>
+							行き場を失くし　全て投げ出してしまいそうになる</p>
+						<p>
+							泣きそうで　負けそうで　しかたなかった<br>
+							自分の中の弱さを<br>
+							人を愛して歌い続ける　強さに変えて</p>
+						<p>
+							君を守る…そのためなら<br>
+							未来(みち)を照らす星のように　輝くから<br>
+							今の私にたった一つ出来る事なら</p>
+						<p>
+							君がもしも　くじけそうな時は<br>
+							あの日　君にもらった温もりを<br>
+							ただ　声にのせて　そっと歌うよ</p>
+						<p>
+							この世界のどこにいても　同じように<br>
+							星はいつも見守ってる　全ての人に<br>
+							幸せが降り注ぐように</p>
+						<p>
+							夢を乗せた白い翼　風をはらむ<br>
+							この大地から　遙か遠くへ<br>
+							今　高く高く飛び立つよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Never Ending World - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">M3</div>
+
+                    <div class="LyricTitle">Never Ending World</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中村裕介丶染谷由紀乃</div>
+                    <div class="LyricStaff">作詞：Brian Peck<br>作曲、編曲：中村裕介</div>
+
+                    <div class="LyricText">
+						<p>
+							My Darling, When I First Saw You I Knew That I<br>
+							I Would Be YOur Lady</p>
+						<p>
+							On, Baby, When You First Told Me That You'd Be Mine<br>
+							I Could Tell We Two<br>
+							Together<br>
+							We Would Both Build A World<br>
+							That Would Last Till The End Of Time<br>
+							And I Could Feel It All Began, Woah, That Night</p>
+						<p>
+							My Darling, A Billion Stars Have We Passed In Time<br>
+							But Not A Single Heaven</p>
+						<p>
+							On, Baby, As Long As You Are Here At My Side<br>
+							There's A Place For You And I<br>
+							Cause We Both Have Built A World<br>
+							That Will Last Till The End Of Time<br>
+							And I Can Feel The Sun Inside, Tonight</p>
+						<p>
+							There's A Place For You And I<br>
+							Cause We Both Have Built A World<br>
+							That Will Last Till End Of Time<br>
+							And I Can Feel The Sun Inside, Tonight</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

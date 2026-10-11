@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>美しく生きたい - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">吐溜-TRASH-</div>
+
+                    <div class="LyricTitle">美しく生きたい</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MELL</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							世界中の宝石身につけたって<br>
+							きっと本当の喜びなんて知らない<br>
+							いつか絶望の彼方から叫んでる<br>
+							生きる事の　意味をどこかに<br>
+							見つけて行きたい</p>
+						<p>
+							ああ美しく生きて行きたい<br>
+							そう澄み渡る<br>
+							あの 青い空のように<br>
+							ああ清らかに<br>
+							人を愛したい<br>
+							そう透き通る<br>
+							あなたの瞳のように</p>
+						<p>
+							寄せては返す波の様戸惑いは<br>
+							丘に立つ　がれきのよう<br>
+							一人むなしく<br>
+							いつかこの世に生きることと<br>
+							あくなき夢追うことは<br>
+							同じことだと<br>
+							教えてあげたい</p>
+						<p>
+							ああいつまでも　歩き続けたい<br>
+							そう絶えまなく<br>
+							湧き出る希望のように<br>
+							ああ穏やかに　時を見ていたい<br>
+							そう果てしない<br>
+							星達の海のように</p>
+						<p>
+							ああ美しく生きて行きたい<br>
+							そう澄み渡る<br>
+							あの 青い空のように<br>
+							ああ清らかに<br>
+							人を愛したい<br>
+							そう透き通る<br>
+							あなたの瞳のように</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

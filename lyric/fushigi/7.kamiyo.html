@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>神よ歴史変えてくれ - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ふしぎ遊戯 CDBOOKS 心宿 IM</div>
+
+                    <div class="LyricTitle">神よ歴史変えてくれ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">置鮎龍太郎</div>
+                    <div class="LyricStaff">作詞：梶原茂人<br>作曲：高木茂治<br>編曲：高木茂治</div>
+
+                    <div class="LyricText">
+						<p>
+							生まれたことを　なぜ　憎むのか？<br>
+							同じ星で　生きてるのに</p>
+						<p>
+							やさしさなんて　この世にはない<br>
+							運命(さだめ)　命尽きるまでと</p>
+						<p>
+							神よ　歴史　変えてくれ<br>
+							もう一度　やり直せたなら</p>
+						<p>
+							天帝(かみ)など要らぬ<br>
+							ほんの小さな 愛があれば　それでいい</p>
+						<p>
+							誰を憎むわけじゃない<br>
+							哀しみの捨て場所を探し</p>
+						<p>
+							神よ　歴史　変えてくれ<br>
+							こんな思い　私だけでいい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

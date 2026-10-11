@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>GREEDY - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">GREEDY</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MOMO</div>
+                    <div class="LyricStaff">作詞：木内亜矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							砕け散った色のない時間<br>
+							隙間に落ち　幻を見た<br>
+							そこに生きて　鼓動を響かせ<br>
+							全て奪いつくす</p>
+						<p>
+							狂おしいほどに自由を求め咲き乱れ舞う黒い花<br>
+							ただ過ちの甘い蜜に塗（まみ）れた欲望</p>
+						<p>
+							#もう帰る場所など無い　過去など深い海の泡<br>
+							 生まれては消えてく　光を見つけられずに<br>
+							 いつか吐き捨てられた存在<br>
+							 頑（かたくな）な夢と剥がれた嘘の中へ<br>
+							 果てなく墜ちてゆくだけ</p>
+						<p>
+							絡み付いたまやかしの時間<br>
+							綱の上を這う足跡と<br>
+							谷に落ちた悲鳴の木霊が<br>
+							全て壊し醒める<br>
+							煽られた未知の影　突き立てる<br>
+							優し気な声　震わせて</p>
+						<p>
+							誰もをのみ込み　哀れみ請(こ)うような欲望<br>
+							もう帰る場所などない<br>
+							未来は深い闇の底<br>
+							穢(けが)れ　恥じらい　また<br>
+							光を塗りつぶしてく<br>
+							いつか戯れに描(か)く真実<br>
+							染まりゆくままに<br>
+							裂かれた時の中へ<br>
+							果てなく堕ちてゆくだけ</p>
+						<p>
+							～We are always wavering in our mind. oh...<br>
+							I cried out in many lies.<br>
+							So, we are greedy anytime.～</p>
+						<p>
+							破られた羽衣の細い糸<br>
+							雫をたたえ湿りゆく<br>
+							この紛れもない幻想　繋がれた欲望</p>
+						<p>
+							Repeat #</p>
+						<p>
+							もう帰る場所など無い<br>
+							未来は深い闇の底<br>
+							穢(けが)れ　恥じらい　また<br>
+							光を塗りつぶしてく<br>
+							いつか戯れに描(か)く真実<br>
+							染まりゆくままに<br>
+							裂かれた時の中へ<br>
+							果てなく墜ちてゆくだけ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

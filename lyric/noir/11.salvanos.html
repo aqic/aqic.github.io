@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Salva nos - NOIR</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Salva nos</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							Dominus Deus<br>
+							exaudi nos et misere<br>
+							exaudi, Dominus</p>
+						<p>
+							Dona nobis pacem<br>
+							et salva nos a hostibus<br>
+							Salva nos, Deus</p>
+						<p>
+							Dominus exaudi nos<br>
+							Dominus misere<br>
+							Dona nobis pacem<br>
+							Sanctus, Gloria</p>
+						<p>
+							dona nobis pacem<br>
+							et dona eis requiem<br>
+							inter ovas locum<br>
+							voca me cum benedictis<br>
+							pie jesu domine, dona eis requiem<br>
+							dominus deus, Sanctus, Gloria<br>
+							Protect us</p>
+						<p>
+							Lord God<br>
+							hear our word and have mercy<br>
+							hear us, Lord</p>
+						<p>
+							Grant us peace<br>
+							and save us from the enemy<br>
+							Protect us, God</p>
+						<p>
+							Lord hear us<br>
+							Lord have mercy<br>
+							Grant us peace<br>
+							Holy, Glory</p>
+						<p>
+							grant us peace<br>
+							and play requiem for them<br>
+							a place between rejoice<br>
+							to call upon, for me along with the blessed ones<br>
+							Kind Lord Jesus, play requiem for them<br>
+							Lord God, Holy, Glory</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-noir-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

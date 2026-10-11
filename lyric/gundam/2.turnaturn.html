@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ターンＡターン - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">フジテレビ系アニメ「∀ GUNDAM」オープニングテーマ</div>
+
+                    <div class="LyricTitle">ターンＡターン</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">西城秀樹</div>
+
+                    <div class="LyricText">
+						<p>
+							ターンＡターン　ターンＡターン　ターンＡ</p>
+						<p>
+							刻が未来にすすむと　誰がきめたんだ<br>
+							烙印をけす命が　歴史をかきなおす</p>
+						<p>
+							美しい剣は　人と人つなげて<br>
+							巡りくる切なさ　悲しみを払って<br>
+							あなたとの間に　命ある形を<br>
+							この星に捧げる　愛というしるしで</p>
+						<p>
+							ターンＡターン　ターンＡターン　ターンＡ<br>
+							ターンＡターン　ターンＡターン　ターンＡ</p>
+						<p>
+							刻は巡りもどると　誰も信じてた<br>
+							黒くくすんだ暦を　新たにかきなおす</p>
+						<p>
+							星々のまたたき　生きものにほほえみ<br>
+							太陽と月とが　この大地あたため<br>
+							生まれ出る喜び　慈しむ心を<br>
+							ゆるやかに育てて　傷口を癒そう</p>
+						<p>
+							ターンＡターン　ターンＡターン　ターンＡ<br>
+							ターンＡターン　ターンＡターン　ターンＡ</p>
+						<p>
+							美しい剣は　人と人つなげて<br>
+							巡りくる切なさ　悲しみを払って<br>
+							あなたとの間に　命ある形を<br>
+							この星に捧げる　愛というしるしで</p>
+						<p>
+							ターンＡターン　ターンＡターン　ターンＡ<br>
+							ターンＡターン　ターンＡターン　ターンＡ</p>
+						<p>
+							ターンＡターン　ターンＡターン　ターンＡ<br>
+							ターンＡターン　ターンＡターン　ターンＡ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

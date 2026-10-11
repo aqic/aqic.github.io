@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ラヴ・シーカー　CAN'T STOP IT - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2 熱闘編」オープニング・テーマ (1992)</div>
+
+                    <div class="LyricTitle">ラヴ・シーカー　CAN'T STOP IT</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ＶｉｓｉｏＮ</div>
+                    <div class="LyricStaff">作詞：小室みつ子<br>作曲：MIYABI, YUKI, TERU, TAKE<br>編曲：ＶｉｓｉｏＮ</div>
+
+                    <div class="LyricText">
+						<p>
+							Someday, sometime you will see<br>
+							What are you seeking for now......</p>
+						<p>
+							ビルディングの壁　巨大なスクリーン<br>
+							都会の女神が kiss-kiss-kiss<br>
+							笑いかける so sweet I found you</p>
+						<p>
+							１億の夢に　１０億のチャンス<br>
+							確かな道など No-No-No<br>
+							誰も知らない Don't cheat [oh yeah yeah yeah]</p>
+						<p>
+							ラビリンスの街　君とふたり<br>
+							Carry on, carry on 走り出したら<br>
+							Can't stop it No way out<br>
+							Can't stop it 永遠に<br>
+							Can't stop it 止まらないさ<br>
+							How can you hold me on?</p>
+						<p>
+							What you remember, what you believe in, who knows<br>
+							Tell me, show me if you love me darlin'<br>
+							Tell me......</p>
+						<p>
+							ひとりの夜をみつめていた<br>
+							あの日々に I was in the darkness<br>
+							どうして君と出会えたのか<br>
+							I finally found you</p>
+						<p>
+							離さない We can share dreams<br>
+							このまま</p>
+						<p>
+							Keeping on seekin' for something good</p>
+						<p>
+							今同じ速さで走りだし<br>
+							きっと同じ夢見て生きて行く<br>
+							もう恐れなどないこの街で<br>
+							探しだす………明日を</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

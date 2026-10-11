@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Cross My Heart - 妖しのセレス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「妖しのセレス」</div>
+
+                    <div class="LyricTitle">Cross My Heart</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Day-Break</div>
+                    <div class="LyricStaff">作詞：Mori Yuriko<br>作曲：Sakai Ryo<br>編曲：Sakai Ryo</div>
+
+                    <div class="LyricText">
+						<p>
+							涙さえも出ない哀しみがこの世にある<br>
+							深く果てしない闇に　囲まれているような</p>
+						<p>
+							行き止まりの崖で絶望を救ったのは<br>
+							そうさ俺を呼ぶおまえ　いとおしいその声さ</p>
+						<p>
+							ひとつになろう　ふたつの十字架が<br>
+							重なるように　抱きしめ合って</p>
+						<p>
+							めくるめく光が駆け抜ける<br>
+							指先に体に魂に<br>
+							めざめゆく夜明けにふたり包まれ<br>
+							ただ誓うのさ<br>
+							Just I wanna be with you forever<br>
+							愛してる<br>
+							運命はふたりを試すけど<br>
+							この胸に手を当て十字を切るさ<br>
+							離れない Cross my heart</p>
+						<p>
+							この生命を賭けて護りたい愛に出逢い<br>
+							やっと寂しさにまみれ生きてきた理由(わけ)を知る</p>
+						<p>
+							祈るみたいに　そっと抱(いだ)きあって<br>
+							おまえの中に残そう　愛を</p>
+						<p>
+							とめどなく愛しさ噴き上げる<br>
+							まなざしに素肌に温もりに<br>
+							流れゆく時間が止まればいいと<br>
+							ただ囁いて<br>
+							Just I wanna be with you forever<br>
+							感じてる<br>
+							こんなにも誰かを大切に<br>
+							思えたら死んでも悔いはないだろう<br>
+							離さない Cross my heart</p>
+						<p>
+							ひとつになろう　ふたつの十字架が<br>
+							重なるように　ふたりのすべて</p>
+						<p>
+							めくるめく光が駆け抜ける<br>
+							指先に体に魂に<br>
+							めざめゆく夜明けにふたり包まれ<br>
+							ただ誓うのさ<br>
+							Just I wanna be with you forever<br>
+							愛してる<br>
+							運命はふたりを試すけど<br>
+							この胸に手を当て十字を切るさ<br>
+							離れない Cross my heart</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ceres-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>終わりない夢 - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「犬夜叉」</div>
+
+                    <div class="LyricTitle">終わりない夢</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">相川　七瀬</div>
+                    <div class="LyricStaff">作詞：相川　七瀬<br>作曲：柴崎　浩<br>編曲：KANAME</div>
+
+                    <div class="LyricText">
+						<p>
+							心の中のジオラマの街は<br>
+							希望の光できらめいている<br>
+							陽炎の翼ではばたいた夢は<br>
+							君と僕との探し物</p>
+						<p>
+							真実はいつも瞳に潜んでいる 蒼く</p>
+						<p>
+							僕等は何処まで行こう<br>
+							2人の未来今流浪って<br>
+							僕等は旅を続ける<br>
+							永遠の在り処 終わりない夢<br>
+							この手を離さず追いかけていきたい ずっと</p>
+						<p>
+							ターコイズ色の心の海で<br>
+							光の船の合図が聞こえる<br>
+							早く行かなきゃ はやる想いに<br>
+							何も言葉はいらないね</p>
+						<p>
+							偽りはいつも言葉に潜んでいる 甘く</p>
+						<p>
+							2人でひとつになろう<br>
+							臆病な波の穂も抱きしめて<br>
+							僕等は旅を続ける<br>
+							抱き合う隙間 終わりない夢<br>
+							虹を突抜けた 約束の光を目指す</p>
+						<p>
+							僕等は何処まで行こう<br>
+							2人の未来今流浪って<br>
+							僕等は旅を続ける<br>
+							永遠の在り処 終わりない夢<br>
+							この手を離さず追いかけていきたい ずっと</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>眠れない夜は… - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">眠れない夜は…</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ、奧井雅美</div>
+
+                    <div class="LyricText">
+						<p>
+							やるせない、冴えない、眠れない<br>
+							平和が続くのも　問題アリね<br>
+							中指をいつでも　立ててなきゃ<br>
+							魔道士のこの腕が　鈍っちゃうわ<br>
+							恋をしてみるのも　いいかもね<br>
+							振り向かない奴は　ハ—トのドアに<br>
+							威力は必殺の　ファイア—ボ—ル<br>
+							投げ込んで燃やしちゃう　覺悟決めて<br>
+							SUKI…SUKI…　呪文を掛ければ<br>
+							もう誰で私に夢中よ</p>
+						<p>
+							ドキドキしたい　Every day<br>
+							興奮させて　Every one<br>
+							アブナイくらい　Every thing<br>
+							先はあなた次第<br>
+							誘惑してよ　Every night<br>
+							危險な匂い　Every bit<br>
+							愛してあげる　Every time<br>
+							私、命がけよ</p>
+						<p>
+							やるせない、冴えない、眠れない<br>
+							色々、空想っても　眠れない<br>
+							私を呼ぶ声が聞こえるわ<br>
+							ザクザクの宝石や金貨の声<br>
+							SUKI…SUKI…　呪文を掛ければ<br>
+							もう全ては私のものなの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

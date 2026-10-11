@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>空の続き - みずいろ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">みずいろOVA OP</div>
+
+                    <div class="LyricTitle">空の続き</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐藤裕美</div>
+                    <div class="LyricStaff">(根据发音猜测的版本)</div>
+
+                    <div class="LyricText">
+						<p>
+							{心の奥にしまい込んでる<br>
+							アルバムの中で止まった世界}<br>
+							笑っていたのあの時の二人<br>
+							大切なものが見えない</p>
+						<p>
+							粉雪のように　知らないうちに<br>
+							つのり始める重いだけのせて<br>
+							{時計の針が動き出している<br>
+							逆さ回りに少しずつ　そっと<br>
+							まわり始める}</p>
+						<p>
+							なくした時間をとりもでせなら<br>
+							何かが変わるのから<br>
+							記憶の中広がっているのは<br>
+							空の色だけ</p>
+						<p>
+							引出しの置く眠ったままの<br>
+							水色に光る心のかけら<br>
+							夢の中では動き出している<br>
+							目覚めるようにすこしづつそっと<br>
+							感じ始める</p>
+						<p>
+							☆{なくした時間を辿っていったら<br>
+							　あなたへ続くのかな<br>
+							　記憶の中広がっているのは<br>
+							　そこに　（見えているの）<br>
+							　白い季節眩しさの中<br>
+							　たしかに　（二人にYeah Yeah）<br>
+							　記憶の中広がっているのは<br>
+							　空の色だけ}</p>
+						<p>
+							☆繰り返し</p>
+						<p>
+							{空の色だけ<br>
+							空の色だけ<br>
+							あの日の空}</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-mizuiro-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>No more words - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「犬夜叉」</div>
+
+                    <div class="LyricTitle">No more words</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">浜崎あゆみ</div>
+                    <div class="LyricStaff">Music：CREA+D·A·I<br>Arrangement：Naoto Suzuki，tasuku</div>
+
+                    <div class="LyricText">
+						<p>
+							きっときっと僕達は<br>
+							生きる程に知ってゆく<br>
+							そしてそして僕達は<br>
+							生きる程に忘れてく</p>
+						<p>
+							始まりがあるものには<br>
+							いつの日か終わりもある事<br>
+							生きとし生けるものなら<br>
+							その全てに</p>
+						<p>
+							もしもこの世界が勝者と敗者との<br>
+							ふたつきりにわかれるなら<br>
+							ああ僕は敗者でいい<br>
+							いつだって敗者でいたいんだ</p>
+						<p>
+							きっときっと僕達は<br>
+							悲しい程に美しく<br>
+							ゆえにゆえに僕達は<br>
+							悲しい程に汚れてく</p>
+						<p>
+							守るべきもののために<br>
+							今日もまた何かを犠牲に<br>
+							生きとし生けるものたち<br>
+							その全てが</p>
+						<p>
+							もしもこの世界が勝者と敗者との<br>
+							ふたつきりにわかれるなら<br>
+							ああ僕は敗者でいい<br>
+							いつだって敗者でいたいんだ</p>
+						<p>
+							僕は君に何を伝えられるだろう<br>
+							こんなちっぽけで小さな僕でしかない<br>
+							今はこれ以上話すのはやめとくよ<br>
+							言葉はそうあまりにも<br>
+							時に無力だから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

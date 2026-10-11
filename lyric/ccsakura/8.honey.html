@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Honey - カードキャプターさくら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Honey</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">chihiro</div>
+                    <div class="LyricStaff">作詞：chihiro<br>作曲：chihiro<br>編曲：chihiro</div>
+
+                    <div class="LyricText">
+						<p>
+							窓辺にひとり頬ずえついて<br>
+							止まない雨をじっと見てる<br>
+							今日はずっとひとり<br>
+							今頃何をしてるのかな<br>
+							拾い集める記憶は宝物<br>
+							キュンとしちゃう</p>
+						<p>
+							Ah　不思議だね<br>
+							思い出すだけで優しくなれる</p>
+						<p>
+							暖かいミルクに<br>
+							甘くひろがるハチミツみたいだね<br>
+							心溶かすよ<br>
+							その微笑みはそう　とっておきのHoney</p>
+						<p>
+							見上げる空　オリオンのルビー<br>
+							わたしだけのプラネタリウムにね<br>
+							ようこそ　今夜も<br>
+							一緒にいるとみつめられない<br>
+							今は100万倍のズームアップで<br>
+							空に描こう</p>
+						<p>
+							Ah　素敵だね<br>
+							どんな時だってそばに居るみたい</p>
+						<p>
+							悲しい涙に<br>
+							ひざをかかえて眠れない夜でも<br>
+							勇気をくれるよ<br>
+							その微笑みはそう　とっておきのHoney</p>
+						<p>
+							つばさをひろげて<br>
+							舞い降りてくる星空のようだね<br>
+							強くなれるよ<br>
+							その微笑みはそう　わたしだけのHoney</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ccsakura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

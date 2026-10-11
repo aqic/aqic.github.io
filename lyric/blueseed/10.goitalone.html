@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>GO IT ALONE - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">GO IT ALONE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">藤宮紅葉(林原めぐみ)</div>
+
+                    <div class="LyricText">
+						<p>
+							走り出す　窓を探し<br>
+							思い切り腕を振った<br>
+							私には気づかないで<br>
+							横顔は明日を見てる</p>
+						<p>
+							あなたの確かなぬくもり<br>
+							思い出の中で静かにうずくまる</p>
+						<p>
+							私は　今　歩き出す<br>
+							あなたは　今　旅立つ<br>
+							私は　もう　泣かないの<br>
+							悲しみにも負けない</p>
+						<p>
+							そう…　かけら一つも忘れないわ<br>
+							あなたが教えてくれたことは　みんな</p>
+						<p>
+							最後まで　迷い続け<br>
+							どうしても言えなかった<br>
+							困らせる言葉なんて<br>
+							この胸に閉じ込めよう</p>
+						<p>
+							あなたの本当の想いが<br>
+							ここにないことは　とっくに知っていた</p>
+						<p>
+							☆私は　もう　怖くない<br>
+							　向かい風が吹いても<br>
+							　どんな時も　あきらめず<br>
+							　精一杯　生きるわ</p>
+						<p>
+							そう　一人きりでも　大丈夫よ<br>
+							あなたが教えてくれた強さだから</p>
+						<p>
+							★見送るのは　蜃気楼<br>
+							　遠くなって行くけど<br>
+							　心は　でも　ここにある<br>
+							　変わらない優しさで</p>
+						<p>
+							そう…　かけら一つも忘れないわ<br>
+							あなたが教えてくれたことは　みんな</p>
+						<p>
+							☆Ｒｅｐｅａｔ<br>
+							★Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

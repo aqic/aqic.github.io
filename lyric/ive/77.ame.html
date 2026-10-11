@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>雨に歌う譚詩曲 - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Unknown</div>
+
+                    <div class="LyricTitle">雨に歌う譚詩曲</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Hearing leaf（I`ve）</div>
+                    <div class="LyricStaff">作詞：門 司（EMU）<br>作曲：中沢 伴行（I`ve）</div>
+
+                    <div class="LyricText">
+						<p>
+							冷たい　光の瀬<br>
+							さまよう　記憶の日よ<br>
+							空ゆく　あの詩（うた）は<br>
+							こころに微笑むよ</p>
+						<p>
+							春を夢見た　幾年月（いくとしつき）の<br>
+							雨がすすぐように【いつか交わした】<br>
+							夕さり遙か　名残の空に<br>
+							忘れない【忘れない】　君をさがした</p>
+						<p>
+							生きること　それだけを　確かめてる<br>
+							いくつもの未来を【僕らは】　明日へ描く<br>
+							降りそそぐ　悲しみを　受け止めたら<br>
+							雨上がりの虹を【希望を】　願い振り返る</p>
+						<p>
+							始まる譚詩曲（バラード）を<br>
+							奏でる空の高み<br>
+							二人のあの歌は<br>
+							今も続いてるよ</p>
+						<p>
+							遠く翳った　ガラスの向こう<br>
+							雨に映る瞳【どうかこのまま】<br>
+							待ち続けてた　約束の人<br>
+							喜びと【喜びと】　悲しみ抱いた</p>
+						<p>
+							願う物　手にしても　許されない<br>
+							ただ記憶の中に【さよなら】　刻み込んで<br>
+							どうか今　思い出を　全て消して<br>
+							雨上がりの虹は【光は/未来は】　もう見えないから</p>
+						<p>
+							雨も消えていく　穏やかな景色を歩いて行く<br>
+							何度振り返っても　降り続く雨を<br>
+							雨は歌うように　囁くように<br>
+							僕らを静かに　包み込む</p>
+						<p>
+							春を夢見た　幾年月（いくとしつき）の<br>
+							雨がすすぐように【いつか交わした】<br>
+							夕さり遙か　名残の空に<br>
+							忘れない【忘れない】　君をさがした</p>
+						<p>
+							生きること　それだけを　求めている<br>
+							大切な想いを【僕らは】　明日に繋ぐ<br>
+							降りしきる　雨の中　微笑んだら<br>
+							雨上がりの虹を【希望を】　願い振り返る</p>
+						<p>
+							いつまでも　君だけを<br>
+							降りそそぐ　悲しみを<br>
+							どうか今　想い出を<br>
+							雨に　歌う　明日を</p>
+						<p>
+							忘れない　あの時を<br>
+							忘れない　この歌を<br>
+							忘れない……</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

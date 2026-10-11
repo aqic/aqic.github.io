@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>My Dear - 万能文化猫娘</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「万能文化猫娘 SOUND PHASE-0Ⅱ」収録曲</div>
+
+                    <div class="LyricTitle">My Dear</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+                    <div class="LyricStaff">作詞：木本慶子<br>作曲：高橋洋子<br>編曲：Vink</div>
+
+                    <div class="LyricText">
+						<p>
+							Daylight　緑色の<br>
+							　Day‐Bright　風の香りが吹けば<br>
+							　For me　遊びに来て<br>
+							　開け放した窓から</p>
+						<p>
+							　ねぇ　変らないわ<br>
+							　ほら　幼い頃の写真<br>
+							　そう　君は今も透き通った心のままね</p>
+						<p>
+							＊微笑みから　こぼれおちる<br>
+							　優しさのかけら　抱きしめて<br>
+							　どんな時も　君のそばで<br>
+							　守ってあげる<br>
+							　他の誰より　My dear</p>
+						<p>
+							　Daylight　光の中<br>
+							　Day‐Bright　やわらかな手触りの<br>
+							　For me　カーディガンを<br>
+							　プレゼントしたいけど</p>
+						<p>
+							　ねぇ　笑わないで<br>
+							　もう　何度も編みなおして<br>
+							　そう　君はずっと待ち続けていてくれるのに</p>
+						<p>
+							※輝いてる　君のために<br>
+							　今できる事を　捜してる<br>
+							　どんな時も　その微笑みが<br>
+							　悲しみの中　うつむかないように</p>
+						<p>
+							※Ｒｅｐｅａｔ</p>
+						<p>
+							＊Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bbn-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

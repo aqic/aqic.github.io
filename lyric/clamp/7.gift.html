@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Gift - CLAMP</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Gift</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本真綾</div>
+                    <div class="LyricStaff">作詞：岩里祐穂<br>作曲：菅野ゆう子<br>編曲：菅野ゆう子</div>
+
+                    <div class="LyricText">
+						<p>
+							友だちが開(ひら)いた手の中のツユ草に<br>
+							うれしくなってクスッとわらったよ</p>
+						<p>
+							無謀だと思えるくらいのたくらみに<br>
+							ほんとは胸のすみで憧(あこが)れてる</p>
+						<p>
+							もどかしいだけのジレンマばかりの日びなのさ<br>
+							空飛(と)ぶつばさも　黃金の手足も<br>
+							何もないけれど　lalalalalala…</p>
+						<p>
+							その夢を叶えるため　いちばん大切なものをあげよう<br>
+							自分をもっと大好きになる不思議なMEDICINE</p>
+						<p>
+							好きだよとたったひとことが言えたなら<br>
+							暗闇さえ青空になるんだ</p>
+						<p>
+							好きだよのひとことが言えるくらいなら<br>
+							悲しみなんでこの世かならくなる</p>
+						<p>
+							愛を知るために傷つくこと經驗する<br>
+							目に見えないげど　手に取れないげど<br>
+							きっと　うまくゆく　lalalalalala…</p>
+						<p>
+							僕らから夢奪(うば)えば<br>
+							さまよえる未来のクズになる<br>
+							目が覺めたなら枕(まくら)元(もど)<br>
+							箱(はこ)を開けなよ</p>
+						<p>
+							僕たちは気づかぬまま　輝ける時間をムダにする<br>
+							生きてることと〓ラダチをはかりにかけて<br>
+							[缺]わってゆくために</p>
+						<p>
+							その夢を叶えるため　いちばん大切なものをあげよう<br>
+							自分をもっと大好きになる不思議なMEDICINE</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-clamp-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

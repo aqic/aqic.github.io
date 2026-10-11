@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>I Wish . . . - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">I Wish . . .</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">冬馬由美</div>
+                    <div class="LyricStaff">作詞：柚木美祐<br>作曲：清岡千穂<br>編曲：山中紀昌</div>
+
+                    <div class="LyricText">
+						<p>
+							闇に瞬く星　おまえもきっとはぐれて<br>
+							　　遠い未来(あした)を探すの　似てるね私たち</p>
+						<p>
+							　　誰かを信じることは<br>
+							　　傷つくことなのに</p>
+						<p>
+							　　I wish for your love<br>
+							　　I wish for your love<br>
+							　　Why? 青い七星(ほし)　ねぇ教えて<br>
+							　　I wish for your love<br>
+							　　きりない痛みを　どうすれば振り切れるの</p>
+						<p>
+							　　愛を覚えるたび　人は弱くなっていく<br>
+							　　きつく胸を抱いてても　１人じゃいられない</p>
+						<p>
+							　　夢さえ凍らせるほど<br>
+							　　こんなに憎んでも. . .</p>
+						<p>
+							　　I wanna be your love<br>
+							　　I wanna be your love<br>
+							　　Why? 淋しさを殺せない<br>
+							　　I wanna be your love<br>
+							　　ちぎれた心で　強くなんてなれないね</p>
+						<p>
+							　　I wish for your love<br>
+							　　I wish for your love<br>
+							　　Why? 青い七星(ほし)　ねぇ教えて<br>
+							　　I wish for your love<br>
+							　　たった１つだけ　誰よりも愛されたい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

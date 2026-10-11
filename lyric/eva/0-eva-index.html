@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">新世紀エヴァンゲリオン</span><span class="cn">（天鹰战士）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《新世紀エヴァンゲリオン》</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">テレビアニメ</span><span class="disc-sub">3 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.zankoku.html">《残酷な天使のテーゼ》</a>＆<a href="1.zankoku-bilingual.html" class="cn">(中)</a><span class="note">- テレビ東京系アニメ 「新世紀エヴァンゲリオン」 オープニングテーマ</span></li>
+						<li class="LyricItem"><a href="2.flymetothemoon.html">《FLY ME TO THE MOON》</a>＆<a href="2.flymetothemoon-bilingual.html" class="cn">(中)</a><span class="note">- テレビ東京系アニメ 「新世紀エヴァンゲリオン」 エンディングテーマ</span></li>
+						<li class="LyricItem"><a href="3.happyandsin.html">《幸せは罪の匂い》</a>＆<a href="3.happyandsin-bilingual.html" class="cn">(中)</a><span class="note">- テレビ東京系アニメ 「新世紀エヴァンゲリオン」插入歌</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">劇場版</span><span class="disc-sub">2 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="4.comeonsweetdeath.html">《Komm,süsser Tod》</a>＆<a href="4.comeonsweetdeath-bilingual.html" class="cn">(中)</a><span class="note">- 劇場版 Air/まごころを、君に</span></li>
+						<li class="LyricItem"><a href="5.thanatos.html">《Thanatos》</a>＆<a href="5.thanatos-bilingual.html" class="cn">(中)</a><span class="note">- 劇場版 Air/まごころを、君に</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">その他</span><span class="disc-sub">10 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="6.tentou.html">《てんとう虫のサンバ》</a></li>
+						<li class="LyricItem"><a href="7.getiton.html">《Get It On! ～Doppelganger にくちづけを》</a><span class="note">- 新世紀エヴァンゲリオン 2nd Impression</span></li>
+						<li class="LyricItem"><a href="8.theimageofme.html">《THE IMAGE OF ME》</a></li>
+						<li class="LyricItem"><a href="9.foresee.html">《予感》</a>＆<a href="9.foresee-bilingual.html" class="cn">(中)</a><span class="note">- 鋼鐵のガールフレンド</span></li>
+						<li class="LyricItem"><a href="10.hopesky.html">《希望の空へ》</a></li>
+						<li class="LyricItem"><a href="11.kokono.html">《心よ原始に戻れ》</a><span class="note">- EVA？</span></li>
+						<li class="LyricItem"><a href="12.hug.html">《無限抱擁》</a>＆<a href="12.hug-bilingual.html" class="cn">(中)</a></li>
+						<li class="LyricItem"><a href="13.musesea.html">《眩惑の海》</a></li>
+						<li class="LyricItem"><a href="14.beautifulangel.html">《美丽天使的纲领(不确定)》</a><span class="note">- 天鹰战士</span></li>
+						<li class="LyricItem"><a href="15.tamashi.html">《魂のルフラン》</a>＆<a href="15.tamashi-bilingual.html" class="cn">(中)</a></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

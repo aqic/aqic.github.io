@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Get Along - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「スレイヤーズ」オープニング・テーマ</div>
+
+                    <div class="LyricTitle">Get Along</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ　奥井雅美</div>
+
+                    <div class="LyricText">
+						<p>
+							立ち向かう先に乾いた風<br>
+							激しく吹き荒れでも<br>
+							呪文の一つも唱えたなら<br>
+							私のベースになる</p>
+						<p>
+							誰もがうらやむこのパワーと<br>
+							美貌が許さないわ<br>
+							どんな相手でも怯まないで<br>
+							マントをなびかせるの</p>
+						<p>
+							あれもしたい　これもしたい<br>
+							女の子に見えたって<br>
+							油断したら地獄行きよ<br>
+							邪魔はせないから</p>
+						<p>
+							△Far away 思うまま我がままに<br>
+							　旅お続けて行きたい<br>
+							　辛い日々も　笑顔でビリオドよ</p>
+						<p>
+							☆Far away 幾つもの魔力抱いて<br>
+							　今日を越えて行きたいの<br>
+							　未来に向かい　歩き続けて行く</p>
+						<p>
+							※限りないほど　Get along, Try again</p>
+						<p>
+							退屈な時は　惡い奴ら<br>
+							ターゲットに気晴らし<br>
+							ストレスも飛んで<br>
+							お宝まで手にすればやめられない</p>
+						<p>
+							お気楽にぢょっと遊ぶ度に<br>
+							満たされた気分だわ<br>
+							スリリングな日のエッセンスは<br>
+							美味しくなくちゃダメね</p>
+						<p>
+							あれも欲しい　これも欲しい<br>
+							女の子は欲張りよ<br>
+							生きる事は奇麗事じゃ<br>
+							通り抜けられない</p>
+						<p>
+							△くりかえし</p>
+						<p>
+							★Far away 何時でも独りじゃない<br>
+							　力合わせ　遥か先<br>
+							　未来に向かい　歩き続けて行く</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							△くりかえし</p>
+						<p>
+							☆くりかえし</p>
+						<p>
+							★くりかえし</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

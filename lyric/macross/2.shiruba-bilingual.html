@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>シルバームーン·レッドムーン（日中対訳） - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ</div>
+
+                    <div class="LyricTitle">シルバームーン·レッドムーン（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">飯島真理</div>
+                    <div class="LyricStaff">作詞：阿佐　茜<br>作曲：羽田健太郎<br>編曲：羽田健太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							茜に染る　カフェテラス<br>
+							ターキッシュ珈琲の香りに乗って<br>
+							タンゴのリズムが　物憂げに<br>
+							一人寂しくステップ踏めば<br>
+							わたしの心に風が吹く<br>
+							このままあなたが来ないなら<br>
+							今夜は誰かと踊ろかな<br>
+							シルバームーン・レッドムーン<br>
+							冷たいあなたは　上海ダンディ<br>
+							ジタンの煙が目にしみる</p>
+						<p>
+							夜が泣かせる<br>
+							ジプシーバイオリン<br>
+							ワインのボトルとグラスが二つ<br>
+							燃える想いも　やるせなく<br>
+							一人寂しく乾杯すれば<br>
+							小さな炎が風に舞う<br>
+							このままあなたが来ないなら<br>
+							今夜は誰かと酔おうかな<br>
+							シルバームーン・レッドムーン<br>
+							冷たいあなたは　上海ダンディ<br>
+							ジタンの煙が目にしみる</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							布满茜草的露天咖啡厅里<br>
+							充满土耳其咖啡的香味<br>
+							探戈的旋律无精打采的播唱<br>
+							独自一人踏上舞台<br>
+							我的心中吹来一阵风<br>
+							如果你还不来的话<br>
+							今晚我要和谁跳舞呢<br>
+							银色月亮.红色月亮<br>
+							冰冷的你是上海的花花公子<br>
+							烟雾熏的眼睛都发疼</p>
+						<p>
+							让夜晚也哭泣的吉普赛小提琴<br>
+							葡萄酒瓶和两个酒杯<br>
+							燃烧的回忆也郁郁不乐<br>
+							一个人寂寞的喝酒<br>
+							有如小小的火炎在风中飞舞<br>
+							如果你还不来的话<br>
+							今后我要和谁喝酒呢<br>
+							银色月亮.红色月亮<br>
+							冰冷的你是上海的花花公子<br>
+							烟雾熏的眼睛都发疼</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

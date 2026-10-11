@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>爛火慕情 - 吸血姫美夕</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">爛火慕情</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐久间レイ</div>
+                    <div class="LyricStaff">作詞：松本花奈<br>作曲：寺嵨民哉<br>编曲：寺嵨民哉</div>
+
+                    <div class="LyricText">
+						<p>
+							艳やかな黑发　风が摇らして<br>
+							ふり返る横颜に射す月の光<br>
+							はらりはらり落ちる深红の牡丹<br>
+							花びらに透けている哀色</p>
+						<p>
+							胸の轧む音が闻こえる<br>
+							彷徨える叫びの声を杀しても<br>
+							疲れながら　何を探してる<br>
+							迷い子のような心细い影<br>
+							今宵　何处に...</p>
+						<p>
+							爱しいよ　私の胸の中で<br>
+							休むがよい...</p>
+						<p>
+							淋しさを抱えて步けないなら<br>
+							ここへ来て　そばにいて　眠ればいい</p>
+						<p>
+							胸の伤み　手をさしのべても<br>
+							消せないものなら　せめて思い出して<br>
+							それはいつか见た梦の中で<br>
+							やさしく流れた怀かしい调べ<br>
+							今は何处へ...</p>
+						<p>
+							燃え尽きぬ炎　人知れず红く<br>
+							切なく烈しく嫌く<br>
+							はらりはらり落ちる深红の牡丹<br>
+							花びらに透けている哀色</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

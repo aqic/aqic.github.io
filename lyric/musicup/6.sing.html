@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>有时歌唱 - </title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">有时歌唱</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							怎么啦这吉他它这样歌唱，所有感觉随着它飘荡，<br>
+							这时我心在燃烧，烧吧！<br>
+							谁能救药，在每分每秒我知道。<br>
+							有时候难耐寂寞，寂聊！总是打扰，是我的心敞开了。<br>
+							HA，HAHA迷失方向，HA，HAHA我要歌唱，<br>
+							HA，HAHA蒙上脸庞，HA，HAHA我为歌狂，<br>
+							跟着吉他唱起了——</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-musicup-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

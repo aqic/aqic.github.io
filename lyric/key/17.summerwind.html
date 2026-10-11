@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Summer Wind - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©Key 2001 KeySoundLabel / Humanity...</div>
+
+                    <div class="LyricTitle">Summer Wind</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">藤田秀綱</div>
+                    <div class="LyricStaff">作詞：丹野恭司<br>作曲：丹野恭司</div>
+
+                    <div class="LyricText">
+						<p>
+							青い風　そよぐ波間に<br>
+							君の面影　追いかけてみても<br>
+							遠い日の　夏の想い出<br>
+							消えゆく雲に　君の影うつして<br>
+							ずっと忘れない　この胸にいまも<br>
+							刻まれた記憶　Only You are forever.</p>
+						<p>
+							青い風　焼けた素肌に<br>
+							君を愛した　日々をなぞってみる<br>
+							切なさが　揺れる想いを<br>
+							追い越してゆく　このままもう会えないね<br>
+							君を忘れない　この胸をいまも<br>
+							締め付ける想い　Only You are forever.</p>
+						<p>
+							君を忘れない　この胸にいまも<br>
+							刻まれた記憶　Only You are forever.</p>
+						<p>
+							眩しい青い空　未来へと続く<br>
+							君への想いを　抱えたままずっと<br>
+							眠れない夜に　終らない夏に<br>
+							時が止まっても　繰り返すよメモリー<br>
+							いつだって忘れない　あの頃のSong for You.<br>
+							時間だけが過ぎて　君だけ消せない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

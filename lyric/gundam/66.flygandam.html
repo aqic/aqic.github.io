@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>翔べ！ガンダム - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">翔べ！ガンダム</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">池田鴻</div>
+                    <div class="LyricStaff">作詞：井荻麟<br>作曲：渡辺岳夫</div>
+
+                    <div class="LyricText">
+						<p>
+							も、え、あ、が、れ　もえあがれ<br>
+							燃え上がれガンダム　君よ走れ<br>
+							まだ怒りに燃える　闘志があるなら<br>
+							巨大な敵を討てよ　討てよ討てよ<br>
+							正義の怒りをぶつけろ　ガンダム<br>
+							機動戦士ガンダム　ガンダム<br>
+							た、ち、あ、が、れ　たちあがれ<br>
+							立ちあがれガンダム　君よ叫べ<br>
+							まだ絶望に沈む　悲しみあるなら<br>
+							恐怖をはらって行けよ　行けよ行けよ<br>
+							うず巻く血潮を燃やせ　ガンダム<br>
+							機動戦士ガンダム　ガンダム</p>
+						<p>
+							よ、み、が、え、る　よみがえる<br>
+							甦えるガンダム　君よ掴め<br>
+							まだ愛にふるえる　心があるなら<br>
+							平和を求めて翔べよ　翔べよ翔べよ<br>
+							銀河へ向かって翔べよ　ガンダム<br>
+							機動戦士ガンダム　ガンダム</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

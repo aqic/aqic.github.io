@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Stand Up To The Victory～ トゥ·ザ·ヴィクトリー～ - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">機動戦士 Vガンダム</div>
+
+                    <div class="LyricTitle">Stand Up To The Victory～ トゥ·ザ·ヴィクトリー～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川添智久</div>
+
+                    <div class="LyricText">
+						<p>
+							激しい雨が心を震わせる<br>
+							あの日のように<br>
+							ただ走りぬけた昨日までの<br>
+							My Dream信じているのさ<br>
+							終わりのない　Defenceでもいいよ<br>
+							君が僕を<br>
+							見つめつづけて くれるなら<br>
+							STAND UP TO THE VICTORY<br>
+							いくつもの朝をむかえ<br>
+							いつかきっと つかんでみせる<br>
+							STAND UP TO THE VICTORY<br>
+							その向こう側に<br>
+							何もなくても かまわないから<br>
+							かけがえのない<br>
+							君のやさしい笑顔抱いて</p>
+						<p>
+							子供の頃の小さな思い出　時がこわしてゆく<br>
+							瞳の中に焼きついた Starlight 忘れはしないさ<br>
+							感じているよ生命のRhythm<br>
+							君が僕の心の中にいるかぎり</p>
+						<p>
+							STAND UP TO THE VICTORY<br>
+							いくつもの夜をこえて<br>
+							あの星をつかんでみせる<br>
+							STAND UP TO THE VICTORY<br>
+							その向こう側にたとえ<br>
+							悲しみが待っていたとしても<br>
+							信じて欲しい<br>
+							君の 涙を みたくないから</p>
+						<p>
+							STAND UP STAND UP<br>
+							STAND UP STAND UP<br>
+							STAND UP STAND UP<br>
+							STAND UP STAND UP</p>
+						<p>
+							STAND UP TO THE VICTORY<br>
+							その向こう側に何があるのか　誰も知らない<br>
+							STAND UP TO THE VICTORY<br>
+							いくつもの朝をむかえ<br>
+							いつかきっと つかんでみせる<br>
+							STAND UP TO THE VICTORY<br>
+							その向こう側に何もなくても かまわないから<br>
+							STAND UP TO THE VICTORY<br>
+							いくつもの夜をこえて<br>
+							あの星をつかんでみせる<br>
+							STAND UP TO THE VICTORY<br>
+							その向こう側にたとえ<br>
+							悲しみが 待っていたとしても<br>
+							信じて欲しい<br>
+							君の 涙を みたくないから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

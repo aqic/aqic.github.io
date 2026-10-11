@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>MUSIC - ONE PIECE</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">MUSIC</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">岡村明美</div>
+
+                    <div class="LyricText">
+						<p>
+							あの星がホラ、見てるよ<br>
+							ひざを抱いてる　手のひらを…<br>
+							ちょっと背伸びをしたら<br>
+							届くのかなぁ…</p>
+						<p>
+							優しい色の音楽…<br>
+							みんなの声が聞こえる</p>
+						<p>
+							涙の時は<br>
+							色々だけど、何も失くしたりしない<br>
+							約束しよう　今の私を<br>
+							未来まで連れて行くよ</p>
+						<p>
+							あの星がホラ、くすぐる<br>
+							こぼれそう　わたしの夢</p>
+						<p>
+							追いかけて行こう!　翼を<br>
+							夜はもうすぐ　明けるから<br>
+							太陽のいたずらで　目を醒まそう</p>
+						<p>
+							元気をくれる音楽<br>
+							みんなの顔を見せてよ</p>
+						<p>
+							少し歩いて　丘に昇ろう<br>
+							手を振ってみる　何度も<br>
+							深呼吸して　思い出してた<br>
+							あの頃の　強いココロ</p>
+						<p>
+							誰にでも1つずつ、星が光るよ</p>
+						<p>
+							あの星がホラ、見てるよ<br>
+							キラキラの私の夢</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onepiece-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

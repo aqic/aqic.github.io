@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>花びらの記憶 - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ああっ女神さまっ」</div>
+
+                    <div class="LyricTitle">花びらの記憶</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">冬馬由美</div>
+
+                    <div class="LyricText">
+						<p>
+							掌で踊る花びらが<br>
+							記憶の扉やさしくたたく<br>
+							Ny dear　あなたの声<br>
+							聞こえた気がした</p>
+						<p>
+							愛よりは少し幼くて<br>
+							二人で同じ夢を見れずに<br>
+							Fly away　私の手を<br>
+							擦り抜けて離れた</p>
+						<p>
+							黄金の春告げ鳥よ　今何処にいるの<br>
+							自由な空を羽ばたいて<br>
+							時を戻して　あなたに会いたい<br>
+							変わらない恋しさで</p>
+						<p>
+							淋しさを抱えきれなくて<br>
+							気づけば　ここに独りたたずむ<br>
+							Lonely 白き梅は<br>
+							何もいわないけど</p>
+						<p>
+							春呼ぶ吟遊詩人(うたうたい)よ　今すぐ会いたい<br>
+							果てない空に翔ぶ思い<br>
+							涙忘れた　心を癒して<br>
+							あなたの愛の唄で</p>
+						<p>
+							揺れる春の光りに　今両手拡げ<br>
+							過去の私を解き放つ<br>
+							風の歌声　舞い散る花びら<br>
+							遠い夢が目覚める</p>
+						<p>
+							黄金の春告げ鳥よ　今奇蹟運んで<br>
+							私の前に舞い降りた<br>
+							愛を奏でる　あなたの調べに<br>
+							微笑みが溢れてく</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

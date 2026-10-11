@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>The Power of Love - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">North American "Sailor Moon" TV Series</div>
+
+                    <div class="LyricTitle">The Power of Love</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Jennifer Cihi</div>
+
+                    <div class="LyricText">
+						<p>
+							There comes a time<br>
+							When you face the toughest of fights<br>
+							Searching for a sign<br>
+							Lost in the darknest of nights<br>
+							The wind blows so cold<br>
+							Standing alone<br>
+							Before the battle's begun<br>
+							But deep in your soul<br>
+							The future unfolds<br>
+							As bright as the rays of the sun</p>
+						<p>
+							You've got to believe<br>
+							In the power of love<br>
+							You've got to believe<br>
+							In the power of love<br>
+							The power of love</p>
+						<p>
+							Blazing emotion<br>
+							There's a light that flows from your heart<br>
+							It's a chain reaction<br>
+							And nothing will keep us apart</p>
+						<p>
+							Stand by my side<br>
+							There's nothing to hide<br>
+							Together we'll fight to the end<br>
+							Take hold of my hand<br>
+							And you'll understand<br>
+							What it truly means to be friends</p>
+						<p>
+							You've got to believe   (You've got to believe)<br>
+							In the power of love<br>
+							You've got to believe   (You've got to believe)<br>
+							In the power of love<br>
+							It gives meaning to each moment<br>
+							It's what our hearts are all made of<br>
+							You've got to believe   (You've go to believe)<br>
+							In the power of love   (The power of love)<br>
+							The power of love   (Power of love)</p>
+						<p>
+							[Guitar Solo]</p>
+						<p>
+							You've got to believe   (You've got to believe)<br>
+							In the power of love<br>
+							You've got to believe   (You've got to believe)<br>
+							In the power of love<br>
+							It gives meaning to each moment<br>
+							It's what our hearts are all made of   (Just look inside)<br>
+							You've got to believe   (You've got to believe)<br>
+							In the power of love<br>
+							In the power of love<br>
+							In the power of love</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

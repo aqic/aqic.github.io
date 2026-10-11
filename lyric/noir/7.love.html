@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Love - NOIR</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Love</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							手のひらで包み込む頬にくちびるを寄せて<br>
+							冷たい雨に濡れている　静けさの中<br>
+							恋に震えるたびに初めての気がするから<br>
+							黙り込むのはただ声を聞いていたくて</p>
+						<p>
+							背中に小指がキレイにはまるだけで<br>
+							胸の涙が一つずつ消えるようで</p>
+						<p>
+							手のひらの中いつもこの安らぎを下さい<br>
+							これが最後の慰めだと信じていいの</p>
+						<p>
+							木漏れ日の寒さにも慣れた冬の終わりには<br>
+							微笑むだけの頼りない恋でもいいわ</p>
+						<p>
+							想いを分け合うことなどいらないの<br>
+							今は貴方の温もりだけでいい　それだけが全てよ</p>
+						<p>
+							手のひらで包み込む頬にくちびるを寄せて<br>
+							冷たい雨に濡れている　恋をしている</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-noir-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

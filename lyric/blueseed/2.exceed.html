@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>EXCEED ILLUSION - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">BLUE SEED 国土管理室宴会記念号</div>
+
+                    <div class="LyricTitle">EXCEED ILLUSION</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">TAKADA BAND</div>
+
+                    <div class="LyricText">
+						<p>
+							舞い降りた優しさは　天使の微笑み<br>
+							陽光の扉に届けと　祈る天のメロディー<br>
+							積み上げた愛しさは　薫る木々の歌<br>
+							限りない蒼い未来を　BELIEVE IN LOVE</p>
+						<p>
+							辿り着きたい場所は　IN YOUR HEART　遙かな旅へ</p>
+						<p>
+							☆AH-激しく降り注げ大地へ　雨よもっと心濡らせ<br>
+							　AH-高く高く翼広げて夢に<br>
+							　FLY HIGH?EXCEED ILLUSION</p>
+						<p>
+							君だけのものじゃない　新しい生命<br>
+							満開の息吹聴こえる　散るのも忘れて<br>
+							流れる次元を超えて　心解き放て<br>
+							終わらない愛しさだけが　SHOW ME LOVE</p>
+						<p>
+							光の風を浴びて　WINDING ROAD　奇跡を呼ぼう</p>
+						<p>
+							★AH-絡み付く闇を脱ぎ捨てて　輝きを染め上げる<br>
+							　AH-遠く遠く目指す憧れ<br>
+							　WHY DON'T YOU FLY HIGH? EXCEED ILLUSION</p>
+						<p>
+							☆Ｒｅｐｅａｔ<br>
+							★Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

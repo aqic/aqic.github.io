@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Stray - WOLF'S RAIN</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Wolf's rain</div>
+
+                    <div class="LyricTitle">Stray</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							In the cold breeze<br>
+							That I walk alone<br>
+							The memories of generation burn within me<br>
+							Been forever<br>
+							Since I’ve cried the pain of sorrow<br>
+							I’ll live and die the pride that my people gave me</p>
+						<p>
+							I’m here standing on the edge<br>
+							And staring up at where a new moon should be<br>
+							Oh~~~~~</p>
+						<p>
+							Stray<br>
+							No regret cause I’ve got nothing to lose<br>
+							Ever stray<br>
+							So I’m gonna live my life as I choose<br>
+							Until I fall<br>
+							Stray</p>
+						<p>
+							In the white freeze<br>
+							Never spoke of tears<br>
+							Or opened up to anyone including myself<br>
+							I would like to<br>
+							Find a way to open to you<br>
+							Been a while, don’t know if I remember how to</p>
+						<p>
+							I’m here waiting on the edge<br>
+							Would I be alright showing myself to you<br>
+							It’s always been so hard to do</p>
+						<p>
+							Stray<br>
+							No regret cause I’ve got nothing to lose<br>
+							Ever stray<br>
+							So I’m gonna live my life as I choose<br>
+							Until I fall<br>
+							Stray</p>
+						<p>
+							Is there a place waiting for me?<br>
+							Somewhere that I belong<br>
+							Or will I always live this way?</p>
+						<p>
+							Always stray<br>
+							No regret cause I’ve got nothing to lose<br>
+							Ever stray<br>
+							So I’m gonna live my life as I choose<br>
+							Cause all things fall<br>
+							Stray</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-wolfsrain-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

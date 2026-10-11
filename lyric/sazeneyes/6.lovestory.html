@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>心に綴ったLOVE STORY - 3×3EYES</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「3×3EYES」</div>
+
+                    <div class="LyricTitle">心に綴ったLOVE STORY</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							淡い光の波に<br>
+							何処までも揺られながら<br>
+							二人時を忘れて<br>
+							求め合う温もりの中<br>
+							心を凍らせておくは<br>
+							あなたが帰るひまで<br>
+							抱きしめた瞳に映る<br>
+							肩を震わせ微笑む人</p>
+						<p>
+							☆わかっているさどんなに信じていても<br>
+							　二人はなれてくらさば<br>
+							　心に綴ったLOVE　STORY<br>
+							　行方は不確かなものかもしれない</p>
+						<p>
+							さぁ　もう帰らなけりゃ<br>
+							夜が明けてきたよ<br>
+							生まれ育った故郷だけど<br>
+							夢ーおう気持ちに嘘はつけない<br>
+							「何時の電車で行くの」<br>
+							「送らなくていいの？」<br>
+							ほらまた寂しいい瞳をする<br>
+							から<br>
+							離れられなくなる</p>
+						<p>
+							わかっているさみかってな気持ち何だと<br>
+							だけど本当はもう少し<br>
+							俺のそばにいてくれ<br>
+							このままで痛いもう少しだけ</p>
+						<p>
+							☆くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sazeneyes-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

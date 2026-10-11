@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>未来への赠物り - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">未来への赠物り</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">HINATA GIRLS
+堀江由衣・倉田雅世・浅川悠・高木礼子
+野田順子・雪乃五月・小林由美子</div>
+                    <div class="LyricStaff">作詞：根津洋子<br>作曲・編曲：五島翔</div>
+
+                    <div class="LyricText">
+						<p>
+							花びらの中 手をつないで駆けてゆく<br>
+							木もれ日とたわむれるまぶしい笑顔<br>
+							ここから始まるそれぞれの未来への贈り物だよ</p>
+						<p>
+							楽しすぎた思い出たくさん集めて<br>
+							胸の奥のタイムカプセルにしまっておこう</p>
+						<p>
+							one two three 目を閉じて<br>
+							une deux trios 願いごと<br>
+							make a wish! 三回 唱えたら<br>
+							叶うときが絶対やってくるよ</p>
+						<p>
+							耳をすまして 風の歌を聞こうよ<br>
+							胸のスクリ一ンに 素敵な夢 描こうよ<br>
+							ひとりひとつずつ違う夢<br>
+							その輝きを大事にしたい<br>
+							思い出すたびおかしくて泣けてくる<br>
+							いろんな場面 キラキラとよみがえれ<br>
+							すべて抱きしめて 素晴らしい未来への宝物だよ</p>
+						<p>
+							つまずいても 笑顔忘れそうになっても<br>
+							空見上げて がんばれる人になりたいよね</p>
+						<p>
+							one two three いつかきっと<br>
+							une deux trios つかめるよ<br>
+							we can touch! この手を伸ばしたら<br>
+							一番遠くに輝くあの星だって</p>
+						<p>
+							うれしかったよ みんなにめぐり会えて<br>
+							永遠を感じた瞬間を越えて<br>
+							淋しくなったらいつだって<br>
+							心が帰る場所がそこにある<br>
+							花びらの中 手をつないで駆けてゆく<br>
+							木もれ日とたわむれるまぶしい笑顔<br>
+							ここから始まるそれぞれの未来への贈り物だよ</p>
+						<p>
+							one two three 目をとじて<br>
+							une deux trios 願いごと<br>
+							make a wish! 三回 唱えたら<br>
+							叶うときが絶対やってくるよ</p>
+						<p>
+							耳をすまして 風の歌を聞こうよ<br>
+							胸のスクリ一ンに 素敵な夢 描こうよ<br>
+							ひとりひとつずつ違う夢<br>
+							その輝きを大事にしたい<br>
+							思い出すたびおかしくて泣けてくる<br>
+							いろんな場面 キラキラとよみがえれ<br>
+							すべて抱きしめて 素晴らしい未来への宝物だよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

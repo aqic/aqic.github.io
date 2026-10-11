@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>エロイカ/英雄伝説 - サクラ大戦</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「サクラ大戦3」挿入歌</div>
+
+                    <div class="LyricTitle">エロイカ/英雄伝説</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島津冴子</div>
+                    <div class="LyricStaff">作詞：広井王子<br>作曲：田中公平<br>編曲：松尾早人</div>
+
+                    <div class="LyricText">
+						<p>
+							運命が揺れ動くとき　世界が変わる<br>
+							新しいスターが生まれ　世界を変える</p>
+						<p>
+							人の価値も未来も夢も　千年の時を<br>
+							越えて変える英雄<br>
+							運命という名の十字架を背負う者<br>
+							あー　エロイカ</p>
+						<p>
+							輝ける天の星座を　その身にまとい<br>
+							土塊の荒れた大地を　黄金に変え</p>
+						<p>
+							永遠に燃える理想をかかげ　千年の時を<br>
+							翔(かけ)て生きる英雄<br>
+							運命という名の十字架を抱きしめる<br>
+							あー　エロイカ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sakurawars-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

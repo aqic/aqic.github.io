@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君と生きていく - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">君と生きていく</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							どんなに満たされていたとしても<br>
+							人の欲が尽きることはないんでしょう<br>
+							例えば君が傍にいたら<br>
+							次にどんなことを求めていくんだろう</p>
+						<p>
+							何を探しているのかさえ分からず<br>
+							時間は過ぎて…</p>
+						<p>
+							ちょっと揺れながら歩いてみようよ<br>
+							大切な何かを　君となら<br>
+							感じていけるはず<br>
+							何処へ行けばいいって考えているより<br>
+							気の向くままに<br>
+							ふたりらしく　はみ出した<br>
+							Day…今　君と生きていく</p>
+						<p>
+							どんなに不幸だと嘆いても<br>
+							回る毎日はまた訪れるでしょう<br>
+							例えばすべてを失くしても<br>
+							君さえいればいいよと微笑っていたい</p>
+						<p>
+							不思議な程に素直に云える<br>
+							こんなあたしがいる</p>
+						<p>
+							ずっと唄いながら歩いていこうよ<br>
+							しがみついた日々を壊してく<br>
+							何かを探してる<br>
+							君が同じ気持ちでいてくれたら<br>
+							なんにもコワくない<br>
+							ふたりらしく　はみ出した<br>
+							Day…今　君と生きていく</p>
+						<p>
+							どんなに満たされていたとしても<br>
+							人の欲が尽きることはないんでしょう<br>
+							例えば君が傍にいたら<br>
+							次にどんなことを求めていくんだろう</p>
+						<p>
+							ちょっと揺れながら歩いてみようよ<br>
+							大切な何かを　君となら<br>
+							感じていけるはず<br>
+							何処へ行けばいいって考えているより<br>
+							気の向くままに<br>
+							ふたりらしく　はみ出して</p>
+						<p>
+							ずっと唄いながら歩いていこうよ<br>
+							しがみついた日々を壊してく<br>
+							何かを探してる<br>
+							君が同じ気持ちでいてくれたら<br>
+							なんにもコワくない<br>
+							ふたりらしく　はみ出した<br>
+							Day…今　君と生きていく</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

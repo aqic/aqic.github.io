@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ねこバス - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">となりのトトロ</div>
+
+                    <div class="LyricTitle">ねこバス</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">北原 拓</div>
+
+                    <div class="LyricText">
+						<p>
+							ばけのこの　ねこばすが　はしる　ルルー<br>
+							まっくらやみを　つっぱしる<br>
+							ねこバスは　そらをとぶ　ブブー<br>
+							おいなりさんも　めのしただ<br>
+							ヘッドライトは　まっくろ　めだま<br>
+							ニタッとわらって　ひかる<br>
+							毛なみは　じょうとう<br>
+							ひげまで　ぴかぴか<br>
+							おつきさんも　びっくり<br>
+							ながれぼし　とびこえる　ルルー<br>
+							ハンドルさばき　あざやかに　ハッ</p>
+						<p>
+							それゆけ　にゃあごー　どこでも<br>
+							きのむくままに<br>
+							びゅん　びゅん　びゅう　びゅう<br>
+							それゆけ<br>
+							きまぐれ　ねこバス</p>
+						<p>
+							ばけねこの　ねこバスが　はしる　ルルー<br>
+							はてから　はてへ　ひたはしる<br>
+							ねこバスは　かぜをよぶ　ブブー<br>
+							あまぐも　かみなり　ふっとばす<br>
+							のった　おきゃくは　ようきなおばけ<br>
+							ちょっぴり　きどって　すわる<br>
+							ハッとするような<br>
+							いいながめだ<br>
+							まーどのそと<br>
+							おおぞらで　カーブきる　ルルー<br>
+							ちゅうがえりも　こわくない</p>
+						<p>
+							それゆけ　にゃあごー　世界じゅう<br>
+							おもいのままに<br>
+							びゅん　びゅん　にゃあごー<br>
+							それゆけ<br>
+							ばけねこ　ねこバス</p>
+						<p>
+							それゆけ　にゃあごー　どこでも<br>
+							きのむくままに<br>
+							びゅん　びゅん　びゅう　びゅう<br>
+							それゆけ<br>
+							きまぐれ　ねこバス</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Moonlight Destiny - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場版「美少女戦士セーラームーンＳ」 エンディング（１９９４）</div>
+
+                    <div class="LyricTitle">Moonlight Destiny</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">朝川ひろこ</div>
+                    <div class="LyricStaff">作詞／佐藤ありす<br>作曲／池毅<br>編曲／戸塚修</div>
+
+                    <div class="LyricText">
+						<p>
+							ふしぎあなたといるとなぜ　時が優しく流れるの<br>
+							人気ない海に　夜が降りてきて最初の星<br>
+							これは月から届くマジック　声にしなくてもわかるの<br>
+							私たち同じことを　思っているはず</p>
+						<p>
+							Moonlight Destiny　いつまでもだれよりも<br>
+							そばにいたいの　この広い空の下で　巡り会えたあなた<br>
+							Moonlight Destiny　微笑みも悲しみも<br>
+							分け合えるなと　胸でそう感じている　あなたとなら</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

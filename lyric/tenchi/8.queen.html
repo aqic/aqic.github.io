@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>皇女样とお呼びッ!!! - 天地無用!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">皇女样とお呼びッ!!!</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							いやですわ　だめですわ<br>
+							あなたともあろう　お方が<br>
+							バケモノの　诱惑に<br>
+							お心を　乱されるなんて</p>
+						<p>
+							大事な使命を　背负ったお方<br>
+							わたくし　泪を忍んで<br>
+							あなたを　锻えなおすわ</p>
+						<p>
+							觉悟を　なさいませ<br>
+							爱のムチで　ございます<br>
+							そのたるんだ　お心を<br>
+							力　めて　叩きなおします</p>
+						<p>
+							いけません　なりません<br>
+							爱は　清く正しいもの<br>
+							爱しあう　ふたりには<br>
+							血のつながりが　一番です</p>
+						<p>
+							树雷の未来を　守るためです<br>
+							邪恶な鬼に　近づけば<br>
+							わたくしが　裁きますわ</p>
+						<p>
+							我慢を　なさいませ<br>
+							ほら　まだまだ足りません<br>
+							その迷いが　消えるまで<br>
+							この锁で　缚ってあげます</p>
+						<p>
+							ほらほら　いけません<br>
+							この痛みに　堪えなさい<br>
+							ひとムチごと　叫びなさい<br>
+							ひざまづいて　许し乞いなさい</p>
+						<p>
+							まだまだ　なりません<br>
+							皇女さまと　お呼びなさい<br>
+							すがりついて　お泣きなさい<br>
+							おもいのまま　イジメてあげます</p>
+						<p>
+							ほらほら　いけません<br>
+							さあ　痛みに堪えなさい<br>
+							すがりついて　お泣きなさい<br>
+							ひざまづいて　许しを乞いなさい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-tenchi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

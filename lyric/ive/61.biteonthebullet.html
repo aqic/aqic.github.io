@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>bite on the bullet&lt;br&gt;-under mellow style- - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Treating 2U</div>
+
+                    <div class="LyricTitle">bite on the bullet&lt;br&gt;-under mellow style-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MAKO</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							疲れ果てた一日の終わりに<br>
+							やっと見つけた瞬間を<br>
+							たった一人だけの<br>
+							君と過ごしたいよ<br>
+							落ちこんだ君の悩んだ顔<br>
+							ちょっと<br>
+							そんなの耐えられないから</p>
+						<p>
+							どうしてそんなに震えているの<br>
+							君は一人じゃないのに<br>
+							ずっと　うつむいてるから<br>
+							涙もこぼれるのさ</p>
+						<p>
+							傷付いた君に会おう<br>
+							だから<br>
+							一人で鬱いでるのはやめよう<br>
+							こんな意味の無い夜を<br>
+							このままほおっておくのは<br>
+							これっきりにして<br>
+							もう・・・悲しまずに</p>
+						<p>
+							とりあえずこんな世界の上<br>
+							皆生きているわけで<br>
+							たいへんなのは<br>
+							君だけじゃない</p>
+						<p>
+							どうしてそんなに怯えているの<br>
+							僕も一人じゃ寂しくて<br>
+							君の笑顔を青空に描いてみる</p>
+						<p>
+							ためらうこと何もないよ<br>
+							だから<br>
+							その手を僕に掴ませてほしい<br>
+							何もかも<br>
+							そしてこれからも　きっと<br>
+							こうして　見守る</p>
+						<p>
+							傷付いた君に会おう<br>
+							だから　一人で鬱いでるのはやめよう<br>
+							こんな意味の無い夜を<br>
+							このままほおっておくのは<br>
+							これっきりにして<br>
+							そう・・・そばにいるよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

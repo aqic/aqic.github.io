@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Reflection - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Reflection</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							遠く近く鳴き交わす鳥達が<br>
+							目覚めの朝を告げている<br>
+							重い扉を開け放つ時が来た</p>
+						<p>
+							幾度となく繰り返す<br>
+							魂の叫び（せんりつ）に<br>
+							傾ける心もなく<br>
+							さ迷っている</p>
+						<p>
+							何度となく訪れる<br>
+							昨日と明日の間<br>
+							今日という日置き去りに<br>
+							未来に泣いてる</p>
+						<p>
+							愛がないヤツ程　愛を語って<br>
+							やさしく微笑んで　吠えてる<br>
+							正義をかざして　人を連れている<br>
+							気付かずに</p>
+						<p>
+							今を生きるのに多すぎるわ<br>
+							人生（みち）を惑わす雑音<br>
+							優しさの中にある　罠<br>
+							抜け出さなくっちゃ<br>
+							自分の中にある本当の<br>
+							答と向かい合えたら<br>
+							少しずつ変わっていく<br>
+							これからの私</p>
+						<p>
+							今届かない言葉を<br>
+							あきらめてつぐんでも<br>
+							生まれた思い消えずに<br>
+							闇に溶けてく</p>
+						<p>
+							夢を描くことすらも<br>
+							シュールにかたづけられ<br>
+							熱望と拒絶の中<br>
+							深くで泣いてる</p>
+						<p>
+							夢がないヤツほど　現実に酔って<br>
+							したり顔で酔ってくるよ<br>
+							ぶつかることも　傷つくことも<br>
+							上手に避けて</p>
+						<p>
+							うまく生きるより無器用でも<br>
+							私らしく歩きたい<br>
+							冷たさの中にある　愛<br>
+							感じとれたなら<br>
+							止まったままの歯車が又<br>
+							ゆっくりと時を刻む<br>
+							求めてた自分の場所<br>
+							必ず見つかる</p>
+						<p>
+							夢がないヤツほど　現実に酔って<br>
+							したり顔で酔ってくるよ<br>
+							ぶつかることも　傷つくことも<br>
+							上手に避けて</p>
+						<p>
+							うまく生きるより無器用でも<br>
+							私らしく歩きたい<br>
+							冷たさの中にある　愛<br>
+							感じとれたなら<br>
+							止まったままの歯車が又<br>
+							ゆっくりと時を刻む<br>
+							求めてた自分の場所<br>
+							必ず見つかる</p>
+						<p>
+							今を生きるのに多すぎるわ<br>
+							人生（みち）を惑わす雑音<br>
+							優しさの中にある　罠<br>
+							抜け出さなくっちゃ<br>
+							自分の中にある本当の<br>
+							答と向かい合えたら<br>
+							少しずつ変わっていく<br>
+							これからの私</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

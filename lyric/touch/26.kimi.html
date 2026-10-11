@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君がいなければ - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book １ タッチ Music Flavor １</div>
+
+                    <div class="LyricTitle">君がいなければ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">岩崎 良美</div>
+                    <div class="LyricStaff">作詞：康 珍化<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							またたく星さえ<br>
+							涙をためるような輝き<br>
+							君がいなければ</p>
+						<p>
+							窓辺でちいさな<br>
+							つぼみを開いてく花さえ<br>
+							なんの意味もない</p>
+						<p>
+							好きさと言えるなら<br>
+							心は軽いよ<br>
+							でも君を見つめると<br>
+							何にも言えなくて<br>
+							そっと目を　そらすだけ</p>
+						<p>
+							青いノートも<br>
+							磨いたシューズも<br>
+							僕だけの宝も<br>
+							君がいなければ<br>
+							ひとりぼっち  幾つめの夏が<br>
+							ふたりの間を　ねえ　過ぎたの<br>
+							君がいなければ</p>
+						<p>
+							はしゃいで撮した<br>
+							渚の写真さえも モノクローム<br>
+							時の忘れもの</p>
+						<p>
+							本当の事だけを<br>
+							伝えたいから<br>
+							ねえ　君に会うたびに<br>
+							無口になるんだね<br>
+							いつまでも　ここにいて</p>
+						<p>
+							届け忘れた<br>
+							ハガキがいちまい<br>
+							胸の奥　眠るよ<br>
+							君が好きだって<br>
+							書いてある</p>
+						<p>
+							君がいなければ<br>
+							なにもかも</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

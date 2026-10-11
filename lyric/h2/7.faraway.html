@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Far away - H2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">H2</div>
+
+                    <div class="LyricTitle">Far away</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">古本新之輔</div>
+                    <div class="LyricStaff">作詞：鵜島仁文<br>作曲：鵜島仁文<br>編曲：ＳＹＳ</div>
+
+                    <div class="LyricText">
+						<p>
+							このまま　遠くまで　立ち止まることもなく<br>
+							明日に同じ夢　叶うことを願って<br>
+							いつまでも歩き続けたい</p>
+						<p>
+							見つめてる　眼差しの行方を<br>
+							心でたどってた　答えを探して<br>
+							そばにいる君への想いが<br>
+							少しずつ　膨らんでゆくことに気づいてる</p>
+						<p>
+							いつでも風のような　さりげない言葉に<br>
+							照れくさいけれど　勇気を思い出す</p>
+						<p>
+							このまま　遠くまで　立ち止まることもなく<br>
+							明日に同じ夢　叶うことを願って<br>
+							いつまでも歩き続けたい</p>
+						<p>
+							搖れ動く　胸の內　感じて<br>
+							気まぐれなフリをして　誤魔化しているけど<br>
+							心配はしなくてもいいよ<br>
+							一番自分を知ってるつもりだから</p>
+						<p>
+							今　僕を包み込んだ　柔らかなその笑顔<br>
+							曇らせることなく　きっと守りたい</p>
+						<p>
+							優しい溫もりに　いつまでも觸れたまま<br>
+							微笑みは憂いなく　不安の欠片もなく<br>
+							目の前の君が眩しくて</p>
+						<p>
+							希望に振り向けば　迷いは吹き飛んでる<br>
+							逆風に　立ち向かう勇気を　今は持ちたい<br>
+							同じ未来に手を伸ばし</p>
+						<p>
+							優しい溫もりに　いつまでも觸れたまま<br>
+							微笑みは憂いなく　不安の欠片もなく<br>
+							目の前の君が眩しくて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-h2-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

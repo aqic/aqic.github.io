@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>哀　戦士 - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場用「機動戦士ガンダムⅡ 哀・戦士」 （１９８１）</div>
+
+                    <div class="LyricTitle">哀　戦士</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">井上大輔</div>
+                    <div class="LyricStaff">作曲、編曲：井上大輔<br>作詞：井荻麟</div>
+
+                    <div class="LyricText">
+						<p>
+							哀　ふるえる哀　それは別れ唄<br>
+							ひろう骨も燃えつきて　ぬれる肌も土にかえる<br>
+							荒野をはしる死神の列　黒くゆがんで　真赤に燃える</p>
+						<p>
+							哀　生命(いのち)の哀　血の色は大地にすてて<br>
+							新たな時をひらくか　生き残る　哀戦士たち<br>
+							荒野をはしる死神の列　黒くゆがんで　真赤に燃える</p>
+						<p>
+							死にゆく男たちは　守るべき女たちに<br>
+							死にゆく女たちは　愛する男たちへ<br>
+							何を賭けるのか　何を残すのか<br>
+							I pray, pray to near by the New Day</p>
+						<p>
+							哀　かなしみの哀　いまは残るだけ<br>
+							名を知らぬ戦士を討ち　生きのびて血へど吐く<br>
+							疾風のごとき死神の列　あらがうすべは<br>
+							わが手にはない</p>
+						<p>
+							死にゆく男たちは　守るべき女たちに<br>
+							死にゆく女たちは　愛する男たちへ<br>
+							戦う男たちは　故郷の女たちに<br>
+							戦う女たちは　信じる男たちへ<br>
+							何を賭けるのか　何を残すのか<br>
+							I pray, pray to near by the New Day</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

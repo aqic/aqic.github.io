@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>月影でもう一度 - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">月影でもう一度</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">山崎桜(玉川紗己子)</div>
+
+                    <div class="LyricText">
+						<p>
+							キラめいてる<br>
+							私なら　Sweet on you<br>
+							ふりまくのよ　Honey Kiss<br>
+							まとわるのは　シフォンのドレスだけね</p>
+						<p>
+							気軽には　Stop!<br>
+							近付かないでね<br>
+							瞳で合図して<br>
+							微笑みあうまでは　遠くで見ていて</p>
+						<p>
+							☆Shiny Shiny moon<br>
+							　Shiny moon and silent night<br>
+							　So beaming star for tonight<br>
+							　月影が横顔に<br>
+							　かげりをつけて行くわ</p>
+						<p>
+							★そこまでよ　もう少し<br>
+							　おしゃれして出直して<br>
+							　この恋を　つかむのは<br>
+							　素直じゃなきゃ許せないの<br>
+							　Sorry!</p>
+						<p>
+							百の言葉<br>
+							並べても　Feel so bad<br>
+							感じないの　Love me more<br>
+							誰かとおそろいの恋ならいらない</p>
+						<p>
+							Shiny Shiny moon<br>
+							Shiny moon and silent night<br>
+							So beaming star for tonight<br>
+							月影があなたの<br>
+							心を照らして揺れる</p>
+						<p>
+							※もう一度　出逢うなら<br>
+							　その時はハズさずに<br>
+							　この恋を　手に入れて<br>
+							　感動させてみてよ　ねえ<br>
+							　Baby?</p>
+						<p>
+							☆Ｒｅｐｅａｔ<br>
+							★Ｒｅｐｅａｔ<br>
+							※Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

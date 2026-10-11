@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>She's Got the Power - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">North American "Sailor Moon" TV Series</div>
+
+                    <div class="LyricTitle">She's Got the Power</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Stan Bush</div>
+
+                    <div class="LyricText">
+						<p>
+							A crash of thunder<br>
+							A brilliant flash of light<br>
+							A battle has begun<br>
+							And only one will win the fight</p>
+						<p>
+							Danger in the air<br>
+							Destroying everything in sight<br>
+							The time has come to right the wrong<br>
+							With Prism Power might!</p>
+						<p>
+							She's got the power<br>
+							Oh, She's got the power<br>
+							She's got the power<br>
+							Yeah, She's got the power<br>
+							She's got the power<br>
+							Oh, She's got the power<br>
+							She's got the power<br>
+							Oh, She's got the power</p>
+						<p>
+							A desperate struggle<br>
+							The strongest takes it all<br>
+							The battle rages on<br>
+							Until the weakest finally fall</p>
+						<p>
+							A vision fills her heart<br>
+							And gives her strength that's pure and true<br>
+							And when it seems that all is lost<br>
+							She knows what she must do</p>
+						<p>
+							She's got the power<br>
+							Oh, She's got the power<br>
+							She's got the power<br>
+							Yeah, She's got the power<br>
+							She's got the power<br>
+							Oh, She's got the power<br>
+							She's got the power<br>
+							Oh, She's got the power</p>
+						<p>
+							Power, power!<br>
+							oooohhhh....<br>
+							Power, power!<br>
+							oooohhhh....<br>
+							Power...<br>
+							She's got the power<br>
+							Oh, she's got the power</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

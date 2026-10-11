@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>うれし涙 - 電影少女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「電影少女」オープニング・テーマ</div>
+
+                    <div class="LyricTitle">うれし涙</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">酒井法子</div>
+                    <div class="LyricStaff">編曲：清水信之<br>作詞、作曲：遠藤京子</div>
+
+                    <div class="LyricText">
+						<p>
+							日曜日は　一人の日<br>
+							ピーチバイを焼いたあと<br>
+							洗濯物干すように<br>
+							新呼吸で寝そべった</p>
+						<p>
+							ふるえる胸に手を当て<br>
+							見上げる青すぎる空<br>
+							愛する人の名前を<br>
+							小さく呼んでみた　やさしくやさしく</p>
+						<p>
+							＊うれし涙がホロリ　ためいきと一緒に<br>
+							　こんあわたしが　人を愛せる<br>
+							　事がうれしくて<br>
+							　うれし涙でかすむ　いつもと違う空を<br>
+							　心を覗くように　いつまででも見てた<br>
+							　一人ずっと見てた</p>
+						<p>
+							日曜日は不思議な日<br>
+							一日はゆうくりと<br>
+							暮れながらも　一番に<br>
+							大事な事　教えるの</p>
+						<p>
+							幼い自分の事を<br>
+							深く見つめてみたり<br>
+							愛する人の未来を<br>
+							心に描いたり　やさしくやさしく</p>
+						<p>
+							うれし涙が光る　愛しい季節の中<br>
+							やっとここまで　来たねと言える<br>
+							恋がうれしくて</p>
+						<p>
+							うれし涙をそっと　見守る高い空を<br>
+							生まれ変わったように<br>
+							いつまででも見てた<br>
+							一人ずっと見てた</p>
+						<p>
+							＊くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-video-girl-ai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>地球儀 - 聖闘士星矢</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Saint Seiya the Hades Chapter Sanctuary OP</div>
+
+                    <div class="LyricTitle">地球儀</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">松澤 由美</div>
+                    <div class="LyricStaff">作詞：松澤 由美，高井麗<br>作曲：松澤 由美<br>編曲：西田 マサラ，Yumimania</div>
+
+                    <div class="LyricText">
+						<p>
+							涙よりもやさしい歌を悲しみよりそのぬくもりを<br>
+							世界がそんな簡単にかわるとは思わないけど<br>
+							静かに闇を浄化して　歩いて歩いてみようお思う<br>
+							ゆっくりでも近づけるかな？　夢のかけら大好きな人<br>
+							思い描いた　愛の形は　ずっとずっと探しつづけて<br>
+							あなたの為にできることなんてたいしたことないかもしれない<br>
+							でもそれでもふれていたいよ　悲しみよりそのぬくもりを<br>
+							くるくるまわる　地球儀　くるくるかわる　時間<br>
+							世界のはてに　愛を喜びの先に......夢を</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saintseiya-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

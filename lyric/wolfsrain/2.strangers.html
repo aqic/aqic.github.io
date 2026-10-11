@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Strangers - WOLF'S RAIN</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Wolf's Rina</div>
+
+                    <div class="LyricTitle">Strangers</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							We’ve found a kind of paradise in a flowers bloom.<br>
+							We’ve seen the end of a mystic land so close it meets the parting sun.<br>
+							We’ve shared the thoughts that two could share, we feel the truth magic that we send..</p>
+						<p>
+							Searching for something new<br>
+							Isle of Gold in flowers bloom</p>
+						<p>
+							We’ve heard a kind of paradise beyond the deserts dunes.<br>
+							We’ve walked the earth in solitude. so cold we need the warmth of san.<br>
+							We’ve lived the life that we could live, we see truth magic that<br>
+							Begins…….</p>
+						<p>
+							Searching for something new<br>
+							Isle, of Gold in flowers bloom</p>
+						<p>
+							We’ve found a kind of paradise, below a sky so new.<br>
+							We’ve weaved a web of mystery so wide, we need the light of day.<br>
+							We’ve worn the cloak of secret lives, we’ve seen the truth. Magic that we send….</p>
+						<p>
+							Searching for something new<br>
+							Isle, of Gold in flowers bloom</p>
+						<p>
+							So when will it end?<br>
+							So when, when will we meet. My friend?</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-wolfsrain-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

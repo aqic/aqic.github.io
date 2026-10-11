@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">カードキャプターさくら</span><span class="cn">（魔卡少女樱）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+					<div class="disc-head"><span class="disc-name">カードキャプターさくら</span><span class="disc-sub">14 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.arigatou.html">《ありがとう》</a></li>
+						<li class="LyricItem"><a href="2.okashinouta.html">《おかしのうた》</a></li>
+						<li class="LyricItem"><a href="3.kokonikite.html">《ここに来て》</a></li>
+						<li class="LyricItem"><a href="4.platinum.html">《プラチナ》</a><span class="note">- 「カードキャプターさくら」</span></li>
+						<li class="LyricItem"><a href="5.catch.html">《Catch You Catch Me》</a></li>
+						<li class="LyricItem"><a href="6.fruitscandy.html">《FRUITS CANDY》</a><span class="note">- 「カードキャプターさくら」</span></li>
+						<li class="LyricItem"><a href="7.groovy.html">《Groovy!》</a></li>
+						<li class="LyricItem"><a href="8.honey.html">《Honey》</a></li>
+						<li class="LyricItem"><a href="9.onlyone.html">《一人占め》</a><span class="note">- 「カードキャプターさくら」</span></li>
+						<li class="LyricItem"><a href="10.tobiraoakete.html">《扉をあけて》</a></li>
+						<li class="LyricItem"><a href="11.ashitae.html">《明日へのメロディー》</a></li>
+						<li class="LyricItem"><a href="12.chun.html">《春宵情歌》</a></li>
+						<li class="LyricItem"><a href="13.chuncn.html">《春宵情歌》</a></li>
+						<li class="LyricItem"><a href="14.tooi.html">《遠いこの街で》</a></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

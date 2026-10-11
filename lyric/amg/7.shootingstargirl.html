@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>流れ星を待つ少女 - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「あぁっ女神さまっ Singles」収録曲</div>
+
+                    <div class="LyricTitle">流れ星を待つ少女</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ウルド</div>
+
+                    <div class="LyricText">
+						<p>
+							流れ星を待つ　少女の夢<br>
+							夜の宇宙の闇に　溶けたよ<br>
+							あどけなさも消えた　深い悲しみ<br>
+							願いごと叶うまで　星空にひとり</p>
+						<p>
+							　話してごらん　涙の理由を<br>
+							　小さな胸に刺さる　薔薇のような棘を</p>
+						<p>
+							落ちる涙　流星なら<br>
+							千の願い　叶うから<br>
+							頬をつたう涙　止めないで</p>
+						<p>
+							恋がひとつ　生まれるたび<br>
+							宇宙を駆ける　星になる<br>
+							悲しみまで　そっと連れ去る</p>
+						<p>
+							泣き疲れたあと　少女はふと<br>
+							広い宇宙に　海を感じた<br>
+							呑み込まれてしまう　過去も涙も<br>
+							ペガサスの走る波　押し寄せた勇気</p>
+						<p>
+							　すぐに笑顔に　戻れないけど<br>
+							　心に芽生えたのは　しあわせの種さ</p>
+						<p>
+							いま見えてる　星がすべて<br>
+							遠い過去の　輝きなら<br>
+							幾光年未来も　夜は来る</p>
+						<p>
+							小さな胸　痛めていた<br>
+							初めて知る　さよならも<br>
+							流れ星が宇宙に　運ぶよ</p>
+						<p>
+							願いひとつ叶う<br>
+							昨日よりも　奇麗だよ<br>
+							頬をつたう涙　乾いたね</p>
+						<p>
+							恋がひとつ　生まれるたび<br>
+							宇宙を駆ける　星になる<br>
+							悲しみまで　そっと連れ去る</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

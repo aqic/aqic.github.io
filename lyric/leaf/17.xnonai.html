@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>形のない街を目指して - Leaf</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">こみっくパーティー</div>
+
+                    <div class="LyricTitle">形のない街を目指して</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KAYA</div>
+                    <div class="LyricStaff">作詞：小山 裕<br>作曲：小山 裕<br>编曲：豆田将</div>
+
+                    <div class="LyricText">
+						<p>
+							遠くの空が明るく見えた そして僕らは歩き始めた<br>
+							泥濘に足をとられなから 形のない街を目指して<br>
+							心の中のポケットには 覚えたての大人がいっぱい<br>
+							制服を脱いだ僕らには 風は少し冷た過ぎた</p>
+						<p>
+							「いったい僕は誰かろう...」 時々そんなことを想う<br>
+							校舎の外の世界では 誰もがまるでチエスのコマさ</p>
+						<p>
+							君のために僕がいて 僕のために君が<br>
+							そう思えば誰もが 誰かのために必要さ</p>
+						<p>
+							幼い頃に信じていたもの 決して僕らは疑わなかった<br>
+							心の中に生き続けるものは いつか形になるはずさ</p>
+						<p>
+							｢なぜ僕は産まれてきたの...｣ 時々そんなことを想う<br>
+							僕が座ったこの椅子は 回り続けるメリーゴーランド</p>
+						<p>
+							Woo ... ずっと探していた<br>
+							Woo ... たどり着く場所とは<br>
+							Woo ... 君かもしれない<br>
+							Woo ... そうおもうことで<br>
+							もう心を疑わずにすむはずさから</p>
+						<p>
+							君のそばに僕がいて 僕のそばに君が<br>
+							そう誰もが大切な 誰かのために</p>
+						<p>
+							君のために僕がいて 僕のために君が<br>
+							そう思えば誰もが 誰かのために必要さ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-leaf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

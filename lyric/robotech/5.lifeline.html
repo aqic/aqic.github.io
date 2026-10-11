@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lifeline - Robotech</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Robotech] Insert Song</div>
+
+                    <div class="LyricTitle">Lifeline</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Michael Bradley</div>
+                    <div class="LyricStaff">Composed by: Ulpio Minucci and Arlon Ober</div>
+
+                    <div class="LyricText">
+						<p>
+							It has started somehow -<br>
+							Cross words yelled,<br>
+							Friendship felled,<br>
+							And two planets at war now.<br>
+							Single minded missiles fly,<br>
+							Streaking past, Earthbound,<br>
+							And no one really knows why;<br>
+							No one really knows why...<br>
+							Lifeline, lifeline.<br>
+							Drowning in dreams.<br>
+							Throw me your heartline -<br>
+							Hold me in your arms<br>
+							And stop these horror trips;<br>
+							Your lips erase my visions of apocalypse.</p>
+						<p>
+							Cry out for mankind<br>
+							Suddenly lost.<br>
+							Global holocaust.<br>
+							Thought it may be<br>
+							Only in my mind.<br>
+							Single minded missiles fly,<br>
+							Streaking past, Earthbound,<br>
+							And no one really knows why...</p>
+						<p>
+							Lifeline, lifeline.<br>
+							Drowning in dreams.<br>
+							Throw me your heartline -<br>
+							Hold me in your arms<br>
+							And stop these horror trips;<br>
+							Your lips erase my visions of apocalypse.</p>
+						<p>
+							Through star studded skies<br>
+							Steel rain drops fall<br>
+							In fiery balls<br>
+							And tears fill my eyes.</p>
+						<p>
+							Lifeline, lifeline.<br>
+							Drowning in dreams.<br>
+							Throw me your heartline -<br>
+							Hold me in your arms<br>
+							And stop these horror trips;<br>
+							Your lips erase my visions of apocalypse.</p>
+						<p>
+							Lifeline, lifeline.<br>
+							Throw me your heartline.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-robotech-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

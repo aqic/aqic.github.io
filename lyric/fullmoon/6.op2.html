@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Rock'N Roll Princess - 満月をさがして</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Rock'N Roll Princess</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">The*Scanty</div>
+
+                    <div class="LyricText">
+						<p>
+							{Rock'N Roll Princess になって<br>
+							Rock Spirit 躍り出す<br>
+							トキメク Oh Rock Star<br>
+							愛と言う悲鳴上げて</p>
+						<p>
+							Hello 合図に始まる High School Days<br>
+							いつものお決まり授業に手を振るわ</p>
+						<p>
+							Goodnight 合図に Teddy とピロートーク<br>
+							胸いっぱいの愛を星空に誓うの</p>
+						<p>
+							水玉とチェックつぎはぎされた Pants<br>
+							不揃いの足踏みも Cool な Step に</p>
+						<p>
+							Rock'N Roll Princess になって<br>
+							Rock Spirit 躍り出す<br>
+							キラメク Oh Rock Princess<br>
+							リバイバル悲鳴上げて}</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fullmoon-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

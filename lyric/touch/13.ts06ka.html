@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>哀しみのカレリア - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ ～さよならの贈り物～ オリジナルサウンドトラック音楽編</div>
+
+                    <div class="LyricTitle">哀しみのカレリア</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ブレッド＆バター</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							港を離れる船から<br>
+							花束　放って<br>
+							汽笛に耳を塞ぎ<br>
+							帰らぬ人の名　叫んだ</p>
+						<p>
+							二人　肩を寄せて<br>
+							暮らしていたね<br>
+							都会の片隅で</p>
+						<p>
+							一緒に行けなくて<br>
+							許してねって<br>
+							君が泣いているよ</p>
+						<p>
+							夢をひとつも叶えられずに<br>
+							哀しかったよ  オーロラの街で出会った<br>
+							異国の少女が<br>
+							君の写真　指さし<br>
+							涙で十字架切ったよ</p>
+						<p>
+							逢えて　うれしかったと<br>
+							切ない声が<br>
+							胸をしめつける</p>
+						<p>
+							想いでを固めた<br>
+							雪の礫で背中　殴りつける<br>
+							君の幻影...</p>
+						<p>
+							そこから見えるかい<br>
+							二人夢見た　流氷の海さ</p>
+						<p>
+							何でも分けあって<br>
+							生きてきたから<br>
+							命さえも君にあげたかったよ<br>
+							あぁ 哀しみの　 あぁ カレリア</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>青空に向かって - F&amp;C</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</div>
+
+                    <div class="LyricTitle">青空に向かって</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">榎本つかさ &amp; 日野森あずさ
+○（栗原みきこ &amp; 長崎みなみ）</div>
+                    <div class="LyricStaff">作詞：小澤しのぶ<br>作曲·編曲：荒牧賢治</div>
+
+                    <div class="LyricText">
+						<p>
+							歩道橋　かけのぼる　靴音<br>
+							いつもと　少しだけ　違うよ<br>
+							リボンも　ゆれてる</p>
+						<p>
+							「おはよう」の声で　振り返る<br>
+							そよ風　連れてくる笑顔が　そこにいる</p>
+						<p>
+							＊何かいいこと　起こりそうな<br>
+							　予感のアンテナ　ふるえているみたい</p>
+						<p>
+							　心のまま　走りだすよ<br>
+							　青空に向かって<br>
+							　待ち切れない　樂しい未来を<br>
+							　さあ　はじめよう</p>
+						<p>
+							カレンダーめくるたび　增えてく　思い出<br>
+							砂時計みたいに<br>
+							流れていくけど</p>
+						<p>
+							胸の奥　トキメキがくすぐる　瞬間<br>
+							やわらかい光で　あふれてる</p>
+						<p>
+							まばたきさえもしてられない<br>
+							ドキドキ　鼓動が　もう止められないの</p>
+						<p>
+							心のまま　走りだすよ<br>
+							青空に向かって<br>
+							水たまりも　大きくジャンプ<br>
+							さあ　でかけよう</p>
+						<p>
+							AH-　今すぐに</p>
+						<p>
+							＊Repeat</p>
+						<p>
+							AH-　今すぐに</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fandc-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

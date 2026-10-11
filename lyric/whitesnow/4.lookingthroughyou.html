@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Looking Through You - 新白雪姫伝説プリーティア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">新白雪姬伝說 Kei's Image song</div>
+
+                    <div class="LyricTitle">Looking Through You</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">成瀬誠</div>
+
+                    <div class="LyricText">
+						<p>
+							No noそんな赤じゃない<br>
+							もっと過激スカーレット<br>
+							口紅選ぶ権利は<br>
+							kissの相手にあるはずさ</p>
+						<p>
+							No noそんな青いじゃない<br>
+							血管色のグレイパーパル<br>
+							閉じた瞳見つめれ方が<br>
+							アイシャドーも決めるべきさ</p>
+						<p>
+							*Ah-a I'm looking through you<br>
+							俺は光　君の光<br>
+							輝けるだけ　輝かせて　やることも出来る<br>
+							Ah-a I'm looking through you<br>
+							思いのまま　望みのまま<br>
+							さらけ出して　羽ばだけるだけ　羽ばたかせ<br>
+							愛で撃ち落とthrough you　身も心も</p>
+						<p>
+							No noそんなnoじゃない<br>
+							しらけたふうなエクスキューズ<br>
+							振られる側の美意識ぐらい<br>
+							考えてくれなくちゃ</p>
+						<p>
+							No noそんなyesじゃない<br>
+							落とした俺のエクスタシー<br>
+							すぐ後悔に変えるなんて<br>
+							女の義務を果たさないで</p>
+						<p>
+							Ah-a I'm looking through you<br>
+							俺は鏡　君の鏡<br>
+							甘やかすだけ　甘やかせて　いることも出来る<br>
+							Ah-a I'm looking through you<br>
+							きれいのまま　すてきのまま<br>
+							旅り出して　傷つけるだけ　傷つかせ<br>
+							愛で助けでthrough you　今日も明日も</p>
+						<p>
+							* Repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-whitesnow-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>子供扱いしないでよ - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ああっ女神さまっ」</div>
+
+                    <div class="LyricTitle">子供扱いしないでよ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">久川　綾</div>
+
+                    <div class="LyricText">
+						<p>
+							空が雨を捨てる午後のステーション<br>
+							はしゃぐような白い傘が<br>
+							あなた待ちわびる</p>
+						<p>
+							一昨日の電話で告白したから<br>
+							雨の中のふたりきりは<br>
+							夢が膨らむの</p>
+						<p>
+							こぼれる笑みを隠す小っちゃな白い傘と<br>
+							色を揃えたゆったりのコート<br>
+							気付いて目印なら足もと赤いブーツ<br>
+							恋のステップを踏むわ</p>
+						<p>
+							現れたあなたは花柄の傘で<br>
+							差しかけてる綺麗な女<br>
+							肩を寄せていた</p>
+						<p>
+							紹介するよボクの小っちゃな恋人さって<br>
+							子供扱いしないでよなにさっ<br>
+							投げ出す白い傘と駆け出す赤いブーツ<br>
+							恋を振り切って逃げた</p>
+						<p>
+							やさしくしなくていいの夢中でなくていいの<br>
+							子供扱いしないでよなにさっ<br>
+							悲しい場面だから空も泣き続けてね<br>
+							頬の雨つぶが落ちた</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

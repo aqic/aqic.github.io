@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>愛の謳 - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">愛の謳</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Every Little Thing</div>
+
+                    <div class="LyricText">
+						<p>
+							この地に力を<br>
+							野に花を　心に愛を…</p>
+						<p>
+							ねえ　この耳を押しあてて<br>
+							聞こえた命のざわめき<br>
+							そう　覚えてる<br>
+							暖かな鼓動に包まれてたこと</p>
+						<p>
+							誰かの声も　誰かの傷も<br>
+							聞こえないフリをする<br>
+							そんな醜いカオに<br>
+							騙されないで<br>
+							今スグに　愛に生きて</p>
+						<p>
+							この世に生まれて<br>
+							あなたの目に<br>
+							何を映して<br>
+							今　この地に力を<br>
+							野に花を<br>
+							心に愛を…</p>
+						<p>
+							ねえ　傷ついたその羽を<br>
+							癒せる術さえ知らずに<br>
+							そう<br>
+							どこまでも僕達は歩いて<br>
+							また　それを背負い<br>
+							どんな時代にも<br>
+							どんな場所でも<br>
+							確かな愛はある<br>
+							だから震えることも<br>
+							嘆き悲しむこともない<br>
+							愛の中へ<br>
+							生ぬるい風に<br>
+							打たれ僕は<br>
+							何を残して<br>
+							今　この地に力を<br>
+							野に花を<br>
+							心に愛を…</p>
+						<p>
+							そして<br>
+							誰かの声も　誰かの傷も<br>
+							聞こえないフリをする<br>
+							そんな醜いカオに<br>
+							騙されないで<br>
+							今スグに　愛に生きて</p>
+						<p>
+							この世に生まれて<br>
+							あなたの目に<br>
+							何を映して<br>
+							今　生ぬるい風に<br>
+							打たれ僕は<br>
+							何を残して<br>
+							この地に力を<br>
+							野に花を<br>
+							心に愛を…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

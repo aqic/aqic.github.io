@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>そして世界は今日も始まる(ちぃVer.) - ちょびっツ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">そして世界は今日も始まる(ちぃVer.)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">田中理恵</div>
+                    <div class="LyricStaff">作詞：Nishi Naoki<br>作曲：高波敬太郎<br>編曲：高波敬太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							朝になって　光浴びて　あなたのことばかり想う<br>
+							澄んだ空気　小鳥の声　いつものことなのに<br>
+							涙がこぼれて止まらないの<br>
+							どうしてこんなに悲しくなるの</p>
+						<p>
+							電車の窓　映る景色　あなた行方知れず<br>
+							コーヒーカップ　砂糖ふたつ　早く逢いたくなる<br>
+							今日世界が終わるなんて<br>
+							思って笑う　少し笑う</p>
+						<p>
+							夜の風が　空を巡り　あなたのいる場所を包む<br>
+							耳に慣れた　やさしい声　いつもの声なのに<br>
+							涙がこぼれて止まらないの<br>
+							どうしてこんなに優しくなるの</p>
+						<p>
+							雨のにおい　扉の音　わたしドキドキして<br>
+							季節はずれ　惚けた写真　早く見せたくなる<br>
+							今あなたが現れたら<br>
+							時間が止まる　息も止まる</p>
+						<p>
+							あなたに逢えば<br>
+							いつのまにか　なにもかもが　それは生まれてきて<br>
+							次の言葉　次の視線　早く知りたくなる<br>
+							今日ふたりが出会うみたい<br>
+							なんだか　とても　少し　フフフ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-chobits-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

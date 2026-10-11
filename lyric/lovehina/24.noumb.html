@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>傘がないのよ - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">LOVE HINA１～なる・しのぶ・みつね編～ IM</div>
+
+                    <div class="LyricTitle">傘がないのよ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">野田順子（紺野みつね）</div>
+                    <div class="LyricStaff">作詞：工藤哲雄<br>作曲：五島翔<br>編曲：五島翔</div>
+
+                    <div class="LyricText">
+						<p>
+							窓を開ければ　空はどんより<br>
+							天気予報も「今夜　雨になります」<br>
+							服を着替えて　バッグひとつで<br>
+							酒落たムードの　お店を探すわ<br>
+							傘がないの？　誰かに聞かれたなら<br>
+							あら雨なの？　ぼつりと答えて<br>
+							甘い出会い　すてきなめぐりり会いを<br>
+							夢見て酔うのよ</p>
+						<p>
+							彼は遅いな・・・　そんな顔して<br>
+							時計をみれば　いつの間にか　夜更けね<br>
+							さすがマスター　苦労人らしく<br>
+							そっと置き傘　やさしく差し出す<br>
+							傘じゃないの！　私が待ってるのは<br>
+							息もとまる　出会いが欲しいの<br>
+							いつか来るわ　小指に赤い糸を<br>
+							結んだあなたが</p>
+						<p>
+							傘をさして　ふたりで歩きたいな<br>
+							どこにいるの？　私のいい人<br>
+							熱い出会い　運命感じるまで<br>
+							夢みて　飲むのよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

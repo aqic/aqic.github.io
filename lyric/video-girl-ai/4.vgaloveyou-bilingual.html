@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>好きなんです（日中対訳） - 電影少女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「電影少女」挿入歌</div>
+
+                    <div class="LyricTitle">好きなんです（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">木村真紀</div>
+                    <div class="LyricStaff">作詞・作曲：木村真紀<br>編曲：岡田　徹、棚谷祐一</div>
+
+                    <div class="LyricText">
+						<p>
+							だって……<br>
+							好きなんです　あの人のこと<br>
+							他に何の理由【わけ】もない<br>
+							好きなんです　あの人のこと<br>
+							いつも　そばにいたいの</p>
+						<p>
+							どうして？と　聞かないで<br>
+							私にも　わからない<br>
+							何度も　したわ<br>
+							自分の心　説得したわ<br>
+							けれども　だめ　みたいね<br>
+							うしろを　向いても<br>
+							心の針は　あの人　指して動かない</p>
+						<p>
+							痛む傷を抱きしめて<br>
+							ひびく声を振りすてて<br>
+							走ってゆく　その腕の中が<br>
+							ずっと　バラ色と思うわけじゃない</p>
+						<p>
+							でも……　でも<br>
+							好きなんです<br>
+							泣きたい　くらいに<br>
+							しあわせより　大切なの<br>
+							好きなんです　あの人のこと<br>
+							私……<br>
+							好きなんです</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							其实……<br>
+							就是爱你<br>
+							什么理由也没有<br>
+							就是爱你<br>
+							想要永远在你身旁</p>
+						<p>
+							想问：到底怎么回事？<br>
+							不会有回答的<br>
+							我自己也不明白<br>
+							就这样想了多少次<br>
+							也把自己的心说服了多少次<br>
+							哪怕把我调转了方向<br>
+							心中的指针<br>
+							指向你也不会动摇</p>
+						<p>
+							抱住疼痛的伤口<br>
+							却没有与你的共鸣<br>
+							即使跑着到怀中<br>
+							也不会觉得有玫瑰色（乐观的）</p>
+						<p>
+							可是……可是<br>
+							即使想哭<br>
+							也还是喜欢啊<br>
+							最重要的幸福<br>
+							就是爱你<br>
+							我……<br>
+							就是爱你</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-video-girl-ai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

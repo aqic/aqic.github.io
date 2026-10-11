@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Hunger - トランスフォーマー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Transformers The Movie</div>
+
+                    <div class="LyricTitle">Hunger</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Spectre General</div>
+                    <div class="LyricStaff">Producer: Spencer Proffer for Pasha</div>
+
+                    <div class="LyricText">
+						<p>
+							When I see what I want<br>
+							I'm going to take it<br>
+							If it's against some law<br>
+							You can bet I'll break it<br>
+							My need to feed<br>
+							Gives me the will to survive<br>
+							I gotta find it fast<br>
+							To keep me alive</p>
+						<p>
+							I can't believe my hunger<br>
+							Hunger<br>
+							I want it so bad I can taste it<br>
+							It drives me mad to see it wasted<br>
+							When I need it so bad that it's burnin' me<br>
+							I'm hungry</p>
+						<p>
+							I'd do anything to get it and feel no regret<br>
+							Time is running out and I ain't found it yet</p>
+						<p>
+							I can't believe my hunger<br>
+							Hunger<br>
+							I want it so bad I can taste it<br>
+							It drives me mad to see it wasted<br>
+							When I need it so bad that it's burnin' me<br>
+							I'm hungry</p>
+						<p>
+							I gotta find it fast to keep me alive<br>
+							Time is running out and I ain't found it yet<br>
+							Time is running out and I ain't found it yet<br>
+							And it's burnin' me<br>
+							And it's burnin' me</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-transformers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

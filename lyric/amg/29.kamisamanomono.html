@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>神さまの贈りもの - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">神さまの贈りもの</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Goddess Family Club</div>
+                    <div class="LyricStaff">作詞：長谷川空<br>作曲：川井憲次<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							（喜）悲しい過去があって　涙も見せてくれる<br>
+							　　素直なその瞳に　うつるボク</p>
+						<p>
+							（由）言葉をあやつるひと　好きにはなれないんだ<br>
+							　　仕草や　まばたきでも　気持ち理解るね</p>
+						<p>
+							（綾）片思い長くて　手をつなげない<br>
+							　　ポケットしまった　指にふれよう</p>
+						<p>
+							（３）最初のキスをするよ　最後の女性になるね<br>
+							　　神さまの贈りもの　キミの笑顔は</p>
+						<p>
+							（３）海風　渚はしる　冷たい波の飛沫<br>
+							　　仔犬を遊ばせてる　彼女とても綺麗</p>
+						<p>
+							（綾）ねえ私から彼を　奪った彼女がいる<br>
+							　　言いがかりね本当は　私嫌われたの</p>
+						<p>
+							（由）好きと３度つぶやいて<br>
+							　　あきらめた恋は　數えきれなくて</p>
+						<p>
+							（喜）神さま　もしあなたが　大きな愛のために<br>
+							　　私を試すのなら　負けてしまうきっと…</p>
+						<p>
+							（綾）やさしい気持ちになる　ふれても見つめてても<br>
+							　　ボクならここにいるよ　キミが好き</p>
+						<p>
+							（由）なんにも話さないで　涙はきれいだけど<br>
+							　　ふたりが出逢うための　過去の悲しみ</p>
+						<p>
+							（喜）人混みに紛れて　歩くときにも<br>
+							　　恋する速度は　キミの歩幅で</p>
+						<p>
+							（３）ずっとボクの腕を　放しちゃだめ<br>
+							　　神さま　チャンスをくれた</p>
+						<p>
+							　　キミに逢えて夢は　かなったから<br>
+							　　翼をたたんでしまおう<br>
+							　　ひとりきりじゃないんだね</p>
+						<p>
+							（３）いいえあなたの腕　放さないわ<br>
+							　　神さま　感謝をしたい</p>
+						<p>
+							　　めぐり逢えて夢は　かなったから<br>
+							　　翼はたたんでしまうの<br>
+							　　笑顔向けるひとがいる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

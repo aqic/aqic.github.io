@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Back to the Ground（日中対訳） - H2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「H2」</div>
+
+                    <div class="LyricTitle">Back to the Ground（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">鵜飼仁文</div>
+                    <div class="LyricStaff">作詞·作曲：鵜飼仁文<br>編曲：鵜飼仁文、岸利至</div>
+
+                    <div class="LyricText">
+						<p>
+							繰り返す季節には積み重ねる思い出<br>
+							子供の頃みたいに<br>
+							自由に空飛べると信じてみたくなる<br>
+							つまずいて　うつむいたままこぼれてる<br>
+							涙が光る　だけど</p>
+						<p>
+							＊Back to the Ground<br>
+							　傷ついてた翼を<br>
+							　笑顔で癒してくれる<br>
+							　Back to the Ground<br>
+							　この風とこの大地が<br>
+							　包んでくれる</p>
+						<p>
+							見慣れてた筈だった海岸沿い座って<br>
+							こんなに美しいと<br>
+							心洗われてる自分に驚いてる<br>
+							さび付いた古い校舎の木の香り<br>
+							まだ覚えてた　だから</p>
+						<p>
+							Back to the Ground<br>
+							消えかけてた無邪気さと<br>
+							純粋さを取り戻し<br>
+							Back to the Ground<br>
+							懐かしい優しさが今<br>
+							励ましてくれる</p>
+						<p>
+							人ごみに流されそうな毎日に<br>
+							疲れた時は　ここで</p>
+						<p>
+							＊繰り返し</p>
+						<p>
+							誰かが何を言っても気にしない<br>
+							自分を信じてるから<br>
+							いつかは　きっと　近づく<br>
+							果てしなに　大きな夢に<br>
+							La La La ……</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							反复的季节中 这片风声呼啸的大地就包围着我<br>
+							不断累积许许多多的回忆 因为我不管那些嗤短流长<br>
+							真想象孩堤时代一样 深信自己的能力<br>
+							深信自己可以翱翔天际 总有一天会接近目标<br>
+							跌倒了低下头泪眼婆娑 那些壮阔伟大的梦想<br>
+							泪眼闪着金光 但是...<br>
+							Back to the ground<br>
+							受伤的翅膀即可在笑脸下痊愈<br>
+							Back to the ground</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-h2-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

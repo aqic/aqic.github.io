@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Change The Life - 天使な小生意気</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Change The Life</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">三枝夕夏 IN　db</div>
+                    <div class="LyricStaff">作詞　U-ka　saegusa<br>作曲　Makoto　Miyoshi<br>編曲　Daisuke　Ikeda</div>
+
+                    <div class="LyricText">
+						<p>
+							プリクラだけで 白紙のスケジュール帳<br>
+							Change the life めざせリゾート トロピカル Vacation!<br>
+							カリフォルニア·サンシャイン浴びてサンタモニカへ<br>
+							彼と2人でマリブビーチ 愛を誓い合いたい</p>
+						<p>
+							だけどね…日付変更線 越えるとなると<br>
+							パパへの嘘もかなり勇気が必要(?)</p>
+						<p>
+							今すぐ飛びだそうよ うだうだしている場合じゃない<br>
+							今が旬のかけがえのない時<br>
+							親指だけじゃ限られた文字数でしか思いは伝わらない<br>
+							もっとね 体でハートで 感じようこの夏は</p>
+						<p>
+							悩みだらけで 思い出のない日記帳<br>
+							Change the life めざせリゾート トロピカル Vacation!<br>
+							ジャマイカでレゲエ マイアミでローラーブレード<br>
+							パレオ、モノイ、ヒナノビール タヒチでお昼寝</p>
+						<p>
+							Bura Bura フィジーでメケダンス<br>
+							プーケット、モルディブ、ボラカイ 女同士気軽な旅</p>
+						<p>
+							今すぐ飛び出そうよ うだうだしている場合じゃない<br>
+							今が旬のかけがえない時<br>
+							サプリメントだけじゃ肌荒れ防止だけで心の栄養は取れない<br>
+							もっとね 体でハートで 感じようこの夏は</p>
+						<p>
+							いつまでも夏は続くわけじゃない 乗り遅れないよう急いで<br>
+							夜が長くなってしまう前に</p>
+						<p>
+							今すぐ飛び出そうよ うだうだしている場合じゃない<br>
+							今が旬のかけがえない時<br>
+							親指だけじゃ限られた文字数でしか思いは伝わらない<br>
+							もっとね 体でハートで 感じようこの夏は</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-cheekyangel-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

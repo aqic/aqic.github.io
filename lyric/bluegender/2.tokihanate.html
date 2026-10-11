@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>解き放て！ - BLUE GENDER</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">解き放て！</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桑島法子</div>
+                    <div class="LyricStaff">作詞：及川眠子<br>作/編曲：斉藤英夫</div>
+
+                    <div class="LyricText">
+						<p>
+							{一筋の光を求め<br>
+							ひたすらどこまでも<br>
+							ただ彷徨う}　闇の中を<br>
+							悲しみに支配されてる<br>
+							心を抱きしめて　でも私は</p>
+						<p>
+							{あきらめに似た　ため息をつきながら<br>
+							傷つくことを恐れたくないよ　いつも}</p>
+						<p>
+							{Set me free now!</p>
+						<p>
+							さぁ解き放て　すべて　時の彼方に<br>
+							魂を縛るものを<br>
+							For my heart beat<br>
+							自由を武器に　きっと手に入れるのよ<br>
+							信じる力を　夢を　生きてゆくために}</p>
+						<p>
+							胸の奥　叫んでみても<br>
+							誰にも届かない<br>
+							そう言葉にしていかなきゃ<br>
+							運命という名の鎖<br>
+							手足をつながれて　いまあなたは</p>
+						<p>
+							自分の弱さ　あいまいに嘆くけど<br>
+							強くなろうとしなければ　変わらないよ</p>
+						<p>
+							Set you free now!</p>
+						<p>
+							さぁ解き放て　熱い鼓動のままに<br>
+							あなたを邪魔するものを<br>
+							For your heart beat<br>
+							思い出よりも　もっと輝く未来で<br>
+							誰より愛する人に　めぐり逢うために</p>
+						<p>
+							さぁ解き放て　すべて　時の彼方に<br>
+							魂を縛るものを<br>
+							For my heart beat<br>
+							自由を武器に　きっと手に入れるのよ<br>
+							信じる力を　夢を　生きてゆくために</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bluegender-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

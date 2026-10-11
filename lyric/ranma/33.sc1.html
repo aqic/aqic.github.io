@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>この世でいちばん、お正月が好き - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">【１月】</div>
+
+                    <div class="LyricTitle">この世でいちばん、お正月が好き</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">天道なびき</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲：川井憲次<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							コタツを出て　出迎えよう<br>
+							お年始来る　おじさんおばさん</p>
+						<p>
+							年に一度の　愛想笑い<br>
+							もらえるもんは　もらっておかなきゃ</p>
+						<p>
+							白く小さな　のし袋<br>
+							逢いたかったの　お年玉</p>
+						<p>
+							この世でいちばん　お正月が好き<br>
+							おせちに飽きても　お正月が好き</p>
+						<p>
+							ちり紙だって　気にしない<br>
+							包んでほしい　お年玉</p>
+						<p>
+							この世でいちばん　お正月が好き<br>
+							羽根つきヘタでも　お正月が好き</p>
+						<p>
+							おねーちゃんから２千円　(かすみ)なびき、大切に使うのよ。<br>
+							おとーさんから５千円　(早雲)いいなぁ、わしもほしいなぁ。<br>
+							九能ちゃんから１万円　(帯刀)なぜおまえにやらにゃいかんのだっ。<br>
+							居候のおじさんパンダでくれない　(パンダ)ぱ、ぱふぉっ？あぱ…ぱふぉ？(乱馬)なさけねぇおやじ。</p>
+						<p>
+							(なびき)貯金しとこ。</p>
+						<p>
+							この世でいちばん　お正月が好き<br>
+							テレビに飽きても　お正月が好き</p>
+						<p>
+							お正月が好き　お正月が好き</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

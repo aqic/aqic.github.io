@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>空を见上げて - 逮捕しちゃうぞ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">空を见上げて</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							ひとつ爱を失うたび<br>
+							目に映る全て　モノクロに见える<br>
+							二人よく行ったスタジアムの试合<br>
+							大切な日さえ　もうどうでもよくなっている</p>
+						<p>
+							大好きなものは　たとえあなたがいなくても<br>
+							大好きだって言いたいのに</p>
+						<p>
+							空を见上げて　泪こぼれないように<br>
+							风に摇れるフラッグ　色鲜やかな昨日<br>
+							空を见上げて　よく梦を语ったね<br>
+							どんな无谋な梦も叶いそうな气がした<br>
+							あの辉き嘘じゃないと言ってよ</p>
+						<p>
+							二ついつも买ったコ—ラ<br>
+							贩卖机の前　ふと手が止まる<br>
+							映画も自慢だった腕时计も<br>
+							もう见ることさえ　ないような周末</p>
+						<p>
+							ハ—トにあった　あなたの为のスペ—スを<br>
+							いったい何で埋められるの</p>
+						<p>
+							空を见上げて　泪こぼれないように<br>
+							ざわめく街の中で　消えそうな星数えた<br>
+							このまま远く　どこかへ行っちゃおうかな<br>
+							あなたのスケジュ—ルも　闻く必要もないのね</p>
+						<p>
+							大事なことは　自分で决めて行くんだ<br>
+							あなたはよく　そう言ってたね　忘れないわ</p>
+						<p>
+							空を见上げて　今梦を语ろう<br>
+							たとえ一人の道も　见失わないように<br>
+							空を见上げて　泪こぼれないように<br>
+							今年もやってくるわ　大好きな季节が<br>
+							新しい　私　早く迎えに行こう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-arrest-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

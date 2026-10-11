@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Wind and Wander - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Silvern～銀の月、迷いの森～（g-clef）</div>
+
+                    <div class="LyricTitle">Wind and Wander</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川田 まみ</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：中沢 伴行<br>編曲：中沢 伴行</div>
+
+                    <div class="LyricText">
+						<p>
+							肩をたたく朝の風が<br>
+							頬にかかる髪をはらいのけた<br>
+							おろしたての靴の音が　はしゃぎ出すよ<br>
+							あの通りを抜けて</p>
+						<p>
+							届かないと涙流した　あの日の文字<br>
+							滲むノートの端<br>
+							時は動き　ここから見える街の色も<br>
+							少し変わったけど…</p>
+						<p>
+							ding...<br>
+							鐘を鳴らそう<br>
+							僕らの明日（あした）が　限りなくあるように<br>
+							fine...<br>
+							天使が開く扉の向こう側に　歩き出そう</p>
+						<p>
+							陽が登って　月は満ちて<br>
+							雲は雨になって落ちてゆくよ<br>
+							今はすぐに過去になって<br>
+							ため息さえ　空に消えて行った</p>
+						<p>
+							余裕なんて少しもなくて<br>
+							探していた物も見失った<br>
+							何のために走ってるのか<br>
+							君とならば　見つけられそうだね</p>
+						<p>
+							bless...<br>
+							夢を語ろう<br>
+							世界の明日（あした）が　幸せであるように<br>
+							shine...<br>
+							いつもの場所で　同じ笑顔に<br>
+							今日も会えるように</p>
+						<p>
+							捨ててしまうことも出来ずに<br>
+							胸の奥で抱えて来たものを<br>
+							半分づつ分けて運ぼう<br>
+							止まりかけた靴も軽くなるよ</p>
+						<p>
+							ding...<br>
+							鐘を鳴らそう<br>
+							僕らの明日（あした）が　限りなくあるように<br>
+							fine...<br>
+							白いキャンバス<br>
+							七色の夢　二人　描いてゆこう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

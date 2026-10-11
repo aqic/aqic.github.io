@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>サクラサク - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ラブひな」オープニング・テーマ</div>
+
+                    <div class="LyricTitle">サクラサク</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+                    <div class="LyricStaff">作词：冈崎律子<br>作曲：冈崎律子<br>编曲：中川知司</div>
+
+                    <div class="LyricText">
+						<p>
+							屋根の上で空を仰ぐ　陽射しはうららか<br>
+							　見上げる空　体中元気がみなぎってく<br>
+							　ザツ・ソ・ワンダホ！　生きてるんだ！<br>
+							　やめられない　あきらめるだなんて</p>
+						<p>
+							☆途方に暮れた昨日にさよなら<br>
+							　ふつふつと湧き上がるこの気持ち<br>
+							　何度でも蘇る　花を咲かせよう<br>
+							　思い出はいつも甘い逃げ場所<br>
+							　だけど断ち切れ　明日を生きるため<br>
+							　祝福の時は来る　手を伸ばして</p>
+						<p>
+							　麗しの柔らかな素肌まだ手をとどかす<br>
+							　目を閉じれば膨らむイメエジみりょ沸くのかじよ<br>
+							　ザツ・ソ・ワンダホ！　生きてるんだ！<br>
+							　やめられない　その咲きを見たい</p>
+						<p>
+							　怒涛の日々は続くどこまでも<br>
+							　天国と地獄　行きつ戻りつ<br>
+							　何度でも蘇る　花を咲かせよう<br>
+							　走れ走れ　愛を手にするまで<br>
+							　それで苦しむなら望むところ<br>
+							　祝福の時は来る　手を伸ばして</p>
+						<p>
+							☆くりかえし</p>
+						<p>
+							　手を伸ばして　両手上げて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

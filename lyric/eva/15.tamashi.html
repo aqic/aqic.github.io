@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>魂のルフラン - 新世紀エヴァンゲリオン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">魂のルフラン</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高橋洋子</div>
+                    <div class="LyricStaff">作詞：及川眠子<br>作曲：大森俊之</div>
+
+                    <div class="LyricText">
+						<p>
+							私に還りなさい　記憶をたどり<br>
+							優しさと夢の水源へ<br>
+							もいちど星にひかれ　生まれるために<br>
+							魂のルフラン</p>
+						<p>
+							蒼い影につつまれた素肌が<br>
+							時のなかで　静かにふるえてる<br>
+							命の行方を問いかけるように<br>
+							指先は私をもとめる</p>
+						<p>
+							抱きしめてた運命のあなたは<br>
+							季節に咲く　まるではかない花<br>
+							希望のにおいを胸に残して<br>
+							散り急ぐ　あざやかな姿で</p>
+						<p>
+							私に還りなさい　生まれる前に<br>
+							あなたが過ごした大地へと<br>
+							この腕に還りなさい　めぐり逢うため<br>
+							奇跡は起こるよ　何度でも<br>
+							魂のルフラン</p>
+						<p>
+							祈るように　まぶた閉じたときに<br>
+							世界はただ闇の底に消える<br>
+							それでも鼓動はまた動きだす<br>
+							限りある永遠を捜して</p>
+						<p>
+							私に還りなさい　記憶をたどり<br>
+							優しさと夢の水源へ<br>
+							あなたも還りなさい　愛しあうため<br>
+							心も体もくりかえす<br>
+							魂のルフラン</p>
+						<p>
+							私に還りなさい　生まれる前に<br>
+							あなたが過ごした大地へと<br>
+							この腕に還りなさい　めぐり会うため<br>
+							奇跡は起こるよ　何度でも<br>
+							魂のルフラン</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-eva-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

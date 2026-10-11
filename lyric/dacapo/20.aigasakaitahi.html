@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>愛が咲いた日 - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">愛が咲いた日</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">鷺沢頼子（松来未祐）</div>
+
+                    <div class="LyricText">
+						<p>
+							私にも見えたの<br>
+							新しい未来が<br>
+							たいせつな笑顔に会えて</p>
+						<p>
+							ゆれる花の窓<br>
+							ちいさな思い出がほしかった<br>
+							あこがれに世界がそまる</p>
+						<p>
+							そっと涙の羽はとんで<br>
+							空からあなたのことを探していた</p>
+						<p>
+							めぐりあえた季節　まぶしくて<br>
+							明日を抱きしめたい胸　ふるえてるよ<br>
+							愛がもっと届くなら<br>
+							熱いこころを信じて<br>
+							I was made for love</p>
+						<p>
+							すれちがう景色はもどかしい運命<br>
+							もどかしい運命<br>
+							映し出すミラー</p>
+						<p>
+							遠い　遠いほど誰かに<br>
+							優しくなれるから<br>
+							悲しみも勇気のちから</p>
+						<p>
+							やがて涙の羽は消える<br>
+							「大好き」あなたに告げるその瞬間</p>
+						<p>
+							忘れないで　強く願う時<br>
+							明日は変わりはじめてる　かがやきへと<br>
+							愛の中に咲いた夢<br>
+							淡くときめいた日々の<br>
+							You are my dream</p>
+						<p>
+							愛は　愛はあなたへとあふれて<br>
+							明日の奇跡をはこぶ風が<br>
+							もっと　もっと届くまで<br>
+							熱いこころを信じて<br>
+							I was made for love</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

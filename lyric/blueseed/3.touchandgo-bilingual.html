@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Touch and Go!!（日中対訳） - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Blue Seed」エンディングテーマ</div>
+
+                    <div class="LyricTitle">Touch and Go!!（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+                    <div class="LyricStaff">作詞‧作曲‧編曲：松浦有希</div>
+
+                    <div class="LyricText">
+						<p>
+							いつのまにか　夢の中で二人<br>
+							キスをしていたの<br>
+							見詰め合って　ずっと前から<br>
+							ここにいたように</p>
+						<p>
+							どうかしてるね　ヘンな気持ち<br>
+							朝焼けが目にしみる<br>
+							青いリアル　胸の奥に　生まれて……</p>
+						<p>
+							☆カン違いしないでと<br>
+							　振り払った温もりに<br>
+							　ひかれてく自分が少しコワかったから<br>
+							　恋じゃなくていいなんて　迷わせてごめんね<br>
+							　きっとその分　私もせつなくなるのに</p>
+						<p>
+							このままでいられるのなら<br>
+							二人イイ友達よね<br>
+							だけど心は　呼吸のたび<br>
+							かたちを変えてく</p>
+						<p>
+							鏡の前で　映してみる<br>
+							ためらいや戸惑いを<br>
+							何のために　違う私　捜すの……</p>
+						<p>
+							別れぎわ　肩越しに<br>
+							かわした視線の意味は<br>
+							ひとことですべてを失うかもしれない<br>
+							恋じゃなくていいなんて　勝手な言い訳ね<br>
+							明日会ったら　どんな顔すればいいのよ</p>
+						<p>
+							☆繰り返し</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							为何两人不知不觉中　就在梦中相吻<br>
+							感觉在相逢的好久前　就在这了</p>
+						<p>
+							该怎么办　奇怪的心情　朝阳刺眼<br>
+							新的真实　在心深处　萌发…</p>
+						<p>
+							※说"别误会"　虽拒绝了你<br>
+							　却又被吸引的我其实有点害怕<br>
+							　说"不是爱情就好了"　使你误解真抱歉<br>
+							　那样其实我也很难受啊</p>
+						<p>
+							保持这样　两人就一直是好朋友了吧<br>
+							不过心　不知不觉　变了</p>
+						<p>
+							站在镜前　又踌躇又迷惑<br>
+							不知为何　找寻着另一个我…</p>
+						<p>
+							分别时　那互相交会的眼神<br>
+							说不定一小错就会失去一切<br>
+							说"不是爱情就好了"　真是随便的借口啊<br>
+							明天相见了　该以什么表情面对呢</p>
+						<p>
+							※Repeat</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

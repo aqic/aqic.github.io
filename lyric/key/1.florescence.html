@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Florescence - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">KANON TV</div>
+
+                    <div class="LyricTitle">Florescence</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">藤原美穂</div>
+                    <div class="LyricStaff">作詞：こさかなおみ<br>作曲：上野浩司<br>編曲: 神津裕之</div>
+
+                    <div class="LyricText">
+						<p>
+							時のない黄昏れ空　草の波　流れる雲<br>
+							いくつもの景色　せつなく漂い<br>
+							揺らめいて　霞んで　消えるけど</p>
+						<p>
+							始まりも　終わりもない　永遠の旅をしてる<br>
+							冷たい指先　探し続けてた<br>
+							カケラ輝いてる　強く胸に抱き締めて</p>
+						<p>
+							果てしなく開いて行く　笑顔の扉の向こう<br>
+							「ありがとう」抱えきれず　溢れ始め<br>
+							探していた失しもの　両手の中確かめて<br>
+							新しい朝に出逢う　時が動き出すよ</p>
+						<p>
+							いつか見た夜明けの色　頬を打つ風に混ざる<br>
+							それぞれの願い　叶えられること<br>
+							ずっと信じていた　想いを分かちあえる日</p>
+						<p>
+							どこまでも続いて行く　笑顔の扉の先に<br>
+							「さようなら」遠く沈む　夜を越えて<br>
+							優しい朝の囁き　まぶたの裏溶け込んで<br>
+							輝いたカケラ抱いて　明日が目覚め出すよ</p>
+						<p>
+							果てしなく開いて行く　笑顔の扉の向こう<br>
+							「ありがとう」抱えきれず　溢れ始め<br>
+							探していた失しもの　両手の中確かめて<br>
+							新しい朝に出逢う　時が動き出すよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

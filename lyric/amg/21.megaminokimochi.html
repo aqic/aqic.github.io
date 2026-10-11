@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>女神の気持ち - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ああっ女神さまっ」</div>
+
+                    <div class="LyricTitle">女神の気持ち</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">井上喜久子</div>
+
+                    <div class="LyricText">
+						<p>
+							雲のかげに洩れる陽射し<br>
+							やがてふたりだけの時間<br>
+							鏡うつす素顔の私<br>
+							想い偽れない</p>
+						<p>
+							熱い夢を語るひとも<br>
+							今はひざ枕で寝息<br>
+							心地のいい寝顔だから<br>
+							よけい愛しくなる</p>
+						<p>
+							このままいたいから<br>
+							魔法をかけたのに<br>
+							愛は不思議ね<br>
+							ああっ時間を止めても<br>
+							絶えず流れてる</p>
+						<p>
+							やさしさあげたい<br>
+							あなたのため生きたい<br>
+							頬をつつむ熱い手から<br>
+							伝わるね</p>
+						<p>
+							守ってあげたい<br>
+							世界中であなただけ<br>
+							海のように<br>
+							空のように<br>
+							深い広い愛で</p>
+						<p>
+							あなただけの女神だから<br>
+							すべて捧げたいと思う<br>
+							ふたりだけが夢を見てる<br>
+							こんな広い地球で</p>
+						<p>
+							このまま瞳を閉じて<br>
+							宇宙へと旅立つの<br>
+							ペガサスに乗り<br>
+							ああっ天の川まで<br>
+							愛を導くの</p>
+						<p>
+							歌ってあげたい<br>
+							気持ちのいい音色で<br>
+							時間を止めた魔法解けて<br>
+							流れ出す</p>
+						<p>
+							見つめてあげたい<br>
+							包むようなやさしさで<br>
+							夢を見てる途中だけど<br>
+							あなた目覚めなさい</p>
+						<p>
+							キスをするねそっと…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

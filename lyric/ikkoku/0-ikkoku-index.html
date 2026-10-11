@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">めぞん一刻</span><span class="cn">（相聚一刻）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+					<div class="disc-head"><span class="disc-name">めぞん一刻</span><span class="disc-sub">14 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.sunnyshinymorning.html">《サニーシャイニーモーニング》</a><span class="note">- 「めぞん一刻」オープニング・テーマ (1987)</span></li>
+						<li class="LyricItem"><a href="2.iloveyou.html">《好きさ》</a><span class="note">- 「めぞん一刻」オープニング・テーマ(1986)</span></li>
+						<li class="LyricItem"><a href="3.hellosadness.html">《悲しみよ　こんにちは》</a><span class="note">- 「めぞん一刻」オープニング・テーマ(1986)</span></li>
+						<li class="LyricItem"><a href="4.sunnyspot.html">《陽だまり》</a><span class="note">- 「めぞん一刻」オープニング・テーマ (1987)</span></li>
+						<li class="LyricItem"><a href="5.willitbesunnytomorrow.html">《あした晴れるか》</a><span class="note">- 「めぞん一刻」エンディング・テーマ(1986)</span></li>
+						<li class="LyricItem"><a href="6.dessinofagoodbye.html">《サヨナラの素描》</a><span class="note">- 「めぞん一刻」エンディング・テーマ(1987)</span></li>
+						<li class="LyricItem"><a href="7.cinema.html">《シ・ネ・マ》</a><span class="note">- 「めぞん一刻」エンディング・テーマ(1986)</span></li>
+						<li class="LyricItem"><a href="8.beginthenight.html">《ビギン・ザ・ナイト》</a><span class="note">- 「めぞん一刻」エンディング・テーマ(1987)</span></li>
+						<li class="LyricItem"><a href="9.fantasy.html">《ファンタジー》</a><span class="note">- 「めぞん一刻」エンディング・テーマ(1986)</span></li>
+						<li class="LyricItem"><a href="10.aloneagain.html">《Alone Again》</a><span class="note">- 「めぞん一刻」エンディング・テーマ(1986)</span></li>
+						<li class="LyricItem"><a href="11.getdown.html">《Get Down》</a><span class="note">- 「めぞん一刻」エンディング・テーマ(1986)</span></li>
+						<li class="LyricItem"><a href="12.kissofglass.html">《硝子のキッス》</a><span class="note">- 「めぞん一刻完結篇」エンディング・テーマ (1988)</span></li>
+						<li class="LyricItem"><a href="13.presentiment.html">《予感》</a><span class="note">- 「めぞん一刻」挿入歌</span></li>
+						<li class="LyricItem"><a href="14.intoadreamentrance.html">《夢の入口へ…》</a><span class="note">- 「めぞん一刻」挿入歌</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

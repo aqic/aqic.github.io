@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>光なき夜をゆけ - 人形草紙あやつり左近</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OP</div>
+
+                    <div class="LyricTitle">光なき夜をゆけ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">HUMMING BIRD</div>
+                    <div class="LyricStaff">作詞：石川雅敏<br>作曲：福山芳樹<br>編曲：和田春彦 &amp; HUMMING BIRD</div>
+
+                    <div class="LyricText">
+						<p>
+							滿たされないとわかっても<br>
+							求めるのか永遠を<br>
+							罪人と聖者の狹間で<br>
+							剎那の時をつないで</p>
+						<p>
+							終わりのない過ちに<br>
+							彩られた世界は<br>
+							化石の森に姿を変えて<br>
+							哀しみの神話をつむぐ</p>
+						<p>
+							いつか身体さえ風になり大地へ<br>
+							還るだろう<br>
+							だけど心は何處へゆくのか人は<br>
+							答えを知らない<br>
+							そして歩き出す<br>
+							光なき夜をゆけ</p>
+						<p>
+							深い闇に抱かれて<br>
+							隠してた涙がおちる<br>
+							瓦礫の街を憐れむように<br>
+							月の炎が搖らめく</p>
+						<p>
+							欲望も愛ももう見分けがつかない<br>
+							この世界で<br>
+							幻と知りながら胸を癒すものを<br>
+							人は追い續ける<br>
+							痛みと引き換えに<br>
+							真実を搜すように</p>
+						<p>
+							滿たされないと知っても求め續ける<br>
+							限りある命を気高く響かせて<br>
+							風になり大地へと還る時まで<br>
+							魂はさまよい續ければいい<br>
+							そして人はまた<br>
+							歩き出してゆく<br>
+							光なき夜をゆけ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ayatsuri-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

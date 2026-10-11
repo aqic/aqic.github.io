@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風中許願 - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">美少女戰士SailorStars結尾曲</div>
+
+                    <div class="LyricTitle">風中許願</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">許思行</div>
+                    <div class="LyricStaff">作詞：黃捷皓<br>作曲：上田知華</div>
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							遠看天邊星際柔柔光線<br>
+							月兒陪伴著我　同一起想昨天<br>
+							曾快樂　曾失落　和你手牽手走過</p>
+						<p>
+							今天的星空失去舊有溫暖<br>
+							冰冷中尋覓那遺失的畫面<br>
+							心裡面 (始終不變)　仍記念(天真的臉)<br>
+							和你牽手風裡打轉</p>
+						<p>
+							當天不懂我的心情<br>
+							分手真不可理解　實太任性<br>
+							可知我於這刻許願<br>
+							來月來日裡　能為你改變</p>
+						<p>
+							在這天　問你可依然<br>
+							共同度過悲歡歲月中不息的變遷<br>
+							願這天　而又再心相連<br>
+							當清風飄過　能聽到你聲線</p>
+						<p>
+							今天的星空失去舊有溫暖<br>
+							冰冷中尋覓那遺失的畫面<br>
+							心裡面 (始終不變)　仍記念 (天真的臉)<br>
+							和你風中飄送熱暖聲線</p>
+						<p>
+							當天不懂我的心情<br>
+							分手真不可理解　實太任性<br>
+							可知我於這刻許願<br>
+							來月來日裡　能為你改變</p>
+						<p>
+							在這天　問你可依然<br>
+							共同度過悲歡歲月中不息的變遷<br>
+							願這天　而又再心相連<br>
+							當清風飄過　能聽到你聲線</p>
+						<p>
+							在這天　問你可依然<br>
+							共同度過悲歡歲月中不息的變遷<br>
+							願這天　而又再心相連<br>
+							當清風飄過　能聽到你聲線</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

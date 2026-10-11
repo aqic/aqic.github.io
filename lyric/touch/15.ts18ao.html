@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>青い扉 - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ CrossRoad 風のゆくえ オリジナルサウンドトラック</div>
+
+                    <div class="LyricTitle">青い扉</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本 サトル</div>
+                    <div class="LyricStaff">作詞：坂本 サトル<br>作曲：坂本 サトル<br>編曲：坂本 サトル＆棚谷祐一</div>
+
+                    <div class="LyricText">
+						<p>
+							またひとつ世界の謎が解けて<br>
+							僕は高く高くまだ昇ってゆけそう</p>
+						<p>
+							探してるものはまだ見つからないけど<br>
+							昨日よりもきっと近くにあるはず</p>
+						<p>
+							迷い込んだ深い森の向こう<br>
+							そびえ立った青い夢の扉　開けるよ</p>
+						<p>
+							今日までの全てが<br>
+							ここに辿り着くための道だったと<br>
+							今ならそう思えるんだ<br>
+							それを君に伝えたい  追いたてる不安よりも速いスピードで<br>
+							僕は遠く遠くどこまでも行けそう</p>
+						<p>
+							その方が近道だって誰かがいっても<br>
+							止まっているぐらいなら　遠回りでも走る</p>
+						<p>
+							握ったままの　青い夢のかけら<br>
+							澄み渡った空の色のように<br>
+							深みを増して輝く</p>
+						<p>
+							僕が見てきたもの<br>
+							悲しみも　怒りも　喜びも　触れた愛も<br>
+							尊いものだと　今ならわかる気がする</p>
+						<p>
+							今日までの全てが<br>
+							ここに辿り着くための道だったと<br>
+							今ならそう思えるんだ<br>
+							それを君に伝えたい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

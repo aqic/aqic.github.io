@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Promise Love - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Promise Love</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">荒木香恵</div>
+                    <div class="LyricStaff">作詞：葉月咲里<br>作曲：小杉保夫<br>編曲：矢野立美</div>
+
+                    <div class="LyricText">
+						<p>
+							とても逢いたくて<br>
+							　　あなたの　部屋の前まで<br>
+							　　急いで　すぐに　来てみたけど</p>
+						<p>
+							　　いまは　はいれない<br>
+							　　わたしは　臆病になる<br>
+							　　元の世界に　戻るなんて</p>
+						<p>
+							　　流れてゆく　時間(とき)は<br>
+							　　はやいけど<br>
+							　　かわらない笑顔<br>
+							　　約束しよう</p>
+						<p>
+							☆　強く　強く　抱きしめたい<br>
+							　　いつも優しい瞳(め)に<br>
+							　　わたしだけ　映してよ</p>
+						<p>
+							　　ずっと　ずっと　あなたが好き<br>
+							　　胸さわぎ　気づいても<br>
+							　　もう　離さない</p>
+						<p>
+							　　いつかこんな日が来るよ　 と<br>
+							　　だれかに言われ<br>
+							　　少し不安になったけれど</p>
+						<p>
+							　　ふたりの幸せ　ふたりで<br>
+							　　みつけるたびに<br>
+							　　心配なんて　忘れていた</p>
+						<p>
+							　　おかしいわね<br>
+							　　涙　でてきちゃう<br>
+							　　こんなにも　あなた<br>
+							　　愛しくおもう</p>
+						<p>
+							　　強く　強く　抱きしめてね<br>
+							　　もっと　楽しいこと<br>
+							　　わたしにも　教えてよ</p>
+						<p>
+							　　ずっと　ずっと　あなたが好き<br>
+							　　このさきも　そばにいて<br>
+							　　もう　離れない</p>
+						<p>
+							☆　　REPEAT</p>
+						<p>
+							　　離れない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

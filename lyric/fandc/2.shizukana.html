@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>しずかな深呼吸して&lt;br&gt;（フルバージョン） - F&amp;C</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</div>
+
+                    <div class="LyricTitle">しずかな深呼吸して&lt;br&gt;（フルバージョン）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">日野森あずさ（長崎みなみ）</div>
+                    <div class="LyricStaff">作詞：くまのきよみ<br>作曲：M Rie<br>編曲：上杉洋史</div>
+
+                    <div class="LyricText">
+						<p>
+							まぶしい　サマーディ<br>
+							出逢ったその瞬間に<br>
+							始まってた　ちいさな恋なの<br>
+							まだ言えなくて<br>
+							少しだけ　息を止めて<br>
+							せつなさに負けないよに</p>
+						<p>
+							言葉はなぜ<br>
+							素直になれない　わたしばかり<br>
+							あなたに見せる　いつも</p>
+						<p>
+							＊お願い！　かなえて<br>
+							　わたしだけを見つめて欲しい<br>
+							　うらはら　強がりの意味<br>
+							　不器用な想い</p>
+						<p>
+							お願い！　気づいて<br>
+							このままじゃ　いられないくせに<br>
+							平気なフリしていたの<br>
+							ため息を隠しながら</p>
+						<p>
+							教えて　True Heart<br>
+							すれ違い　ケンカばかり<br>
+							ゴメンネのきっかけ　つかめずに<br>
+							電話のベルは<br>
+							あなたからと知ってても<br>
+							受話器を見つめてるだけ</p>
+						<p>
+							不自然なほど<br>
+							意地はっちゃうのは　恋のしるし<br>
+							誰かが　ふいに言った</p>
+						<p>
+							ためらい！　許して<br>
+							ひとりきり想ってるだけじゃ<br>
+							傳わるハズもないこと<br>
+							わかっているけど</p>
+						<p>
+							とまどい！　感じて<br>
+							偶然　指が觸れただけの<br>
+							些細なハプニングさえ<br>
+							泣きだしてしまいそうよ</p>
+						<p>
+							＊Repeat</p>
+						<p>
+							お願い！　笑って<br>
+							始めから知ってたみたいに<br>
+							しずかな深呼吸のあと<br>
+							「好きよ」って打ちあけたい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fandc-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

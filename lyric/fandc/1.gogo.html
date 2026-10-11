@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ゴーゴー　ウェイトレス&lt;br&gt;（コーラスバージョン） - F&amp;C</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</div>
+
+                    <div class="LyricTitle">ゴーゴー　ウェイトレス&lt;br&gt;（コーラスバージョン）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">日野森あずさ &amp; 榎本つかさ &amp; 日野森美奈
+○（長崎みなみ &amp; 栗原みきこ &amp; 及川ひとみ）</div>
+                    <div class="LyricStaff">作詞：かなすぎ　はじめ &amp; 吉田　文<br>作曲：REICO<br>編曲：畠義人</div>
+
+                    <div class="LyricText">
+						<p>
+							ぐるぐる今日も目がまわる<br>
+							いつものこと気にしてないけど<br>
+							みじかいスカートヒラヒラ<br>
+							なんだかフワフワしてきちゃう<br>
+							みんなにもわけてあげる<br>
+							タフで　派手な　明るい未来</p>
+						<p>
+							＊少しぐらいミスをしても<br>
+							　あいきょう　ゆるしてほしいの</p>
+						<p>
+							　忙しいのよ　手が離せないの　今は<br>
+							　濟んだこと　いまさら　どうにもならない<br>
+							　眠たくっても　疲れてても　とまらない</p>
+						<p>
+							ホラ　そこの君も<br>
+							もう　のんびりできなくなってる</p>
+						<p>
+							めんどうなことは忘れて<br>
+							頭の中恋愛モードね<br>
+							お肌の手入れも大変<br>
+							ライバルには差をつけなくっちゃ<br>
+							あなたには　ちょっと弱いの<br>
+							純な　あたし　たまにはいいね</p>
+						<p>
+							恋は樂しむもの<br>
+							負けは論外なんとかなるでしょ<br>
+							嫌われても　好かれてても<br>
+							いいじゃない<br>
+							問題は気持ちね<br>
+							樂しくやりましょ</p>
+						<p>
+							イヤになっても<br>
+							明日　また　笑うだけで<br>
+							ホラ　彼もすぐ<br>
+							こんなあたしを　好きになるはず</p>
+						<p>
+							＊Repeat</p>
+						<p>
+							ホラ　みんな絶對　すぐに<br>
+							のんびり　できなくて<br>
+							あたしを　好きに　なるはず</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fandc-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君の虹 - 電影少女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">君の虹</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">須藤まゆみ</div>
+
+                    <div class="LyricText">
+						<p>
+							こんな夢なら　見たことがあるはず<br>
+							人波泳ぐ君　笑っていた<br>
+							逃切れた夢　いまはその続きだろう</p>
+						<p>
+							魔法の瞳の少女<br>
+							いま何よりきれい<br>
+							輝いて輝いて<br>
+							僕のために…　Shinin'</p>
+						<p>
+							過去も未来もすべてぬりかえて<br>
+							君を見ていたい</p>
+						<p>
+							逢えなくなる日　いつかくるような<br>
+							そんな予感さえも少しだけどね<br>
+							僕は不器用だけど虹か見える</p>
+						<p>
+							いままでの悲しいこと<br>
+							もう忘れるように<br>
+							まぶしいよ　まぶしいよ<br>
+							君のまわり…　Shinin'</p>
+						<p>
+							過去も未来もすべてぬりかえて<br>
+							君を見ていたい</p>
+						<p>
+							僕は不器用だけど虹か見える</p>
+						<p>
+							いままでの悲しいこと<br>
+							もう忘れるように<br>
+							まぶしいよ　まぶしいよ<br>
+							君のまわり…　Shinin'</p>
+						<p>
+							過去も未来もすべてぬりかえて<br>
+							君の虹見せて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-video-girl-ai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

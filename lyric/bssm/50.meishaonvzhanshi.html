@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>美少女戰士 - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">美少女戰士Sailormoon 香港版主題曲</div>
+
+                    <div class="LyricTitle">美少女戰士</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">王馨平、湯寶如、周慧敏</div>
+                    <div class="LyricStaff">詞：向雪懷<br>曲：黃尚偉</div>
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							飛身到天邊 為這世界一戰<br>
+							明月在夜空天際出現<br>
+							拋出救生圈 霧裡舞我的劍<br>
+							邪道惡魔星際飛閃</p>
+						<p>
+							你你你 快跪下<br>
+							看我引弓千里箭<br>
+							你你你 快跪下<br>
+							勿要我放出了魔氈<br>
+							你你你 快跪下<br>
+							勿要我手握天血劍<br>
+							你你你 快跪下<br>
+							狂風掃落雷電</p>
+						<p>
+							美少女轉身變 已變成戰士<br>
+							以愛凝聚力量 救世人跳出生天<br>
+							身體套光圈 合上兩眼都見<br>
+							明亮像佛光天際初現<br>
+							雖詭計多端 但美少女一變<br>
+							邪道外魔都企一邊</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

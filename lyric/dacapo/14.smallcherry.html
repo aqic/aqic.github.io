@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Small Cherry ～promised bell～ - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Small Cherry ～promised bell～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中山マミ</div>
+
+                    <div class="LyricText">
+						<p>
+							桜舞う並木、夢見たその笑顔<br>
+							儚げな未来、いくつかの過ち</p>
+						<p>
+							歩んで来た道、悩んでたあの日々<br>
+							いつか想い出に時が変えてゆくから</p>
+						<p>
+							卒業しても一緒だと<br>
+							優しい目、微笑</p>
+						<p>
+							ごめんね背伸びしてる<br>
+							風景、涙でにじんでく</p>
+						<p>
+							勇気出せたなら<br>
+							すぐ抱きしめ<br>
+							離さないで<br>
+							伝えられるはず、この想いを</p>
+						<p>
+							君と描いてた小さな地図<br>
+							二人だけの大切なこの世界で<br>
+							迷わないように</p>
+						<p>
+							忘れかけていた、泣いていたあの日々<br>
+							約束したよね、小さな秘密の基地</p>
+						<p>
+							巡り行く季節、そよ風<br>
+							優しく頬くすぐる</p>
+						<p>
+							今も大切なまま<br>
+							答えも出せずに迷ってた</p>
+						<p>
+							君と自転車風受けて、空<br>
+							羽ばたいて鳥のように<br>
+							想いを飛ばして</p>
+						<p>
+							君と描いてた小さな地図<br>
+							二人だけの大切なこの世界の中で<br>
+							悲しまないように</p>
+						<p>
+							勇気出せたなら<br>
+							すぐ抱きしめ<br>
+							離さないで<br>
+							伝えられるはず、この想いを<br>
+							君と描いてた<br>
+							小さな恋<br>
+							伝わるはず夢の中の想いはきっと</p>
+						<p>
+							君と描いてた小さな地図<br>
+							二人だけの大切なこの世界の中で<br>
+							歩き出せるように</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

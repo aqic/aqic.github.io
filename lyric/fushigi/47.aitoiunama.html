@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>愛という名の聖戦(たたかい)に. . - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">愛という名の聖戦(たたかい)に. .</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">緑川 光 (鬼宿)</div>
+                    <div class="LyricStaff">作詞：里乃塚玲央<br>作曲：本間勇輔<br>編曲：本間勇輔</div>
+
+                    <div class="LyricText">
+						<p>
+							☆ 　Now　燃えている　心が<br>
+							　　炎を　上げて<br>
+							　　Cry　生命(いのち)が　叫ぶよ<br>
+							　　生きている 俺は</p>
+						<p>
+							★　And now　聞こえる　嵐も<br>
+							　　超えてく 鼓動<br>
+							　　Fly　この手に　届くよ<br>
+							　　奇跡も 今は</p>
+						<p>
+							　　たった一人で　暮らして来たよ<br>
+							　　欲望だけが 実力(ちから)の街に<br>
+							　　まっすぐ明日(あした)　見つめる瞳<br>
+							　　その輝きに　打たれる日まで</p>
+						<p>
+							　　【風宙漂 (ふうちゅうひょう)? 夢時空翔 (むじくうしょう)】抱き締めてたよ<br>
+							　　【風宙漂 (ふうちゅうひょう)? 夢時空翔 (むじくうしょう)】すべて忘れて<br>
+							　　その瞬間 聖戦(たたかい)は<br>
+							　　始まってたのさ</p>
+						<p>
+							☆　Repeat</p>
+						<p>
+							　　父の言葉を　思い出してた<br>
+							　　すべて失くした　孤 独な日々も<br>
+							　　男の胸は　愛しい女(ひと)の<br>
+							　　盾になるもの　それだけでいい</p>
+						<p>
+							　　【風宙漂 (ふうちゅうひょう)? 夢時空翔 (むじくうしょう)】護らせてくれ<br>
+							　　【風宙漂 (ふうちゅうひょう)? 夢時空翔 (むじくうしょう) 】涙をふいて<br>
+							　　愛という名の　聖戦(たたかい)に<br>
+							　　走り　出させて</p>
+						<p>
+							★　 Repeat<br>
+							☆、★、☆：Repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

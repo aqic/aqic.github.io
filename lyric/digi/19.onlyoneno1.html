@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>only one, No.1 - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Opening Theme</div>
+
+                    <div class="LyricTitle">only one, No.1</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Okui Masami</div>
+                    <div class="LyricStaff">Lyrics : Okui Masami<br>Music : Yabuki Toshirou<br>Arrangement : Yabuki Toshirou</div>
+
+                    <div class="LyricText">
+						<p>
+							世界で一番輝けるまで</p>
+						<p>
+							一日、毎日を楽しく生きて<br>
+							突然生まれ来る　刹那の不安</p>
+						<p>
+							2000年問題より…no noそれ以上に<br>
+							重大なこと自分の未来-YUME-</p>
+						<p>
+							世界で一番輝きたい<br>
+							想いは No.1STAR<br>
+							この宇宙の中で</p>
+						<p>
+							忘れちゃいけないね自分の価値観<br>
+							ゆずれないトコ守る　勇気をください</p>
+						<p>
+							『目を奪うくらい速いスピードの<br>
+							流行にはのせられたくない』</p>
+						<p>
+							世界で一番輝きたい<br>
+							誰もが No.1STAR<br>
+							それぞれに在る<br>
+							君の才能-CHIKARA-が息潜めて<br>
+							待ってる only one!<br>
+							早く気づいてって</p>
+						<p>
+							寂しいねひとりは<br>
+							オシャレだっていらない…</p>
+						<p>
+							世界で一番輝きたい<br>
+							想いは No.1STAR<br>
+							ライバルじゃなくて<br>
+							世界でみんな輝けるのは<br>
+							みんないるから<br>
+							なにかに火をつけられて<br>
+							刺激的　そんな日常が<br>
+							すべてを変える<br>
+							輝けよ No.1 STAR</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

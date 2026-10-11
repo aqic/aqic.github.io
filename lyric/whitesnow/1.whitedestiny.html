@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>White Destiny - 新白雪姫伝説プリーティア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">新白雪姫伝説 プリーティア OP</div>
+
+                    <div class="LyricTitle">White Destiny</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">石田耀子</div>
+                    <div class="LyricStaff">作詞：飯塚麻純<br>作曲・編曲：大森俊之</div>
+
+                    <div class="LyricText">
+						<p>
+							果てしない未来広がるこの空<br>
+							あたらしい自分に生まれ変わる<br>
+							世界中<br>
+							しあわせの雪を降らせてみせるよ</p>
+						<p>
+							運命はつかむもの<br>
+							この手自由にのばせばいい<br>
+							決められた明日はない</p>
+						<p>
+							黙っていてもわかる<br>
+							あの日出逢いは偶然じゃない<br>
+							遠い瞳に永遠感じた</p>
+						<p>
+							暮れてゆく夕陽がきれい<br>
+							冷たい風が光れば<br>
+							あなたの声そっと聞こえてる</p>
+						<p>
+							※心の中独りじゃないこと<br>
+							　痛いほどこの胸を熱くする<br>
+							　はじまるね信じることから<br>
+							　この気持ち生きる証<br>
+							　果てしない未来広がるこの空<br>
+							　あたらしい自分に生まれ変わる<br>
+							　世界中<br>
+							　しあわせの雪を降らせてみせるよ<br>
+							　その手つないで</p>
+						<p>
+							水に揺れる花びら<br>
+							遥か月を追いかけてく<br>
+							見てた夢より遠くへ</p>
+						<p>
+							嫌なことがあるたび<br>
+							独り青い空をながめる<br>
+							弱い自分に負けたくないから</p>
+						<p>
+							探していたあたたかい<br>
+							愛の場所も未来も<br>
+							気がつけば胸の中にある</p>
+						<p>
+							たったひとつもしできることがあるならば<br>
+							迷わずに叶えたい<br>
+							雪のようにきれいな心は<br>
+							誰にでも降り積もる</p>
+						<p>
+							戸惑うけど後悔はしない<br>
+							連れてって　一緒なら恐くない<br>
+							手に触れて眠ってた私<br>
+							いま目を覚ます</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-whitesnow-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

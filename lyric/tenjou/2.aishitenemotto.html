@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>愛してね☆もっと - 天上天下</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">愛してね☆もっと</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">嘉陽愛子</div>
+                    <div class="LyricStaff">作詞/C&amp;F<br>作曲/FUMING<br>編曲/安藤高弘<br>Chours Arrangement/YAS KITAJIMA</div>
+
+                    <div class="LyricText">
+						<p>
+							愛してね　もっと　　愛してね　もっと<br>
+							愛してよねぇ</p>
+						<p>
+							初めて眠れなかった　今すぐに「会いたい….」<br>
+							抱きしめられたぬくもりが　ずっとずっと消えなくて</p>
+						<p>
+							二人だけのこの時間を　ただ大切にしたいから</p>
+						<p>
+							愛してね　もっと　　愛してね　もっと<br>
+							愛してよね　もっと　私だけを見て</p>
+						<p>
+							愛してね　もっと　　愛してね　もっと<br>
+							愛してよね　もっと　もっと　ただ　あなたが　好き！</p>
+						<p>
+							初めて傷つけたね　涙が止まらない<br>
+							はじけそうな胸の痛み　「ただそばにいて欲しいだけ」</p>
+						<p>
+							愛してる　ずっと　愛してる　ずっと<br>
+							愛してるよ　ずっと　私だけを見て</p>
+						<p>
+							愛してる　ずっと　愛してる　ずっと<br>
+							愛してるよ　ずっと　ずっと　ただ　あなたが　好き！</p>
+						<p>
+							愛してね　もっと　　愛してね　もっと<br>
+							愛してよね　もっと　私だけを見て</p>
+						<p>
+							愛してね　もっと　　愛してね　もっと<br>
+							愛してよね　もっと　私だけを見て</p>
+						<p>
+							愛してね　もっと　　愛してね　もっと<br>
+							愛してよね　もっと　もっと　ただ　あなたが　好き！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-tenjou-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

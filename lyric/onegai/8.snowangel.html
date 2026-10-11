@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Snow Angel - おねがい☆ティーチャー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Snow Angel</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：高瀬 一矢<br>編曲：高瀬 一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							冬の夜空　舞う白い欠片<br>
+							肩に降りて季節を伝えに来るよ<br>
+							かじかむ指に吐く白い息が<br>
+							無限の距離を　そっと近づけるね</p>
+						<p>
+							雪が歩道も街路樹も窓の灯かりさえも<br>
+							全て包み込んで　静けさだけ押し寄せる<br>
+							二人の足跡も消えてしまうけれど<br>
+							繋いだ手の温もり　鼓動を感じた</p>
+						<p>
+							二つの影ただずむ　凍えた心を抱えて<br>
+							真っ白な世界　出逢えたのは奇跡<br>
+							もう　独りきりじゃないこと<br>
+							言葉より　星の見えない　まわる空に<br>
+							snow angel<br>
+							探している</p>
+						<p>
+							冷たい頬　両手で包んで<br>
+							突き刺さった冬の風　温めて<br>
+							ひび割れそうな唇　重ねて<br>
+							うずもれて行く欠片　すくいあげて</p>
+						<p>
+							いつか微妙にずれてゆく温度が寂しくて<br>
+							側にいることも　苦しく思えたりしたけど<br>
+							二人の足跡は少しづつ近づき<br>
+							春へと白い雪も心も溶かすよ</p>
+						<p>
+							曇りガラスに書いた永遠を綴った文字が<br>
+							涙を流すの　二人で見ていた<br>
+							もう　凍った結晶達のように<br>
+							壊れてしまわぬよう<br>
+							抱いた腕に　all my might<br>
+							力こめて･･･</p>
+						<p>
+							二つの影ただずむ　凍えた心を抱えて<br>
+							真っ白な世界　出逢えたのは奇跡<br>
+							もう　独りきりじゃないこと<br>
+							言葉より　星の見えない<br>
+							まわる空に　snow angel<br>
+							祈っている</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onegai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

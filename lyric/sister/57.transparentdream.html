@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>透きとおる夢 - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">透きとおる夢</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							一人きりで<br>
+							夢を見てる<br>
+							白い雲に<br>
+							包まれて</p>
+						<p>
+							立ち止まれば<br>
+							氷原のうえ<br>
+							蒼い月に<br>
+							照らされて<br>
+							涙で覚めた朝も<br>
+							見つめつづけた夜も<br>
+							あなたの声だけが<br>
+							わたしを動かすよ<br>
+							光の中<br>
+							呼び続ける<br>
+							いつも近くに<br>
+							感じたい<br>
+							夢の中で<br>
+							巡り会うよ<br>
+							求め続ける<br>
+							永遠の愛</p>
+						<p>
+							森の中で<br>
+							佇んでる<br>
+							優しいヒト<br>
+							そばにいて<br>
+							風の中で<br>
+							耳を澄ませ<br>
+							あなたの声<br>
+							感じてる<br>
+							光あふれる朝も<br>
+							星が瞬く夜も<br>
+							いつでもそばにいて<br>
+							わたしだけの笑顔<br>
+							遠く響く<br>
+							あなたの声<br>
+							いつも近くに<br>
+							感じてる<br>
+							深い森で<br>
+							夢を見てる<br>
+							探して欲しい<br>
+							わたしのメロディ</p>
+						<p>
+							一人で震えてる<br>
+							わたしだけを抱きしめて</p>
+						<p>
+							迷い込んだ<br>
+							秘密の森<br>
+							あなたにだけは<br>
+							見つけて欲しい<br>
+							夢の中で<br>
+							巡り会うよ<br>
+							求め続ける<br>
+							永遠の愛</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

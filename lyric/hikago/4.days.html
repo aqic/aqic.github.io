@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Days - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Days</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">shela</div>
+                    <div class="LyricStaff">作詞：shela<br>作曲：原一博<br>編曲：原一博</div>
+
+                    <div class="LyricText">
+						<p>
+							明日を夢見て 輝いてた日々</p>
+						<p>
+							つらい想い出とか いくつあったのかな?<br>
+							どんな楽しい日を これからは<br>
+							大切にしていくのかな?</p>
+						<p>
+							近くの公園で集まったね いつも<br>
+							夜中まで大きな声出して笑ってたね<br>
+							ずっと ずっと</p>
+						<p>
+							同じ時代を今<br>
+							生きてる奇跡が すごくうれしいからね<br>
+							次あう日も きっとねぇ<br>
+							一緒に笑っていようよ</p>
+						<p>
+							久しぶりに古いアルバムひらいたよ<br>
+							少しやせたのかな? ちょっとずつ<br>
+							大人にねぇ なってきたかな?</p>
+						<p>
+							やけた肌を見せて 歩いてたあの頃<br>
+							スニーカーふみながら 走ってたね 君と<br>
+							いつも いつも</p>
+						<p>
+							明日を夢見て 輝いてた日々<br>
+							忘れてないよ 今も<br>
+							出会えた事 全てが<br>
+							偶然じゃない気がするよ</p>
+						<p>
+							これから先も ねぇ<br>
+							新しい想い出 沢山つくりたいね<br>
+							今度はどんな夢を<br>
+							一緒に語りあうのかな?</p>
+						<p>
+							同じ時代を今<br>
+							生きてる奇跡が すごくうれしいからね<br>
+							次あう日も きっとねぇ<br>
+							一緒に笑っていようね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

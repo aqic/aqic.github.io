@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Myself - 満月をさがして</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Myself</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Changin' My Life</div>
+
+                    <div class="LyricText">
+						<p>
+							どうしてどうして 好きなんだろう<br>
+							こんなに涙 溢れてる</p>
+						<p>
+							あの頃は失うものが多すぎて 何も歌えなかった<br>
+							少し離れた場所 そこが私の居場所だった</p>
+						<p>
+							君の瞳の奥に あの日 さみしさを見つけた<br>
+							二人 似てるのかな?<br>
+							気付けばいつも 隣にいてくれた</p>
+						<p>
+							どうして こんなに好きなんだろう<br>
+							君の声 悲しい程 響いてるヨ<br>
+							いままで何が支えだったか<br>
+							遠く離れてわかったよ</p>
+						<p>
+							泣きながら捜し続けた 迷子の子供のように<br>
+							けどそこには 永遠なんてあるわけなくて</p>
+						<p>
+							「誰も信じなければいいんだよ」呟いたね<br>
+							二人 似てたのかな?<br>
+							あの時 君を守ると 決めたのに</p>
+						<p>
+							どうして 思い出にできないんだろう<br>
+							遠すぎて 近すぎて 届かないよ<br>
+							「忘れよう」って思えば思う程<br>
+							君が大きくなってくよ</p>
+						<p>
+							どうして こんなに好きなんだろう<br>
+							君の声 悲しい程 響いてるヨ<br>
+							いままで何が支えだったか<br>
+							遠く離れてわかったよ</p>
+						<p>
+							どうして 君を好きになったんだろう<br>
+							簡単すぎて答えにならない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fullmoon-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

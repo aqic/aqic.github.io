@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ふたりだけ - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ふたりだけ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">関 俊彦、日高のり子</div>
+                    <div class="LyricStaff">作詞：梶原茂人<br>作曲：高木茂治<br>編曲：高木茂治</div>
+
+                    <div class="LyricText">
+						<p>
+							空を翔んだ夢を見た　オレンジ色の<br>
+							誰もいない大空は　音もない</p>
+						<p>
+							朱い雀（とり）を追いかけて　異国の町へ<br>
+							光の糸あやつられ　目を閉じた</p>
+						<p>
+							聞こえるかい　僕の声　何処にいるんだ<br>
+							ふたりした約束に　流れてゆこう</p>
+						<p>
+							抱き締めて　抱き締めて　何もないこの世界<br>
+							誰よりも何よりも　ふたりだけ</p>
+						<p>
+							もう二度とは戻らない　願い続けた<br>
+							憎むことや恨むこと　終わるように</p>
+						<p>
+							僕たちがめぐり逢い　育つ世界が<br>
+							汚された愛に今　消えないように</p>
+						<p>
+							恋人よ　そばにいて　いつまでもこの胸に<br>
+							願い合う旅はまだ続くけど<br>
+							抱き締めて　抱き締めて　何もないこの世界<br>
+							誰よりも何よりも　ふたりだけ<br>
+							誰よりも何よりも　ふたりだけ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

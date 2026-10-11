@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>真昼の星 - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">真昼の星</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高木礼子</div>
+                    <div class="LyricStaff">作詞：藤林聖子<br>作曲：堀隆<br>編曲：堀隆</div>
+
+                    <div class="LyricText">
+						<p>
+							静かに目を閉じて<br>
+							風を吸い込んだら<br>
+							もっと高く飛べる<br>
+							信じて空を見る</p>
+						<p>
+							もし君が何処かで<br>
+							怖がっているなら<br>
+							一人じゃないことを<br>
+							必ず覚えてて…</p>
+						<p>
+							俺たちはいつでも<br>
+							完璧じゃないけど<br>
+							夢を見る力で<br>
+							何処までも走ろう<br>
+							この空が光で<br>
+							あふれる日を願おう<br>
+							太陽に負けない<br>
+							星を散りばめよう</p>
+						<p>
+							空と海の間<br>
+							夕日が溶ける頃<br>
+							胸が高鳴るのは<br>
+							まだ見ぬ明日のこと</p>
+						<p>
+							キミと話をしよう<br>
+							夢が叶う日まで<br>
+							この時間はいつも<br>
+							明日には届きそう</p>
+						<p>
+							俺たちはいつでも<br>
+							強さだけを求め…<br>
+							本当の強さを<br>
+							優しさと呼んでも<br>
+							この空が光で<br>
+							あふれる日を願おう<br>
+							光を放つもの<br>
+							みんなで輝こう</p>
+						<p>
+							俺たちはいつでも<br>
+							迷いながら行こう<br>
+							悲しみの隣に<br>
+							優しさもあるから<br>
+							まぶしい青空が<br>
+							もっと輝けばいい<br>
+							太陽に負けない<br>
+							星を散りばめよう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

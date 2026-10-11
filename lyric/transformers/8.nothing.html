@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Nothin's Gonna Stand In Our Way - トランスフォーマー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Nothin's Gonna Stand In Our Way</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Spectre General</div>
+                    <div class="LyricStaff">Producers: Randy Bishop with Spencer Proffer for Pasha</div>
+
+                    <div class="LyricText">
+						<p>
+							The fortunate ones<br>
+							To be fast and free and young<br>
+							I want to count myself among<br>
+							The fortunate ones</p>
+						<p>
+							We won't be denied<br>
+							We know that time is on our side<br>
+							We've got the passion and the pride<br>
+							We won't be denied</p>
+						<p>
+							This generations<br>
+							With fire in our eyes<br>
+							Strong are the ties that bind us<br>
+							We don't need no alibis</p>
+						<p>
+							Nothing's gonna stand in our way<br>
+							Nothing's gonna stand in our way<br>
+							Nothing's gonna stand in our way<br>
+							Not tonight</p>
+						<p>
+							We want it all<br>
+							And tonight we got the call<br>
+							We're running high but we won't fall<br>
+							We want it all</p>
+						<p>
+							We won't be denied<br>
+							Like a breaker at high tide<br>
+							We're gonna take this sweet joy ride<br>
+							We won't be denied</p>
+						<p>
+							Grew expectations<br>
+							Moments in the sun<br>
+							We've waited all our lives<br>
+							And now we know our time has come</p>
+						<p>
+							Nothing's gonna stand in our way<br>
+							Nothing's gonna stand in our way<br>
+							Nothing's gonna stand in our way<br>
+							Not tonight</p>
+						<p>
+							Nothing's gonna stand in our way</p>
+						<p>
+							This generations<br>
+							With fire in our eyes<br>
+							Strong are the ties that bind us<br>
+							We don't need no alibis</p>
+						<p>
+							Nothing's gonna stand in our way<br>
+							Nothing's gonna stand in our way<br>
+							Nothing's gonna stand in our way<br>
+							Not tonight</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-transformers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

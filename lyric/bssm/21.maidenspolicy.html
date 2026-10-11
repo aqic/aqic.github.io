@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>乙女のポリシー - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「美少女戦士セーラームーンR」エンディング・テーマ</div>
+
+                    <div class="LyricTitle">乙女のポリシー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">石田ようこ</div>
+                    <div class="LyricStaff">作詞：芹沢類<br>作曲：永井誠<br>編曲：京田誠一</div>
+
+                    <div class="LyricText">
+						<p>
+							どんなピンチの時も絶対あきらめない<br>
+							そう世それが可憐な乙女のポリシー<br>
+							いつかほんとに出会う大事な帰途のために<br>
+							顔を上げて飛び込んでゆくの</p>
+						<p>
+							つんと痛い胸の奥で<br>
+							恋が目覚めるわ</p>
+						<p>
+							※怖いものなんかないよね<br>
+							　ときめくほうがいいよね<br>
+							　大きな夢があるよね<br>
+							　だからピットりりしく</p>
+						<p>
+							もっと大変なこといっぱい待ちうけてる<br>
+							きっとそれは華麗に羽ばたくチャンス<br>
+							みんな本気のときがとっても綺麗だから<br>
+							自身もってくりあして行くの</p>
+						<p>
+							今は眠る道のパワー<br>
+							いつか溢れるわ</p>
+						<p>
+							なりたいものになるよね<br>
+							がんばる人がいいよね<br>
+							涙もたまにあるよね<br>
+							だけどピットりりしく</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

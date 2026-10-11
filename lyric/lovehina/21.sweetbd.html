@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Sweet Blue Days - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Sweet Blue Days</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">倉田雅世・浅川悠</div>
+                    <div class="LyricStaff">作詞・作曲・編曲：松浦有希</div>
+
+                    <div class="LyricText">
+						<p>
+							きのうあったできごと　景色みたいにはなすキミ<br>
+							夕暮れのまんなかで　ここは　夏の入り口</p>
+						<p>
+							チャイムにはじかれて　駆け出す坂道<br>
+							風を感じたら<br>
+							悩んでいたことも　わらいとばせるから<br>
+							明日は晴れるね</p>
+						<p>
+							恋して　夢見る毎日　だいじな宝物</p>
+						<p>
+							とりとめなくおしゃべり　続けていたい放課後は<br>
+							まだ知らないときめき　出会う　せつない予感</p>
+						<p>
+							ときに同じ気持ち　みつけられなくても<br>
+							キミは大丈夫<br>
+							自分らしいことが　輝いてるって<br>
+							教えてくれたね</p>
+						<p>
+							ならんで　見つめるあの空　想いを映してる</p>
+						<p>
+							ラッシュの人波に　流されないように<br>
+							心　結びたい<br>
+							あこがれてることを　ずっとなくさないで<br>
+							大人になっても</p>
+						<p>
+							恋して　夢見る毎日　だいじな宝物<br>
+							過ぎ行く　時間のかけらに　永遠とじこめて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

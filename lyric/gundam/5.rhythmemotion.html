@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>RHYTHM EMOTION - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ朝日系アニメ「新機動戦記 ガンダムＷ」オープニングテーマ</div>
+
+                    <div class="LyricTitle">RHYTHM EMOTION</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">TWO-MIX</div>
+                    <div class="LyricStaff">作詞、作曲、編曲：TWO-MIX</div>
+
+                    <div class="LyricText">
+						<p>
+							I JUST FEEL "RHYTHM EMOTION"<br>
+							この胸の鼓動は　あなたへと続いてる　SO FARAWAY...</p>
+						<p>
+							もう　傷ついてもいい　瞳をそらさずに<br>
+							熱く　激しく　生きていたい</p>
+						<p>
+							あきらめない強さをくれる　あなただから抱きしめたい</p>
+						<p>
+							※I JUST FEEL "RHYTHM EMOTION"<br>
+							　過ちも痛みも　鮮やかな　一瞬の光へと　導いて<br>
+							　I JUST FEEL "RHYTHM EMOTION"<br>
+							　この胸の鼓動は　あなたへと続いてる　SO FARAWAY...</p>
+						<p>
+							そう　しなやかに時代（いま）を　素肌で受け止めて<br>
+							もっと　”やさしさ”見つけたいよ</p>
+						<p>
+							全てがきらめいてた　幼い日の「奇跡」取り戻して…</p>
+						<p>
+							I JUST FEEL "RHYTHM EMOTION"<br>
+							お互いのせつなさ　感じ合い　分け合える　ぬくもりを信じてる<br>
+							I JUST FEEL "RHYTHM EMOTION"<br>
+							このKISSで確かな<br>
+							情熱を伝えたい　SO FARAWAY...</p>
+						<p>
+							※繰返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

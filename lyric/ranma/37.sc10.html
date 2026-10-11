@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>よーい・どん！ - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">【10月】</div>
+
+                    <div class="LyricTitle">よーい・どん！</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">シャンプー·右京·小太刀·あかね</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲：川井憲次<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							(ガイド)よーいあるよ！<br>
+							(シャ) かけっこ誰にも負けないね　自転車降りても（ウォーアイニー）<br>
+							勝ったらデートするよろし</p>
+						<p>
+							(右) イカ玉焼いてる時やない　奪い返したる許婚<br>
+							勝負や！　手加減はせんど</p>
+						<p>
+							(小) 澄み渡る秋の空　重箱のお弁当<br>
+							食べさせて差し上げますわ　おほ！　乱馬さま</p>
+						<p>
+							(シャ) 見ているよろしね　ひいばあちゃん　出前で鍛えたこの技<br>
+							ゴールに着く　わたしだけね</p>
+						<p>
+							(右) 勝負の合間も商売や　お好み焼きなら“うっちゃん”<br>
+							タコ焼き　焼きそばもあるで</p>
+						<p>
+							(小) 風なびく万国旗　九能家のアド?バルーン<br>
+							抱き上げ登って下さい　表彰台まで</p>
+						<p>
+							(あ) 受けてやろうじゃない　ヤキモチじゃないけど<br>
+							わたしのプライド　許さないのよ！</p>
+						<p>
+							(シャ?右?小?あ) 乱馬をめぐって火と燃える　あな恐ろしや娘４人</p>
+						<p>
+							(ガイド)あいやー、障害格闘レースに出場のお客さま、すぐに、第３ゲートまで集まるよろしぃ。　えー、迷子のお知らせあるよ。バンダナ巻いてカサ持た男性を、保護してるあるね。心当たりのお客さまは…<br>
+							(良牙)いったいここはどこだ！<br>
+							(シャ) 私もなりたい許婚　逃げているばかりずるいね<br>
+							やさしく抱きしめるよろし</p>
+						<p>
+							(右) 好きと決めたら命がけや<br>
+							お好み焼きに書いたラブレターを　すぐに届けたる</p>
+						<p>
+							(小) 紅勝て白負けるな　ゴールに舞う黒バラ<br>
+							皆さまご苦労さまです　私（わたくし）　優勝！　ほっほ～っ！</p>
+						<p>
+							(あ) やってやろうじゃない　無差別格闘流<br>
+							こうなりゃ意地だわ　看板　賭ける</p>
+						<p>
+							(シャ?右?小?あ) 乱馬をめぐって火と燃える　ああ闘いは果てるともなく<br>
+							ああしあわせな　早乙女乱馬　(小)乱馬さまぁっ?</p>
+						<p>
+							(乱馬)おれって幸せだったのか…。</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

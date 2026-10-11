@@ -1,0 +1,133 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Cross talk（日中対訳） - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ツグナヒ</div>
+
+                    <div class="LyricTitle">Cross talk（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MARY</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							そんなに小さくなって<br>
+							君は何を見るの<br>
+							曇りガラスの向こうに<br>
+							二人の夢もあったね</p>
+						<p>
+							時間はいつも切なくて<br>
+							秋の風のように<br>
+							遠くまで君の今を<br>
+							どこかに連れて行くよ</p>
+						<p>
+							数えきれない出来ごとが<br>
+							君の瞳から落ちて<br>
+							流されながら揺れながら<br>
+							初めての出合いへと</p>
+						<p>
+							※繰り返す時間のリングを<br>
+							　ずっと歩いて行くんだね<br>
+							　誰も知らない未来のどこかで<br>
+							　きっと巡り会おうよ</p>
+						<p>
+							昔見た写真のよう<br>
+							懐かしい思いを<br>
+							きっと見つけられるはず<br>
+							どこかですれちがうよ</p>
+						<p>
+							抱えきれない想い出が<br>
+							君の瞳から落ちて<br>
+							流されながら揺れながら<br>
+							新しい出会いへと</p>
+						<p>
+							許された時間の彼方を<br>
+							歩き出す旅人のように<br>
+							誰も知らない未来のどこかで<br>
+							きっと巡り会えるよ</p>
+						<p>
+							※繰り返し</p>
+						<p>
+							きっと巡り会うから<br>
+							きっと巡り会うから....</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							如此细小的模样<br>
+							你能看到什么<br>
+							像隔着模糊的玻璃<br>
+							后面的是两人的梦</p>
+						<p>
+							时间永无静止<br>
+							如秋风一般<br>
+							远去了的你如今<br>
+							到底去了何方</p>
+						<p>
+							从你眼中落下<br>
+							数也数不清的泪<br>
+							流呀流 摇啊摇<br>
+							第一次到了交会的地方</p>
+						<p>
+							※循环不断的时间之轮<br>
+							　径直向前行<br>
+							　在将来谁也不知道的地方<br>
+							　总能够再相逢</p>
+						<p>
+							令人怀念的回忆<br>
+							如同旧日的照片<br>
+							看来看去<br>
+							总有些异样的感觉</p>
+						<p>
+							无法保留的回忆<br>
+							顺着你的眼眸落下<br>
+							流呀流 摇啊摇<br>
+							到了新的交会之处</p>
+						<p>
+							如同踏上行程的旅人<br>
+							向许诺的时间的彼方<br>
+							在将来谁也不知道的地方<br>
+							总能够再相逢</p>
+						<p>
+							※Repeat</p>
+						<p>
+							相信总有一天能够再相逢<br>
+							相信总有一天能够再相逢....</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Trust You Forever - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">機動武闘伝 Gガンダム</div>
+
+                    <div class="LyricTitle">Trust You Forever</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">鵜島仁文</div>
+
+                    <div class="LyricText">
+						<p>
+							束の間のやすらぎも振り切って<br>
+							ひたすら真っ直に走り続けた<br>
+							流れる汗　拭わずに<br>
+							信じるものも無くただ独り<br>
+							優しい心　隠して<br>
+							本当の自分　見失いそうな日々<br>
+							ぶつかることで深く　結びつく友情<br>
+							傷ついたことは　無駄じゃなかったね</p>
+						<p>
+							悲しみに暮れた時　そっと手を差し伸べてみよう<br>
+							きっといつまでも友は<br>
+							You'll be friends　君を見守っている<br>
+							いつか時代が変わっても僕は忘れない<br>
+							I trust you forever</p>
+						<p>
+							吹き渡る風が頬をかすめてく<br>
+							全てが目を覚ました<br>
+							新しい夢　叶う日を願いながら</p>
+						<p>
+							きっと誰もが　胸の奥　光る宝石<br>
+							汚れた時は　涙で洗ってる</p>
+						<p>
+							陽が落ちるまで拳を握り殴り合って<br>
+							傷だらけのままで“似た者同士”と笑ってた<br>
+							背中を大地に合わせると　星空がにじんでた</p>
+						<p>
+							悲しみに暮れた時　そっと手を差し伸べてみよう<br>
+							きっといつまでも友は<br>
+							You'll be friends　君を見守っている<br>
+							あきらめない明日を　そして振り向かない昨日を<br>
+							一人じゃないから　so long time　誓い合おう　きっと<br>
+							いつか時代が変わっても僕は忘れない<br>
+							I trust you forever<br>
+							We'll look honest world</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>背番号のないエース - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book ２ タッチ ～背番号のないエース～ 音楽編</div>
+
+                    <div class="LyricTitle">背番号のないエース</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ラフ＆レディ</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							You ロッカー室の<br>
+							Cry 伝言板に<br>
+							君の名を書きかけて</p>
+						<p>
+							You 折れたチョークさ...<br>
+							Cry ふと振り向けば<br>
+							うつむいた君がいた</p>
+						<p>
+							グランドを走って逃げる<br>
+							蒼い影にじんだ</p>
+						<p>
+							ハートのエース背中に隠し<br>
+							あいつのことをヨロシクなんて<br>
+							お人好しの強がりだよね wow wow...</p>
+						<p>
+							好きな気持を打ち消しながら<br>
+							恋のマウンドひとりで降りる<br>
+							背番号のないエースさ Heartache...  You 夕映え二人<br>
+							Cry 口づけるのを<br>
+							やるせなく見てたよ</p>
+						<p>
+							You 恋も知らない<br>
+							Cry 遠い昔に<br>
+							戻れたらいいのにね</p>
+						<p>
+							歓声に湧くスタジアム<br>
+							僕だけが淋しい...</p>
+						<p>
+							ハートのエースそっと破いて<br>
+							空に投げれば涙の雨の<br>
+							紙吹雪さ心が痛い wow wow...</p>
+						<p>
+							愛していると... 届かないけど<br>
+							外野席から叫んでいるよ<br>
+							背番号のないエースが</p>
+						<p>
+							For You 時が投球った<br>
+							Cry スローカーブが<br>
+							コースから逸れてく...</p>
+						<p>
+							僕たちが逸れてく...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

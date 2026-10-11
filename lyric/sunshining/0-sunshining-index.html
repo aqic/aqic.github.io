@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">陽あたり良好!</span><span class="cn">（阳光普照）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+					<div class="disc-head"><span class="disc-name">陽あたり良好!</span><span class="disc-sub">9 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.naifuno.html">《ナイフの上の夏》</a></li>
+						<li class="LyricItem"><a href="2.sheep.html">《世界中の羊数えさせないで》</a></li>
+						<li class="LyricItem"><a href="3.corner.html">《帰って来た街角》</a></li>
+						<li class="LyricItem"><a href="4.sadis.html">《悲しみはBEATにかえて》</a></li>
+						<li class="LyricItem"><a href="5.lovesleeping.html">《愛が眠る日まで　～真夏のランナー２～》</a></li>
+						<li class="LyricItem"><a href="6.maria.html">《舌打ちのマリア》</a></li>
+						<li class="LyricItem"><a href="7.sunshining.html">《陽当たり良好》</a></li>
+						<li class="LyricItem"><a href="8.kaze.html">《風が走るスタジアム》</a></li>
+						<li class="LyricItem"><a href="9.177.html">《１７７～雨は似合わない》</a></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

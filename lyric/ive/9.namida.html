@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>涙の誓い - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ゲーム「とらいあんぐるハート3 ~Sweet Song Forever~」 主題歌(JANIS)</div>
+
+                    <div class="LyricTitle">涙の誓い</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：都築真紀 高瀨一矢<br>作曲·編曲：高瀨一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							人とは違っている 君の目を見つめてた<br>
+							今はゆっくりと流れて行く<br>
+							いつもと変わらない 人並みに吞みこまれてく<br>
+							優しい笑顔 残して</p>
+						<p>
+							くり返した 心の迷いを<br>
+							振り切って どこまでも 歩きたいね</p>
+						<p>
+							悲しまないでときめいて<br>
+							泣き出しそうな想い出を抱いて<br>
+							君の明日へ羽ばくよ<br>
+							涙のような瞬間に<br>
+							こぼれ落ちた風景はずっと<br>
+							時間の外で 止まる</p>
+						<p>
+							渴いた空の青 君の目と重なる<br>
+							偶然の出会いから 夢は生まれ<br>
+							思わず振り向いた かけがえのない過去の日々<br>
+							優しい笑顔 のままで</p>
+						<p>
+							取りもどした 大きな願いを<br>
+							忘れない いつまでも 離さないで</p>
+						<p>
+							輝いていたときめきを<br>
+							忘れないで永遠を越えて<br>
+							君の未来へつだけの<br>
+							強くなれる大切づいていく<br>
+							誰にもない君なものを<br>
+							一つだけ胸に秘めて</p>
+						<p>
+							刻みこんだ 涙の誓いを<br>
+							忘れない いつまでも 歩きたいね</p>
+						<p>
+							輝いていたときめきを<br>
+							忘れないで永遠を越えて<br>
+							君の未来へつだけの<br>
+							強くなれる大切づいていく<br>
+							誰にもない君なものを<br>
+							一つだけ胸に秘めて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

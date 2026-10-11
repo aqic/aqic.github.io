@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>FUNFUN - 彼氏彼女の事情</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">FUNFUN</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">福田舞</div>
+
+                    <div class="LyricText">
+						<p>
+							Fun Fun風（かぜ）になって<br>
+							Fun Fun通（とお）りぬけて<br>
+							今（いま）　あなたの場所（ばしょ）まで<br>
+							恋（こい）をしてる　どれくらい大（おお）きなハートか見（み）てほしい<br>
+							Fun Fun連（つ）れていって<br>
+							Fun Fun知（し）らない世界（せかい）<br>
+							ずっと　手（て）をはなさないで<br>
+							魔法（まほう）みたい　あなたしか見（み）えないすべてが初（はじ）めての私（わたし）</p>
+						<p>
+							ごめんねわがままばかりで　おこってる顔（かお）してた<br>
+							本当（ほんとう）は　甘（あま）えているのに傷（きづ）つけて　すれ違（ちが）い<br>
+							やさしくしたい　仲良（なかよ）くしたい　教（おし）えてほしい<br>
+							愛（あい）がうまく届（とど）くように</p>
+						<p>
+							Fun Fun風（かぜ）になって<br>
+							Fun Fun通（とお）りぬけて<br>
+							今（いま）　あなたの場所（ばしょ）まで<br>
+							恋（こい）をしてる　どれくらい大（おお）きなハートか見（み）てほしい<br>
+							Fun Fun連（つ）れていって<br>
+							Fun Fun知（し）らない世界（せかい）<br>
+							ずっと　手（て）をはなさないで<br>
+							魔法（まほう）みたい　あなたしか見（み）えないすべてが初（はじ）めての私（わたし）</p>
+						<p>
+							さみしくなるのはどうして　さっきまで会ってても<br>
+							電話（でんわ）でおやすみ言（い）うまで　夢（ゆめ）さえも不安（ふあん）なの<br>
+							そばにいたいの　触（ふ）れていたいの　すぐに会（あ）いたい<br>
+							無理（むり）なことと　わかってても</p>
+						<p>
+							Fun Fun風（かぜ）になって<br>
+							Fun Fun通（とお）りぬけて<br>
+							今（いま）　あなたの場所（ばしょ）まで<br>
+							恋（こい）をしてる　どれくらい大（おお）きなハートか見（み）てほしい<br>
+							Fun Fun連（つ）れていって<br>
+							Fun Fun知（し）らない世界（せかい）<br>
+							ずっと　手（て）をはなさないで<br>
+							魔法（まほう）みたい　あなたしか見（み）えないすべてが初（はじ）めての私（わたし）</p>
+						<p>
+							魔法（まほう）みたい　あなたしか見（み）えないすべてが初（はじ）めての私（わたし）</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-heandshe-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

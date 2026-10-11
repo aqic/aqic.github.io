@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>フィアンセになりたい - 少女革命ウテナ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">フィアンセになりたい</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">及川光博</div>
+                    <div class="LyricStaff">作詞：及川光博<br>作曲：及川光博<br>編曲：光宗信吉</div>
+
+                    <div class="LyricText">
+						<p>
+							言葉よりも確かもの　肉体よりも曖昧なもの<br>
+							見つからなくて　二人　かすり傷増やして</p>
+						<p>
+							思い出が窮屈になりだした　この頃の僕らは<br>
+							にらみあうような瞳で　心の距離計ってる</p>
+						<p>
+							別れる気なんてないくせに　いつも不安だけ集めて<br>
+							いたずらに　ぶつけあう　ダメな恋人さ</p>
+						<p>
+							そばにいて…もっと近くに…<br>
+							その一言が出てこない<br>
+							あきれるほど　わがままに　なれたらいいのに</p>
+						<p>
+							言葉よりも確かなもの　肉体よりも曖昧なもの<br>
+							見つからなくて　二人　かすり傷増やして<br>
+							もう　はしゃがないでこれ以上<br>
+							僕より楽しそうな君を<br>
+							見るのが苦しいのは何故だろう?<br>
+							…いっそのこと　フィアンセになりたい</p>
+						<p>
+							意地悪したいんでしょう?君は<br>
+							わざと出ない僕のメッセージ<br>
+							乾かないマニキュアのせいにして　留守電</p>
+						<p>
+							"誰よりも　あなたのこと　理解してるのは私"<br>
+							そんな態度が　僕の　プライド逆なでる</p>
+						<p>
+							友達になんかもどれっこない　君だけのために生きられない<br>
+							とまどいながら　二人　キスをくり返して<br>
+							もう　悩まないでこれ以上　愛しく思えば思うほど<br>
+							孤独を感じるのは何故だろう?<br>
+							…来週にでも　フィアンセになりたい</p>
+						<p>
+							言葉よりも確かなもの　肉体よりも曖昧なもの<br>
+							見つからなくて　二人　かすり傷増やして</p>
+						<p>
+							もう　はしゃがないでこれ以上<br>
+							僕より楽しそうな君を<br>
+							見るのが苦しいのは何故だろう?</p>
+						<p>
+							友達になんかもどれっこない　君だけのために生きられない<br>
+							どまどいながら　二人　キスをくり返して</p>
+						<p>
+							もう　悩まないでこれ以上　愛しく思えば思うほど<br>
+							孤独を感じるのは何故だろう?<br>
+							…いっそのこと　フィアンセになりたい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-utena-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>砂の十字架 - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場用「機動戦士ガンダム」 挿入歌（１９８１）</div>
+
+                    <div class="LyricTitle">砂の十字架</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">やしきたかじん</div>
+                    <div class="LyricStaff">作詞：谷村新司<br>作曲：谷村新司<br>編曲：青木望</div>
+
+                    <div class="LyricText">
+						<p>
+							ライリーライリー　ライリーリラー　命かけて誓えど<br>
+							ライリーライリー　背中の　羽根はすでに破れ<br>
+							飛び立てば闇　振り向けば闇<br>
+							光ははるか遠くに見えない</p>
+						<p>
+							それでも真実は　伝わるはずだと<br>
+							祈りを越えた愛だけを　心の糧に<br>
+							祈りを越えた愛だけを　心の糧に</p>
+						<p>
+							ライリーライリー　ライリーリラー　人は誰も旅人<br>
+							ライリーライリー　両手に　掴みきれない夢を<br>
+							離別と引き換えに　涙と引き換えに<br>
+							掴める者だけが　背おった十字架</p>
+						<p>
+							ふるえるその指が　何かを伝える<br>
+							祈りを越えた愛だけが　闘う力<br>
+							祈りを越えた愛だけが　闘う力</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Dreamin'　Kids - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ ～背番号のないエース～ オリジナルサウンドトラック タッチ Original Song Book ２</div>
+
+                    <div class="LyricTitle">Dreamin'　Kids</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">日高 のり子</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							夏のパラシュートを青空に<br>
+							広げた少年たちが手を振る<br>
+							まぶしい７月を抱きしめて<br>
+							グランドに降りて来る</p>
+						<p>
+							白線で描くダイヤって<br>
+							その汗で輝くね<br>
+							キミたちここで見ているわ<br>
+							夏が終わるまで</p>
+						<p>
+							大人になんてねえならないで<br>
+							このままで時を止めてたいな<br>
+							時間の線路に耳当てれば<br>
+							あの歌聴こえる今も...  日暮れまで遊んだ原っぱに<br>
+							小さな夢の十字架埋めたね<br>
+							楡の木の日時計が止まってる<br>
+							終わりない夏の日で</p>
+						<p>
+							消えてく影が哀しくて<br>
+							泣き出した耳もとに<br>
+							どこにもみんな行かないと<br>
+							言った　夢の頃</p>
+						<p>
+							夏の斜面を少年たちは<br>
+							口笛吹きながら駆けてくよ<br>
+							変わらないでそばにいてね<br>
+							煌めく瞳のDreamin' Kids</p>
+						<p>
+							大人になんてねえならないで<br>
+							このままで時を止めてたいな<br>
+							時間の線路に耳当てれば<br>
+							口笛聴こえる...<br>
+							Dreamin' Kids</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

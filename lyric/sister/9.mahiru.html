@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>まひるのアヒル - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">まひるのアヒル</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							可愛い　まひるのアヒル</p>
+						<p>
+							平凡とか　普通って何？　不思議<br>
+							私はここ　気づいてほしい　真昼のアヒル</p>
+						<p>
+							ちょっと泣いた　忘れられなくて　←可愛い<br>
+							ちょっと捨てた　越えてしまった　←あんたは偉い</p>
+						<p>
+							描いてるVision、みんな似てて　みんなが違う<br>
+							そう　だって　それがヒトの、光るキャラクターだもの</p>
+						<p>
+							まだまだ咲いていない　お話は終わっていない<br>
+							ね、まだまだ先へ飛べる　青空は嘘がない　（大丈夫よ）<br>
+							まだまだ食べきれない　時はまだ熟していない<br>
+							ね、まだまだ諦めない　笑いながら進め</p>
+						<p>
+							嬉し　まひるのアヒル</p>
+						<p>
+							ミニスカートで　ちゃんと見ている　世界を<br>
+							本音いえば、大人はダメだよ　真昼はアヒル</p>
+						<p>
+							喧嘩をした　あやまれなかった　←カナシイ<br>
+							なんか同時に、笑ってしまった　←あいたた、ごめん</p>
+						<p>
+							つかみたいPower　運も天も味方につけて<br>
+							そう　もっと　上を目指す、タフな遺伝子だもの</p>
+						<p>
+							まだまだ待ちきれない　幸せは自分で呼べる<br>
+							ね、まだまだ懲りていない　向かい風がイタイ　（大丈夫よ）<br>
+							まだまだ目覚めない　若さって、とても眠いの<br>
+							ね、まだまだ遊んでいたい　日が暮れ、のぼるまで</p>
+						<p>
+							嬉し　まひるのアヒル</p>
+						<p>
+							求め合うHeaven　みんな似てて　みんなが違う<br>
+							そう　だって　それがヒトの、ラブな遺伝子だもの</p>
+						<p>
+							まだまだ待ちきれない　幸せは自分で呼べる<br>
+							ね、まだまだ懲りてない　向かい風がイタイ　（大丈夫よ）</p>
+						<p>
+							まだまだ咲いていない　お話は終わっていない<br>
+							ね、まだまだ先へ飛べる　青空は嘘がない　（大丈夫よ）<br>
+							まだまだ食べきれない　時はまだ熟していない<br>
+							ね、まだまだ諦めない　笑いながら進め</p>
+						<p>
+							嬉し　まひるのアヒル</p>
+						<p>
+							可愛い　まひるのアヒル</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

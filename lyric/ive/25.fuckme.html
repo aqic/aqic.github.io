@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>FUCK ME - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">吐溜-TRASH</div>
+
+                    <div class="LyricTitle">FUCK ME</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">美妃(美姫は誤り)</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							Rise on my soul<br>
+							うぶろげな現実<br>
+							見上げる空　深く堕ちてく<br>
+							Break on through now<br>
+							苦しみや悲しみも<br>
+							汚れたこの星に<br>
+							捨てて行こう</p>
+						<p>
+							Rise on my tears<br>
+							遠ざかる意識が<br>
+							孤独の隙間から<br>
+							こぼれていく<br>
+							Braek on through now<br>
+							叫ぶこと生きること<br>
+							忘れたこの星を<br>
+							捨てて行け</p>
+						<p>
+							Rise on my soul<br>
+							うぶろげな現実<br>
+							見上げる空<br>
+							深く堕ちてく<br>
+							Break on through now<br>
+							苦しみや悲しみも<br>
+							汚れたこの星に<br>
+							捨てて行こう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

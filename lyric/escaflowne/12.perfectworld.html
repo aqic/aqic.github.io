@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Perfect World - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」(1996)</div>
+
+                    <div class="LyricTitle">Perfect World</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							* None is just where one pretends and won...ders<br>
+							　Counting for a perfect world to mind...us</p>
+						<p>
+							One can be a word that counts as lonely<br>
+							Two can be as lonely as each can be<br>
+							Searching and pretending<br>
+							As we wander through this world<br>
+							Can we ever know<br>
+							Where hearts go</p>
+						<p>
+							Three is ever perfect just as clear minds<br>
+							Four till nine is given to one who finds<br>
+							Searching and pretending we'll never know<br>
+							Can't we say hello</p>
+						<p>
+							Do we still just look to counting<br>
+							Until we face each mountain<br>
+							Worlds make such a part With love<br>
+							For we know all what accounts<br>
+							Just show just announce</p>
+						<p>
+							**If we add the fractions<br>
+							　To the simple answer<br>
+							　Then each love will figure<br>
+							　To one perfect world</p>
+						<p>
+							(* repeat)<br>
+							(** repeat)<br>
+							(* repeat twice)</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

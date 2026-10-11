@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>俺達の季節 - H2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">H2</div>
+
+                    <div class="LyricTitle">俺達の季節</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">宮本 充</div>
+                    <div class="LyricStaff">作詞：本莊 哲男<br>作曲：岩坂 士京<br>編曲：ジョーリノイエ</div>
+
+                    <div class="LyricText">
+						<p>
+							親友　なんて言葉もいらないほど<br>
+							俺達いつでも　何も言わないで<br>
+							わかりあえたナ</p>
+						<p>
+							どんなつらい時も　笑うオマエに<br>
+							「強さ」ってものの　本当の意味を<br>
+							教えられたんだ</p>
+						<p>
+							目の前を過ぎてく　俺達の短い季節<br>
+							坂道　駆け昇り<br>
+							オマエと見下ろしてみたい<br>
+							明日を</p>
+						<p>
+							口に出して　励ましあわなくても<br>
+							けして挫けない背中に何度も<br>
+							助けられたんだ</p>
+						<p>
+							２度とは戻らない　俺達の短い季節<br>
+							どこまでも追いかけ<br>
+							オマエとつかみとりたいよ<br>
+							夢を</p>
+						<p>
+							行方もわからない　俺達の短い季節<br>
+							輝きを信じて<br>
+							この目で確かめてみたい<br>
+							明日を</p>
+						<p>
+							目の前を過ぎてく　俺達の短い季節<br>
+							坂道　驅け昇り<br>
+							オマエと見下ろしてみたい<br>
+							明日を</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-h2-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

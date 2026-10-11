@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>未来(ボヤージュ) - サクラ大戦</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「サクラ大戦3」エンディング・テーマ</div>
+
+                    <div class="LyricTitle">未来(ボヤージュ)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">日高のり子
+島津冴子
+小桜エツ子
+井上喜久子
+鷹森淑乃</div>
+                    <div class="LyricStaff">作詞：広井王子<br>作曲：田中公平<br>編曲：岸村正実</div>
+
+                    <div class="LyricText">
+						<p>
+							いくつもの　出会いが　歌となり<br>
+							あたらしい　わたしを　見つめたい<br>
+							いくつもの　悲しみ　分かち合い<br>
+							すばらしい　よろこび　ありがとう<br>
+							あなたに会えてよかった　その思い出　抱きしめ<br>
+							あなたと過ごしたときを　いま永遠に　感じる<br>
+							さあ　夢を見よう　新たな物語の<br>
+							さあ　歌を踊ろ　その胸を熱くして</p>
+						<p>
+							旅立ちを　季節を　歌に乗せ<br>
+							あたらしい　わたしを　見つけたい<br>
+							たくさんの　言葉を　思い出す<br>
+							お別れの　涙は　似合わない<br>
+							あなたが　教えてくれた　愛を胸に　とどめて<br>
+							あなたの　面影慕う　いま美しく　咲きます<br>
+							さあ　夢を見よう　新たな物語の<br>
+							さあ　歌を踊ろ　その胸を熱くして</p>
+						<p>
+							こころに　吹く風は　あなたの　愛の風<br>
+							踊ろう　笑顔で　Last Dance<br>
+							またいつか　会えるから</p>
+						<p>
+							さあ　夢を作ろ　あらたな若い力で<br>
+							さあ　歌を踊ろ　その胸を熱くして<br>
+							さあ　夢を繋ご　互いの手を握りあい<br>
+							さあ　歌を踊ろ　その胸を熱くして</p>
+						<p>
+							さあ　夢を作ろ　あらたな若い力で<br>
+							さあ　歌を踊ろ　その胸を熱くして<br>
+							さあ　夢を繋ご　互いの手を握りあい<br>
+							さあ　歌を踊ろ　その胸を熱くして</p>
+						<p>
+							さあ　夢を作ろ　あらたな若い力で<br>
+							さあ　歌を踊ろ　その胸を熱くして<br>
+							さあ　夢を繋ご　互いの手を握りあい<br>
+							さあ　歌を踊ろ　その胸を熱くして<br>
+							人と人が　いま　未来へ向かってる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sakurawars-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

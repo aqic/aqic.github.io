@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>AI LOVE YOU - 電影少女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">AI LOVE YOU</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">TECHIE POO</div>
+
+                    <div class="LyricText">
+						<p>
+							スパークしてる　気持ちにさからえなくて<br>
+							瞳が　先にきみを捜す</p>
+						<p>
+							自分のことは　わからないくせにきみの<br>
+							ことなら　わかりすぎるのは何故</p>
+						<p>
+							涙を　こらえていたよね<br>
+							やさしくて　哀しくて　抱きしめたくて</p>
+						<p>
+							夢ばかり　見てた　きのうよりあした<br>
+							想いは　かなえられるよ<br>
+							言いかけた　声は　かすれていても<br>
+							ほんとうに好きだよ</p>
+						<p>
+							きみのことしか　考えられないなんて<br>
+							いいこと　それともいけないこと</p>
+						<p>
+							笑顔で　見つめあえたよね<br>
+							うれしくて　せつなくて　愛しかなくて</p>
+						<p>
+							励まして　あげる　空を見ていよう<br>
+							気持ちに　虹がかかるよ<br>
+							わけあえる　ほんの　すこしの勇気<br>
+							最初から好きだよ</p>
+						<p>
+							同じ夢　見てる　きのうよりあした<br>
+							想いは　かなえられるよ<br>
+							深呼吸　そして　そっとささやく<br>
+							ほんとうに好きだよ</p>
+						<p>
+							ほんとうに好きだよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-video-girl-ai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

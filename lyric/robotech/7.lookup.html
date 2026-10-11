@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Look Up! The Sky Is Falling - Robotech</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Robotech] Insert Song</div>
+
+                    <div class="LyricTitle">Look Up! The Sky Is Falling</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Michael Bradley</div>
+                    <div class="LyricStaff">Composed by: Michael Bradley, Steve Wittmack</div>
+
+                    <div class="LyricText">
+						<p>
+							Another winter day<br>
+							Another grey reminder that what used to be<br>
+							Has gone away.<br>
+							It's really hard to see<br>
+							How long we have to live with our insanity.<br>
+							We have to pay for all we use,<br>
+							We never think before we light the fuse.</p>
+						<p>
+							Look up! Look up! Look up!<br>
+							The sky is falling.<br>
+							Look up! There's something that<br>
+							You have to do.<br>
+							Before you try to go outside<br>
+							To take in the view,<br>
+							Look up because the sky<br>
+							Could fall on you.</p>
+						<p>
+							Another restless night<br>
+							The wind is howling through the empty streets<br>
+							outside<br>
+							We have to hide.<br>
+							We dare not go outside<br>
+							We must not walk into the darkness of the night.</p>
+						<p>
+							We have to pay for all we use,<br>
+							We never think before we light the fuse.</p>
+						<p>
+							Look up! Look up! Look up!<br>
+							The sky is falling.<br>
+							Look up! There's something that<br>
+							You have to do.<br>
+							Before you try to go outside<br>
+							To take in the view,<br>
+							Look up because the sky<br>
+							Could fall on you.</p>
+						<p>
+							We have to pay for all we use,<br>
+							We never think before we light the fuse.</p>
+						<p>
+							(repeat till fade)<br>
+							Look up! Look up! Look up!<br>
+							The sky is falling.<br>
+							Look up! There's something that<br>
+							You have to do.<br>
+							Before you try to go outside<br>
+							To take in the view,<br>
+							Look up because the sky<br>
+							Could fall on you.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-robotech-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

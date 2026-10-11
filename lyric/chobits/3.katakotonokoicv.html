@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>かたことの恋(ちぃVer.) - ちょびっツ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">かたことの恋(ちぃVer.)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">杉田智和＆田中理恵</div>
+                    <div class="LyricStaff">作詞：高波敬太郎<br>作曲：高波敬太郎<br>編曲：高波敬太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							今日も　誰かと誰かが　恋に落ちていく<br>
+							世界のどこかで</p>
+						<p>
+							ふたつの線が　からまっては　ほどけていく<br>
+							結ばれないまま</p>
+						<p>
+							かたことの恋だけど<br>
+							言葉もつたないけど</p>
+						<p>
+							ほら　そよ風が過ぎて　髪が揺れている<br>
+							時間がふるえて　ふたり揺れている</p>
+						<p>
+							そして　誰かと誰かが　恋に落ちてく<br>
+							永遠を信じて</p>
+						<p>
+							今日も　誰かと誰かが　明日を見つめる<br>
+							おびえた笑顔で</p>
+						<p>
+							かたことの恋は素敵<br>
+							言葉もつたないから</p>
+						<p>
+							ほら　何かを感じて　何かを忘れた<br>
+							何かを見つけて　何かをなくした</p>
+						<p>
+							そして　誰かと誰かが　恋に落ちてく<br>
+							永遠を信じて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-chobits-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

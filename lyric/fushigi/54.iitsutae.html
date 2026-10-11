@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>紅い伝承 (いいつたえ) - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">紅い伝承 (いいつたえ)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川上とも子</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：まきのさぶろう<br>編曲：まきのさぶろう</div>
+
+                    <div class="LyricText">
+						<p>
+							大家来了(タァティライラ)　イヤサカエ　美しき山河在りし国<br>
+							実る大地　豊かな海　誇らしい生命よ永遠(とこしえ)に<br>
+							いつの日にか　黒雲が　民の喜び奪いに来る<br>
+							でも案ずるな　諦めるな　帝と共に希望の火を点せ</p>
+						<p>
+							国が危うい時代(とき)　巫女と七星士<br>
+							朱雀神を呼んで　滅びを救う<br>
+							これが紅南王国の伝承(いいつたえ)</p>
+						<p>
+							站起来了(チャンティライラ)　ソラウタエ　素晴らしき夢生まれる国<br>
+							元気な民　栄える市　闇に渡してはならぬ世界<br>
+							異世界から巫女が来て　七星士と立ち上がる時<br>
+							民の心１つとなり　胸の真ん中に紅い愛(ひ)が灯(とも)る</p>
+						<p>
+							朱雀神の神力(ちから)　巫女と出逢う時<br>
+							どんな願い事も　叶えるという<br>
+							これが　紅南王国の伝承(いいつたえ)<br>
+							太古　太古からの伝承(いいつたえ)</p>
+						<p>
+							　大家来了 (タァティライラ) ＝ 皆が来た<br>
+							　站起来了 (チャンティライラ)＝ 立ち上がった</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

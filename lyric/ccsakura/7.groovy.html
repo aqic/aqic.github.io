@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Groovy! - カードキャプターさくら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Groovy!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">広瀬香美</div>
+                    <div class="LyricStaff">作詞：広瀬香美<br>作曲：広瀬香美<br>編曲：本間昭光</div>
+
+                    <div class="LyricText">
+						<p>
+							街に出かけよう　一人でいたって　暗いだけでしょ<br>
+							ループして落ち込んで　なおさら　ah　悩んじゃって<br>
+							外に飛び出そう　心配イラナイ<br>
+							大昔から　地球だってまわってる<br>
+							きっと　ツキだってまわるよ</p>
+						<p>
+							Brand-New Love Song　ハレハレルヤ！<br>
+							みんなハジけて愛し合おう<br>
+							単調な日常　通常な感情<br>
+							守らなくちゃダメなこと　いつもある</p>
+						<p>
+							街を見渡そう　電話やパソコンも未来の扉<br>
+							隠れてる　探そうよ　この世は宝島さ<br>
+							一緒にはばたこう　楽しいことしよう<br>
+							大昔から　夜は明ける　陽は昇る<br>
+							絶対　太陽は照らすの</p>
+						<p>
+							Groovy Love Song　ハレハレルヤ！<br>
+							ヤなこと忘れ愛し合おう<br>
+							同情な現状　頑丈な友情<br>
+							動かなくちゃダメな時　いつもある</p>
+						<p>
+							Dancing in the street<br>
+							Grooving to the light through the night</p>
+						<p>
+							Brand-New Love Song　ハレハレルヤ！<br>
+							みんなハジけて愛し合おう<br>
+							Groovy Love Song　ハレハレルヤ！<br>
+							ヤなこと忘れ愛し合おう<br>
+							Brand-New Love Song　ハレハレルヤ！<br>
+							明日のために踊ろう<br>
+							Groovy Love Song　ハレハレルヤ！<br>
+							動かなくちゃダメな時　いつもある</p>
+						<p>
+							優しくなりましょう<br>
+							素直になりましょう…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ccsakura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>マーブルチョコの日々 - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">マーブルチョコの日々</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							ねぇ　今日はどんな　一日だった？<br>
+							楽しいこと見つかった？<br>
+							ワンダフルな日が続いたら　どんなにいいかな<br>
+							強がってても　伝わってくる　ほんとは元気ないことも<br>
+							聞いてあげることならきっと　わたしにもできる</p>
+						<p>
+							そのこころの痛みや　涙と　かなしみやロンリー<br>
+							絶対に　ちっちゃくしよう　点に変えよう　元気出して</p>
+						<p>
+							マーブルチョコみたいな　いろんな色の思い出つくろ<br>
+							もしブルーな時には　ほら一口でぱくりと食べてあげるね<br>
+							すぐにHappy</p>
+						<p>
+							赤やピンクやオレンジ　緑　１日に色をつけて<br>
+							大切にしまおう　ほら　every day　コレクションにしよう<br>
+							うつむくたびにせつないハート　全部食べてくれたよね<br>
+							ちからになりたい　ねぇ　いつもしてくれるように</p>
+						<p>
+							こんな日のかなしいきもちでも　笑顔を取り戻すだけで<br>
+							やさしい色に変えてゆけるよ　元気だして</p>
+						<p>
+							マーブルチョコみたいな　カラフルな雨　胸に降るなら<br>
+							ほらエールを送るよ　今日は私がぱくりと食べてあげるね<br>
+							すぐにHappy</p>
+						<p>
+							こんな日もある　凹（へこ）んじゃう日も　でも毎日がいつの間に<br>
+							キラキラでもう　素敵なメモリー　宝ものね</p>
+						<p>
+							マーブルチョコみたいな　いろんないろのおもいでつくろ<br>
+							もしブルーな時には　ほら一口でぱくりと食べてあげるね<br>
+							すぐにHappy</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

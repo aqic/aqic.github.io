@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Grip! - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Grip!</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							藍色に散らばる 七つの星よ<br>
+							それぞれに今 想いは募り打ち砕かれて 愛を叫んだ<br>
+							逃げ出す事も出来ずに 夢にすがりつく<br>
+							イカサマな日々などにはもう負けない</p>
+						<p>
+							目覚めよう この瞬間を<br>
+							やがて僕らを取り巻くであろう<br>
+							むせかえるようなリアルな日常<br>
+							大切なものは…何だっ?!<br>
+							贅沢な世界の中に見え隠れする 永遠の破片(かけら)<br>
+							さわって つかんで 僕らの今をきっちり歩いてこう</p>
+						<p>
+							「後悔はしない」と、先へ進んだ<br>
+							笑うか、泣くか? 幸か、不幸か?<br>
+							結局 今も ワカラナイけど<br>
+							変わり始めた未来に怯む事はない<br>
+							それが人生の醍醐味というものでしょう<br>
+							ギリギリを生きる僕らの出した答えが<br>
+							違ったとしても 思い込みでもっ<br>
+							強く願えばいい<br>
+							本物になれる日まで<br>
+							冷酷な世界の中で潰されそうな 愛情の芽吹き<br>
+							さわって つかんで僕らの今にしっかり刻み込もう</p>
+						<p>
+							目覚めよう この瞬間を<br>
+							やがて僕らを取り巻くであろう<br>
+							むせかえるようなリアルな日常<br>
+							大切なものは…何だっ?!<br>
+							贅沢な世界の中に見え隠れする 永遠の破片<br>
+							さわって つかんで 僕らの今をきっちり歩いてこう</p>
+						<p>
+							最後に、笑うため 僕らの今をきっちり歩いてこう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

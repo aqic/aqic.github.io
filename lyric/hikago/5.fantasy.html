@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>FANTASY - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">FANTASY</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">片瀬那奈</div>
+                    <div class="LyricStaff">作詞：片瀬那奈<br>作曲：長岡成貢<br>編曲：長岡成貢</div>
+
+                    <div class="LyricText">
+						<p>
+							胸の鼓動　熱くゆるがす<br>
+							刺激求めて　歩くMy heart<br>
+							時間だけが過ぎる毎日じゃ　変化はない　woo</p>
+						<p>
+							止まらない　信じたい　進みたい<br>
+							自分の力　試すMy life<br>
+							でも早歩きしたって見落とすだけ そう確実に</p>
+						<p>
+							baby for you　明日は明日の風が吹く<br>
+							それでも　今この瞬間を強く生きたい</p>
+						<p>
+							It's FANTASY　さまよったとしても<br>
+							見たことない世界でも<br>
+							何よりも自分を信じ立ち向かおう<br>
+							It's DESTINY　どんな場所にいても<br>
+							つつむ空は一つだから<br>
+							ねぇ　もっと　翼広げて　羽ばたけるよね</p>
+						<p>
+							流れのままに進んでく<br>
+							自分らしさ　見つめて　My style<br>
+							そう思うがままに　感じたまま心ゆだね</p>
+						<p>
+							baby to smile　不可能を可能に変えてゆくよ<br>
+							あの頃　描いていた夢と同じ気持ちで</p>
+						<p>
+							It's FANTASY　明日さえ見えない<br>
+							映りゆく時代の中でも<br>
+							誰よりも自分を強く持ち続け<br>
+							It's DESTINY　待っていたってこない<br>
+							歩き出そう怖がらずに<br>
+							そう　きっと　瞳開けたら　かなえられるよ</p>
+						<p>
+							It's FANTASY　さまよったとしても<br>
+							見たことない世界でも<br>
+							何よりも自分を信じ立ち向かおう<br>
+							It's DESTINY　どんな場所にいても<br>
+							つつむ空は一つだから<br>
+							ねぇ　もっと　翼広げて　羽ばたけるよね</p>
+						<p>
+							infinity world　どこまでも　続く道　果てなく<br>
+							make progress<br>
+							すべて一つにつながっていくから<br>
+							そう　もっと　瞳開けたら　かなえられるよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

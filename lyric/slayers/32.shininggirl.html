@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Shining Girl - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Shining Girl</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							いつも夢をこの胸に溢れさせて<br>
+							どんな時も両手広げ　ワクワクしてる<br>
+							辛い事や哀しい事にもめげず<br>
+							“天性の明るさ”それが私の自慢</p>
+						<p>
+							落ち込んだ夜も　友達捕まえて<br>
+							夜明けまで騒いじゃう</p>
+						<p>
+							I'm JUST Shining Shining Shining Girl<br>
+							振り向いたりはしない　自分を信じて、羽ばたきたい<br>
+							I'm JUST Shining Shining Shining Girl<br>
+							笑顔を忘れないで　輝く予感に出会いたいの<br>
+							All the way</p>
+						<p>
+							たまにはドジることもあるわ……それでも<br>
+							立ち直りの早さに　みんな呆れてるの<br>
+							そんな私が涙を流す時は<br>
+							やっぱり嬉しくて　ジンとしちゃう時かな</p>
+						<p>
+							ハートの天気は　晴れ時々晴れよ<br>
+							曇り空吹き飛ばそう</p>
+						<p>
+							I'm JUST Shining Shining Shining Girl<br>
+							諦めたりはしない　明日を信じて、トライしたい<br>
+							I'm JUST Shining Shining Shining Girl<br>
+							元気を忘れないで　ときめく瞬間、感じてたい<br>
+							All the way</p>
+						<p>
+							I'm JUST Shining Shining Shining Girl<br>
+							振り向いたりはしない　自分を信じて、羽ばたきたい<br>
+							I'm JUST Shining Shining Shining Girl<br>
+							笑顔を忘れないで　輝く予感に出会いたいの<br>
+							All the way</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

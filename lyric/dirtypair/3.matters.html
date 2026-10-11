@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Matters To Me - ダーティペア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">"Dirty Pair" movie insert song (1987)</div>
+
+                    <div class="LyricTitle">Matters To Me</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Poker Face</div>
+                    <div class="LyricStaff">Lyricist: Tommy Schneider<br>Composer/Arranger: Shikuma Kenzo</div>
+
+                    <div class="LyricText">
+						<p>
+							No matter what you say,<br>
+							No matter what you do<br>
+							I'm gonna live for you,<br>
+							No matter what it means<br>
+							You're all that matters to me</p>
+						<p>
+							It's been a long time, yea<br>
+							I'm trying so hard to find the key<br>
+							to that heart of yours,<br>
+							there's so many doors to be opened</p>
+						<p>
+							I'll have to try each one,<br>
+							until good luck starts to run my way<br>
+							Know I'm gonna win,<br>
+							time is closing in, but I'm patient:<br>
+							I know.<br>
+							In the search for love I found you<br>
+							I can't let you out of my sight, baby</p>
+						<p>
+							*  No matter what you say,<br>
+							   No matter what you do.<br>
+							   I'm gonna live for you,<br>
+							   No matter what it means<br>
+							   No matter where you are,<br>
+							   I'll be your lucky star.<br>
+							   No matter what the time,<br>
+							   I'm gonna make you mine<br>
+							   You're all that matters to me</p>
+						<p>
+							I know it's hard for you<br>
+							to find the right thing to do for me,<br>
+							but I told you once,<br>
+							there's no need to rush, 'cause I'm patient:<br>
+							I know.<br>
+							In the search for love I found you<br>
+							I can't let you out of my sight, baby</p>
+						<p>
+							*  Repeat</p>
+						<p>
+							All my life, for you, I've waited<br>
+							Now my chance is here I'll take it<br>
+							In the search for love I found you<br>
+							I can't let you out of my sight baby</p>
+						<p>
+							** No matter what you say,<br>
+							   No matter what you do.<br>
+							   I'm gonna live for you,<br>
+							   No matter what it means<br>
+							   No matter where you are,<br>
+							   I'll be your lucky star.<br>
+							   No matter what the time,<br>
+							   I'm gonna make you mine</p>
+						<p>
+							** Repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dirtypair-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

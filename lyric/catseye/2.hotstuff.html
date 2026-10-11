@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Hot Stuff - キャッツ♥アイ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「CAT'S EYE」エンディング(1984)</div>
+
+                    <div class="LyricTitle">Hot Stuff</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">SHERRY SAVAGE</div>
+
+                    <div class="LyricText">
+						<p>
+							When you hold me close<br>
+							When you hold me close<br>
+							When I feel your lips<br>
+							moving so close to mine<br>
+							When I hear those words that you whisper<br>
+							Flowing so sweet in my ear<br>
+							I want you babe, take me babe<br>
+							Don't stop, let's get in gear</p>
+						<p>
+							☆Hot stuff, Hot stuff is your name<br>
+							　You've got the moves, I love the game<br>
+							　You're my hot stuff, I need you babe<br>
+							　Come on you hot stuff man</p>
+						<p>
+							Hot stuff, Hot stuff is your name<br>
+							You've got the moves, I love the game<br>
+							You're my hot stuff, I need you so bad<br>
+							Come on you hot stuff man, hold me tight</p>
+						<p>
+							Tell me you're no dream<br>
+							Tell me you're no dream<br>
+							I can feel my fire burning<br>
+							deep down in my heart<br>
+							Every day I want to be near you<br>
+							waiting to be satisfied<br>
+							Just call me babe, I need you babe<br>
+							I got this hunger inside</p>
+						<p>
+							☆繰り返し</p>
+						<p>
+							☆繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-catseye-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

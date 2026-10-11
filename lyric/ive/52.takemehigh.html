@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Take me high - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Pile Driver</div>
+
+                    <div class="LyricTitle">Take me high</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">R.I.E</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							行き交う　たくさんの人達　みんな<br>
+							それぞれの生き方を　探しているのに<br>
+							うつむく私の　小さな願いに<br>
+							昨日までずっと　気づかなくて</p>
+						<p>
+							やさしさだとか　ぬくもりだとか<br>
+							見えないものに　振り回されて<br>
+							掴んだものは　夢のない日々　星の無い空</p>
+						<p>
+							風に揺れる　静かな時間の中で<br>
+							せつなく優しい君の　思い出が今<br>
+							胸にうかぶよ　空に映る<br>
+							二人の明日のために　誰も知らない道を<br>
+							これから探して行こう</p>
+						<p>
+							連なる　懐かしい想いは　みんな<br>
+							これからの明日への　道標のよう<br>
+							戸惑う私の小さな瞳は<br>
+							溢れ出る涙　止まらなくて</p>
+						<p>
+							もう泣かないよ　心の奥に<br>
+							秘めた想いは　誰のでもなく<br>
+							どこにでもない　私の中にずっとのこるよ</p>
+						<p>
+							遠く高く　君と描いてた夢が<br>
+							一つづつ回りながら<br>
+							舞い降りてくる　きっといつかは<br>
+							離さないよ　二人の未来の日々を<br>
+							ずっと終わらない人生<br>
+							このまま歩いて行こう</p>
+						<p>
+							遠く高く　君と描いてた夢が<br>
+							一つづつ回りながら<br>
+							舞い降りてくる　きっといつかは<br>
+							離さないよ　二人の未来の日々を<br>
+							ずっと終わらない人生<br>
+							このまま歩いて行こう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

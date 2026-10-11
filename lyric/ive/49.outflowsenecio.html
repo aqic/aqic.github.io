@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Senecio - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">おねがい☆ティーチャー</div>
+
+                    <div class="LyricTitle">Senecio</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">詩月かおり</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：中沢伴行<br>編曲：中沢伴行;wata</div>
+
+                    <div class="LyricText">
+						<p>
+							届かない星をつかもうと<br>
+							背伸びして手を伸ばすけれど<br>
+							夜風に触れるのが精一杯<br>
+							とめどなくあふれてくるもの<br>
+							止めようとして　胸おさえた<br>
+							波のように何度も押し寄せた</p>
+						<p>
+							もう笑いあう仲間たちの声も<br>
+							見慣れた町の　この匂いも<br>
+							すり切れた胸　しみるけれど</p>
+						<p>
+							あなたの笑顔　あなたの背中<br>
+							あなたの優しい声　思い出すたびに<br>
+							小さな胸が膨らんでく<br>
+							あなたの夢を<br>
+							あなたの思う、あなたが作る明日を<br>
+							壊さないように<br>
+							道ばたに咲く花のように　寄り添ってゆく</p>
+						<p>
+							錆びついたレールに足元<br>
+							取られそうになって　思わず<br>
+							つぶった目からこぼれ落ちた粒<br>
+							月に照らされ　小石の横<br>
+							ひっそりと咲く花を撫でて<br>
+							夜風の中　小さく震えてた</p>
+						<p>
+							手を差し伸べる優しい眼差しに<br>
+							温もり求め　弱い心　許してしまいそうだけれど</p>
+						<p>
+							あなたの指を　あなたの髪を<br>
+							あなたの瞳の奥をじっと見ていると</p>
+						<p>
+							昨日の夢が甦ってく</p>
+						<p>
+							あなたの夢に<br>
+							あなたの思う、あなたが作る明日に<br>
+							気付かないくらい</p>
+						<p>
+							さりなく咲く花のように<br>
+							そこにありたい???<br>
+							もう笑いあう仲間たちの声も<br>
+							見慣れた町の<br>
+							この匂いも<br>
+							すり切れた胸　しみるけれど</p>
+						<p>
+							あなたの笑顔　あなたの背中<br>
+							あなたの優しい声　思い出すたびに<br>
+							小さな胸が膨らんでく</p>
+						<p>
+							あなたの夢を<br>
+							あなたの思う、あなたが作る明日を</p>
+						<p>
+							壊さないように<br>
+							道ばたに咲く花のように</p>
+						<p>
+							寄り添ってゆく</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

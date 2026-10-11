@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>永遠のメロディ - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">オーディオ「美少女戦士セーラームーン In Another Dream」 挿入歌（１９９２）</div>
+
+                    <div class="LyricTitle">永遠のメロディ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">富沢美智恵</div>
+                    <div class="LyricStaff">作詞／野田薫<br>作曲／増田泉<br>編曲／赤坂東児</div>
+
+                    <div class="LyricText">
+						<p>
+							太陽にかざした　心にあなたがいる　すきといえなくても　あなたが心にいる<br>
+							ねえ　勇気をありがとう　ほら　生れたてのPOWER　すべてを包んで輝く<br>
+							空や海の広さよりも　夢は果てしないって　気づいてたのは恋をしてから</p>
+						<p>
+							運命の流れを　いっしょに泳ぎたいの　どんな出来事にも　負けたりしないように<br>
+							ねえ　出会えてよかった　その温かい空気　傷ついた日々がとけてく<br>
+							ずっとすきだった　死ぬほど　風に漂う種子(たね)が　芽吹くようなあなたの笑顔</p>
+						<p>
+							音もない宇宙のすみに　誰もがひとり<br>
+							せめて愛　感じ合えたら　生きてゆける　明日へと<br>
+							熱くこみあげるこどうは　永遠にだれも胸にも　響き渡る　まほうのメロディ<br>
+							空や海の蒼さよりも　夢はすきとおってると　あなたの目がおしえてくれた</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>情熱物語 - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book ３</div>
+
+                    <div class="LyricTitle">情熱物語</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">岩崎 良美</div>
+                    <div class="LyricStaff">作詞：康 珍化<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							さよならのない街が<br>
+							どこかにあるなら<br>
+							君をすぐ　ねえ連れて行きたいよ</p>
+						<p>
+							いいえ　想い出の星が<br>
+							降るここが素敵</p>
+						<p>
+							あなた情熱持っている<br>
+							夢を塗りかえ<br>
+							わたしせつなさ知っている<br>
+							そして始まるの</p>
+						<p>
+							君が好きだよ<br>
+							何もかも　押さえ切れなくて  もし僕に逢わなけりゃ<br>
+							季節の歯車<br>
+							今ごろは　君だれを愛したろう</p>
+						<p>
+							いいえ　あなたと見つめる<br>
+							夢それが素敵</p>
+						<p>
+							もしも　悲しみだけ捨てる<br>
+							海があるなら<br>
+							君の涙を手にためて<br>
+							星の船をこぐ</p>
+						<p>
+							僕が情熱もっている<br>
+							見つめ返して<br>
+							君が切なさ知っている<br>
+							そして始まるよ</p>
+						<p>
+							君が好きだよ<br>
+							情熱が　押さえ切れなくて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

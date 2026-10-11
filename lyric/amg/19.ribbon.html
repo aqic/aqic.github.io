@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>RIBBON - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">RIBBON</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">井上喜久子</div>
+                    <div class="LyricStaff">作詞：井上喜久子<br>作曲：川井憲次<br>作編：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							午後の教室は　ゆりかごみたいで<br>
+							先生の声まるで　子守唄ね</p>
+						<p>
+							あなた夢の国　旅立ちそうでも<br>
+							肘つついて起こすの　彼女の役目</p>
+						<p>
+							　　目くばせ　ささやき<br>
+							　　さりげない微笑みも<br>
+							　　許したくない　気持ちよ</p>
+						<p>
+							悲しくて　胸が痛むのよ<br>
+							ふたり結ぶりぼん　ほどきたい</p>
+						<p>
+							恋しくて　泣きたくなるけど<br>
+							好きと告げる勇気さえ　持てないの</p>
+						<p>
+							空はすみれ色　見おろす校庭<br>
+							風のゴ─ル目指して　走るあなた</p>
+						<p>
+							ずっとあこがれた　力強いフォ─ム<br>
+							だけどタイムを計る　彼女がいるの</p>
+						<p>
+							　　おそろい　トレ─ナ─<br>
+							　　ふたりだけじゃないのに<br>
+							　　ヤキモチなんて　せつない</p>
+						<p>
+							あなただけ　この世界中で<br>
+							たったひとり　いればいいのにね</p>
+						<p>
+							誰にでも　やさしい彼女を<br>
+							あなたどんなまなざしで　見つめるの</p>
+						<p>
+							苦しくて　瞳閉じるのよ<br>
+							夢をつなぐりぼん　結びたい</p>
+						<p>
+							恋しくて　見上げる夕燒け<br>
+							胸の奥で　悲しみに溶けていく</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

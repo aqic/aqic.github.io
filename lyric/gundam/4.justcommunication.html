@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>JUST COMMUNICATION - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ朝日系アニメ「新機動戦記ガンダムＷ」オープニングテーマ</div>
+
+                    <div class="LyricTitle">JUST COMMUNICATION</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">TWO-MIX</div>
+                    <div class="LyricStaff">作詞、作曲、編曲：TWO-MIX</div>
+
+                    <div class="LyricText">
+						<p>
+							{JUST WILD BEAT COMMUNICATION　雨に打たれながら<br>
+							色あせない熱い想い　身体中で伝えたいよTONIGHT！</p>
+						<p>
+							濡れたその肩を　暖めるように抱いた<br>
+							震えてる指先は　何を求めさまようの？}<br>
+							途切れ途切れでも　伝えて欲しい痛みを<br>
+							冷めた振りする事で　大人になんてなれない</p>
+						<p>
+							{あなたの眼差し守りたい<br>
+							悲しみ強さに変える愛を信じて}</p>
+						<p>
+							※JUST WILD BEAT COMMUNICATION　何も恐れないで<br>
+							　感じ合える　確かな青春（いま）　誰にも奪えないから<br>
+							　JUST WILD BEAT COMMUNICATION　雨に打たれながら<br>
+							　色あせない熱い想い　身体中で伝えたいよ　TONIGHT！</p>
+						<p>
+							遠い夜明けまで　寄り添って過ごしたいよ<br>
+							何もかもなくしても　やさしさだけなくさずに<br>
+							言葉よりＫＩＳＳで　互いの鼓動感じて<br>
+							情熱を引き寄せる　一瞬だけど永遠……</p>
+						<p>
+							せつなく激しく見つめたい<br>
+							泣きたい位にあなただけが愛しい</p>
+						<p>
+							JUST WILD BEAT COMMUNICATION　何も譲らないで<br>
+							わかり合える人がいれば　戦う事出来るから<br>
+							JUST WILD BEAT COMMUNICATION　愛を離さないで<br>
+							溢れ出した熱い素顔　もつれた胸解き放って　TONIGHT！</p>
+						<p>
+							※繰返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

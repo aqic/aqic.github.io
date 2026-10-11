@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">トランスフォーマー</span><span class="cn">（变形金刚）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《トランスフォーマー》</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">劇場版</span><span class="disc-sub">4 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.dare.html">《Dare》</a><span class="note">- Transformers The Movie</span></li>
+						<li class="LyricItem"><a href="2.daretobestupid.html">《Dare To Be Stupid》</a><span class="note">- Transformers The Movie</span></li>
+						<li class="LyricItem"><a href="3.hunger.html">《Hunger》</a><span class="note">- Transformers The Movie</span></li>
+						<li class="LyricItem"><a href="4.theme.html">《The Transformers - Theme》</a><span class="note">- Transformers The Movie</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">その他</span><span class="disc-sub">8 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="5.2010.html">《トランスフォーマー2010》</a><span class="note">- トランスフォーマー2010</span></li>
+						<li class="LyricItem"><a href="6.peaceagain.html">《ピース・アゲン》</a><span class="note">- 戦え！超ロボット生命体トランスフォーマー</span></li>
+						<li class="LyricItem"><a href="7.instruments.html">《Instruments Of Destruction》</a></li>
+						<li class="LyricItem"><a href="8.nothing.html">《Nothin's Gonna Stand In Our Way》</a></li>
+						<li class="LyricItem"><a href="9.thetouch.html">《The Touch》</a></li>
+						<li class="LyricItem"><a href="10.tfe.html">《Transformers》</a></li>
+						<li class="LyricItem"><a href="11.whatsyou.html">《WHAT'S YOU》</a><span class="note">- 戦え！超ロボット生命体トランスフォーマー２０１０</span></li>
+						<li class="LyricItem"><a href="12.tatakae.html">《戦え！超ロボット生命体トランスフォーマー》</a></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

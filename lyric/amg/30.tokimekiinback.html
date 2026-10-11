@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>背中あわせのときめき - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">背中あわせのときめき</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Chorus：井上喜久子，久川綾</div>
+                    <div class="LyricStaff">作詞：冬馬由美<br>作曲：川井憲次<br>作編：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							紅茶ならとっくに　さめているわ<br>
+							窗越しにあなたが　通り過ぎる<br>
+							見つめているだけでも　しあわせって···<br>
+							うし　本当は傳えたい</p>
+						<p>
+							　　せつなく　ふと　Lonely Sigh<br>
+							　　想い描く　Sweet Romance<br>
+							　　あふれるときめき　花束に変えて<br>
+							　　気持ち　すぐ屆けたい</p>
+						<p>
+							Love is Forever<br>
+							I Pray to Norn For Attain My Wish<br>
+							Goddess so Please<br>
+							小指へと　赤い糸を結ぶの<br>
+							おまじない</p>
+						<p>
+							街路樹にきらめく　銀のしずく<br>
+							ガラス窗　イニシャル指でなぞる<br>
+							雨のカフェテラスでは<br>
+							時間まで　まどろむ仔貓のようね</p>
+						<p>
+							　　濡れて走る　My Precious<br>
+							　　待ちこがれて　Heart Alive!<br>
+							　　店を飛び出し　傘を差しかけた<br>
+							　　自分　信じられない！</p>
+						<p>
+							Love is Miracle<br>
+							I wonder Who Gave Me Such a Courage<br>
+							It Must br Goddess?<br>
+							夢みてた　この時間　永遠に<br>
+							止まって</p>
+						<p>
+							わたしへと　やさしく微笑んでる<br>
+							あなたが</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

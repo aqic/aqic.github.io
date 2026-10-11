@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>愛·おぼえていますか - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">MOVIE</div>
+
+                    <div class="LyricTitle">愛·おぼえていますか</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">飯島真理</div>
+                    <div class="LyricStaff">作詞：安井かずみ<br>作曲：加藤和彦<br>編曲：清水信之</div>
+
+                    <div class="LyricText">
+						<p>
+							今 あなたの声が聴こえる<br>
+							「ここにおいで」と<br>
+							淋しさに 負けそうな わたしに</p>
+						<p>
+							今 あなたの姿が見える<br>
+							歩いてくる<br>
+							目を閉じて 待っている わたしに</p>
+						<p>
+							昨日まで 涙でくもってた<br>
+							心は今……</p>
+						<p>
+							おぼえていますか 目と目が合った時を<br>
+							おぼえていますか 手と手が触れあった時<br>
+							それは初めての 愛の旅立ちでした<br>
+							I love you,so</p>
+						<p>
+							今 あなたの視線 感じる<br>
+							離れてても<br>
+							体中が 暖かくなるの</p>
+						<p>
+							今 あなたの愛 信じます<br>
+							どうぞ私を<br>
+							遠くから 見守って下さい</p>
+						<p>
+							昨日まで 涙でくもってた<br>
+							世界は今……</p>
+						<p>
+							おぼえていますか 目と目が合った時を<br>
+							おぼえていますか 手と手が触れあった時<br>
+							それは初めての 愛の旅立ちでした<br>
+							I love you,so</p>
+						<p>
+							もう ひとりぼっちじゃない<br>
+							あなたがいるから</p>
+						<p>
+							おぼえていますか 目と目が合った時を<br>
+							おぼえていますか 手と手が触れあった時<br>
+							それは初めての 愛の旅立ちでした<br>
+							I love you,so</p>
+						<p>
+							もう ひとりぼっちじゃない<br>
+							あなたがいるから</p>
+						<p>
+							もう ひとりぼっちじゃない<br>
+							あなたがいるから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

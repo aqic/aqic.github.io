@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>さよならを教えて&lt;br&gt;～comment te dire adieu～ - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">さよならを教えて ～comment te dire adieu～</div>
+
+                    <div class="LyricTitle">さよならを教えて&lt;br&gt;～comment te dire adieu～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MELL</div>
+                    <div class="LyricStaff">作詞：（原詞）長岡建蔵<br>（訳詞）さっぽろももこ<br>作曲：さっぽろももこ<br>編曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							凪のような　感情の平穏と<br>
+							動かない　ココロの欠片<br>
+							屋上にそろえた　白い上履き<br>
+							空から降る　歪んだ肉細工</p>
+						<p>
+							わたしは境界線　白と白との境界線<br>
+							情欲を書き込むタブラ?ラサ　泡沫の漆黒の亀裂<br>
+							うたかたの物語…</p>
+						<p>
+							今はもう　くちづけも欲しくない<br>
+							望むのは　完璧なadieu</p>
+						<p>
+							昼と夜の間で　時間（とき）が止まる<br>
+							終わりのない　永遠の夕暮れ時</p>
+						<p>
+							不確かな世界は　真夏の逃げ水<br>
+							あなたさえ　遠い幻<br>
+							何もかも　玉虫色に溶けて<br>
+							落ちて行く　混沌の中</p>
+						<p>
+							わたしは放物線　ただひとつの放物線<br>
+							そして無にもなれずに　無明をさまよう　歪んだ肉細工<br>
+							だけど無にもなれずに　無明をさまよう　歪んだ肉</p>
+						<p>
+							冷え切った　掌にただひとつ<br>
+							欲しかった　完璧なadieu</p>
+						<p>
+							昼と夜の間で　時間（とき）が止まる<br>
+							終わりのない　永遠の夕暮れ時</p>
+						<p>
+							昼と夜の間で　時間（とき）が止まる<br>
+							どうぞあなた　さよならをください</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

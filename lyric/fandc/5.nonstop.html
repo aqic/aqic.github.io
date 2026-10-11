@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>NON STOP! PARTY NIGHT - F&amp;C</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</div>
+
+                    <div class="LyricTitle">NON STOP! PARTY NIGHT</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">日野森美奈 &amp; 榎本つかさ
+○（及川ひとみ &amp; 栗原みきこ）</div>
+                    <div class="LyricStaff">作詞：小澤しのぶ<br>作曲：水野幸則<br>編曲：酒井良</div>
+
+                    <div class="LyricText">
+						<p>
+							時計の針　逆さまに回り出すような<br>
+							キラメキ☆ミラクルワールド</p>
+						<p>
+							いちばんの寶物　あふれ出すよ<br>
+							Keep on shining　心に</p>
+						<p>
+							PA,PA,PA PARTY TIME<br>
+							いつもの仲間がそろったら　目と目で合図<br>
+							はじまるよ　NON STOP! Yeah! Yeah!<br>
+							PARTY NIGHT　ここでは笑顔がパスワード<br>
+							ビートに乘って　フィジカルに　Let's go! Dancin'<br>
+							踴りましょう</p>
+						<p>
+							カクテル‧グラス　虹色の夢で乾杯<br>
+							トキメキ☆マジカルワールド</p>
+						<p>
+							どこまでも續いてる　傳えたいよ<br>
+							Felling my heart　あなたに</p>
+						<p>
+							PA,PA,PA PARTY TIME<br>
+							ロマンスモードを少しだけ　星空の下<br>
+							響き合う　NON STOP! MUSIC<br>
+							PARTY NIGHT　まばたきひとつで　パラダイス<br>
+							微熱まじりの　トロピカル　Sweet Emotion<br>
+							永遠に</p>
+						<p>
+							大切な　瞬間を　忘れないで<br>
+							Keep on shining　いつでも</p>
+						<p>
+							PA,PA,PA PARTY TIME<br>
+							いつもの仲間がそろったら　目と目で合図<br>
+							はじまるよ　NON STOP! Yeah! Yeah!<br>
+							PARTY NIGHT　ここでは笑顔がパスワード<br>
+							ビートに乘って　フィジカルに　Let's go! Dancin'</p>
+						<p>
+							PA,PA,PA PARTY TIME<br>
+							ロマンスモードを少しだけ　星空の下<br>
+							響き合う　NON STOP! MUSIC<br>
+							PARTY NIGHT　まばたきひとつで　パラダイス<br>
+							微熱まじりの　トロピカル　Sweet Emotion<br>
+							永遠に</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fandc-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>House Of Love（日中対訳） - ヴァイス・クロイツ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">House Of Love（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							もう二度と離れないほど<br>
+							体中　Ah　鍵をかけて<br>
+							もう誰の目にもふれない<br>
+							微粒子に　Ah　変わり果てよう</p>
+						<p>
+							ねえ　白い部屋は　家具さえなくて　裸のふたり<br>
+							ねえ　帰る場所は　ここじゃないのに　別れに喘ぐ</p>
+						<p>
+							そう君は上流を暮らす<br>
+							美しい　Ah　人形のよう<br>
+							そうここで抱きあう度に<br>
+							部屋じゅうが　Ah　愛にあふれる</p>
+						<p>
+							ねえ　甘い吐息　窓を曇らす　雨粒のよう<br>
+							ねえ　あなたらしく　乱れた顔で　外を見つめて</p>
+						<p>
+							ねえ　白い部屋は　家具さえなくて　裸のふたり<br>
+							ねえ　帰る場所は　ここじゃないのに　別れに喘ぐ</p>
+						<p>
+							ねえ　甘い吐息　窓を曇らす　雨粒のよう<br>
+							ねえ　あなたらしく　乱れた顔で　外を見つめて</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							像不要再度分离那般<br>
+							在体内上锁<br>
+							已经完全变成任谁都<br>
+							看不见的微粒子</p>
+						<p>
+							白色的房间 连家具也没有 裸身的两人<br>
+							归去的场所并非此地 挣扎着分别</p>
+						<p>
+							你已如同生活在上流社会的<br>
+							美丽人偶那般<br>
+							在此处相拥之时<br>
+							房中已满溢着爱</p>
+						<p>
+							甜美的吐息 使窗户模糊 像雨滴一般<br>
+							像你一样的迷乱脸颜 凝视着外头</p>
+						<p>
+							白色的房间 连家具也没有 裸身的两人<br>
+							归去的场所并非此地 挣扎着分别</p>
+						<p>
+							甜美的吐息 使窗户模糊 像雨滴一般<br>
+							像你一样的迷乱脸颜 凝视着外头</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-weibkreuz-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ひとみのタロット占い - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」約束はいらないSingle</div>
+
+                    <div class="LyricTitle">ひとみのタロット占い</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							ラ・ロータ。　運命の環。<br>
+							カードの意味は運命的な出逢い。一目惚れ。<br>
+							全てのものはめぐり巡っている。</p>
+						<p>
+							インペラトーレ。　皇帝。<br>
+							今は頼りになる男性。都市が離れた人との結婚。<br>
+							積極的になれば相手の心を掴む事ができる。</p>
+						<p>
+							イル・パッツォ。　愚者。<br>
+							華やかな魅力。自由な恋愛かん。多くの愛を追い掛ける人。</p>
+						<p>
+							ラ・ジュスティッツィア。　正義。<br>
+							カードの向きは逆。この場合の意味は一方的な恋。<br>
+							恋のライバルが出現争っても来る。</p>
+						<p>
+							ラ・カロッツァ。　戦車。<br>
+							協力なライバルに打ち勝ち、恋は急展開。電撃的な結婚。</p>
+						<p>
+							ラ・ルナ。　月。<br>
+							偽りの愛に傷き、本当の愛を発見。</p>
+						<p>
+							ラ・トレ。　崩壊の塔。<br>
+							アクシデントに見回れる恋。予期せぬ突然の別れ。失恋。</p>
+						<p>
+							サーペントのエース。<br>
+							新たな出発。勇気。</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

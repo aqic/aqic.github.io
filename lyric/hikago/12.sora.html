@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>空 - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">空</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川上ともこ</div>
+                    <div class="LyricStaff">作詞：木本慶子<br>作曲：添田啓二<br>編曲：添田啓二</div>
+
+                    <div class="LyricText">
+						<p>
+							穏やかな<br>
+							季節を運ぶ風が吹く<br>
+							もうすぐ　新しい何かと<br>
+							めぐり合える気がした</p>
+						<p>
+							どこまでも<br>
+							広がる空を見上げたら<br>
+							まだたくたびに違う<br>
+							形を作る　白い雲</p>
+						<p>
+							なぜ<br>
+							夢をかなえたいのかなんて<br>
+							うまくいえない答えも<br>
+							いつか何もかも<br>
+							見えるときが来ると信じてる<br>
+							誰もそれを求める</p>
+						<p>
+							今　青い空の下　光る風の中<br>
+							そっと　目を閉じてみる<br>
+							思い出のかけら　一つ一つが<br>
+							確かな次へと　導いて<br>
+							ここからまた歩き出せる</p>
+						<p>
+							絶え間なく<br>
+							時は流れていくけれど<br>
+							心に残せるもの<br>
+							大切なもの　見つけたい</p>
+						<p>
+							まだ<br>
+							夢と憧れの違いを<br>
+							知らず夢中で走った<br>
+							いつかこの腕が<br>
+							届くときが来ると信じてた<br>
+							今も固く信じてる</p>
+						<p>
+							そう　青い空の下　光る風の中<br>
+							きっと見下ろしている<br>
+							昨日を忘れず　明日に怯えず<br>
+							教えられたこと　胸に抱(だ)き<br>
+							空を目指し　歩き出そう</p>
+						<p>
+							青い空の下　光る風の中<br>
+							そっと目を閉じてみる<br>
+							思い出のかけら　一つ一つが<br>
+							確かな次へと　導いて<br>
+							ここからまた　歩き出せる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

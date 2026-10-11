@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Grow Me - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">いいなり</div>
+
+                    <div class="LyricTitle">Grow Me</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">AKI</div>
+                    <div class="LyricStaff">作詞：永田善也<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							どうしてなの？少しづつ<br>
+							あなたと私出逢えたこと<br>
+							不思議に感じる思いが<br>
+							心の中を支配するの</p>
+						<p>
+							後悔なんてしていない<br>
+							私にとってあなたはきっと<br>
+							一番の大切な人<br>
+							とても贅沢な悩み・・・</p>
+						<p>
+							だけど幸せが恐いの何故？<br>
+							持続することにね　自信がない<br>
+							問いかける何度だって<br>
+							待っているよ答えは一つ</p>
+						<p>
+							今までに<br>
+							あなたから教わったことの全てが<br>
+							どんな時も<br>
+							私を勇気づけているのは確か</p>
+						<p>
+							忘れるなんてできないよ<br>
+							私にとってあなたはきっと<br>
+							一番の信じれる人<br>
+							とても贅沢な私・・・</p>
+						<p>
+							ずっとこれからも一緒だよと<br>
+							　あなたに言葉でね<br>
+							示されると<br>
+							溢れるの知らず知らず<br>
+							笑うあなたの顔揺れる</p>
+						<p>
+							このままどんどん成長して<br>
+							　大人になるって<br>
+							それってどんなこと<br>
+							好きなことが言えなくなって<br>
+							やりたいこともやれなくって<br>
+							さっきと今も微妙に違うし<br>
+							直線的な時間の中で<br>
+							とりあえず　賢い子供に<br>
+							grow me grow you</p>
+						<p>
+							そうよ今以上それ以上に<br>
+							　私はあなたにね<br>
+							近づけるわ<br>
+							追いかけて行くと決めた<br>
+							もっといろんなこと教えて</p>
+						<p>
+							あなたへと向かうために<br>
+							　私は大人にね<br>
+							なりたいのに<br>
+							時にはそう立ち止まって<br>
+							広い背中を見つめるよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

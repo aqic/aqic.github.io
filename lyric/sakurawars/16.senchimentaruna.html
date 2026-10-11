@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>センチメンタルな… - サクラ大戦</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「サクラ大戦3」挿入歌</div>
+
+                    <div class="LyricTitle">センチメンタルな…</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">田中真弓＆高乃麗＆渕崎ゆり子</div>
+                    <div class="LyricStaff">作詞：広井王子<br>作曲：田中公平<br>編曲：宮崎慎二</div>
+
+                    <div class="LyricText">
+						<p>
+							あなたの青い空を　ふたりで見つめていた<br>
+							ほほに触れた　風が濡れると　あの空が少し遠ざかる<br>
+							あなたと同じ空を　見上げてたはずなのに<br>
+							日々の暮らし　追いかけていて　わたし　あの空　見失っていた</p>
+						<p>
+							知っていると　思ったのに　何も知らなかった<br>
+							あなたの歩幅も　あなたの涙も　あなたの夢も<br>
+							アルバムめくりながら　センチメンタルしています</p>
+						<p>
+							あなたの青い空に　わたしの夢を重ね<br>
+							身勝手にも　ひとりはしゃいで　あの空をすこし遠ざけた<br>
+							あなたと同じ空は　わたしに見えないのに<br>
+							いつもあなた　同じ空だと　言った　優しさ気づかなかった</p>
+						<p>
+							知っていると　思ったのに　何も知らなかった<br>
+							あなたの歩幅も　あなたの涙も　あなたの夢も</p>
+						<p>
+							思い出す　大きな背中　目の前に　広がっていた<br>
+							ひとり佇み　見上げてる　センチメンタルな　青い空を<br>
+							思い出す　大きな背中　目の前に　広がっていた<br>
+							ひとり佇み　見上げてる　センチメンタルな　青い空を<br>
+							ララララララララララ　ララララララララララ<br>
+							ララララララララララ　センチメンタルな　青い空を<br>
+							思い出す　大きな背中　目の前に　広がっていた<br>
+							ひとり佇み　見上げてる　センチメンタルな　青い空を</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sakurawars-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

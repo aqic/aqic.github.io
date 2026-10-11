@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ミエナイチカラ～INVISIBLE ONE～ - 地獄先生ぬ〜べ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">地獄先生ぬ～べ～エンディングテーマ曲</div>
+
+                    <div class="LyricTitle">ミエナイチカラ～INVISIBLE ONE～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">B'z</div>
+                    <div class="LyricStaff">作詞：稲葉浩志<br>作曲：坂本孝弘<br>編曲：坂本孝弘／稲葉浩志／池田大介</div>
+
+                    <div class="LyricText">
+						<p>
+							夢ならあるはずだ　あなたにも僕にでも<br>
+							見つかりにくいだけだ忙しすぎて</p>
+						<p>
+							ミエナイチカラが僕を今動かしている<br>
+							その気になればいいよ<br>
+							未来はそんなに暗くない<br>
+							We'll be alright, good luck, my friends.<br>
+							愛する友の言葉を　僕は忘れない</p>
+						<p>
+							一体どんな言葉だった<br>
+							本当に言いたかったのは？<br>
+							いくら舌打ちしても　戻らない日々よ</p>
+						<p>
+							ユルギナイチカラが　あなたに今囁いてる<br>
+							“IT'S OK BABY”　怖くないよ<br>
+							誰かを愛して生きること<br>
+							何故に　気持ちは<br>
+							ずっと後にならなけりゃ伝わらない</p>
+						<p>
+							ミエナイチカラで　だれもが強く繋がっている<br>
+							何も大したことじゃないよ<br>
+							そばにいても離れていても<br>
+							昨日　今日　明日と<br>
+							笑顔のあなたはいつでも　この胸にいるよ</p>
+						<p>
+							ミエナイチカラよ輝け<br>
+							You've got to be strong<br>
+							It's never too late<br>
+							I never say die<br>
+							ユルギナイチカラよ僕を満たせ<br>
+							You've got to be strong<br>
+							It's never too late<br>
+							I never say die<br>
+							ミエナイチカラよ輝け<br>
+							You've got to be strong<br>
+							It's never too late<br>
+							I never say die</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-nube-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

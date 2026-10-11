@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>恋人たちの伝説 - F&amp;C</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ED主題歌</div>
+
+                    <div class="LyricTitle">恋人たちの伝説</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">美羽</div>
+                    <div class="LyricStaff">作詞：ドンマッコウ（TWO-FIVE）<br>作曲：おおくま　けんいち<br>編曲：おおくま　けんいち</div>
+
+                    <div class="LyricText">
+						<p>
+							遠く遠くに　なつかしい影<br>
+							なぜかせつなくて<br>
+							ずーっと見つめたくてこのまま…<br>
+							やがてあなたも私に気づき<br>
+							手を振るやさしい笑顔見えた瞬間<br>
+							走り出してた</p>
+						<p>
+							恋人たちはいま伝説なの</p>
+						<p>
+							ただ近くで腕にふれていたいだけ<br>
+							ちょっとうれしい<br>
+							誰がいてもかまわない今日は平気<br>
+							寄りそう…<br>
+							恋人になれたの</p>
+						<p>
+							どこへ行っても<br>
+							何をやっても<br>
+							あなたを考えてるの<br>
+							愛の魔法が解けないのなら<br>
+							言葉を消してください<br>
+							さよならはいえないから</p>
+						<p>
+							ただ近くで腕にふれていたいだけ<br>
+							ちょっとうれしい<br>
+							誰がいてもかまわない今日は平気<br>
+							寄りそう…<br>
+							同じ道を歩きたいと願ってる<br>
+							気持ちかくせない<br>
+							きっと今夜友だちに電話するわ<br>
+							彼だと</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fandc-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

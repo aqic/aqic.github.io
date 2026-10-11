@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>全速力のＩ　Ｌｏｖｅ　Ｙｏｕ - スローステップ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">スローステップ オリジナルサウンドトラック</div>
+
+                    <div class="LyricTitle">全速力のＩ　Ｌｏｖｅ　Ｙｏｕ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">山口 勝平</div>
+                    <div class="LyricStaff">作詞：佐藤 純子<br>作曲：東郷 昌和<br>編曲：岩本 正樹</div>
+
+                    <div class="LyricText">
+						<p>
+							知らん顔で　通り過ぎる<br>
+							口笛を吹いても　すましてるよ<br>
+							みじかく切った君の髪も<br>
+							僕をはじくようで　そっけないね</p>
+						<p>
+							A baby in blue with baby face<br>
+							And baby fall in love...???<br>
+							君のことすべて気になるのさ</p>
+						<p>
+							Monday プライドが<br>
+							Tuesday　服を着て<br>
+							街中駆け抜けてゆく<br>
+							でも　君だけは<br>
+							もう　かなわない<br>
+							全速力のI LOVE YOU!!  弱味見せたら　おこりだすね<br>
+							君はいつだって大正解<br>
+							先回りしたつもりなのに<br>
+							いつも負けてるようで　情けない</p>
+						<p>
+							A baby in blue with baby face<br>
+							And baby fall in love...???<br>
+							かたむいた恋を回してるよ</p>
+						<p>
+							Wednesday　ちっぽけな<br>
+							Thursday　言葉さえ<br>
+							僕にはバラードだから<br>
+							Friday　かたときも<br>
+							Saturday　離さない<br>
+							全速力のI LOVE YOU!!</p>
+						<p>
+							A baby in blue with baby face<br>
+							And baby fall in love...???<br>
+							うつむいた君を抱きしめたい</p>
+						<p>
+							Monday プライドが<br>
+							Tuesday　服を着て<br>
+							街中駆け抜けてゆく<br>
+							でも　君だけは<br>
+							もう　かなわない<br>
+							全速力のI LOVE YOU!!</p>
+						<p>
+							Wednesday　ちっぽけな<br>
+							Thursday　言葉さえ<br>
+							僕にはバラードだから<br>
+							Friday　かたときも<br>
+							Saturday　離さない<br>
+							全速力のI LOVE YOU!!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slowstep-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>DROWNING - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ゲーム「陵辱痴漢地獄」主題歌</div>
+
+                    <div class="LyricTitle">DROWNING</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">モモ</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲·編曲：高瀨一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							いつも溜息ばかり<br>
+							また今日もバランスを保てない<br>
+							あなたの指先 かとった跡が<br>
+							熱を持ち 心まで焦がしてく</p>
+						<p>
+							ふり返す罠に引き裂かれて 震れる唇 また默りこむ<br>
+							これが正しいと 誰が決めるの？ 優柔不断すぎるmoral</p>
+						<p>
+							やめないで Give you my way 今はただ<br>
+							搖れる心 持て余して逃げる<br>
+							真実は 初めての感覺にたげ 見える<br>
+							まるで夢の中 Tough on my heart 抱きしめて<br>
+							何も感じなくなるほんど強く<br>
+							少しずつ 私の針 もどして<br>
+							trance you....</p>
+						<p>
+							そっと目覺めはじめる<br>
+							音を立て その鍵がはずれてく<br>
+							自分を咎める 裏に潛んだ<br>
+							溢れ出す切なさに 指を嚙む</p>
+						<p>
+							見透かされそうで視線逸らす<br>
+							小さなブライドさえ崩れていく<br>
+							愛してるなんて言葉だけでは<br>
+							傳わらないよ こんなfeeling</p>
+						<p>
+							超えないで Gice you my way 今はまだ<br>
+							觸れることも許されないライン<br>
+							その先は 見たことの無い色に染まってる<br>
+							深い渦の中 Tough on my heart 落ちてゆく<br>
+							體中を驅け巡る熱さに<br>
+							指先が痺れてくほどに 溶けて 泳げない<br>
+							drown you....</p>
+						<p>
+							ふり返す罠に引き裂かれて 震れる唇 また默りこむ<br>
+							これが正しいと 誰が決めるの？ 優柔不断すぎるmoral</p>
+						<p>
+							やめないで Give you my way 今はただ<br>
+							搖れる心 持て余して逃げる<br>
+							真実は 初めての感覺にたげ 見える<br>
+							まるで夢の中 Tough on my heart 抱きしめて<br>
+							何も感じなくなるほんど強く<br>
+							少しずつ 私の針 もどして<br>
+							trance you....</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

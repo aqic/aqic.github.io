@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Instant Karma - ヴァイス・クロイツ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Ｗｅｉβ ｋｒｅｕｚ IM</div>
+
+                    <div class="LyricTitle">Instant Karma</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Ｗｅｉβ</div>
+                    <div class="LyricStaff">作詞：相田 毅<br>作曲・編曲：西岡 和也</div>
+
+                    <div class="LyricText">
+						<p>
+							雨の道に映る影<br>
+							それは愛の呪縛 解いた俺<br>
+							抱かれたいと すがる人にさえ<br>
+							言葉ひとつ かけてあげられず</p>
+						<p>
+							罪はそっと 消えてしまう<br>
+							嘘のように 消えてしまう<br>
+							憎しみは 消えてしまう<br>
+							嘘のように 消えてしまう</p>
+						<p>
+							背中越しにつぶやいた<br>
+							それは過去を嘲け 笑う俺<br>
+							今も胸に 残る傷なんて<br>
+							可笑し過ぎる 誰も騙せない</p>
+						<p>
+							罪はきっと 慣れてしまう<br>
+							愛のように 慣れてしまう<br>
+							★ 憎しみは 慣れてしまう<br>
+							キスのように 慣れてしまう</p>
+						<p>
+							罪はそっと 消えてしまう<br>
+							嘘のように 消えてしまう<br>
+							憎しみは 消えてしまう<br>
+							嘘のように 消えてしまう</p>
+						<p>
+							★ REPEAT</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-weibkreuz-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

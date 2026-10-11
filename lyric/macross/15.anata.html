@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>あなたを感じている - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Macross2</div>
+
+                    <div class="LyricTitle">あなたを感じている</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">笠原弘子</div>
+                    <div class="LyricStaff">作詞：真名杏樹<br>作・編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+						<p>
+							私の恋はオルゴールよ<br>
+							こころの蓋を閉じて<br>
+							あなたに会うと隠している<br>
+							夜ふけの独りごとを<br>
+							なぜ　あなたが彼女の名前<br>
+							口にしただけで<br>
+							もう　大嫌いなんて思うにかしら<br>
+							波打つ胸が奏でるのは<br>
+							涙が燃える音<br>
+							陽射しをあびて素直になれたら<br>
+							あなたに言いたい<br>
+							やさしく言いたい<br>
+							『ミア・センテス・レソ…』</p>
+						<p>
+							気づいているの？　あなたが今<br>
+							私のすべてなのよ<br>
+							ねえ　このまま歩いて行けば<br>
+							プラタナスの道<br>
+							ほら　木洩れ日の中で耳をすまして<br>
+							私の恋はオルゴールよ<br>
+							こころの蓋をあけて<br>
+							その手に抱かれ奏でたいの<br>
+							『あなたを感じている…』</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>永遠の未来 - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">永遠の未来</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">アニメタル</div>
+                    <div class="LyricStaff">作詞：森雪之丞<br>作曲：山崎利明<br>編曲：アニメタル、難波弘之</div>
+
+                    <div class="LyricText">
+						<p>
+							悲しみの中で<br>
+							夢を抱きしめてた<br>
+							どしゃ降りの雨に<br>
+							身体が凍えても</p>
+						<p>
+							Dream …心の炎は<br>
+							二度と消さないと</p>
+						<p>
+							☆青き空よ　果てしなき空<br>
+							　光がそこに　ある限り<br>
+							　熱く強く　俺達は生きてゆく<br>
+							　愛をかざし　守りたい<br>
+							　…永遠(とわ)の未来</p>
+						<p>
+							傷ついて人は<br>
+							嘘を覚えるけど<br>
+							あふれる涙は<br>
+							子供の頃のまま</p>
+						<p>
+							Truth …時代が　どんなに<br>
+							罪に汚れても</p>
+						<p>
+							青き空よ　澄みわたる空<br>
+							翼の生えた　夢が翔ぶ<br>
+							風に向かい　俺たちの情熱が<br>
+							いつか造る　楽園は<br>
+							…永遠(とわ)の未来</p>
+						<p>
+							☆REPEAT</p>
+						<p>
+							青き空よ　永遠(とわ)を歌え</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

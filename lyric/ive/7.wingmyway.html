@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Wing my Way - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ゲーム「Faland Symphony」主題歌(TGL)</div>
+
+                    <div class="LyricTitle">Wing my Way</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲·編曲：高瀨一矢<br>Guitar：Wata</div>
+
+                    <div class="LyricText">
+						<p>
+							高らかな天を仰いだ<br>
+							飛び立つ白い鳥の群れに<br>
+							のせた夢はどこへゆくのとたずね<br>
+							風に飛ばされて　思いもよらない迷路に迷っても<br>
+							探しにゆこう　流れる雲　追いかけ</p>
+						<p>
+							例えば　この先　どこかで道が途絶えても<br>
+							（The boundless sky・;・;・;）<br>
+							続く大地に　果てしない地図を描こう<br>
+							（Wing my Way・;・;・;）<br>
+							間違いなど恐れることはない</p>
+						<p>
+							ここから始まる無限の物語は　放物線を描き<br>
+							地平線の向こう側まで続いてゆく<br>
+							どんなに悲しい事があっても<br>
+							涙の跡は　きっと<br>
+							誰かが旅をする　希望の道になるよ</p>
+						<p>
+							答えのないパズル　解いて<br>
+							階段を一つ登って<br>
+							少し高い目線に　何が映る？<br>
+							初めて枝から飛び立つ　小鳥のように胸をはって<br>
+							震えながら　揺れながらも　羽ばたこう</p>
+						<p>
+							例えば　この先　大地がそこで途切れても<br>
+							（Reach for the shine ・;・;・;）<br>
+							翼広げて　大空の彼方を目指そう<br>
+							（Wing my Way・;・;・;）<br>
+							終わりを決めるのは　簡単だけど</p>
+						<p>
+							ここから始まる無限の物語は<br>
+							プリズムの中揺れる<br>
+							七色の光を輝らして進んでゆく<br>
+							変わってゆくこと　恐れないで<br>
+							遠回りの道にも<br>
+							決して無駄ではない　何かが咲いているよ</p>
+						<p>
+							（You can do just as you please・;・;・;）</p>
+						<p>
+							例えば　この先　空が雲に覆われても<br>
+							（The boundless sky・;・;・;）<br>
+							共に手を取り　空色の道を創ろう<br>
+							（Wing my Way・;・;・;）<br>
+							留まること　今は選ばないで</p>
+						<p>
+							ここから始まる無限の物語は　放物線を描き<br>
+							地平線の向こう側まで続いてゆく<br>
+							どんなに悲しい事があっても<br>
+							涙の跡は　きっと<br>
+							誰かが旅をする　希望の道になるよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

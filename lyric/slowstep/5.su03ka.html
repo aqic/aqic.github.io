@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風の予感 - スローステップ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">スローステップ オリジナルサウンドトラック</div>
+
+                    <div class="LyricTitle">風の予感</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">堀川 亮</div>
+                    <div class="LyricStaff">作詞：ＳＨＯＷ<br>作曲：埜邑 紀見男<br>編曲：？</div>
+
+                    <div class="LyricText">
+						<p>
+							ＤＡＮ　ＤＡＮ　君を好きに<br>
+							ＤＡＮ　ＤＡＮ　君を好きに<br>
+							Ｂａｂｙ　なってゆく<br>
+							ＤＡＮ　ＤＡＮ　君の髪が<br>
+							ＤＡＮ　ＤＡＮ　風の中で　そっと輝き出す</p>
+						<p>
+							はじめて出会った　あの夏の淡い光に<br>
+							君の唇が揺れる<br>
+							永遠に続く　なんてタイプでもないけれど<br>
+							美しい予感がある</p>
+						<p>
+							瞳を閉じた君をまだ知らないけれど<br>
+							あこがれだけで好きになる程<br>
+							そう僕は軽くない</p>
+						<p>
+							ＤＡＮ　ＤＡＮ　僕の夢と<br>
+							ＤＡＮ　ＤＡＮ　君の夢が<br>
+							Ｂａｂｙ　見つめあう<br>
+							ＤＡＮ　ＤＡＮ　僕の中で<br>
+							ＤＡＮ　ＤＡＮ　風の中で　そっと輝き出す<br>
+							 不思議な感じさ　もうずっと前からふたり<br>
+							知っていた気がしている</p>
+						<p>
+							風が出てきたら波に向かうような<br>
+							サーファーたちのすんだ瞳で今<br>
+							君を見つめたい</p>
+						<p>
+							ＤＡＮ　ＤＡＮ　君を好きに<br>
+							ＤＡＮ　ＤＡＮ　君を好きに<br>
+							Ｂａｂｙ　なってゆく<br>
+							ＤＡＮ　ＤＡＮ　君の髪が<br>
+							ＤＡＮ　ＤＡＮ　風の中で　そっと輝き出す</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slowstep-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

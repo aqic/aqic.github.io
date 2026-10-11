@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>蒼いメモリーズ - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book ３ タッチ Music Flavor ５</div>
+
+                    <div class="LyricTitle">蒼いメモリーズ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">内海 和子</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							昼下の劇場に<br>
+							ぽつんとひとりで<br>
+							あなたが待ってた</p>
+						<p>
+							背後から見ると<br>
+							少年の頃の<br>
+							面影があるね</p>
+						<p>
+							声をかけずこの場所で<br>
+							あなたを見ていたい...<br>
+							何故人を好きになるのかな<br>
+							涙の隣で<br>
+							背中に聞いてみた　そっと  紙コップふたつ<br>
+							大事に抱えて<br>
+							スクリーンを見てる</p>
+						<p>
+							あなたがとっても<br>
+							懐かしくなって<br>
+							涙があふれた</p>
+						<p>
+							愛を乗せた蒼い船<br>
+							「どこへ流れてくの」<br>
+							二人声あげて追いかけた<br>
+							遠い岸辺で<br>
+							あなたが振り向いて微笑う</p>
+						<p>
+							好きだよって打ち明けた<br>
+							あなたがにじんでる...<br>
+							二人並び投げた小石が<br>
+							時間の川面で<br>
+							まぶしく水を切ってゆくね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

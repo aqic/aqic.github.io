@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>運命(さだめ)の星 - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">運命(さだめ)の星</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">子安武人</div>
+                    <div class="LyricStaff">作詞：里乃塚玲央<br>作曲：本間勇輔<br>編曲：本間勇輔</div>
+
+                    <div class="LyricText">
+						<p>
+							きらめきたまえ　運命(さだめ)の星よ<br>
+							今、薄れ行く　意識には<br>
+							望みは遠く　夢は虚しい<br>
+							さあ、一息に　消してくれ</p>
+						<p>
+							それで　すべてが終わる<br>
+							それで　すべてが捨てれる<br>
+							自分を責め<br>
+							国を憂い<br>
+							未練に<br>
+							苦しむ日も . . .</p>
+						<p>
+							きらめきたまえ　運命(さだめ)の星よ<br>
+							今、暮れて行く　この空に</p>
+						<p>
+							きらめきたまえ　運命(さだめ)の星よ<br>
+							我が　愛すべき　者達の<br>
+							悲しむ姿　だけが気掛かり<br>
+							この胸のうち　告げてくれ</p>
+						<p>
+							それは　一度の別れ<br>
+							そして　永遠(とわ)の再会<br>
+							私はいる<br>
+							共に生きた<br>
+							記憶の<br>
+							中にいつも . . .</p>
+						<p>
+							きらめきたまえ　運命(さだめ)の星よ<br>
+							この身を天に　解き放て</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

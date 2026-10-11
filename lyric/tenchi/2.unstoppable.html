@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>やめられない　やめられない - 天地無用!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天地無用」エンディング・テーマ (1989)</div>
+
+                    <div class="LyricTitle">やめられない　やめられない</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">天地無用！の人々</div>
+                    <div class="LyricStaff">作詞：古道夏子<br>作曲：松宮京子<br>編曲：藤原郁郎</div>
+
+                    <div class="LyricText">
+						<p>
+							[鷲羽]やめられない　やめられない<br>
+							　　　やめられない　やめられない<br>
+							[清音]朝寝　夜更かし　昼寝</p>
+						<p>
+							[魎呼]やめられない　やめられない<br>
+							　　　やめられない　やめられない<br>
+							[砂沙美]つまみぐい　夜食　お茶漬け</p>
+						<p>
+							[天地]やめられない　やめられない<br>
+							　　　やめられない　やめられない<br>
+							[阿重霞]テレビゲーム　カラオケ</p>
+						<p>
+							[魎皇鬼]やめられない　やめられない<br>
+							　　　　やめられない　やめられない<br>
+							[美星]ひなたぼっこ　露天風呂</p>
+						<p>
+							[天地]寄り道　[砂沙美]おしゃべり<br>
+							[美星]長風呂　[鷲羽]無駄使い<br>
+							[魎皇鬼]おせっかい　[阿重霞]長電話<br>
+							[清音]片思い　[魎呼]横恋慕</p>
+						<p>
+							[全員]やめられない　やめられない<br>
+							　　　いくつになっても<br>
+							　　　やめられない　やめられない<br>
+							　　　死んでも　化けても　生まれ変わっても</p>
+						<p>
+							[清音]やめられない　やめられない<br>
+							[鷲羽]やめられない　やめられない<br>
+							[魎皇鬼]カップラーメン　ねこまんま</p>
+						<p>
+							[阿重霞]やめれれない　やめられない<br>
+							[美星]やめられない　やめられない<br>
+							[魎呼]男漁り　うわさばなし</p>
+						<p>
+							[砂沙美]いねむり　[天地]はやべん<br>
+							[清音]まんが　[魎皇鬼]鼻毛抜き<br>
+							[鷲羽]あら捜し<br>
+							[魎呼]只酒　はしご酒　迎え酒</p>
+						<p>
+							[全員]やめられない　やめられない<br>
+							[阿重霞]いくつになっても<br>
+							[全員]やめられない　やめられない<br>
+							[砂沙美]死んでも　化けても<br>
+							[魎呼]生まれ変わっても</p>
+						<p>
+							[天地]やりたいことより<br>
+							[砂沙美]好きなのは<br>
+							[美星]やめられないこと</p>
+						<p>
+							[清音]立ち読み　[魎皇鬼]買い食い<br>
+							[美星]こたつでみかん<br>
+							[魎呼]高望み　[阿重霞]ぜいたく<br>
+							[鷲羽]パチンコ　麻雀　競馬</p>
+						<p>
+							[全員]やめられない　やめられない<br>
+							　　　いくつになっても<br>
+							　　　やめられない　やめられない<br>
+							　　　死んでも　化けても　生まれ変わっても</p>
+						<p>
+							[全員]やめられない　やめられない<br>
+							[天地]やめろといわれても</p>
+						<p>
+							[全員]やめられない　やめられない<br>
+							[魎皇鬼]死んでも　[清音]化けても<br>
+							[美星]生まれ変わっても<br>
+							[全員]死んでも　化けても　生まれ変わっても</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-tenchi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

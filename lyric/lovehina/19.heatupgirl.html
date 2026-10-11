@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Heat Up Up Girl - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Heat Up Up Girl</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高木礼子</div>
+
+                    <div class="LyricText">
+						<p>
+							目覚めた瞬間　ハイテンション　お腹がグ～　ゴハンまだ？<br>
+							布団ケッ飛ばして　窓開けたら　何でもいい　叫びたくなる</p>
+						<p>
+							スキなものスキって　言えるのって大切ね<br>
+							やっちゃおー　思い切って</p>
+						<p>
+							Ｈｅａｔ　Ｕｐ　Ｇｉｒｌ！　前向きキャラ　炸裂中<br>
+							灼熱Ｄｒｅａｍ！　人生は都合良く<br>
+							Ｈｅａｔ　Ｕｐ　Ｇｉｒｌ！　ハート熱く激しく燃やそー<br>
+							Ｈｅａｔ　Ｕｐ　Ｕｐ、Ｈｅａｔ　Ｕｐ　Ｕｐ　Ｇｉｒｌ！</p>
+						<p>
+							温泉ひとっ風呂　天下タイヘー　髪とかして　ひっくくって<br>
+							一生懸命　今日も遊ぼー　すりむいたら　ツバつけりゃいい</p>
+						<p>
+							溜まったエネルギー　ガマンは体に悪い<br>
+							発散しなきゃダメ</p>
+						<p>
+							Ｈｅａｔ　Ｕｐ　Ｇｉｒｌ！　野生の本能　爆発中<br>
+							灼熱Ｄｒｅａｍ！　人生は　一度きり<br>
+							Ｈｅａｔ　Ｕｐ　Ｇｉｒｌ！　ハートは強く楽しく生きよー<br>
+							Ｈｅａｔ　Ｕｐ　Ｕｐ、Ｈｅａｔ　Ｕｐ　Ｕｐ　Ｇｉｒｌ！</p>
+						<p>
+							本当は　メチャクチャ　淋しがり屋　Ｈｅａｔ　Ｕｐ　Ｇｉｒｌ！<br>
+							気合いイッパツ　入れなくっちゃ　Ｈｅａｔ　Ｕｐ　Ｇｉｒｌ！<br>
+							腰に片手当てて　牛乳をイッキ飲み<br>
+							ガーンーバーロー！</p>
+						<p>
+							Ｈｅａｔ　Ｕｐ　Ｇｉｒｌ！　前向きキャラ　炸裂中<br>
+							灼熱Ｄｒｅａｍ！　人生は都合良く<br>
+							Ｈｅａｔ　Ｕｐ　Ｇｉｒｌ！　ハート熱く激しく燃やそー<br>
+							Ｈｅａｔ　Ｕｐ　Ｕｐ、Ｈｅａｔ　Ｕｐ　Ｕｐ　Ｇｉｒｌ！</p>
+						<p>
+							Ｈｅａｔ　Ｕｐ　Ｇｉｒｌ！　野生の本能　爆発中<br>
+							灼熱Ｄｒｅａｍ！　人生は　一度きり<br>
+							Ｈｅａｔ　Ｕｐ　Ｇｉｒｌ！　ハートは強く楽しく生きよー<br>
+							Ｈｅａｔ　Ｕｐ　Ｕｐ、Ｈｅａｔ　Ｕｐ　Ｕｐ　Ｇｉｒｌ！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

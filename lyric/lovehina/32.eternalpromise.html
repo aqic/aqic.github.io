@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>約束-eternal promise - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">約束-eternal promise</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">堀江由衣</div>
+                    <div class="LyricStaff">作詞：有森聡美<br>作曲：山下俊<br>編曲：岩本正樹</div>
+
+                    <div class="LyricText">
+						<p>
+							夕暮(ゆうぐ)れ　小(ちい)さな　影(かげ)がはしゃいで<br>
+							私(わたし)を　通(とお)り過(す)ぎ　家路(いえじ)へ帰(かえ)って行(ゆ)く<br>
+							あの日(ひ)　あなたと　こんな風景(ふうけい)<br>
+							贈(おく)って 交(かわ)したね　二人(ふたり)だけの宝物(たからもの)を…</p>
+						<p>
+							心(こころ)で結(むす)ばれた約束(やくそく)　今(いま)も今(いま)も大切(たいせつ)に<br>
+							抱(いだ)いて　いつの日(ひ)か<br>
+							あなたに会(あ)って　そして果(は)たせるそんな日(ひ)を<br>
+							私(わたし)、信(しん)じながら　過(す)ごしてます。</p>
+						<p>
+							今頃(いまごろ)何処(どこ)に　いるのでしょうか<br>
+							交(かわ)した約束(やくそく)　心(こころ)にまだあるかな…<br>
+							季節（きせつ）は経(た)って　しまったけれど<br>
+							変(わ)わらず　あの頃(ごろ)の　あなただと願（ねが）っています</p>
+						<p>
+							面影(おもかげ)薄(うす)れても約束(やくそく)　今(いま)も今(いま)もこの胸(むね)の<br>
+							真(ま)ん中(なか)を　熱(あつ)くして<br>
+							しっかり「心(こころ)」「心(こころ)」結(むす)ばれてることを<br>
+							私(わたし)、信(しん)じながら　待(ま)っています。</p>
+						<p>
+							あなたに会(あ)えたなら約束(やくそく)　そっとそっと訪(たず)ねたり<br>
+							あの日(ひ)の　二人(ふたり)へと<br>
+							戻(もど)れるならば　どうかもう一度(いちど)「約束(やくそく)」<br>
+							してね、信(しん)じながら　祈(いの)ってます。</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

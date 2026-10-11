@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>傘の中 - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ</div>
+
+                    <div class="LyricTitle">傘の中</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">土井美加</div>
+                    <div class="LyricStaff">作詞：阿佐茜<br>作曲：羽田健太郎<br>編曲：羽田健太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							雨、雨が降りつづく<br>
+							傘をさして街往く人たち<br>
+							赤い傘、白い傘、黄色い傘<br>
+							一人一人が傘の中で<br>
+							さびしさまぎらせ<br>
+							バラ色の夢を見ている<br>
+							脇目もふらずに　すれちがう<br>
+							一人ぼっちの傘の中</p>
+						<p>
+							雨、雨が降りつづく<br>
+							傘をさして道往く人たち<br>
+							夢の傘、愛の傘、笑いの傘<br>
+							雨に濡れて歩くあなたに</p>
+						<p>
+							傘を差しかけた<br>
+							その時に涙がひとつ<br>
+							私の心の雨はやむ<br>
+							二人寄りそう傘の中</p>
+						<p>
+							さびしくつづく傘の流れ<br>
+							二人の愛は<br>
+							行きかう人から離れて<br>
+							二人は踊る　傘の中</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

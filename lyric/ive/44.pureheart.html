@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Pure Heart&lt;br&gt;～世界で一番アナタが好き～ - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Pure Heart</div>
+
+                    <div class="LyricTitle">Pure Heart&lt;br&gt;～世界で一番アナタが好き～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">AKI</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							あふれそうな涙を<br>
+							両手でそっと受け止めて<br>
+							こぼれる想いを抱きしめて</p>
+						<p>
+							恋をしてるココロのパスワード<br>
+							あなたには教えてあげるよ<br>
+							いつかリンクする<br>
+							シアワセとセツナサ<br>
+							流れ出すシグナルに気付いて</p>
+						<p>
+							あぁ　あなたの言葉すべて<br>
+							胸のディスクにセーブしてく</p>
+						<p>
+							あふれそうな涙を<br>
+							両手でそっと受け止めて<br>
+							アクセスしたなら<br>
+							もう離さないで<br>
+							あなたが組み込んだ<br>
+							プログラムで動き出す<br>
+							生まれた私を抱きしめて</p>
+						<p>
+							ループしてるココロは止まらない<br>
+							愛情もフリーズしてしまうよ</p>
+						<p>
+							あぁ　あなたの笑顔だけで<br>
+							胸のメモリー足りなくなる</p>
+						<p>
+							あふれそうな涙を<br>
+							両手でそっと受け止めて<br>
+							わがまま言っても<br>
+							壊さないでね<br>
+							どんな時も側で<br>
+							あなたを見つめてるから<br>
+							こぼれる想いを抱きしめて</p>
+						<p>
+							戸惑う私にあなたは<br>
+							優しすぎて</p>
+						<p>
+							あふれそうな涙を<br>
+							両手でそっと受け止めて<br>
+							わがまま言っても<br>
+							壊さないでね<br>
+							あなたが組み込んだ<br>
+							プログラムで動き出す<br>
+							生まれた私を抱きしめて</p>
+						<p>
+							こぼれる想いを抱きしめて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

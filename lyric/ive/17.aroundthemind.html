@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Around the mind - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ファントムナイト－夢幻の迷宮－</div>
+
+                    <div class="LyricTitle">Around the mind</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島宮 えい子</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							誰もみんな傷つくことを<br>
+							見ないふりしてる　いつまでも<br>
+							明日なんて今日と同じの<br>
+							色を並べているだけ</p>
+						<p>
+							迫る日常つまらない夢<br>
+							このまま流されて<br>
+							わからない<br>
+							本当に嬉しかった瞬間<br>
+							もう一度</p>
+						<p>
+							廻る巡る時間の中で<br>
+							手を差しのべて掴む影と光<br>
+							壊れかけた迷いの果てに<br>
+							ただ一つだけ信じること忘れないよ</p>
+						<p>
+							揺れる景色いつもの風に<br>
+							何故か違うものを感じた<br>
+							あの日出会う二人の未来<br>
+							束ねるように時代はすぎてく</p>
+						<p>
+							よせる苦しみ越えて行こう<br>
+							このまま離れずに<br>
+							こぼれる涙を糧にしよう<br>
+							立ち止まらないで</p>
+						<p>
+							白く染まる夜明けの向こう<br>
+							歩き出す夢　一握りの希望<br>
+							崩れ落ちた迷いの果てに<br>
+							ただ一つだけ愛する人離さないで</p>
+						<p>
+							廻る巡る時間の中で<br>
+							手を差しのべて掴む影と光<br>
+							白く染まる夜明けの向こう<br>
+							歩き出す夢　一握りの希望<br>
+							崩れ落ちた迷いの果てに<br>
+							ただ一つだけ愛する人離さないで</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

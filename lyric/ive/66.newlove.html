@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>新しい恋のかたち - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Ribbon2</div>
+
+                    <div class="LyricTitle">新しい恋のかたち</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">AKI</div>
+                    <div class="LyricStaff">作詞：魁<br>作曲：ACE</div>
+
+                    <div class="LyricText">
+						<p>
+							誰のマネでもない<br>
+							私たちの物語<br>
+							もう　始まってるよ<br>
+							止まらないね</p>
+						<p>
+							どれだけ遠く離れていても<br>
+							いつも貴方を近くに感じる<br>
+							静かに目を閉じて空を仰げば<br>
+							風に乗って想い伝わるかな</p>
+						<p>
+							他の娘には見せない笑顔を向けてよ<br>
+							それが　きっとそれが<br>
+							始まりだから</p>
+						<p>
+							新しい恋のかたちを<br>
+							一緒に探しに行こうよ<br>
+							どんな　恋人達より<br>
+							ステキになろうよ<br>
+							誰のマネでもない<br>
+							私達の物語<br>
+							もう　始まってるよ<br>
+							止まらないね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

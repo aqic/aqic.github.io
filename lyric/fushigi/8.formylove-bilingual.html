@@ -1,0 +1,106 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>いとおしい人のために（日中対訳） - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ふしぎ遊戯」オープニングテーマ</div>
+
+                    <div class="LyricTitle">いとおしい人のために（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐藤朱美</div>
+
+                    <div class="LyricText">
+						<p>
+							（舞い上がれ！　朱雀 miracle・ラー）</p>
+						<p>
+							伝説が　動き出して<br>
+							真実（ほんとう）の私が拡がる<br>
+							（遠く響く　我愛尓(ｳｫｰｱｲﾆｰ)）<br>
+							あなたに導かれて<br>
+							（目覚めてゆく　魂）<br>
+							光だすもう１つの<br>
+							世界</p>
+						<p>
+							☆いとおしい人のために<br>
+							　今何が出来るかな？<br>
+							　叶わない夢はないよ！<br>
+							　まっすぐに　信じてる</p>
+						<p>
+							天と地の　間にある<br>
+							めくるめく　冒険に夢中<br>
+							（笑顔見せて「尓好麼」(ﾆｲﾊｳﾏｰ)）<br>
+							あなたに見守られて<br>
+							（愛は光る　星座）<br>
+							思い出すもう１つの<br>
+							奇蹟</p>
+						<p>
+							一生一度の出逢い<br>
+							魂に刻んでね<br>
+							どんな時だって愛は<br>
+							救いだと　思うから</p>
+						<p>
+							☆くりかえし</p>
+						<p>
+							（無限へと　開け　ふしぎ遊戯）</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							（舞起来吧，朱雀神话！啦——）</p>
+						<p>
+							传说在动<br>
+							 真实的我在扩张<br>
+							（远处传来：我爱你）<br>
+							被你所导引<br>
+							（逐渐醒来的灵魂）<br>
+							 在光芒中的另一世界<br>
+							为了可爱的人，现在又能做些什么？<br>
+							 没有不可以实现的梦！一直相信</p>
+						<p>
+							 热衷于天与地之间，眼花缭乱的冒险<br>
+							 （让我看看你的笑脸「你好吗？」）<br>
+							 被你保护<br>
+							（爱在发光，星座）<br>
+							想起了另一个奇迹<br>
+							 在一生中只有一次的相遇中，刻上灵魂<br>
+							 无论在何时爱都是救星<br>
+							 为了可爱的人，现在又能做些什么？<br>
+							没有不可以实现的梦！一直相信<br>
+							向着无限开放，不可思议的游戏</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

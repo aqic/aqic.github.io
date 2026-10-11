@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>紅の月 - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">紅の月</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">千葉進歩</div>
+                    <div class="LyricStaff">作詞：kenco-p<br>作曲：添田啓二<br>編曲：堀隆</div>
+
+                    <div class="LyricText">
+						<p>
+							儚き光は人の夢<br>
+							水面に浮かんだ銀の月<br>
+							まぼろしだと知りながら追い掛け</p>
+						<p>
+							あなたの幼きその指が<br>
+							静寂を破るその時に<br>
+							ひそやかなるおもい<br>
+							そっと重ねよう</p>
+						<p>
+							時代を越えてなお<br>
+							色褪せぬ情熱が<br>
+							あなたのその胸の奥の<br>
+							眠れる獅子を呼ぶ</p>
+						<p>
+							ひとひらの夢<br>
+							ほら紅の月から<br>
+							運命という名の風が吹いて<br>
+							今あなたが踏み出した<br>
+							歩みこそが<br>
+							新たな私達になるから<br>
+							この絆に</p>
+						<p>
+							風凪ぐ薫りは夢のあと<br>
+							咲くのも散るのも美しや<br>
+							ただひたすらその生命巡らす</p>
+						<p>
+							尽きせぬおもいがあるならば<br>
+							導かれるまま漕ぎ出そう<br>
+							遥かなる海へと<br>
+							果てしなき旅路</p>
+						<p>
+							時空の狭間なら<br>
+							夢果てぬまなざしで<br>
+							あなたのその胸の奥の<br>
+							こころの声になる</p>
+						<p>
+							ひとひらの夢<br>
+							ほら紅の月から<br>
+							勇気という名の風に押され<br>
+							今あなたが踏み出した<br>
+							歩みこそが<br>
+							誰かのみちしるべになるから<br>
+							歩き出そう</p>
+						<p>
+							ひとひらの夢<br>
+							ほら紅の月から<br>
+							運命という名の風が吹いて<br>
+							今あなたが踏み出した<br>
+							歩みこそが<br>
+							新たな私達になるから<br>
+							この絆に</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

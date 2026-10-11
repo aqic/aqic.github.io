@@ -1,0 +1,137 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Who Do You Think You Are? - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">North American "Sailor Moon" TV Series</div>
+
+                    <div class="LyricTitle">Who Do You Think You Are?</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Jennifer Cihi and Sandy Howell</div>
+
+                    <div class="LyricText">
+						<p>
+							[Serena]<br>
+							You say you're cool and you're strong<br>
+							You say you'll lead and I should tag along<br>
+							But would you cry (huh) you'd be a mess!<br>
+							If we just showed up at a party in the same new dress</p>
+						<p>
+							[Raye]<br>
+							You say you're brave, Sailor Scout<br>
+							But it's too late to tell me that you don't ditz out<br>
+							'Cause spacey things that you've said<br>
+							Prove that you've got moon rocks rollin' in your head</p>
+						<p>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Ya say you're the best by far   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)</p>
+						<p>
+							[Raye]<br>
+							When it's time to stand and fight<br>
+							You'd rather pine for that cute guy you met last night<br>
+							And when you're scared, you run back home<br>
+							Solving every problem with an ice cream cone</p>
+						<p>
+							[Serena]<br>
+							You're all talk, nonstop<br>
+							You think that it's so cherry in the leader spot<br>
+							You say your way never fails<br>
+							Well, I might as well sit home and paint my fingernails</p>
+						<p>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Ya say you're the best by far   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)</p>
+						<p>
+							[Guitar Solo]</p>
+						<p>
+							[Serena &amp; Raye]<br>
+							I hope you know, if today it doesn't show<br>
+							You are my friend   (you are my friend)</p>
+						<p>
+							That doesn't mean that when we've had it<br>
+							We won't go at it again and again!</p>
+						<p>
+							[Serena]<br>
+							You've got brains, but I've got guts.</p>
+						<p>
+							[Raye]<br>
+							If I'm pain, well, you're a clutz!</p>
+						<p>
+							[Serena &amp; Raye]<br>
+							Oh, it's insane how we drive each other nuts   (It's true!)</p>
+						<p>
+							Who do you think you...<br>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)</p>
+						<p>
+							Yeah, yeah, yeah</p>
+						<p>
+							Who   (Who? Who? Who?)</p>
+						<p>
+							Who   (Who? Who? Who?)</p>
+						<p>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)<br>
+							Who do you think you are?   (Who do you think you are?)</p>
+						<p>
+							[Talking]<br>
+							Serena:   I can't believe that you want to be leader!<br>
+							Raye:   Well I should be, 'cause you're such a meatball head!<br>
+							Serena:   Oh yeah, I thought you had a part in messes before!<br>
+							Raye:   That's nothing compared to the mess you make when you eat!<br>
+							Serena:   I do not!<br>
+							Raye:   Do too!<br>
+							Serena:   Do not!<br>
+							Raye:   Do too!<br>
+							Serena:   Well, I'm the leader and that's that.<br>
+							Raye:   Well, why should I listen to a ditz like you?<br>
+							Serena:   Well, maybe because I'm Sailor Moon, champion of love and justice.<br>
+							Raye:   Well, all I know is you must be wearing your pigtails too tight!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

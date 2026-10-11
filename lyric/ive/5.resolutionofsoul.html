@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Resolution of soul - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ゲーム「D+VINE{LUV}」主題歌 (Abogado Powers/Princess Soft)</div>
+
+                    <div class="LyricTitle">Resolution of soul</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲·編曲：高瀨一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							大切な人々のために<br>
+							自分が何かを 今 救えるのならば<br>
+							この身體 引き換えにしてと 祈って<br>
+							瞳を閉じたの</p>
+						<p>
+							空に光る南十字星<br>
+							闇に迷う兩人を 輝らし出すよ<br>
+							眠り覺ます 君の口づけが<br>
+							魂までそそいだ</p>
+						<p>
+							たとえ命を失くしても<br>
+							守りたいものがあるから<br>
+							行く手を阻む嵐にも 立ち向かってゆけると誓う<br>
+							幾千の時を越えて めぐり逢ったふたつの瞳に<br>
+							ひとすじの希望の光を見つけたよ</p>
+						<p>
+							ひたすらに前に進むこと<br>
+							運命を背負って<br>
+							ただ 生きてゆくことが<br>
+							いつの日か 本当の夢を<br>
+							見えないものにしていたね</p>
+						<p>
+							頰を濡らす 無數の涙が<br>
+							闇を輝らす 夜空の星に変わる<br>
+							来世で逢う 約束を信じ<br>
+							この瞳に刻もう</p>
+						<p>
+							たとえ命を失くしても<br>
+							守りたいものがあるから<br>
+							別れを選ぶことさえ 大切って思えるよ 今は<br>
+							幾千の時を越えて 紡ぎあうふたつの夢に<br>
+							約束の星 愛の力 呼び合うよ</p>
+						<p>
+							たとえ命を失くしても<br>
+							守りたいものがあるから<br>
+							行く手を阻む嵐にも 立ち向かってゆけると誓う<br>
+							幾千の時を越えて めぐり逢ったふたつの瞳に<br>
+							滿點の星 愛の光 輝くよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

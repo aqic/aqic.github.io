@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Moon Revenge - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場用「美少女戦士セーラームーンＲ」 エンディング（１９９３）</div>
+
+                    <div class="LyricTitle">Moon Revenge</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">三石琴乃、久川綾、富沢美智恵、篠原恵美、深見梨加</div>
+                    <div class="LyricStaff">作詞／冬杜花代子<br>作曲／小坂明子<br>編曲／林有三</div>
+
+                    <div class="LyricText">
+						<p>
+							やっとたどりついた愛握りしめ　小さな眠りにやすらぐ人<br>
+							閉じたまぶたにさよなら口付けて　時の花園にあなた置き去りにした<br>
+							愛は夢のままでは続かない　むさぼれば美しい屍　それでも</p>
+						<p>
+							※望むのなら追いかけてきて<br>
+							　あのくちづけは赤いTatoo　定めの予告刻むTatoo<br>
+							　私になら一目で分かる　唇型に痛むTatoo<br>
+							　隠せないわあなた　It's Moon Revenge, woo</p>
+						<p>
+							闇に閉じ込められてもひかれたり　そんな若さにたじろがない<br>
+							すべて見えてる離別(わかれ)で　燃えながら<br>
+							次回(つぎ)の巡り会いも　また あなたがいいと<br>
+							愛は深くなるほど欲張りで　吐息さえ縛りたい理不尽　それでも</p>
+						<p>
+							光の渦のぼりつめてく<br>
+							赤い記憶は毒のTatoo　未来のカオス示すTatoo<br>
+							二人でなら砕け散るまで　唇型に痛むTatoo<br>
+							抱いたままでいいわ　It's Moon Revenge</p>
+						<p>
+							※繰返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

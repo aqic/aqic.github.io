@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>白い竜 - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">千と千尋の神隠し</div>
+
+                    <div class="LyricTitle">白い竜</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">RIKKI</div>
+                    <div class="LyricStaff">作詞：宮崎 駿<br>作曲・編曲：久石 譲</div>
+
+                    <div class="LyricText">
+						<p>
+							月の海　かすめてとぶ<br>
+							わたしのたいせつな　白い竜<br>
+							はやく　はやく　もっとはやく<br>
+							わたしの元へと</p>
+						<p>
+							銀の鱗（うろこ）　血にまみれて<br>
+							奪われた名前求めて<br>
+							あてどなく　さすらう<br>
+							美しい白い竜<br>
+							いとしい白い竜<br>
+							千の夜を飲み<br>
+							千尋（ちひろ）の澪（みお）に鎮（しず）め</p>
+						<p>
+							錆（さび）の風　塩吹く土<br>
+							わたしの高なる　白い胸<br>
+							はやく　はやく　もっとはやく<br>
+							豊かにあふれよ</p>
+						<p>
+							青いたてがみは　火にやかれ<br>
+							埋められた　河を求めて<br>
+							あてどなく　さすらう<br>
+							美しい白い竜<br>
+							いとしい白い竜<br>
+							かくされた　わたしの<br>
+							わき出（い）づる流れへ</p>
+						<p>
+							千の夜を飲み<br>
+							千尋（ちひろ）の澪（みお）に鎮（しず）め</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

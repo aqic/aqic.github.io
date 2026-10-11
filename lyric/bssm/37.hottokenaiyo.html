@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ほっとけないよ - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">～愛はどこにあるの？～</div>
+
+                    <div class="LyricTitle">ほっとけないよ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">富沢美智恵・久川綾</div>
+                    <div class="LyricStaff">作詞/武内直子<br>作曲/山下恭文<br>編曲/さとうかずお</div>
+
+                    <div class="LyricText">
+						<p>
+							☆ほっとけないよ　たすけてあげる<br>
+							　だって仲間よ　力をあわせて<br>
+							　マーキュリー・パワー・メイク・アップ！<br>
+							　Let's go！</p>
+						<p>
+							どうしたの？　またしかられたの？<br>
+							元気を出して<br>
+							Wink！<br>
+							クヨクヨしてたって　はじまんない<br>
+							そうよ！<br>
+							ママなんかにふりまわされてちゃ<br>
+							わたしたちホラ　それどころじゃない<br>
+							むらがってくる敵をけたおし<br>
+							すすむの　つよくならなきゃ</p>
+						<p>
+							☆繰返し</p>
+						<p>
+							★ほっとけないよ　たすけてあげる<br>
+							　だって仲間よ　力をあわせて<br>
+							　マーズ・パワー・メイク・アップ！<br>
+							　Let's go！</p>
+						<p>
+							どうしたの？　またふられたの？<br>
+							まよっているの？<br>
+							Smile！<br>
+							クヨクヨしてたって　はじまんない<br>
+							ダメよ！<br>
+							オトコなんかにふりまわされてちゃ<br>
+							わたしたちホラ　やんなきゃなんない<br>
+							おしよせてくる敵をけちらし<br>
+							すすむの　つよくならなきゃ</p>
+						<p>
+							でもねそうね　もしも　あなたにあいするヒト<br>
+							できたなら　やくそくよ　２人を守ってあげる<br>
+							だって仲間よ　今スグわたしたちをよんで<br>
+							マーキュリー・パワー<br>
+							マーズ・パワー<br>
+							メイク・アップ</p>
+						<p>
+							★繰返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

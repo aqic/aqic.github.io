@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>神々さま - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">千と千尋の神隠し</div>
+
+                    <div class="LyricTitle">神々さま</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">おおたか 静流</div>
+                    <div class="LyricStaff">作詞：宮崎 駿<br>作曲・編曲：久石 譲</div>
+
+                    <div class="LyricText">
+						<p>
+							※およそ名も無き　神々は<br>
+							　今日もほとほと　くたびれて<br>
+							　腰はガタガタ　膝は折れ<br>
+							　腹のたるみは　手にあまる</p>
+						<p>
+							（※繰り返し）</p>
+						<p>
+							長い間の念願の　二泊三日の骨休め<br>
+							やって来たのは　となりの世界の湯屋「油屋（あぶらや）」<br>
+							よもぎ湯　硫黄湯　泥湯に塩湯<br>
+							たぎる熱（あつ）風呂　ぬるぬる風呂<br>
+							氷の浮いた冷やし風呂<br>
+							少しは元気になりたいと<br>
+							やっと貯めたる銭いくばくか<br>
+							握りしめても　熱くならぬ</p>
+						<p>
+							（※繰り返し）</p>
+						<p>
+							長い間の念願の　二泊三日の骨休め<br>
+							やって来たのは　となりの世界の湯屋「油屋（あぶらや）」<br>
+							竈（カマド）神　井戸神　雨戸神　屋根神　柱神　便所神<br>
+							田の神　畑神　山の神<br>
+							舗装道路の並木神　汚れもひどき川の神<br>
+							長い間の念願の　二泊三日の骨休め<br>
+							（腰の抜けたる泉神）<br>
+							やって来たのは　となりの世界の湯屋「油屋（あぶらや）」<br>
+							（空気の神はもう来ない）<br>
+							（電気達には神はない）</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>木漏れ日のウインク - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">木漏れ日のウインク</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Rino</div>
+
+                    <div class="LyricText">
+						<p>
+							朝露のひかり　誘われたみたい<br>
+							街に咲く　笑顔が眩しい</p>
+						<p>
+							おろしたて靴で　水たまり超えて<br>
+							どこまでも歩いて行こう</p>
+						<p>
+							フワリ　ユラリ桜の花びら舞う<br>
+							スカートを揺らす　いたずら風　ダメよ</p>
+						<p>
+							木漏れ日が青空にウインクする<br>
+							その先で未来が待ってるの<br>
+							思い出の場所まで迎えに行こう<br>
+							迷い道だって平気よ<br>
+							君を見つけられるから</p>
+						<p>
+							眠い目をこする　いつもの横顔<br>
+							何気ない仕草が　好きなの</p>
+						<p>
+							切なくなるのは　近すぎるせいね<br>
+							この気持ち　届けてみたい</p>
+						<p>
+							フワリ　キラリ枯れないトキメキたち</p>
+						<p>
+							そよ風に揺れる鈴も歌うよ　ほらね<br>
+							木漏れ日が微笑みを包んでく<br>
+							ありがとう　明日も会えるよね<br>
+							戸惑いも勇気に変わってくよ<br>
+							優しいキッスを受け止めて<br>
+							始まり季節　行こう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

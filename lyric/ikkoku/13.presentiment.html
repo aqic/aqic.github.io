@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>予感 - めぞん一刻</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「めぞん一刻」挿入歌</div>
+
+                    <div class="LyricTitle">予感</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島本須美</div>
+                    <div class="LyricStaff">作詞：佐藤ありす<br>作曲：小坂明子<br>編曲：小林慎吾</div>
+
+                    <div class="LyricText">
+						<p>
+							一人過ごしてても<br>
+							すぐそばにあなたがいる様ね<br>
+							Ah…あなたはまだ<br>
+							こんな気持ちわかってないでしょう<br>
+							揺れる白いシャツを<br>
+							せつなくてにらんだりしたけど<br>
+							Ah…少女の日の恋よりも<br>
+							優しい風が吹く</p>
+						<p>
+							※かばう様に歩くあなた<br>
+							　胸の中　陽だまりを感じる<br>
+							　急がないで私を好きになってね<br>
+							　動きはじめた予感</p>
+						<p>
+							愛の言葉なんて<br>
+							一言も言ってはくれないの<br>
+							Ah…てれやだって知っていても<br>
+							半分淋しい<br>
+							何も誓わないで<br>
+							さりげなく愛してゆきたいの<br>
+							Ah…声にしない思いなら<br>
+							瞳でささやいて</p>
+						<p>
+							景色の中　あなたがいる<br>
+							それだけで陽だまりが拡がる<br>
+							微笑いながらあなたについた行きたい<br>
+							動きはじめた予感</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ikkoku-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

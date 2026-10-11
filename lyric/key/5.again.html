@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>AGAIN - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©Key 2001 KeySoundLabel / Humanity...</div>
+
+                    <div class="LyricTitle">AGAIN</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">藤田秀綱</div>
+                    <div class="LyricStaff">作詞：大塚一美<br>作曲：赤山満</div>
+
+                    <div class="LyricText">
+						<p>
+							見慣れたはずの街　足早に過ぎ去って行くいくつもの日々<br>
+							何も云えずにいた　何も打ち明けずにいた　そんなあの頃<br>
+							真夜中に咲いた二人　出会うたび<br>
+							せつなさが胸を　きつく締め付けた</p>
+						<p>
+							あれから君は変わらずにいるのか　僕だけに　くれたやさしさ<br>
+							そして気付いた　そばにいて欲しいよ<br>
+							会いたい今すぐに　闇を抜けて</p>
+						<p>
+							君を知ってくたび　不意に零れ落ちてゆく　僕のわがまま<br>
+							迷い枯れそうな日も　君の眼差しやさしく　なのにどうして<br>
+							形にならない　明日に怯えてた<br>
+							見え透いた嘘を　並べぶつけてた</p>
+						<p>
+							いつも何かを守り切れないまま　いつまでも　走りつづけた<br>
+							本当の自分　呼び覚ましたいよ<br>
+							会いたい今すぐに　時をこえて</p>
+						<p>
+							君が残した　言葉いつまでも残る<br>
+							ひとり風に吹かれてた</p>
+						<p>
+							そしてあれからさまよい続けてる　切なさを　押さえきれずに<br>
+							出会った頃の　ときめき憶えてる<br>
+							想いは消せない</p>
+						<p>
+							あれから君は変わらずにいるのか　約束を　守りきれずに<br>
+							本当の自分　呼び覚ましたいよ<br>
+							会いたい今すぐに　抱きしめたい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

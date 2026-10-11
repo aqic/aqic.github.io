@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ダメ！ - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">るろうに剣心-明治剣客浪漫譚-ED7-(#83~#94)</div>
+
+                    <div class="LyricTitle">ダメ！</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">和泉容</div>
+                    <div class="LyricStaff">作詞：森浩美<br>作曲：邊見さとし<br>編曲：是永巧一</div>
+
+                    <div class="LyricText">
+						<p>
+							街中どこでも嘘ばかり<br>
+							100年前から承知だよ<br>
+							今更空き罐蹴るくらい　誰でもできる</p>
+						<p>
+							愛は慰めの<br>
+							道具なんかじゃないんだし</p>
+						<p>
+							ダメダメダメでだめなひとね<br>
+							いったい何をやってるの？<br>
+							運じゃないツキじゃない<br>
+							もっと実力見せて<br>
+							ダメダメダメねオンナはもう<br>
+							そんなオトコじゃ感じない<br>
+							いつだってクラクラときそうなほど<br>
+							オトコになってちょうだい</p>
+						<p>
+							そっちの勝手で呼び出して<br>
+							さっきから溜息ばかりじゃね<br>
+							全然樂しめないじゃない<br>
+							情けない顔</p>
+						<p>
+							薄い愛情で<br>
+							滿足してちゃ終わりだし</p>
+						<p>
+							ダラダラダラとだらしないのね<br>
+							アタシそんなに暇じゃない<br>
+							はっきりと言えばそう<br>
+							夢のないヤツ最低<br>
+							ギリギリギリのギリギリまで<br>
+							自分のことを信じてよ<br>
+							その心飾りじゃなかったらね<br>
+							オトコを見せてちょうだい</p>
+						<p>
+							人は誰でも傷ついて<br>
+							大きくなるものでしょう？<br>
+							倒れてもまた這いあがる<br>
+							それでもだめならその時<br>
+							アタシが抱きしめてあげるから<br>
+							いいじゃないのよ</p>
+						<p>
+							ダメダメダメでだめなひとね<br>
+							いったい何をやってるの？<br>
+							この次はつよいとこ<br>
+							もっときっちり見せて<br>
+							ダメダメダメねオンナはもう<br>
+							そんなオトコじゃ惚れないよ<br>
+							いつだってクラクラときそうなほど<br>
+							オトコになってちょうだい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

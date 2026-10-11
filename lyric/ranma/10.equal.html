@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ＥＱＵＡＬ　ロマンス - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2 熱闘編」オープニング・テーマ (1989)</div>
+
+                    <div class="LyricTitle">ＥＱＵＡＬ　ロマンス</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">DoCo</div>
+                    <div class="LyricStaff">作詞：及川眠子<br>作曲：山口美央子<br>編曲：中村　哲</div>
+
+                    <div class="LyricText">
+						<p>
+							※Darlin'<br>
+							Just for me　待ってるわ<br>
+							こころに　ゾクゾク　あげたい<br>
+							あなたの指先が　誘うロマンス<br>
+							運命ごと　きっと Fallin' love</p>
+						<p>
+							Tonight<br>
+							不思議ね　海沿いに止めた車<br>
+							そうふたりは　こんな近くにいても<br>
+							見えないバリア　じゃましているのは何故<br>
+							涙あふれそう<br>
+							[Fallin' Love]</p>
+						<p>
+							Darlin'<br>
+							Just for you　迷わない<br>
+							とびきりドキドキください<br>
+							あなたの瞳から　はじまるロマンス<br>
+							誰以上に　好きよ Catch My Love</p>
+						<p>
+							Tonight<br>
+							見つめて　はじめてつけた口紅<br>
+							でもあなたは　そっと恋をそらすの<br>
+							いま大切に　思ってくれるのなら<br>
+							抱きしめてほしい<br>
+							[Catch my love]</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							手がかりのない　優しさだけじゃ<br>
+							せつない My heart<br>
+							愛はいつも Loneliness<br>
+							腕のなかへ Ah</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

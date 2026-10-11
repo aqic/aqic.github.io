@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君よ 優しい風になれ - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ゲーム「とらいあんぐルハート3 リリカルおもちゃ箱」插入歌(JANIS)</div>
+
+                    <div class="LyricTitle">君よ 優しい風になれ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：都築真紀 KOTOKO<br>作曲·編曲：高瀨一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							肩を並べ君と歩く 夕燒けの道で<br>
+							あの時流した涙さえ 懷かしく思えた<br>
+							照れ笑いでにじむ木々と 子供達の影<br>
+							離れてた時間の隙間だけ ゆっくりと近くなるよ</p>
+						<p>
+							あれから いくつもの想い出が增えたけれど<br>
+							出会いやさよならをふり返して 巡り会えた</p>
+						<p>
+							寂しくて哀しくて泣いた日も<br>
+							樂しくて嘻しくて笑う日も<br>
+							君のこと抱きしめるから<br>
+							優しい風になれ</p>
+						<p>
+							幼すぎて見えなかった さよならの意味を<br>
+							獨りで見上げた空の下 雲が運んで来た<br>
+							優しすぎて自分の事 傷つけてばかり<br>
+							そんな君だから離れても「元気でいて...」と不安で</p>
+						<p>
+							大人になれなくて 君の笑顔探してた<br>
+							何かを見つけたら 再び会う夢を見てた</p>
+						<p>
+							さよならは始まりと見送った<br>
+							歩き出す君のこと信じてた<br>
+							セピア色に染まった日々よ<br>
+							優しい風になれ</p>
+						<p>
+							一人づつそれぞれが歩き出す<br>
+							だからもう今からは泣かないで</p>
+						<p>
+							こんなにも大切に思えるよ<br>
+							変わらないその笑顔それだけて<br>
+							僕の胸で輝く君よ<br>
+							優しい風になれ</p>
+						<p>
+							優しい風になれ...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

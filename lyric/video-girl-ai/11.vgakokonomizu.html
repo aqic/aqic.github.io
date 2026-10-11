@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>心の水たまり - 電影少女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">心の水たまり</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桂正和</div>
+
+                    <div class="LyricText">
+						<p>
+							とびきりオシャレきめてるけど<br>
+							無口に時間は過ぎてゆくよ<br>
+							もうすぐ今日の終わり告げる星空きらめくさ</p>
+						<p>
+							軽はずみな言葉よりも<br>
+							手さぐりの恋<br>
+							わからないのは自分のこと<br>
+							ちいさな心の水たまり</p>
+						<p>
+							涙がまわりを揺らしてる　傷つけ合いたくないけれど<br>
+							はしゃぎまわるようなカップルだけにはなれないさ</p>
+						<p>
+							カッコつけてるわけじゃない<br>
+							心配なんだ<br>
+							のぞくことだれにもできない<br>
+							ちいさな心の水たまり</p>
+						<p>
+							もっと　Sweet My Heart　優しくなれると思うけど<br>
+							いつも　Broken Heart　つまずいている　心とウラハラに</p>
+						<p>
+							いつしか夢はかなうものさ　道草くってるだけだろう<br>
+							もうすぐ今日の終わり告げる星空きらめくさ</p>
+						<p>
+							君を守ってやれるのは<br>
+							この俺じゃない<br>
+							いじらしい君のその瞳<br>
+							ちいさな心の水たまり</p>
+						<p>
+							揺れる　Lonely Heart　ほんとはいつも抱きしめたい<br>
+							いつも　In My Heart　この腕の中　自由に泳がせたい</p>
+						<p>
+							いつしか夢はかなうものさ<br>
+							出逢いの天使のいたずらさ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-video-girl-ai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

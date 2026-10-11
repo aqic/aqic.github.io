@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>プラチナ - カードキャプターさくら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「カードキャプターさくら」</div>
+
+                    <div class="LyricTitle">プラチナ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本真綾</div>
+                    <div class="LyricStaff">作詞：岩里祐穗<br>作曲・編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							I'm a dreamer　ひそむパワー</p>
+						<p>
+							私の世界　夢と恋と不安で出来てる<br>
+							でも想像もしないもの　隠れてるはず<br>
+							空に向かう木々のようにあなたを<br>
+							まっすぐ見つめてる</p>
+						<p>
+							☆みつけたいなあ　かなえたいなあ<br>
+							　信じるそれだけで　越えられないものはない<br>
+							　歌うように奇蹟のように<br>
+							　「思い」が全てを変えてゆくよ<br>
+							　きっと　きっと　驚くくらい</p>
+						<p>
+							I'm a dreamer　ひそむパワー</p>
+						<p>
+							まだ見ぬ世界　そこで何が待っていても<br>
+							もしも理想とちがっても　恐れはしない<br>
+							鳥たちは風に乗り旅をしてゆく<br>
+							今日から明日へと</p>
+						<p>
+							伝えたいなあ　さけびたいなあ<br>
+							この世に一つだけの存在である私<br>
+							祈るように星のように<br>
+							ちいさな光だけど何時かは<br>
+							もっと　もっと　つよくなりたい</p>
+						<p>
+							限界のない可能性がここにある　この手に<br>
+							It's gonna be your world</p>
+						<p>
+							☆繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ccsakura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>この空の永遠のように - かってに桃天使</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「かってに桃天使!～Dancing Blade」 ED・テーマ(1998)</div>
+
+                    <div class="LyricTitle">この空の永遠のように</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桑島 法子</div>
+                    <div class="LyricStaff">作詞：白峰美津子<br>作曲：浅井裕子<br>編曲：岩本正樹</div>
+
+                    <div class="LyricText">
+						<p>
+							誰かが　わたしを呼ぶ　声が　聞こえて<br>
+							甘い　夢の途中　ぼんやり　目覚めた</p>
+						<p>
+							恋は　どこから　やってくるの？<br>
+							窓を　開けたら　不思議の夜明け</p>
+						<p>
+							果てしない　この道で　いつの日か　出会うひと<br>
+							伝えたい　優しさを　いつまでも　その胸に</p>
+						<p>
+							小さな　詩の中に　秘めた　思いは<br>
+							長い　時代を越えて　涙を　伝える</p>
+						<p>
+							みんな　どうして　恋をするの？<br>
+							いつか　わたしも　変わって行くの…</p>
+						<p>
+							誰よりも　信じあい　求めあう　気持ちだけ<br>
+							抱き締めて　いられたら　何もかも　こわくない</p>
+						<p>
+							果てしない　この道で　いつの日か　出会うひと<br>
+							穏やかな　優しさで　あなただけ　見つめたい</p>
+						<p>
+							この空が　永遠に　どこまでも　続くように<br>
+							変わらない　願いだけ　いつまでも　抱き締める…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-momotenshi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

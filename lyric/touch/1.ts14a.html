@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>あれから、君は… - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ ～あれから、君は…～ オリジナルサウンドトラック</div>
+
+                    <div class="LyricTitle">あれから、君は…</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">芹澤 廣明</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							飛行機雲が空に残ってる<br>
+							ふたりの夢の抜け殻みたいに<br>
+							悲しみが僕たちを大人にしたの？</p>
+						<p>
+							青空が瞳にあんなにしみた<br>
+							季節が過ぎたね…<br>
+							愛することって淋しさ知ることなの？</p>
+						<p>
+							あれから君は<br>
+							切ないくらい綺麗になったね<br>
+							僕を思い出にして</p>
+						<p>
+							君を愛してると言えなかったけど<br>
+							変わり果ててゆく僕にたったひとつ<br>
+							変わらない君がいる<br>
+							Miss Lonely Yesterday<br>
+							あれから、君は…<br>
+							 誰もいない雨のグランドに<br>
+							少年たちの声が聞こえるよ<br>
+							君の濡れたシャツから魂が透ける</p>
+						<p>
+							始めて君を見た日のように<br>
+							胸が震えるよ<br>
+							あの日の少女がいまでもそこにいる</p>
+						<p>
+							あれから君は<br>
+							輝くたびに遠くに見えたよ<br>
+							僕の手から飛び発ち</p>
+						<p>
+							想いでの酷さは美しいことさ<br>
+							すれ違ってゆく愛や悲しみたち…<br>
+							僕らはどこへ行くの？<br>
+							Miss Lonely Yesterday<br>
+							あれから、君は…</p>
+						<p>
+							あれから君は<br>
+							切ないくらい綺麗になったね<br>
+							そっとつぶやくだけさ</p>
+						<p>
+							この星のどこかで未来のどこかで<br>
+							すれ違ってゆく愛やあこがれたち…<br>
+							僕らはどこへ行くの？<br>
+							Miss Lonely Yesterday<br>
+							あれから、君は…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

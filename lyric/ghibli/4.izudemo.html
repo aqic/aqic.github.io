@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>いつでも誰かが - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">平成狸合戦ぽんぽこ</div>
+
+                    <div class="LyricTitle">いつでも誰かが</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">上々 颱風</div>
+                    <div class="LyricStaff">作詞・作曲：紅龍<br>編曲：上々 颱風</div>
+
+                    <div class="LyricText">
+						<p>
+							いつでも誰かが　きっとそばにいる<br>
+							思い出しておくれ　すてきなその名を<br>
+							心がふさいで　何も見えない夜<br>
+							きっときっと誰かが　いつもそばにいる</p>
+						<p>
+							生まれた街を　遠く離れても<br>
+							忘れないでおくれ　あの街の風を<br>
+							いつでも誰かが　きっとそばにいる<br>
+							そうさきっとおまえが　いつもそばにいる</p>
+						<p>
+							雨の降る朝　いったいどうする<br>
+							夢からさめたら　やっぱり一人かい</p>
+						<p>
+							※　いつでもおまえが　きっとそばいにいる<br>
+							　　思い出しておくれ　すてきなその名を</p>
+						<p>
+							争いに傷ついて　光が見えないなら<br>
+							耳をすましてくれ　歌が聞こえるよ<br>
+							涙も痛みも　いつか消えてゆく<br>
+							そうさきっとおまえの　微笑みがほしい</p>
+						<p>
+							風の吹く夜　誰かに会いたい<br>
+							夢に見たのさ　おまえに会いたい</p>
+						<p>
+							　（※繰り返し）</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夢よ、そして彼方へ… - 3×3EYES</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「3×3EYES～吸精公主～Ｓ」 オープニング・テーマ</div>
+
+                    <div class="LyricTitle">夢よ、そして彼方へ…</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">辻谷耕史</div>
+                    <div class="LyricStaff">作詞：辻谷耕史<br>作曲・編曲：Lake Devils Jr.</div>
+
+                    <div class="LyricText">
+						<p>
+							遠い記憶の　扉開けては<br>
+							うつむいた　君が切なくて<br>
+							わずかに浮かぶ　覚めた面影に<br>
+							封じられた　憂い知りながら</p>
+						<p>
+							Take your sight<br>
+							続く果てしない闇は<br>
+							生きることへの　罪と罰<br>
+							過去を彷徨〈さまよ〉う　回転木馬<br>
+							未来を嘲る　道化師〈ピエロ&gt;</p>
+						<p>
+							★夢よ、そして彼方へ…<br>
+							　踏み出せば一瞬に消える今よ<br>
+							　走り出した二人には<br>
+							　もう過去も記憶も色あせる<br>
+							　移りゆくこの現在〈とき〉こそが<br>
+							　永遠の温もり</p>
+						<p>
+							そっと言葉に　望みを託して<br>
+							呟&lt;つぶ&gt;いた　そんな君だから<br>
+							溢れる思い　隠し続けても<br>
+							辛いとは　感じはしないさ</p>
+						<p>
+							Blow the wind<br>
+							渡れ遥かな陸へ<br>
+							軌跡を描く　星の砂<br>
+							月は移ろい　戸惑う陰も<br>
+							望みを叶える　夜明け</p>
+						<p>
+							夢よ、そして彼方へ<br>
+							限りなく全てを包む今よ<br>
+							分かり合える二人なら<br>
+							そう未来〈さき〉の行方も恐くない<br>
+							移りゆくこの在現在〈とき〉こそか<br>
+							永遠の温もり</p>
+						<p>
+							★繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sazeneyes-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

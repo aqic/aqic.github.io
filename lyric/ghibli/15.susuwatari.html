@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>すすわたり - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">となりのトトロ</div>
+
+                    <div class="LyricTitle">すすわたり</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">杉並児童合唱団</div>
+
+                    <div class="LyricText">
+						<p>
+							すーすす　すすわたり<br>
+							すーすす　てんじょうで<br>
+							すーすす　すすかぶり<br>
+							すーすす　ごみだらけ<br>
+							すすけたところがすき<br>
+							ふわふわふわふわ　とんでいく<br>
+							どーこも　かしこも　ほこりたつ<br>
+							おおさわぎ</p>
+						<p>
+							すーすす　すすわたり<br>
+							すーすす　おんぼろや<br>
+							すーすす　すすがとぶ<br>
+							すーすす　おともなく<br>
+							うすぐらいすみをみつけ<br>
+							こそこそこそこそ　あつまって<br>
+							ひそひそひそひそ　はなしてる<br>
+							おおぜいで</p>
+						<p>
+							すーすす　とめどなく<br>
+							すーすす　うごめいて<br>
+							すーすす　ふえつづけ<br>
+							すーすす　うずをまく<br>
+							まっくろけの　ふわふわぼうず<br>
+							ふうらいぼうだよ　きらくだよ<br>
+							あっちへ　こっちへ　あてもなく<br>
+							すーすすわたり　すーすすわたり</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

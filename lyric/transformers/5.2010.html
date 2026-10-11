@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>トランスフォーマー2010 - トランスフォーマー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">トランスフォーマー2010</div>
+
+                    <div class="LyricTitle">トランスフォーマー2010</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">広瀬　翔</div>
+                    <div class="LyricStaff">作詞：松本一起<br>作曲：小森田　実<br>編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+						<p>
+							風の色が変わる　世界が回る（回る）<br>
+							夕陽が今　燃え上がる未来<br>
+							思い出してごらん　誰にも見える（見える）<br>
+							宇宙はひとつなのさ<br>
+							明日の新しい朝　必ず訪れる<br>
+							この闘い　きっと フューチャー（フューチャー）<br>
+							平和の為に クロス オブ ヒート (トランスフォーマー)<br>
+							この宇宙の為に バーニング  ハート (バーニング  ハート)<br>
+							ダッシュ ダッシュ ダッシュ ダッシュ トランス トランスフォーマー</p>
+						<p>
+							夢の翼広げ　世界を回せ（回せ）<br>
+							昨日よりも　もっと輝いて<br>
+							自分一人だけで　楽しむフリは（フリは）<br>
+							君には似合わないさ<br>
+							銀河は永遠に闇でも　輝く夢がある<br>
+							闘いの向こうに  フューチャー（フューチャー）<br>
+							平和の為に クロス オブ ヒート (トランスフォーマー)<br>
+							この運命賭けて バーニング  ハート (バーニング  ハート)<br>
+							ダッシュ ダッシュ ダッシュ ダッシュ トランス トランスフォーマー</p>
+						<p>
+							この闘い　きっと フューチャー（フューチャー）<br>
+							平和の為に クロス オブ ヒート (トランスフォーマー)<br>
+							この宇宙の為に バーニング  ハート (バーニング  ハート)<br>
+							ダッシュ ダッシュ ダッシュ ダッシュ トランス トランスフォーマー</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-transformers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>硝子の手毬（日中対訳） - 吸血姫美夕</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">硝子の手毬（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">安部理惠子</div>
+                    <div class="LyricStaff">作詞：垣野内成美<br>作曲：寺嵨民哉<br>编曲：寺嵨民哉</div>
+
+                    <div class="LyricText">
+						<p>
+							母さま恋しと　ひとつ　毬を抱きしめ<br>
+							泪はいらぬと　ふたつ　その目をつぶすの<br>
+							约束お愿い　みっつ　指を折りましょ<br>
+							现梦の足音　よっつ　ぷつりととぎれた</p>
+						<p>
+							爱しい唇　いつつ　ガラスでふさぎ<br>
+							逃がさぬようにと　むっつ　络めて招くよ<br>
+							舞い散る赤い火　ななつ　したたる　しずく<br>
+							椿の想いは　やっつ　ぽとりと落ちてく</p>
+						<p>
+							哀しみここのつ　消して　谁かの时间<br>
+							かぞえてください　そっと　あなたの手毬を</p>
+						<p>
+							きっと くよ　その歌声<br>
+							それは永远　ガラスのかぞえ呗<br>
+							あなたにあげる　ガラスの手毬</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							拍一下 和亲爱的妈妈抱个球<br>
+							拍两下 眼睛眨一下不流泪<br>
+							拍三下 勾勾手说话要算数<br>
+							拍四下 跺跺脚</p>
+						<p>
+							拍五下 用可爱的唇去碰玻璃<br>
+							拍六下 不许跑赶快招手叫大家<br>
+							拍七下 给飞散的火花洒洒水<br>
+							拍八下 想起椿花也会调落</p>
+						<p>
+							拍九下 淌去悲哀是谁的时间<br>
+							请数一下 轻轻地</p>
+						<p>
+							这是永远的数玻璃球歌<br>
+							向你献上这可爱的玻璃球</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>今は友達 - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Macross2</div>
+
+                    <div class="LyricTitle">今は友達</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐藤幸世</div>
+                    <div class="LyricStaff">作詞：谷亞ヒロコ<br>作曲：間瀬憲治</div>
+
+                    <div class="LyricText">
+						<p>
+							好きな人がいたなんてまるで知らなかった<br>
+							あなたが思いを告げて恋を失くしたのも<br>
+							二人は誰よりも身近にいる友達だと思ったけど<br>
+							前ゆくあなたが急に見えなくなる</p>
+						<p>
+							*　たぶん恋なの　　いつからか分からない　　あなたが好き<br>
+							だけど怖くて気づかれないようにしていたの<br>
+							ずっとこのまま気持ちを隠すことはできないけど<br>
+							二度と友達も度れなくなりそうで言えない<br>
+							愛してる</p>
+						<p>
+							あなたは何も言わずに遠くみつめている<br>
+							たぶんあなたも私と同じ片思いね<br>
+							今は涙よりも笑顔が少しっらいけど我慢するわ<br>
+							ぎごちないしぐさの理由いつか分かる</p>
+						<p>
+							**　どんなときでも　　だぶんいつでも　　私ここにいるよ<br>
+							だから気づいて私の胸の奥の本気を<br>
+							あなたの好きな人を知らなかったのは悲しいけど<br>
+							いつか勇気を出してあなたの前で言うから<br>
+							愛してる</p>
+						<p>
+							そっとしまってた宝物みたいなこの気持ち<br>
+							預けたい　　あなたに</p>
+						<p>
+							*、**　くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

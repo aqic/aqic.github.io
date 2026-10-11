@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>幸せは小さなつみかさね - 万能文化猫娘</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ＯＶＡ「万能文化猫娘DASH」ＥＤ</div>
+
+                    <div class="LyricTitle">幸せは小さなつみかさね</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+                    <div class="LyricStaff">作詞：MEGUMI<br>作曲：MEGUMI<br>編曲：岩本正樹</div>
+
+                    <div class="LyricText">
+						<p>
+							幸せは小さなつみかさね<br>
+							ダイヤやルビー<br>
+							サファイヤはないけど<br>
+							糸の切れかけた<br>
+							ビーズの指輪には<br>
+							思い出がたくさんつまってる</p>
+						<p>
+							ぬくぬくおふとん気持ち良い<br>
+							ジュージューお魚が焼けました<br>
+							毎日の中<br>
+							見過ごさないでいてね<br>
+							あたりまえはとっても大切</p>
+						<p>
+							神様幸せ貯金<br>
+							どこかにありませんか<br>
+							淋しくなった時少し<br>
+							引き出したいんです</p>
+						<p>
+							女の子はとっても単純<br>
+							浮いたり沈んだりあなたしだいよ<br>
+							だからやさしくね<br>
+							だから時に厳しく<br>
+							かまってくれれば幸せ</p>
+						<p>
+							幸せは小さなつみかさね<br>
+							狙ってたスーツ<br>
+							バーゲンでゲットした<br>
+							100円ショップ<br>
+							袋いっぱい買っちゃった<br>
+							得した気持ちは何より最高</p>
+						<p>
+							ホームに電車がすぐに来た<br>
+							定期の期限あなたの誕生日<br>
+							忙しい日々<br>
+							見逃さないでいてね<br>
+							あちこちにかくれてる幸せ</p>
+						<p>
+							神様幸せ貯金<br>
+							満期はいつなのかな<br>
+							淋しい人を見かけたら<br>
+							すすめてあげたいの</p>
+						<p>
+							女の子は時々複雑<br>
+							すねたりはしゃいだり気分次第ね<br>
+							だけどめげないで<br>
+							嫌いにならないで<br>
+							一緒に幸せみつけたい</p>
+						<p>
+							女の子はとっても単純<br>
+							浮いたり沈んだりあなたしだいよ<br>
+							だからやさしくね<br>
+							だから時に厳しく<br>
+							かまってくれれば幸せ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bbn-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

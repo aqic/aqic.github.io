@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Welcome! - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Welcome!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricStaff">Lyrics : Koge Donbo<br>Music : Sakamoto Yuusuke<br>Arrangement : Sakamoto Yuusuke</div>
+
+                    <div class="LyricText">
+						<p>
+							Welcome to, Welcome to　Welcome to my house<br>
+							Welcome to, Welcome to　Welcome to my heart</p>
+						<p>
+							生まれたての朝日がサンサン<br>
+							水たまりが光ってキラキラ<br>
+							今日もおそうじピカピカ<br>
+							猫の手も借りたいくらいにょ</p>
+						<p>
+							つまらない事　気にしないにょ<br>
+							ミスっちゃっても転んじゃっても　前向きにGO GO!<br>
+							今日もあたしは大忙し<br>
+							疲れちゃっても戦闘モードにょ</p>
+						<p>
+							Welcome to, Welcome to　Welcome to my house<br>
+							頑張るにょ　ちょっとだけドジなあたしでも<br>
+							Welcome to, Welcome to　Welcome to my heart<br>
+							今日もキミが来てくれるの　待ってるにょ　待ってるにょ</p>
+						<p>
+							沈んでく夕日はキラキラ<br>
+							迷子の子猫はフワフワ<br>
+							今日も足元ふらふら<br>
+							おひさまもごくろうさまだにょ</p>
+						<p>
+							過ぎちゃった事　振り返らないにょ<br>
+							失敗しちゃっても恥ずかしくっても　後悔はNO! NO!<br>
+							いつもあたしは大忙し<br>
+							落ち込まないで　戦闘モードにょ</p>
+						<p>
+							Welcome to, Welcome to　Welcome to my house<br>
+							頑張るにょ　ちょっとだけドジなあたしでも<br>
+							Welcome to, Welcome to　Welcome to my heart<br>
+							今日もキミが来てくれるの　待ってるにょ</p>
+						<p>
+							足音パタパタ　お掃除ピカピカ<br>
+							夕日はユラユラ　子猫はフワフワ</p>
+						<p>
+							つまらないこと気にしないにょ<br>
+							ミスっちゃっても　転んじゃっても<br>
+							過ぎちゃったこと　振り返らないにょ<br>
+							失敗しちゃっても　恥ずかしくっても</p>
+						<p>
+							落ち込まないで　戦闘モードにょ<br>
+							（にょにょにょ　にょにょ　にょにょにょにょにょにょにょにょ）</p>
+						<p>
+							Welcome to, Welcome to　Welcome to my house<br>
+							頑張るにょ　ちょっとだけドジなあたしでも<br>
+							Welcome to, Welcome to　Welcome to my heart<br>
+							今日もキミが来てくれるの　待ってるにょ　待ってるにょ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

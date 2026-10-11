@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">らんま1/2</span><span class="cn">（乱马1/2）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+					<div class="disc-head"><span class="disc-name">らんま1/2</span><span class="disc-sub">50 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.jiajiama.html">《じゃじゃ馬にさせないで》</a>＆<a href="1.jiajiama-bilingual.html" class="cn">(中)</a><span class="note">- 「らんま 1/2」オープニング・テーマ (1989)</span></li>
+						<li class="LyricItem"><a href="2.dontmind.html">《ド・ン・マ・イ来々少年》</a><span class="note">- 「らんま 1/2 熱闘編」オープニング・テーマ (1989)</span></li>
+						<li class="LyricItem"><a href="3.mou.html">《もう泣かないで》</a><span class="note">- 「らんま 1/2 熱闘編」オープニング・テーマ (1991)</span></li>
+						<li class="LyricItem"><a href="4.seeker.html">《ラヴ・シーカー　CAN'T STOP IT》</a><span class="note">- 「らんま 1/2 熱闘編」オープニング・テーマ (1992)</span></li>
+						<li class="LyricItem"><a href="5.littledate.html">《リトル★デイト》</a>＆<a href="5.littledate-bilingual.html" class="cn">(中)</a><span class="note">- 「らんま 1/2 熱闘編」オープニング・テーマ (1989)</span></li>
+						<li class="LyricItem"><a href="6.chikyu.html">《地球オーケストラ》</a><span class="note">- 「らんま 1/2 熱闘編」オープニング・テーマ (1991)</span></li>
+						<li class="LyricItem"><a href="7.omoideop3.html">《思い出がいっぱい》</a>＆<a href="7.omoideop3-bilingual.html" class="cn">(中)</a><span class="note">- 「らんま 1/2 熱闘編」オープニング・テーマ (1990)</span></li>
+						<li class="LyricItem"><a href="8.koida.html">《恋だ！パニック》</a><span class="note">- 「らんま1/2」OAV オープニング・テーマ (1993)</span></li>
+						<li class="LyricItem"><a href="9.zaidai.html">《絶対！ Part 2》</a><span class="note">- 「らんま 1/2 熱闘編」オープニング・テーマ (1990)</span></li>
+						<li class="LyricItem"><a href="10.equal.html">《ＥＱＵＡＬ　ロマンス》</a><span class="note">- 「らんま 1/2 熱闘編」オープニング・テーマ (1989)</span></li>
+						<li class="LyricItem"><a href="11.hinageshi.html">《ひなげし》</a><span class="note">- 「らんま 1/2 熱闘編」エンディング・テーマ (1991)</span></li>
+						<li class="LyricItem"><a href="12.furenzu.html">《フレンズ》</a><span class="note">- 「らんま 1/2 熱闘編」エンディング・テーマ (1990)</span></li>
+						<li class="LyricItem"><a href="13.pulato.html">《プラトニックつらぬいて》</a><span class="note">- 「らんま 1/2 熱闘編」エンディング・テーマ (1989)</span></li>
+						<li class="LyricItem"><a href="14.purezento.html">《プレゼント》</a><span class="note">- 「らんま1/2 熱闘編」エンディング・テーマ(1990)</span></li>
+						<li class="LyricItem"><a href="15.positive.html">《Positive》</a><span class="note">- 「らんま 1/2 熱闘編」エンディング・テーマ (1991)</span></li>
+						<li class="LyricItem"><a href="16.ranmadaranma.html">《乱馬〈ランバ〉ダ☆ＲＡＮＭＡ》</a><span class="note">- 「らんま 1/2 熱闘編」エンディング・テーマ (1990)</span></li>
+						<li class="LyricItem"><a href="17.nijitotaiyo.html">《虹と太陽の丘》</a><span class="note">- 「らんま 1/2 熱闘編」エンディング・テーマ (1992)</span></li>
+						<li class="LyricItem"><a href="18.akanenolalaby.html">《あかねの子守唄》</a><span class="note">- 「らんま 1/2」イメージ·ソング</span></li>
+						<li class="LyricItem"><a href="19.usotsuki.html">《うそつき》</a><span class="note">- ［らんま 1/2］DoCo＊FIRSTイメージ・ソング(1992)</span></li>
+						<li class="LyricItem"><a href="20.kagayakusora.html">《かがやく空ときみの声》</a><span class="note">- ［らんま 1/2］DoCo＊SECONDイメージ・ソング(1994)</span></li>
+						<li class="LyricItem"><a href="21.chinakara.html">《チャイナからの手紙》</a><span class="note">- 「らんま 1/2」イメージ・ソング</span></li>
+						<li class="LyricItem"><a href="22.fukuzatsunalive.html">《フクザツな両想い(Live Version)》</a><span class="note">- ［らんま 1/2］DoCo＊SECONDイメージ・ソング(1994)</span></li>
+						<li class="LyricItem"><a href="23.koshidake.html">《少しだけ坂道》</a><span class="note">- ［らんま 1/2］DoCo＊FIRSTイメージ・ソング(1992)</span></li>
+						<li class="LyricItem"><a href="24.kare.html">《彼》</a><span class="note">- ＦＩＲＳＴイメージ・ソング（１９９２）</span></li>
+						<li class="LyricItem"><a href="25.omoidoko.html">《思い出がいっぱい》</a><span class="note">- ［らんま 1/2］DoCo＊FIRSTイメージ・ソング(1992)</span></li>
+						<li class="LyricItem"><a href="26.wodeairen.html">《我的愛人》</a><span class="note">- 「らんま 1/2」イメージ・ソング</span></li>
+						<li class="LyricItem"><a href="27.doco2.html">《授業中の小学校》</a><span class="note">- ［らんま 1/2］DoCo＊SECONDイメージ・ソング(1994)</span></li>
+						<li class="LyricItem"><a href="28.kurisumasu.html">《清く正しいクリスマス》</a><span class="note">- ［らんま 1/2］DoCo＊SECONDイメージ・ソング(1994)</span></li>
+						<li class="LyricItem"><a href="29.akasunday.html">《赤い靴のSUNDAY》</a><span class="note">- ［らんま１／２］DoCo＊FIRSTイメージ・ソング(1992)</span></li>
+						<li class="LyricItem"><a href="30.sc6.html">《おとうさん》</a><span class="note">- 【６月】</span></li>
+						<li class="LyricItem"><a href="31.kawaikunee.html">《かわいくねえ、色気がねえ》</a></li>
+						<li class="LyricItem"><a href="32.sc12.html">《キャラクターズ·クリスマス》</a><span class="note">- 【12月】</span></li>
+						<li class="LyricItem"><a href="33.sc1.html">《この世でいちばん、お正月が好き》</a><span class="note">- 【１月】</span></li>
+						<li class="LyricItem"><a href="34.hatonaisyo2.html">《ハート ないしょ／２》</a></li>
+						<li class="LyricItem"><a href="35.sc2.html">《バレンタインに黒バラを》</a><span class="note">- 【２月】</span></li>
+						<li class="LyricItem"><a href="36.sc3.html">《やさしい、いい娘になれない》</a><span class="note">- 【３月】</span></li>
+						<li class="LyricItem"><a href="37.sc10.html">《よーい・どん！》</a><span class="note">- 【10月】</span></li>
+						<li class="LyricItem"><a href="38.sc11.html">《November Rain》</a><span class="note">- 【11月】</span></li>
+						<li class="LyricItem"><a href="39.redshoesunday.html">《Red Shoe Sunday》</a><span class="note">- [Ranma 1/2] Image Song (1992)</span></li>
+						<li class="LyricItem"><a href="40.apieceoflove.html">《a Piece of Love》</a><span class="note">- らんま１／２ 決戦桃幻郷！花嫁を奪りもどせ！！</span></li>
+						<li class="LyricItem"><a href="41.sc4.html">《今夜はエイプリル·フ－ル》</a><span class="note">- 【４月】</span></li>
+						<li class="LyricItem"><a href="42.yumenoballoon.html">《夢のBalloon》</a></li>
+						<li class="LyricItem"><a href="43.koigahitotsukiete.html">《恋がひとつ消えてしまったの》</a>＆<a href="43.koigahitotsukiete-bilingual.html" class="cn">(中)</a></li>
+						<li class="LyricItem"><a href="44.sc9.html">《拝啓、あかねさん》</a><span class="note">- 【９月】</span></li>
+						<li class="LyricItem"><a href="45.morieikemasyo.html">《森へ行きましょう》</a></li>
+						<li class="LyricItem"><a href="46.muchabei.html">《無差別格闘一直線》</a></li>
+						<li class="LyricItem"><a href="47.sc5.html">《猫飯店メニュー·ソング》</a><span class="note">- 【５月】</span></li>
+						<li class="LyricItem"><a href="48.doco3.html">《終わらない夏休み》</a><span class="note">- 「らんま１／２ 超無差別決戦！ 乱馬チームＶＳ伝説の鳳凰」</span></li>
+						<li class="LyricItem"><a href="49.nijitorinkunobarado.html">《虹とリンクのバラード》</a></li>
+						<li class="LyricItem"><a href="50.sc8.html">《魅惑のリンボーダンス》</a><span class="note">- 【８月】</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

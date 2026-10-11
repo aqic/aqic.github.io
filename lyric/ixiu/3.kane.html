@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>鐘がゴーンと鳴りゃ - 一休さん</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">鐘がゴーンと鳴りゃ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">藤田淑子</div>
+                    <div class="LyricStaff">作詞：辻真先<br>作曲：宇野誠一<br>編曲：宇野誠一</div>
+
+                    <div class="LyricText">
+						<p>
+							かねが　ゴンと鳴りゃ<br>
+							からすがカア<br>
+							いくさにやかれて<br>
+							おてらはボゥ<br>
+							それでも坊さん<br>
+							平気な顔して南無三だぁ<br>
+							つるつる頭にゃ<br>
+							毛がないね　毛がないね</p>
+						<p>
+							かねが　ゴンと鳴りゃ<br>
+							からすがカア<br>
+							坊さん修行は<br>
+							掃除に座禅<br>
+							短い命で<br>
+							みっちり勉強南無三だぁ<br>
+							あしたじゃ遅いぞ<br>
+							きょうをよむ　きょうをよむ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ixiu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

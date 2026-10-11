@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>STARLIGHT DREAM - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">STARLIGHT DREAM</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							晴朗的星空  几乎使我湿润了眼睛<br>
+							万家灯火的街道  逐渐走远的嘈杂声<br>
+							孤独的悲伤任风吹散<br>
+							回味勾起的记忆<br>
+							光和影交叉的真实感<br>
+							紧逼银河的力量<br>
+							充满天空的无限的爱<br>
+							没错  为了让爱充满宇宙<br>
+							我做得到  我现在做得到<br>
+							我做得到  我现在做得到<br>
+							抛弃忧郁和烦恼  此刻我们赌注一切<br>
+							来吧  站起来吧<br>
+							请记住星光之梦</p>
+						<p>
+							不禁记起的往事<br>
+							不知何时已感到虚伪<br>
+							隐藏心中的伤痛<br>
+							无人知道  在星座的彼岸<br>
+							镜子和黑暗  星星也会消失<br>
+							生命的钥匙转变为爱情<br>
+							在沉沉熟睡的小孩子的梦中<br>
+							没错  闪烁出唯一  无限的光<br>
+							我做得到  我现在做得到<br>
+							我做得到  我现在做得到<br>
+							被封闭的心声  在这一刻彻底发放<br>
+							来吧  站起来吧<br>
+							请记住星光之梦</p>
+						<p>
+							充满天空的无限的爱<br>
+							没错  为了让爱充满宇宙<br>
+							我做得到  我现在做得到<br>
+							我做得到  我现在做得到<br>
+							抛弃忧郁和烦恼  此刻我们赌注一切<br>
+							来吧  站起来吧<br>
+							请记住星光之梦</p>
+						<p>
+							我做得到  我现在做得到<br>
+							我做得到  我现在做得到<br>
+							被封闭的心声  在这一刻彻底发放<br>
+							来吧  站起来吧<br>
+							请记住星光之梦</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

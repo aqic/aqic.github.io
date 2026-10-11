@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>冬空の軌跡 - スノードロップ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Snow Drop(WILL)</div>
+
+                    <div class="LyricTitle">冬空の軌跡</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島宮えい子</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢<br>編曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							輝いた日は どこまでも続いて<br>
+							涙の色に変わりながら</p>
+						<p>
+							夕日に染まる 雪景色の上<br>
+							二つ軌跡を残して????</p>
+						<p>
+							白い息の朝は寂しさにくるまって<br>
+							寝息をたてるあなたの温もり離さない</p>
+						<p>
+							ふさいだその瞳 もう一度開いてみて<br>
+							限りなく広がった明日がある  そこに</p>
+						<p>
+							優しさの影  少しだけ残して<br>
+							戻らない日々過ぎて行くよ</p>
+						<p>
+							その瞬間を大切にしたい<br>
+							ずっと二人で歩きたい</p>
+						<p>
+							かわらない笑顔と透き通るまなざしは<br>
+							いつも大きな希望を私にくれるから</p>
+						<p>
+							流れるこの雫   悲しみとかじゃなくて<br>
+							崩れそうな 壊れそうな時に握り締めて</p>
+						<p>
+							懐かしい日は 冬の夜の中で<br>
+							重なりながら 繰り返すよ</p>
+						<p>
+							震える時も 二人でいるなら<br>
+							安らかな夢 巡り会う</p>
+						<p>
+							ふさいだその瞳 もう一度開いてみて<br>
+							限りなく広がった明日がある　そこに</p>
+						<p>
+							優しさの影  少しだけ残して<br>
+							戻らない日々過ぎて行くよ</p>
+						<p>
+							その瞬間を大切にしたい<br>
+							ずっと二人で歩きたい</p>
+						<p>
+							輝いた日は どこまでも続いて<br>
+							涙の色に変わりながら<br>
+							夕日に染まる 雪景色の上<br>
+							二人の軌跡 どこまでも・・・・</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-snowdrop-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

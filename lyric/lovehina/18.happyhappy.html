@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Happy happy ＊　rice shower - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Happy happy ＊　rice shower</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">堀江由衣</div>
+
+                    <div class="LyricText">
+						<p>
+							AH　チャペルには　甘い雨が降り注ぐように<br>
+							ハートの中に<br>
+							いつも　happy happy rice shower<br>
+							鏡にうつるサイテーな顔<br>
+							バタバタしてるうちに　笑顔も忘れてたよ<br>
+							帰り道みつけた　仔犬とじゃれたら<br>
+							オレンジの香りのシャンプーでもしよう</p>
+						<p>
+							ちからをほどいてみた　そらさず自分をみた<br>
+							大事なこと　たくさんあった</p>
+						<p>
+							どんなに　ささやかな　しあわせでも　降り積もったら<br>
+							夢に届くよ<br>
+							それが　happy happy rice shower</p>
+						<p>
+							ギンガムのキャミソール　ほめられたりね<br>
+							３時のお茶とチョコでも　しあわせにもなれるし<br>
+							当たり前ほど　気づかないけれど<br>
+							きらめく宝物は　毎日にあふれてる</p>
+						<p>
+							『ありがとう』いつも言えない　だけどね『感謝してる』<br>
+							ささえてくれてる仲間たち</p>
+						<p>
+							だからね　みんなにも　しあわせがね　降り注ぐように<br>
+							魔法をかける<br>
+							きっと　happy happy rice shower</p>
+						<p>
+							意地っ張りな私でもいい？</p>
+						<p>
+							いつもね　チャペルには　甘い雨が降り注ぐように<br>
+							ハートの中に<br>
+							積もれ　happy happy rice shower</p>
+						<p>
+							AH　きみのもと　しあわせがね　降り注ぐように<br>
+							魔法をかける<br>
+							ずっと　happy happy rice shower</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

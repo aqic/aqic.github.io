@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Look! My door - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Look! My door</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">竹内涼子(折笠愛)</div>
+
+                    <div class="LyricText">
+						<p>
+							冷たいドアをあけ<br>
+							一人の夜が来る<br>
+							着飾ったクールを<br>
+							脱ぎ捨てる瞬間</p>
+						<p>
+							溜息つくように<br>
+							時計をはずしたら<br>
+							何もかも遠ざかる<br>
+							街角のざわめきも</p>
+						<p>
+							悲しみは<br>
+							(Don't you know my heart)<br>
+							この胸にとじこめて<br>
+							閉ざすけれど<br>
+							(Don't you know my heart)<br>
+							その理由を忘れはしない</p>
+						<p>
+							☆So sad　都会の空は<br>
+							　煙ってもうすぐ雨<br>
+							　扉をたたく　待ち人は<br>
+							　眠りと孤独だけ</p>
+						<p>
+							So I had　痛いくらいに<br>
+							あなたを好きだけれど<br>
+							気のないふりができる　私なの<br>
+							Lock! My door&amp;My heart</p>
+						<p>
+							心を開け放つ<br>
+							私をあける鍵<br>
+							いつの日か見つかると<br>
+							本当は信じてた</p>
+						<p>
+							淋しさは<br>
+							(I don't know me)<br>
+							自分で作り出した<br>
+							私の影<br>
+							(I don't know my heart)<br>
+							気づいても振り向けなくて</p>
+						<p>
+							So sad　誰かの前で<br>
+							全てを見せられたら<br>
+							その腕の中　飛び込んで<br>
+							弱くもなれるのに</p>
+						<p>
+							So I had　訪れる朝<br>
+							いつもの私通り<br>
+							強さを肩に羽織り　でかけるの<br>
+							Look! My door&amp;My heart</p>
+						<p>
+							☆Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>翼 - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">翼</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							ちっぽけな空を見上げて　息を吸い込む<br>
+							緑の匂う空き地　見慣れた風景<br>
+							今日より明日の方が　違う景色を<br>
+							抱きしめていられるために　助走をつけて</p>
+						<p>
+							この翼を大きく広げ　見つけてゆきたい<br>
+							ずっとまだ見ぬ世界の果ての　大切なものを<br>
+							もう心に溢れる羽根が　待ち切れなくって<br>
+							鼓動が駆け足で何度も　騒がしく過ぎる<br>
+							毎日が好き</p>
+						<p>
+							大空を飛んだ夢を見て　目を覚ましたなら<br>
+							なんでも出来る気がして　街へと出掛けた<br>
+							今なら転んだって　立ち上がれそう<br>
+							涙をこらえれば　強くなれる気がする</p>
+						<p>
+							この翼が羽ばたく限り　試してみたいの<br>
+							生まれてきた意味も勇気も　刻んで飛びたい<br>
+							もう心に溢れる想い　持ち切れなくって<br>
+							加速してもっと遠くへと　望み続けてる<br>
+							生き方が好き</p>
+						<p>
+							ずっと探して来たもの「大切なものは」<br>
+							時間が教えてくれるもの　見えてくるものだった<br>
+							この翼が羽ばたく限り　夢がある限り<br>
+							なくさない情熱がきっと　見つけた　見つめてきた全てのものが<br>
+							何より大切なものだと　気づき始めてる<br>
+							だからゴールなんていらない<br>
+							まだ見ぬ　世界へこの翼を飛ばし　行きたいの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

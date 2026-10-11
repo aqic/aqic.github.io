@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ありがとう - カードキャプターさくら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ありがとう</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">丹下桜</div>
+                    <div class="LyricStaff">作詞：西 直紀<br>作曲：依田 和夫<br>編曲：山本 光男</div>
+
+                    <div class="LyricText">
+						<p>
+							雲は離れてる　風は歌いだす<br>
+							いつも走ってた　この道のそばで<br>
+							今も白い花が咲いて笑っている</p>
+						<p>
+							でも止まらない　胸がつまるほど<br>
+							今が大好きで　だけどすぎていく<br>
+							それはむかし泣いた夢のカケラのよう</p>
+						<p>
+							ふわふわと浮かぶやすらぎも<br>
+							涙こぼれる不安も<br>
+							大事な未来につながっているはずだから</p>
+						<p>
+							明日になっても　いつか大人になっても<br>
+							きっと思い出してね　あなたがここにいたこと<br>
+							忘れないでいて　広い世界の果てでも<br>
+							ずっと消えない今を　みんなありがとう</p>
+						<p>
+							月は照らしてる　風は眠ってる<br>
+							いつも笑ってた　この町の空で<br>
+							今も流れ星が願い叶えている</p>
+						<p>
+							でもわからない　時がすぎるほど<br>
+							離れたくなくて　だけど遠くなる<br>
+							それはきのう呼んだ本の枝折のよう</p>
+						<p>
+							きらきらと光るあこがれも<br>
+							どんな悲しい気持ちも<br>
+							大事な未来につながっているはずだから</p>
+						<p>
+							季節がすぎても　どこか知らない町でも<br>
+							きっと広がっていく　みんながここにいたこと<br>
+							忘れないでいて　小さなこの場所から<br>
+							そっと始まったこと　みんなありがとう</p>
+						<p>
+							夢をのせた船は　記憶から旅立つ<br>
+							また会えるよ　今は微笑んで</p>
+						<p>
+							いつまでたっても　どこか遠くへ行っても<br>
+							きっと知らせてほしい　わたしがここにいたこと<br>
+							忘れないでいて　広い世界のどこでも<br>
+							ずっと消えない思い　みんなありがとう</p>
+						<p>
+							Thank you for all your tenderness<br>
+							Thank you for all your happiness<br>
+							Thank you for all your kindness<br>
+							Thank you for all your everything･･･</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ccsakura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

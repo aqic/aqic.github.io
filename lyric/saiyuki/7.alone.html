@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Alone - 幻想魔伝 最遊記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「幻想魔伝 最遊記」エンディン・テーマ</div>
+
+                    <div class="LyricTitle">Alone</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">下川みくに</div>
+                    <div class="LyricStaff">作詞：Sumiyo Mutsumi<br>作曲：ab:fly<br>編曲：ab:fly</div>
+
+                    <div class="LyricText">
+						<p>
+							乾いた風が吹く　街は凍えている<br>
+							いくつの季節が　そっと音もなく　過ぎ去ったのだろう</p>
+						<p>
+							行き交う人は皆　重い荷物背負って<br>
+							遠くに揺れる　かげろうの中に　明日を見つける</p>
+						<p>
+							この手をこぼれ落ちる　砂のような感情<br>
+							あの時胸に刺さった　言葉がふいに疼くけど</p>
+						<p>
+							★果てない夜を数えながら<br>
+							　自分の破片(かけら)探していた<br>
+							　失う程にこの思いが　確かになってく<br>
+							　今なら　きっと歩いていける　どこまでも</p>
+						<p>
+							どうしてこの空はこんなに広いのだろう<br>
+							叫んでみても　声にならなくて涙があふれた</p>
+						<p>
+							自由に風切って　鳥たちは何処へ行くの？<br>
+							過ごした時間のように同じ場所に戻れない</p>
+						<p>
+							このまま夢をあきらめても<br>
+							高鳴る鼓動おさえきれない<br>
+							いつかはきっと近付きたい　あの雲の高さ<br>
+							もう一度　心に翼広げ　旅立とう</p>
+						<p>
+							必ずたどりつけるはず</p>
+						<p>
+							★くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saiyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

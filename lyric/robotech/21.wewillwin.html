@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>We Will Win - Robotech</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Robotech] Insert Song</div>
+
+                    <div class="LyricTitle">We Will Win</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Reba West</div>
+                    <div class="LyricStaff">Composed by: Ulpio Minucci and Arlon Ober</div>
+
+                    <div class="LyricText">
+						<p>
+							Life is only what we choose to make it<br>
+							let's just take it, let us be free<br>
+							we can find the glory we all dream of<br>
+							and with our love, we can win</p>
+						<p>
+							○Still,<br>
+							　we must fight or face defeat<br>
+							　we must stand tall and not retreat<br>
+							　with our strength we'll find the might<br>
+							　there's no fight we can't fight<br>
+							　Together,<br>
+							　all together we can win</p>
+						<p>
+							◎Blessed with strong hearts that beat as one<br>
+							　watch us soar, and with love that conquers all<br>
+							　we'll win this battle, this last battle<br>
+							　we will win, we must win<br>
+							　we will win, we can win,<br>
+							　we can win</p>
+						<p>
+							As the battle goes on, we feel stronger<br>
+							how much longer must this go on?<br>
+							each and every day we dream of winning<br>
+							and beggining a new life</p>
+						<p>
+							○Repeat</p>
+						<p>
+							◎Repeat<br>
+							we will win, we must win<br>
+							we will win, we will win,<br>
+							we can win</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-robotech-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

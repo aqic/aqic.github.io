@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>On Your Mark - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">On Your Mark</div>
+
+                    <div class="LyricTitle">On Your Mark</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">CHAGE &amp; ASKA</div>
+                    <div class="LyricStaff">作詞・作曲：飛鳥 涼<br>編曲：澤近 泰輔</div>
+
+                    <div class="LyricText">
+						<p>
+							そして僕らは　いつもの笑顔と姿で<br>
+							埃にまみれた服を払った</p>
+						<p>
+							この手を離せば　音さえたてない<br>
+							落ちて行くコインは　二度と帰らない</p>
+						<p>
+							君と僕　並んで<br>
+							夜明けを追い抜いてみたい　自転車</p>
+						<p>
+							On Your Mark　いつも走り出せば<br>
+							流行の風邪にやられた</p>
+						<p>
+							On Your Mark　僕らがそれでも止めないのは<br>
+							夢の斜面見上げて　行けそうな気がするから</p>
+						<p>
+							そして僕らは　心の小さな空き地で<br>
+							互いに振り落とした　言葉の夕立</p>
+						<p>
+							答えを出さない　それが答えのような<br>
+							針の消えた時計の　文字を読むような</p>
+						<p>
+							君と僕　全てを<br>
+							認めてしまうにはまだ　若すぎる</p>
+						<p>
+							On Your Mark　いつも走り出せば<br>
+							流行の風邪にやられた</p>
+						<p>
+							On Your Mark 僕らがこれを无くせないのは<br>
+							夢の心臟めがけて　僕らと呼び合うため<br>
+							そして僕らは</p>
+						<p>
+							On Your Mark いつも走りだせば<br>
+							流行の風邪にやられた</p>
+						<p>
+							On Your Mark 僕らがそれでも止めないのは<br>
+							夢の斜面見上げて　行けそうな気がするから</p>
+						<p>
+							On Your Mark いつも走りだせば<br>
+							流行の風邪にやられた</p>
+						<p>
+							On Your Mark 僕らがこれを无くせないのは<br>
+							夢の心臟めがけて　僕らと呼び合うため</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Flower - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">KANON TV</div>
+
+                    <div class="LyricTitle">Flower</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">藤原美穂</div>
+                    <div class="LyricStaff">作詞：こさかなおみ<br>作曲：上野浩司<br>編曲: 神津裕之</div>
+
+                    <div class="LyricText">
+						<p>
+							流れる雲の間に　のぞいた青空が<br>
+							見なれた街並でさえ　輝かせてくれる</p>
+						<p>
+							駆けてく小さな背中　あの頃の二人は<br>
+							こぼれる痛みの理由を　無邪気さで隠した</p>
+						<p>
+							時は静かに流れ　優しい風が吹いた<br>
+							かじかんだ想いも　笑顔に変わるから</p>
+						<p>
+							一番大切な場所　今でも待っている<br>
+							願いが届く日が来る　花運ぶ季節を</p>
+						<p>
+							いくつもの時が過ぎ　柔らかな陽が注ぐ<br>
+							温もりに溢れた　世界が光るから</p>
+						<p>
+							日々のざわめき　ささやかな毎日<br>
+							見つけられたね<br>
+							捜し求めていたもの想いの中眩しく</p>
+						<p>
+							一番大切な場所　今でも待っている<br>
+							願いが届く日が来る　花運ぶ季節を</p>
+						<p>
+							いくつもの時が過ぎ　柔らかな陽が注ぐ<br>
+							温もりに溢れた　世界が光るから</p>
+						<p>
+							時は静かに流れ　優しい風が吹いた<br>
+							かじかんだ想いも　笑顔に変わるから</p>
+						<p>
+							笑顔に変わるから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

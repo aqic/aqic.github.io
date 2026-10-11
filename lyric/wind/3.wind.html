@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Wind - Wind -a breath of heart-</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Wind</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">長谷川 めぐみ</div>
+                    <div class="LyricStaff">作詞：ドン・マッコウ<br>作・編曲：谷本 真規</div>
+
+                    <div class="LyricText">
+						<p>
+							この青い空のどこかに　突然出会う人がいる<br>
+							夏の太陽がまぶしく照らす</p>
+						<p>
+							路面電車に揺られてく　変わらない街を抜けて<br>
+							変わらない季節　風が運んでく</p>
+						<p>
+							恋する気持ちを忘れないよ<br>
+							ちっぽけな約束も私にはたからもの</p>
+						<p>
+							あの頃の想いは遠く離れてても<br>
+							私の胸の中　色褪せない</p>
+						<p>
+							くちびるを開くとあふれるメロディが<br>
+							窓を流れていく　道は続いてる</p>
+						<p>
+							何かを求めすぎてたり　言葉が足りなかったために<br>
+							恋人はいつもテストを受ける</p>
+						<p>
+							あなたと私はどうかな　心は迷子になって<br>
+							なにげないことで　傷つけあうかな</p>
+						<p>
+							大切なものをつかみたいよ<br>
+							ぽっかりと浮かぶ雲　そのすべて受け止めて</p>
+						<p>
+							ポケットのハモニカ　そっと息を吹くと<br>
+							心が急にせつなくなるよね</p>
+						<p>
+							涙が頬伝い　悲しみを乗り越え<br>
+							ふたりで夕暮れを　瞳にうつしたい</p>
+						<p>
+							想い続けている　いつの日かきっとあえるから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-wind-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

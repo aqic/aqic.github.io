@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>つ・ば・さ - Wind -a breath of heart-</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">つ・ば・さ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">渡邊 瑛美</div>
+                    <div class="LyricStaff">作詞：ドン・マッコウ<br>作・編曲：谷本 真規</div>
+
+                    <div class="LyricText">
+						<p>
+							傷ついても壊れないものを探し続けた</p>
+						<p>
+							交差点で手を握り締めた<br>
+							走る夢が離れないように</p>
+						<p>
+							振り向いた心　試す言葉<br>
+							わざと君に言ってみた</p>
+						<p>
+							痛み　窓硝子　戸惑う空は<br>
+							眼差しの世界に暮れていく</p>
+						<p>
+							傷ついても壊れないものを探し続けた<br>
+							独り善がり寂しくて</p>
+						<p>
+							君に包まれ友達の意味を知ったんだよ<br>
+							『ありがとう』消えるように呟く</p>
+						<p>
+							戸惑いの横顔に感じる<br>
+							光る翼　君に見せたい</p>
+						<p>
+							こんなにも　心脆く錆びて<br>
+							街の音にのみこまれた</p>
+						<p>
+							無口な曇り空　雨の匂い<br>
+							路地裏隠れた苦い想い</p>
+						<p>
+							ときに大事な人を傷つけてしまうんだね<br>
+							素直になれそうも無い</p>
+						<p>
+							君の笑顔で失う怖さを知ったんだよ<br>
+							少しずつ心を溶かしてく</p>
+						<p>
+							傷ついても壊れない<br>
+							翼を広げ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-wind-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

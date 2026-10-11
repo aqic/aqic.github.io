@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>スターチルドレン - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場用「機動戦士ガンダム」 （１９８１）</div>
+
+                    <div class="LyricTitle">スターチルドレン</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">やしきたかじん</div>
+                    <div class="LyricStaff">作詞：井荻麟<br>編曲：飛澤宏元</div>
+
+                    <div class="LyricText">
+						<p>
+							おゝ宇宙(そら)よ　ゆらめく鼓動<br>
+							スターチルドレン　スカイハイ<br>
+							スターチルドレン　スカイハイ</p>
+						<p>
+							忘れたくない　忘れたくない<br>
+							すぎゆく時の小さなぬくもり<br>
+							今は今は今は　孤独は部屋で<br>
+							きらめく閃光(ひかり)の死神をみる<br>
+							重い鎖にしばられた　おびえた心よ<br>
+							百億と千億の星々よ　暖めてくれ<br>
+							信じたい<br>
+							スターチルドレン　その心やさしき力を</p>
+						<p>
+							顫えたくない　顫えたくない<br>
+							強い男と讃えられたい<br>
+							誰か誰か誰か　伝えて欲しい<br>
+							ひとしずくの涙に地球光うつし<br>
+							白い稲妻きりさいて　あげる雄叫び<br>
+							百億と千億の星々よ　微笑んでくれ<br>
+							拓きたい<br>
+							スターチルドレン　その新しい生命を</p>
+						<p>
+							おゝ宇宙よ　ゆらめく鼓動<br>
+							スターチルドレン　スカイハイ<br>
+							おゝ宇宙よ　ゆらめく鼓動<br>
+							スターチルドレン　スカイハイ<br>
+							スターチルドレン　スカイハイ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>メモリー～She is sea～ - F&amp;C</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</div>
+
+                    <div class="LyricTitle">メモリー～She is sea～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">日野森あずさ &amp; 日野森美奈
+○（長崎みなみ &amp; 及川ひとみ）</div>
+                    <div class="LyricStaff">作詞：小澤しのぶ‧りあん<br>作曲：藤原謙一<br>編曲：小畑智史</div>
+
+                    <div class="LyricText">
+						<p>
+							あずさ：いつも笑顔と溢れるやさしさ　勇気をくれていたよね<br>
+							　美奈：いつも笑顔溢れてるやさしさ　勇気をくれていたよね</p>
+						<p>
+							二人：近すぎたから「ありがとう」さえ…　大切な　メモリー</p>
+						<p>
+							あずさ：１mm も　動けずに　時間を止めて泣いた　１week</p>
+						<p>
+							　美奈：笑顔見たくて　連れ出す　なのに…　一緒に泣いた</p>
+						<p>
+							あずさ：海まで走ったら　涙も飛んでく　いつまでも　　はしゃぎあっていたね<br>
+							　美奈：　　　　　　　　　　　　　　　二人で笑って　はしゃいでいたね</p>
+						<p>
+							あずさ：いつからかほほえみが生まれてる　一緒にいるだけで<br>
+							　美奈：いつも　ほほえんでる　　（いっ）しょにいるだけで</p>
+						<p>
+							　二人：強くなれたよ　かけがえのない　あたたかい　メモリー</p>
+						<p>
+							あずさ：わがままで困らせる　やんちゃな瞳（め）をキラキラさせて</p>
+						<p>
+							　美奈：真似して　背伸びしていた　いつも　追いかけていた</p>
+						<p>
+							　美奈：強がり　すれ違い…　だけど　わかってる　二人の秘密の奏でるメロディ<br>
+							あずさ：　　　　　　　　　　　　　　Fu～だけの　Fu～歌を　Ru～メロディ</p>
+						<p>
+							あずさ：もしも…　　忘れないで　　　この日々想い出して<br>
+							　美奈：もしも笑顔　忘れそうな時は　この日々想い出して</p>
+						<p>
+							　二人：約束しよう　あの日の歌は　大切な　メロディ</p>
+						<p>
+							あずさ：めざめて　　　　まぶしい　　まるで　太陽のよう<br>
+							　美奈：　　　　いつもの　　　　光　広がってく　未来の扉を開こうと</p>
+						<p>
+							　二人：つらい時も悲しい時も　そばにいてくれたね<br>
+							　　　　　　　　　　　　　　　　　　泣きたい時は海になるから　ここにきて</p>
+						<p>
+							あずさ：もしも離れる日が　来るとしても　　　　心はつながってるよ<br>
+							　美奈：great　of　my　heart　Fu～　いつまでも　心はつながってるよ</p>
+						<p>
+							　二人：新しい日の　ひとつひとつが　大切な　メモリー</p>
+						<p>
+							　二人：いつも大きな　海でいるから　これからの　メモリー</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fandc-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

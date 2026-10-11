@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>月の繭 - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">月の繭</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">奥井亚纪</div>
+                    <div class="LyricStaff">作詞：井荻麟<br>作曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							山の端　月は満ち<br>
+							息づくあなたの森<br>
+							夏草浴びて眠る<br>
+							愛（いと）おしい　横顔<br>
+							おぼろな　この星<br>
+							大地に　銀の涙<br>
+							繭（まゆ）たる蛹（さなぎ）たちは<br>
+							七（なな）たび身をかえる<br>
+							青にLaLaLu LaLaLu染まる　恋し繭玉（まゆだま）<br>
+							揚羽（あげは）の蝶になる<br>
+							やがて宇宙（そら）をつつむ　無限の翅模様（はねもよう）<br>
+							いのち輝かせよ</p>
+						<p>
+							あの月　あなたなら<br>
+							悲しみを写さずに<br>
+							世の揺らぎ見つめて<br>
+							嘆かず飛んでみる<br>
+							風にLaLaLu LaLaLu 唄え　翅（はね）に月うつし<br>
+							揚羽（あげは）の蝶になる<br>
+							揺らぐ夜に生まれ　銀河をわたる蝶よ<br>
+							いのち輝かせよ</p>
+						<p>
+							青にLaLaLu LaLaLu 染まる　恋し繭玉（まゆだま）<br>
+							揚羽（あげは）の蝶になる<br>
+							やがて宇宙（そら）をつつむ　無限の翅模様（はねもよう）<br>
+							いのち輝かせよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

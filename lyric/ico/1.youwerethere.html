@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>You were there - I・C・O</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ICO</div>
+
+                    <div class="LyricTitle">You were there</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							Ye Islands bathe in the sun's bright rays<br>
+							Distant tales wear a shroud of Grey<br>
+							One holy breeze whispers in the trees<br>
+							So lays ancient history<br>
+							Fleeting memories rise<br>
+							From the shadows of my mind<br>
+							Say no more worry, endless corridor<br>
+							Say no more worry, hopeless warrior</p>
+						<p>
+							You were there<br>
+							You were there</p>
+						<p>
+							Am I forever dreaming<br>
+							All to the pain that we are feeling<br>
+							You were there<br>
+							A decision that we all see<br>
+							You were there<br>
+							Though forgotten the promises that we keep</p>
+						<p>
+							Slaves to our destiny<br>
+							I recall a memory<br>
+							Sing no more worry, through the secret door<br>
+							Say no more worry, for the things in store</p>
+						<p>
+							You were there<br>
+							You were there</p>
+						<p>
+							Happiness and sorrow<br>
+							Only believing in tomorrow</p>
+						<p>
+							You were there<br>
+							Countless battles we fought in the deep<br>
+							You were there<br>
+							Though forgotten all promises we keep</p>
+						<p>
+							Ye island bathes in the sun's bright rays<br>
+							Distant hills wear a shroud of grey<br>
+							The lonely breeze whispers in the trees<br>
+							Sole key to this mystery</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ico-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

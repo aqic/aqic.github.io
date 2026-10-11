@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>The Touch - トランスフォーマー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">The Touch</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricStaff">Writers: Stan Bush<br>Producer: Richie Wise</div>
+
+                    <div class="LyricText">
+						<p>
+							You got the touch<br>
+							You got the power...yeah...!</p>
+						<p>
+							After all is said and done<br>
+							You've never walked, you've never run,<br>
+							You're a winner<br>
+							You got the moves, you know the streets<br>
+							Break the rules, take the heat<br>
+							You're nobody's fool<br>
+							You're at your best when when the goin' gets rough<br>
+							You've been put to the test, but it's never enough</p>
+						<p>
+							You got the touch<br>
+							You got the power<br>
+							When all hell's breakin' loose<br>
+							You'll be riding the eye of the storm<br>
+							You got the heart<br>
+							You got the motion</p>
+						<p>
+							You know that when things get too tough<br>
+							You got the touch<br>
+							You never bend, you never break<br>
+							You seem to know just what it takes<br>
+							You're a fighter</p>
+						<p>
+							It's in the blood, it's in the will<br>
+							It's in the mighty hands of steel<br>
+							When you're standin' your ground<br>
+							And you never get hit when your back's to the wall<br>
+							Gonna fight to the end and you're takin' it all</p>
+						<p>
+							You got the touch<br>
+							You got the power<br>
+							When all hell's breakin' loose<br>
+							You'll be riding the eye of the storm<br>
+							You got the heart<br>
+							You got the motion</p>
+						<p>
+							You know that when things get too tough<br>
+							You got the touch<br>
+							You're fightin' fire with fire<br>
+							You know you got the touch<br>
+							You're at your best when when the road gets rough<br>
+							You've been put to the test, but it's never enough</p>
+						<p>
+							You got the touch<br>
+							You got the power...yeah<br>
+							You got the touch<br>
+							You got the power (touch)</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-transformers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

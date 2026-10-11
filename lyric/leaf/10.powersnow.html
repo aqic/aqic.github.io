@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>POWDER SNOW -English Version- - Leaf</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">WHITE ALBUM -ED English Version</div>
+
+                    <div class="LyricTitle">POWDER SNOW -English Version-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Brenda</div>
+
+                    <div class="LyricText">
+						<p>
+							Tenderly ever powder snow<br>
+							It's now falling from the sky<br>
+							All on both my hands, don't pass me by<br>
+							But it soon just melts away</p>
+						<p>
+							Where can you be watching the snow?<br>
+							Sure you must be stopping by<br>
+							Maybe you'll remember yesterday<br>
+							As you look up to this sky</p>
+						<p>
+							Walking ever slowly<br>
+							Hopping on so jolly<br>
+							Tumbling away from me</p>
+						<p>
+							Leaving me alone<br>
+							Walking on the snow<br>
+							Can't you see how much I love you</p>
+						<p>
+							After all this while I think I remember<br>
+							How that snow whitened everything<br>
+							A long, long time ago our lips were together<br>
+							Giving me the warmth<br>
+							My only words are "I still love you"</p>
+						<p>
+							Falling over me, this powder snow<br>
+							So many, thousands of flakes<br>
+							Just like you are here<br>
+							So warm and bright<br>
+							And yet so tenderly</p>
+						<p>
+							Always talking to me<br>
+							Looking in my eyes<br>
+							Telling me your stories</p>
+						<p>
+							Since I fell for you<br>
+							I'm hanging onto love<br>
+							I can't say how much I miss you</p>
+						<p>
+							After all this while I still dream about you<br>
+							White and bright, shining powder snow<br>
+							A long, long time ago your fingers would touch me<br>
+							Freezing all my heart for you, I still ...</p>
+						<p>
+							After all this while I think I remember<br>
+							How that snow whitened everything<br>
+							A long, long time ago our lips were together<br>
+							Giving me the warmth<br>
+							My only words are "I still love you"</p>
+						<p>
+							Every time I speak your name<br>
+							I think of how pure you are<br>
+							Grant me, my wish upon the snow<br>
+							Take me there; I'll be with you</p>
+						<p>
+							('Cause) I still love you</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-leaf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>乙女の祈り - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「スレイヤーズ NEXT」挿入歌</div>
+
+                    <div class="LyricTitle">乙女の祈り</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ ＆ 鈴木真仁</div>
+
+                    <div class="LyricText">
+						<p>
+							恋に恋するオンナノコには<br>
+							まぶしすぎるの　マイダーリン</p>
+						<p>
+							キラキラ　ルージュ<br>
+							(あこがれドリーム)<br>
+							ピンクのピーチ<br>
+							とどいてほしいの　乙女の祈り</p>
+						<p>
+							※夜空に浮かぶ　銀の小舟<br>
+							　好きと嫌いの　波間にゆれる<br>
+							　小さな胸を　キュンキュン焦がし<br>
+							　心は飛ぶの　あなたのもとに</p>
+						<p>
+							おねがい　とどいて　乙女の願い<br>
+							ぜんぶあげちゃう　無垢（きれい）なわたし</p>
+						<p>
+							恋に恋するオンナノコには<br>
+							まぶしすぎるの　マイダーリン</p>
+						<p>
+							クラクラ　コロン<br>
+							(ゆらめきドリーム)<br>
+							みずいろパラソル<br>
+							かなえてほしいの　乙女の願い</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							おねがい　とどいて　乙女の願い<br>
+							投げたキッスはブーメラン<br>
+							片道キップのブーメラン</p>
+						<p>
+							ぜんぶあげちゃう　無垢（きれい）なわたし<br>
+							白い天馬（ペガサス）に想いをのせて<br>
+							届けたいの<br>
+							恋のジグソー　ラストピース</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

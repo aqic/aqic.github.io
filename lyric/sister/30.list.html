@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Sister Princess Angel Jukebox 1 - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">BGM List</div>
+
+                    <div class="LyricTitle">Sister Princess Angel Jukebox 1</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							Sister Princess Angel Jukebox 1 歌曲<br>
+							01 シスター・プリンセスのテーマ<br>
+							02 朝<br>
+							03 はじまり<br>
+							04 出会い<br>
+							05 日常<br>
+							06 出来事<br>
+							07 アリリ…<br>
+							08 コミカル<br>
+							09 おとぼけ<br>
+							10 まどろみ<br>
+							11 愛<br>
+							12 やまとなでしこ<br>
+							13 午後<br>
+							14 家族<br>
+							15 誘惑<br>
+							16 挑発<br>
+							17 パッション 18 予兆<br>
+							19 不協和音<br>
+							20 ホラー<br>
+							21 影<br>
+							22 恐怖<br>
+							23 不安<br>
+							24 衝撃<br>
+							25 大問題！<br>
+							26 運命<br>
+							27 Love Destiny〔piano version〕<br>
+							28 過去<br>
+							29 月光<br>
+							30 いのり<br>
+							31 平和<br>
+							32 歓喜<br>
+							33 島への風<br>
+							34 ウエルカムハウス</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

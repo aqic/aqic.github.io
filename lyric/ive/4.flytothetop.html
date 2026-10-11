@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>FLY TO THE TOP - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ゲーム「MAVERICK‧MAX」 主題歌(BLUE GALE)</div>
+
+                    <div class="LyricTitle">FLY TO THE TOP</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MELL</div>
+                    <div class="LyricStaff">作詞·作曲·編曲：高瀨一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							出会うこと 人に觸れること<br>
+							それぞれの中に 心を繫ぐ思いが<br>
+							置き去りで 人に流されて<br>
+							気づかないうちに 希望と願い忘れてゆく</p>
+						<p>
+							You need one light<br>
+							いつもあなたに語りかけるよ<br>
+							少しだけ 飛べる翼がある</p>
+						<p>
+							Fly to the top 果てしなく くり返す痛み<br>
+							あなたと超えてゆく どこまでも遠く</p>
+						<p>
+							Try to your will<br>
+							いつまでも 悲しい世界に<br>
+							光を呼ぼう</p>
+						<p>
+							閉しがけた 人の心には<br>
+							ひとしずの夢 靜かに落としてみよう</p>
+						<p>
+							You need one light<br>
+							いつも 誰かに教えてあげる<br>
+							少しだけ強い心がある</p>
+						<p>
+							Fly to the top この空に 重なる未来を<br>
+							忘れない いつまでも 高くこのままで<br>
+							Try to your will<br>
+							世界さえ 手のひらの中で<br>
+							靜かにマワル</p>
+						<p>
+							Fly to the top 果てしなく くり返す痛み<br>
+							あなたと超えてゆく どこまでも遠く</p>
+						<p>
+							Fly to the top この空に 重なる未来を<br>
+							忘れない いつまでも 高くこのままで<br>
+							Try to your will<br>
+							世界さえ 手のひらの中で<br>
+							靜かにマワル</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

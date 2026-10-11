@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">犬夜叉</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+					<div class="disc-head"><span class="disc-name">犬夜叉</span><span class="disc-sub">21 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.kisssss.html">《イタズラなKISS》</a></li>
+						<li class="LyricItem"><a href="2.yurayura.html">《ゆらゆら》</a><span class="note">- 「犬夜叉」</span></li>
+						<li class="LyricItem"><a href="3.angelus.html">《ANGELUS-アンジェラス》</a></li>
+						<li class="LyricItem"><a href="4.brandneworld.html">《Brand-New World》</a></li>
+						<li class="LyricItem"><a href="5.changetheworld.html">《CHANGE THE WORLD》</a><span class="note">- 「犬夜叉」</span></li>
+						<li class="LyricItem"><a href="6.come.html">《Come》</a></li>
+						<li class="LyricItem"><a href="7.dearest.html">《Dearest》</a><span class="note">- 「犬夜叉」</span></li>
+						<li class="LyricItem"><a href="8.everyheart.html">《Every Heart－ミンナノキモチ－》</a></li>
+						<li class="LyricItem"><a href="9.fourseasons.html">《Four Seasons》</a></li>
+						<li class="LyricItem"><a href="10.grip.html">《Grip!》</a></li>
+						<li class="LyricItem"><a href="11.mywill.html">《My Will》</a></li>
+						<li class="LyricItem"><a href="12.nomoreword.html">《No more words》</a><span class="note">- 「犬夜叉」</span></li>
+						<li class="LyricItem"><a href="13.odod.html">《One Day,One Dream》</a></li>
+						<li class="LyricItem"><a href="14.why.html">《W・H・Y》</a><span class="note">- 「犬夜叉」</span></li>
+						<li class="LyricItem"><a href="15.upmoon.html">《上弦の月》</a></li>
+						<li class="LyricItem"><a href="16.graduate.html">《卒業～さよならは明日のために～》</a></li>
+						<li class="LyricItem"><a href="17.ainoxx.html">《愛の謳》</a></li>
+						<li class="LyricItem"><a href="18.furaimori.html">《深い森》</a><span class="note">- 「犬夜叉」</span></li>
+						<li class="LyricItem"><a href="19.uta.html">《真実の詩》</a><span class="note">- 「犬夜叉」</span></li>
+						<li class="LyricItem"><a href="20.owarinaiume.html">《終わりない夢》</a><span class="note">- 「犬夜叉」</span></li>
+						<li class="LyricItem"><a href="21.iam.html">《Ｉ　ａｍ》</a><span class="note">- 「犬夜叉」</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

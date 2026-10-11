@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>愛が教えてくれた - BLUE GENDER</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">愛が教えてくれた</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桑島法子</div>
+                    <div class="LyricStaff">作詞：及川眠子<br>作/編曲：荒木真樹彦</div>
+
+                    <div class="LyricText">
+						<p>
+							{微笑　みかさねた日々が<br>
+							まぼろしになっても<br>
+							私はきっと　迷わない}<br>
+							この胸 確かに残る優しさと痛みを<br>
+							抱きしめてまた生きるだけ</p>
+						<p>
+							{未来に行くために<br>
+							おとなになるために<br>
+							もがいてきた}<br>
+							思い出を心でいまはくりかえす<br>
+							ひとつの時を生き　ふたつの夢選び<br>
+							そして愛が教えてくれたよね　人を想う意味</p>
+						<p>
+							淋しさ分け合うように　始まった恋でも<br>
+							幸せだったいつだって</p>
+						<p>
+							何度も立ち止まり　何度も振り向いて<br>
+							あなたがもうそばにいないことに<br>
+							そっと　気付くけど<br>
+							あふれるせつなさも　出会えた嬉しさも<br>
+							すべて愛が教えてくれたから　歩き出すために</p>
+						<p>
+							自分のことのように　大事に想える人が<br>
+							いたことをただ誇りへとかえて</p>
+						<p>
+							未来に行くために　おとなになるために<br>
+							もがいてきた思い出を心でいまはくりかえす<br>
+							{ひとつの時を生き　ふたつの夢選び<br>
+							そして愛が教えてくれたよね<br>
+							人を想う意味}</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bluegender-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

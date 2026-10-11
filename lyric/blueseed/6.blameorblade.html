@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Blame or Blade - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Blame or Blade</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">沢口小梅(三石琴乃)</div>
+
+                    <div class="LyricText">
+						<p>
+							灼熱に抱かれてる街　Light&amp;shade<br>
+							呼吸ごとに形を変えて行く　蜃気楼<br>
+							聞こえ出す　はじける鼓動　Beat&amp;Sigh<br>
+							照り返す刃は　輝くタイフーン</p>
+						<p>
+							心に紅の花を<br>
+							咲かせて問いかけた　Blame or Blade<br>
+							To be or not to be</p>
+						<p>
+							☆今　吹き荒れる風に<br>
+							　また　火がつく導火線<br>
+							　ただ　この空をめがけ<br>
+							　花火になれるチャンスさ</p>
+						<p>
+							いつ　あきらめるために<br>
+							今　傷つくわけじゃない<br>
+							その勇気さえあれば<br>
+							願いも夢もかなう日が来る</p>
+						<p>
+							駆け抜ける戦慄の波　Wave away<br>
+							この瞬間に焦がれてたように燃え上がる<br>
+							心より先回りする　トリガー<br>
+							引き金は冷たく　クールに決めて</p>
+						<p>
+							曇ったガラスの向こうに<br>
+							見据えた標的は　Blame or Blade<br>
+							To be or not to be</p>
+						<p>
+							★今　吹き荒れる風も<br>
+							　また　明日へのストライド<br>
+							　そう　苦しみもみんな<br>
+							　力に変えてしまおう</p>
+						<p>
+							今　傷ついた胸が<br>
+							また　痛みにふるえても<br>
+							そう　見続けた夢を<br>
+							忘れなければ　切り抜けられる</p>
+						<p>
+							☆Ｒｅｐｅａｔ<br>
+							★Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

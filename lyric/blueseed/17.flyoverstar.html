@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>星を飛び越えて(紅葉&amp;桜バージョン) - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">星を飛び越えて(紅葉&amp;桜バージョン)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">藤宮紅葉&amp;山吹桜
+(林原めぐみ&amp;玉川紗己子)</div>
+
+                    <div class="LyricText">
+						<p>
+							（桜）　風にのって<br>
+							    銀の羽根を<br>
+							    なびかせて飛ぶよ<br>
+							    Jumping up to the sky<br>
+							    おしゃれをした<br>
+							    天使たちが<br>
+							    街へ舞い降りる<br>
+							    Show me your shining smile</p>
+						<p>
+							（桜）　夢のまんなか<br>
+							    自由に歩こう<br>
+							    信じる気持ち<br>
+							（二人）抱きしめたら（桜　あぁ）</p>
+						<p>
+							（二人）虹色のカーテン<br>
+							    大空はためかせ<br>
+							    飛び立つのは君のエネルギー<br>
+							    おそれてばかりいちゃ<br>
+							    何も始まらない<br>
+							（桜）　銀河を飛び越えて<br>
+							（二人）星の（紅葉）上で会おう</p>
+						<p>
+							（紅葉）微笑みから<br>
+							（桜）　生まれるのさ<br>
+							    あふれだす気持ち<br>
+							（二人）You make me so happy<br>
+							（紅葉）つかれたなら<br>
+							（二人）羽根をやすめ<br>
+							（桜）　一つ深呼吸<br>
+							    Carrying back your dream</p>
+						<p>
+							（桜）　宇宙（そら）のまんなか<br>
+							    キャンバスに描く<br>
+							    君の願いが<br>
+							    星座になる</p>
+						<p>
+							（二人）地球の裏側を<br>
+							    見渡せるくらいに<br>
+							    今信じる心がエナジー<br>
+							    すくんでばかりいちゃ<br>
+							    未来はつかめない<br>
+							    光の波間超え<br>
+							    明日へ歩き出そう</p>
+						<p>
+							（二人）虹色のカーテン<br>
+							    大空はためかせ<br>
+							    飛び立つのは君のエネルギー<br>
+							    おそれてばかりいちゃ<br>
+							    何も始まらない<br>
+							（桜）　銀河を飛び越えて<br>
+							（二人）星の（紅葉）上で会おう</p>
+						<p>
+							（二人）地球の裏側を<br>
+							    見渡せるくらいに<br>
+							    今信じる心がエナジー<br>
+							    すくんでばかりいちゃ<br>
+							    未来はつかめない<br>
+							    光の波間超え<br>
+							    明日へ歩き出そう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

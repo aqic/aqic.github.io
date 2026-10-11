@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>1/2 - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">1/2</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川本真琴</div>
+                    <div class="LyricStaff">作詞／作曲：川本真琴<br>編曲：石川鉄男</div>
+
+                    <div class="LyricText">
+						<p>
+							背中に耳をぴっとつけて　抱きしめた<br>
+							境界線みたいな身体がじゃまだね　どっかいっちゃいそうなのさ</p>
+						<p>
+							黙ってると　ちぎれそうだから　こんな気持ち<br>
+							半径3メトル以内の世界でもっと　もっとひっついてたいのさ</p>
+						<p>
+							かわりばんこでペダルをこいで　おじぎのひまわり通り越して<br>
+							ぐんぐん風をのみこんで　そう飛べそうじゃん<br>
+							初めて感じた君の体温　誰よりも強くなりたい<br>
+							あったかいリズム     2コの心臓がくっついてく</p>
+						<p>
+							唇と唇　瞳(め)と瞳(め)と　手と手<br>
+							神様は何も禁止なんかしてない　 愛してる　愛してる　愛してる<br>
+							あたしまだ懲りてない　大人じゃわかんない<br>
+							苦しくて　せつなくて　見せたくて　パンクしちゃう<br>
+							そっぽ見て待ってるから　ポッケの迷ってる手で　 ほっぺに触れて<br>
+							恋してるチカラに魔法をかけて</p>
+						<p>
+							いつも一緒に遠回りしてた　帰り道<br>
+							橙がこぼれるような空に　何だか HAPPY &amp; SAD</p>
+						<p>
+							あたしたちってどうして生まれたの　半分だよね<br>
+							一人で考えてもみるけど　やっぱへたっぴなのさ</p>
+						<p>
+							見えなくなるほど遠くに　ボールを投げれる強い肩<br>
+							うらやましくておとこの子になりたかった</p>
+						<p>
+							澄んだ水のようにやわらく　誰よりも強くなりたい<br>
+							ちっちゃな頃みたい　 へんね涙こぼれてく</p>
+						<p>
+							唇と唇　瞳(め)と瞳(め)と　手と手<br>
+							同じもの同じ感じかたしてるの　愛してる　愛してる　愛してる<br>
+							あたしまだ懲りてない　大人じゃわかんない<br>
+							届かないって　言われたって　このままジャンプしたい<br>
+							バイバイのキスするから　最後の一歩の距離　ぐって抱いて<br>
+							太陽がずっとしずまないように</p>
+						<p>
+							一コの夕陽ぽつんとふたりで見てた　きれいだけどもさ<br>
+							なんか言えないね　なんか足りないね　なのさ</p>
+						<p>
+							ノストラダムスが予言した通り　この星が<br>
+							爆発する日はひとつになりたい<br>
+							あったかいリズム　2コの心臓がくっついてく</p>
+						<p>
+							唇と唇　 瞳(め)と瞳(め)と<br>
+							手と手<br>
+							神様は何も禁止なんかしてない　愛してる　愛してる　愛してる<br>
+							あたしまだ懲りてない　大人じゃわかんない<br>
+							苦しくて　せつなくて　見せたくて　 パンクしちゃう<br>
+							そっぽ見て待ってるから　ポッケの迷ってる手で　ほっぺに触れて<br>
+							恋してるチカラに魔法をかけて<br>
+							太陽がずっとしずまないように</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

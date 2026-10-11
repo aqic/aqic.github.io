@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>白ゆりの祈り&lt;br&gt;～そよ風を持ちわびて～ - かってに桃天使</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「かってに桃天使!2～Tears of Eden」 IS(1999)</div>
+
+                    <div class="LyricTitle">白ゆりの祈り&lt;br&gt;～そよ風を持ちわびて～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">白鳥 由里</div>
+
+                    <div class="LyricText">
+						<p>
+							きまぐれな神樣のせいかしら<br>
+							'ともだちに恋をしてるあなたが好き'なんて<br>
+							こんなにも心は搖れてるけど<br>
+							少しだけ希望(のぞみ)をいだいてしまうの</p>
+						<p>
+							ほんとは…ただ ひとつ<br>
+							あなたのそばにいたい<br>
+							小さな気持ち<br>
+							いつかかなうかしら…</p>
+						<p>
+							白ゆりの花 風に搖られて<br>
+							芽生えた淡い恋<br>
+							靜かなひかりてのひらからあなたを<br>
+							つつむように屆け</p>
+						<p>
+							しあわせがあなたに燈るように<br>
+							傷ついた心を癒してあげたい<br>
+							ごめんね…もう二度と<br>
+							やさしく笑わないで<br>
+							小さな期待 なぜか泣きたくなる…</p>
+						<p>
+							白ゆりの花 木陰で搖れる<br>
+							内緖につのる恋<br>
+							淸らかにさくゆりの香り感じて<br>
+							目を閉じてそっと</p>
+						<p>
+							白ゆりの花 そよ風を待つ<br>
+							はるかに仰ぐ虹<br>
+							きれいなひかりてのひらからあふれる<br>
+							あたたかな祈り</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-momotenshi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

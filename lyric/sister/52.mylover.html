@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>私のダーリン - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">私のダーリン</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							待ちに待ちわびた　デートの日がやって来たよ<br>
+							おニューのミュールは　履きなれなくてよろけそう<br>
+							それでも勝負！<br>
+							鏡を見つめて　４５度のスマイルも<br>
+							毎日毎晩　この日のためにリハーサル<br>
+							ドキドキしちゃう！<br>
+							大好きなパフェも　溶けちゃうくらいだね<br>
+							女の子がみんな　うらやむ恋だから</p>
+						<p>
+							（ラッキーじゃん　ラッキーじゃん　ラッキーラッキーラッキーじゃん<br>
+							ラッキーじゃん　ラッキーじゃん　ラッキーラッキーラッキーぴょん！）<br>
+							もっと近くに　くっつきたい！<br>
+							キュンってびびっちゃう　ハートがモジモジ<br>
+							（メロメロ光線に　メロメロシビレテル）</p>
+						<p>
+							自信過剰とか　なんの根拠もないけどね<br>
+							誰にも負けない　一番スキなヒトだから…<br>
+							私のダーリン！</p>
+						<p>
+							メールや携帯じゃ　物足りなくなって<br>
+							触れ合う指切りで　約束しちゃおう</p>
+						<p>
+							（オッケーじゃん　オッケーじゃん　準備も完了オッケーじゃん<br>
+							オッケーじゃん　オッケーじゃん　ちょっぴりソワソワオッケーぴょん！<br>
+							ラッキーじゃん　ラッキーじゃん　ラッキーラッキーラッキーじゃん<br>
+							ツーショット　ツーショット　ラッキーラッキーラッキーぴょん！）</p>
+						<p>
+							ぎゅっとされちゃう　夢を見て<br>
+							うっとりこっくり　目覚まし転がっていた<br>
+							ハッと起きたら　寝坊して…<br>
+							ずっと待ってた　初めてのデートなのに</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

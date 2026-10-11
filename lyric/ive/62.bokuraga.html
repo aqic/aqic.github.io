@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>僕らが見守る未来 - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">『はじらひ』（BLUE GALE）</div>
+
+                    <div class="LyricTitle">僕らが見守る未来</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">詩月カオリ</div>
+                    <div class="LyricStaff">作詞： KOTOKO （英語詞：wata）<br>作曲：中沢伴行<br>編曲：中沢伴行</div>
+
+                    <div class="LyricText">
+						<p>
+							あの頃の未来が　たたずむ僕を見てた<br>
+							木漏れ日に浮かぶ夢は　ちぎれて痩せた絵本の中<br>
+							大人になるたびに感じた　鈍い痛み<br>
+							終わらない日常の中　薄れてゆくけど</p>
+						<p>
+							ここではない何処か　求めた未来の果てに<br>
+							僕らが探し続けてる　懐かしい場所がある</p>
+						<p>
+							小さな絆を　今　確かめたから<br>
+							過ぎた時間も信じよう<br>
+							変わってゆくもの　ああ　変わらないもの<br>
+							僕らは見つめてゆくんだ<br>
+							(feel my heart when you lost your way it's my dear old place<br>
+							lasting peace looking for your dream... into the widely...)</p>
+						<p>
+							もう忘れかけてた過ち　癒えた傷も<br>
+							戸惑いながら選んだ道に似ているね</p>
+						<p>
+							何が正しいとか　見えないものに捕われ<br>
+							思うままに生きる勇気　過去に閉じ込めて来た</p>
+						<p>
+							小さな絆を　今　守りたいから<br>
+							恥じらう瞳　守りたいから<br>
+							悔やみはしないよ　そう　大事なものは<br>
+							これ以上何もないから<br>
+							(close your eyes,give me your hand I get back to myself<br>
+							hand in hand you are my eternity... fall in affection...)</p>
+						<p>
+							懐かしい風に　今　包まれながら<br>
+							昨日にたたずむ僕へと<br>
+							軽く手を振って　また背筋を伸ばそう<br>
+							涙さえ味方につけて</p>
+						<p>
+							小さな絆を　今　確かめたから<br>
+							過ぎた時間も信じよう<br>
+							変わってゆくもの　ああ　変わらないもの<br>
+							僕らは見つめてゆくんだ<br>
+							(feel my heart when you lost your way it's my dear old place<br>
+							lasting peace looking for your dream... into the widely...)</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

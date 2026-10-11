@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>幻の銀水晶～シルバークリスタル - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「美少女戦士セーラームーン」 挿入歌（１９９２）</div>
+
+                    <div class="LyricTitle">幻の銀水晶～シルバークリスタル</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">アップルパイ</div>
+                    <div class="LyricStaff">作詞／武内直子<br>作曲／橋爪麻希子・さとうかずお<br>編曲／さとうかずお</div>
+
+                    <div class="LyricText">
+						<p>
+							そっと耳をすまして　甘やかなといき<br>
+							じっと目をこらして　まぶたにムーンライト　かがやきだす<br>
+							あなたのねがお　見ているだけで　こんなに胸がしめつけられるの<br>
+							夜のまほうの　封印はなって　見つけにゆこう<br>
+							ずっとゆめみてた　あなただけに　たったひとつの<br>
+							どこにあるの？　伝説のうみ　しずかに光はなつ　ガラスのクリスタル　信じていて<br>
+							愛を手に入れた　その瞬間(ﾄｷ)　そっと<br>
+							右うでの中　ガラスのクリスタル　かがやきだすの<br>
+							いま　永遠をちかって　－ムーンライト</p>
+						<p>
+							そっとささやいて　甘やかなコトバ<br>
+							ふっと目をあけて　あなたに　ムーンライト　かがやきだす<br>
+							あなたにふれる　ただそれだけで　こんなに熱くほほえんでしまうの<br>
+							月の魔力の封印はなって　見つけにゆこう<br>
+							ずっとゆめみてた　あたしだけに　たったひとつの<br>
+							どこにあるの？　伝説のほし　しずかに光はなつ　シルバークリスタル　信じていて<br>
+							あなたとむすばれる　その瞬間(ﾄｷ)　そっと<br>
+							まつ毛の先から　シルバークリスタル　こぼれおちるの<br>
+							いま　永遠にだきしめて　－ムーンライト　－ムーンライト</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

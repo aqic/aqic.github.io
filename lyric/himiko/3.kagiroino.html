@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>炎の女王 - 火魅子伝</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">炎の女王</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">水谷優子
+平松晶子
+高田由美
+田中敦子
+小桜エツ子
+氷上恭子
+音宮つばさ</div>
+                    <div class="LyricStaff">作詞：舞阪洸<br>作曲：林哲司<br>編曲：白川雅</div>
+
+                    <div class="LyricText">
+						<p>
+							※みんな　消えていく何もかも<br>
+							　喜びも哀しみも　夢も友情も<br>
+							　觸れる　ものがみな切なくて<br>
+							　失(な)くしたあとに気づく<br>
+							　　まるで陽炎(かげろう)ね<br>
+							　ああ　炎(かぎろい)の女王(ひめみこ)</p>
+						<p>
+							壞れた夢の輪郭(かたち)を　取り戻すため<br>
+							激しく燃える情熱　守るの今日も</p>
+						<p>
+							煌(きら)めくあなたの瞳　まぶしいから<br>
+							搖れる想いはかなく　決意覺悟刻んで<br>
+							どんなときも退(ひ)かないふたりは<br>
+							前を向いて進むよ　涙流しながらも</p>
+						<p>
+							暗闇を切り裂け　探し出せ行(ゆ)く道</p>
+						<p>
+							※Repeat</p>
+						<p>
+							色褪せてる思い出が　輝き出すよ<br>
+							まだ見ぬ友に仲間に　繼永(つな)げる永く</p>
+						<p>
+							世界も人の心も　うつろうから<br>
+							運命(さだめ)なんて要(い)らない<br>
+							　きっとう信じて<br>
+							誰が来ても負けないふたりは<br>
+							立ち止まったりしない　昨日振り返らない<br>
+							大空に飛び立て　見つけだせ願いを</p>
+						<p>
+							すべて　闇の中に霞んで<br>
+							見失いそうになる　でも諦めない<br>
+							ほのお　身にまとって輝く<br>
+							夜燃やせ照らし出せ　舞い降りた女神<br>
+							ああ　炎の女王</p>
+						<p>
+							きっと　夜明けは必ず来る<br>
+							今何も見えずとも　希望捨てないで<br>
+							見える　美しいその姿<br>
+							昇る朝日(あさひ)と共に　現れる女神<br>
+							ああ　炎の女王</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-himiko-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

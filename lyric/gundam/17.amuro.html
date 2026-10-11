@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>永遠にアムロ - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「機動戦士ガンダム」 エンディング（１９７９）</div>
+
+                    <div class="LyricTitle">永遠にアムロ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">池田鴻</div>
+                    <div class="LyricStaff">作詞：井萩麟<br>作曲：渡辺岳夫<br>編曲：松本祐士</div>
+
+                    <div class="LyricText">
+						<p>
+							アムロ　ふりむかないで<br>
+							宇宙のかなたに輝く星は<br>
+							アムロ　お前の生まれた故郷だ</p>
+						<p>
+							※おぼえているかい　少年の日のことを<br>
+							　あたたかいぬくもりの中で　めざめた朝を<br>
+							　アムロ　ふりむくな　アムロ<br>
+							　男は涙を見せぬもの　見せぬもの<br>
+							　ただあしたへと　あしたへと　永遠に……</p>
+						<p>
+							アムロ　ふりむかないで<br>
+							宇宙のはてにきらめく星は<br>
+							アムロ　お前が捨てた故郷さ</p>
+						<p>
+							忘れはしない　少年の日の誓いを<br>
+							青春をかけ守りぬけ　この幸せを<br>
+							アムロ　ふりむくな　アムロ<br>
+							男は寂しさかくすもの　かくすもの<br>
+							ただあしたへと　あしたへと　永遠に……</p>
+						<p>
+							（※　繰返し）</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

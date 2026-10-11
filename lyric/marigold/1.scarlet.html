@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>SCARLET ～刹那の恋～ - マリーゴールド</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">～主題歌～</div>
+
+                    <div class="LyricTitle">SCARLET ～刹那の恋～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KIRIKO</div>
+                    <div class="LyricStaff">作詞·作曲：KIRIKO<br>編曲：HIKO</div>
+
+                    <div class="LyricText">
+						<p>
+							引き裂かれし　刹那の恋</p>
+						<p>
+							鳥は木々は歌ってた　碧い陽射しの中<br>
+							ささやかでも幸せだった　記憶を閉じ込めましょう</p>
+						<p>
+							こぼれ落ちる砂だけが　時を刻んでゆく<br>
+							光射すあの場所へはもう　二度と帰れぬと知っても</p>
+						<p>
+							逢いたくて逢えなくて　嘆く胸が壊れても<br>
+							せめて闇よ　つまびく祈り届けて</p>
+						<p>
+							Believe in the fairytale, everlasting SCARLET<br>
+							運命の女神に叛いても<br>
+							もう一度だけ髪に触れて<br>
+							その腕に抱かれて散る日まで<br>
+							褪せない　生命の華</p>
+						<p>
+							誰を何を護るため　朱い華を散らす？<br>
+							錆びた鏡が映し出した焔 ただひとつの現実(リアル)</p>
+						<p>
+							求めれば見失う　出口のない迷宮で<br>
+							せめて闇よ　冷たい雫隠して</p>
+						<p>
+							I have nothing to lose but your love feigned SCARLET<br>
+							愛しさと憎しみの向こうで<br>
+							赦し合える時が来ると<br>
+							信じたらこの痛みを越えて<br>
+							燃やそう　刹那の恋</p>
+						<p>
+							Believe in the fairytale, everlasting SCARLET<br>
+							運命の女神に叛いても<br>
+							引き裂かれし愛は紅蓮<br>
+							その腕に抱かれて散る日まで<br>
+							Nothing to lose but your love feigned SCARLET<br>
+							愛しさと憎しみの向こうで<br>
+							交錯する愛は紅蓮<br>
+							赦し合う誰かに逢えるまで</p>
+						<p>
+							咲き誇れよ　生命の華</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-marigold-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

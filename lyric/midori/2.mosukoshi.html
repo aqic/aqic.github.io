@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>もう少し…もう少し… - 美鳥の日々</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">もう少し…もう少し…</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">アツミサオリ</div>
+                    <div class="LyricStaff">作詞・作曲/アツミサオリ<br>編曲/寺島良一</div>
+
+                    <div class="LyricText">
+						<p>
+							そして気づいた時に　考えてるのは君のことで…。<br>
+							それがすごく恥ずかしかったり　すごく嫌だったり思えて<br>
+							それは僕が気持ちを　伝えることが怖いからで</p>
+						<p>
+							頭で押さえつけても　心はどうすることも出来なくて<br>
+							逢うたびに君に悟られないように<br>
+							いつもと変わりないように　話してるつもりで</p>
+						<p>
+							余裕もなくて　苦しくなった僕は　君に嘘をついてしまう…だけど</p>
+						<p>
+							もう少し…　もう少し…　君の心に近づいたら<br>
+							もう少し…　もう少し…　今　この時が消えないように<br>
+							どうか神様　僕に勇気をください</p>
+						<p>
+							そして思いあぐねても　格好悪いだけの僕で…。<br>
+							君がどう思ってるのか気になっても<br>
+							一歩も先へ進まない　解ってるつもりで</p>
+						<p>
+							自分じゃないような胸のモヤモヤが<br>
+							痛くなって逃げたくなる…だけど</p>
+						<p>
+							もう少し…　もう少し…　君のそばにいられたなら<br>
+							もう少し…　もう少し…　夜よ　明けないでくれたなら<br>
+							寂しい時も　涙を拭ってあげるから</p>
+						<p>
+							夜空に浮かぶ　欠けても光る月が<br>
+							強くもなれない　自信もない　僕を見て微笑んだ　ぼらね…。</p>
+						<p>
+							もう少し…　もう少し…　君のそばにいられたなら<br>
+							もう少し…　もう少し…　夜よ　明けないでくれたなら</p>
+						<p>
+							もう少し…　もう少し…　君の心に近づいたら<br>
+							もう少し…　もう少し…　今　この時が消えないように<br>
+							どうか神様　僕に勇気をください　僕に勇気をください</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-midori-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

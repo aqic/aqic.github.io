@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>なみだの意味 - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ああっ女神さまっ」</div>
+
+                    <div class="LyricTitle">なみだの意味</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">井上喜久子</div>
+
+                    <div class="LyricText">
+						<p>
+							夕暮れの海にひとり　来てみたけれど<br>
+							こころの影は消えない</p>
+						<p>
+							くだけちる波しぶきが　頬に流れて<br>
+							よけいにつらくなる</p>
+						<p>
+							あなたのすべてを信じよう<br>
+							そう誓ったのに　気持ちは乱れる</p>
+						<p>
+							なみだの意味さえ　わからない<br>
+							どうして　苦しいの<br>
+							あなたを愛してる　誰よりも強く</p>
+						<p>
+							なみだがあふれて　止まらない<br>
+							わたしを　許せない<br>
+							あなたを想えば思うほど<br>
+							自分が壊れていきそう</p>
+						<p>
+							この海にふたりで来た　あの夏の日々<br>
+							思い出たどってる</p>
+						<p>
+							あなたを疑うことなんて<br>
+							出逢えたときから　一度もないのに</p>
+						<p>
+							砂にうずもれた　さくら貝<br>
+							波間に　返しましょう<br>
+							どこかではぐれたのね　片方の貝殻</p>
+						<p>
+							戻れるようにと　祈ったの<br>
+							自分に　重ねてた<br>
+							海より深い場所でもわたし<br>
+							あなたを探し続けるわ</p>
+						<p>
+							なみだの意味さえ　わからない<br>
+							どうして　苦しいの<br>
+							あなたを愛してる　誰よりも深く</p>
+						<p>
+							なみだがあふれて　止まらない<br>
+							わたしを　許せない<br>
+							あなたを想えば思うほど<br>
+							自分が壊れていきそう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

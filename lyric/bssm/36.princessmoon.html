@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>プリンセス・ムーン - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">～愛はどこにあるの？～</div>
+
+                    <div class="LyricTitle">プリンセス・ムーン</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">橋本潮、アップルパイ</div>
+                    <div class="LyricStaff">作詞/武内直子<br>作曲・編曲/さとうかずお</div>
+
+                    <div class="LyricText">
+						<p>
+							まわれまわれ　月のメリーゴーランド　すずし気なパールのドレス　ひるがえして<br>
+							いつだって見守っているわ　ムーン・ムーン・プリンセス<br>
+							昼には花のかおり　夜には星のまたたき　そこはだれも　しらない世界なの<br>
+							白いくつをならして　白い月のはしわたって<br>
+							あまいキスのゆめをみてる　おヒメさまがすんでいるの<br>
+							いのりをささげて　ムーン　きっとしあわせにしてくれる<br>
+							まわれまわれ　月のメリーンゴーランド　すずし気なガラスのドレス　ひるがえして<br>
+							いつだって見守っているわ　ムーン・ムーン・プリンセス</p>
+						<p>
+							昼には恋のかおり　夜には愛のまたたき　そこはだれもしらない世界なの<br>
+							たそがれをつむいで　ゆっくりとうでをまわして<br>
+							あまいキスでトキをとめる　おヒメさまがすんでいるの<br>
+							いのりをささげて　ムーン　きっと会うコトができるから<br>
+							まわれまわれ　あまいレースをひるがえして　白い月の鐘をならして<br>
+							たったひとりのあいしてくれるヒトを<br>
+							まってる　まってる　まってるの　ムーン・ムーン・プリンセ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

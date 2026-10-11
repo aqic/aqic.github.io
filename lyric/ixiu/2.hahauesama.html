@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ははうえさま - 一休さん</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「一休さん」 エンディング(1975)</div>
+
+                    <div class="LyricTitle">ははうえさま</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">藤田淑子</div>
+                    <div class="LyricStaff">作詞：山元護久<br>作編曲：宇野誠一郎</div>
+
+                    <div class="LyricText">
+						<p>
+							ははうえさま　お元気ですか<br>
+							ゆうべ杉のこずえで<br>
+							あかるくひかる星ひとつみつけました<br>
+							星はみつめます<br>
+							ははうえさまのように優しく<br>
+							わたしは星にはなします<br>
+							くじけませんよ 男の子です<br>
+							さびしくなったら はなしにきますね<br>
+							いつかたぶん それではまた<br>
+							おたよりします<br>
+							ははうえさま いっきゅう</p>
+						<p>
+							ははうえさま　お元気ですか<br>
+							きのうお寺にこねこが<br>
+							となりの村にもらわれていきました<br>
+							こねこはなきました<br>
+							かあさんねこにしがみついて<br>
+							わたしはいいました<br>
+							なくのはおよし　さびしくないさ<br>
+							男の子だろ　かあさんにあえるよ<br>
+							いつかきっと それではまた<br>
+							おたよりします<br>
+							ははうえさま いっきゅう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ixiu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

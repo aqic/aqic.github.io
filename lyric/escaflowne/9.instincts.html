@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>I Recommend Instincts - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」(1996)</div>
+
+                    <div class="LyricTitle">I Recommend Instincts</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							Stop to think before you<br>
+							Hold on to your realities<br>
+							Nothing compares to someone true<br>
+							Close, so close beside you<br>
+							Carry your instincts<br>
+							Love that shines consciously<br>
+							So clearly to see<br>
+							For who hold inside</p>
+						<p>
+							You hurt but learn<br>
+							Your poor but strong<br>
+							You laugh and turn<br>
+							I recommend those occasions</p>
+						<p>
+							You love but loose<br>
+							You need but hurt<br>
+							You hold and pose<br>
+							I recommend those occasions</p>
+						<p>
+							I really would want<br>
+							Something I can care<br>
+							For a while if your the best<br>
+							Then we can hope to see the rest</p>
+						<p>
+							* Stop to think before you<br>
+							　Hold on to your realities<br>
+							　Nothing compares to someone true<br>
+							　Close, so close beside you<br>
+							　Carry your instincts<br>
+							　Love that shines consciously<br>
+							　So clearly<br>
+							　Only flows inside</p>
+						<p>
+							You brake but share<br>
+							Your wrong but clear<br>
+							You feel and care<br>
+							I recommend those occasions</p>
+						<p>
+							You know but shove<br>
+							Your tears but cute<br>
+							You cry and love<br>
+							I recommend those occasions</p>
+						<p>
+							Can't take me away<br>
+							Somewhere I won't be<br>
+							For my life it's just one test<br>
+							I'll make my dreams the best</p>
+						<p>
+							* repeat</p>
+						<p>
+							Stop to think before you<br>
+							Hold on to your realities<br>
+							Nothing compares to someone true<br>
+							Close, so close beside you<br>
+							Carry your instincts<br>
+							Love that shines consciously<br>
+							So clearly to see<br>
+							Is one flow inside</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

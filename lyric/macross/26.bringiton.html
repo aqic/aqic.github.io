@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Bring It On - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">M3</div>
+
+                    <div class="LyricTitle">Bring It On</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中村裕介</div>
+                    <div class="LyricStaff">作詞：Brian Peck<br>作・編曲：飯塚昌明</div>
+
+                    <div class="LyricText">
+						<p>
+							Working For The Girls<br>
+							Battle For The Boys<br>
+							We Train Every Day</p>
+						<p>
+							Pump A Lot Of Pain<br>
+							Make A Lot Of Noise<br>
+							A Double Punchin' K.O. Fighter</p>
+						<p>
+							We Don't Like To Hurt Nobody<br>
+							We Don't Want To Fight You Now<br>
+							But If You Wanna Try</p>
+						<p>
+							Let's Go (Let's Go)<br>
+							Bring It On (Come On, Come On)<br>
+							You Wanna Try Pushin' Us Around?<br>
+							Let's Go (Let's Go)<br>
+							Bring It On (Come On, Come On)<br>
+							You Don't Beliveve We Will Knock You Down?<br>
+							Then Let's Go (Let's Go)<br>
+							Let's Go (Let's Go)<br>
+							Let's Go</p>
+						<p>
+							Listen Real Hard<br>
+							Listen Real Good<br>
+							You Can't Hold Us Down</p>
+						<p>
+							Said Another Way<br>
+							To Make It Understood<br>
+							You Better Stop What You're Doing</p>
+						<p>
+							You Don't Hear A Word We're Saying<br>
+							It Ain't Just A Game You're Playing<br>
+							Looking For A Fight?<br>
+							Let's Go (Let's Go)<br>
+							Bring It On (Come On, Come On)<br>
+							You Wanna Try Pushin' Us Around?<br>
+							Let's Go (Let's Go)<br>
+							Bring It On (Come On, Come On)<br>
+							You Don't Believe We Can Knock You Down?<br>
+							Then Let's Go (Let's Go)<br>
+							Let's Go (Let's Go)<br>
+							Let's Go</p>
+						<p>
+							-Solo-<br>
+							We Don't Like To Hurt Nobody<br>
+							We Don't Want To Fight You Now<br>
+							But If You Wanna Try</p>
+						<p>
+							Let's Go (Let's Go)<br>
+							Bring It On (Come On, Come On)<br>
+							You Wanna Try Pushin' Us Around?<br>
+							Let's Go (Let's Go)<br>
+							Bring It On (Come On, Come On)<br>
+							You Don't Believe We Can Knock You Down?<br>
+							Then Let's Go (Let's Go)<br>
+							Let's Go (Let's Go)<br>
+							Let's Go</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

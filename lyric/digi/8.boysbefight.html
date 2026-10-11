@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Boys Be...Fight! - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Dejiko song</div>
+
+                    <div class="LyricTitle">Boys Be...Fight!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Asami Sanada</div>
+
+                    <div class="LyricText">
+						<p>
+							空に満天の星が輝いて<br>
+							君の行くみちそう照らしているよ</p>
+						<p>
+							「関係ない！」なんて　かなり他人行儀だね<br>
+							肩で風を切って生きる　有り だけれど<br>
+							水くさいじゃないの　だてに友達じゃないよ<br>
+							いらだつ気持ちさえ　ちゃんとわかってるよ</p>
+						<p>
+							たった一度くらい　ノックアウトされて<br>
+							失くす夢なら　ホント情けないじゃない</p>
+						<p>
+							いつもはじけてた笑顔わすれずに　今のそんな顔<br>
+							ソレ！蹴飛ばしちゃうよ<br>
+							そうだ朝イチで海を見に行こう<br>
+							きっと心までそう生まれ変わるよ</p>
+						<p>
+							リングの上に立ち　一人戦っているね<br>
+							男にはいつでも　「7人」敵が待ってる</p>
+						<p>
+							異性同士だって　きっとあるよ友情<br>
+							好きや嫌いじゃ　ちょっと割り切れなくて。。。</p>
+						<p>
+							海に溶けてゆく夕陽みたあの日<br>
+							君は熱いほどその夢を話したね<br>
+							きっと頑張れる！君を信じてる<br>
+							もっと「ファイトだせ！」そう応援するよ</p>
+						<p>
+							実はアタシだって　君に巡り会うまで<br>
+							親友なんて　ホント出会えなかった</p>
+						<p>
+							どんな壁にでも強く立ち向かう<br>
+							もっと「ファイトだせ！」そう応援するよ<br>
+							そうだ朝イチで海を見に行こう<br>
+							きっと心までそう生まれ変わるよ</p>
+						<p>
+							空に満天の星が輝いて<br>
+							君の行くみちそう照らしているよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

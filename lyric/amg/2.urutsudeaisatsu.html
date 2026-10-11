@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ワルツであいさつ - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「あぁっ女神さまっ Singles」収録曲</div>
+
+                    <div class="LyricTitle">ワルツであいさつ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">スクルド</div>
+
+                    <div class="LyricText">
+						<p>
+							広場の真ん中で　待ちこがれた<br>
+							噴水しぶき上げて　虹を描く</p>
+						<p>
+							散歩の犬連れた　あなたは来る<br>
+							背中で結ぶリポン　直さなくちゃ</p>
+						<p>
+							　いいないいな　まわりの恋人は<br>
+							　幸せそうに　ほら手をつなぐの</p>
+						<p>
+							片想いは切ないけど　未来に希望あるから<br>
+							あなたに出逢って　泣き虫はやめたの</p>
+						<p>
+							いつもならね逃げちゃうけど<br>
+							今日のための赤い靴<br>
+							ワルツを踊って<br>
+							Darling　あいさつしたいな</p>
+						<p>
+							砂場に佇めば　子供たちが<br>
+							一緒に遊ぼうよって　仲間にした</p>
+						<p>
+							　アイスクリーム　両手で溶け出すよ<br>
+							　今日も私は　また２個も食べた</p>
+						<p>
+							片想いも悪くないよ　あなたはいつも素敵で<br>
+							遠くで見てても　幸せをくれるの</p>
+						<p>
+							初めまして好きでしたと<br>
+							いきなり手をとり踊る<br>
+							ワルツの気持ちで<br>
+							Darling　告白できたら……</p>
+						<p>
+							いつもキミを見ていたよと<br>
+							仔犬を撫でながら言う<br>
+							話をするのは　でもこれが初めて</p>
+						<p>
+							いつもならね逃げちゃうけど<br>
+							今日のための赤い靴<br>
+							ワルツを踊って<br>
+							Darling　あいさつできるね</p>
+						<p>
+							明日も逢えるよ　好きって言えたら……</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

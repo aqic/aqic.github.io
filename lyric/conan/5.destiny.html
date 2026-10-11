@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>destiny - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OP 231話～</div>
+
+                    <div class="LyricTitle">destiny</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">松橋未樹</div>
+                    <div class="LyricStaff">作詞：麻越さとみ<br>作曲：間島和伸<br>編曲：清水俊也</div>
+
+                    <div class="LyricText">
+						<p>
+							Something's just not light<br>
+							何を求めてるの　嘘に慣れてゆく　今日もfake your eyes<br>
+							Where did we go wrong ?<br>
+							言葉じゃ足りないものに　背中を向けた瞬間にfade away</p>
+						<p>
+							静寂から救い出してよ<br>
+							深い海　凍りつく<br>
+							腐敗に堕とされる<br>
+							2人の真実が狂う</p>
+						<p>
+							I think it's only my destiny<br>
+							新しい世界みつめて　1秒ごとに受けとめる<br>
+							oh yeah, You're going nowhere, It's only destiny<br>
+							動きだした夜明けは　ほら照らしだす　with all your heart</p>
+						<p>
+							The start of century<br>
+							確かなものなくて　ひとりじゃ泣けない弱さhate myself</p>
+						<p>
+							信じてる痛み引きかえに<br>
+							この胸埋めつくして<br>
+							今　映っている<br>
+							2人が選んだ未来くる</p>
+						<p>
+							I think it's only my destiny<br>
+							果てしない闇の向こうに　誰も知ることのない明日がある<br>
+							oh yeah, You're going nowhere, It's only destiny<br>
+							ありのままに進んで　今　感じている　you're in my heart</p>
+						<p>
+							心減らす深い空はつづくけど　手探りで光あつめ</p>
+						<p>
+							oh yes, I think it's only my destiny<br>
+							新しい世界みつめて　1秒ごとに受けとめる<br>
+							oh yes, I think it's only my destiny<br>
+							果てしない闇の向こうに　誰も知ることのない　終わらない明日をみつけ<br>
+							oh yeah, You're going nowhere, It's only destiny<br>
+							ありのままに進んで　今　抱きしめる　you're in my heart<br>
+							you're in my heart</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

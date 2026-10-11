@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>For Real - 幻想魔伝 最遊記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「最遊記」オープニング・テーマ</div>
+
+                    <div class="LyricTitle">For Real</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							立ち止まってる　君の背中は<br>
+							魂がなまま　僕をどらえる<br>
+							気まぐれな愛でつつみたい</p>
+						<p>
+							信じられない　言葉ばかりが<br>
+							笑顔の中で　きばをむいてる<br>
+							その欠片に愛を咲かしてる</p>
+						<p>
+							いつか我が儘な　歌声が君に届いて<br>
+							そんな瞬間に　この世界な変ってゆく</p>
+						<p>
+							☆何を見つけてゆこう<br>
+							　時間を切り裂いて<br>
+							　君の傍にいるよ<br>
+							　それがやさしさなら</p>
+						<p>
+							★何を見つめたいよう<br>
+							　その手をさしだして<br>
+							　瞬間だ堅実は<br>
+							　Let it go<br>
+							　信じよう</p>
+						<p>
+							遠くを見てる　その眼差しは<br>
+							ころろの中の恋をきってる<br>
+							まだ蒼い月を抱きしめて</p>
+						<p>
+							走りつづける　君の強さが<br>
+							また新しい　扉は開く<br>
+							すぐかける夜は照らしだせ</p>
+						<p>
+							たとえ一人でも　君をこと信じていたい<br>
+							そんな瞬間に　この世界は動きだす</p>
+						<p>
+							何を見つけてよこう<br>
+							心をはきだして<br>
+							また此処で会えるよ<br>
+							それが真実なら</p>
+						<p>
+							何を見つめていよう<br>
+							このでをさし出して<br>
+							瞬間だ堅実を<br>
+							Let it go<br>
+							信じよう</p>
+						<p>
+							☆くりかえし</p>
+						<p>
+							★くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saiyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

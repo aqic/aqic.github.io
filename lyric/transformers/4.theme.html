@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>The Transformers - Theme - トランスフォーマー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Transformers The Movie</div>
+
+                    <div class="LyricTitle">The Transformers - Theme</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lion</div>
+                    <div class="LyricStaff">Producer: Richie Wise</div>
+
+                    <div class="LyricText">
+						<p>
+							Something evil's watching over you<br>
+							Comin' from the sky above<br>
+							And there's nothing you can do</p>
+						<p>
+							Prepare to strike<br>
+							There'll be no place to run<br>
+							When your caught within the grip<br>
+							Of the evil Unicron</p>
+						<p>
+							Transformers<br>
+							More than meets the eye<br>
+							Transformers<br>
+							Robots in Disguise</p>
+						<p>
+							Strong enough to break the bravest heart<br>
+							So we have to pull together<br>
+							We can't stay worlds apart</p>
+						<p>
+							To stand divided we will surely fall<br>
+							Until our darkest hour<br>
+							When the light will save us all</p>
+						<p>
+							Transformers<br>
+							More than meets the eye<br>
+							Transformers<br>
+							Robots in Disguise<br>
+							Transformers</p>
+						<p>
+							Autobots wage their Battle<br>
+							To destroy the evil forces<br>
+							Of the Decepticons</p>
+						<p>
+							It's judgment day and now we've made our stand<br>
+							And now the powers of darkness<br>
+							Have been driven from our land</p>
+						<p>
+							The Battle's over but the war has just begun<br>
+							And this way it will remain til the day when all are one</p>
+						<p>
+							Transformers<br>
+							Transformers<br>
+							Transformers<br>
+							Transformers<br>
+							More than meets the eye</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-transformers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

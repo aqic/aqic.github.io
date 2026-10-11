@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>一千万年銀河 - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「機動戦士ガンダムＺＺ」 エンディング②（１９８６）</div>
+
+                    <div class="LyricTitle">一千万年銀河</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ひろえ純</div>
+                    <div class="LyricStaff">作詞：井荻麟<br>作曲：芹沢廣明<br>編曲：若草恵</div>
+
+                    <div class="LyricText">
+						<p>
+							いく百いく万いく億の星よ<br>
+							なぜ光るだけなのか　語る力を示せ<br>
+							今なら俺でも振り返らずに　飛び立つ心</p>
+						<p>
+							※星の数だけ生命(いのち)を貯えれば<br>
+							　銀河の群よ　光を変えて見せろ<br>
+							　この掌が掴む　生命の重さになる<br>
+							　まだ見えないよ　宇宙(そら)の道標は</p>
+						<p>
+							いく百いく万いく億の星よ<br>
+							つながってみせる時　来たのだと信じれば<br>
+							光の鼓動が待ち望んでいた　始まりの刻(とき)<br>
+							星のパズルを組み変え時代(とき)を変える<br>
+							裏切る星の色まで塗り変えれば<br>
+							歪み捩れて闇に落ちることなど<br>
+							まだ止められる生命の応えだから</p>
+						<p>
+							※繰返し</p>
+						<p>
+							この手に触れ　光一千万年</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>このままがいいよ - KID</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©2002 ONE ～輝く季節へ～ ED</div>
+
+                    <div class="LyricTitle">このままがいいよ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川澄綾子(長森瑞佳)</div>
+                    <div class="LyricStaff">作詞：並河祥太<br>作曲：岡崎律子<br>編曲：高橋一之</div>
+
+                    <div class="LyricText">
+						<p>
+							このまま　このまま<br>
+							このままが　いいよ<br>
+							恋人　ともだち<br>
+							微妙な　ふたりで</p>
+						<p>
+							ねぇ　憶えている<br>
+							大事な言葉　言いそびれたでしょ<br>
+							あの　ふたりの夜に</p>
+						<p>
+							サヨナラも　スキだとも　言えないで　あやふやなままで<br>
+							ふたりは　もう　どれくらい・・・<br>
+							おかしいね　違うよね　それでもね　あなたと　いたいの<br>
+							それ以上は　望まないから</p>
+						<p>
+							ホントの　ホントの<br>
+							わたしの　こころは<br>
+							あの日の　何処かに<br>
+							忘れた　ままだよ</p>
+						<p>
+							ねぇ　ゆらさないで<br>
+							笑顔に秘めた　色んな想いが<br>
+							すぐ　涙になるよ</p>
+						<p>
+							後悔は　してないよ　なんとなく　　決めたことだけど<br>
+							一度きりの　キスをして<br>
+							悲しいね　ズルイよね　それでもね　このままがいいよ<br>
+							恋人より　永遠になる</p>
+						<p>
+							サヨナラも　スキだとも　言えないで　あやふやなままで<br>
+							ふたりは　あと　どれくらい・・・<br>
+							おかしいね　違うよね　それでもね　あなたと　いたいの<br>
+							それ以上は　望まない<br>
+							おかしいね　違うよね　それでもね　あなたと　いたいの<br>
+							それ以上は　望まないから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kid-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

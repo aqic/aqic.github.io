@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>あんなに一緒だったのに - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">あんなに一緒だったのに</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">See-Saw</div>
+                    <div class="LyricStaff">作詞：石川千亜紀<br>作曲：梶浦由紀<br>編曲：梶浦由紀</div>
+
+                    <div class="LyricText">
+						<p>
+							あんなに一緒だったのに　夕暮れはもう違う色<br>
+							ありふれた優しさは君を遠ざけるだけ<br>
+							冷たく切り捨てた心は彷徨うばかり<br>
+							そんな格好悪さが生きるということなら<br>
+							寒空の下　目を閉じていよう</p>
+						<p>
+							あんなに一緒だったのに<br>
+							言葉ひとつ通らない　加速していく背中に今は<br>
+							あんなに一緒だったのに　夕暮れはもう違う色<br>
+							せめてこの月明かりの下で　静かな眠りを</p>
+						<p>
+							運命とうまく付き合って行くならきっと<br>
+							悲しいとか寂しいなんて言ってられない<br>
+							何度もつながった言葉を無力にしても<br>
+							退屈な夜を潰したいんだね</p>
+						<p>
+							あんなに一緒だったのに<br>
+							ふぞろいな二人に今　たどりつける場所など無いんだ<br>
+							あんなに一緒だったのに　初めて会う横顔に<br>
+							不思議なくらいに魅せられてる　戸惑うくらいに</p>
+						<p>
+							心はどこにいる？　どこに吹かれている？　その瞳が迷わぬように</p>
+						<p>
+							あんなに一緒だったのに<br>
+							言葉ひとつ通らない　動き始めた君の情熱<br>
+							あんなに一緒だったのに　夕暮れはもう違う色<br>
+							せめてこの月明かりの下で　静かな眠りを</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>I pray to stop my cry - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">凌辱看護婦学院(Ending)</div>
+
+                    <div class="LyricTitle">I pray to stop my cry</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							白いページ 埋めてゆく 哀しい記憶達<br>
+							見えないように目を伏せるの</p>
+						<p>
+							届かないね 小さな叫びは 闇に消され<br>
+							耐えられない孤独 襲う</p>
+						<p>
+							優しい笑顔 見せないで これ以上<br>
+							加速していく愛しさが 止まらないから</p>
+						<p>
+							I just pray that "Stop my tears."<br>
+							涙の跡には<br>
+							消せない想いが 乾いた光放つ</p>
+						<p>
+							あなたの側で生きてゆけるなら<br>
+							どんな哀しみも<br>
+							乗り越えてゆけるのに???</p>
+						<p>
+							抱えている願いの重さに追いつけない<br>
+							もどかしさが胸を潰す</p>
+						<p>
+							痛いくらい あなたへの想い 膨らんでく<br>
+							避けられない淋しい夜</p>
+						<p>
+							叶うのならば もう一度 抱き締めて<br>
+							あなたが触れた温もりが 離れないから</p>
+						<p>
+							I just pray that "Stop my lies."<br>
+							涙の答えは<br>
+							明日を占う闇に問いかけてみる</p>
+						<p>
+							苦しいくらい 真直ぐな想い<br>
+							伝えられるような<br>
+							強い勇気が欲しい???</p>
+						<p>
+							I just pray that "Stop my cry."<br>
+							涙の粒には<br>
+							あなたへと向かう想いが揺らめいている</p>
+						<p>
+							許されるなら 見つめ続けたい<br>
+							いつかこの胸が<br>
+							壊れてしまう日まで</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>氷の上に立つように - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ED 109話～131話</div>
+
+                    <div class="LyricTitle">氷の上に立つように</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">小松未歩</div>
+                    <div class="LyricStaff">作詞・作曲：小松未歩<br>編曲：古井弘人</div>
+
+                    <div class="LyricText">
+						<p>
+							氷の上に立つように危なげなこともしたい<br>
+							思い描いてた夢も形にしてみたい　Foerver My Destiny</p>
+						<p>
+							宇宙船が目の前に降りたら<br>
+							迷わず手を伸ばし　その船に乗り込みたい<br>
+							その日　一日を悔やみたくないから<br>
+							きっと友達だって残し　地球を旅立つの<br>
+							何もない毎日が一番だと言うけれど<br>
+							本当は逃げてる　君のいない日々に負けて</p>
+						<p>
+							氷の上に立つように危なげなこともしたい<br>
+							思い描いてた夢も形にしてみたい　Forever My Destiny</p>
+						<p>
+							わずか数行で片付けられた新聞記事にも<br>
+							一喜一憂してみるけど<br>
+							途中で放り投げないように　私らしく行こう<br>
+							望み続けた場所で生きているんだから<br>
+							前髪を少し短くしただけで<br>
+							生まれ変われちゃう　そんな考え方が好きよ</p>
+						<p>
+							素顔のままでいたいから　内緒よ　恋をしたって<br>
+							光よりも速く遠く心は飛んで行く　Forever My Destiny</p>
+						<p>
+							氷の上に立つように危なげなこともしたい<br>
+							思い描いてた夢も形にしてみたい　Forever My Destiny</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Cry for the moon - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Cry for the moon</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">山咲桜(玉川紗己子)</div>
+
+                    <div class="LyricText">
+						<p>
+							夏の夜　誘うのなら<br>
+							海岸が見える席で待ってて<br>
+							打ち寄せる波の音が<br>
+							静かになる頃<br>
+							多分行けるでしょう</p>
+						<p>
+							「必ず」なんて　言えないのよ<br>
+							季節のせいかしら<br>
+							それほど嘘は上手じゃない<br>
+							Honey moon·Half moon<br>
+							You! Cry for the moon</p>
+						<p>
+							☆もしも　Go bang!!<br>
+							　ハートを撃ち抜いて<br>
+							　あとは　Tell me<br>
+							　優しい合言葉　見つけだせば<br>
+							　二人だけで　過ごす夜も<br>
+							　夢じゃないかもね</p>
+						<p>
+							星くずが　あふれる空<br>
+							見上げるだけなら　ここでサヨナラ<br>
+							指先で招くように<br>
+							軽く投げたキス<br>
+							Baby say　オヤスミ　To me</p>
+						<p>
+							「永遠」なんて　言えないのよ<br>
+							この次　会うまでに<br>
+							私がどんな恋をするか<br>
+							Honey moon·Half moon<br>
+							You! Cry for the moon</p>
+						<p>
+							★だけど　My heart<br>
+							　忘れないであげる<br>
+							　そうね　Tonight<br>
+							　あなたがいたことを<br>
+							　気分次第　私だから<br>
+							　明日キミに夢中になるかも</p>
+						<p>
+							☆Ｒｅｐｅａｔ<br>
+							★Ｒｅｐｅａｔ<br>
+							☆Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

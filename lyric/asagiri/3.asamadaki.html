@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>朝未き・夜渡り - 朝霧の巫女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">朝未き・夜渡り</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+                    <div class="LyricStaff">Lyrics : MEGUMI<br>Music : Takahashi Gou<br>Arrangement : Takahashi Gou</div>
+
+                    <div class="LyricText">
+						<p>
+							朝の雫の先で<br>
+							しらじらと<br>
+							うすぐもが消えてく<br>
+							深い深い夜が<br>
+							今別れを告げる</p>
+						<p>
+							かかえ込んだ涙がゆっくりと<br>
+							天へと返ってく<br>
+							新しい鼓動が静かに息付く</p>
+						<p>
+							君に出会う度に<br>
+							君を想う度に<br>
+							ゆれる水面のように<br>
+							音もなく波うって<br>
+							清らかに澄んでゆく</p>
+						<p>
+							遠く丘を越え<br>
+							風を呼び<br>
+							今ここで目覚めよう<br>
+							君に伝えたい<br>
+							大好きだよと<br>
+							声にならなくても<br>
+							波にただよって<br>
+							さ迷って<br>
+							辿りつく愛しさ<br>
+							今日に生まれよう<br>
+							朝日を浴びて<br>
+							今 霧が 晴れる</p>
+						<p>
+							夕闇がつれてくる<br>
+							朱色に<br>
+							心が染まってく</p>
+						<p>
+							淋しさと不安が<br>
+							隙間に忍び込む</p>
+						<p>
+							きっと人はいつも<br>
+							きっとくり返して<br>
+							ゆれる切ない日々<br>
+							優しさとぬくもりを<br>
+							求めては焦がれてる</p>
+						<p>
+							遠いふるさとの<br>
+							月の元<br>
+							さあ眠りにつこう</p>
+						<p>
+							君に伝えたい<br>
+							大丈夫だよと<br>
+							少し無理はしても<br>
+							夢よりも深い<br>
+							深い場所<br>
+							魂が返る場所<br>
+							つながっている<br>
+							感じているよ<br>
+							この 霧の 向こう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-asagiri-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

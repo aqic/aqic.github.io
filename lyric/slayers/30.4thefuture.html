@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>SLAYERS 4 the future - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">SLAYERS 4 the future</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ、松本保典、绿川光、鈴木真仁</div>
+
+                    <div class="LyricText">
+						<p>
+							新しい風が　小さな胸を震わせる<br>
+							瞳を閉じれば　苦い記憶も浮かぶけど…<br>
+							振り返るために　走り続ける訳じゃない<br>
+							涙も痛みも　明日への宝物だね</p>
+						<p>
+							誰もが「夢」と名付けられた<br>
+							心の劍を持っている<br>
+							暗闇のような現実を<br>
+							君だけの輝きで切り拓け</p>
+						<p>
+							Get On, Running, Running,<br>
+							Running On<br>
+							Wow, Fighting, Fighting,<br>
+							Fighting Road<br>
+							吹き荒れる嵐の中で<br>
+							時代に流されない力　求めて<br>
+							朝も昼も夜も<br>
+							Wow, Fighting, Fighting,<br>
+							Fighting Road<br>
+							渡せない大事なものを<br>
+							守れる強さ　手に入れよう　Ready Go!<br>
+							YOU'RE SLAYERS!!</p>
+						<p>
+							“一步”を讓れる余裕が　素敵なことでも<br>
+							引けない場面があるなら　それはきっと正義</p>
+						<p>
+							古びた地図に火を点けたら<br>
+							真実の旅路が始まる<br>
+							本当の自分の姿を　追い続けてさすらう</p>
+						<p>
+							Keep On, Shining, Shining,<br>
+							Shining On<br>
+							Wow, Fighting, Fighting,<br>
+							Fighting Road<br>
+							「仕方ない」なんて言葉は<br>
+							今すぐに忘れてしまえば　いいのさ<br>
+							過去と現在と未来<br>
+							Wow, Fighting, Figthing,<br>
+							Fighting Road<br>
+							この道の先を見つめて<br>
+							思い出に負けたくないから　Ready Go!<br>
+							WE'RE SLAYERS!!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

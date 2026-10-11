@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ナイフの上の夏 - 陽あたり良好!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ナイフの上の夏</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">芹澤 廣明</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：入江 純</div>
+
+                    <div class="LyricText">
+						<p>
+							ひき潮がほら<br>
+							水平線に<br>
+							夏を連れて帰ってく</p>
+						<p>
+							いそしぎたちが<br>
+							波間かすめて<br>
+							悲しげに鳴くよ</p>
+						<p>
+							青春が過ぎてゆくね<br>
+							見果てぬ夢を残し<br>
+							マストのおれたヨットさ<br>
+							夏が終わる<br>
+							ナイフで切ったように<br>
+							 金色にほら<br>
+							夏の破片が<br>
+							舗道染める頃</p>
+						<p>
+							若さが見せる夢って<br>
+							哀しみ隠してるね<br>
+							目醒める時に切なく<br>
+							胸を刺すよ<br>
+							淋しさというナイフで</p>
+						<p>
+							青春が過ぎてゆくね<br>
+							僕たちだけを置いて<br>
+							マストのおれたヨットの<br>
+							影が秋の町を流されてゆくよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sunshining-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

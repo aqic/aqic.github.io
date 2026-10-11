@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Proud of my loneliness - 幻想魔伝 最遊記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Proud of my loneliness</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">保志総一朗</div>
+
+                    <div class="LyricText">
+						<p>
+							出逢ったあの日から<br>
+							懐かしさ感じてた<br>
+							冷たい横顔を<br>
+							もう一度　見つめた</p>
+						<p>
+							ほどけない鎖に<br>
+							心とらわれたまま<br>
+							見つめていた空は<br>
+							切ないくらい　眩しくて</p>
+						<p>
+							哀しみを　忘れたフリした<br>
+							遠い夕暮れに　帰る気はないけど</p>
+						<p>
+							Proud of my loneliness<br>
+							止まらない　胸の鼓動<br>
+							ただ信じてみる<br>
+							Proud of my loneliness<br>
+							もう一度<br>
+							過去も　夢も　全て抱きしめて<br>
+							生きてゆこう</p>
+						<p>
+							明日の地図なんて<br>
+							誰にも持てないけど<br>
+							あの空の向こうで<br>
+							何かが　呼んでる気がした</p>
+						<p>
+							望みさえ　霞んだ夜明けを<br>
+							今も振り返る　ことだってあるけど</p>
+						<p>
+							Proud of my loneliness<br>
+							途切れない　熱い想い<br>
+							消えはしないから<br>
+							Proud of my loneliness<br>
+							もう一度<br>
+							涙　笑顔　全て抱きしめて<br>
+							生きてゆこう</p>
+						<p>
+							Proud of my loneliness<br>
+							止まらない　胸の鼓動<br>
+							ただ信じてみる<br>
+							Proud of my loneliness<br>
+							もう一度<br>
+							過去も　夢も　全て抱きしめて</p>
+						<p>
+							Proud of my loneliness<br>
+							途切れない　熱い想い<br>
+							消えはしないから<br>
+							Proud of my loneliness<br>
+							もう一度<br>
+							涙　笑顔　全て抱きしめて<br>
+							生きてゆこう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saiyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

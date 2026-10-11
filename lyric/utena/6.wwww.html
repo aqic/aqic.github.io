@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>When Where Who Which - 少女革命ウテナ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「少女革命ウテナ」 決闘の歌１(1997)</div>
+
+                    <div class="LyricTitle">When Where Who Which</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">杉並児童合唱団</div>
+                    <div class="LyricStaff">作詞・作曲：J.A.シーザー</div>
+
+                    <div class="LyricText">
+						<p>
+							when where who which<br>
+							when where who which<br>
+							記憶のおりの血の流れ<br>
+							千年至福のゆりかごの<br>
+							わたしは俳優たとえて永久<br>
+							砂漠の冬のスフィンクス<br>
+							フィンクス<br>
+							誕生死亡の肉体の<br>
+							悲しき風を君知るや<br>
+							聖なる俳優たとえて永久<br>
+							奈落へ落ちた暗闇光・マルジノー<br>
+							光れ燃えよ、さめて歌え<br>
+							世界に誕生、瞬間誕生<br>
+							その繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-utena-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

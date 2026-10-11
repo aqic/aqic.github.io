@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>宝物 - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">宝物</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Yozuca</div>
+
+                    <div class="LyricText">
+						<p>
+							頬を染めた　君の笑顔<br>
+							眩しくって　切なくて<br>
+							胸ポケット暖めたんだ　この気持ち</p>
+						<p>
+							そっとヒミツの宝物にしよう<br>
+							いつか大きな愛になる</p>
+						<p>
+							心でぎゅっと抱きしめたいよ<br>
+							壊れないように　そっとね<br>
+							見つめ合えた　一秒忘れない<br>
+							幸せほら　見つけたの<br>
+							優しい風　包まれて歩いていこう</p>
+						<p>
+							夜空キラリ　星はきっと<br>
+							思い出のささやきね<br>
+							懐かしくって嬉しい　だけど今が好き</p>
+						<p>
+							ずっとココロの宝石箱の中<br>
+							君は輝き続けるよ</p>
+						<p>
+							心でちゃんとおしゃべりしたい<br>
+							不安だけど　伝えたい<br>
+							とっておきの勇気を　連れていこう<br>
+							初めてなの　こんな気持ちは<br>
+							キラキラ舞う　宝物<br>
+							眩しい空見上げたら歩き出そう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

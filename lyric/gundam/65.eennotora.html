@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>永遠の扉 - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">機動戦士ガンダム 第08ＭＳ小隊 ミラ－ズ·リポ－ト テ－マソング</div>
+
+                    <div class="LyricTitle">永遠の扉</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">米倉千尋</div>
+
+                    <div class="LyricText">
+						<p>
+							たとえばどんなふうに　悲しみを越えて来たの？<br>
+							合わせた視線の中　想いが溢れた</p>
+						<p>
+							破片（かけら）でも奇跡でも　その全てを刻み付けたい<br>
+							抱きしめたい</p>
+						<p>
+							愛より深く涙より切なく<br>
+							心が今あなたを感じているから<br>
+							果てしない夢も譲れない気持ちも<br>
+							みつめてる信じてる－ソバニイルヨ－</p>
+						<p>
+							見えない空気の中　交差する希望（ゆめ）と欲望<br>
+							知らずに立ち止まれば　胸がすくむから</p>
+						<p>
+							運命でも偶然でも　思うままあなたと生きたい<br>
+							めぐり逢えた</p>
+						<p>
+							言葉じゃなくて約束もなくて<br>
+							分かち合える何かが力になるなら<br>
+							傷つくことも終らない涙も<br>
+							惜しみなくためらわず抱いて行こう</p>
+						<p>
+							見上げた宇宙へとあなたの描く未来が<br>
+							この願いが　翔び立つよ</p>
+						<p>
+							眼差しは「永遠の扉」<br>
+							分かち合える何かが力になるなら<br>
+							傷つくことも終わらない涙も<br>
+							惜しみなくためらわず抱いて行こう</p>
+						<p>
+							愛より深く涙より切なく<br>
+							心が今あなたを感じているから<br>
+							果てしない夢も譲れない気持ちも<br>
+							みつめてる信じてる－ソバニイルヨ－</p>
+						<p>
+							愛より深く涙より切なく<br>
+							心が今あなたを感じているから<br>
+							果てしない夢も譲れない気持ちも<br>
+							みつめてる信じてる－ソバニイルヨ－</p>
+						<p>
+							愛より深く…<br>
+							果てしない夢も…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

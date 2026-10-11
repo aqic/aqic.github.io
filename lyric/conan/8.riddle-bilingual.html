@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>謎（日中対訳） - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OP 53話～96話</div>
+
+                    <div class="LyricTitle">謎（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">小松未歩</div>
+                    <div class="LyricStaff">作詞・作曲：小松未歩<br>編曲：古井弘人</div>
+
+                    <div class="LyricText">
+						<p>
+							この世であなたの愛を手に入れるもの<br>
+							踊るライト見つめて忘れない　ahh　謎がとけてゆく</p>
+						<p>
+							君はまだ　疑うことなく<br>
+							友達と呼べた日々過ごし　今もずっと<br>
+							涙あふれ止まらなくて<br>
+							失うことだけを教えてゆくつもり</p>
+						<p>
+							少しでも伝えたくて　傷む心が<br>
+							どんな経験しても　やっぱり迷うのよ<br>
+							この世であなたの愛を手に入れるもの<br>
+							踊るライト見つめて忘れない　ahh　謎がとけてゆく</p>
+						<p>
+							君がただ　見失う時は<br>
+							やり場のない想いを感じ　鏡となる<br>
+							わざとじゃなく　ひらめくのよ<br>
+							不思議なシグナルが　私に仕掛けるの</p>
+						<p>
+							もうすぐ私のもとにハートが届く<br>
+							だけどこの胸騒ぎ　今すぐ会いたくて<br>
+							謎めくあなたの愛を手に入れたとき<br>
+							世界は生まれ変わる　目覚めたら　ahh　無限に広がる</p>
+						<p>
+							少しでも伝えたくて　傷む心が<br>
+							どんな経験しても　やっぱり迷うのよ<br>
+							この世であなたの愛を手に入れるもの<br>
+							踊るライト見つめて忘れない<br>
+							ahh　謎がとけてゆく　謎がとけてゆく</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							今生今世渴望得到你的爱<br>
+							凝视跳跃的灯光无法忘怀<br>
+							谜总会解开<br>
+							你仍过着从前那种日子我却流泪不止<br>
+							想告诉你我失去的东西<br>
+							哪怕一点点我也要传达<br>
+							我伤痛的心<br>
+							不管经过多长时间依然迷惘<br>
+							当你消失时<br>
+							我的心居无定所迷惘的感觉<br>
+							不可思议的向我袭来<br>
+							你的心将重回我身边<br>
+							我知道那已在不远<br>
+							可心中涌出的冲动想此刻就见到你<br>
+							当你谜一般的爱<br>
+							如果给我的时候<br>
+							这个世界将会重生<br>
+							Ahh　将无限宽广</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

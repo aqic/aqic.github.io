@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>DON'T BE DISCOURAGED - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「スレイヤーズ TRY」オープニングテーマ</div>
+
+                    <div class="LyricTitle">DON'T BE DISCOURAGED</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+                    <div class="LyricStaff">作詞：MEGUMI<br>作曲：佐藤英敏<br>編曲：添田啓二</div>
+
+                    <div class="LyricText">
+						<p>
+							ときめく胸　見えない明日に心震わせ<br>
+							きらめく夢　掴むために進むの<br>
+							挫けた時　　気付くの人間は一人じゃないって<br>
+							どんな時も　自分をあきらめない</p>
+						<p>
+							※選んだこの道　たとえ荒れ果てていても<br>
+							　さらにその先は　めざしていた瞬間</p>
+						<p>
+							◆don't you forget　私がいること<br>
+							　失敗も愛嬌と笑って<br>
+							　I don't forget　あなたがいること<br>
+							　不器用な愛で強くなれるよ</p>
+						<p>
+							さまよう風　ふと不安になる夜もあるけど<br>
+							流れる時間　変わらず明日は来る<br>
+							落とした涙　いつかきっと力になるから<br>
+							一度きりの自分に負けられない</p>
+						<p>
+							膨らむイメージ　なりたい私になるの<br>
+							マニュアルどおりの　未来なんていらない</p>
+						<p>
+							◎don't be afraid　大丈夫人生<br>
+							　そんなに捨てたもんじゃない<br>
+							　I'm not afraid　たかが100年よ<br>
+							　流されてるだけじゃもったいない</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							◎くりかえし</p>
+						<p>
+							◆くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

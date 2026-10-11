@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>あなたの夢をみたわ - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">オーディオ「美少女戦士セーラームーン In Another Dream」 印象歌（１９９２）</div>
+
+                    <div class="LyricTitle">あなたの夢をみたわ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">深見梨加</div>
+                    <div class="LyricStaff">作詞／白峰美津子<br>作編曲／有澤孝紀</div>
+
+                    <div class="LyricText">
+						<p>
+							夕なぎの海に　二人はしゃいだね　とてもあたたかい　あなたの　夢を見たわ<br>
+							初恋のように　心踊らせた　すれ違うたびに　互いに　優しくなれた<br>
+							光りながら　笑いながら　過ぎて行く季節　ずっと二人　変わらないと　信じてた<br>
+							MY LOVE　あのとき　話した　未来のこと<br>
+							AH　こうして　思い出せば　なつかしいだけなんて</p>
+						<p>
+							遠い街で　今はどんな　夢を見ているの　窓を開けて　青い風に　聞いてみる<br>
+							MY LOVE　どこかで　誰かと　恋をしても　AH　時々　思い出して　その胸の　片隅で<br>
+							MY LOVE　夢中で話した　未来のこと<br>
+							AH　眩しい　あなたでいて　輝いて　いつまでも</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

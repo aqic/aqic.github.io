@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Hanabi - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©Key 2003 KeySoundLabel / Spica/Hanabi/Moon</div>
+
+                    <div class="LyricTitle">Hanabi</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lia</div>
+                    <div class="LyricStaff">作詞：key(JunMaeda)<br>構成：key(JunMaeda)<br>アレンジ：YuuHagiwara</div>
+
+                    <div class="LyricText">
+						<p>
+							あの日の君は僕の手を引いて言った<br>
+							壁の向こうにある暮らしを目指そうと<br>
+							弱くて折れそうな僕の肩を抱いて<br>
+							深い闇の中をどこまでも歩いた</p>
+						<p>
+							ふたりが目指した夢は遠い<br>
+							ふたりがなくした夢も遠い</p>
+						<p>
+							ふたりきりで過ごす夏が始まった<br>
+							裸足で踏みしめた畳が痛かった<br>
+							僕のために買ってくれた花火は<br>
+							鬱いたままでいてそれも無駄にした</p>
+						<p>
+							ふたりが目指した夢は遠い<br>
+							ふたりがなくした夢も遠い</p>
+						<p>
+							つまらないものばかりいつも愛した<br>
+							増えては困る猫ばかり拾ってた<br>
+							僕の隣ではいつも君が笑ってた</p>
+						<p>
+							散歩の帰り道　鐘の音を聞いた<br>
+							とても懐かしくて涙がこぼれた<br>
+							僕の手を振りきり君は走り出した<br>
+							空は今も暗く僕らを閉ざしてた</p>
+						<p>
+							ふたりが目指した夢は遠い<br>
+							ふたりがなくした夢も遠い</p>
+						<p>
+							冷たい雨が降った君はひとり<br>
+							足元に転がる石を見てた<br>
+							僕は傷だらけの猫を抱いた<br>
+							守られ続けた僕らがいた<br>
+							そんな意味は忘れたままでよかった</p>
+						<p>
+							やがてまた僕らは連れ戻された<br>
+							やり残した花火も手つかずのまま<br>
+							それを抱いて君の部屋を訪れた<br>
+							君はいつの間にか笑わなくなってた</p>
+						<p>
+							つまらないものばかりいつも愛した<br>
+							増えては困る猫ばかり拾ってた<br>
+							今度は僕が笑ってみせるから<br>
+							今度は僕があの夏へ連れ出すから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

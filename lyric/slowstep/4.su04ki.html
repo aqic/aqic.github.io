@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君がくれた落書き - スローステップ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">スローステップ オリジナルサウンドトラック</div>
+
+                    <div class="LyricTitle">君がくれた落書き</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高山 みなみ</div>
+                    <div class="LyricStaff">作詞：佐藤 純子<br>作曲：東郷 昌和<br>編曲：岩本 正樹</div>
+
+                    <div class="LyricText">
+						<p>
+							ポプラの枝　揺らしたら<br>
+							木漏れ日たちが　ゆらゆら動く<br>
+							つま先まで届いてる<br>
+							光となわとびしてただけ</p>
+						<p>
+							そばにいることなんか知らなかったよ<br>
+							違反だよ　脅かすのは</p>
+						<p>
+							My Girl　胸の中にもうひとりの私<br>
+							住んでいるのよ　いつも<br>
+							My Boy　かまわないよ<br>
+							好きなほうを見つめて  ケンカばかりしてるよね<br>
+							すこしやさしくしたらどうなの？<br>
+							黙ったあと　〝好きだよ〟と<br>
+							宿題みたいに言わないで</p>
+						<p>
+							雲が流れてゆくね　ちょっとあわてて<br>
+							答えなど　せかさないで</p>
+						<p>
+							My Girl　胸の中の未来のページには<br>
+							何も描いてないの<br>
+							My Boy　だけど君が<br>
+							不意にくれた落書き</p>
+						<p>
+							そんな顔しないで<br>
+							わからない　恋は<br>
+							でも君が　そう困った時は<br>
+							もちろんそばにいるよ　いつも・・・・・・</p>
+						<p>
+							My Girl　胸の中にもうひとりの私<br>
+							すこしはしゃいでいるの<br>
+							My Boy　ほほえんでよ<br>
+							あきらめたりしないで</p>
+						<p>
+							My Girl　胸の中の未来のページには<br>
+							何も描いてないの<br>
+							My Boy　だけど君が<br>
+							不意にくれた落書き</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slowstep-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

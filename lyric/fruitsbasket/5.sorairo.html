@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>空色 - フルーツバスケット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">空色</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">岡崎　律子</div>
+                    <div class="LyricStaff">作詞・作曲：岡崎　律子</div>
+
+                    <div class="LyricText">
+						<p>
+							長い長い坂道の途中でつまずいて<br>
+							痛い　なにかが切れて　もう歩けない</p>
+						<p>
+							つま先立ちみたいな日々でも　いつかきっと<br>
+							つよくなりたいと見上げる空は高く</p>
+						<p>
+							よろこびもかなしみも　ふいに私を試す<br>
+							もう幾度　越えただろう<br>
+							ひとり泣きあかした夜明け</p>
+						<p>
+							小さな決心くり返し　歩いていくの<br>
+							はらはらと雪の舞う道も　春には花</p>
+						<p>
+							傷つけあう日があるけれど　でも平気<br>
+							ほんとうは誰もがやさしくて　求めあってる</p>
+						<p>
+							かなしくてかなしくて　心ちぎれそうな夜<br>
+							それでもなお信じてみる<br>
+							細い希望つないで</p>
+						<p>
+							こらえてもこらえても　落ちる涙ならいいの<br>
+							雨が降る　激しく降る<br>
+							すべてを流してく</p>
+						<p>
+							生きるのは苦しいの　同じくらい素敵なの<br>
+							今を越えて　ここを越えて<br>
+							また笑ってみせて</p>
+						<p>
+							よろこびもかなしみも　その手に抱きしめていける</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fruitsbasket-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>STEP BY STEP - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ED 1～26話</div>
+
+                    <div class="LyricTitle">STEP BY STEP</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ZIGGY</div>
+                    <div class="LyricStaff">作詞・作曲：森重樹一<br>編曲：ZIGGY</div>
+
+                    <div class="LyricText">
+						<p>
+							Just my imagination　冷めかけた紅茶飲みながら<br>
+							指にからむ糸を遊ばせ<br>
+							ボサノヴァのリズムで軽快に歩こう<br>
+							パズルのピースは手の中さ</p>
+						<p>
+							そうさ　Ah- Ah- Ah-　先週も俺は違う服で同じ場所に居たさ</p>
+						<p>
+							Step by Step　あせることなんてないのさ<br>
+							Case by Case　笑われたってかまわない<br>
+							数えきれぬ日々の向こうに　あいつが待っているから<br>
+							I gotta go my own way</p>
+						<p>
+							恋人は贅沢な夢を着たモラリスト<br>
+							だけどなぜか覚めてしまう</p>
+						<p>
+							そうさ　Ah- Ah- Ah-　来週も君は違う服で違う場所に居るさ</p>
+						<p>
+							Step by Step　好きなようにやればいいのさ<br>
+							Case by Case　回り道でもかまわない<br>
+							灰色の日々の向こうで　あいつが笑ってるから<br>
+							I gotta go my own way<br>
+							I gotta go my own way</p>
+						<p>
+							そうさ　Ah- Ah- Ah-　来週も俺は違う服で同じ場所に居るさ</p>
+						<p>
+							Step by Step　あせることなんてないのさ<br>
+							Case by Case　笑わせとけばいいのさ<br>
+							数えきれぬ日々の向こうに　あいつが待っているから<br>
+							I gotta go my own way<br>
+							I gotta go my own way<br>
+							I gotta go my own way<br>
+							I gotta go my own way</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

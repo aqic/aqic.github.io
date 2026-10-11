@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Happy Day - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Ending Theme</div>
+
+                    <div class="LyricTitle">Happy Day</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sanada Asami</div>
+                    <div class="LyricStaff">Lyrics : 根津洋子<br>Music : 宮津律子<br>Arrangement : Iwamoto Masaki</div>
+
+                    <div class="LyricText">
+						<p>
+							笑いころげたりちょっとふくれたり<br>
+							君が　君が　君が好きだよ！<br>
+							Happy Day…<br>
+							窓辺に頬杖ついて　へこんでいるのは誰？<br>
+							何があったの　いつもなら<br>
+							おしゃべりが止まらないのに<br>
+							会いにきてくれただけで<br>
+							うれしかったよ　ほんと<br>
+							寂しがり屋の君だから<br>
+							なんとかしなくっちゃね</p>
+						<p>
+							Wow wow wow<br>
+							君がそばにいなくちゃ物足りない<br>
+							一番大事な宝物さ<br>
+							弱いところもぜんぶひっくるめて<br>
+							君が　君が　君が好きだよ！</p>
+						<p>
+							どしゃぶり雨のちくもり<br>
+							ほら　陽がさしてきたよ<br>
+							空に大きな夢色の虹が見えるかもしれない<br>
+							めいっぱいお洒落にキメて<br>
+							さあ一緒に出掛けよう<br>
+							身違えるほどキレイだね　まぶしすぎるくらい</p>
+						<p>
+							Wow wow wow<br>
+							君がそばにいなくちゃ始まらない<br>
+							いつでも瞳で追いかけてる<br>
+							笑いころげたりちょっとふくれたり<br>
+							君が　君が　君が好きだよ！</p>
+						<p>
+							太陽が沈む前に　焼きつけたいの<br>
+							ねえ　最高のスマイルで<br>
+							one more kiss for happy day！</p>
+						<p>
+							君がそばにいなくちゃ物足りない<br>
+							一番大事な宝物さ<br>
+							ワガママなとこもぜんぶひっくるめて<br>
+							君が　君が　君が好きだよ！<br>
+							happy day…<br>
+							happy day…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

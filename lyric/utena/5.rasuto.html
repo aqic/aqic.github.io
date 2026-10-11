@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ラスト・エヴォルーション&lt;br&gt;（進化革命前夜） - 少女革命ウテナ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「少女革命ウテナ」 決闘の歌１０(1997)</div>
+
+                    <div class="LyricTitle">ラスト・エヴォルーション&lt;br&gt;（進化革命前夜）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">杉並児童合唱団</div>
+                    <div class="LyricStaff">作詞・作曲：J.A.シーザー</div>
+
+                    <div class="LyricText">
+						<p>
+							地球のはじまり　舞台装置<br>
+							ラブラス星雲　他人論<br>
+							不変の幻想　謎解き時計<br>
+							不滅の果ての　乳母車<br>
+							永遠のワタシ　永遠の他人<br>
+							二つの関係　二つの誕生<br>
+							神秘の天秤　人体星座<br>
+							ああああ　アアアア<br>
+							時は仮説、幻想の<br>
+							生まれはじめの舞台装置<br>
+							運命、選択、グッバイ論<br>
+							わたしとあなたは天の河<br>
+							過去なし　ただ現在　未来なし<br>
+							テアトル　宇宙にただ一人<br>
+							That's me!　Wait!<br>
+							My last evolution revolution<br>
+							Evolution</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-utena-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>傀儡幻想（日中対訳） - 吸血姫美夕</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">傀儡幻想（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林朝美</div>
+                    <div class="LyricStaff">作词：垣野内城美<br>作曲：寺嵨民哉<br>编曲：寺嵨民哉</div>
+
+                    <div class="LyricText">
+						<p>
+							さしのべる手を　包んて<br>
+							つぶやく声を感じて<br>
+							私の血が　あなたに伝えるの</p>
+						<p>
+							どこから来たのか　知らない<br>
+							何のために来たのか　言わない<br>
+							もうずっと　过去のこと</p>
+						<p>
+							几夜の月を见たのか<br>
+							寂静まった时间　寄り添い<br>
+							わがままな　金の瞳は言う</p>
+						<p>
+							１人は平气　惯れてる<br>
+							てもそばにいて　みつめて<br>
+							あなただけは　解れてもかまわない</p>
+						<p>
+							どこへ行くのかわからない<br>
+							何のために行くのか闻かない<br>
+							もっとずっと　未来のこと</p>
+						<p>
+							朱い鸟居に　２つの<br>
+							人形の影　消えてく<br>
+							こんな夜　忘れた过去をみる</p>
+						<p>
+							どこから来たのか　知らない<br>
+							何のために来たのか　言わない<br>
+							もうずっと　过去のこと</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							包住叙述着的手指感觉<br>
+							喃喃自语的声音<br>
+							将我的血传送给你</p>
+						<p>
+							不知是从哪里来的<br>
+							不说是为何而来的<br>
+							因为那已是遥远以前的事</p>
+						<p>
+							看见几个晚上的月光<br>
+							寂静的时刻逼近<br>
+							任性的金色眼眸诉说着</p>
+						<p>
+							不在乎一个人而习惯了<br>
+							但请在身旁注视我<br>
+							只有你可以接触也好</p>
+						<p>
+							不知要去哪里<br>
+							不说是为何而去<br>
+							因为那已是遥远的未来的事</p>
+						<p>
+							红色的神社牌坊 两个人的<br>
+							人影消失而去<br>
+							在这样的夜里 看见已忘掉的过去</p>
+						<p>
+							不知是从哪里来的<br>
+							不说是为何而来的<br>
+							因为那已是遥远以前的事</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

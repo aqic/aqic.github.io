@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>心任せのDiary - H2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Ｈ２ ORIGINAL ALBUM</div>
+
+                    <div class="LyricTitle">心任せのDiary</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">今村 恵子</div>
+                    <div class="LyricStaff">作詞：浅見 純<br>作曲：小西 真理<br>編曲：ジョー リノイエ</div>
+
+                    <div class="LyricText">
+						<p>
+							気がつくと頬杖つく　私がいる<br>
+							もう悩まないってさっき　決めたばかりなのに</p>
+						<p>
+							風を入れ替えてみようか<br>
+							窓開けたら<br>
+							夜空には誰かさんの 笑顔　浮かんでる</p>
+						<p>
+							わからなくなるの自分でも<br>
+							明日も今日と同じ　風を望むのかしら</p>
+						<p>
+							心任せのDiary　胸の中で綴ってく<br>
+							ドラマチックに　すべてが今<br>
+							変わるはずはないから</p>
+						<p>
+							心任せのDiary　ズルいわけじゃなくて<br>
+							誰も傷つけないよう<br>
+							同じ未来を望むの  悔しくなるの時々　誰かさんは<br>
+							私のために頬杖　ついてはくれなくて</p>
+						<p>
+							愛しく思う夢だけ<br>
+							追いかけてる<br>
+							だけどその姿見れば　不思議　許せるの</p>
+						<p>
+							生きてきた時間　その中の<br>
+							輝く瞬間を　共有してきたから</p>
+						<p>
+							数え切れないMemory　現われては消えてゆく<br>
+							あしたからも　Heartにきく<br>
+							出来事の嵐なの</p>
+						<p>
+							数え切れないMemory　今夜思ったことは<br>
+							誰も哀しまないよう<br>
+							大事にしまっておこう</p>
+						<p>
+							心任せのDiary　胸の中で綴ってく<br>
+							ドラマチックに　すべてが今<br>
+							変わるはずはないから</p>
+						<p>
+							心任せのDiary　ズルいわけじゃなくて<br>
+							誰も傷つけないよう<br>
+							同じ未来を望むの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-h2-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

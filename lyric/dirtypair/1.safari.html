@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>サファリ　アイズ～Safari Eyes - ダーティペア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場用アニメーション「ダーティペア」オープニング・テーマ (1987)</div>
+
+                    <div class="LyricTitle">サファリ　アイズ～Safari Eyes</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">松原みき</div>
+                    <div class="LyricStaff">作詞：大津あきら<br>作曲：和泉常寛<br>編曲：新川　博</div>
+
+                    <div class="LyricText">
+						<p>
+							{摩天楼のらせん階段<br>
+							昇る赤い靴音<br>
+							午前２時のMoondanceに<br>
+							浮かぶ都会〈まち〉が妖しかった</p>
+						<p>
+							Silence<br>
+							答えのない扉〈ドア〉に<br>
+							華やかな爪を立てながら}</p>
+						<p>
+							SAFARI EYES<br>
+							一秒ごとに Playin' magic<br>
+							いっそ魔法に委ねたまま<br>
+							シルクの鍵に Kiss of the stranger</p>
+						<p>
+							薔薇のイヤリング　そっとはずして<br>
+							秘密の部屋　眠れば<br>
+							いつの間にか　Tightropeの<br>
+							甘い腕に魅せられてく</p>
+						<p>
+							Misty<br>
+							声を潜〈ひそ〉めながら<br>
+							まるで獲物を狙うように</p>
+						<p>
+							{SAFARI EYES<br>
+							醒めた瞳の Shootin' magic<br>
+							素敵な悪夢　堕ちてくなら<br>
+							キャンドルが燃える砂漠へ<br>
+							ジェラシーのない Kiss of the stranger}</p>
+						<p>
+							Silence<br>
+							夜明けのない胸に<br>
+							華やかな爪を立てながら</p>
+						<p>
+							SAFARI EYES<br>
+							一秒ごとに Playin' magic<br>
+							シルクの鍵に Kiss of the stranger<br>
+							SAFARI EYES<br>
+							醒めた瞳の Shootin' magic<br>
+							ジェラシーのない Kiss of the stranger<br>
+							………</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dirtypair-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

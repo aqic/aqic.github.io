@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>花の巴里 - サクラ大戦</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「サクラ大戦3」挿入歌</div>
+
+                    <div class="LyricTitle">花の巴里</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">小島幸子＆かないみか</div>
+                    <div class="LyricStaff">作詞：広井王子<br>作曲：田中公平<br>編曲：多田彰文</div>
+
+                    <div class="LyricText">
+						<p>
+							幾千の夜と　幾万の歌に<br>
+							飾られて　誰もが恋する町<br>
+							この町に来たら　誰もがすべてを<br>
+							忘れて歌うよ　巴里　巴里　巴里</p>
+						<p>
+							夜は　素敵な恋　ふたりの時間<br>
+							夜は　魔法の恋　ここではすべてが恋<br>
+							巴里　花咲き<br>
+							巴里　花散る<br>
+							ああ　ここが巴里　巴里</p>
+						<p>
+							男も女も　みんな異邦人<br>
+							寂しさを　抱きしめる恋の町<br>
+							どんな言葉でも　すべて歌となり<br>
+							恋の花が咲く　巴里　巴里　巴里</p>
+						<p>
+							夜は　光り溢れ　ふたりを照らす<br>
+							歌は　心揺らし　新しい恋を生む<br>
+							巴里　花咲き<br>
+							巴里　花散る<br>
+							ああ　ここが巴里　巴里</p>
+						<p>
+							夜は　素敵な恋　ふたりの時間<br>
+							夜は　魔法の恋　ここではすべてが恋<br>
+							巴里　花咲き<br>
+							巴里　花散る<br>
+							ああ　ここが巴里　巴里<br>
+							巴里　花咲き<br>
+							巴里　花散る<br>
+							ああ　ここが巴里　巴里</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sakurawars-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

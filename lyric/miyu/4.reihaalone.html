@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>冷羽ひとり - 吸血姫美夕</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「吸血姫美夕」</div>
+
+                    <div class="LyricTitle">冷羽ひとり</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">緒方惠美</div>
+                    <div class="LyricStaff">作詞：垣野內成美<br>作曲・編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							何処へ行けばいいのでしょ？<br>
+							何方が遊んでくださるの？</p>
+						<p>
+							誰も答えてくれません<br>
+							ただ　ただ　雪が振るのです<br>
+							思い出の上に降り積もる</p>
+						<p>
+							真っ白　真っ白　白の国<br>
+							むくちの雪は　暖かいのです<br>
+							冷羽はお人魚遊びをいたします</p>
+						<p>
+							（松風：お父様にいただいたのです）</p>
+						<p>
+							何処へ行けばあえるでしょ？<br>
+							何方おあいせばよろしいの？</p>
+						<p>
+							誰の姿もみえません<br>
+							ただ　ただ　雪が振るのです<br>
+							思い出の上に降り積もる</p>
+						<p>
+							真っ白　真っ白　白の国<br>
+							むくちの雪は　暖かいのです<br>
+							冷羽はお人魚抱きしめ歌います</p>
+						<p>
+							（松風：お父様にいただいたのです）</p>
+						<p>
+							誰の姿もみえません<br>
+							そして雪は舞うのです<br>
+							わたくしのためになき積もる</p>
+						<p>
+							真っ白　真っ白　白の空間<br>
+							むくちの雪は　暖かいのです<br>
+							冷羽お人魚遊びをいたします</p>
+						<p>
+							冷羽お人魚遊びをいたします</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

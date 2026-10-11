@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>自転車 - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ああっ女神さまっ」</div>
+
+                    <div class="LyricTitle">自転車</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">久川　綾</div>
+
+                    <div class="LyricText">
+						<p>
+							ハンドル・ペダル・ブレーキ・タイヤ・チェーン<br>
+							極めて合理的なモノ</p>
+						<p>
+							新しい技ができたと見せに来る<br>
+							アイツが大事にしているノリモノ</p>
+						<p>
+							泥や汗にまみれても<br>
+							キズやあざがいたくても<br>
+							それでも　あきらめないで</p>
+						<p>
+							それがすごく好きだから<br>
+							できるはずと信じてる<br>
+							ズキンとハートがゆらいだ</p>
+						<p>
+							自転車　アイツのことを<br>
+							夢中にさせる　魅力はなあに<br>
+							自転車　不思議な魔法<br>
+							LaLaLa　ちょっぴり悔しいな</p>
+						<p>
+							あの坂道のてっぺんまで行こうと<br>
+							アイツに誘われて乗ってみたけど</p>
+						<p>
+							息が切れてつらいだけ<br>
+							これのどこが楽しいの<br>
+							あきらめかけたその時</p>
+						<p>
+							坂の上の白い花<br>
+							届きそうな距離だから<br>
+							最後の力をしぼった</p>
+						<p>
+							自転車　空が広がる<br>
+							見おろす街に　夕日が落ちる<br>
+							自転車　下りの坂を<br>
+							LaLaLa　かけだしはじめたよ</p>
+						<p>
+							自転車　風に溶けてく<br>
+							アイツの笑顔　まわりの景色<br>
+							自転車　不思議な魔法<br>
+							LaLaLa　このままどこまでも<br>
+							いつまでも　行きたいな</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

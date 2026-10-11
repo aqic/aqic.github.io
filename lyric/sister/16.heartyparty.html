@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Hearty Party - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Hearty Party</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							日曜日は<br>
+							優しい光が<br>
+							部屋中にあふれてる<br>
+							もう待ちきれないよ</p>
+						<p>
+							ベッド飛びだし<br>
+							駆け出す先には<br>
+							ピカピカのキッチンと<br>
+							新しいワンピース</p>
+						<p>
+							たっぷりシュガー<br>
+							とろけるバター<br>
+							Let's cooking for my sweet Darl'n！</p>
+						<p>
+							アナタにハートのクッキーあげる<br>
+							とっておきの笑顔<br>
+							ふたりで目を合わせて笑うよ<br>
+							お日様みたいな気分<br>
+							好き</p>
+						<p>
+							小さくキス<br>
+							ひたいに感じて<br>
+							ひとりでに笑い出す<br>
+							もう待ちきれないよ</p>
+						<p>
+							願い事が<br>
+							叶うとしたなら<br>
+							いつだって願っちゃう<br>
+							２人だけのティータイム</p>
+						<p>
+							ドキドキしちゃう<br>
+							楽しい時間<br>
+							Let's cooking for my sweet Darl'n!</p>
+						<p>
+							ひとくちかじったそのトタンに<br>
+							とっておきの笑顔<br>
+							いつでも２人だけでいるのが<br>
+							お日様みたいな気分<br>
+							好き</p>
+						<p>
+							あなたにわたしのハートあげる<br>
+							とっておきの笑顔<br>
+							すてきな甘い香りのなかで<br>
+							お日様みたいな気分<br>
+							好き</p>
+						<p>
+							あなたと一緒にいられるだけで<br>
+							とっておきの笑顔<br>
+							いつでもギュッと抱きしめていてね<br>
+							お日様みたいな気分<br>
+							Happy！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>The Winner - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">機動戦士 ガンダム ００８３－スターダスト メモリー</div>
+
+                    <div class="LyricTitle">The Winner</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">松原みき</div>
+
+                    <div class="LyricText">
+						<p>
+							眠りのない夜を　数えきれず過ごした<br>
+							傷ついた痛みが　ただ一つの思い出<br>
+							I DON'T WANT 優しさはいらない<br>
+							I DON'T WANT もう二度とは<br>
+							求めていた夢は　今はただの幻<br>
+							誰かのささやきが　心の中　聞こえる<br>
+							I DON'T WANT 気休めはいらない<br>
+							I DON'T WANT いつわりの愛も</p>
+						<p>
+							I GOT A BURNIN' LOVE<br>
+							蒼く輝く炎で　この悲しみを<br>
+							燃やし尽くす時まで<br>
+							I GOT A BURNIN' LOVE<br>
+							愛は孤独な戦い　その激しさが<br>
+							闇を突き抜ける</p>
+						<p>
+							勝利者などいない　戦いに疲れ果て<br>
+							星空を見上げる　泣く事もかなわない<br>
+							I DON'T NEED 昨日などいらない<br>
+							I DON'T NEED 朽ち果てた夢も</p>
+						<p>
+							I GOT A BURNIN' HEART<br>
+							胸を貫くスリルを　ただ追いかけて<br>
+							走り続けたい</p>
+						<p>
+							言葉に出来ない想いが<br>
+							凍えた心さえ　熱くさせる</p>
+						<p>
+							I GOT A BURNIN' LOVE<br>
+							蒼く輝く炎で　この星空を<br>
+							覆い尽くす時まで<br>
+							I GOT A BURNIN' HEART<br>
+							愛は孤独の戦い　この世界まで<br>
+							燃やし尽くすのか<br>
+							I GOT A BURNIN' LOVE<br>
+							胸を貫くスリルを　ただ追いかけて<br>
+							走り続ける　今日も<br>
+							I GOT A BURNIN' HEART<br>
+							愛は虚しい戦い　何故　心まで<br>
+							奪い尽くすのか</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

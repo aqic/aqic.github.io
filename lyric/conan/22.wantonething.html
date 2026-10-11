@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>願い事ひとつだけ - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ED 84話～108話</div>
+
+                    <div class="LyricTitle">願い事ひとつだけ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">小松未歩</div>
+                    <div class="LyricStaff">作詞・作曲：小松未歩<br>編曲：古井弘人</div>
+
+                    <div class="LyricText">
+						<p>
+							願い事ひとつだけ　叶えてくれるなら<br>
+							傷つけあった愛が始まらないように…</p>
+						<p>
+							どうして二人は出会ったの?<br>
+							こんなに淋しい夕陽を見るなんて<br>
+							気の利いた言葉　探しても<br>
+							離れた心をつなぐ言葉なくて<br>
+							出来るだけの笑顔で手を振れば<br>
+							ちょっとだけでも綺麗に見えるのかな</p>
+						<p>
+							願い事ひとつだけ　叶えてくれるなら<br>
+							傷つけあった愛が始まらないように</p>
+						<p>
+							思い出の歌が流れると<br>
+							今でも切なさで胸が苦しくて<br>
+							自由に夢を追いかけてる<br>
+							あなたの噂を聞くことさえ無理ね<br>
+							目を閉じるのも怖いの　慣れなくて<br>
+							ahh　神様　どうか　惑わさないで</p>
+						<p>
+							願い事ひとつだけ　叶えてくれるなら<br>
+							傷つけあった愛が始まらないように</p>
+						<p>
+							私こんなに泣き虫じゃなかった　ゆっくり進もう　ゆっくり風を受けて</p>
+						<p>
+							愛はきっと傍にある　気付けばそこにある<br>
+							次の旅立ちまでは地球と回りたい</p>
+						<p>
+							願い事ひとつだけ　叶えてくれるなら<br>
+							記憶の中でいつも　あなたと生きてたい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

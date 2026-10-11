@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>One～この世が果てても離れない～ - 妖しのセレス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「妖しのセレス」</div>
+
+                    <div class="LyricTitle">One～この世が果てても離れない～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Day-Break</div>
+                    <div class="LyricStaff">作詞：Mori Yuriko<br>作曲：Sakai Ryo<br>編曲：Sakai Ryo</div>
+
+                    <div class="LyricText">
+						<p>
+							風になれ　数え切れぬ Distress<br>
+							俺が抱きとめる　おまえの Loneliness<br>
+							俺たちは　つがいの風 Oneness<br>
+							この世が果てても離れない</p>
+						<p>
+							錆びた記憶の底で<br>
+							おまえが呼んだ気がするよ<br>
+							まるで細胞までが　求め合うように</p>
+						<p>
+							寂しさを脱いだふたつの魂<br>
+							抱き合ってひとつに溶け合う瞬間(とき)<br>
+							孤独から愛が生まれる</p>
+						<p>
+							火をつけろ　立ちはだかる Distress<br>
+							燃やし尽くしたい<br>
+							過去(きのう)の Darkness<br>
+							俺たちの心はそう Endless<br>
+							REAL な奇跡がここにある</p>
+						<p>
+							もしも離れたならば<br>
+							抜け殻だけになるだろう<br>
+							羽を全部もがれた　白鳥のように</p>
+						<p>
+							悲しみも剥き出しで見せていい<br>
+							口唇で痛みを癒してやる<br>
+							その胸に薔薇が咲くまで</p>
+						<p>
+							風になれ　数え切れぬ Distress<br>
+							俺が抱きとめる<br>
+							おまえの Loneliness<br>
+							俺たちは　つがいの風 Oneness<br>
+							この世が果てても離れない</p>
+						<p>
+							寂しさと共に生まれた魂<br>
+							めぐり逢いひとつに溶け合う瞬間(とき)<br>
+							永遠が流れ始める</p>
+						<p>
+							火をつけろ　立ちはだかる Distress<br>
+							燃やし尽くしたい<br>
+							過去(きのう)の Darkness<br>
+							俺たちの心はそう Endless<br>
+							REAL な奇跡がここにある</p>
+						<p>
+							風になれ　数え切れぬ Distress<br>
+							俺が抱きとめる　おまえの Loneliness<br>
+							俺たちは　つがいの風 Oneness<br>
+							この世が果てても離れない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ceres-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

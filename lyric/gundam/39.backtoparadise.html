@@ -1,0 +1,115 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Back To Paradise - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">機動戦士 ガンダム ００８３－スターダスト メモリー</div>
+
+                    <div class="LyricTitle">Back To Paradise</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">松原みき</div>
+
+                    <div class="LyricText">
+						<p>
+							All alone here in no man's land<br>
+							Get a devil walkin' right beside me<br>
+							Angel come and take me by the hand<br>
+							Take me to a place far behind me<br>
+							Paradise<br>
+							I just wanna go back where I belong<br>
+							Paradise<br>
+							Back to paradise</p>
+						<p>
+							Get a dream that calls in the night<br>
+							Got a feelin' keeps growin' stronger<br>
+							Gotta hold on till the time is right<br>
+							Don't know if I can want much longer</p>
+						<p>
+							Paradise<br>
+							Keep on callin' me back where I belong<br>
+							Paradise<br>
+							Back to paradise forever</p>
+						<p>
+							I gotta fly like the wind<br>
+							I gotta cry like a wounded eagle<br>
+							Goin' back to paradise<br>
+							Got a long long way to go<br>
+							I got a race with the tide<br>
+							I gotta face every kind of danger<br>
+							Goin' back to paradise<br>
+							Running all the way back home</p>
+						<p>
+							There's a battle I should have won<br>
+							Words of wisdom I should have spoken<br>
+							Gotta right the wrongs I have done<br>
+							Gotta mend the hearts I have broken</p>
+						<p>
+							Paradise<br>
+							Will I ever get back where I belong<br>
+							Paradise<br>
+							Back to paradise forever</p>
+						<p>
+							I gotta fly like the wind<br>
+							I got cry like a wounded eagle<br>
+							Goin' back to paradise<br>
+							Got a long long way to go</p>
+						<p>
+							You never know a good thing<br>
+							Till it's gone away<br>
+							You never know where home is<br>
+							Till you're far away, far away</p>
+						<p>
+							I gotta fly like the wind<br>
+							I gotta cry like a wounded eagle<br>
+							Goin' back to paradise<br>
+							Got a long long way to go<br>
+							I got a race with the tide<br>
+							I gotta face every kind of danger<br>
+							Goin' back to paradise<br>
+							Running all the way back home</p>
+						<p>
+							I gotta fly like the wind<br>
+							I gotta cry like a wounded eagle<br>
+							Goin' back to paradise<br>
+							Got a long long way to go<br>
+							I got a race with the tide<br>
+							I gotta face every kind of danger<br>
+							Goin' back to paradise<br>
+							Running all the way back home</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

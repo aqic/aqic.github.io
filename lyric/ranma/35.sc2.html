@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>バレンタインに黒バラを - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">【２月】</div>
+
+                    <div class="LyricTitle">バレンタインに黒バラを</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">九能小太刀</div>
+                    <div class="LyricStaff">原案：山口晃枝<br>補作詞：乱馬的歌劇団文芸部<br>作曲：川井憲次<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							純情可憐ですわ<br>
+							あなたさまに賭けた恋<br>
+							可愛い乙女ですわ<br>
+							奪ってください<br>
+							色気も味気もない<br>
+							灰色の女子高生<br>
+							あきらめかけた</p>
+						<p>
+							うふっ　男女交際<br>
+							バレンタインに黒バラを<br>
+							一途なこころ贈ります<br>
+							バレンタインに黒バラを<br>
+							受け取ったら　今すぐに<br>
+							いらしてください<br>
+							おほほっ</p>
+						<p>
+							(佐助) いやぁ～小太刀さまぁ、完璧でございますぅっ、この歌は完璧でございますよぉっ。<br>
+							これではいくらあの早乙女乱馬といえどもっ、ひとたまりもありませんっ。<br>
+							ぃいやまいったなこりゃぁっ。 (小太刀) お～っほっほっほっほ…お～っほっほっほっほお～っほっほっほっほお～っほっほっほっほっほっほ…。</p>
+						<p>
+							お返しいただくなら<br>
+							情熱が欲しいのです<br>
+							凛々しいそのすべてが<br>
+							私(わたくし)のものなら<br>
+							ふたりの秘密ですね<br>
+							激しい恋の風は<br>
+							私(わたくし)の胸に<br>
+							花びら踊ります</p>
+						<p>
+							バレンタインに黒バラを<br>
+							こんな自分がいじらしい<br>
+							バレンタインに黒バラを<br>
+							愛したなら　どこまでも<br>
+							つくす主義です<br>
+							おほほっ～っほっほっほ…お～っほっほっほっほっほ…お～っほっほっほっほっほっほっほっほっほっほっほ…。</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

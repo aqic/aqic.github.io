@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>まぼろし - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">まぼろし</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							誰よりあなたの声が聞きたくて<br>
+							いつだって近くに感じてる<br>
+							話をしよう</p>
+						<p>
+							離れていても願ってる<br>
+							未来（あした）のこと　ふたりのこと<br>
+							声にならないため息にのせて</p>
+						<p>
+							ココロに嘘はつけないよ<br>
+							もっともっと傍に居たいのに<br>
+							約束を胸に</p>
+						<p>
+							誰よりあなたの声が聞きたくて<br>
+							目覚めても　空見ても　眠る時も<br>
+							やわらかい温もり憶えてる<br>
+							話をしよう　あともう少しだけ</p>
+						<p>
+							手を伸ばせば触れられた<br>
+							あの日が遠く過ぎていった<br>
+							戻らない季節</p>
+						<p>
+							誰よりあなたの声が聞きたくて<br>
+							悲しい時　嬉しい時　悔しい時も<br>
+							いつだって近くに感じてる<br>
+							話をしよう　あともう少しだけ</p>
+						<p>
+							凍えそうな冬の日も<br>
+							暖かく感じていた<br>
+							他人（ひと）を幸福にしたい<br>
+							初めて思ったそんなあなただった</p>
+						<p>
+							誰よりあなたの声が聞きたくて<br>
+							目眩くこの世界迷っても<br>
+							いつだってあなたを信じてる<br>
+							ここで微笑っていて　あともう少しだけ</p>
+						<p>
+							…さよならの前に</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

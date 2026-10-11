@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Uneasy - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">絶望2000～青い果実の散花～ ※ゲームでは未使用</div>
+
+                    <div class="LyricTitle">Uneasy</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島宮えい子</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢<br>編曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							果てる人生に<br>
+							絶え行く者　その白さに<br>
+							残る穢れ<br>
+							夢は翳り　淵を漂う</p>
+						<p>
+							疲れ果てた美しさに<br>
+							寄り添うよな　花　夢</p>
+						<p>
+							野に這う　人の朽ちた姿<br>
+							波打つ赤の永遠<br>
+							地に舞う　夜の一粒さえ<br>
+							輝く淡い知らない場所へ</p>
+						<p>
+							A voice from the past came wandering in<br>
+							I sent it on its way<br>
+							I don't need to listen to these voices anymore<br>
+							they've nothing left to say</p>
+						<p>
+							止まる朝は<br>
+							砕けてゆく　泡のかけら</p>
+						<p>
+							呪う空に身をすくめた<br>
+							かけた月と　星　風</p>
+						<p>
+							野に咲く　色の乱れる花<br>
+							儚く悲しげに泣く<br>
+							汚れた時代に　吐き出されて<br>
+							輝く深い知らない場所へ</p>
+						<p>
+							A voice from the past was laughing at me<br>
+							I turned and walked away<br>
+							He climbed on my back and whispered in my ear<br>
+							I wash my hands of you</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

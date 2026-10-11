@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Face to Face - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Face to Face</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							私の中の君が　涙を滲ませるよ<br>
+							負けない！　そう約束した日を追いかけて行こう</p>
+						<p>
+							急な坂道も　車の渋滞も　街の雑踏も知らん顔で<br>
+							時間を刻んで　夢さえ刻んで　何もかもみんな憂鬱になる<br>
+							ずっと抱きしめた　夢が霞むその度<br>
+							私の中にいる　君は嘆くよ</p>
+						<p>
+							ふいなアクシデントも　覚悟を決めて行こう<br>
+							自分を　信じて未来へと歩き続けよう</p>
+						<p>
+							恋に破れたって　嘘をつかれたって　しょげて気にしたって戻れないよ<br>
+							振り向かない事　悔やまない事が　私のスタイル　そう決めよう<br>
+							きっと　迷う日が　これからもやって来る<br>
+							私の中にいる　君を守るよ</p>
+						<p>
+							ちょっと強気になって　進まなきゃ転んじゃう<br>
+							ふたりで　力を合わせあい歩き続けよう</p>
+						<p>
+							ずっと分かってた　私の中の君が<br>
+							いるから頑張れる　今日があるんだと</p>
+						<p>
+							ふいなアクシデントも　覚悟を決めていこう<br>
+							自分を　信じて未来へと歩きつづけ</p>
+						<p>
+							ちょっと強気になって　進まなきゃ転んじゃう<br>
+							ふたりで　力を合わせあい歩き続けよう</p>
+						<p>
+							未来を信じてるよ　ふたりが一つになり<br>
+							望んだ　運命だから向かうしかない</p>
+						<p>
+							私の中の君が　涙を滲ませるよ<br>
+							負けない！　そう約束した日を追いかけていこう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

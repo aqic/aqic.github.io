@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Love a Riddle - おねがい☆ティーチャー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Image Song</div>
+
+                    <div class="LyricTitle">Love a Riddle</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：高瀬 一矢<br>編曲：高瀬 一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							涙の数だけ大人になれると信じてきたけれど<br>
+							届かぬ思いに目眩覚えて立ち止まる</p>
+						<p>
+							「さよなら」と動いて見えた<br>
+							きみの口唇が哀しくて<br>
+							もうどこにも行かないでと<br>
+							痛いほど抱きしめた</p>
+						<p>
+							こんなにも側で笑っているのに<br>
+							まだ知らないきみに片思いさ<br>
+							上手く言葉に出来ない気持ちに気づいて</p>
+						<p>
+							時を止めて待っていた<br>
+							たった一人きみを探してた<br>
+							置き忘れた時間たち動き始める<br>
+							せつないことだらけでも<br>
+							寄り添い合い人が生きてる<br>
+							宇宙(そら)に浮かぶこの地球(ほし)で<br>
+							出会ってしまった</p>
+						<p>
+							誰かに話してしまうと消えてしまいそうな恋だから<br>
+							二人きり過ごす時間が大切な宝物</p>
+						<p>
+							ひとり占め出来るはずは無いけど<br>
+							みんなに優しいと不安になる<br>
+							日に日に増してく独占欲が辛いよ</p>
+						<p>
+							特別だと言えるから<br>
+							嘘なんかもう必要ないから<br>
+							素直なまま動き出す気持ち見つめて<br>
+							せつないことばかりなら<br>
+							もう恋などしたくはないと<br>
+							あの日決めたはずなのに出会ってしまった</p>
+						<p>
+							約束も出来ないままで別れた夜には<br>
+							淋しくて眠れないよ<br>
+							お願い本当のきみの気持ち教えて</p>
+						<p>
+							時を止めて待っていた<br>
+							たった一人きみを探してた<br>
+							置き忘れた時間たち動き始める<br>
+							せつないことだけじゃない<br>
+							地球(ここ)で二人明日を見ている<br>
+							広い広いこの宇宙(そら)で出会えたのだから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onegai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

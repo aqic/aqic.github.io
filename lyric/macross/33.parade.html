@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>PARADE - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">PARADE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Fire Bomber</div>
+                    <div class="LyricStaff">作詞：K.INOJO<br>作曲：川野美紀<br>編曲：ON-DO</div>
+
+                    <div class="LyricText">
+						<p>
+							SOMEDAY　星に変わるハートと引き換えに<br>
+							深い闇の向こういかせてくれ<br>
+							ないものねだりだって構わないから</p>
+						<p>
+							ENDLESS　止められない胸騒ぎの数<br>
+							ムチャと言われたってつなげたいのさ<br>
+							なりゆきまかせだって止まってるよりはマシさ<br>
+							種子は芽をだして　夜は朝になる</p>
+						<p>
+							パレード　続いてく　昨日なんて遥か彼方<br>
+							パレード　いっしょに行こう<br>
+							目ざす場所へ　風の吹くまま<br>
+							GO ON OUR WAY PARADE</p>
+						<p>
+							EVERYDAY　育っていく　花や木のように<br>
+							揺れるハートに水はしみ込んでく<br>
+							子供はあっというまに大人になるさ</p>
+						<p>
+							HAPPINESS　タフな夢のその向こう側に<br>
+							ワクワクする何かが待ってるはず<br>
+							１足す１が２じゃ明日なんて行き止まりさ<br>
+							川は海にそそぎ　空に星はでる</p>
+						<p>
+							パレード　飛び込もう　なんとかなるのさきっと<br>
+							パレード　ふたりで行こう<br>
+							時はいつも　俺たちの味方さ<br>
+							GO ON OUR WAY</p>
+						<p>
+							パレード　続いてく　昨日なんて遥か彼方<br>
+							パレード　いっしょに行こう<br>
+							目ざす場所へ　風の吹くまま</p>
+						<p>
+							パレード　OH OH<br>
+							WE'RE JUST GOIN'ON OUR WAY<br>
+							パレード　OH OH<br>
+							WE'RE JUST GOIN'ON OUR WAY<br>
+							パレード　OH OH YEAH<br>
+							WE'RE JUST GOIN'ON OUR WAY<br>
+							パレード　OH OH<br>
+							WE'RE JUST GOIN'ON OUR WAY</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

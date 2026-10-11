@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>いつも思ってること - おねがい☆ティーチャー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">いつも思ってること</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">井上 喜久子</div>
+                    <div class="LyricStaff">作詞：江幡育子<br>作曲：中沢 伴行<br>編曲：南 良樹</div>
+
+                    <div class="LyricText">
+						<p>
+							光射し込むまぶしい朝<br>
+							「おはよ」囁きキスをしたの</p>
+						<p>
+							幸せすぎて恐くなる<br>
+							「離さないよ」とぎゅっと抱いて</p>
+						<p>
+							いじわるしないでね<br>
+							そばにいてね<br>
+							最優先事項・・・・・それは、あなたよ</p>
+						<p>
+							手と手　つないで歩きたいな<br>
+							ふたり　迷わず同じ道を</p>
+						<p>
+							ケンカしたってかまわない<br>
+							わたし、いつもここにいます</p>
+						<p>
+							悲しいことだって分かち合える<br>
+							最優先事項・・・・・声を聞かせて</p>
+						<p>
+							ぬくもりと安らぎ　あふれてくる<br>
+							最優先事項・・・・・ずうっと一緒、ね？</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onegai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>sync - ふたりエッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OVA「ふたりエッチ」エンディングテーマ</div>
+
+                    <div class="LyricTitle">sync</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">新谷さなえ</div>
+                    <div class="LyricStaff">作詞：後藤浩之<br>作曲：後藤浩之<br>編曲：古池孝浩</div>
+
+                    <div class="LyricText">
+						<p>
+							{なんでもないフリで　取り繕っちゃって<br>
+							愛のナイフって　容赦はしちゃくれないね</p>
+						<p>
+							感情押し殺して　毎日毎日生き残ること<br>
+							慣れっこみたい　仕方がないよ…なんて言ってる</p>
+						<p>
+							もっともっともっと　ストレートになって<br>
+							GYUUとGYUUと抱きしめ合おう<br>
+							いつもいつでも　ぎこちなくったってね</p>
+						<p>
+							涙の数だけ　夢見る夜に<br>
+							きっとね　天使は微笑みかける}<br>
+							あなたと感じたい　どんな痛みも</p>
+						<p>
+							本当は生真面目な　あなたのセリフだからこそ<br>
+							言霊みたいに　私の心　突き刺さる</p>
+						<p>
+							お互いもっと優しい気持ちも<br>
+							使ってあげなきゃだめね<br>
+							そんな想いはいったい何処に行くのだろう？</p>
+						<p>
+							高鳴る鼓動が　syncしたなら<br>
+							待ってて　その時kissをするから<br>
+							誰かに見られてても　かまわないよ</p>
+						<p>
+							切ない夜には　雨に唄えば<br>
+							そっとね　聞こえる優しいメロディ<br>
+							二人の行手には　コワイモノない</p>
+						<p>
+							高鳴る鼓動が　syncしたなら<br>
+							ほらね　天使が舞うメリーゴーランド</p>
+						<p>
+							星屑みたいな夢を見ようよ<br>
+							ずっとね　変わらぬ笑顔のままで</p>
+						<p>
+							{星屑みたいな夢を見ようよ<br>
+							ずっとね　変わらぬ笑顔のままで</p>
+						<p>
+							星屑みたいな夢を見ようよ}</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-stepup-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

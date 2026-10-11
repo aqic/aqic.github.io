@@ -1,0 +1,139 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Dare To Be Stupid - トランスフォーマー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Transformers The Movie</div>
+
+                    <div class="LyricTitle">Dare To Be Stupid</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">"Weird Al" Yankovic</div>
+                    <div class="LyricStaff">Producer: Rick Derringer</div>
+
+                    <div class="LyricText">
+						<p>
+							Put down your chainsaw and listen to me<br>
+							It's time for us to join in the fight<br>
+							It time to let your babies grow up to be cowboys<br>
+							It time to let the bed bugs bite</p>
+						<p>
+							You better put all your eggs in one basket<br>
+							You better count your chickens before they hatch<br>
+							You better sell some wine before its time<br>
+							You better find yourself an itch to scratch</p>
+						<p>
+							You better squeeze all the charmin you can<br>
+							When Mr. Whipple's not around<br>
+							Stick your head in the microwave and give yourself a tan</p>
+						<p>
+							Talk with your mouth full<br>
+							Bite the hand that feeds you<br>
+							Bite off more than you can chew<br>
+							What can you do?</p>
+						<p>
+							Dare to be stupid<br>
+							Take some wooden nickels<br>
+							Look for Mr. Goodbar<br>
+							Get your motion working now<br>
+							I'll show you how<br>
+							You can<br>
+							Dare to be stupid<br>
+							You can turn the other cheek<br>
+							You can just give up the ship<br>
+							You can eat a bunch of sushi and forget to leave a tip</p>
+						<p>
+							Dare to be stupid<br>
+							Dare to be stupid<br>
+							It's so easy to do<br>
+							Dare to be stupid<br>
+							We're all waiting for you</p>
+						<p>
+							It's time to make a mountain out of a molehill<br>
+							Forget I have a volunteer<br>
+							There's no more time for crying over spilt milk<br>
+							It's time for crying in your beer</p>
+						<p>
+							So don't join the army join the PTA<br>
+							Buy some sensible shoes and a chevrolet<br>
+							Then party til you're broke and they drag you away<br>
+							It's okay</p>
+						<p>
+							You can dare to be stupid<br>
+							It's like spitting on a fish<br>
+							It's like barking up a tree<br>
+							It's like they say you gotta buy one if you want<br>
+							To get one free</p>
+						<p>
+							Dare to be stupid<br>
+							Yeah why don't you dare to be stupid<br>
+							It's so easy to do<br>
+							Dare to be stupid<br>
+							We're all waiting for you<br>
+							Dare to be stupid</p>
+						<p>
+							Burn your candle at both ends<br>
+							Look a gift horse in the mouth<br>
+							Mashed potatoes can be your friend<br>
+							You can be a coffee achiever<br>
+							You can sit around the house and Leave It To Beaver</p>
+						<p>
+							The Future's up to you<br>
+							So what you gonna do<br>
+							Dare to be stupid<br>
+							Dare to be stupid<br>
+							What did I say?<br>
+							Dare to be stupid<br>
+							Tell me what did I say?<br>
+							Dare to be stupid<br>
+							It's all right<br>
+							Dare to be stupid<br>
+							We can be stupid all night<br>
+							Dare to be stupid<br>
+							Come on join the crowd<br>
+							Dare to be stupid<br>
+							Shout it out loud<br>
+							Dare to be stupid<br>
+							I can't hear you<br>
+							Dare to be stupid<br>
+							Okay, I can hear you<br>
+							Dare to be stupid<br>
+							Let's go<br>
+							Dare to be stupid<br>
+							Dare to be stupid</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-transformers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>スカーレット - 妖しのセレス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「妖しのセレス」</div>
+
+                    <div class="LyricTitle">スカーレット</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">岩男潤子</div>
+                    <div class="LyricStaff">作詞：高橋研<br>作曲：澤近泰輔<br>編曲：山本はるきち</div>
+
+                    <div class="LyricText">
+						<p>
+							遥かな星空に　夢はまだ見えますか<br>
+							幼いあの日より　鮮やかですか</p>
+						<p>
+							胸にあふれて　募る想い<br>
+							眠り忘れて　情熱の色</p>
+						<p>
+							☆たとえ遠くても　きっとたどりつける<br>
+							　強く信じてた<br>
+							　あの日の私が　今も心で眠っている</p>
+						<p>
+							　ガラスの薔薇よりも　儚く脆いのに<br>
+							　夢見ることはなぜ　運命(さだめ)なのでしょう</p>
+						<p>
+							　二つの夢が　愛になって<br>
+							　愛になれないこともあって</p>
+						<p>
+							※人は一人だと　分かり合いたいのに<br>
+							　なんて難しい<br>
+							　言葉は無力で　時には銀のナイフになる</p>
+						<p>
+							※繰り返し</p>
+						<p>
+							☆繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ceres-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

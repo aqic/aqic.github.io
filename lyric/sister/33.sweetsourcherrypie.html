@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Sweet sour cherry pie - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Sweet sour cherry pie</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							甘いため息　パイで包んだ　せつなさのチェリーパイ<br>
+							お腹すかせて　微笑むあなた　とびきりのhappinessあげる</p>
+						<p>
+							「３時のお茶に　呼んでくれるかな？<br>
+							今度逢える日　楽しみにしてる」と<br>
+							カードをくれたあの日<br>
+							それからずっと　レシピ片手にキッチンの中</p>
+						<p>
+							小麦粉　卵　お砂糖と　バターを<br>
+							ボールにいれて　くるくる回せば<br>
+							いつかふたりで　お茶をしたいと願った思いと<br>
+							バニラの香り　泡立つ</p>
+						<p>
+							甘いため息　パイで包んだ　せつなさのチェリーパイ<br>
+							エクレア　ムース　パンプキンプリン<br>
+							ふわふわの　シュークリーム<br>
+							何度も作っては　腕を磨いて待っています</p>
+						<p>
+							ブレスをかけたテーブルクロスに<br>
+							１番すきな　お皿とカップを<br>
+							だけど突然　電話<br>
+							「行けなくなった　ごめん」とすまなそうな声した</p>
+						<p>
+							あなたのすきなカプチーノ　ねぇ　ほろ苦い味ね<br>
+							ポロリひと粒　涙がおちた　ひとりきりなのね<br>
+							必ず　待ってますわ　ふたりだけの素敵な tea time</p>
+						<p>
+							甘いため息　パイで包んだ　せつなさのチェリーパイ<br>
+							タルトタタンに　ワッフル　スフレ<br>
+							とろけそうな　ソルベ<br>
+							何度も作っては　腕を磨いて待っています</p>
+						<p>
+							ずっと　ずっと</p>
+						<p>
+							待っています</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

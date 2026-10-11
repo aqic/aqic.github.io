@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夜は眠らない-FOR THE LONELY CITY GIRL- - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">夜は眠らない-FOR THE LONELY CITY GIRL-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">TAKADA BAND</div>
+
+                    <div class="LyricText">
+						<p>
+							都市は怪しくざわめく揺れて踊る　Swing<br>
+							幾千の夜に目覚め愛に濡れた瞳<br>
+							Close your eyes<br>
+							さあ　思い出してごらん　あの時<br>
+							巡る記憶　夢から覚めないままに</p>
+						<p>
+							☆眠らないNight city girl<br>
+							　光の渦に埋もれて<br>
+							　虜ね　Lonely city girl<br>
+							　操るように<br>
+							　止まらない　Disco step beat<br>
+							　酔いしれて誰かの腕<br>
+							　鏡の中から　Run away</p>
+						<p>
+							冷めた言葉の意味さえ　今は言えなくて<br>
+							昨日まで恋は　Suddenly　壊れそうな心<br>
+							Open your eyes<br>
+							出会いと別れがすれちがう都市<br>
+							月の明かり形を変えてゆくけど</p>
+						<p>
+							眠らないまま　Day dream<br>
+							不思議な巡り合わせに<br>
+							なくした　missing in my heart<br>
+							遠い昔<br>
+							誘惑の　Moon light express<br>
+							もう二度と戻れないと<br>
+							つぶやいた　Tomorrow never knows</p>
+						<p>
+							☆Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

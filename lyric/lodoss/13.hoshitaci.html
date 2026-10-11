@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>星たちの雨 - ロードス島戦記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ロードス島戦記」</div>
+
+                    <div class="LyricTitle">星たちの雨</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">冬馬由美</div>
+                    <div class="LyricStaff">作詞・作曲：新居昭乃<br>編曲：荻田光男</div>
+
+                    <div class="LyricText">
+						<p>
+							最初は あたたかい水の中で<br>
+							歌うような鼓動を聞いた<br>
+							生まれた瞬間<br>
+							はじまる孤獨の産聲<br>
+							還ろうと叫ぶ</p>
+						<p>
+							breath ...<br>
+							その遠さに耐え切れず<br>
+							draw my breath ...<br>
+							忘れようとした場所は<br>
+							どこにあるの</p>
+						<p>
+							からだの中で<br>
+							星たちの雨が<br>
+							あなたへと降り注ぐ</p>
+						<p>
+							breath ...<br>
+							金色に凍る夜明け<br>
+							draw my breaht ...<br>
+							重ね合う息づかいを<br>
+							皮膚を染める</p>
+						<p>
+							傷つける程 あなたを愛した</p>
+						<p>
+							（breath ...）<br>
+							最後を充たすハレ一ション<br>
+							draw my breath ...<br>
+							すべてを受け入れ<br>
+							目覺める 今</p>
+						<p>
+							（breath ...）<br>
+							祈りよりもゆりやかに<br>
+							draw my breath ...<br>
+							遠くなる聲が<br>
+							私を呼ぶ ...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lodoss-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

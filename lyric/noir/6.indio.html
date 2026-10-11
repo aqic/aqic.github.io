@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Indio - NOIR</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Indio</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							哀しい歌をふいに思い出した<br>
+							夏の毛布にもぐり込んだ夜なのに<br>
+							冷たい雨に足を速めても<br>
+							失くしたものに届かないと泣いていた　君の歌</p>
+						<p>
+							家に帰る道では指を離せずに<br>
+							遠い電車の音　優しい海鳴りに変えた<br>
+							二人で</p>
+						<p>
+							子供の頃に読んだIndioの南へ<br>
+							船の出る時間を二人でほら、書いたノート<br>
+							乾いた風に翳り無い太陽<br>
+							幻の大地を私だけが彷徨ってる　今も</p>
+						<p>
+							君のくれたもの忘れたくなくて<br>
+							遠い海鳴りに耳を澄ます<br>
+							一人で</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-noir-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

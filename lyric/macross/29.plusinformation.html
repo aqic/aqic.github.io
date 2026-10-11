@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Information High - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Information High</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sharon Apple</div>
+
+                    <div class="LyricText">
+						<p>
+							you know how get eternal life<br>
+							in the centre of the lightning speed waltz<br>
+							feel your soul cut byarusty knife<br>
+							as you head down<br>
+							for the self destructive edge</p>
+						<p>
+							our SATORI are just floating in the core<br>
+							where we can spiritually go through the door<br>
+							we'll know how to get eternal life<br>
+							while we catch the pulse<br>
+							from unknown satellites</p>
+						<p>
+							if we get the trancient facts<br>
+							then we feel the INFO-HIGH<br>
+							if we get the trancient facts<br>
+							then we are really free<br>
+							to fly high<br>
+							in space</p>
+						<p>
+							we know how to get an internal high<br>
+							in the centre of the lightning speed waltz<br>
+							see our soul struggling to survive<br>
+							as we head down<br>
+							for the self destructive edge</p>
+						<p>
+							SAYONARA to intrusive noise<br>
+							no more childish play and no more toys<br>
+							we know how to get eternal life<br>
+							while we feel and sense<br>
+							mother natures strong might</p>
+						<p>
+							if we get the trancient facts<br>
+							then we feel the INFO-HIGH<br>
+							if we get the trancient facts<br>
+							then we feel the INFO-HIGH<br>
+							if we get the trancient facts<br>
+							then we feel the INFO-HIGH<br>
+							if we get the trancient facts<br>
+							then we are really free<br>
+							to fly high<br>
+							in space</p>
+						<p>
+							if we get the trancient facts<br>
+							then we feel the INFO-HIGH<br>
+							if we get the trancient facts<br>
+							then we feel the INFO-HIGH<br>
+							if we get the trancient facts<br>
+							then we feel the INFO-HIGH<br>
+							if we get the trancient facts<br>
+							then we feel the INFO-HIGH<br>
+							if we get the trancient facts<br>
+							then we feel the INFO-HIGH<br>
+							if we get the trancient facts<br>
+							then we feel the INFO-HIGH<br>
+							if we get the trancient facts<br>
+							then we feel the INFO-HIGH<br>
+							if we get the trancient facts<br>
+							then we are really free<br>
+							to fly high<br>
+							in space</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

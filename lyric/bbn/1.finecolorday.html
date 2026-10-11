@@ -1,0 +1,120 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Fine colorday - 万能文化猫娘</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ東京系アニメーション「万能文化猫娘」オープニングテーマ</div>
+
+                    <div class="LyricTitle">Fine colorday</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+                    <div class="LyricStaff">作詞：MEGUMI<br>作曲：佐藤英敏<br>編曲：添田啓二</div>
+
+                    <div class="LyricText">
+						<p>
+							くつのひもギュッと結んだら<br>
+							出かけよう<br>
+							かかと２回　ならして<br>
+							軽くステップ<br>
+							君の手をギュッとにぎって<br>
+							ただ歩きたいんだ<br>
+							少しずつ景色が変わっていく</p>
+						<p>
+							見つけたいものは何<br>
+							見たいものは何<br>
+							抱えてる　好奇心<br>
+							かばんに詰め込んだら</p>
+						<p>
+							昨日の私より少しでも<br>
+							今日は輝いていたいよ<br>
+							踏み出したその一歩から<br>
+							風向きが変わる<br>
+							ばらまいたおはじきの中から<br>
+							好きな色が見つかるまで<br>
+							ゆっくりと探していこう<br>
+							いつか<br>
+							似合う色に逢える</p>
+						<p>
+							毎日がチョッと繰り返しで<br>
+							やるせない<br>
+							そんな日々に　気持ちが<br>
+							Over work<br>
+							心の奥チョッとリフォームを<br>
+							始めなくっちゃ<br>
+							光が差し込む間取りにしよう</p>
+						<p>
+							今何ができるんだろう<br>
+							何をしたいんだろう<br>
+							悩んだり　止まったり<br>
+							時間はかかるけど</p>
+						<p>
+							明日の私はもっとずっと<br>
+							自信を持って歩きたい<br>
+							涙と笑顔の間は<br>
+							自分で埋めてく<br>
+							はじけ飛んだビー玉の中に<br>
+							溶け込んでいる夢の色<br>
+							ゆっくり反射が変わって<br>
+							いつか<br>
+							私の色になる</p>
+						<p>
+							見つけたいものは何<br>
+							見たいものは何<br>
+							抱えてる　好奇心<br>
+							かばんに詰め込んだら</p>
+						<p>
+							昨日の私より少しでも<br>
+							今日は輝いていたいよ<br>
+							踏み出したその一歩から<br>
+							風向きが変わる<br>
+							ばらまいたおはじきの中から<br>
+							好きな色が見つかるまで<br>
+							ゆっくりと探していこう<br>
+							いつか似合う色に逢える</p>
+						<p>
+							明日の私はもっとずっと<br>
+							自信を持って歩きたい<br>
+							涙と笑顔の間は<br>
+							自分で埋めてく<br>
+							はじけ飛んだビー玉の中に<br>
+							溶け込んでいる夢の色<br>
+							ゆっくり反射が変わって<br>
+							いつか<br>
+							私の色になる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bbn-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

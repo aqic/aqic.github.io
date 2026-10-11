@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>授業中の小学校 - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">［らんま 1/2］DoCo＊SECONDイメージ・ソング(1994)</div>
+
+                    <div class="LyricTitle">授業中の小学校</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">らんま1/2　DoCo</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲・編曲：安田 毅<br>実演：らんま★林原めぐみ<br>あかね★日高のり子<br>シャンプー★佐久間レイ<br>なびき★高山みなま<br>かすみ★井上喜久子</div>
+
+                    <div class="LyricText">
+						<p>
+							（全員）授業中の 校庭には<br>
+							ちいさな子ども 遊ばせる母親<br>
+							幼い日の小学校<br>
+							あなたを連れていった</p>
+						<p>
+							（らんま）変わらない校舎と 縮んだ鉄棒<br>
+							赤いペンキの はげたシーソー<br>
+							（あかね）ねえここの花壇は わたしのクラスが<br>
+							卒業するとき作ったのよ</p>
+						<p>
+							（なびき）中学に進んで 不思議じゃなかった？<br>
+							ぶらんこ ひとつもないこと</p>
+						<p>
+							（全員）音楽室 風が運ぶ<br>
+							たて笛 音色 胸がきゆんとなった<br>
+							授業中の小学校<br>
+							サポツている気分ね</p>
+						<p>
+							（シャンプー）席替えをするたび ドキドキしていた<br>
+							なのに遠くの席を選んだ<br>
+							（かすみ）好きな男の子の 背中を見つめた<br>
+							今は顔さえ忘れたけど</p>
+						<p>
+							（あかね）いやね会釈してる 懐かし先生<br>
+							（あ・シ）「このひと わたしの彼です」</p>
+						<p>
+							（らんま）渡り廊下 横切ったら<br>
+							（かすみ）昔のままの 思い出の教室<br>
+							（なびき）知り合う前 過ごした場所<br>
+							（シャンプー）あなたに見せたかった</p>
+						<p>
+							（全員）ベルが鳴って 子どもたちが<br>
+							はしゃいで遊ぶ 日常の風景<br>
+							なぜかわたし 恥ずかしくて<br>
+							背中に隠れていた<br>
+							あなたに守られてた</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

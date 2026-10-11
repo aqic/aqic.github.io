@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Sweet Baby Love - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Sweet Baby Love</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							いつもあなたの背中見つめ　自分の恋誓っていたよ<br>
+							楽しいことも悲しいことも全部　あなたと感じてたい<br>
+							青い空も赤い夕日も　同じ景色　刻みたいから<br>
+							すれ違った日々も　幼すぎた　あの時間（とき）も　ムダにしないよ</p>
+						<p>
+							降りそそぐ風　Um～　私の想い届けて<br>
+							オレンジ色の　Um～　シュプールを待っていた<br>
+							優しい恋をしよう　whenever my love</p>
+						<p>
+							Sweet Sweet Baby Love<br>
+							迷わない　飾らない　pure lov'in you<br>
+							ほんのちょっぴり　あなたの手　触れてみたい　勇気　飲み込んでた<br>
+							Um～　このままずっと　あなたと甘い夢見て<br>
+							Sweet Sweet Baby Love<br>
+							素直じゃない　強くもない　それでも<br>
+							少しづつ　大人になってく<br>
+							一番の大好きな人の近くにいて</p>
+						<p>
+							繰り返してゆく毎日に　当然必然でも足りなくて<br>
+							憧れていた　あなたの世界　自分の居場所探してたよ<br>
+							信じているあなたの視線　追いかけていた<br>
+							困った顔　見たくないから　無理して背伸びしていたよネ</p>
+						<p>
+							昨日の雨が　Um～　まだどこかで聞こえるよ<br>
+							飛び越えたくて　Um～　雲の隙間に覗く　１すじの光に願ってる</p>
+						<p>
+							Sweet Sweet Baby Love<br>
+							受け止めて　傷ついた小さなハート<br>
+							側にいて欲しいから<br>
+							頑張れるチャンス　閉ざさないで<br>
+							Um～　輝きだすよ　あなたと新しい明日へ<br>
+							Sweet Sweet Baby Love<br>
+							何度でもあきらめない　まっすぐな恋<br>
+							振り向いて欲しいから<br>
+							自分らしく自分が変われる　その時まで</p>
+						<p>
+							Sweet Sweet Baby Love<br>
+							迷わない　飾らない　pure lov'in you<br>
+							ほんのちょっぴり　あなたの手　触れてみたい　勇気　飲み込んでた<br>
+							Um～　このままずっと　あなたと甘い夢見て<br>
+							Sweet Sweet Baby Love<br>
+							素直じゃない　強くもない　それでも<br>
+							少しづつ　大人になってく<br>
+							一番の大好きな人の近くにいて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Access - Leaf</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「To Heart」エンディング</div>
+
+                    <div class="LyricTitle">Access</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">SPY</div>
+                    <div class="LyricStaff">作詞：KAZUYO<br>作曲：長部正和<br>編曲：HIRO</div>
+
+                    <div class="LyricText">
+						<p>
+							この聲が聞こえたら...<br>
+							あなたの聲 Repeatして<br>
+							何度も聞きたくて<br>
+							心の中 saveして<br>
+							毎日奏でるよ<br>
+							Love and kiss</p>
+						<p>
+							時が過ぎで 初めて知ってよ<br>
+							遠い空で響く 永遠の想い</p>
+						<p>
+							＊この聲が聞こえたら<br>
+							　Accessして欲しい<br>
+							　電源は切らないで<br>
+							　いつもONにしてるよ<br>
+							　想い出に變えないで<br>
+							　終わりにできないよ<br>
+							　奇跡を一つ下さい<br>
+							　"あなたへとこの想い屆けて..."</p>
+						<p>
+							どうしたなの？<br>
+							あの時はどこが惡かったの？<br>
+							忘れられる 藥を探して<br>
+							見つからなくて惱んだ</p>
+						<p>
+							虹を見たね 約束をしたね<br>
+							指輪くれたよね<br>
+							抱きしめられ泣いた</p>
+						<p>
+							この聲が聞こえたら<br>
+							Accessして欲しい<br>
+							いつの日も この戀の<br>
+							ゥプレイを信じてる<br>
+							あなたに出逢うあめに<br>
+							私 生まれてきた<br>
+							奇跡を一つ下さい<br>
+							"あなたから私を消さないで..."</p>
+						<p>
+							＊repeat</p>
+						<p>
+							この聲が聞こえたら...<br>
+							この聲が聞こえたら...<br>
+							この聲が聞こえたら...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-leaf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

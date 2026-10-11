@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>A House Cat - 万能文化猫娘</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「万能文化猫娘 DASH」オープニングテーマ</div>
+
+                    <div class="LyricTitle">A House Cat</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							じゃれて甘えて<br>
+							拗ねて見せても<br>
+							そ知らぬそぶり<br>
+							you're just so cool</p>
+						<p>
+							いなくなったら<br>
+							騒ぎ出すのに<br>
+							平凡な日々<br>
+							あたりまえ</p>
+						<p>
+							愛してるとか<br>
+							恋してるとか<br>
+							言葉にするのは簡単</p>
+						<p>
+							そんなものより<br>
+							もっと大切<br>
+							ココにいること</p>
+						<p>
+							☆君に愛される<br>
+							　私になるために<br>
+							　今何をすればいいんだろう<br>
+							　頭使って<br>
+							　心使って<br>
+							　少し戸惑って<br>
+							　ゆっくりあなたに<br>
+							　近付く</p>
+						<p>
+							満月の夜<br>
+							喉をならして<br>
+							あなたを待つの<br>
+							I feel so hot</p>
+						<p>
+							ちょっと疲れた<br>
+							あなたのまぶた<br>
+							優しくキスを<br>
+							してあげる</p>
+						<p>
+							眠る横顔<br>
+							もう大丈夫<br>
+							頭をそっと抱きしめて</p>
+						<p>
+							目が覚めたとき<br>
+							少しでもいい<br>
+							元気になって</p>
+						<p>
+							★君を大好きな<br>
+							　私はここにいる<br>
+							　耳を立ててチャンスを待つの<br>
+							　言葉使って<br>
+							　体使って<br>
+							　タフにしなやかに<br>
+							　さらわれたい<br>
+							　心ごと</p>
+						<p>
+							☆繰り返し</p>
+						<p>
+							★繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bbn-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

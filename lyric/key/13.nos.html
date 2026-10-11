@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Nostalgia - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">AIR EXTRA THEME 2</div>
+
+                    <div class="LyricTitle">Nostalgia</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lia</div>
+                    <div class="LyricStaff">作詞：key<br>作曲：key<br>编曲：岡部亮</div>
+
+                    <div class="LyricText">
+						<p>
+							ひとりでも歩いてゆける<br>
+							ひとりでも壊れてる夢を見つけて<br>
+							僕は守るように　いつか触れていた<br>
+							希望を待つ　折れそうな指で</p>
+						<p>
+							僕は昨日を　君は明日を　目指して歩く<br>
+							また出会えた日には　頼りない僕を連れて歩いて欲しい</p>
+						<p>
+							ふたりでは叶わなかった<br>
+							ふたりでは多すぎた夢が零れた<br>
+							君は気づいてた　いつか訪れる<br>
+							別れの日を　新しい朝を</p>
+						<p>
+							僕は急いで　丘をのぼった　その背を追って<br>
+							もう届かない声　頼りない僕を残して消えた強さ</p>
+						<p>
+							僕は祈るように　いつか夢を見た<br>
+							ふたりを待つ　ありふれた朝を</p>
+						<p>
+							僕は昨日を　君は明日を　目指して歩く<br>
+							また出会えた日には　頼りない僕を連れて歩いて欲しい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

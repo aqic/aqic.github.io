@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Innocence - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Innocence</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">日高のり子</div>
+                    <div class="LyricStaff">作詞：山田ひろし<br>作曲／編曲：渡辺善太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							ほら、危ないよ<br>
+							僕に今 触れたなら　切れるから<br>
+							君はまだ<br>
+							僕よりも　強くない<br>
+							分かるよね</p>
+						<p>
+							青い炎が今　氷の中心(なか)で<br>
+							静かに燃えているよ<br>
+							Ah-　頬笑みを浮かべた<br>
+							少年がひとり<br>
+							遠くに見える</p>
+						<p>
+							風、 痛い雨、 叫び声、 切れた糸、 冬の空<br>
+							僕はなぜ　笑ってるの？<br>
+							分からない<br>
+							失くしたよ</p>
+						<p>
+							青い炎が今　氷の中心(なか)で<br>
+							静かに燃えているよ<br>
+							Ah-　たったひとつきりの<br>
+							答えを　僕は<br>
+							知っているから</p>
+						<p>
+							気をつけて</p>
+						<p>
+							君は弱いからね<br>
+							もうすぐ　僕が<br>
+							消してあげるよ　きっと</p>
+						<p>
+							Ah-　青い炎が今　氷の中心(なか)で<br>
+							静かに燃える</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

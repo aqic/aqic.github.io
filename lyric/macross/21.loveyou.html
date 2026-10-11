@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>もういちど Love You - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Macross2</div>
+
+                    <div class="LyricTitle">もういちど Love You</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">笠原弘子</div>
+
+                    <div class="LyricText">
+						<p>
+							もう戻ってこないの？<br>
+							温かなあの思い出は<br>
+							夢のかけら　指の隙間<br>
+							こぼれ落ちてゆくわ<br>
+							だけど今　だけどどこか遠く<br>
+							愛を感じる<br>
+							遠い夢　かすかな愛<br>
+							だけど　もういちどLove You</p>
+						<p>
+							崩れ落ちた幻<br>
+							きらめいたあの面影も<br>
+							風の歌に　振り向くけど<br>
+							過ぎた日々は消えて<br>
+							だけど今　だけど胸の奥に<br>
+							愛は流れる<br>
+							遠い空　遥かな時<br>
+							きっと　もういちどLove You</p>
+						<p>
+							Don't say never again<br>
+							繰り返すメロディの祈りは<br>
+							どんな遠くに離れていても届くから<br>
+							いつの日か　いつか遠い場所で<br>
+							愛を交わすの<br>
+							遠い夢　かすかな愛<br>
+							だけど　もういちどLove You<br>
+							いつの日か　いつか遠い場所で<br>
+							愛を交わすの<br>
+							遠い空　遥かな時<br>
+							越えて　もういちどDream again</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

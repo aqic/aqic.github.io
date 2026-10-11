@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>宇宙恋愛 （スペース・ファンタジー） - ダーティペア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ダーティペア」エンディング・テーマ (1985)</div>
+
+                    <div class="LyricTitle">宇宙恋愛 （スペース・ファンタジー）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中原めいこ</div>
+                    <div class="LyricStaff">作詞、作曲：中原めいこ<br>編曲：佐藤　準</div>
+
+                    <div class="LyricText">
+						<p>
+							{あの時　眠りのあとに<br>
+							起こった　ミステリー<br>
+							未来から来る声に<br>
+							導かれたのよ</p>
+						<p>
+							銀色はるかなタイムトンネル抜けて<br>
+							出会った澄んだ目のさまよい人</p>
+						<p>
+							※Space Fantasy<br>
+							　アナタに会いに　ここまで来たの<br>
+							　Space Fantasy<br>
+							　アナタに会いに　ここまで来たの</p>
+						<p>
+							例えばアナタが別の星の人でも<br>
+							私はかまわない　愛したなら</p>
+						<p>
+							Dirty, stormy destiny<br>
+							Dirty, stormy destiny<br>
+							恋は無重力…}</p>
+						<p>
+							アナタの言葉が<br>
+							体中でわかるわ<br>
+							砕けたガラスのような<br>
+							オーラでわかる</p>
+						<p>
+							青色　冷たい星の間を抜けて<br>
+							見つけた　なつかしい運命〈さだめ〉の人</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							Dirty, stormy destiny<br>
+							Dirty, stormy destiny<br>
+							Dirty, stormy destiny<br>
+							Dirty, stormy destiny<br>
+							恋は無重力…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dirtypair-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

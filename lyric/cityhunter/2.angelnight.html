@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Angel Night ～天使のいる場所～ - シティ・ハンター</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「シティ・ハンター」エンディング・テーマ</div>
+
+                    <div class="LyricTitle">Angel Night ～天使のいる場所～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Psy*s</div>
+                    <div class="LyricStaff">作詞：松尾由紀夫<br>作曲／編曲：松浦雅也</div>
+
+                    <div class="LyricText">
+						<p>
+							イルミネ－ション　真下に見下ろし<br>
+							夜を昇ってく　エスカレ－タ－<br>
+							凍りついた　ビルの谷間を<br>
+							ヘッドライトの　河が流れる</p>
+						<p>
+							最初に　好きになったのは声<br>
+							それから　背中と整えられた指先<br>
+							ときどき　黙りがちになるクセ<br>
+							どこかへ　行ってしまう心とメロディ</p>
+						<p>
+							Angel voice　名を呼んで　耳すます　echo<br>
+							Shining smile　風に散る　花びらと　kiss<br>
+							Angel voice　新しい　なつかしい　echo<br>
+							Shining smile　急がずに　ありのまま　kiss</p>
+						<p>
+							遠いサイレン　ささやきと響き<br>
+							天使が隠れた　ナイトブレイス<br>
+							夜明けまでわずか　リムジンのシ－ト<br>
+							ル－ムミラ－に　月を映して</p>
+						<p>
+							明日を約束しなくていい<br>
+							毎日逢うけど思いがけない笑顔で<br>
+							そしたら　少しこわくてもいい<br>
+							とりこに　なんてできないほど謎めいてね</p>
+						<p>
+							Angel voice　目をとじて　胸を抱く　echo<br>
+							Shining smile　痛いトゲ　痛くない　kiss<br>
+							Angel voice　かすれても　すぐ近く　echo<br>
+							Shining smile　何ひとつ　迷わない　kiss</p>
+						<p>
+							Angel voice　名を呼んで　耳すます　echo<br>
+							Shining smile　風に散る　花びらと　kiss<br>
+							Angel voice　新しい　なつかしい　echo<br>
+							Shining smile　急がずに　ありのまま　kiss</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-cityhunter-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>体温 - 最終兵器彼女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">体温</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">谷户由里亚</div>
+
+                    <div class="LyricText">
+						<p>
+							ねえ見えてますか 私はここにいるの<br>
+							ねえ聞こえますか 私は叫んでいるの</p>
+						<p>
+							どんなに火の温かさがあっても<br>
+							心の中はとても凍えているの</p>
+						<p>
+							人は誰かの体温があって<br>
+							生きてる気がするの</p>
+						<p>
+							誰かのぬくもりが欲しい<br>
+							愛をこめて抱きしめてください とても寒いの<br>
+							私を全部つつんでくれるなら<br>
+							痛んだ傷を癒してください</p>
+						<p>
+							ねえ感じますか 胸の痛みがあるの<br>
+							ねえわかりますか 涙がこぼれる理由を<br>
+							どんなにひとり空想に耽っても<br>
+							ふと気づくと誰かのことを思ってる</p>
+						<p>
+							やっぱり人の体温がなきゃ<br>
+							生きてる気がしない</p>
+						<p>
+							誰かのぬくもりが欲しい<br>
+							愛をこめて抱きしめてください<br>
+							夜は嫌いなの<br>
+							孤独なときはとても寂しいから<br>
+							隣にいて寄り添って欲しい</p>
+						<p>
+							誰かのぬくもりが欲しい<br>
+							愛をこめて抱きしめてください<br>
+							とても寒いの<br>
+							私を全部つつんでくれるなら<br>
+							痛んだ傷を癒してください</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saishuuheiki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

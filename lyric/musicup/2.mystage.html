@@ -1,0 +1,62 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>我的舞台 - </title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">我的舞台</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							HEY！<br>
+							我不愿意活的像个问号，东张西望找不到自己的跑道。<br>
+							现在我为梦想超速在奔跑，心在燃烧，来吧！<br>
+							唱出感觉HIGH出味道，YEAH——<br>
+							HEY！<br>
+							你再叹气就快变成一个问号，<br>
+							难道不想看大家都为你尖叫，<br>
+							其实你也会像明星一样酷、让人心跳，来吧！<br>
+							手舞足蹈别怕人笑，YEAH——<br>
+							我的舞台我自己建造，要让全世界感到，<br>
+							我的剧本我自己写好，相信自己永远是主角。<br>
+							我的魅力我自己知道（创造），出乎每个人意料，<br>
+							我的未来我自己照耀，每个明天把我拥抱。</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-musicup-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

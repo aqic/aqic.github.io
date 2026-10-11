@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Odyssey - ロードス島戦記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ロードス島戦記」キャラクターソング</div>
+
+                    <div class="LyricTitle">Odyssey</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">草尾 毅</div>
+                    <div class="LyricStaff">作詞：高柳 恋<br>作曲：鈴木キサブロー<br>編曲：萩田光男</div>
+
+                    <div class="LyricText">
+						<p>
+							大地はまだ霧に抱かれ<br>
+							朝陽さえ昇らない<br>
+							その中に耳を澄ませば<br>
+							聴こえる風の鼓動<br>
+							Just my only love</p>
+						<p>
+							遥か遠い地平の先に<br>
+							たった一輪　咲く花<br>
+							君に贈りたい</p>
+						<p>
+							※ Go West　ふたりは今　Odyssey<br>
+							　神話の時代に還り<br>
+							　Go West　哀しみなど捨てて<br>
+							　愛した者だけが見る夢の城へ<br>
+							　旅立とう　Far away</p>
+						<p>
+							流れ星が空を滑る<br>
+							1000 年の白夜へと<br>
+							異国の言葉で祈るよ<br>
+							涙を失くさないで<br>
+							Just my only love</p>
+						<p>
+							靴を脱いで干からびた河<br>
+							渡るその時<br>
+							唇　重ね合うだろう</p>
+						<p>
+							Go West　ふたりは今　Odyssey<br>
+							歴史が静かに変わる<br>
+							Go West　朝陽を握りしめ<br>
+							愛した者だけが見る夢の城へ<br>
+							旅立とう　Far away</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lodoss-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>魔法のぬくもり - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">魔女の宅急便</div>
+
+                    <div class="LyricTitle">魔法のぬくもり</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">井上 あずみ</div>
+                    <div class="LyricStaff">作詞：麻生 圭子<br>作曲・編曲：久石 譲</div>
+
+                    <div class="LyricText">
+						<p>
+							ひとつずつ窓辺から<br>
+							灯りが消える<br>
+							あなたのことを想うの</p>
+						<p>
+							頬づえをつきながら<br>
+							あふれる涙<br>
+							小指でそっとぬぐった</p>
+						<p>
+							一人じゃないよ<br>
+							いつでも見つめてる<br>
+							僕らの想い出は<br>
+							魔法のぬくもりさ</p>
+						<p>
+							しあわせな寂しさを<br>
+							かみしめながら<br>
+							大きな夢を捜す<br>
+							誰だってあやまちを<br>
+							繰り返しては<br>
+							大人になっていくのね</p>
+						<p>
+							流れ星、いいことが<br>
+							きっと明日（あした）は<br>
+							起こりそうな気がする</p>
+						<p>
+							君ならできるから<br>
+							ここから見つめてる<br>
+							信じる想い出は<br>
+							魔法のぬくもりさ</p>
+						<p>
+							やさしさに手を引かれ<br>
+							人は誰でも<br>
+							自分で夢ひらくの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

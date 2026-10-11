@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>彼 - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ＦＩＲＳＴイメージ・ソング（１９９２）</div>
+
+                    <div class="LyricTitle">彼</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ＤｏＣｏ</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲：川井憲次<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							（あかね）坂道のバス亭で彼は突然な雨に顔をしかめながら<br>
+							もっていた本を抱き締め立っていました<br>
+							私は彼の空色のシャツに<br>
+							水玉模様が増えて行くのが悲しくなって<br>
+							お気にいりの傘を半分<br>
+							彼のシャツと大切な本のために差し掛けたのです</p>
+						<p>
+							（なびき）夏休みにアルバイトでこの街にやって来た彼<br>
+							紅い糸の伝説を信じる用になったのは<br>
+							それから一週間の内に何度も彼に出会えたから<br>
+							始めてつないだ手がとても自然に思えたから<br>
+							そして会うたびに好きになって行くのが自分でも分かったから</p>
+						<p>
+							（かすみ）彼は小さな公園の金網のそばに<br>
+							そっと咲いているタンポポを見つけてくれる人<br>
+							真夏の星空に新しい星座を思い描く人<br>
+							そして私にとってとてもとても大切な人</p>
+						<p>
+							（らんま）だけど手伝って貰った宿題が片付くたびに<br>
+							だんだん夏休みが残り少なくなって<br>
+							彼に会えなくなる日が近付いて来ました<br>
+							大切な何かを失った時に<br>
+							一番近くにいて慰めて欲しい人が<br>
+							一番遠くなってしまうなんて悲しすぎる</p>
+						<p>
+							（シャンプー）愛してるって知らずにつぶやいて<br>
+							そんな眠れぬ夜が続いています<br>
+							明日もまたいつもの場所で会えますよね<br>
+							そういえば一度だって本気で好きだよって<br>
+							行って貰えなかったような気がします<br>
+							最後に君が好きだよって忘れないよって<br>
+							言ってくれるでしょうか彼は</p>
+						<p>
+							（あかね）彼を見送る 雨のバス停<br>
+							（かすみ）寄り添った （なびき）傘なのに<br>
+							（あ・な・か）頬が濡れそう</p>
+						<p>
+							（シャンプー）何て言ったの 聞こえない<br>
+							（らんま）くちびる動けば 「君が好きだよ」</p>
+						<p>
+							（あかね）忘れないでね 忘れないでね<br>
+							（なびき）ふたり出逢い 過ごした夏を</p>
+						<p>
+							（かすみ）遠く離れて 想い届けば<br>
+							（シャンプー）愛も続くって 信じてる<br>
+							悲しくない…</p>
+						<p>
+							（あかね）バスの窓は曇っていて<br>
+							彼が見えない…</p>
+						<p>
+							（全員）忘れないから 忘れないから<br>
+							恋も夢も 夜空の星も</p>
+						<p>
+							窓を拭って 見せる笑顔の<br>
+							彼がまぶしくて 目を閉じた<br>
+							泣きたくない</p>
+						<p>
+							（全員）忘れないでね 忘れないでね<br>
+							ふたり出逢い 過ごした夏を</p>
+						<p>
+							遠く離れて 想い届けば<br>
+							愛も続くって 信じてる<br>
+							悲しくない…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>SPIRIT - 地獄先生ぬ〜べ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">地獄先生ぬ～べ～エンディングテーマ曲</div>
+
+                    <div class="LyricTitle">SPIRIT</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">PAMELAH</div>
+                    <div class="LyricStaff">作詞：水原由貴<br>作曲：小澤正澄<br>編曲：小澤正澄</div>
+
+                    <div class="LyricText">
+						<p>
+							靴の底がすり減ってる<br>
+							まるで今のココロみたい</p>
+						<p>
+							他人と深く解かり合うって難しいと感じたよ<br>
+							うなずく事しかできない自分　嫌いになってる</p>
+						<p>
+							世の中には思い通りいかないことあるけれど<br>
+							落ち込むだけ落ち込んだら笑ってまた歩かなきゃ</p>
+						<p>
+							だけどゆずれない大切な物は守りとおしたい<br>
+							ユメ実現するための犠牲はもうヤダよ</p>
+						<p>
+							気持ちに嘘つくような事はやめて<br>
+							YESのイイコは卒業しよう<br>
+							そうすればきっと自分のことをスキになれるはずだよ<br>
+							強気でいこう</p>
+						<p>
+							一目惚れで恋におちた彼とは２年たったけど<br>
+							ドアを閉めた音でわかる　もうだめだね私達</p>
+						<p>
+							誰かと私の間を行ったり来たりしてると<br>
+							気づいていたけど　ひとりになるの怖かった</p>
+						<p>
+							魂を売るようなことはやめて<br>
+							都合のイイコは卒業しよう<br>
+							迷いのある人生だっていいよ<br>
+							どんな悩みだって超えてみせる</p>
+						<p>
+							嫌われたくない想いが自由の羽根　踏みつけた<br>
+							飛べないまま終わりたくない　想いのまま生きていたい</p>
+						<p>
+							気持ちに嘘つくような事はやめて<br>
+							YESのイイコは卒業しよう<br>
+							そうすればきっと自分のことをスキになれるはずだよ<br>
+							強気でいこう</p>
+						<p>
+							迷いのある人生だっていいよ<br>
+							どんな悩みだって超えてみせる</p>
+						<p>
+							たったひとつしかない自分　スキになろう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-nube-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

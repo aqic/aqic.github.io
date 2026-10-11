@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Get Over - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Get Over</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">dream</div>
+                    <div class="LyricStaff">作詞：松室麻衣<br>作曲：BOUNCEBACK<br>編曲：矢崎俊輔、中尾昌文</div>
+
+                    <div class="LyricText">
+						<p>
+							君が今僕を支えて　僕が今君を支える<br>
+							だから迷いながらも共に生きていこうよ　未来へと</p>
+						<p>
+							仲間と戯れ　それなりで居ても<br>
+							もの足りなさを感じてしまう<br>
+							冷めた目で見られて　乾いた時代の風に吹かれている</p>
+						<p>
+							諦めきれるモノならば　最初から興味持たない<br>
+							忘れられるモノなら　必要さも感じないから<br>
+							不安な心と勇気が背中合わせになっている<br>
+							だけど今なら夢をこの手で叶えてみせるよ</p>
+						<p>
+							傷ついて壊れそうな日も　涙して困らせる日もあるけれど<br>
+							僕達はそれを超えていくんだ　誰より上を目指して</p>
+						<p>
+							楽しいことだけ　選んで生きても<br>
+							その先には何も見えなくて<br>
+							だからどんな事も　現実から逃げないで受け止めるよ</p>
+						<p>
+							大事なモノがあるならば　守り抜いてみせるから<br>
+							失くしたくないモノに　自分の全てを懸けるよ<br>
+							器用じゃないから時に傷つけ　傷ついていく<br>
+							だけど今なら少し自信をもって歩けるよ</p>
+						<p>
+							孤独だと感じる日でも　惨めだと感じる日さえあるけれど<br>
+							僕達はきっと一人じゃないと思うよ　君がいる</p>
+						<p>
+							なぜ人は時に過ちを…　後悔をしてもしきれず…<br>
+							なぜ人はいつも　それでもと超えていこうとする？</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

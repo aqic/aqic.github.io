@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>November Rain - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">【11月】</div>
+
+                    <div class="LyricTitle">November Rain</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">らんま</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲：川井憲次<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							(あかね)乱馬の…バカっ…。<br>
+							(乱馬)あ…あかね…。</p>
+						<p>
+							街中が涙さ<br>
+							頬をつたう雨に<br>
+							滲むおまえ</p>
+						<p>
+							転がったアンブレラ<br>
+							差しかけるひとも<br>
+							いないから</p>
+						<p>
+							そう　素直じゃないって<br>
+							わかってても<br>
+							言葉に出せやしないのさ</p>
+						<p>
+							Tender Rain<br>
+							寒さで凍えそうな雨でも<br>
+							心より暖かい　November Rain<br>
+							涙　消え去るまで　止まないで</p>
+						<p>
+							アスファルトはじいた<br>
+							雨の街はとても<br>
+							悲しげだね</p>
+						<p>
+							坂道で拾った<br>
+							びしょ濡れの仔犬<br>
+							抱きしめて</p>
+						<p>
+							そう　悪かったよって<br>
+							男らしく言えれば<br>
+							笑顔　見れたのに</p>
+						<p>
+							Tender Rain<br>
+							勇気が少し足りないだけで<br>
+							おまえまで傷つけた　November Rain<br>
+							すべて洗い流せ　悲しみを</p>
+						<p>
+							ああ　やさしくできない<br>
+							赤い糸が<br>
+							ほつれたままで歩いてる</p>
+						<p>
+							Tender Rain<br>
+							寒さで凍えそうな雨でも<br>
+							心より暖かい　November Rain<br>
+							涙　消え去るまで　止まないで<br>
+							Rain…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

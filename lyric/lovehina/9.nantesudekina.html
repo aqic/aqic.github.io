@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>なんてステキな - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">なんてステキな</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">雪乃五月</div>
+                    <div class="LyricStaff">作詞:冈崎律子<br>作曲:冈崎律子<br>編曲:光宗信吉</div>
+
+                    <div class="LyricText">
+						<p>
+							外は青空　陽の射す道歩けば<br>
+							それだけで　もう　嬉しくなる</p>
+						<p>
+							逢いに行きましょ　今すぐ　ほら！急いで<br>
+							次の角で迷わぬように</p>
+						<p>
+							it’s a lovely day！ *<br>
+							どんなに遠くたって平気<br>
+							いつも君が胸の片すみ笑いかけてる<br>
+							it’s so lovely day!<br>
+							誰もいつか謎を解くのね<br>
+							それはそれは　なんてステキなことだと思うの</p>
+						<p>
+							君がいた夏　日なたと風の匂い<br>
+							目を閉じれば　すぐに逢える</p>
+						<p>
+							声をかけてね　もしもさみしい時は<br>
+							楽しくなる術を知ってる</p>
+						<p>
+							it’s a lovely day！ (*)Repeat 2 times<br>
+							どんなに遠くたって平気<br>
+							だって君が胸の片すみ笑いかけてる<br>
+							It’s so lovely day！<br>
+							誰もいつか謎を解いていく<br>
+							それはそれは　なんてステキなことだと思うの</p>
+						<p>
+							it’s a lovely day！<br>
+							どんなに遠くたって平気<br>
+							だって君が胸の片すみ笑いかけてる<br>
+							it’s so lovely day！<br>
+							誰もいつか謎を解くのよ<br>
+							それはそれは　なんてステキなことだと思うの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

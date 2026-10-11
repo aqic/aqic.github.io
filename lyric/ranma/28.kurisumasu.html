@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>清く正しいクリスマス - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">［らんま 1/2］DoCo＊SECONDイメージ・ソング(1994)</div>
+
+                    <div class="LyricTitle">清く正しいクリスマス</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">らんま1/2　DoCo</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲・編曲：安田 毅<br>編曲：川井憲次<br>実演：らんま★林原めぐみ<br>あかね★日高のり子<br>シャンプー★佐久間レイ<br>なびき★高山みなま<br>かすみ★井上喜久子</div>
+
+                    <div class="LyricText">
+						<p>
+							（全員）サンタを信じていた 子供で過ごすイヴは<br>
+							パパとママの愛にも 気づかないで<br>
+							はしゃいだプレゼント</p>
+						<p>
+							（かすみ）友だちに聞かされた あれはパパのいたずら<br>
+							（らんま）夢がひとつ消えては 大人になる<br>
+							（全員）ためいきクリスマス</p>
+						<p>
+							（あかね）ねえ今夜あなたは どんな素敵な夢で<br>
+							（シャンプー）薔薇色の未来に 誘ってくれるの？</p>
+						<p>
+							※（ら・な・か）雪のように （あ・シ）素直な<br>
+							（ら・な・か）汚れのない （あ・シ）わたしを<br>
+							（ら・な・か）見せたくなる （全員）あなたの前では</p>
+						<p>
+							（なびき）疑うこと （あ・シ）知らない<br>
+							（なびき）幼い日の （あ・シ）わたしに<br>
+							（なびき）戻れそうな （全員）そんなひとだから<br>
+							（全員）I believe you</p>
+						<p>
+							（シャンプー）自転車を押しながら あなたの家訪ねた<br>
+							（あかね）パパとママにないしょの イヴの夜は<br>
+							（あ・シ）初めてなの</p>
+						<p>
+							（らんま）手編みのマフラーを 袋から取り出して<br>
+							（なびき）お部屋で首に巻き 笑顔のお返し</p>
+						<p>
+							（ら・な・か）やさしいから （あ・シ） 好きなの<br>
+							（ら・な・か）いつもそばに （あ・シ） いたいの<br>
+							（かすみ）あなたの着る パジャマになりたい</p>
+						<p>
+							（ら・な・か）窓の外は （あ・シ）粉雪<br>
+							（ら・な・か）肩寄せ合い （あ・シ）見てたら<br>
+							（ら・な・か）自分のこと （全員）正しく思えて<br>
+							（全員）うれしい</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

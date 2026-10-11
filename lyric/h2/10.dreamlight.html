@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夢のありかへ連れていって - H2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Ｈ２ ORIGINAL SOUND TRACK</div>
+
+                    <div class="LyricTitle">夢のありかへ連れていって</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">鈴木 真仁</div>
+                    <div class="LyricStaff">作詞：藤林 聖子<br>作曲：上畑 正和<br>編曲：ジョー リノイエ</div>
+
+                    <div class="LyricText">
+						<p>
+							目覚めはすがすがしい<br>
+							ソーダを透かしたみたいで<br>
+							寝起きの子猫みたい<br>
+							背中をうーんと伸ばした</p>
+						<p>
+							どんな夢を見たか　まるで覚えてない<br>
+							現実が夢みたいで</p>
+						<p>
+							Go Go Going Step into the Sunshine！<br>
+							いざ、ちからこぶな日々<br>
+							Go Go Going Step into the Sunshine！<br>
+							ほら、風の声がする<br>
+							光る　砂の　一粒を　そっと　探し出す<br>
+							つたない手を　繋ぐように<br>
+							夢のありかへ　連れていって…  陽射しに微笑んでる<br>
+							横顔　不意につかまえて<br>
+							おんなじ太陽見て<br>
+							笑える今が大好き</p>
+						<p>
+							きっと私だけじゃ　叶えられないから<br>
+							ここにいて　見ていたいの</p>
+						<p>
+							Go Go Going Step into the Sunshine！<br>
+							いざ、ちからこぶな日々<br>
+							Go Go Going Step into the Sunshine！<br>
+							まだ、坂道の途中<br>
+							光る　ガラスの欠片の　一瞬みたいな<br>
+							まぶしいほど　輝き出す<br>
+							夢のありかへ　連れていって…</p>
+						<p>
+							どんな夢を見たか　まるで覚えてない<br>
+							現実が夢みたいで</p>
+						<p>
+							Go Go Going Step into the Sunshine！<br>
+							いざ、ちからこぶな日々<br>
+							Go Go Going Step into the Sunshine！<br>
+							ほら、風の声がする<br>
+							光る　砂の　一粒を　そっと　探し出す<br>
+							つたない手を　繋ぐように<br>
+							夢のありかへ　連れていって…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-h2-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>サヨナラ（日中対訳） - 最終兵器彼女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">TBSアニメ「最終兵器彼女」エンディングテーマ</div>
+
+                    <div class="LyricTitle">サヨナラ（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">谷戸由李亜</div>
+                    <div class="LyricStaff">作詞：谷戸　ゆりあ<br>作曲：谷戸　ゆりあ<br>編曲：見良津　健雄</div>
+
+                    <div class="LyricText">
+						<p>
+							{私の心にすき間があいた<br>
+							ねむれぬ夜　ためいきばかり<br>
+							気づかぬうちに　朝になってた</p>
+						<p>
+							あなたの声が聞きたくて<br>
+							ぬくもりふれたくて<br>
+							あなたへの思い　こみあげてくる<br>
+							涙あふれる</p>
+						<p>
+							サヨナラ　愛しい人<br>
+							まだ忘れられない　あなたの事<br>
+							サヨナラの一言で終わってしまうなんて…かなしいよ}</p>
+						<p>
+							不安な時には　あなたがいて<br>
+							優しく手を　にぎってくれた<br>
+							私を全部　包んでくれた</p>
+						<p>
+							出会ったころに戻れたなら<br>
+							何度も何度も思い<br>
+							楽しかった日々が今じゃ切ない<br>
+							Don't let me alone</p>
+						<p>
+							サヨナラ　愛しい人<br>
+							まだ終わらせたくない　この恋を<br>
+							サヨナラの一言がこの世に<br>
+							なくなってしまえばいいのに</p>
+						<p>
+							サヨナラ　愛しい人<br>
+							まだ忘れられない　あなたの事<br>
+							サヨナラの一言で終わってしまうなんて…かなしいよ</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							我的心里开了个缺口<br>
+							在失眠的夜晚里,我只是在一直叹着气<br>
+							在不知不觉中,却早己天明<br>
+							我想听听你的声音<br>
+							而己想被你给暖暖地抚摸<br>
+							把对你的思念,都传达给你<br>
+							泪水自己溢出来了........<br>
+							再会了,心爱的人...<br>
+							我不会再忘了你的一切<br>
+							只有一句再见就结束的话<br>
+							那实在是太悲哀了</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saishuuheiki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

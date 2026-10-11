@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Stand up! - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Stand up!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">鈴木真仁</div>
+
+                    <div class="LyricText">
+						<p>
+							ポケットから溢れそうだね<br>
+							抱きしめてる夢はダイヤモンド<br>
+							気持ちばかり　空回りして<br>
+							どこか違う　わかるけど<br>
+							流行りの店　ル—ズな会話<br>
+							自由の意味　間違えないで<br>
+							楽しいこと　流されてても<br>
+							大事なもの　見えないよ</p>
+						<p>
+							迷路の真ん中　憧れは遠いけど<br>
+							Visionを変えたら　明日に会えるよ</p>
+						<p>
+							Stand up and be Yourself<br>
+							夢をつかむなら<br>
+							Stand up!　今すぐ本気出さなきゃ<br>
+							Stand up!　チャンスはよそ見していたら<br>
+							逃げて行くから<br>
+							少しくらいの涙の跡は<br>
+							ピカピカの勲章に変えて<br>
+							あきらめない気持ちがいつかは<br>
+							奇跡を呼ぶよ　Taking on a chance</p>
+						<p>
+							グラビアから飛び出たみたい<br>
+							誰かの服　誰かのメイク<br>
+							自分の色　探したいけど<br>
+							変われないね　いつだって<br>
+							クロゼットの中にしまった<br>
+							泣きたいほど素直な気持ち<br>
+							好きなものを　好きといえたら<br>
+							きっと生まれ変われるよ</p>
+						<p>
+							飾らないままの　きらきらしてる笑顔<br>
+							そんな笑い方　出来たらいいよね</p>
+						<p>
+							Wake up and be your smile<br>
+							素敵になるなら<br>
+							Wake up!　自分に自信もたなきゃ<br>
+							Wake up!　ライバルは誰でもなくて<br>
+							昨日の私<br>
+							恋をしたり　たまには泣いたり<br>
+							每日のハ—ドルを越えて<br>
+							頑張ってる視線が本当の<br>
+							宝物だね　Looking for the dream</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

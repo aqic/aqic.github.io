@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>春色フォトグラフ - 魔法のステージ ファンシーララ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">春色フォトグラフ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">草地章江</div>
+
+                    <div class="LyricText">
+						<p>
+							でも 好きよ 好きよ 好きよ<br>
+							隱した氣持ち つぶやいた 風の中で<br>
+							ああ 走る笑うあなた見つめているの<br>
+							春色フォトグラフ</p>
+						<p>
+							テレてる二人 レンズで追った<br>
+							指先 少し震えた<br>
+							はしゃぎ過ぎてる理由に<br>
+							あなたは 氣づきさえしない<br>
+							でも ずっと ずっと ずっと<br>
+							そばにいたくて どうしても會いたくって<br>
+							ああ 淚 落ちないように 笑ってみせた<br>
+							一人のフォトグラフ</p>
+						<p>
+							友達だから應援してる<br>
+							半分 ごめん噓だよ<br>
+							歸る二人に手を振った空<br>
+							セピアににじんだ<br>
+							ねぇ 好きよ 好きよ 好きよ<br>
+							言えない氣持ち 思い出に變わる日まで<br>
+							ああ そっと机の隅しまった寫眞<br>
+							切ない寶物<br>
+							でも 好きよ 好きよ 好きよ<br>
+							隱した氣持ち つぶやいた 風の中で<br>
+							ああ 走る笑うあなた見つめているの<br>
+							春色フォトグラフ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fancylala-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

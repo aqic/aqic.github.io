@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>花咲く乙女 - サクラ大戦</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「サクラ大戦」エンディングテーマ</div>
+
+                    <div class="LyricTitle">花咲く乙女</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">帝国歌劇団</div>
+                    <div class="LyricStaff">作詞：広井王子<br>作曲：田中公平<br>編曲：根岸貴幸</div>
+
+                    <div class="LyricText">
+						<p>
+							あの頃のこと　胸の中に<br>
+							思い出が　くるくると回る</p>
+						<p>
+							舞台の　幕が開き<br>
+							涙を　歌にかえ<br>
+							煌く笑顔で　希望(あした)さえ魅せる<br>
+							輝く　ライトあびて</p>
+						<p>
+							花咲く　乙女たち<br>
+							過去(きのう)は　捨てたけど<br>
+							凛々しい姿を　七色に映し<br>
+							夢を見るわ　いつも愛の夢</p>
+						<p>
+							※熱い　想い　この身を焦がし<br>
+							　たとえ　あした　命尽きても<br>
+							　歌い　踊り　舞台に駆けて<br>
+							　君に　とどけ　今宵高鳴る　その名</p>
+						<p>
+							花咲く　乙女たち<br>
+							未来を　抱きしめて<br>
+							麗し美空に　金色の世界<br>
+							夢を見るわ　いつも愛の夢</p>
+						<p>
+							※(2回繰り返し)</p>
+						<p>
+							……帝国歌劇団<br>
+							歌い　踊り　舞台が跳ねて<br>
+							君に　とどけ<br>
+							今宵高鳴る　その名……</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sakurawars-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

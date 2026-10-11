@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>tomorrow - フルメタル・パニック!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">フルメタル・パニック</div>
+
+                    <div class="LyricTitle">tomorrow</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">下川みくに</div>
+                    <div class="LyricStaff">作詞・作曲：下川みくに<br>編曲：ab:fly/中山信彦</div>
+
+                    <div class="LyricText">
+						<p>
+							二人で逃げ場所探して<br>
+							走った天気雨の中</p>
+						<p>
+							たとえば何かを失うとしても<br>
+							守って行かなきゃ<br>
+							ひとつだけは</p>
+						<p>
+							この世界に生まれたその意味を<br>
+							君と見つけに行こう<br>
+							痛みさえも 抱えながら<br>
+							新しい景色<br>
+							迎えに行こう</p>
+						<p>
+							夕陽にかざした指先<br>
+							オレンジ映したプリズム</p>
+						<p>
+							自分のすべてを許せるくらいに<br>
+							優しくなりたい<br>
+							君のために</p>
+						<p>
+							この世界にあふれる光だけ<br>
+							両手のなか集めて<br>
+							暗闇さえも 照らし出すよ<br>
+							長く続く道<br>
+							迷わないように</p>
+						<p>
+							この世界に生まれたその意味を<br>
+							君と見つけに行こう<br>
+							痛みさえも 抱えながら<br>
+							新しい景色<br>
+							もっと遠くまで<br>
+							迎えに行こう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fullmetal-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

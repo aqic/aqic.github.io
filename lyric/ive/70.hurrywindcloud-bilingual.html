@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>疾風雲（日中対訳） - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">hitorigoto</div>
+
+                    <div class="LyricTitle">疾風雲（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：KOTOKO</div>
+
+                    <div class="LyricText">
+						<p>
+							本当は憧れていたんだ<br>
+							あの幼い思い<br>
+							いつの間に枯れてしまったのだろう<br>
+							もう忘れてた</p>
+						<p>
+							不幸になる日も<br>
+							ほんの少しの努力で救われる時があると解かった<br>
+							少し切なくて涙がぽろり落ちた</p>
+						<p>
+							明日はまた、雨が降るかな<br>
+							そしてまた、晴れるのかな<br>
+							低い雲が流れてくよ<br>
+							長い迷い連れ去るよに<br>
+							ほら…</p>
+						<p>
+							どうせまた同じ事だから、やらない方がマシ<br>
+							いつからかそんな言い訳が上手くなっていた</p>
+						<p>
+							手を取り合っても<br>
+							傷つけ合う時がいつか来ると恐れ<br>
+							何も出来ずに、ただ箱の中で震えてるのは誰？</p>
+						<p>
+							確かに今、雨は止まない<br>
+							水溜りよけられない<br>
+							だけど雲は流れてくよ<br>
+							黒い迷い連れ去るよに<br>
+							ほら…</p>
+						<p>
+							明日はまた、雨が降るかな<br>
+							そしてまた、晴れるのかな<br>
+							低い雲が流れてくよ<br>
+							長い迷い連れ去るよに<br>
+							ほら…</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							那是一段不折不扣的爱恋<br>
+							那是萌发在年幼时分的思念<br>
+							不知何时枯萎凋谢<br>
+							不知何时被时光埋湮</p>
+						<p>
+							在不幸勾画的日子里<br>
+							再小小地努力一次便可能被救赎<br>
+							我也明白<br>
+							可稍稍经历痛苦，眼泪便禁不住地坠落</p>
+						<p>
+							明日许还是雨天吧<br>
+							随后也自会雨过天晴吧<br>
+							轻回低转的流云<br>
+							牵走悠长的迷惘<br>
+							看哪...</p>
+						<p>
+							轻看上演的司空见惯，袖手徒劳的拼搏奋战<br>
+							何时起这样的准则在嘴边顺滑地游走</p>
+						<p>
+							虽然我们手牵着手<br>
+							心中却畏惧彼此伤害的来临<br>
+							无法做任何事，只会躲在车厢里发抖的又是谁?</p>
+						<p>
+							确实大雨仍未能止<br>
+							确实避不开无处不在的水洼<br>
+							可流云从不停止脚步<br>
+							终将裹走黑暗的迷雾<br>
+							看哪...</p>
+						<p>
+							明日许还是雨天吧<br>
+							随后自会雨过天晴吧<br>
+							轻回低转的流云啊<br>
+							牵走悠长的迷惘<br>
+							你抬头看吧....</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

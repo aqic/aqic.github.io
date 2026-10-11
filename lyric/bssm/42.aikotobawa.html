@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>合いコトバはムーン・プリズムパワー・メイクアップ - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">美少女戦士セーラームーン～愛はどこにあるの？～</div>
+
+                    <div class="LyricTitle">合いコトバはムーン・プリズムパワー・メイクアップ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">三石琴乃</div>
+                    <div class="LyricStaff">作詞/武内直子<br>作曲・編曲/さとうかずお</div>
+
+                    <div class="LyricText">
+						<p>
+							めざましジリジリ　おきておきて　まだまだねむいの　パパママ　パジャマよ<br>
+							タイムリミット　たいへん大ちこく<br>
+							どうしよう　きっとかんかんだわ　こんな泣きベソ　デートにゆけない<br>
+							だいじょうぶ　あわてないで　ルナがささやく<br>
+							－おしえてあげる　とびっきりのじゅもん<br>
+							２秒まって　７秒息をすって　キレイになれる　お・ま・じ・な・い<br>
+							ムーン・プリズム・パワー・メイクアップ！<br>
+							神秘の合コトバで　だれだって　すってきな　セーギの味方よ</p>
+						<p>
+							バス停イライラ　こないこない　こんな渋滞　いーかげんにして<br>
+							街はどしゃぶり　ドレスはドロだらけ<br>
+							パトカーのサイレン　ちょっと心配　わたし　いつだって　あなたでいっぱい<br>
+							だいじょうぶ　あわてないで　ルナがついてる<br>
+							－おしえてあげる　とびっきりのじゅもん<br>
+							５秒まって　１０秒息をすって　つよくなれる　お・ま・じ・な・い<br>
+							ムーン・プリズム・パワー・メイクアップ！<br>
+							神秘の合コトバで　だれだって　カッコイイ　セーギの味方よ<br>
+							－世界一だいスキなあなた　いますぐたすけにゆくわよ　まってて！<br>
+							－世界一だいスキなあなた　いますぐたすけにゆくわよ　まってて！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

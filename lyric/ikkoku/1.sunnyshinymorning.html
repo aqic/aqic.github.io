@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>サニーシャイニーモーニング - めぞん一刻</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「めぞん一刻」オープニング・テーマ (1987)</div>
+
+                    <div class="LyricTitle">サニーシャイニーモーニング</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">松尾清憲</div>
+                    <div class="LyricStaff">作詞：湯川れい子<br>作曲：松尾清憲<br>編曲：白井良明</div>
+
+                    <div class="LyricText">
+						<p>
+							★もうすぐそこまで<br>
+							　The Sunny Shiny Morning<br>
+							　次の朝が<br>
+							　吸殻だらけの<br>
+							　汚れた部屋<br>
+							　のぞくだろう</p>
+						<p>
+							Tell me why<br>
+							マリア様<br>
+							優しさに飢えてる<br>
+							Tell me why<br>
+							どうしていつも　ロンリネス<br>
+							夜は長い</p>
+						<p>
+							ジーンズの膝を<br>
+							砕けた夢<br>
+							蒼く濡らす<br>
+							ブラウスの胸が<br>
+							眩しすぎる<br>
+							君が好きさ</p>
+						<p>
+							シャワーのかわりに<br>
+							雨の都会〈まち〉を<br>
+							さまようのさ<br>
+							人間やめたい<br>
+							時さえあるけど<br>
+							やめられない</p>
+						<p>
+							Show me how<br>
+							男なら<br>
+							いさぎよく生きなよ<br>
+							Show me how<br>
+							一度きりの愛<br>
+							そっと抱いて</p>
+						<p>
+							Hush Baby. ウ…ウ…<br>
+							泣かないでSleep Tight<br>
+							淋しさを<br>
+							燃やしてくれ<br>
+							Oh! My Burning Heart</p>
+						<p>
+							Can't you see<br>
+							ささくれた<br>
+							想い出が<br>
+							痛いよ<br>
+							Can't you see<br>
+							涙どれくらい<br>
+							堪えればいい</p>
+						<p>
+							いつかビルの街<br>
+							不思議草　咲かせて<br>
+							Show me how<br>
+							折れそうな君を<br>
+							抱いてあげる</p>
+						<p>
+							★繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ikkoku-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

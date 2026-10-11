@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Tiny days - おねがい☆ティーチャー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「森野 苺」イメージソング</div>
+
+                    <div class="LyricTitle">Tiny days</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川田まみ</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：高瀬一矢<br>編曲：高瀬一矢<br>Guitar：wata</div>
+
+                    <div class="LyricText">
+						<p>
+							くぐもる声　乾いた吐息<br>
+							ねぇ　君には聞こえる？<br>
+							風と立つ丘で見おろせば<br>
+							他愛もないことなど<br>
+							教えたってキリがない<br>
+							それが　どんなに大切だって<br>
+							愛おしく思えても<br>
+							tiny days</p>
+						<p>
+							※<br>
+							君と見てた普通の毎日が<br>
+							虹をかけ　輝き出した<br>
+							止まらないと　決めた日から<br>
+							大地抱くように両手広げ<br>
+							翼など無いけど僕ら　はばたくはずさ<br>
+							空へ</p>
+						<p>
+							雨降る日は傘などいらない<br>
+							同じ雨にうたれ<br>
+							坂道転がる空き缶に<br>
+							我を忘れ走った遠い日々の思い映して<br>
+							大人に憧れても　思い通りに行かない<br>
+							tiny days</p>
+						<p>
+							君と歩く細く上り坂は<br>
+							遠くまで　まだ遠くまで<br>
+							色を変えて　続いてゆく<br>
+							握りしめた君の小さな手を離さない<br>
+							昨日へは　もう　戻れないから<br>
+							笑って</p>
+						<p>
+							※ repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onegai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

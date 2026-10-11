@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Fortune smiled on you - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ああっ女神さまっ」</div>
+
+                    <div class="LyricTitle">Fortune smiled on you</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">冬馬由美</div>
+
+                    <div class="LyricText">
+						<p>
+							Fortune smiled on you<br>
+							Goddess close to you</p>
+						<p>
+							遥か時の彼方　地球を見つめ<br>
+							幾億の過去が　今も流れてく</p>
+						<p>
+							愛を見つけられず　うずくまった<br>
+							孤独な心が　涙流してる</p>
+						<p>
+							今夜だけは特別よ　女神の微笑み<br>
+							戸惑うyour heart<br>
+							月にかざし　宇宙に放つ</p>
+						<p>
+							Fortune smiled on you<br>
+							信じなさい　流星に願いをかけて<br>
+							Goddess close to you<br>
+							あなただけ　真実の勇気をあげる</p>
+						<p>
+							記憶の底　眠る遠い夢は<br>
+							幼い瞳に　静かに息づく</p>
+						<p>
+							闇に溶ける明日を　呼びさませば<br>
+							別れもいつしか　出逢いを導く</p>
+						<p>
+							今夜だけは特別よ　女神のくちづけ<br>
+							震えるyour heart<br>
+							月に映し　宇宙に導く</p>
+						<p>
+							Fortune smiled on you<br>
+							信じなさい　きらめく星を抱いて<br>
+							Goddess close to you<br>
+							あなたにだけ　素敵なチャンスをあげる</p>
+						<p>
+							Goddess smiled on you<br>
+							見つめなさい　心の迷いを捨てて<br>
+							Goddess with for you<br>
+							溢れる夢　私が叶えてあげる</p>
+						<p>
+							Spread it's wing<br>
+							風をきって　走るペガサスのひかり<br>
+							Lightning in the sky<br>
+							白い翼　瞬く星よりはやく</p>
+						<p>
+							Run to a starry sky<br>
+							光る銀河　さざめく星を飛び越え<br>
+							Whole night in the space<br>
+							踊りなさい　輝く星より熱く</p>
+						<p>
+							Can't undo the past<br>
+							急ぎなさい　過ぎた時間は戻らない<br>
+							Future look at you<br>
+							目覚めなさい　未来を見つける為に</p>
+						<p>
+							Fortune smiled on you<br>
+							信じなさい　流星に願いをかけて<br>
+							Goddess close to you<br>
+							あなただけ　真実の勇気をあげる</p>
+						<p>
+							Fortune smiled on you</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

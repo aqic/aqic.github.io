@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>雨の中のワンボーイ - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book ２ タッチ Music Flavor ４</div>
+
+                    <div class="LyricTitle">雨の中のワンボーイ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">浅倉 亜季</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：Light house project</div>
+
+                    <div class="LyricText">
+						<p>
+							One Boy 動き出す<br>
+							列車のガラス窓<br>
+							重ねた指が　離れたね</p>
+						<p>
+							One Boy 雨の中<br>
+							「転校するよ...」って<br>
+							言いに来てくれた　夜の街</p>
+						<p>
+							好きだったこと<br>
+							ねぇ　最後まで　二人とも<br>
+							打ち明けることさえ<br>
+							できないまま　さよならが来たのね<br>
+							wow wow wow wow</p>
+						<p>
+							右手　そっと<br>
+							私に差し出して<br>
+							「淋しくなる...」とつぶやいた  One Boy 想い出の<br>
+							傘から　はみ出した<br>
+							心がふたつ　泣いてるね</p>
+						<p>
+							好きなひと　もう<br>
+							できたかしらと　聞くたびに<br>
+							フォトグラフから　何故<br>
+							ねぇ　そんなに哀しい瞳をするの<br>
+							wow wow wow wow</p>
+						<p>
+							雨が降ると<br>
+							テラスに　出てみるの<br>
+							あなたが濡れて　いないかと...<br>
+							Oh My Sweet One Boy<br>
+							Oh My Sweet One Boy</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

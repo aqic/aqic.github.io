@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>１７７～雨は似合わない - 陽あたり良好!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">１７７～雨は似合わない</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">夢工場</div>
+                    <div class="LyricStaff">作詞：高柳 恋<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							見つめてくれ　涙ふいて<br>
+							君が触れる　寂しさ<br>
+							僕の部屋に置いてけばいい<br>
+							捨てておくから</p>
+						<p>
+							明日の天気予報<br>
+							ダイヤル廻せば</p>
+						<p>
+							南風が吹く　少し強く<br>
+							君に雨は似合わないさ<br>
+							いつでも無邪気に笑っていて<br>
+							my baby<br>
+							守ってあげるから　my girl<br>
+							 もしも君が　孤独の夜<br>
+							凍えていても</p>
+						<p>
+							構わずこの部屋へ<br>
+							ダイヤル廻せば</p>
+						<p>
+							南風に乗り君の元へ会いに<br>
+							飛んで行くよ　'cross the night<br>
+							哀しみは捨てて　いつもの輝きを<br>
+							You have to stay on your way<br>
+							so cheer my girl</p>
+						<p>
+							南風が吹く　少し強く<br>
+							君に雨は似合わないさ<br>
+							いつでも無邪気に笑っていて<br>
+							my baby<br>
+							守ってあげるから　my girl</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sunshining-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

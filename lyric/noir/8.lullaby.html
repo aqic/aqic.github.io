@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lullaby - NOIR</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Lullaby</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							(Japanese Ver.)</p>
+						<p>
+							雪が降る<br>
+							静かなララバイ歌う淡い横顔<br>
+							閉じこめられた小さな部屋は<br>
+							愛と呼べる気がしている</p>
+						<p>
+							言葉もいらなくて<br>
+							思い出が和らいで<br>
+							安らぎなんて知らないけど<br>
+							一番そこに近い場所で眠りたいだけ<br>
+							貴方の側にいる</p>
+						<p>
+							雪が降る<br>
+							静かなララバイ　そっと夜を埋めて<br>
+							悲しい事は知りたくないの<br>
+							だからずっと歌っていて<br>
+							夜明けが来るまで</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-noir-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

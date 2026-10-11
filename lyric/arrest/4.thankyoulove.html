@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Thank you,love - 逮捕しちゃうぞ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Thank you,love</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							心のままに生きて　无茶な事してるけど<br>
+							强いだけじゃ　淋しすぎる</p>
+						<p>
+							手が熰铩〓どそばに　あなたを感じるのに<br>
+							ただひたつの　言叶がでない</p>
+						<p>
+							胸の奥のきもちが　こわれそうで<br>
+							何も言わなきゃ　mu　始まらない</p>
+						<p>
+							风は　流れてる　そっと　时间は流れる<br>
+							いつか　ah　素直になれるわ　Thank you,love</p>
+						<p>
+							爱は孤独の中を　ときどき　さまようけど<br>
+							信じあえば　辉きが见える</p>
+						<p>
+							すべてが大切な　物语<br>
+							まだ思い出に　mu　したくない</p>
+						<p>
+							川は　流れてる　ずっと　时间は流れる<br>
+							二人　でも　变わらずにいるよ　No change, us</p>
+						<p>
+							风は　流れてる　そっと　流れてる　ずっと<br>
+							星は流れる　きっと　时间は流れる<br>
+							二人　でも　变わらずにいるよ　Thank you, love</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-arrest-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

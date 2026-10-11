@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>しのぶ当番日誌 - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">LOVE HINA １～なる・しのぶ・みつね編～ IM</div>
+
+                    <div class="LyricTitle">しのぶ当番日誌</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">倉田雅世（前原しのぶ）</div>
+                    <div class="LyricStaff">作詞：久和カノン<br>作曲：吉中美樹<br>編曲：岩本正樹</div>
+
+                    <div class="LyricText">
+						<p>
+							小鳥の声と　まぶしい日差し　なんて素敵な日曜日<br>
+							冷たい水で　顔を洗って　今日は当番がんばろう</p>
+						<p>
+							ちょっと寝グセ　真っ赤なほっぺ　しのぶファイトォ！</p>
+						<p>
+							はたきパサパサ　ほうきシャカシャカ　お部屋の空気入れ替え<br>
+							お布団ずらり　窓に干しましょ　お日さまの匂いいっぱい</p>
+						<p>
+							雑巾がけ　ギュツと絞って　縦縦横横</p>
+						<p>
+							おそうじ　せんたく　よっこらしょっ<br>
+							ピカピカお部屋　気持ちいい<br>
+							お布団　パタパタ　どっこいしょっ<br>
+							今日もいいお天気　みんな幸せにな～～～～～れ！</p>
+						<p>
+							シャツと靴下　色物わけて　手もみ洗いもバッチリ<br>
+							ロープを張って　選択バサミ　もうちょっと身長欲しいな</p>
+						<p>
+							風に揺れる　白いエプロン　天使の羽根みたい</p>
+						<p>
+							朝から　晩まで　よっこらしょっ<br>
+							自然と笑顔になれる<br>
+							お庭に　水まき　どっこいしょっ<br>
+							空に虹が出来る　なんだか嬉しくな～～～～～る！</p>
+						<p>
+							おそうじ　せんたく　よっこらしょっ<br>
+							ピカピカお部屋　気持ちいい<br>
+							お布団　パタパタ　どっこいしょっ<br>
+							今日もいいお天気　みんな幸せにな～～～～～れ！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

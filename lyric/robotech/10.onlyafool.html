@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Only A Fool - Robotech</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Robotech] Insert Song</div>
+
+                    <div class="LyricTitle">Only A Fool</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Gigi Agrama</div>
+                    <div class="LyricStaff">Composed by: Jack Alan Goga</div>
+
+                    <div class="LyricText">
+						<p>
+							I feel a cold wind in July<br>
+							And a hot rain in December -<br>
+							When I think of all your lies,<br>
+							How it hurts me to remember.<br>
+							Love's a game you played so well<br>
+							When I thought you loved only...</p>
+						<p>
+							○Only a fool would cry for you,<br>
+							　Only a fool would try for you -<br>
+							　try to hold on<br>
+							　While love in gone...<br>
+							　Only a fool would dream.<br>
+							　Only a fool would dream of you,<br>
+							　Only a fool would scheme to do<br>
+							　All that I can<br>
+							　All that I can<br>
+							　To hold you here with me...</p>
+						<p>
+							You come around when you want my touch<br>
+							And you fill me with desire.<br>
+							I need you Oh so much,<br>
+							But the heat's gone from your fire.<br>
+							You wear a smile all over your face<br>
+							Even when you're loving me.</p>
+						<p>
+							○Repeat</p>
+						<p>
+							○Repeat</p>
+						<p>
+							(repeat till fade)<br>
+							Only a fool would cry for you,<br>
+							Only a fool would try for you -<br>
+							Only a fool would dream.</p>
+						<p>
+							Only a fool would dream of you,<br>
+							Only a fool would scheme to do</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-robotech-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

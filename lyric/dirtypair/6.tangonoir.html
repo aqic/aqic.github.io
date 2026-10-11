@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ＴＡＮＧＯ　ＮＯＩＲ　〈タンゴ・ノアール〉 - ダーティペア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ダーティ・ペア：トワイライトからのメッセージ」オープニング・テーマ (1991)</div>
+
+                    <div class="LyricTitle">ＴＡＮＧＯ　ＮＯＩＲ　〈タンゴ・ノアール〉</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中森明菜</div>
+                    <div class="LyricStaff">作詞：冬杜花代子<br>作曲：都志見　隆<br>編曲：四月馬鹿</div>
+
+                    <div class="LyricText">
+						<p>
+							冷たい指で　手首つかまれて<br>
+							踏み出した　黒い繻子の靴から<br>
+							終わりの来ない夜　始まったの<br>
+							Pas de deux noir　〈パドゥドゥノアール〉</p>
+						<p>
+							リズム切り裂いて　ふるえる肩先<br>
+							目の中にかげろう　赤くゆれて</p>
+						<p>
+							※もうひき返せない<br>
+							　美しい悪魔に<br>
+							　魅入られて愛して<br>
+							　いたぶられるままに</p>
+						<p>
+							　ふりむくだけであなた　罪なオトコ<br>
+							　命を燃やして踊れば　Tango Tango<br>
+							　愛しただけでわたし　壊れてゆく<br>
+							　のけぞる胸元　くちづけられ<br>
+							　Tango Noir</p>
+						<p>
+							ありつたけの　ジェラシー浴びながら<br>
+							わたしとびきりの　レディに変わる<br>
+							恋という戦い　きらびやかに<br>
+							Pas de deux noir</p>
+						<p>
+							シルクのビュスチェの　ウエストひき寄せ<br>
+							ターンきめられたら　息も途切れ</p>
+						<p>
+							ゆくとこまでゆくわ<br>
+							美しい破滅に<br>
+							魅入られて愛して<br>
+							流されてくままに</p>
+						<p>
+							生きてるだけであなた　罪なオトコ<br>
+							燃えつきたいから踊れば　Tango Tango<br>
+							愛しただけでわたし　壊れてゆく<br>
+							逆らうことさえ　歓びなの<br>
+							Tango Noir</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dirtypair-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

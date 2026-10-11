@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Pulse - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Pulse</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Wu yun ta na
+声：兵藤まこ</div>
+                    <div class="LyricStaff">作詞：Gabriela Robin<br>作曲：菅野よう子<br>編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							On Your Shore<br>
+							I Swear</p>
+						<p>
+							On Your Shore<br>
+							I Swear</p>
+						<p>
+							On Your Shore<br>
+							I Swear</p>
+						<p>
+							On Your Shore<br>
+							I Swear</p>
+						<p>
+							On Your Shore<br>
+							I Swear</p>
+						<p>
+							Pulse　私の中に生まれた<br>
+							Pulse　愛よりも確かなもの<br>
+							Pulse　傷口を洗う　慈しみの波</p>
+						<p>
+							Pulse　どこまでがあなたの言葉で<br>
+							Pulse　どこからが神様の歌？<br>
+							Pulse　私たちは　同じリズムの子供</p>
+						<p>
+							Pulse　あなたを知るための<br>
+							Pulse　一番小さな単位<br>
+							Pulse　千年前から決まっていたの　私たちが出会うことは</p>
+						<p>
+							Pulse　遺伝子は気づいていた<br>
+							Pulse　私たちは　同じリズムの子供<br>
+							Pulse　千年前から　いつも一緒だったの</p>
+						<p>
+							On Your Shore<br>
+							I Swear</p>
+						<p>
+							On Your Shore<br>
+							I Swear</p>
+						<p>
+							On Your Shore<br>
+							I Swear</p>
+						<p>
+							On Your Shore<br>
+							I Swear</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

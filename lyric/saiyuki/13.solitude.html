@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Solitude - 幻想魔伝 最遊記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Solitude</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">関俊彦</div>
+
+                    <div class="LyricText">
+						<p>
+							意味を求めて　傷口をまた開いた<br>
+							答えなどない　分かっているのに</p>
+						<p>
+							弾丸(ビュレット)のひとつでも<br>
+							見つけたいオレは<br>
+							何を見たい</p>
+						<p>
+							罪を刻んで　罰を背負って　眠れば<br>
+							偽りだけが　かずんでゆくのさ</p>
+						<p>
+							安らぎと微笑みに<br>
+							引き金を引いた<br>
+							あの日から</p>
+						<p>
+							Can't you see? It is my solitude<br>
+							痛みだけが　真実ならば<br>
+							Can't you see? It is my solitude<br>
+							孤独だけは　手放さないさ</p>
+						<p>
+							罪を刻んで　罰を背負って　眠れば<br>
+							偽りだけが　かずんでゆく</p>
+						<p>
+							安らぎと微笑みに<br>
+							俺は引き金を引いた<br>
+							あの日から</p>
+						<p>
+							Can't you see? It is my solitude<br>
+							痛みだけが　真実ならば<br>
+							Can't you see? It is my solitude<br>
+							孤独だけは　手放さないさ</p>
+						<p>
+							救われない　魂なら<br>
+							救われない<br>
+							あの日から</p>
+						<p>
+							Can't you see? It is my solitude<br>
+							痛みだけが　真実ならば<br>
+							Can't you see? It is my solitude<br>
+							孤独だけは　手放さないさ</p>
+						<p>
+							Can't you see? It is my solitude<br>
+							痛みだけが　真実ならば<br>
+							Can't you see? It is my solitude<br>
+							孤独だけは　手放さないさ</p>
+						<p>
+							救われない　魂なら<br>
+							救われない　そのままがいい<br>
+							救われない　魂なら<br>
+							救われない　そのままがいい･･･</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saiyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

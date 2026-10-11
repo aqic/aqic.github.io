@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夏影 - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">AIR EXTRA THEME</div>
+
+                    <div class="LyricTitle">夏影</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lia</div>
+                    <div class="LyricStaff">作詞：key<br>作曲：key<br>编曲：岡部亮</div>
+
+                    <div class="LyricText">
+						<p>
+							ふたりぶんの青空を<br>
+							君は手で囲った<br>
+							陽の匂いのする草を<br>
+							僕は手に結んだ</p>
+						<p>
+							風を背に今、僕らが走り抜けたよ<br>
+							あの大空　目指してた</p>
+						<p>
+							遠くへ遠くへ</p>
+						<p>
+							越えてゆく遥か夏も<br>
+							渡る川の流れも<br>
+							いつか変わって　いつか忘れて<br>
+							同じ思い守れずいる</p>
+						<p>
+							ふたりぶんの青空に<br>
+							飛行機雲　とばした</p>
+						<p>
+							笑ってる子供たちの<br>
+							手には虫かご　あの思い出</p>
+						<p>
+							越えてゆく遥か夢も<br>
+							流る川のほとりを<br>
+							いつもひとりで　いつも歩いた<br>
+							今は違う途を</p>
+						<p>
+							遠くなる遥か夏よ<br>
+							流る川の町で<br>
+							僕ら遊んだ　僕ら生きてた</p>
+						<p>
+							今も覚えてる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

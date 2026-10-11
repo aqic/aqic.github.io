@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Dream to new world - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">こすちゅ～む</div>
+
+                    <div class="LyricTitle">Dream to new world</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MIKI</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							うつむいて目を閉じて<br>
+							つまらない現実の隅で<br>
+							いつの日にか私にも<br>
+							希望の天使が舞下りる<br>
+							いつまで待てばいいの<br>
+							あの青い空に尋ねたい<br>
+							静かに浮かぶ雲は<br>
+							ただ穏やかで安らかで</p>
+						<p>
+							空しさと背中合わせ心の中は<br>
+							新しい世界へと飛び込みたくて</p>
+						<p>
+							数えきれないほどの夢<br>
+							未来へ続く道へ<br>
+							一つづつどこまでも<br>
+							置いてゆくよ優しく<br>
+							何も見えない闇の中<br>
+							迷い苦しむ人へ<br>
+							一つづつその胸に<br>
+							拾い上げてほしい</p>
+						<p>
+							眩しくて突き刺さる<br>
+							光の天使が舞下りて<br>
+							戸惑う私の目に<br>
+							未来を少し見せてくれる</p>
+						<p>
+							座りこんだたくさんの<br>
+							　人その目を開き<br>
+							素晴らしいあなたの<br>
+							　夢から逃げないでほしい</p>
+						<p>
+							抱えきれないほどの愛<br>
+							未来へ寄せる波に<br>
+							少しづつあなたへと<br>
+							満ちてゆくいつまでも<br>
+							心閉ざし瞳閉じて<br>
+							迷い苦しむ人へ<br>
+							少しづつその胸に<br>
+							すくい上げて欲しい</p>
+						<p>
+							空しさと背中合わせ心の中は<br>
+							新しい世界へと飛び込みたくて</p>
+						<p>
+							数えきれないほどの夢<br>
+							未来へ続く道へ<br>
+							一つづつどこまでも<br>
+							置いてゆくよ優しく<br>
+							何も見えない闇の中<br>
+							迷い苦しむ人へ<br>
+							一つづつその胸に<br>
+							拾い上げてほしい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

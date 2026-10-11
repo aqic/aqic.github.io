@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Out Flow - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">I've ORIGINAL SONG</div>
+
+                    <div class="LyricTitle">Out Flow</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MELL</div>
+                    <div class="LyricStaff">作詞：ハリー吉田<br>作曲：高瀨一矢<br>編曲：高瀨一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							Sometimes,love is in your dream.<br>
+							the dream is part of your journey.<br>
+							And,we crave to see the end of universe.<br>
+							to witness the divine beauty.</p>
+						<p>
+							I sink into myself.<br>
+							To find something to live for.<br>
+							And,when we finally reach the destination,<br>
+							(I) look down,afriad,but yet do not plummet.</p>
+						<p>
+							A place to star gaze,(it)seems closer to heaven.<br>
+							Ride on the blast wave,(and) let it blend with your fantasy.<br>
+							Don't let them get you down form dream to manifest.<br>
+							No one ever stop me walking.</p>
+						<p>
+							Love turns into the faith.And,it shines inside of me.<br>
+							Love leads me into a peace.And it raps all around me.<br>
+							I wanna get my own world off the ground.<br>
+							To tough the sky,to see what I believe in.</p>
+						<p>
+							I see...the light behind me.<br>
+							The slight scent wafting on the stench.<br>
+							the darkness covers through out the plain.<br>
+							Waxing strong the scent of fear.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

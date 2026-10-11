@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君をとばした午後 - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book ３ タッチ Music Flavor ５</div>
+
+                    <div class="LyricTitle">君をとばした午後</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">夢工場</div>
+                    <div class="LyricStaff">作詞：高柳 恋<br>作曲：後藤 次利<br>編曲：後藤 次利</div>
+
+                    <div class="LyricText">
+						<p>
+							夏の陽射しに抱かれた<br>
+							君の写真　眺めていたのさ<br>
+							何故か淋し気な笑顔<br>
+							今初めて　気づくフリをする</p>
+						<p>
+							あまりに近過ぎて　大切なもの<br>
+							若さに負け見落としてたね</p>
+						<p>
+							大人になって　想い出すだろう<br>
+							そばにいつも君がいたあの日々を<br>
+							そして誰もが　輝けた事<br>
+							忘れないで心にきっと<br>
+							on your mind  朝に沈んでた君に<br>
+							理由を聞けば 鈍いねと笑う</p>
+						<p>
+							ひとり生きてくのに　精一杯で<br>
+							若さはいつも愚かだよね</p>
+						<p>
+							大人になって　失くしたものが<br>
+							痛いほどにこの心に光ってる<br>
+							重ねたキスの　意味も知らずに<br>
+							叫んでいたあの日は夢さ<br>
+							dream of mine</p>
+						<p>
+							When we will be growin' up.<br>
+							We'll do recall in the naps.<br>
+							色あせてくフォトグラフを破いて<br>
+							ため息のあと　君の笑顔は<br>
+							風の街へ旅立つ午後さ<br>
+							Say "Good-bye"</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

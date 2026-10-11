@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>あたらしい予感 - Leaf</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「To Heart」（ゲーム PC版） エンディング</div>
+
+                    <div class="LyricTitle">あたらしい予感</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">あっこ</div>
+                    <div class="LyricStaff">作詞：須谷 尚子<br>作曲：下川 直哉<br>編曲：下川 直哉、松岡 純也</div>
+
+                    <div class="LyricText">
+						<p>
+							Blue　鳥が空高く飛ぶ<br>
+							Green　風になびく草たち</p>
+						<p>
+							やさしい光に包まれ<br>
+							固く閉じた私の<br>
+							心のドアをそっと開く<br>
+							雪のように心解けて<br>
+							素直になれると<br>
+							信じる　そんな<br>
+							新しい予感</p>
+						<p>
+							Free　悲しみを背に抱いて<br>
+							Dream　果てることのない願い</p>
+						<p>
+							やさしくされても<br>
+							心はさみしさとせつなさで<br>
+							泣いてばかりの　くりかえし</p>
+						<p>
+							心つくる壁を飛んでのりこえる痛みを<br>
+							あなたが　癒してくれる予感</p>
+						<p>
+							ほどけた気持ちむすび<br>
+							スタートラインに立ち<br>
+							走り出そう<br>
+							きっとゴールはあるよ</p>
+						<p>
+							南の風が吹いてくる<br>
+							あなたと出逢った日の<br>
+							ゆれる季節がまた巡る</p>
+						<p>
+							そこにあなたが立ち<br>
+							優しい瞳で見つめてる<br>
+							季節が廻り<br>
+							ひとめぐりしても<br>
+							ずっとふたり<br>
+							同じ気持ちでいられると<br>
+							信じてゆける<br>
+							そんな　かわらない予感</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-leaf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

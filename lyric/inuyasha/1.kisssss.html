@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>イタズラなKISS - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">イタズラなKISS</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">day after tomorrow</div>
+
+                    <div class="LyricText">
+						<p>
+							イタズラなKISSして<br>
+							何くわぬ顔する<br>
+							意地悪な私は子供じみている？<br>
+							生意気だって言われる事には<br>
+							慣れたけど<br>
+							「好き」の台詞だけ言えないんだ<br>
+							My Sweet Emotion</p>
+						<p>
+							スマイルばっちり<br>
+							鏡の前　最終チェックして<br>
+							刺激を求めて　飛び出したら<br>
+							胸張って歩こう<br>
+							道行く人　みんなの視線は釘づけ<br>
+							驚くほど　大胆　笑えるくらいに</p>
+						<p>
+							イタズラなKISSして<br>
+							何くわぬ顔する<br>
+							意地悪な私は子供じみている？<br>
+							生意気だって言われる事には<br>
+							慣れたけど<br>
+							「好き」の台詞だけ言えないんだ<br>
+							My Sweet Emotion</p>
+						<p>
+							退屈　装い<br>
+							君の話　頬杖でうなずく<br>
+							会話の途中で　打つメールは<br>
+							「彼と今　イイ感じ」<br>
+							流行りの服<br>
+							いくつも　試着するように<br>
+							驚くほど　欲張り<br>
+							呆れるくらいに</p>
+						<p>
+							手探りな恋して　何くわぬ顔する<br>
+							強がりな私は子供じみている？<br>
+							わがままだって事には<br>
+							気づいてはいるけど<br>
+							好きになるほどに　邪魔するんだ<br>
+							My Sweet Emotion</p>
+						<p>
+							イタズラなKISSして<br>
+							何くわぬ顔する<br>
+							意地悪な私は子供じみている？<br>
+							生意気だって言われる事には<br>
+							慣れたけど<br>
+							「好き」の台詞だけ言えないんだ<br>
+							My Sweet Emotion</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

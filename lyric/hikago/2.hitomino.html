@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ヒトミノチカラ - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ヒトミノチカラ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">観月ありさ</div>
+                    <div class="LyricStaff">作詞：森浩美<br>作曲：高見沢俊彦<br>編曲：上野圭市</div>
+
+                    <div class="LyricText">
+						<p>
+							あなたの瞳の力で　私は変わってゆこう<br>
+							昨日の揺らいだ気持ちを　脱ぎ捨てるために…</p>
+						<p>
+							夢に見ていたシアワセなら<br>
+							誰かが運んでくれると思ってた<br>
+							急ぎ足の街で言い訳ばかり<br>
+							みんなも同じとうそぶいてた</p>
+						<p>
+							”本当にキミはいま　満足してるの？”<br>
+							心の真ん中　見抜かれたようで</p>
+						<p>
+							あなたと出会えなかったら　偽った笑顔のまま<br>
+							うわべの態度や言葉を　繰り返したね<br>
+							あなたの瞳の力で　私は変わってゆこう<br>
+							昨日の揺らいだ気持ちを　脱ぎ捨てるために…</p>
+						<p>
+							人込みは今日も回りながら<br>
+							愛も希望も吸いあげてく</p>
+						<p>
+							気づかずに手放した　大切なものを<br>
+							もう一度この手に　抱きしめてみたい</p>
+						<p>
+							あなたと出会えなかったら　きっと狭い空の下<br>
+							適当な生活の中で　流されていた<br>
+							あなたと私の未来を　一緒に築いてゆこう<br>
+							どんなに傷つくことにも　もう恐れないで…</p>
+						<p>
+							約束　つよくなるから<br>
+							その目をそらさないで…</p>
+						<p>
+							あなたと出会えなかったら　きっと狭い空の下<br>
+							適当な生活の中で　流されていた<br>
+							あなたと私の未来を　一緒に築いてゆこう<br>
+							どんなに傷つくことにも　もう恐れないで…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

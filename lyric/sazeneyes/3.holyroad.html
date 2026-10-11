@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Holy Road - 3×3EYES</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「3×3EYES」</div>
+
+                    <div class="LyricTitle">Holy Road</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							☆Wanna be your sight<br>
+							　Wanna be your star<br>
+							　I believe, make your way your freedom<br>
+							　Mighty heart, so mighty love<br>
+							　Holy road</p>
+						<p>
+							夜お　いくつも超えて<br>
+							ああ、探し　続けた<br>
+							いつか　回り逢うはず<br>
+							手探りの　記憶お引き寄せて</p>
+						<p>
+							やみおさまよい、時お駆け抜け<br>
+							きずなお最後の地図に<br>
+							そしてあなた見つけた</p>
+						<p>
+							☆くりかえし</p>
+						<p>
+							★Through the mignight star<br>
+							　Through the midnight wave<br>
+							　Missing love, now I keep on searching<br>
+							　Catch your heart, so catch your day<br>
+							　Holy road</p>
+						<p>
+							今は　私のために<br>
+							ああ、傷つき　果てて<br>
+							あなたお　守れるだけの<br>
+							本当の　力おください</p>
+						<p>
+							愛は彷徨い、夢は途切れて<br>
+							きずなお最後の地図に<br>
+							そしてあなた見つけた</p>
+						<p>
+							☆くりかえし<br>
+							★くりかえし</p>
+						<p>
+							☆くりかえし<br>
+							★くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sazeneyes-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

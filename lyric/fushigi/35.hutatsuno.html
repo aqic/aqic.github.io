@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>二つの鼓動 - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">二つの鼓動</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">岩永哲哉(亢宿/角宿)</div>
+                    <div class="LyricStaff">作詞：日々安里<br>作曲：永井誠<br>編曲：永井誠</div>
+
+                    <div class="LyricText">
+						<p>
+							草の笛吹き　風に乗せ<br>
+							　　麦の海　越え<br>
+							　　二つの鼓動　出会う日は<br>
+							　　昨夜(さくや)の　定め</p>
+						<p>
+							　　永き日を一人過ごし<br>
+							　　灯火(ともしび)に手をかざす<br>
+							　　春を待つ冬のように<br>
+							　　互いの　心は</p>
+						<p>
+							☆　懐かしい空の下<br>
+							　　草いきれ<br>
+							　　夕日の名残道(なごりみち)　咲いた<br>
+							　　花のよう<br>
+							　　語らない唇に<br>
+							　　笛をあて</p>
+						<p>
+							　　遠くの雲隔(へだ)つ　時さえ<br>
+							　　埋めようと</p>
+						<p>
+							　　奏でる音色　水を打ち<br>
+							　　愛の胸　裂く<br>
+							　　二つの鼓動　引き寄せる<br>
+							　　乱れる　想い</p>
+						<p>
+							　　青い舟二人乗せて<br>
+							　　痛む傷分かち合う<br>
+							　　不安や恐れる気持ち<br>
+							　　愛から　守って</p>
+						<p>
+							　　夕立憎しみもどうか<br>
+							　　洗ってよ<br>
+							　　影を踏む小道　歩いた<br>
+							　　あの日へ</p>
+						<p>
+							　　灯籠(とうろう)川に流して<br>
+							　　追いかけた</p>
+						<p>
+							★　小さな愛しさに　あふれた<br>
+							　　岸に立つ</p>
+						<p>
+							☆、★ REPEAT</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

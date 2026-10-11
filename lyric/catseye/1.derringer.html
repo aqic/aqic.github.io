@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>デリンジャー - キャッツ♥アイ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「CAT'S EYE」オープニングテーマ(1984)</div>
+
+                    <div class="LyricTitle">デリンジャー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">刀根真理子</div>
+                    <div class="LyricStaff">作詞：三浦徳子<br>作曲：佐藤　健</div>
+
+                    <div class="LyricText">
+						<p>
+							[What you say?]<br>
+							[I say, take care of this]</p>
+						<p>
+							☆I need you Sailing in your love<br>
+							　I need you Sailing in your feeling<br>
+							　You need me Sailing with my time<br>
+							　You need me Sailing with my life<br>
+							　混じりあう lonesome dream</p>
+						<p>
+							[You're my dream in my pillow, at night]</p>
+						<p>
+							シグナルに映る「昨日」Heavy days<br>
+							一人ぼっちで歩く brown eyes いつも誰かを探して<br>
+							今日まで　今日から生まれ変わる<br>
+							ハートの TV ZIG ZAG のためらいはデリンジャー<br>
+							混線してるね　誰でもホントの<br>
+							愛には不慣れな獣のようにふるえるわ</p>
+						<p>
+							★I need you Sailing in your love<br>
+							　I need you Sailing in your feeling<br>
+							　[sail in your feeling]<br>
+							　You need me Sailing with my time<br>
+							　You need me Sailing with my life<br>
+							　[I sail in life]<br>
+							　魅かれああう lonesome dream</p>
+						<p>
+							[I want to get close, to get close, do you?]<br>
+							[Maybe today, not tomorrow]<br>
+							[You know, I've never had this feeling before,<br>
+							such a funny feeling]</p>
+						<p>
+							テーブルに置いた「グラス」bluesy songs<br>
+							青い水はいつか seven seas 続いているのよ<br>
+							雨上がりの evening 道を聞かれ<br>
+							振り向いたその時に恋に陥てゆく・・・・・<br>
+							どうでもいいよな　瞳をしているから<br>
+							つかの間二人の肌を寄せてみたくなる</p>
+						<p>
+							空から見つめる　瞳があるのさ<br>
+							[you need me more]<br>
+							それはもう一人　もう一人の誰か<br>
+							[I need you more]<br>
+							魅かれあう　lonesome dream</p>
+						<p>
+							☆繰り返し</p>
+						<p>
+							★繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-catseye-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Going History - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Going History</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							誰かを傷つけて　奪った恋なのに<br>
+							半年もたたないうちに　愛の破片（かけら）も消えた<br>
+							落ち込んだ束の間　また、恋をしたけど<br>
+							愛じゃない、寂しさをうめる　恋人というロザリオ<br>
+							人はどうして　ＫＩＳＳをしたがるの<br>
+							人はどうして　二人で眠るの<br>
+							Ｗｅ　ｃａｎ　Ｗｅ　ｃａｎ　ａｎｙ　ｔｉｍｅ<br>
+							本気（まじ）か分からない　心、何も言わない</p>
+						<p>
+							※苦しいほど　切ないほど<br>
+							　好きなヒトに会いたい<br>
+							　街が生まれ変わるくらい<br>
+							　愛しいヒトに会いたい</p>
+						<p>
+							そして何時か　振り返れば<br>
+							懐かしい想い出を<br>
+							熱く語る　自分になるため<br>
+							歩くよ　History</p>
+						<p>
+							電話さえ鳴らない　休日の部屋には<br>
+							やり過ごした夢がただ　横に寄り添っている<br>
+							孤独を感じてる　心を打ち消して<br>
+							ベッドに潜り込んでは　朝が来るのを待った<br>
+							夢はどうして　遠くへ逃げるの<br>
+							夢はどうして　他人のものなの<br>
+							Ｗｅ　ｃａｎ　Ｗｅ　ｃａｎ　ａｎｙ　ｔｉｍｅ<br>
+							本気（まじ）に泣けてくる　明日も何も見えない</p>
+						<p>
+							＃まぶしいほど　貫くほど<br>
+							　夢中な夢　見つけたい<br>
+							　時が早く通り過ぎるくらい<br>
+							　楽しい夢　見つけたい<br>
+							　そして何時か　振り返れば<br>
+							　懐かしい想い出を<br>
+							　熱く語る　自分になるため<br>
+							　歩くよ　History</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

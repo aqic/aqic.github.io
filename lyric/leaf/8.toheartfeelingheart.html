@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Feeling　Heart - Leaf</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「To Heart」オープニングテーマ</div>
+
+                    <div class="LyricTitle">Feeling　Heart</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中司雅美</div>
+                    <div class="LyricStaff">作詞：須谷尚子<br>作曲・編曲：下川直哉</div>
+
+                    <div class="LyricText">
+						<p>
+							偶然がいくつもかさなりあって<br>
+							あなたと出会って恋に落ちた<br>
+							聞こえそうな鼓動が恥ずかしいよ<br>
+							どうしてわたしらしくはないよ</p>
+						<p>
+							今日が終わっても　明日が過ぎても<br>
+							いつもそばにいて<br>
+							ずっと素直に変わらぬ二人　信じたい</p>
+						<p>
+							あなたとあったあの日から<br>
+							どんなときにでも　すべてを感じられる気がする<br>
+							ただあなたがいるだけで　そばいるだけで<br>
+							Forever You're My Only Feeling Heart</p>
+						<p>
+							You're My Only<br>
+							You're My Only<br>
+							My Only Feeling Heart</p>
+						<p>
+							夕暮れが夜風をひやしていくよ<br>
+							あなたといるから寒くないよ<br>
+							街のいろがきれいにともりだして<br>
+							わたしも変わり始めているよ</p>
+						<p>
+							雲が晴れてても　この上に映る<br>
+							星は少なくて<br>
+							いつか一緒に満天の空　見上げたい</p>
+						<p>
+							奇跡が起こるようなそんな<br>
+							星空の下で　あなたと同じ未来(みち)を歩いて<br>
+							二人が進じ合うことが　愛し合うことね<br>
+							Forever You're My Only Feeling Heart<br>
+							You're My Only Feeling Heart<br>
+							You're My Only Feeling Heart</p>
+						<p>
+							You're My Only<br>
+							My Only Feeling Heart</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-leaf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

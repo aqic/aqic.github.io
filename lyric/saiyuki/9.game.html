@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>GAME - 幻想魔伝 最遊記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">GAME</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">関俊彦</div>
+
+                    <div class="LyricText">
+						<p>
+							純粋でみだらな欲望   むき出しのままの野望<br>
+							本音を吐いたら愛情   叶うならば最高<br>
+							one more game</p>
+						<p>
+							運命はいつだって   気まぐれすぎルーレットゲーム<br>
+							手の内のdice   シェイクしたなら   good luck!</p>
+						<p>
+							言い訳とか常識で   それじゃ割り切れない<br>
+							タイミングとか思い込みで<br>
+							勝負を賭けてもいいじゃない？</p>
+						<p>
+							純情でやましい細胞   身悶えしている希望<br>
+							全部さらけ出す日常  差し出すなら勝てそう<br>
+							one more game</p>
+						<p>
+							人生はそれなりで   ながされてくルーレットゲーム<br>
+							デカく賭けなけりゃ   上がれないまま   good-bye!</p>
+						<p>
+							失すこと怖れたら何も手に出来ない<br>
+							呆れるほどの悪あがきで<br>
+							爆走してもいいじゃない？</p>
+						<p>
+							純粋でみだらな欲望   むき出しのままの野望<br>
+							本音を吐いたら愛情   叶うならば最高<br>
+							one more game</p>
+						<p>
+							言い訳とか常識で   それじゃ割り切れない<br>
+							タイミングとか思い込みで<br>
+							勝負を賭けてもいいじゃない？</p>
+						<p>
+							純情でやましい細胞   身悶えしている希望<br>
+							全部さらけ出す日常  差し出すなら勝てそう</p>
+						<p>
+							純粋でみだらな欲望   むき出しのままの野望<br>
+							本音を吐いたら愛情   叶うならば最高<br>
+							one more game</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saiyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夜が明ける前に - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">夜が明ける前に</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐藤朱美</div>
+                    <div class="LyricStaff">作詞：佐藤朱美<br>作曲：芦沢和則<br>編曲：大友博輝</div>
+
+                    <div class="LyricText">
+						<p>
+							もう誰も　じゃまできない<br>
+							キスを受けとめて<br>
+							愛だけを確かめたい　もっと<br>
+							夜が明ける前に</p>
+						<p>
+							蒼い夜の光　すべて　包みこんでいる<br>
+							星を見上げてるだけ<br>
+							きっと思うよりも　ずっと私の心は<br>
+							熱い想いで　いっぱいなのに</p>
+						<p>
+							ひとつだけ願いが届くなら<br>
+							心伝えて</p>
+						<p>
+							もう誰も　じゃまできない<br>
+							強く抱き締めて<br>
+							心まで連れ去って　いっしょに<br>
+							夜が明ける前に</p>
+						<p>
+							ベルの鳴らない夜　写真の笑顔　見つめて<br>
+							あなたの声を　思い出してる</p>
+						<p>
+							ぬくもりを　近くに感じたい<br>
+							ふれあえる程</p>
+						<p>
+							もう誰も　じゃまできない<br>
+							二度と離れない<br>
+							夢の中旅したい　だから<br>
+							夜が明ける前に</p>
+						<p>
+							もう誰も　じゃまできない<br>
+							キスを受けとめて<br>
+							愛だけを確かめたい　もっと<br>
+							夜が明ける前に<br>
+							夜が明ける前に</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

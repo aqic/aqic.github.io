@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Eternity
+～この始まりに終わりはない～ - KID</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©2002 ONE ～輝く季節へ～ OP</div>
+
+                    <div class="LyricTitle">Eternity
+～この始まりに終わりはない～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Millio</div>
+                    <div class="LyricStaff">作詞：並河祥太<br>作曲：岡崎律子<br>編曲：五十嵐洋/道祖尾昌章</div>
+
+                    <div class="LyricText">
+						<p>
+							ねぇ　この始まりは　きっと<br>
+							終わらない　愛への　扉<br>
+							Eternity<br>
+							とこしえを　信じない　眼差しは<br>
+							嘘より哀しいよ</p>
+						<p>
+							わたしの　らせんの中に<br>
+							あなたの　すべてを　しるして<br>
+							時間と　かたちをこえて<br>
+							見つめあい　愛し合うきっと<br>
+							いつだって　そばにいた　ずっと</p>
+						<p>
+							ねぇ　奇跡なんかじゃないよ<br>
+							二人が　めぐり逢えたのは<br>
+							Destiny<br>
+							捜してた　微笑みと　寂しさの<br>
+							あいだを　彷徨って</p>
+						<p>
+							あなたの　らせんの中に<br>
+							わたしの　すべてが　あるなら<br>
+							言葉と　身体をこえて<br>
+							何度でも　愛しあう　きっと<br>
+							いつだって　そこにいた　ずっと</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kid-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

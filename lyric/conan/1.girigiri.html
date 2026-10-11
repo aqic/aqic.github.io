@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ギリギリchop - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OP 143話～167話</div>
+
+                    <div class="LyricTitle">ギリギリchop</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">B'z</div>
+                    <div class="LyricStaff">作詞：稲葉浩志<br>作曲：松本孝弘<br>編曲：松本孝弘、稲葉浩志</div>
+
+                    <div class="LyricText">
+						<p>
+							だいたいどんな雑誌をめくったってダメ　ため息でちゃうワ<br>
+							僕に似合う服なんかはありゃしないのよ　世紀末の流行色</p>
+						<p>
+							全部はおまえにゃあわせられないよ<br>
+							がっかりさせてこめんねなんてネ</p>
+						<p>
+							ギリギリ崖の上を行くように<br>
+							フラフラしたっていいじゃないかよ<br>
+							それでも前に行くしかないんだから<br>
+							大丈夫　僕の場合は。</p>
+						<p>
+							今じゃ誰も心配なんかしてないだろうな　どうぞ攻撃してもいいよ<br>
+							別に無鉄砲なんかじゃないんだよ　アタマもそこそこ使ってる</p>
+						<p>
+							たまに苦しくて痛いのが　気持ちよかったりなんかしたりして</p>
+						<p>
+							ギリギリの感じなんだよ好きなのは<br>
+							なまぬるい温泉はまだちょっとでいい<br>
+							きわどい快感に冒されて<br>
+							楽しめなきゃまずいんじゃないの</p>
+						<p>
+							うかれっぱなしとはまたちょいと違う<br>
+							シマリがないとまたみんなにコソコソ笑われるぞオマエ</p>
+						<p>
+							ギリギリじゃないと僕ダメなんだよ<br>
+							おねがい　さむい目で見つめないでよ<br>
+							自分のペースでやらせてよ<br>
+							じゃないとすぐにつぶれる</p>
+						<p>
+							ギリギリ崖の上を行くように<br>
+							フラフラしたっていいじゃないかよ<br>
+							それでも前に行くしかないんだから<br>
+							大丈夫　僕の場合は。</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

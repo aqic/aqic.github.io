@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Belvedia - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ゲーム「DEEP ZERO」主題歌(Selen)</div>
+
+                    <div class="LyricTitle">Belvedia</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">SHIHO</div>
+                    <div class="LyricStaff">作詞：SAYUMI<br>作曲·編曲：高瀨一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							迷いこんだ夢の破片 こぼれて落ちる<br>
+							雨の音が響く だけど逃け出せなくて</p>
+						<p>
+							止まったままの時間 心まで<br>
+							動かなくなってゆく<br>
+							眼を閉じればそこには消える夜<br>
+							どこにもかえれない</p>
+						<p>
+							星が消えていく 四角い空まで續く<br>
+							誰にも屆かない 私の声が枯れても</p>
+						<p>
+							壞れそうに搖れるキモチ 流れて消える<br>
+							緩やかに傾く だけと凍り付いてゆく</p>
+						<p>
+							[金青]ついたまま明日 後ずさる<br>
+							囚われた現実<br>
+							手を伸せばそこには墮月<br>
+							昨日にもどれない</p>
+						<p>
+							折れた翼を 広けて飛び立てるなら<br>
+							かなわない願いを....私の言葉気づいて</p>
+						<p>
+							止まったままの時間 心まで<br>
+							動かなくなってゆく<br>
+							目を閉じればそこには消える夜<br>
+							どこにもかえれない</p>
+						<p>
+							星が消えていく 四角い空まで續く<br>
+							誰にも屆かない 私の声が枯れても</p>
+						<p>
+							折れた翼を 広けて飛び立てるなら<br>
+							かなわない願いを....私の言葉気づいて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

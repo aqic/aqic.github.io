@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>TENDER GREEN - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">TENDER GREEN</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							bright　輝く空<br>
+							今この瞳に映る<br>
+							流れる<br>
+							白い雲と夢が<br>
+							見えていますか<br>
+							fly　私は今<br>
+							あふれ出す光り胸に<br>
+							あなたが勇気をくれたから<br>
+							走り出せる</p>
+						<p>
+							瞳を閉じれば浮かぶ思い出達<br>
+							キラキラと輝いて<br>
+							呼び起こす<br>
+							忘れてた気持ち<br>
+							遠く空の向こう<br>
+							あなたの息感じて<br>
+							失くしかけた勇気取り戻した<br>
+							いるでもそばにいる<br>
+							かわし合った約束<br>
+							濡れてた瞳<br>
+							shooting star</p>
+						<p>
+							あたらしい時刻<br>
+							私に教えてくれる<br>
+							きらめく小さな芽吹き達<br>
+							もう行かなきゃ</p>
+						<p>
+							立ち上がればいつもとチガウ景色<br>
+							少しの不安連れて<br>
+							さあ行こう<br>
+							真実の未来<br>
+							いつでも信じてる<br>
+							小さな私でも<br>
+							大きな奇跡がきっとまた起こせる<br>
+							この空の向こうに<br>
+							あなたが見てるから<br>
+							もう1人じゃない<br>
+							shining star with me</p>
+						<p>
+							さよならはいつでも<br>
+							新しいスタート<br>
+							これはきっとステキなことの始まり<br>
+							今私歩き出す<br>
+							巡り会える予感<br>
+							扉を開けて<br>
+							step into the whole new world！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Tightrope - 幻想魔伝 最遊記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">エンディングテーマ</div>
+
+                    <div class="LyricTitle">Tightrope</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">CHARCOAL FILTER</div>
+                    <div class="LyricStaff">作詞：大塚雄三<br>作曲：CHARCOAL FILTER</div>
+
+                    <div class="LyricText">
+						<p>
+							そう磨き続けた　ナイフのようさ<br>
+							顔が映ってる　この窓の向こうで<br>
+							僕を狙ってる　隙を見せたら　今にも跳ねそうな<br>
+							そんな張りつめたプレッシャー　隣り合わせで<br>
+							誰より大胆不敵に笑う<br>
+							きっと誰にとっても　同じことだろ<br>
+							I must fight against myself</p>
+						<p>
+							そう人が良さそうな　顔でやってくる<br>
+							突然の悲劇も　疑うことはなく<br>
+							嘆くことせず　黙ったままで　上を見上げるんだ<br>
+							どんなありふれたシーンも　演じ続けろ<br>
+							夢とか希望とか言う前にさ<br>
+							きっと誰にとっても　同じことだろ<br>
+							You must fight against yourself</p>
+						<p>
+							The sun sets and a new day comes<br>
+							Repeating is one change<br>
+							Don't avert eyes from differences<br>
+							Your nerve and soul to the limit　Go forward now</p>
+						<p>
+							張りつめたプレッシャー　隣り合わせで<br>
+							誰より大胆不敵に笑う<br>
+							きっと誰にとっても　同じことだろ<br>
+							I must fight against myself<br>
+							きっと誰にとっても同じことだろ<br>
+							You must fight against yourself</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saiyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

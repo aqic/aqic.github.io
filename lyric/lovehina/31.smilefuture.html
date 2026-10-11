@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>笑顔の未来へ - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">笑顔の未来へ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">堀江由衣</div>
+                    <div class="LyricStaff">作曲：古池孝浩<br>編曲：岩本正樹<br>作詞：有森聰美</div>
+
+                    <div class="LyricText">
+						<p>
+							明日へ向かう時間に　負けないょうに<br>
+							風を切って 駆け出そうよ もっと<br>
+							心に悔しいの残ごらない　每日を送りながら<br>
+							頑張ってる　君にあける　笑顔の未来を...</p>
+						<p>
+							スモ—キ—な自分の道　恐る恐る步いた<br>
+							迷って、つまずいて、<br>
+							泥だらけの胸の痛み　泣きながら　はらったね<br>
+							唇、嚙み締めて<br>
+							現実はかなり　厳しいけど<br>
+							ここまで来た　熱い夢の命　絕やさないで</p>
+						<p>
+							明日へ向かう時間に　負けないょうに<br>
+							風を切って 駆け出そうよ もっと<br>
+							厳つもの傷を背負って　それでも小さな羽を<br>
+							羽ばたかせて　大空へと　目指す君が好き</p>
+						<p>
+							恋をしたり、ケンカしたり 騷ぎ出す感情は<br>
+							心の宝物<br>
+							切なさとか、愛しさとか 初めて触れる気持ち<br>
+							戸惑い　知って行く<br>
+							現実はかなり　大人だけど<br>
+							昨日よりも　熱くなれる生命　泣さないで</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>moment - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">moment</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Vivian Or Kazuma</div>
+                    <div class="LyricStaff">作詞︰Vivian Or Kazuma<br>作曲︰土橋安騎夫<br>編曲︰土橋安騎夫</div>
+
+                    <div class="LyricText">
+						<p>
+							誰も皆さまよいながら 答えを探して．．．<br>
+							二人ならば時間さえも支配できると　思ってたあの頃<br>
+							月日は流れ　宇宙の色も変わるように　すれ違ってた心<br>
+							[One moment in this time. Baby I'm worried]</p>
+						<p>
+							巡り来る季節の中で<br>
+							あの瞬間（とき）が止まればいいのに<br>
+							二人まださまよいながら<br>
+							この暗闇の彼方に愛を探して．．．</p>
+						<p>
+							今の君に映る宇宙はどんな色なの? 聞き返せないまま<br>
+							大切なこと忘れてしまっていくようで 少し戸惑う心<br>
+							[How come you don't answer my heart is hurting?]</p>
+						<p>
+							目眩く銀河の中で<br>
+							その心たぐり寄せてる<br>
+							二人ただ星を見上げて<br>
+							あの瞬間（とき）の宇宙の色を重ねてる<br>
+							大切なこと忘れてしまわないでいて 汚れを知らぬ心</p>
+						<p>
+							巡り来る季節の中で<br>
+							この地球が消えさる時には<br>
+							心ごとゼロに戻して<br>
+							少年の瞳で見つめて<br>
+							二人またあの夢の果てへ<br>
+							歩き出す つないだ手を離さずに</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ドンドコまつり - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">となりのトトロ</div>
+
+                    <div class="LyricTitle">ドンドコまつり</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">井上 あずみ</div>
+
+                    <div class="LyricText">
+						<p>
+							ドンドン　ドンドコまつり<br>
+							ドンドン　ドンドコまつり<br>
+							庭にひびく　不思議な音に<br>
+							こっそり雨戸を開けてみた<br>
+							月の光にうかぶ影は<br>
+							あれはオバケかもののけか<br>
+							こわいものみたさにおもわず<br>
+							庭に飛びだした<br>
+							オバケ　気づかずにおどっているよ</p>
+						<p>
+							ドンドン　おばけがおどる<br>
+							ドンドン　わたしもおどる<br>
+							おやおや不思議　昼間にまいた<br>
+							ドングリ　しいの実　芽を出した<br>
+							月の光にてらされて<br>
+							みるみる伸びてく　葉がしげる<br>
+							オバケ　よろこび　またおどる<br>
+							わたしもおどる<br>
+							ゆめのようだね　ドンドコまつり</p>
+						<p>
+							満月の夜　なにかがはじまる<br>
+							オバケといっしょに　おどろうよ<br>
+							君もいつかは　出会えるだろう<br>
+							こんなオバケたち<br>
+							ゆめのようにね　ドンドコまつり</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

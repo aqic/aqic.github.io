@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>女神さまっとお呼び！ - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ああっ女神さまっ」</div>
+
+                    <div class="LyricTitle">女神さまっとお呼び！</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">冬馬由美</div>
+
+                    <div class="LyricText">
+						<p>
+							もしあんたが他人より<br>
+							幸福を望むのなら<br>
+							それなりの運と努力が必要</p>
+						<p>
+							だけど楽に今すぐ<br>
+							確実に手に入れたきゃ<br>
+							魂を悪魔に売るのも手だよ</p>
+						<p>
+							※Ah! My Goddess　Ah! My Goddess<br>
+							　女神さまっとお呼び！<br>
+							　そして跪くのよ<br>
+							　Ah! My Goddess　Ah! My Goddess<br>
+							　見返りなしでいい<br>
+							　願い叶えてあげる<br>
+							　神さまっが得！</p>
+						<p>
+							不幸せな人生<br>
+							いいことはなかったよと<br>
+							お嘆きの貴兄は特別救済</p>
+						<p>
+							お金持ちでわがまま<br>
+							高飛車で大嘘つき<br>
+							そういえばバチの当たるやつもいた</p>
+						<p>
+							Ah! My Goddess　Ah! My Goddess<br>
+							女神さまっはキレイ！<br>
+							逢えるだけで極楽<br>
+							Ah! My Goddess　Ah! My Goddess<br>
+							祈って良かったと<br>
+							感謝の手紙もらう<br>
+							神さまっが得！</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

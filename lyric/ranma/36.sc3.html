@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>やさしい、いい娘になれない - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">【３月】</div>
+
+                    <div class="LyricTitle">やさしい、いい娘になれない</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">天道あかね</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲：川井憲次<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							はっ！　とぉりゃあああぁっ！<br>
+							ふっ！　たぁっ！</p>
+						<p>
+							乱馬の…ばかぁ～っ！</p>
+						<p>
+							ほんとにあんたって　まったくあんたって<br>
+							とにかくあんたって　ばかね、ばかばか<br>
+							ばかばかばかばかばかばかばかばかばかばかばかばかば</p>
+						<p>
+							どおゆうつもりなの　だったらなんなの<br>
+							ええい！　うっとうしい　ばかね、ばかばか<br>
+							ばかばかばかばかばかばかばかばかばかばかばかばかば</p>
+						<p>
+							３月３日はひなまつり　５月５日は子供の日<br>
+							男か女かはっきりしなさい　好きか嫌いかはっきりしなさい<br>
+							あんたいっぺん死んでこい！</p>
+						<p>
+							上から読んでも　ばかばかばかばかばかばかばかばかばかば<br>
+							下から読んでも　ばかばかばかばかばかばかばかばかばかば</p>
+						<p>
+							冗談じゃないわよっ…誰があんたなんかとぉ～っ！<br>
+							はっ！　とりゃあぁっ！</p>
+						<p>
+							うるさいのよあんたって　なれなれしいあんたって<br>
+							なによ！　はじ知らず　ばかね、ばかばか<br>
+							ばかばかばかばかばかばかばかばかばかばかばかばかば</p>
+						<p>
+							３月３日はひなまつり　灯りをつけましょぼんぼりに<br>
+							男か女かはっきりしなさい　好きか嫌いかはっきりしなさい<br>
+							あんな変態お断り！</p>
+						<p>
+							右から読んでも　ばかばかばかばかばかばかばかばかばかば<br>
+							左から読んでも　ばかばかばかばかばかばかばかばかばかば</p>
+						<p>
+							やさしい、いい娘に　今夜もなれないけど…<br>
+							だって…短気だもんっ！</p>
+						<p>
+							３月３日はひなまつり　８月８日はフジテレビ<br>
+							男か女かはっきりしなさい　好きか嫌いかはっきりしなさい<br>
+							悪かったわね不器用で！　はぁっ！</p>
+						<p>
+							横から読んでも　ばかばかばかばかばかばかばかばかばかば<br>
+							縦から読んでも　ばかばかばかばかばかばかばかばかばかば</p>
+						<p>
+							Thank you！　Baby...</p>
+						<p>
+							(かすみ)あかね、そこまで言わなくても…。</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

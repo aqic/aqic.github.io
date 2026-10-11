@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>噓の無いゲ—ム-SET ME FREE - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">噓の無いゲ—ム-SET ME FREE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">松本保典</div>
+
+                    <div class="LyricText">
+						<p>
+							気まぐれ　そうさアイツはいつも嵐の中<br>
+							乾いたノイズ走らせ<br>
+							今日も狂ったエンジェル<br>
+							昨日の夢など　忘れるのさ<br>
+							退屈渦卷いてる　風に逆らうパッション<br>
+							歪んだハ—ト溫め<br>
+							傷を背負ったエンジェル<br>
+							最後に残った　S.O.S.</p>
+						<p>
+							とめどいCRY MAYBE　繰り返して<br>
+							戾らないSHOUT BABY　流れのまま</p>
+						<p>
+							KEEP ON生命を　HOLD ON抱きしめ<br>
+							動き出す　噓の無いゲ—ム<br>
+							KEEP ON輝き　HOLD ON追いかけ<br>
+							優しさじゃ止められない明日を<br>
+							SET ME FREE</p>
+						<p>
+							澱んだこの世界に　龜裂を走らせて<br>
+							愚かな欲望だけ<br>
+							透かして見えるエンジェル<br>
+							心の鍵だけ　壊されてく</p>
+						<p>
+							污されたCRY MAYBE　持て余して<br>
+							置き去りのSHOUT BABY　切れてしまえ</p>
+						<p>
+							KEEP ON光を　HOLD ON受け止め<br>
+							終わらない　噓の無いゲ—ム<br>
+							KEEP ON未来を　HOLD ON見つめて<br>
+							この瞬間を信じて行け明日へ<br>
+							SET ME FREE</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

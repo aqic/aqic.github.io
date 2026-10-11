@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ピアニィ ピンク - CLAMP</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ピアニィ ピンク</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ALI PROJECT</div>
+
+                    <div class="LyricText">
+						<p>
+							あでやかに咲いた<br>
+							ピアニィ‧ピンク<br>
+							あたりいちめんに<br>
+							色褪せた頰の<br>
+							私を　染めておくれ</p>
+						<p>
+							恋を　したら<br>
+							ひとりきりでも<br>
+							小さな胸が<br>
+							事件であふれちゃう</p>
+						<p>
+							こっそりあなたを<br>
+							見つめるそのたびに<br>
+							世界が息づいた</p>
+						<p>
+							朝つゆに光る<br>
+							ピアニィ‧レッド<br>
+							炎みたいね<br>
+							弱さにうつむいた<br>
+							日々を燃やしておくれ</p>
+						<p>
+							誰にだって<br>
+							優しいあなたを<br>
+							くやしいけれど<br>
+							誇りに　思っちゃう</p>
+						<p>
+							女の子は皆<br>
+							秘密の花園で<br>
+							綺麗になってゆく</p>
+						<p>
+							清らかに歌う<br>
+							ピアニィ‧ピンク<br>
+							ときめく吐息<br>
+							裸のくちびる<br>
+							そっと蝶々が觸れた</p>
+						<p>
+							あなたの瞳に<br>
+							誰より<br>
+							ああ残りたい</p>
+						<p>
+							あでやかに競う<br>
+							ピアニィ‧ピンク<br>
+							あなたのために<br>
+							笑顔が　いちばん<br>
+							すてきな私になる</p>
+						<p>
+							あでやかに咲いた<br>
+							ピアニィ‧ピンク<br>
+							私のために<br>
+							笑顔が　いちばん<br>
+							すてきな私になる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-clamp-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

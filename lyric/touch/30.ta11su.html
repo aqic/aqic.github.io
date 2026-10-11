@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>好きで、ごめん。 - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book １ タッチ Music Flavor １</div>
+
+                    <div class="LyricTitle">好きで、ごめん。</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">内海 和子</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							まっ赤な詩集の隅<br>
+							初めてあなたからかけられた<br>
+							言葉が書いてある</p>
+						<p>
+							息切らせながら坂道を駆けた<br>
+							風のグランド見える場所へ<br>
+							膝かかえながらまた名を呼んだ</p>
+						<p>
+							遠くホイッスルの音<br>
+							胸に割れて届く</p>
+						<p>
+							明日もあなたを愛したままいても<br>
+							ねえいいですか<br>
+							迷惑ですか</p>
+						<p>
+							Only love you,love you,love you,love you<br>
+							夢見るあなたがそこにいれば<br>
+							片思いでもいいの<br>
+							好きでごめんね  何悩んでるの？　ねえ元気ないね<br>
+							心でそっと話しかけた<br>
+							まだ一度きりね名を呼ばれたの</p>
+						<p>
+							同じ青春を生きてるね<br>
+							思い別々でも...</p>
+						<p>
+							４月に写した写真の中<br>
+							二人が微笑ってるね<br>
+							遠く離れて...</p>
+						<p>
+							Only love you,love you,love you,love you<br>
+							初めてあなたからかけられた<br>
+							言葉がにじんでるわ</p>
+						<p>
+							Only love you,love you,love you,love you<br>
+							まぶしくあなたが生きていたら<br>
+							片思いでもいいの<br>
+							好きでごめんね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

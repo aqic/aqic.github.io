@@ -1,0 +1,129 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夢のつづき - サクラ大戦</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「サクラ大戦２～君、死にたもうことなかれ～」主題歌</div>
+
+                    <div class="LyricTitle">夢のつづき</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">帝国歌劇団</div>
+                    <div class="LyricStaff">作詞：広井王子<br>作曲：田中公平<br>編曲：根岸貴幸</div>
+
+                    <div class="LyricText">
+						<p>
+							１．<br>
+							　(サクラ)<br>
+							　この夢がずっとずっと　つづいてほしい<br>
+							　わたしの恋は　輝いているわ</p>
+						<p>
+							　ともに過ごしあのとき　胸にたぐりよせて<br>
+							　歌いましょう　さあ歌を　あなたの　思い出の歌</p>
+						<p>
+							　(すみれ)<br>
+							　この夢がずっとずっと　つづいてほしい<br>
+							　わたしの恋は　輝いているわ</p>
+						<p>
+							　ともに生きた証が　胸に熱くよぎる<br>
+							　いつまでも　いつまでも　大切にしたい</p>
+						<p>
+							　(マリア)<br>
+							　それぞれの　出会いは　奇跡のようです<br>
+							　ほんの　すこし目を閉じれば</p>
+						<p>
+							　(カンナ)<br>
+							　永久（とわ）の夢　やさしく　歌となり　こころゆらす<br>
+							　思い出に　よりそうふたり</p>
+						<p>
+							　(全員)<br>
+							　歌を　さあ歌いましょ　それが夢のつづき<br>
+							　高らかに愛を　歌う喜び</p>
+						<p>
+							　歌を　さあ歌いましょ　それが夢のつづき<br>
+							　巡りあい　信じあい　明日を歌お</p>
+						<p>
+							２．<br>
+							　(アイリス)<br>
+							　この夢がずっとずっと　つづいてほしい<br>
+							　わたしの恋は　輝いているわ</p>
+						<p>
+							　(紅蘭)<br>
+							　こよい春の匂いに　咲き乱れる花は<br>
+							　かぐわしく　舞い踊る　素晴らしき世界</p>
+						<p>
+							　(織姫)<br>
+							　それぞれの　出会いは　奇跡のようです<br>
+							　ほんの　すこし目を閉じれば</p>
+						<p>
+							　(レニ)<br>
+							　永久（とわ）の夢　やさしく　歌となり　こころゆらす<br>
+							　思い出に　よりそうふたり</p>
+						<p>
+							　(全員)<br>
+							　歌を　さあ歌いましょ　それが夢のつづき<br>
+							　高らかに愛を　歌う喜び</p>
+						<p>
+							　歌を　さあ歌いましょ　それが夢のつづき<br>
+							　立ち上がれ　肩を抱き　明日を歌お</p>
+						<p>
+							　歌を　さあ歌いましょ　それが夢のつづき<br>
+							　高らかに愛を　歌う喜び</p>
+						<p>
+							　歌を　さあ歌いましょ　それが夢のつづき<br>
+							　立ち上がれ　肩を抱き　明日を歌お</p>
+						<p>
+							３．<br>
+							　(サクラ)<br>
+							　歌を　さあ歌いましょ　そして夢のおわり<br>
+							　あふれる涙をそっとぬぐって</p>
+						<p>
+							　(全員)<br>
+							　歌を　さあ歌いましょ　だけど夢はつづく<br>
+							　さよならは　言わないの　また会えるから</p>
+						<p>
+							　ラララ　ラララララララ　ラララララララララ<br>
+							　ララララララララ　ラララララララ</p>
+						<p>
+							　歌を　さあ歌いましょ　それが夢のつづき<br>
+							　さよならは　言わないの　また会えるから</p>
+						<p>
+							　春は　めぐる　いつも　うつくしく<br>
+							　いつかまた　この夢のつづきを<br>
+							　麗しの　帝国華撃団</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sakurawars-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

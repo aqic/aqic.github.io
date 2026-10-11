@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>无所不能 - </title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">无所不能</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							你想听音乐，我就是CD；<br>
+							你想看电视，我就是遥控器；<br>
+							你想摘星星，我就是楼梯；<br>
+							你想去南极，我就是直升机；<br>
+							也，也————<br>
+							你想要风度，我就是风衣；<br>
+							你想找朋友，我就是传呼机；<br>
+							你想要鲜花，我就是快递；<br>
+							你还不满意，我可以当007。</p>
+						<p>
+							无所不能，变来变去，没有谁有我这样的魔力，<br>
+							上天入地，像发神经，但是你要相信我的超级潜力；<br>
+							无艘不能，变来变去，这样的帅哥真是不容易，<br>
+							犹犹豫豫，别瞪眼睛，干脆还是放下架子让我明天追到你。</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-musicup-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

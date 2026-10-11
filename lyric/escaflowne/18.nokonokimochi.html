@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>猫のキモチ - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」～ メルル キャラクター・ソング</div>
+
+                    <div class="LyricTitle">猫のキモチ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">大谷育江</div>
+                    <div class="LyricStaff">作詞：Gabriela Robin<br>作曲／編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							もしも猫がお話しできたら<br>
+							最初にななて　言うのかな<br>
+							魚のホネは　固すぎます！<br>
+							シッポの長さ　他と比べるのやめて下さい<br>
+							傷つくの<br>
+							あなたのために　身づくろいして　毛づくろいして------<br>
+							だからさかさまに　なでるのやめて</p>
+						<p>
+							やさしい人よりも<br>
+							もの静かな人がスキ<br>
+							基本的にケンジツな性格なんです</p>
+						<p>
+							二人きりで　まどろむ午後<br>
+							冬の陽差し長くのびて<br>
+							このまま　こんなふうに<br>
+							死ぬまでそばに<br>
+							いられたらいいのに</p>
+						<p>
+							一度でいいから聞きたかったのよ<br>
+							あの「かつぶし」は<br>
+							どこで　つかまえるの？</p>
+						<p>
+							あなたのために　ネズミとって　(ケムシとって)<br>
+							トンボとって　(カエルとか)<br>
+							だから　いやそうに捨てるのやめて</p>
+						<p>
+							暗い夜道だって<br>
+							案内あんないしましょどこでも<br>
+							基本的に世話好きの性格なんです</p>
+						<p>
+							夢を見たの<br>
+							あなたは白いゆうかんなオスネコになって<br>
+							私を迎えにくる . . .<br>
+							早くマホウがとけたらいいのに</p>
+						<p>
+							二人きりで　まどろむ午後<br>
+							冬の陽差し長くのびて<br>
+							このまま　こんなふうに<br>
+							死ぬまでそばに<br>
+							あなたのそばに<br>
+							いられたらいいのに</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

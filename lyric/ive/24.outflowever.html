@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Ever Stay Snow - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Snow Drop(WILL)</div>
+
+                    <div class="LyricTitle">Ever Stay Snow</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">SHIHO</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢<br>編曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							まわる 巡る 白い季節の中<br>
+							彷徨うこの想いを 解き放して</p>
+						<p>
+							つないだ二人の手の温もりに 溶けてゆく<br>
+							白いゲレンデの静まりかえる夜<br>
+							明るく照らし出された時間は 空までも<br>
+							止まる夜明けまで見守る息をころして<br>
+							いつのまにか 降る星の瞬き<br>
+							過ぎ行く思い出をそっと雪で包んで<br>
+							夢は乱れ咲く 廻る 白い季節の中<br>
+							透き通った空気に<br>
+							幻は消える 凍る 霞(かす)む未来の朝<br>
+							優しさを探しては 呑みこまれて</p>
+						<p>
+							拾った思い出の一掴みを 見つめてた<br>
+							今はどこまでも 想いが伝わるように<br>
+							震える指 温めてくれたね<br>
+							散らかした思い出をそっと空に浮かべて<br>
+							降りしきる霙混じりの 雪ににじむ涙<br>
+							いつまでも抱きしめて<br>
+							冬の日に遠く 高く 願いが届くように<br>
+							足跡をたどる夜 繰り返して</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

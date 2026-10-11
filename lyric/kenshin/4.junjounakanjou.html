@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>1/3の純情な感情 - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">エンディングテーマ６</div>
+
+                    <div class="LyricTitle">1/3の純情な感情</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">SIAM SHADE</div>
+                    <div class="LyricStaff">作詞　SIAM SHADE<br>作曲　SIAM SHADE<br>編曲　SIAM SHADE、明石昌夫</div>
+
+                    <div class="LyricText">
+						<p>
+							壊れるほど愛しても<br>
+							1/3も伝わらない<br>
+							純情な感情は空回り<br>
+							I love youさえ言えないでいる<br>
+							My heart</p>
+						<p>
+							長くて眠れない夜が<br>
+							君への想い<br>
+							｢それは恋なんです｣と囁くよ<br>
+							とめどなく語りかける<br>
+							揺れる鼓動は<br>
+							微熱混じりの<br>
+							溜息へとかわる</p>
+						<p>
+							Give me smile and shine day<br>
+							君のsmileで<br>
+							凍てつく夜の寒さも<br>
+							Goodこらえられる</p>
+						<p>
+							壊れるほど愛しても<br>
+							1/3も伝わらない<br>
+							純情な感情は空回り<br>
+							I love youさえ言えないでいる<br>
+							My heart</p>
+						<p>
+							真夏の雨のように<br>
+							乾いた素肌<br>
+							潤す君の笑顔がまぶしくて</p>
+						<p>
+							Give me smile and shine days<br>
+							急に澄まさないで<br>
+							どんなに困難で難関な壁も<br>
+							越えるから</p>
+						<p>
+							どれだけ君を愛したら<br>
+							この想い届くのだろう<br>
+							見つめられると言えない<br>
+							言葉が宙に舞う<br>
+							離れれば離れるほど<br>
+							愛しい人だと気付く<br>
+							求めれば求める程に<br>
+							せつない距離を感じてる<br>
+							My heart</p>
+						<p>
+							Give me smile and shine days<br>
+							Give me smile and nice days<br>
+							もしもこの腕で<br>
+							君と抱きしめ合えたなら...<br>
+							どれだけ君を愛したら<br>
+							この想い届くのだろう<br>
+							夢の中では確かに<br>
+							言えた筈なのに<br>
+							壊れるほど愛しても<br>
+							1/3も伝わらない<br>
+							純情な感情は空回り<br>
+							I love youさえ言えないでいる<br>
+							My heart</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

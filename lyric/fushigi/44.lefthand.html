@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>左手の記憶 - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">左手の記憶</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">石井康嗣</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：菊地圭長<br>編曲：山中紀昌</div>
+
+                    <div class="LyricText">
+						<p>
+							山の頂(いただき)に雨は振り　やがてしずくは天へ帰る<br>
+							おまえと出逢い愛しあい　そして失う　痛みさえ　運命なのか？！<br>
+							せつなさが　胸を締めつける<br>
+							たった１人を救えなくて　ずっと孤独だったけど…</p>
+						<p>
+							この手のひらを　開くたびに　銀河の渦(うす)は愛を放つ<br>
+							はかない生命(いのち)　守りたくて　今も光ってる</p>
+						<p>
+							心の夜空で尖ってた　おまえという月円くなる<br>
+							哀しみよりも幸せを　選んでくれと告げるよに　輝きだして<br>
+							この胸で　永久(とわ)の 愛 になる<br>
+							たった１人を愛し続け　やっと自分を癒せる…</p>
+						<p>
+							この手のひらを　閉ざしたなら　誰が１番哀しむだろう？！<br>
+							はかない生命(いのち)　それは宇宙　愛が生きる場所<br>
+							この手のひらを　開くたびに　銀河の渦(うす)は愛を放つ<br>
+							はかない生命(いのち)　守りたくて　今も光ってる　love = light</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

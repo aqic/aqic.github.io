@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>You're my treasure～遠い約束～ - 最終兵器彼女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">You're my treasure～遠い約束～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">COCO</div>
+                    <div class="LyricStaff">作詞：森本　抄夜子<br>作曲：羽田　一郎</div>
+
+                    <div class="LyricText">
+						<p>
+							セピアになどならない<br>
+							たぶんずっと　このままずっと</p>
+						<p>
+							昔はよかったと　ぼんやり云うような<br>
+							大人になんてなりたくないけれど<br>
+							あなたと知り合って　重ねた毎日は<br>
+							これから何が起きても忘れないから</p>
+						<p>
+							「時間は過ぎ去る」そんな約束を<br>
+							誰もみな　神様と交わして生まれた</p>
+						<p>
+							Oh, My treasure　未来を<br>
+							いつも見つめてたいけど<br>
+							どうしてなの　明日が<br>
+							痛くて見えない<br>
+							Oh, My treasure　いつかは<br>
+							こんな気持ちのぜんぶを<br>
+							かけがえなく思える<br>
+							そんなときがくるはずだから</p>
+						<p>
+							こんなに切なくて　こんなに悔やむなら<br>
+							あのとき　もっとやさしくすればよかった</p>
+						<p>
+							「いつかまた会える」遠い約束を<br>
+							誰もみな　少しだけ信じて別れる</p>
+						<p>
+							Oh, My treasure　自分で<br>
+							今を選んできたのに<br>
+							どうしてなの　言葉じゃ<br>
+							上手に言えない<br>
+							Oh, My treasure　いつかは<br>
+							こんな気持ちのぜんぶを<br>
+							かけがえなく思える<br>
+							そんなときがくるはずだから</p>
+						<p>
+							You're My treasure　あなたは<br>
+							ずっと私の　Diamond<br>
+							思い出より　たしかに<br>
+							心できらめく<br>
+							Oh, My treasure　時代が<br>
+							街の景色を変えても<br>
+							セピアになどならない<br>
+							あなたとのことは<br>
+							Oh, My treasure　いつかは<br>
+							こんな気持ちのぜんぶを<br>
+							かけがえなく思える<br>
+							そんなときがくるはずだから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saishuuheiki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

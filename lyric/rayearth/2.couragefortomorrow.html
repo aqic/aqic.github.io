@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>明日への勇気 - 魔法騎士レイアース</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「魔法騎士レイアース」 エンディング・テーマ (1994)</div>
+
+                    <div class="LyricTitle">明日への勇気</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">吉成圭子</div>
+                    <div class="LyricStaff">作詞・作曲：前田克樹<br>編曲：根岸貴幸</div>
+
+                    <div class="LyricText">
+						<p>
+							とびっきりの笑顔で<br>
+							ペダル　強くこぎだそう<br>
+							向かい風に　吹かれたって<br>
+							くじけちゃダメだよ</p>
+						<p>
+							悲しみに負けない強さ<br>
+							そっと教えてくれる<br>
+							広い海をめざして</p>
+						<p>
+							※頑張れ！　君の瞳はいつか<br>
+							　光浴びて　輝きだす<br>
+							　あきらめないで　信じることを<br>
+							　明日への勇気にかえて</p>
+						<p>
+							背筋　ピンと伸ばして<br>
+							大きく深呼吸しよう<br>
+							いつもうつむいてばかりじゃ<br>
+							なにも変わらない</p>
+						<p>
+							まっすぐなハートのレール<br>
+							振り向かずに　歩けば<br>
+							夢は　きっと　かなうよ</p>
+						<p>
+							頑張れ！　君の涙はいつか<br>
+							宝石より　きらめきだす<br>
+							あきらめないで　夢見ることを<br>
+							明日への力に変えて</p>
+						<p>
+							※繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-rayearth-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

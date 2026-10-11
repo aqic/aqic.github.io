@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Piece Of Heaven - ヴァイス・クロイツ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Ｗｅｉβ ｋｒｅｕｚ OP2</div>
+
+                    <div class="LyricTitle">Piece Of Heaven</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Ｗｅｉβ</div>
+                    <div class="LyricStaff">作詞：相田 毅<br>作曲・編曲：西岡 和也</div>
+
+                    <div class="LyricText">
+						<p>
+							遥か昔空から舞い降りた<br>
+							ダビデの剣が この世を切り裂き<br>
+							あの天使が 微笑む場所さえも<br>
+							かけらに砕けて ここから見えない</p>
+						<p>
+							人は 永遠に 眠る闇の中で<br>
+							夢に 触れるしかできないのなら<br>
+							せめて せめて 一握りの愛を<br>
+							胸に 秘めて あなたと旅立とう<br>
+							遠く 遠く 誘うようなHeaven<br>
+							消えて しまう 幻だとしても<br>
+							いいさ<br>
+							No No No Don't Cry</p>
+						<p>
+							裏切られて 涙と刻まれた<br>
+							安息の日々は 粉々の花に<br>
+							その哀しい 運命のリフレイン<br>
+							求めて彷徨う 孤独な罪人</p>
+						<p>
+							人は 失くした魂の果てで<br>
+							ほんのつかの間の鎮魂歌 聴く<br>
+							二度と 二度と 変わらぬ愛のため<br>
+							何も 言わず あなたを抱くだろう<br>
+							遠い 遠い 蜃気楼のHeaven<br>
+							たどり 着ける 最後の風の中<br>
+							だから<br>
+							No No No Don't Cry</p>
+						<p>
+							せめて せめて 一握りの愛を<br>
+							胸に 秘めて あなたと旅立とう<br>
+							遠く 遠く 誘うようなHeaven<br>
+							消えて しまう 幻だとしても<br>
+							いいさ<br>
+							No No No Don't Cry</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-weibkreuz-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

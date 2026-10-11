@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>THE GREAT JOURNEY - 新白雪姫伝説プリーティア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">新白雪姬伝說 Goh's Image song</div>
+
+                    <div class="LyricTitle">THE GREAT JOURNEY</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">森久保祥太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							またやってしまったみたいだ<br>
+							君のリアクション見れば<br>
+							いくら鈍い俺にだって<br>
+							はずしたこどぐらい分かる</p>
+						<p>
+							君といるとまるで<br>
+							俺は現代人じゃなくて<br>
+							真っすぐ海を進んで<br>
+							その先の滝に落ちそうだ</p>
+						<p>
+							そして　本当は好きだった　なんで叫ぶのだろう</p>
+						<p>
+							＊いいさ　row&amp;row　今日も漕ぎ出そう<br>
+							君の心の無人島に　たどり着けるまで<br>
+							そうさ　row&amp;row　もしかしてあしたは<br>
+							体ちぎれサメやカニの　餌になってても</p>
+						<p>
+							悲しい別れだったんだね　これで良かっただなんて<br>
+							無理に言うから俺だって　あんなジョク飛ばしちゃった</p>
+						<p>
+							君といるとまるで<br>
+							俺は文明人じゃなくて<br>
+							丸太の筏（いかだ）に乗って<br>
+							クジラでも捕りに行きそうだ</p>
+						<p>
+							それが　男の仕事　なんて思うのだろう</p>
+						<p>
+							いいさ　row&amp;row　今日も漕ぎ出そう<br>
+							君がクスッと笑うくらい　バカになれるまで<br>
+							そうさ　row&amp;row　もしかしてあしたは<br>
+							名前知らぬ貝になって　君に拾われよう</p>
+						<p>
+							＊Repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-whitesnow-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

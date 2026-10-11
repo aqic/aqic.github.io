@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>GLORIA ～君に届けたい～ - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">GLORIA ～君に届けたい～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							欠けた夢、戸惑う胸…<br>
+							傷つく度もたれた<br>
+							君の心に　この愛を重ね<br>
+							聞かせたいよGLORIA</p>
+						<p>
+							Speed上げて　二人を乗せた地球（ほし）が<br>
+							回り続ける　でも追いついて見せるよ<br>
+							一人ぼっちじゃ　めくれない<br>
+							ページも君と　一緒なら<br>
+							早くその先、知りたい<br>
+							Days　過ぎ去った</p>
+						<p>
+							悔しくて　せつな過ぎて<br>
+							切れない電話をして<br>
+							君の瞳に　映った自分が<br>
+							安らぐまで話してた<br>
+							キュンとなる程　何も聞かず<br>
+							抱きしめてくれた日に<br>
+							「Thank you」（きもち）の代わり<br>
+							心に誓った　届けたいよGLORIA</p>
+						<p>
+							ボロボロの夜　明日への鍵も無く<br>
+							震える肩に　そっと声掛けてくれた<br>
+							一人ぼっちじゃ　重すぎる<br>
+							扉も君と　一緒なら<br>
+							軽く開いてしまうよ<br>
+							Days　不思議だね</p>
+						<p>
+							優しくて　愛し過ぎて<br>
+							帰れず朝になって<br>
+							君の瞳に　映った自分が<br>
+							一番スキでいられた<br>
+							「希望」は決して　死にはしない<br>
+							永遠のエンブレム<br>
+							照り返す陽に　翳して歩けば<br>
+							遠くないよGLORIA</p>
+						<p>
+							悔しくて　せつな過ぎて<br>
+							切れない電話をして<br>
+							君の瞳に　映った自分が<br>
+							安らぐまで話してた<br>
+							零れてく夢　戸惑う胸…<br>
+							傷つく度もたれた<br>
+							君の心に　この愛を重ね<br>
+							聞かせたいよGLORIA</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>鳥になった私 - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">魔女の宅急便</div>
+
+                    <div class="LyricTitle">鳥になった私</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">宝野ありか</div>
+                    <div class="LyricStaff">作詞：麻生 圭子<br>作曲・編曲：久石 譲</div>
+
+                    <div class="LyricText">
+						<p>
+							つむじ風にうまく乗れば<br>
+							どんな場所にも行ける<br>
+							太陽を右手に<br>
+							飛んでいくよ</p>
+						<p>
+							いちばん大きな地図だね<br>
+							真下に見える景色<br>
+							河は曲がりながら<br>
+							海へつづく</p>
+						<p>
+							人は昔は<br>
+							きっと鳥だったの<br>
+							こんなにイヤなことを<br>
+							忘れてしまえる</p>
+						<p>
+							麦わら帽子を掲げて<br>
+							誰かが手をふってる<br>
+							言葉はいらないね<br>
+							夢があれば</p>
+						<p>
+							翼、少しゆるめながら<br>
+							街に聞き耳たてた<br>
+							いろんなストーリー<br>
+							聞こえてくる</p>
+						<p>
+							山すそへ消えるレイルウェイ<br>
+							教会への坂道<br>
+							笑顔と哀しみは<br>
+							となり同士</p>
+						<p>
+							人は昔<br>
+							きっと鳥だったの<br>
+							こんなに空へくると<br>
+							感動（こころ）がふるえる</p>
+						<p>
+							手をつないだ子供たちが<br>
+							いちばん星を見てる<br>
+							なくしてた涙が<br>
+							甦るよ</p>
+						<p>
+							麦わら帽子を掲げて<br>
+							誰かが手をふってる<br>
+							言葉はいらないね<br>
+							夢があれば</p>
+						<p>
+							手をつないだ子供たちが<br>
+							いちばん星を見てる<br>
+							夕陽を浴びながら<br>
+							明日へ帰る</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

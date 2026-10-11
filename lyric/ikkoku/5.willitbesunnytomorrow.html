@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>あした晴れるか - めぞん一刻</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「めぞん一刻」エンディング・テーマ(1986)</div>
+
+                    <div class="LyricTitle">あした晴れるか</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">来生たかお</div>
+                    <div class="LyricStaff">作詞：来生えつこ<br>作曲：来生たかお<br>編曲：武部聡志</div>
+
+                    <div class="LyricText">
+						<p>
+							どうしてあなたは　涼しげでいられる<br>
+							ふれるほど近く　くちびる　胸もと<br>
+							こんなにも僕を　危険にさせとく</p>
+						<p>
+							愛してもいいはず　それでも時が熟さない<br>
+							せきたてる心に　追いつかなくて<br>
+							現実はままならない</p>
+						<p>
+							自然に抱きよせ　人波の街角<br>
+							車のブレーキ　後でひびいて<br>
+							条件反射で　二人は横向く</p>
+						<p>
+							たまらなく　恋なら<br>
+							チャンスはいまだ　おとずれず<br>
+							たまらなく　おろかな<br>
+							男になっていきそうで<br>
+							ままならない</p>
+						<p>
+							あやういベールを　季節に重ねて<br>
+							あなたは日毎に　女になってく</p>
+						<p>
+							たまらなく　恋なら　あした晴れるか<br>
+							晴れないか<br>
+							少しでも　恋なら　夢は見れるか<br>
+							見れないか<br>
+							風に聞くよ</p>
+						<p>
+							愛してもいいはず　あした晴れるか<br>
+							晴れないか<br>
+							たまらなく　恋なら<br>
+							つき進んでく心なら<br>
+							風が知ってる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ikkoku-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

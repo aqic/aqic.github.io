@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>なやましマンボ - サクラ大戦</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「サクラ大戦」神崎すみれエンディングテーマ</div>
+
+                    <div class="LyricTitle">なやましマンボ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">神崎すみれ(富沢美智恵)</div>
+                    <div class="LyricStaff">作詞：広井王子<br>作曲：田中公平<br>編曲：岸村正実</div>
+
+                    <div class="LyricText">
+						<p>
+							ま白き肌と　後れ髪に<br>
+							妖しく隠す　おんな心<br>
+							ほどいた帯の　衣擦れが<br>
+							あなたをなやませる</p>
+						<p>
+							謎ゆえに　謎ゆえに<br>
+							重ねる恋の　狂おしく<br>
+							ひとときに　燃え上がり<br>
+							こころとろける　ああ</p>
+						<p>
+							マンボ　いまだけは<br>
+							マンボ　あなたのもの<br>
+							マンボ　好きにしていいわ<br>
+							きつく抱きしめて<br>
+							マンボ　なやましく<br>
+							マンボ　うねりながら<br>
+							マンボ　高く昇ろう<br>
+							息も止まるほどに　マンボ！</p>
+						<p>
+							おんな心と　秋の空<br>
+							なにもいわずに　ふりほどいた<br>
+							返す言葉の　後ろ髪<br>
+							もう一度会いたい</p>
+						<p>
+							誰ゆえに　誰ゆえに<br>
+							一夜の夢の　せつなさよ<br>
+							寝乱れた　枕さえ<br>
+							未練なのよと　ああ</p>
+						<p>
+							マンボ　これきりよ<br>
+							マンボ　あなたのこと<br>
+							マンボ　最後に踊ろう<br>
+							きつく抱きしめて<br>
+							マンボ　なやましく<br>
+							マンボ　うねりながら<br>
+							マンボ　高く昇ろう<br>
+							息も止まるほどに　マンボ！</p>
+						<p>
+							マンボ　いまだけは<br>
+							マンボ　あなたのもの<br>
+							マンボ　好きにしていいわ<br>
+							きつく抱きしめて<br>
+							マンボ　なやましく<br>
+							マンボ　うねりながら<br>
+							マンボ　高く昇ろう<br>
+							息も止まるほどに　マンボ！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sakurawars-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>太郎十八番 - 魔法のステージ ファンシーララ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">太郎十八番</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">山口勝平</div>
+
+                    <div class="LyricText">
+						<p>
+							あおい そらに そよぐ かぜ<br>
+							ながれる くもは まっしろけ<br>
+							おゆる わかばに ひが さして<br>
+							にわとり なくよ こっけここ<br>
+							きょうも げんきだ おはようさん<br>
+							あさめし くって がんばろう</p>
+						<p>
+							まっかな たいよう とぶ かもめ<br>
+							おおきな くもに ひかる うみ<br>
+							とつぜん ふるよ にわかあめ<br>
+							ぴかっと ひかりゃ とんがらら<br>
+							きょうも そうかい こんにちは<br>
+							ひるめし くって いそがしい</p>
+						<p>
+							ひろい つきに すすき ゆれ<br>
+							つまれた だんご おいしそう<br>
+							ながれる くもに つきがくれ<br>
+							ひそって うたう ぎりぎりす<br>
+							きょうも かいてき こんばんは<br>
+							ばんめし くって おちつこう</p>
+						<p>
+							しろい ゆきが まいおりる<br>
+							みわたす かぎり はてしなく<br>
+							こたつに みかん たべのこ<br>
+							しずかに つもる ゆき こんこん<br>
+							きょうも おつかれ さよなら<br>
+							ふとんを かぶり おやすみよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fancylala-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>硝子のキッス - めぞん一刻</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「めぞん一刻完結篇」エンディング・テーマ (1988)</div>
+
+                    <div class="LyricTitle">硝子のキッス</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">姫乃樹リカ</div>
+                    <div class="LyricStaff">作詞：松本　隆<br>作曲：和泉常寛<br>編曲：萩田光雄</div>
+
+                    <div class="LyricText">
+						<p>
+							※ガラス越しのKissみたい<br>
+							　こんな近くて遠いわ<br>
+							　ガラス越しのKissみたい<br>
+							　もどかしいほど好きなの</p>
+						<p>
+							暮れなずむカフェの椅子に座って<br>
+							あたたかいミルクを飲んだ<br>
+							あなたは照れた顔で表の<br>
+							黙りこんだ街をみてる</p>
+						<p>
+							少しだけ勇気だせばあなたの<br>
+							優しい手包めるのにね<br>
+							友だち　その見えない線から<br>
+							はみだせずに生きてるだけ</p>
+						<p>
+							好きだって口にだせば<br>
+							ガラスの壁はこわれる<br>
+							知ってるのに瞳〈め〉があうたび<br>
+							視線を外らす二人ね</p>
+						<p>
+							別れぎわ　電車のドア閉じれば<br>
+							淋しげに手を振るあなた<br>
+							涙をためた顔の私が<br>
+							窓の中に二重映し</p>
+						<p>
+							好きだって言えないまま<br>
+							いくつ季節が過ぎたの？<br>
+							手をのばして触れたいのに<br>
+							何かが邪魔をしてるの</p>
+						<p>
+							背中合わせの時間が過ぎてく</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ikkoku-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ぼくなつ（ショート版） - 塔ノ沢魔術研究会</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ぼくのなつあそび主題歌</div>
+
+                    <div class="LyricTitle">ぼくなつ（ショート版）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">樋口レン</div>
+                    <div class="LyricStaff">作詞：河村好乃<br>作曲：平林征児<br>レコーディング：ソルシエール・サウンド・デザイン</div>
+
+                    <div class="LyricText">
+						<p>
+							優しく頬撫でる風が吹き<br>
+							置き去りの心を呼び起こす<br>
+							まだ胸に欠片（かけら）を残した<br>
+							あの日の夢ゆさぶって</p>
+						<p>
+							肌を焦がす陽射しを感じて<br>
+							眩しい季節はもうすぐそこ<br>
+							きっと　誰も何かを求めて<br>
+							世界で一番輝くとき</p>
+						<p>
+							今は遠いどこかにいるキミ<br>
+							いつか巡り会えるよね</p>
+						<p>
+							はしゃぎすぎる胸の鼓動押さえ切れなくて<br>
+							夢も恋も叶いそうな僕の夏休み<br>
+							今はじまる・・・</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sp-janis-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

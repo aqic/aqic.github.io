@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>はりきって Trying! - 万能文化猫娘</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ＯＶＡ「万能文化猫娘」新エンディングテーマ</div>
+
+                    <div class="LyricTitle">はりきって Trying!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							きっと叶うよ<br>
+							君を熱くする　ステキなその夢<br>
+							たった一歩の小さなスタートも<br>
+							大きく膨らんでゆく</p>
+						<p>
+							みんな自分の事を　信じる事　忘れずに…</p>
+						<p>
+							はりきって　Trying　負けたりしないで<br>
+							やるせない日々が　重なっても<br>
+							はりきって　Trying　毎日の汗を<br>
+							無駄にしない君　輝き続けて</p>
+						<p>
+							そうよ、いつでも君を見つめている瞳が<br>
+							そこにはあるの<br>
+							だから、どんな時でも<br>
+							たやすく諦めないで</p>
+						<p>
+							はりきって　Trying　何も怖くない<br>
+							がむしゃらなくらい　がんばったなら<br>
+							はりきって　Trying　少しずつだけど<br>
+							夢が近づいて　微笑みかけるよ</p>
+						<p>
+							はりきって　Trying　負けたりしないで<br>
+							やるせない日々が　重なっても<br>
+							はりきって　Trying　毎日の汗を<br>
+							無駄にしない君　輝き続けて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bbn-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

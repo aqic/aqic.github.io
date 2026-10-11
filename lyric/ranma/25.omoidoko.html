@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>思い出がいっぱい - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">［らんま 1/2］DoCo＊FIRSTイメージ・ソング(1992)</div>
+
+                    <div class="LyricTitle">思い出がいっぱい</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">らんま1/2　DoCo</div>
+                    <div class="LyricStaff">作詞：及川眠子<br>作曲：岩田雅之<br>編曲：川井憲次<br>実演：らんま★林原めぐみ<br>あかね★日高のり子<br>シャンプー★佐久間レイ<br>なびき★高山みなま<br>かすみ★井上喜久子</div>
+
+                    <div class="LyricText">
+						<p>
+							（全員）始業ベル気にしながら 駆けてくるクラスメイト<br>
+							声かけるの ねぇ「（あかね）おはよう！」<br>
+							夏草が薫る舗道 微笑みで始まる朝<br>
+							いつもと同んなじだけど</p>
+						<p>
+							（らんま）さりげない瞬間さえ 私の宝物<br>
+							（シャンプー）こころのアルバムに 貼ってある</p>
+						<p>
+							（かすみ）忘れない［この空を］ （ら・シ・な）<br>
+							忘れない［この夢を］<br>
+							（あかね）あなたといま分けあう 優しい季節<br>
+							（なびき）悲しくて［揺れた日も］ （ら・あ・シ・か）<br>
+							嬉しくて［泣いた日も］<br>
+							（全員）大切な思い出なの</p>
+						<p>
+							（全員）陽が当たる渡り廊下 友達に打ち明けたね<br>
+							素敵なひと でも「（らんま）ナイショ……」<br>
+							切りすぎた髪を悔やみ 眠れない夜もあった<br>
+							いつかは笑えるかしら</p>
+						<p>
+							（なびき）さざ波がさらうように はかなく消えた恋<br>
+							（かすみ）痛みが過去形に 変わっても</p>
+						<p>
+							（らんま）忘れない［あの虹を］ （あ・シ・な）<br>
+							忘れない［あの愛を］<br>
+							（かすみ）そうオトナになっても なくしたくない<br>
+							（シャンプー）はしゃいでた［いつだって］ （ら・あ・シ・か）<br>
+							悩んでた［いまだって］<br>
+							（全員）まぶしさは終わらないの</p>
+						<p>
+							（あかね）忘れない［この空を］ （ら・な・か）<br>
+							忘れない［この夢を］<br>
+							（シャンプー）あなたといま分けあう 優しい季節<br>
+							（かすみ）悲しくて［揺れた日も］ （ら・あ・シ・な）<br>
+							嬉しくて［泣いた日も］<br>
+							（全員）大切な思い出なの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

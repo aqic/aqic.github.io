@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Dream　～The ally of～ - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Dream　～The ally of～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Rino</div>
+
+                    <div class="LyricText">
+						<p>
+							君と初めての春<br>
+							二人の笑顔、嬉しくて恥ずかしくて<br>
+							僕たちの始まりは<br>
+							そんな普通の出会い</p>
+						<p>
+							あの日の卒業写真<br>
+							桜の花が想い出を散りばめてた<br>
+							夢を鞄に詰めた<br>
+							小さな恋のストーリー</p>
+						<p>
+							真夜中の内緒の電話で<br>
+							二人夜空を見上げながら<br>
+							流れる星を一緒に見つけて<br>
+							二人で願いを唱えた</p>
+						<p>
+							君への想い、言葉、夢、愛や希望<br>
+							溢れ出す気持ち抑えていた<br>
+							いつまでも惹かれあう春の夢は<br>
+							繰り返すあの桜のように</p>
+						<p>
+							君と歩く公園<br>
+							桜の下で突然の雨宿りと<br>
+							肩を寄せ合う二人<br>
+							幼い日々を思い出す</p>
+						<p>
+							君と寄り添う秘密の基地<br>
+							二人初めてキスを交わし<br>
+							震える肩を抱きしめた僕は<br>
+							君と永遠を誓った</p>
+						<p>
+							きっと惹かれあう引力、君のすべて<br>
+							この手でずっと包んでいたい<br>
+							いつまでも果てしなく続く道を<br>
+							二人で歩く春の夢</p>
+						<p>
+							君への想い、言葉、夢、愛や希望<br>
+							溢れ出す気持ち抑えられず<br>
+							いつまでも惹かれあう春の夢は<br>
+							繰り返す、あの桜のように</p>
+						<p>
+							あの日、交わした約束を大事にして<br>
+							二人で歩き続けてゆく<br>
+							いつまでも変わらない君の笑顔<br>
+							この手で守りたい儚い夢　forever dream<br>
+							空に虹をかけよう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

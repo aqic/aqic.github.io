@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>光の中へ - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」～ ひとみキャラクター・ソング</div>
+
+                    <div class="LyricTitle">光の中へ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本真綾</div>
+                    <div class="LyricStaff">作詞：岩里祐穂<br>作曲／編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							握りしめた手をほどいたなら<br>
+							たぶんこれですべてが今終わってしまう</p>
+						<p>
+							知りたかったこと　傷つくことさえも<br>
+							何ひとつ　やり残したままで</p>
+						<p>
+							あなたが出会う幸せを願いたいはずなのに<br>
+							できない未熟な自分に　拭いても涙が出る</p>
+						<p>
+							さよなら<br>
+							愛してる　あなたを誰より<br>
+							宙(そら)よりも深く<br>
+							泣かないで<br>
+							また会おうね<br>
+							でも会えないこと　私だけ知っているの</p>
+						<p>
+							こんな運命をえらんだこと<br>
+							いつかあなたにも本当の意味が分かるわ</p>
+						<p>
+							二人作った記憶の宝<br>
+							ずっと心の隠れ家で生きてくよ</p>
+						<p>
+							きれい事だと思ってた希望という言葉を<br>
+							苦しいくらい抱きしめてあなたを見上げている</p>
+						<p>
+							ありがとう<br>
+							愛している　あなたを誰より<br>
+							夢よりも強く<br>
+							抱きしめて　離さないで<br>
+							だけど一言も　伝えられないで . . .</p>
+						<p>
+							泣かないで　愛している<br>
+							遠く離れてても<br>
+							あなたと生きてゆける</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>私たちになりたくて - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「美少女戦士セーラームーン Super S」エンディング・テーマ</div>
+
+                    <div class="LyricTitle">私たちになりたくて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">藤谷美和子</div>
+                    <div class="LyricStaff">作詞：秋本康<br>作曲：井上望<br>編曲：岩崎文紀</div>
+
+                    <div class="LyricText">
+						<p>
+							あなたと出会ってから<br>
+							胸の奥で光ってる<br>
+							いとしさが切なくて<br>
+							静かに瞳を閉じた</p>
+						<p>
+							なんでもないしぐさも<br>
+							ごく普通の言葉も<br>
+							思い出すそのたび<br>
+							涙が出そうになる</p>
+						<p>
+							※恋はLonely Lonely Heart<br>
+							　一人ぼっちよ<br>
+							　Lonely Lonely Heart<br>
+							　喜びも悲しみもいつだって<br>
+							　私だけの夢の中<br>
+							　恋はLonely Lonely Heart<br>
+							　だけどきっといつの日にか<br>
+							　あなたの強い腕に抱かれながら<br>
+							　私たちになりたくて</p>
+						<p>
+							あなたのすぐ近くで<br>
+							ずっと私待ってるの<br>
+							きっづいではくれなくて<br>
+							何度もがっかりしたわ</p>
+						<p>
+							誰かを好きになると<br>
+							なぜこんなに苦しいの<br>
+							私だけ一人が<br>
+							風邪を退いたみたいに</p>
+						<p>
+							今はBaby Baby love<br>
+							どうぞお願い<br>
+							Baby Baby love<br>
+							寂しさに負けそうなその時は<br>
+							手鏡を除かせて<br>
+							今はBaby Baby love<br>
+							ないた夜もいつの日にか<br>
+							昔を懐かしんで笑い合える<br>
+							私たちになりたくて</p>
+						<p>
+							誰も知らない<br>
+							Secret tears<br>
+							拭える人は<br>
+							Only<br>
+							私より<br>
+							私たちになりたくて</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

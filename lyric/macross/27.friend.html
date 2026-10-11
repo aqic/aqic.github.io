@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Friends ～時空を越えて～ - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Friends ～時空を越えて～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">リン·ミンメイ(飯島真理)
+ミレーヌ·ジーナス(桜井 智)</div>
+                    <div class="LyricStaff">編曲：飯島真理、James Studer<br>作詞、作曲：飯島真理</div>
+
+                    <div class="LyricText">
+						<p>
+							不思議な磁力に引かれて<br>
+							ここまで　たどり着いた<br>
+							懐かしい雨の匂い<br>
+							いつか見たような風景<br>
+							何処からか　私を呼ぶ声<br>
+							風の方向に　耳を澄まそう<br>
+							透明な光のシャワー　降り注いでいる</p>
+						<p>
+							無邪気な天使の微笑み<br>
+							仕草が私と似ている<br>
+							「あなたの名前教えて…」<br>
+							そよ風のように囁く<br>
+							果てしない時空を越えて<br>
+							こうして二人は巡り会えたの<br>
+							壊れかけた砂時計は　もう忘れていい<br>
+							言葉は沢山いらない<br>
+							あなたの感動が伝わるから<br>
+							しばらくはここに座って　宇宙を感じて</p>
+						<p>
+							悲しみや喜びをわかり合える本当の友達を<br>
+							ずっと探していたから…<br>
+							果てしない時空を越えて<br>
+							こうして二人は巡り会えたの<br>
+							壊れかけた砂時計は　もう忘れていい<br>
+							言葉は沢山いらない<br>
+							あなたの感動が伝わるから<br>
+							しばらくはここに座って　宇宙を感じて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

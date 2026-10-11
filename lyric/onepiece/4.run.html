@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>RUN!RUN!RUN! - ONE PIECE</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ONE PIECE ED 2</div>
+
+                    <div class="LyricTitle">RUN!RUN!RUN!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">大槻真希</div>
+                    <div class="LyricStaff">作詞：大槻真希<br>作曲‧編曲：森純太</div>
+
+                    <div class="LyricText">
+						<p>
+							はみ出した気持ちつながらなくて<br>
+							君の手をぎゅっと握り返すよ</p>
+						<p>
+							一人でも僕は歩き出すから<br>
+							遠くまでずっと見つめていてね</p>
+						<p>
+							今朝からちょっと考えていた<br>
+							どうしてこんなに熱いの</p>
+						<p>
+							いつもよりも早足になる<br>
+							まだ見ぬ風感じたい</p>
+						<p>
+							いつからかそんなことばかりが離れないよ</p>
+						<p>
+							はみ出した気持ちつながらなくて<br>
+							君の手をぎゅっと握り返すよ</p>
+						<p>
+							一人でも僕は歩き出すから<br>
+							遠くまでずっと見つめていてね</p>
+						<p>
+							ゆうべははちょっと眠れなかった<br>
+							どうしてこんなに遠いの 　 〓</p>
+						<p>
+							伝えたい思いがあせるから追いかけるよ</p>
+						<p>
+							驅け出した気持ちつかまえたくて<br>
+							自分さえもう追い越して行くよ</p>
+						<p>
+							飛び出した夢を抱きしめてたい<br>
+							一緒なら僕は走って行ける</p>
+						<p>
+							いつの日かこの思い屆くと信じてるよ</p>
+						<p>
+							はみ出した気持ち抱きしめたまま<br>
+							風の中ずっと走りつづける</p>
+						<p>
+							飛び出した夢は立ち止まらない<br>
+							突き拔ける思い呼び覺ましたい</p>
+						<p>
+							はみ出した気持ちつながらなくて<br>
+							君の手をぎゅっと握り返すよ</p>
+						<p>
+							一人でも僕は歩き出すから<br>
+							遠くまでずっと見つめていてね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onepiece-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

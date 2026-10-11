@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>静かな夜に - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">静かな夜に</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ラクス(田中理恵)</div>
+                    <div class="LyricStaff">作詞：梶浦由記<br>作曲：佐橋俊彦<br>編曲：梶浦由記</div>
+
+                    <div class="LyricText">
+						<p>
+							静かなこの夜に貴方を待ってるの<br>
+							あのとき忘れた微笑みを取りに来て<br>
+							あれから少しだけ時間が過ぎて<br>
+							想い出が優しくなったね<br>
+							星の降る場所で<br>
+							貴方が笑っていることを<br>
+							いつも願ってた<br>
+							今遠くても　また会えるよね</p>
+						<p>
+							いつから微笑みはこんなに儚くて<br>
+							一つの間違いで壊れてしまうから<br>
+							大切なものだけを光りにかえて<br>
+							遠い空越えていく強さで</p>
+						<p>
+							星の降る場所へ<br>
+							想いを貴方に届けたい<br>
+							いつも側にいる<br>
+							その冷たさを抱きしめるから<br>
+							今遠くてもきっと会えるね</p>
+						<p>
+							静かな夜に．．．</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

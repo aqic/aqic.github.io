@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>A Little Girl - HAND MAID メイ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Hand Maid May</div>
+
+                    <div class="LyricTitle">A Little Girl</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">P-chicks</div>
+
+                    <div class="LyricText">
+						<p>
+							努力じゃ変わらない悩みは<br>
+							あつそこにかくしてる<br>
+							憧れた世界を見おろす<br>
+							優越にひたるてど<br>
+							でも　私らしい目線を忘れそう<br>
+							飾りなど脱いで走ろう</p>
+						<p>
+							Ding Dong Dang Dong 胸に感じてる energy で<br>
+							高い壁でも乗り越えてく<br>
+							Ding Dong Dang Dong 夢の空をつつく力は<br>
+							体いっぱい流れてるよ</p>
+						<p>
+							肩を並べられる仲間と<br>
+							未来づを書き込めば<br>
+							ほら　向日葵も空を見上げながら<br>
+							大きな夢を咲かせてる</p>
+						<p>
+							Ding Dong Dang Dong 時を刻んでいる鼓動で<br>
+							もっと自分を輝かせて<br>
+							Ding Dong Dang Dong わたし一人じゃ小さいけど<br>
+							あなたがいれば　きっとできるよ</p>
+						<p>
+							Ding Dong Dang Dong 胸に感じてる energy で<br>
+							高い壁でも乗り越えてく<br>
+							Ding Dong Dang Dong 夢の空をつつく力は<br>
+							体いっぱいこんなにも　溢れてる　流れてるよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-handmaidmay-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夢は終わらない - テイルズ オブ ファンタジア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Tales of Phantasia」</div>
+
+                    <div class="LyricTitle">夢は終わらない</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							真昼の空付きが<br>
+							あなたの目を攫う<br>
+							ずっと待ってたこの時<br>
+							もっ、涙終わらせる夜明けに</p>
+						<p>
+							目蓋とけるひざし<br>
+							遠い明日の記憶<br>
+							ここに目覚めのとき降りる</p>
+						<p>
+							★見つけて「your dream」壊れかけた<br>
+							　時に埋もれたその力に築いて<br>
+							　見つけて「your dream」どこえいても<br>
+							　聞こえてる思いずたいキス、キス、キス</p>
+						<p>
+							あなたの見た夢は<br>
+							現実でも未来<br>
+							愛な毀れるでもひら<br>
+							もっ、そらば恐れない夜明けを</p>
+						<p>
+							風にみじびかれる<br>
+							背中見つめながら<br>
+							みどと会えないかな無くよ</p>
+						<p>
+							見つけて「your dream」どんな時も<br>
+							レド前の如何に帰せないは願を<br>
+							見つけて「your dream」時が来ても<br>
+							覚えてる時も越えてキス、キス、キス</p>
+						<p>
+							★繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-tof-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>虹とリンクのバラード - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">虹とリンクのバラード</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							虹の地平線を駆けぬけて行こう<br>
+							光におおわれた世界<br>
+							胸の翼広げはばたいて行こう<br>
+							とがめるものはもう何もない</p>
+						<p>
+							愛の力はいつでも心　自由に強くさせるから</p>
+						<p>
+							踊ろう二人のリンクで　描こう輝く未来を<br>
+							そして　永遠の彼方まで</p>
+						<p>
+							虹の地平線を駆けぬけて行こう<br>
+							誰かが待っている世界<br>
+							胸の翼広げ大空を行こう<br>
+							ふり向く過去はもう遠い影さ</p>
+						<p>
+							愛の力でつないだ心　自由な夢がみたいから</p>
+						<p>
+							踊ろう二人のリンクで　描こうまぶしい未来を<br>
+							そして　永遠の彼方まで</p>
+						<p>
+							踊ろう二人のリンクで　描こう輝く未来を<br>
+							そして　永遠の彼方まで</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

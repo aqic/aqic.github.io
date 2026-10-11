@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>エム モア - NOIR</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">エム モア</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							わすれないでいて　切り裂かれた雨<br>
+							赤い夢を見た　あの場所<br>
+							貝殻の中に　隠したあのキス<br>
+							しずくのまま　残っているよ</p>
+						<p>
+							消さないでほしい　痛みに似た夢<br>
+							言葉にならない　昨日を<br>
+							鏡を割るように　抱きしめにいって<br>
+							ふるえていた　空を見よう</p>
+						<p>
+							泣きたいことがあっても　溶けはしないで<br>
+							やわらかさに会える日へ　泳ぎ続けよう</p>
+						<p>
+							手をのばしてみて　もうひとつの夏<br>
+							しのぶような熱　感じて<br>
+							すれちがってきた　瞳たちのこと<br>
+							ひとつひとつ思い出して</p>
+						<p>
+							いけないことを知っても　逃げはしないで<br>
+							いとしさにふれる午後を　探し続けよう</p>
+						<p>
+							悲しいことがあっても　揺れないでいて<br>
+							優しさに会える日まで　泳ぎ続けよう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-noir-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

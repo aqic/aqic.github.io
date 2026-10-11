@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>永遠のランナー - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book ３</div>
+
+                    <div class="LyricTitle">永遠のランナー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">芹澤 廣明</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							誰でも夢見るランナーだね</p>
+						<p>
+							蒼く煙った影が走るね<br>
+							時間の波打際さ<br>
+							みんな真夏の夢見てるねって<br>
+							君は遠い瞳をしてるよ</p>
+						<p>
+							君を愛してると<br>
+							隠して生きられないよ</p>
+						<p>
+							人は永遠のランナー<br>
+							見果てぬ夢を追いかけて<br>
+							白い息を切らせながら行くよ</p>
+						<p>
+							人は永遠のランナー<br>
+							涙で胸に傷つけて<br>
+							青春を駆けてくランナーだね  君が指さす雲の切れ間さ<br>
+							虹が海に降りるよ<br>
+							みんなでここにいられたらね...って<br>
+							細い声が風を止めた</p>
+						<p>
+							ひとつ空いた席に<br>
+							想い出だけが座るよ...</p>
+						<p>
+							人は永遠のランナー<br>
+							淋しさっていう荷物を<br>
+							熱い胸に抱えながら行くよ</p>
+						<p>
+							人は永遠のランナー<br>
+							走ることを止められない<br>
+							誰でも夢見るランナーだね</p>
+						<p>
+							人は永遠のランナー<br>
+							見果てぬ夢を追いかけて<br>
+							白い息を切らせながら行くよ</p>
+						<p>
+							人は永遠のランナー<br>
+							涙で胸に傷つけて<br>
+							青春を駆けてくランナーだね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

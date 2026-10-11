@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>More than words - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">More than words</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">绿川　光</div>
+
+                    <div class="LyricText">
+						<p>
+							好きだった…ひとり空を見上げ<br>
+							ダ闇の中　たそがれるのが<br>
+							若かった…<br>
+							誰よりも強気で意地を張ってた俺が<br>
+							何だか少しおかしくて</p>
+						<p>
+							瞳とじると　心を閉ざして生きて来た自分が<br>
+							ただゆっくりと遠ざかって消えてゆく</p>
+						<p>
+							I was so lonely　でも今は<br>
+							バカげた虛言わざとらしい笑顔も<br>
+							何ひとつない　そんな仲間がここに居る<br>
+							Dear friends, forever</p>
+						<p>
+							幻や　キレイごとだと友情をあざ笑い<br>
+							何気ないたくさんの出会いも<br>
+							拒み続けた俺は<br>
+							そう　カッコつけてただけで</p>
+						<p>
+							冷えきっていたこの身体心ごと暖められてく<br>
+							きっと誰かを大切に想う気持ちか</p>
+						<p>
+							I believe your everything　これからは<br>
+							“ありがとう”なんて言えない俺と一緒に<br>
+							気ままに生きる　そんな仲間も悪くない<br>
+							Dear friends, forever</p>
+						<p>
+							Never say good-bye to my friends<br>
+							Because I make our<br>
+							dreams come true<br>
+							真実の俺　Dear friends, forever<br>
+							受けとめてくれた<br>
+							Dear my friends, forever</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

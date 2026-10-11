@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Duvet - serial experiments lain</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Serial Experiments Lain」 オープニング・テーマ</div>
+
+                    <div class="LyricTitle">Duvet</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">BOA</div>
+
+                    <div class="LyricText">
+						<p>
+							And you don't seem to understand<br>
+							A shame you seemed an honest man<br>
+							And all the fears you hold so dear<br>
+							Will turn to whisper in your ear<br>
+							And you know what they say might hurt you<br>
+							And you know that it means so much<br>
+							And you don't even feel a thing</p>
+						<p>
+							I am falling, I am fading<br>
+							I have lost it all</p>
+						<p>
+							And you don't seem the lying kind<br>
+							A shame then I can read your mind<br>
+							And all the things that I read there<br>
+							Candle lit smile that we both share<br>
+							and you know I don't mean to hurt you<br>
+							But you know that it means so much<br>
+							And you don't even feel a thing</p>
+						<p>
+							I am falling, I am fading, I am drowning<br>
+							Help me to breathe<br>
+							I am hurting, I have lost it all<br>
+							I am losing<br>
+							Help me to breathe</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lain-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

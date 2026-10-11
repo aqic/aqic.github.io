@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>SINCERELY～ever dream～ - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">SINCERELY～ever dream～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">dream</div>
+                    <div class="LyricStaff">作詞：松室麻衣<br>作曲：菊池一仁<br>編曲：H∧L</div>
+
+                    <div class="LyricText">
+						<p>
+							伝えたい想いが今　溢れているよ<br>
+							言葉にできなくて戸惑っている<br>
+							出会いから　数えきれぬ季節が巡り<br>
+							語りあかした夜がなつかしいよね</p>
+						<p>
+							夢へ近づくたびに　儚さを知ったよ</p>
+						<p>
+							君がもし迷って　立ち止まった時は<br>
+							もう一度　思い出してほしい<br>
+							僕達はどんなに遠くても　繋がっていること</p>
+						<p>
+							複雑に絡まってる毎日の中<br>
+							本当は泣きたいのに強がってたね<br>
+							ムリして背のびしないで　そのままでいて<br>
+							笑った君の顔が大好きだから</p>
+						<p>
+							夢を叶えるために　犠牲になったもの</p>
+						<p>
+							君がもし迷って　立ち止まった時は<br>
+							もう一度　思い出してほしい<br>
+							僕達はどんなに遠くても　繋がっていること</p>
+						<p>
+							切なさを抱えて　間違いくりかえし<br>
+							大人になっていくんだろう<br>
+							だけど皆　覚えていてほしい<br>
+							一人じゃないことを…</p>
+						<p>
+							それぞれの旅立ち　ここから始めよう<br>
+							今までの僕達とは違う<br>
+							もう負けない　歩き出していくよ<br>
+							どんな未来へでも　強くなれるように…</p>
+						<p>
+							僕達の物語は　ずっと続いていく</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

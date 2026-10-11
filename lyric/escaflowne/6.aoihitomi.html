@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>青い瞳 - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」イメージ(1996)</div>
+
+                    <div class="LyricTitle">青い瞳</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本真綾</div>
+                    <div class="LyricStaff">作詞：岩里祐穂<br>作曲・編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							★抱きしめないで<br>
+							　私の憧れ<br>
+							　密かな腕の中<br>
+							　このままでいいから</p>
+						<p>
+							その青い瞳<br>
+							美しい愚かさ<br>
+							あなたを何もかも<br>
+							奇跡だと信じた</p>
+						<p>
+							人はゴンドラにのりただ<br>
+							出会いそして分かれ<br>
+							短い真夏<br>
+							悲しみと喜び繰り返して</p>
+						<p>
+							いつかは終わる一時の恋でも<br>
+							あなたは永遠を私に残すだろう</p>
+						<p>
+							水を吹くんだ風が頬を撫でてゆく<br>
+							何もかも忘れて<br>
+							壊してしまえ</p>
+						<p>
+							こんな小さな自分も明日も<br>
+							あなたを愛してる</p>
+						<p>
+							★くり返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

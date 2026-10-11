@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">サクラ大戦</span><span class="cn">（樱花大战）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+					<div class="disc-head"><span class="disc-name">サクラ大戦</span><span class="disc-sub">24 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.yumenotsuzuki.html">《夢のつづき》</a><span class="note">- 「サクラ大戦２～君、死にたもうことなかれ～」主題歌</span></li>
+						<li class="LyricItem"><a href="2.geki.html">《檄！帝国華撃団》</a><span class="note">- 「サクラ大戦」主題歌</span></li>
+						<li class="LyricItem"><a href="3.geki2.html">《檄！帝国華撃団(改)》</a><span class="note">- 「サクラ大戦２」主題歌</span></li>
+						<li class="LyricItem"><a href="4.mihatanomotoni.html">《御旗のもとに》</a><span class="note">- 「サクラ大戦3」オープニングテーマ</span></li>
+						<li class="LyricItem"><a href="5.echudo.html">《エチュード》</a><span class="note">- 「サクラ大戦」アイリスエンディングテーマ</span></li>
+						<li class="LyricItem"><a href="6.onriman.html">《オンリー・マン》</a><span class="note">- 「サクラ大戦」タチバナ・マリアエンディングテーマ</span></li>
+						<li class="LyricItem"><a href="7.sakura.html">《さくら》</a><span class="note">- 「サクラ大戦」真宮寺さくらエンディングテーマ</span></li>
+						<li class="LyricItem"><a href="8.nayamashi.html">《なやましマンボ》</a><span class="note">- 「サクラ大戦」神崎すみれエンディングテーマ</span></li>
+						<li class="LyricItem"><a href="9.yorunosanba.html">《夜のサンバ》</a><span class="note">- 「サクラ大戦」藤枝あやめエンディングテーマ</span></li>
+						<li class="LyricItem"><a href="10.mirai.html">《未来(ボヤージュ)》</a><span class="note">- 「サクラ大戦3」エンディング・テーマ</span></li>
+						<li class="LyricItem"><a href="11.dongjingdexiuri.html">《東京的休日》</a><span class="note">- 「サクラ大戦」李紅蘭エンディングテーマ</span></li>
+						<li class="LyricItem"><a href="12.hotbugi.html">《灼熱ブギ》</a><span class="note">- 「サクラ大戦」桐島カンナエンディングテーマ</span></li>
+						<li class="LyricItem"><a href="13.hanasaku.html">《花咲く乙女》</a><span class="note">- 「サクラ大戦」エンディングテーマ</span></li>
+						<li class="LyricItem"><a href="14.isshouniarukou.html">《いっしょうに歩こう》</a><span class="note">- 「サクラ大戦3」挿入歌</span></li>
+						<li class="LyricItem"><a href="15.eroika.html">《エロイカ/英雄伝説》</a><span class="note">- 「サクラ大戦3」挿入歌</span></li>
+						<li class="LyricItem"><a href="16.senchimentaruna.html">《センチメンタルな…》</a><span class="note">- 「サクラ大戦3」挿入歌</span></li>
+						<li class="LyricItem"><a href="17.192455631.html">《192455631》</a><span class="note">- 「サクラ大戦3」挿入歌</span></li>
+						<li class="LyricItem"><a href="18.kimishinobuuta.html">《君偲ぶ歌》</a><span class="note">- 「サクラ大戦3」挿入歌</span></li>
+						<li class="LyricItem"><a href="19.kokoronokasawa.html">《心の傘は》</a><span class="note">- 「サクラ大戦3」挿入歌</span></li>
+						<li class="LyricItem"><a href="20.kokoronookibasshou.html">《心の置き場所》</a><span class="note">- 「サクラ大戦3」挿入歌</span></li>
+						<li class="LyricItem"><a href="21.aiwadaiya.html">《愛はダイヤ》</a><span class="note">- 「サクラ大戦」挿入歌</span></li>
+						<li class="LyricItem"><a href="22.aiyueni.html">《愛ゆえに》</a><span class="note">- 「サクラ大戦」挿入歌</span></li>
+						<li class="LyricItem"><a href="23.inori.html">《祈り》</a><span class="note">- 「サクラ大戦3」挿入歌</span></li>
+						<li class="LyricItem"><a href="24.hananobari.html">《花の巴里》</a><span class="note">- 「サクラ大戦3」挿入歌</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

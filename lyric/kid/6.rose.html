@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Rose - KID</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©2002 ONE ～輝く季節へ～ ED</div>
+
+                    <div class="LyricTitle">Rose</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">吉田小百(里村茜合)</div>
+                    <div class="LyricStaff">作詞：並河章太<br>作曲：岡崎律子<br>編曲：高橋一之</div>
+
+                    <div class="LyricText">
+						<p>
+							薔薇色に　一滴<br>
+							黒を　混ぜて<br>
+							心は　愛に　染まる</p>
+						<p>
+							いまは　あなたが　すべてに　なりきれないと<br>
+							多分　知りながら</p>
+						<p>
+							遠い　恋いの　破片を　抱きしめたまま<br>
+							どこか似てる　声に　答える</p>
+						<p>
+							嘘は　すぐ　膨らんで<br>
+							愛は　とても<br>
+							不安な　黒に　染まる</p>
+						<p>
+							頬を　濡らした涙を　隠したいとき<br>
+							いくつ　嘘をつく<br>
+							そして　本当の　心に　気づいてしまう</p>
+						<p>
+							遠い　遠い　はずの　恋いに<br>
+							きっと　本当の　心に　気づいてしまう</p>
+						<p>
+							ずっと　枯れない　薔薇の　恋いに</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kid-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

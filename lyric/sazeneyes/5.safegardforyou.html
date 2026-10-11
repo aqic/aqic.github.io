@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>守ってあげる - 3×3EYES</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「3×3EYES」</div>
+
+                    <div class="LyricTitle">守ってあげる</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							俯いた横顔に<br>
+							夕日が差して<br>
+							傷ついたその旨には<br>
+							溢れる夢</p>
+						<p>
+							気がつけばいつも空お<br>
+							見あげてる<br>
+							果てしなく続くたび時に<br>
+							いくつのあいお見たの</p>
+						<p>
+							☆守られていた　熱い眼差しに<br>
+							　激しい嵐にあなたお<br>
+							　巻き込んだ私お<br>
+							　包まれていた　強い優しさに<br>
+							　今度は私があなたお<br>
+							　守ってあげる</p>
+						<p>
+							微笑んだ瞳には<br>
+							かげりもなくて<br>
+							こんなにも信じられる<br>
+							あなただから</p>
+						<p>
+							忍び寄る闇の中で<br>
+							一人きり<br>
+							私は脅えていただけ<br>
+							勇気も夢も知らず</p>
+						<p>
+							教えてくれた　明日えの道お<br>
+							激しい嵐にあなたお<br>
+							巻き込んだ私に<br>
+							教えてくれた　本当の勇気<br>
+							今度は私があなたお<br>
+							守ってあげる</p>
+						<p>
+							☆くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sazeneyes-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

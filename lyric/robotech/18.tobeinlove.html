@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>To Be In Love - Robotech</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Robotech] Insert Song</div>
+
+                    <div class="LyricTitle">To Be In Love</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Reba West</div>
+
+                    <div class="LyricText">
+						<p>
+							To be in love,<br>
+							Must be the sweetest feeling that a girl can feel.<br>
+							To be in love...</p>
+						<p>
+							To live a dream<br>
+							With somebody you care about like no one else.<br>
+							A special man... A dearest man</p>
+						<p>
+							Who needs to share his life with you alone.<br>
+							Who'll hold you close and feel things<br>
+							That only love brings,<br>
+							To know that he is all your own.</p>
+						<p>
+							To be my love,<br>
+							My love must be much more than any other man.<br>
+							To be my love...</p>
+						<p>
+							To share my dreams,<br>
+							My hero, he must take me where no other can,<br>
+							Where we will find a brand new world.</p>
+						<p>
+							A world of things we've never seen before.<br>
+							Where silver suns have golden moons,<br>
+							Each year has thirteen Junes.<br>
+							That's what must be for me...<br>
+							To be in love...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-robotech-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

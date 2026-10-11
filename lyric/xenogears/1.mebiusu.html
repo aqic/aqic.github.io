@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>メビウス - ゼノギアス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Xenogears (Creid)」</div>
+
+                    <div class="LyricTitle">メビウス</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							世界の果てまで歩いて<br>
+							さび付いた扉を開けよう<br>
+							全てが終わったこの場所から<br>
+							二人の道が始まる</p>
+						<p>
+							果てしなく青いとの空に<br>
+							百億の星が潜む<br>
+							目を閉じて見える真実がここに</p>
+						<p>
+							私を導く誰かがいる<br>
+							誰かを操る何かがある<br>
+							運命より大きな力（運命）が<br>
+							二人の世界を包む</p>
+						<p>
+							目くるめく開く物語<br>
+							百億の夢を紡ぐ<br>
+							かさね合う記憶怖くないきっと</p>
+						<p>
+							ああ　あなたの鼓動を聞かせて<br>
+							身体だけに解る言葉で聞かせて<br>
+							もっと遠く運命の向こうへ旅するために</p>
+						<p>
+							一瞬の熱い喜びに<br>
+							百億の夜が揺れる<br>
+							泣かないでいつも時は<br>
+							全てを乗せて巡るメビウス</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-xenogears-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

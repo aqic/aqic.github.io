@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>パワフルサマー - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">パワフルサマー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sanada Asami, Sawashiro Miyuki, Hikami Kyouko</div>
+                    <div class="LyricStaff">Lyrics : 根津洋子<br>Music : 千沢仁<br>Arrangement : Iwamoto Masaki</div>
+
+                    <div class="LyricText">
+						<p>
+							待ちきれないね　イチオシのシーズン<br>
+							クラクラしちゃう　まぶしすぎる光<br>
+							もう誰もじっとなんてしていられないよ<br>
+							世界中がサバンナ</p>
+						<p>
+							ひまわりみたいに　青空見上げたら<br>
+							くよくよしてる暇なんてないよね<br>
+							ライムソーダの泡の数だけ　はじけよう　きらめく瞬間</p>
+						<p>
+							パワフルサマー　ギラギラの太陽　抱きしめにゆこう<br>
+							エンドレスサマー<br>
+							エメラルドの風を感じたら　走り出そうよ</p>
+						<p>
+							南の島のサンゴ礁が呼んでる<br>
+							パシャパシャ空へ　水しぶきをあげて<br>
+							鼻のあたまとほっぺが日焼けしちゃうね<br>
+							世界中がトロピカル</p>
+						<p>
+							熱帯魚みたいにカラフルな夢見て<br>
+							楽しい思い出　めいっぱい作ろう<br>
+							一年中で一番大好きな季節　ときめく瞬間</p>
+						<p>
+							ミラクルサマー　ワクワクのハートを抱きしめてゆこう<br>
+							エンドレスサマー　サファイアの波はじける季節<br>
+							ほら　つかまえて</p>
+						<p>
+							パワフルサマー　ギラギラの太陽　抱きしめにゆこう<br>
+							エンドレスサマー<br>
+							エメラルドの風を感じたら　走り出そうよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

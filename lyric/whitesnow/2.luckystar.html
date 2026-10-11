@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lucky Star - 新白雪姫伝説プリーティア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">新白雪姫伝説 ED</div>
+
+                    <div class="LyricTitle">Lucky Star</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">吉田小百合</div>
+
+                    <div class="LyricText">
+						<p>
+							明りを消した部屋の窓から見る<br>
+							夜空に星が光る<br>
+							今日こそあなたの星座さがし<br>
+							勝手なジンス</p>
+						<p>
+							７つ目の星を見つけたらLucky Star<br>
+							明日は笑顔で<br>
+							おはようって声をかけてあげるわ<br>
+							仕方ない　特別</p>
+						<p>
+							My sweet Heart　私ばかりが夢中だなんてまさか<br>
+							ありえない許せない<br>
+							あなたの中の気持ちのぞきたい<br>
+							気づかれないように　内緒で</p>
+						<p>
+							毎朝同じバス停で逢うよね<br>
+							劇的運命的<br>
+							待ちぶせだって作戦のひとつ<br>
+							ヤバいバレてる？！</p>
+						<p>
+							あまりにも無防備(むぼうび)なその笑顔は<br>
+							不意打ち(ふいうち)？！でもムダよ<br>
+							その手には簡単にのらないの<br>
+							あなたが折れてよ</p>
+						<p>
+							My sweet Heart　あなたのせいよジンクスもこの恋も<br>
+							うまく行かないのは<br>
+							最後の星は意地でも見つける<br>
+							引き下がれないから　このまま</p>
+						<p>
+							Lucky Star　振り回すはずが振り回されているね<br>
+							自分がジレッたい<br>
+							勝ち目はないの？ホントの気持ちは<br>
+							教えてあげないの　大スキ！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-whitesnow-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

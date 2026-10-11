@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Sensitive - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">犠妹～背徳の契り～ (C)SELEN</div>
+
+                    <div class="LyricTitle">Sensitive</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：高瀬一矢<br>編曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							長い闇の中であなたと出逢って<br>
+							まだ 生きてると知った</p>
+						<p>
+							許されることは無い…<br>
+							解っていても<br>
+							また 瞳を閉じるの</p>
+						<p>
+							染められてく濡れた花<br>
+							水の中でひらひらと揺れて<br>
+							凍りついた 時の川<br>
+							ゆっくり 今 溶かされてゆくよ</p>
+						<p>
+							白い絹に抱かれ 触れた口唇は<br>
+							何もかも消してゆく</p>
+						<p>
+							絡めた指と指の温もりだけが<br>
+							二人を繋(つな)いだ糸</p>
+						<p>
+							薄紅色 落ちた花<br>
+							涙の跡 溢れた水面に<br>
+							弧を描(えが)いた深い川<br>
+							行き場も無く 流されてゆくよ</p>
+						<p>
+							切り裂かれた紅い花<br>
+							震えている 何も見えなくて<br>
+							重なり合う 時の川<br>
+							罪を纏(まと)い 何処までも行くの？</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

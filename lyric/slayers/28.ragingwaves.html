@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Raging waves - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Raging waves</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							花がゆき交い　風が吹き<br>
+							色が舞い散り　灯がともる<br>
+							季節が何度めぐっても<br>
+							この瞬間は２度とない</p>
+						<p>
+							たとえ１００回願っても<br>
+							動き出さなきゃつかめないから<br>
+							後先考えず痛い目も<br>
+							時には見るけど大丈夫</p>
+						<p>
+							考えすぎて　動けなくて<br>
+							チャンス逃がすより向いてるの</p>
+						<p>
+							狙い　定めたなら<br>
+							今　行くだけ行こう</p>
+						<p>
+							誰かに誉められる人生<br>
+							目指している訳じゃないの<br>
+							私が喜ぶ生き方<br>
+							ぶつかりながら見つけてく<br>
+							いきなり強いわけじゃない<br>
+							いきなりできるわけじゃない<br>
+							繰り返して行く日々から<br>
+							つくりあげてくの自分を</p>
+						<p>
+							たとえうまく行かなくっても<br>
+							道は決して閉ざされはしない<br>
+							そこからまた何かがはじまる<br>
+							探して　悩んで　求めてれば</p>
+						<p>
+							やめるのとあきらめるのとでは<br>
+							次の道が変わってくる</p>
+						<p>
+							おもい　残さないで<br>
+							今　やるだけやろう</p>
+						<p>
+							誰かに認められるより<br>
+							まず自分を認めなくちゃ<br>
+							ダメなとこも　いいところも<br>
+							ひっくるめて　抱きしめよう<br>
+							楽に歩ける道よりも<br>
+							つらくっても楽しみたい<br>
+							忙しい退屈な日々<br>
+							変えたいなら歩き出そう</p>
+						<p>
+							誰かに誉められる人生<br>
+							目指している訳じゃないの<br>
+							私が喜ぶ生き方<br>
+							ぶつかりながら見つけてく<br>
+							いきなり強いわけじゃない<br>
+							いきなりできるわけじゃない<br>
+							繰り返して行く日々から<br>
+							つくりあげてくの自分を</p>
+						<p>
+							誰かに認められるより<br>
+							まず自分を認めなくちゃ<br>
+							ダメなとこも　いいところも<br>
+							ひっくるめて　抱きしめよう<br>
+							楽に歩ける道よりも<br>
+							つらくっても楽しみたい<br>
+							忙しい退屈な日々<br>
+							変えたいから歩いてくの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

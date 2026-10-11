@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>二つの羽根 - ゼノギアス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Xenogears (Creid)」</div>
+
+                    <div class="LyricTitle">二つの羽根</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							星が降る空に抱かれて<br>
+							懐かしい声を聞く<br>
+							二人は何故生まれたの<br>
+							何故呼びあうの</p>
+						<p>
+							もう一人でわ飛べない<br>
+							片方の羽根だけでわ<br>
+							運命を遡り<br>
+							あなたに出会う度にでる</p>
+						<p>
+							禁じられた木の実は熟して<br>
+							揺れ惑う心よ<br>
+							未来に指を伸ばせば<br>
+							過去に届くの</p>
+						<p>
+							もう二度と目を反らさない<br>
+							この胸の暗闇にも<br>
+							星空に導かれ<br>
+							あなたに出会う度にでる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-xenogears-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

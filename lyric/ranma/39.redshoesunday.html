@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Red Shoe Sunday - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Ranma 1/2] Image Song (1992)</div>
+
+                    <div class="LyricTitle">Red Shoe Sunday</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							[Shampoo] Up in blue sky, silly blimp go by.<br>
+							Where it come from, where it going, ziggy zaggy it fly high.<br>
+							Today is Sunday, past 1:30, why you no come by?<br>
+							Maybe you late, but I no can wait.<br>
+							Now, I cry.</p>
+						<p>
+							[Kasumi] Pretty red bricks, bridge that spans the tide.<br>
+							Draw the picture, see the face of the one I want by my side.<br>
+							There you are all dressed in black, but I can't see your eyes.<br>
+							Can it be, you're dressed that way for me?<br>
+							Why are you so shy?</p>
+						<p>
+							[All] Beep beep, beep beep.<br>
+							[Ranma] This page is driving me crazy.<br>
+							[All] Just so, you know,<br>
+							[Akane] If some dark stranger asked me,<br>
+							[Nabiki] I might go, and so,<br>
+							[All] Don't blame me when you're lonely.<br>
+							We're sailing out to sea, the ship and me.</p>
+						<p>
+							La La La...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

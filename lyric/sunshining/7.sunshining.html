@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>陽当たり良好 - 陽あたり良好!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">陽当たり良好</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">浅倉 亜季</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							Sweet Shock！　出逢いから<br>
+							Love shock！　非常ベル<br>
+							鳴り響くわ<br>
+							Sweet Shock！　眼差しの<br>
+							Love shock！　稲妻で<br>
+							陽当たり良好</p>
+						<p>
+							夢の中に忍び込んで<br>
+							待ち伏せてたね　危ない少年...</p>
+						<p>
+							うつむいたうなじに<br>
+							白いキスの花片<br>
+							君がそっと散らした</p>
+						<p>
+							好きな人が他にいても<br>
+							逢いたくなるの<br>
+							心だけが不良ね  Sweet Shock！　ハラハラと<br>
+							Love shock！　うらはらに<br>
+							ときめいてる<br>
+							Sweet Shock！　思春期の<br>
+							Love shock！　切なさは<br>
+							陽当たり良好</p>
+						<p>
+							きっと悪い春のせいね<br>
+							甘い危険が　手招きする</p>
+						<p>
+							鏡の中　始めてみる<br>
+							知らない私...<br>
+							息を止めて見つめた</p>
+						<p>
+							好きよ... ふたりとも<br>
+							嫌い...　あなたが</p>
+						<p>
+							危ない瞳をした天使が<br>
+							誰でも胸に　棲んでるのよ</p>
+						<p>
+							好きな人が他にいても<br>
+							逢いたくなるの<br>
+							心だけが不良ね</p>
+						<p>
+							ああ　陽当たり良好</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sunshining-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

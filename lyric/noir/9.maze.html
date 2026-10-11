@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Maze - NOIR</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Maze</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							if you seek for the fire in your eyes<br>
+							if you wanna be a liar you're the one<br>
+							wanna be a silly one find the fire in your eyes</p>
+						<p>
+							come and look for a mystical maze<br>
+							if you want me be a liar I'm the one<br>
+							want me be a silly one I'll be there in your eyes</p>
+						<p>
+							we two dive in the mystical maze<br>
+							unsolvable riddles waiting<br>
+							love me now, or leave me in the dark<br>
+							If you need me there's no need to cry for me<br>
+							I'm in your eyes</p>
+						<p>
+							joy will come when the summer is lost<br>
+							if you're searchin for a good one I'm the one<br>
+							gonna show you bad one I will take you right away</p>
+						<p>
+							wake and feel for the fell of dark<br>
+							what a helpless rejoicing what a pain<br>
+							gonna search for sweet things I will take you far away</p>
+						<p>
+							can't you see the love that I gave you<br>
+							don't you see the love that you found<br>
+							you should know the love that you want is<br>
+							ever in your heart<br>
+							if you seek the fire in your eyes and<br>
+							if you want the fire in your heart</p>
+						<p>
+							if you seek for the fire in your eyes<br>
+							if you wanna be a liar you're the one<br>
+							wanna be a silly one find the fire in your eyes</p>
+						<p>
+							come and look for a mystical maze<br>
+							if you want me be a liar I'm the one<br>
+							want me be a silly one<br>
+							I'll be there in your eyes<br>
+							I'll be there in your eyes</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-noir-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

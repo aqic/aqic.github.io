@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>真実の詩 - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「犬夜叉」</div>
+
+                    <div class="LyricTitle">真実の詩</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Avex Trax
+Do　As　Infinity</div>
+                    <div class="LyricStaff">作詞　D· A· I<br>作曲　D· A· I<br>编曲：D· A· I/Seiji kameda</div>
+
+                    <div class="LyricText">
+						<p>
+							紅く滲む　太陽は全てを<br>
+							照らしてきた　今も昔も<br>
+							この夕闇に　描いてる想像は<br>
+							果たして<br>
+							この手におえないものなのか?</p>
+						<p>
+							もっと今以上に<br>
+							裸になって<br>
+							生きてゆく術　教えてよ<br>
+							ほんの少しだけ　私を汚して</p>
+						<p>
+							そうやって独り　傷ついたり<br>
+							周りを失くしたとしても<br>
+							真実の詩は　この胸に流れ</p>
+						<p>
+							争いはまだ　続くんだろう<br>
+							どの道今が　大切なのさ</p>
+						<p>
+							がむじゃらになって<br>
+							見落としてきたもの<br>
+							例えば誰かのやさしい微笑みも</p>
+						<p>
+							永遠を知れば　どんな暗闇も<br>
+							痛みも　いつか消えて<br>
+							そうやって今は　私を汚して</p>
+						<p>
+							ずっと昔見た　天空の城に<br>
+							いつかは　たどりつける<br>
+							真実の詩を　道標にして</p>
+						<p>
+							永遠を知れば　どんな暗闇も<br>
+							痛みも　いつか消えて<br>
+							真実の詩は　この胸に流れ</p>
+						<p>
+							もっと今以上に　私を汚して<br>
+							ほんの少しだけ　私を汚して<br>
+							真実の詩を　道標にして</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

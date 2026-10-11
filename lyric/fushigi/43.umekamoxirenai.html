@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夢かもしれない - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">夢かもしれない</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">The s.h.e</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：家原正嗣<br>編曲：山中紀昌</div>
+
+                    <div class="LyricText">
+						<p>
+							☆　夢かもしれない　愛してる全て守れるなんて<br>
+							　　それでもＩＮじゃない？　やるだけやって確かめてごらん</p>
+						<p>
+							　　ホントに大事なことって観えにくいけど<br>
+							　　心だけは知ってる気がする<br>
+							　　リセット出来ない　悲しみや落ちこみが<br>
+							　　痛いだけなら　淋しいよ</p>
+						<p>
+							★　大地に根を張り　空へ伸びてく<br>
+							　　花も実もある　生命(いのち)でしょう</p>
+						<p>
+							※　夢でもＩＮじゃない？　トンネルの先はまぶしい世界<br>
+							　　それからなんじゃない？！　いとしい気持ち　つらぬいてごらん</p>
+						<p>
+							　　涙が生まれる　胸の奥深い場所<br>
+							　　そこに答えは眠っている</p>
+						<p>
+							　　光りも陰りも同じ心で<br>
+							　　次のチョイスを　待ってるよ</p>
+						<p>
+							　　夢で終わんない！　愛してる人を幸せにする<br>
+							　　ステキなんじゃない？！　涙まるごと　抱きしめてごらん</p>
+						<p>
+							★、※、☆：REPEAT</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

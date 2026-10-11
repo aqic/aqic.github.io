@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>オルゴールとピアノと - KID</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">DC Memories Off 2nd ED song</div>
+
+                    <div class="LyricTitle">オルゴールとピアノと</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">水樹奈奈</div>
+                    <div class="LyricStaff">作詞：志倉千代丸<br>作曲：志倉千代丸<br>編曲：磯江俊道</div>
+
+                    <div class="LyricText">
+						<p>
+							どれくらい空は 遠くから見つめてるの？<br>
+							そこからはきっと あの場所も見えるのかな？</p>
+						<p>
+							人はいつでも 何かに迷い<br>
+							答えを探してる ずっとずっと<br>
+							嘘も上手に 使えないまま<br>
+							愛の夢に 儚い想い寄せる</p>
+						<p>
+							かけがえのない....</p>
+						<p>
+							小さなこの箱から流れてく<br>
+							I wish you 想い出のメロディ<br>
+							1秒でもふたりで 居たいから<br>
+							Believe your feeling<br>
+							dream is satisfied<br>
+							冷たい雨はあがったから oh yeah-</p>
+						<p>
+							告白の橋も ケンカした事も全部<br>
+							大切なもので いつまでもそばに居たい</p>
+						<p>
+							時に小さな思い違いで<br>
+							描いた未来さえ背を向ける<br>
+							笑っていても泣きそうだけど<br>
+							きっといつか天気になると思う</p>
+						<p>
+							大好きだから....<br>
+							涙の深さよりも大切な<br>
+							I wish you 魔法の指先<br>
+							心に強い気持ち くれるから<br>
+							Believe your feeling<br>
+							dream is satisfied<br>
+							出会った場所に 今 かえろう oh yeah-</p>
+						<p>
+							小さなこの箱から流れてく<br>
+							I wish you 想い出のメロディ<br>
+							1秒でもふたりで 居たいから<br>
+							Believe your feeling<br>
+							dream is satisfied<br>
+							冷たい雨はあがったから oh yeah-</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kid-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>BEYOND THE TIME　～メビウスの宇宙を越えて - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「機動戦士ガンダム 逆襲のシャア」 エンディング（１９８８）</div>
+
+                    <div class="LyricTitle">BEYOND THE TIME　～メビウスの宇宙を越えて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">TM NETWORK</div>
+                    <div class="LyricStaff">作詞：小室みつ子<br>作、編曲：小室哲哉</div>
+
+                    <div class="LyricText">
+						<p>
+							You belong to me　サヨナラ言えなくて<br>
+							いつまでも抱きしめたかった<br>
+							I belong to you　張り裂けそうになる<br>
+							この胸を　君に差し出して<br>
+							We belong to Earth　遙かな宇宙(そら)のもと<br>
+							コバルトに　光る地球(ほし)がある<br>
+							悲しみは　そこから始まって<br>
+							愛しさが　そこに帰るのさ</p>
+						<p>
+							ああ　メビウスの輪から抜け出せなくて<br>
+							いくつもの罪を繰り返す</p>
+						<p>
+							平和より自由より正しさより<br>
+							きみだけが望むすべてだから<br>
+							離れても変わっても見失っても<br>
+							輝きを消さないで</p>
+						<p>
+							＃You can change your destiny　時の向こう<br>
+							　You can change your future　闇の向こう<br>
+							　We can share the happiness　捜してゆく<br>
+							許し合えるあの日を</p>
+						<p>
+							夢という　風に導かれて<br>
+							あやまちの　船に揺られてく<br>
+							We belong to Earth　生きてゆけるのなら<br>
+							いつかまた　戻れる日がある</p>
+						<p>
+							ああ　メビウスの輪から引き寄せられて<br>
+							いくつもの出会い繰り返す　Beyond the time</p>
+						<p>
+							希望より理想より憧れより<br>
+							君だけが真実つかんでいた<br>
+							はかなくて激しくて偽りない<br>
+							まなざしを閉じないで</p>
+						<p>
+							（＃繰り返し）<br>
+							愛し合ったその日を</p>
+						<p>
+							You can change your destiny　時の向こう<br>
+							You can change your future　闇の向こう</p>
+						<p>
+							ああ　もう一度君に巡り会えるなら<br>
+							メビウスの宇宙を越えて　Beyond the time</p>
+						<p>
+							ああ　もう一度きみにめぐりあえるなら<br>
+							メビウスの宇宙を越えて beyond the time</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

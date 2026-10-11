@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ランナー（日中対訳） - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ</div>
+
+                    <div class="LyricTitle">ランナー（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">藤原誠</div>
+                    <div class="LyricStaff">作詞：阿佐茜<br>作曲・編曲：羽田健太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							僕はもう追いかけはしない<br>
+							君の走る影のあと<br>
+							人は誰も走りつづける<br>
+							ゴールはまだ見えない<br>
+							今日の次に何がある<br>
+							明日の先に何がある<br>
+							遥か彼方の光にむけて<br>
+							僕は今も走りつづける</p>
+						<p>
+							僕はもう迷いはしない<br>
+							自分の道を歩むだけ<br>
+							人は誰も走りつづける<br>
+							ゴールは遠いけれど<br>
+							今日を過ぎ去る日々の中<br>
+							明日という日がくればいい<br>
+							遥か彼方の光にむけて<br>
+							僕は今も走りつづける</p>
+						<p>
+							僕はもう止まりはしない<br>
+							いつか出会う時もある<br>
+							人は誰も走りつづける<br>
+							ゴールは見えないけど<br>
+							明日という名の希望の日<br>
+							未来という名の輝きが<br>
+							遥か彼方の光にむけて<br>
+							僕は今も走りつづける</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							我已不再追逐你了<br>
+							在你身影的背后<br>
+							人们都跟着你继续跑<br>
+							还看不见终点<br>
+							今天之后会有什么<br>
+							明天的前方又会有什么<br>
+							面向遥远彼方的光明<br>
+							我现在仍继续跑着</p>
+						<p>
+							我不再迷失了<br>
+							我只要走我该走的路<br>
+							任谁都继续跑着<br>
+							终点虽还远，但是…<br>
+							…今天，过去的每一个日子<br>
+							如果所谓的明天能来的话就好了<br>
+							面向遥远彼方的光明<br>
+							我现在仍继续跑着</p>
+						<p>
+							我已决定不停下来<br>
+							总有能再相见的一天<br>
+							任谁都继续跑着<br>
+							虽然看不见终点，但是…<br>
+							抱持着所谓的明天的希望<br>
+							因为有着所谓的未来的光辉<br>
+							面向彼方的光<br>
+							我现在仍继续跑着</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

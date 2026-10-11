@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Call On Me - Robotech</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Robotech] Insert Song</div>
+
+                    <div class="LyricTitle">Call On Me</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Joanne Harris</div>
+                    <div class="LyricStaff">Composed by: Steve Wittmack</div>
+
+                    <div class="LyricText">
+						<p>
+							When you are feeling<br>
+							Something is missing from your life<br>
+							Feeling you're all alone.</p>
+						<p>
+							When simple answers<br>
+							To ordinary questions<br>
+							Are so elusive all the time.</p>
+						<p>
+							You can<br>
+							○Call on me,<br>
+							　Lean on me.<br>
+							　Why don't you call on me?<br>
+							　You know I'll be there.<br>
+							I'll be there.</p>
+						<p>
+							When everybody<br>
+							Become a stranger in your mind<br>
+							You might remember what to do.</p>
+						<p>
+							◎Call on me.<br>
+							　Lean on me.<br>
+							　Why don't you call on me?<br>
+							　Oh-oh you know you can<br>
+							○Repeat</p>
+						<p>
+							Believe what you see with your eyes.<br>
+							No need to know the reason why.<br>
+							Why don't you?</p>
+						<p>
+							○Repeat<br>
+							◎Repeat<br>
+							○Repeat<br>
+							◎Repeat<br>
+							○Repeat</p>
+						<p>
+							Call.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-robotech-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

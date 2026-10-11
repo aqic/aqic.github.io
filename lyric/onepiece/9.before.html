@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>BEFORE DAWN - ONE PIECE</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">BEFORE DAWN</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">AI-SACHI</div>
+
+                    <div class="LyricText">
+						<p>
+							眠らないこの街も　今だけはまどろむ<br>
+							今日からと昨日まで　何かが変わってゆく<br>
+							きっとやり直せるはず　だって一人じゃないから<br>
+							傍にいてくれるだけで　強くなれる気がする</p>
+						<p>
+							何処まで行けるかな　未来へ続く場所<br>
+							遠くで輝いて　世界を包み込む<br>
+							夜明け前</p>
+						<p>
+							青になる瞬間を　待切れず走り出す<br>
+							傷付いた思い出ほど　忘れてしまえばいい<br>
+							迷わないで進むから　ずっと見ていて欲しい</p>
+						<p>
+							言葉にしなくても　優しさ感じてた<br>
+							なんにも聞かないで　一緒にいてくれた<br>
+							夜明け前</p>
+						<p>
+							大きな　翼を持った<br>
+							鳥になったみたいに</p>
+						<p>
+							何処まで行けるかな　未来へ続く場所<br>
+							遠くで輝いて　世界を包み込む<br>
+							夜明け前</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onepiece-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

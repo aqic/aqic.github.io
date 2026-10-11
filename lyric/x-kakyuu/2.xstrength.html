@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>STRENGTH - X -エックス-</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">STRENGTH</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">小泉 恒平</div>
+                    <div class="LyricStaff">Lyrics : Koizumi Kouhei<br>Music : Koizumi Kouhei<br>Arrangement : Satou Naoki, Koizumi Kouhei</div>
+
+                    <div class="LyricText">
+						<p>
+							悲しい夢の世界で<br>
+							愛する人もなく<br>
+							生きていくことさえ止められないなら<br>
+							僕は何をすればいいの…</p>
+						<p>
+							愛してすべて失して<br>
+							それでも探してた<br>
+							守り続けることの美しさ<br>
+							それはただの幻</p>
+						<p>
+							君の強さと優しささえ<br>
+							守ることもできず　ただ苦しいだけ<br>
+							もしも　誰もがそのさだめに<br>
+							逆らうことできず　生まれてきたなら<br>
+							ねえ  敎えてよ　涙の意味を</p>
+						<p>
+							あの日の約束なんて<br>
+							叶うはずもなく<br>
+							だけど　なぜだろう　僕は少しだけ<br>
+							幸せだって思った</p>
+						<p>
+							どんなに辛かった過去が<br>
+							行方を拒んでも<br>
+							細い光が僕には見えるよ<br>
+							きっと幻じゃないさ</p>
+						<p>
+							君の強さと優しさなら<br>
+							守れるかもしれない　本当の思い…<br>
+							人の心は変われるもの<br>
+							そう信じてみたい　明日を生きるため<br>
+							もう　泣かないで　僕がいるから…</p>
+						<p>
+							今は不安な未来だけが<br>
+							僕たちの心を迷わせるけれど<br>
+							人の心は変われるから<br>
+							もう大切なもの　あきらめたりしない</p>
+						<p>
+							君の強さと優しさなら…<br>
+							人の心は変われるから…</p>
+						<p>
+							もう　迷わずに　生きていけるよ<br>
+							もう　泣かないで　今　歩き出そう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-x-kakyuu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

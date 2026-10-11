@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>明日天気に... - KID</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">DC Memories Off 2nd OP song</div>
+
+                    <div class="LyricTitle">明日天気に...</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Remi</div>
+                    <div class="LyricStaff">作詞：志倉千代丸<br>作曲：志倉千代丸<br>編曲：吉原かつみ</div>
+
+                    <div class="LyricText">
+						<p>
+							一緒にいたんだよね？<br>
+							（I feel your love.）<br>
+							気持ちも一つだよね？<br>
+							（Dream come true it forever.）</p>
+						<p>
+							音もなくいつか 穩やかなページに<br>
+							聞き分けのない ノイズが溢れ出す</p>
+						<p>
+							目の前に降り注ぐ この雨は天気雨<br>
+							上がるように おまじない<br>
+							願いはかなうのかな？<br>
+							「サヨナラ」想い出の日 出逢いも﹑あの場所も<br>
+							離れて行くんだね もっともっと<br>
+							最後のその言葉を 聞こえないフリして<br>
+							失って気付いた あなたの声 大きくなるよ</p>
+						<p>
+							例えば沈默とか<br>
+							（I feel your love.）<br>
+							それさえ気まずいよね<br>
+							（Dream come true it forever.）<br>
+							他の誰よりも 特別な存在<br>
+							その瞳には 誰を映してるの？<br>
+							あても無く待ちわびる 果たされぬ約束が</p>
+						<p>
+							この胸を 搖らしてる<br>
+							いつかはかなうのかな？</p>
+						<p>
+							天使がくれた季節 想い出の詰まった<br>
+							いつかまた笑顔になれるのかな<br>
+							記憶に手をふっても 離れてくれなくれ<br>
+							全ての繫がりが<br>
+							切れたままで 亂れているよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kid-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

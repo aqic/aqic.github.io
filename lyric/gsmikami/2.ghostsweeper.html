@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>GHOST SWEEPER - ＧＳ美神</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ＧＳ美神」オープニングテーマ</div>
+
+                    <div class="LyricTitle">GHOST SWEEPER</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">原田千榮</div>
+                    <div class="LyricStaff">作詞：有森聰美<br>作曲：大森俊之<br>編曲：岩本正</div>
+
+                    <div class="LyricText">
+						<p>
+							長い髪なぶかせて　悩ましげなボディ<br>
+							こんの都会（まち）お　ハイヒールで<br>
+							跳び回れば　Big money coming, yeah!</p>
+						<p>
+							摩天楼の足下　時代錯誤の罠<br>
+							血迷った危ない奴らなら<br>
+							極樂へいかせちゃうわ</p>
+						<p>
+							大胆な私の業の中どれでも<br>
+							スキなをあげる</p>
+						<p>
+							※Bye Bye Sadness, And Find out<br>
+							　行き場のない　Ghost（あなた）だから<br>
+							　Bye Bye Sadness, And Find out<br>
+							　私が今　見つけ出いて…<br>
+							　Ghost Sweeper</p>
+						<p>
+							吸引も良いけれど　実こんはどう？<br>
+							わがままは　許さないわ<br>
+							逃せないの　Big money coming, yeah!</p>
+						<p>
+							ConciusなDressから<br>
+							GorgeousなLifeも<br>
+							いつだって後から　付いてくる<br>
+							それが私のStyle</p>
+						<p>
+							Cool脱兎誰かがゆうけれど<br>
+							必ず幸せお　あげる</p>
+						<p>
+							※繰り返し</p>
+						<p>
+							※繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gsmikami-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

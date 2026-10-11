@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君が好きだと叫びたい - SLAM DUNK</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">君が好きだと叫びたい</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">BAAD</div>
+                    <div class="LyricStaff">作詞：山田恭二<br>作曲：多纳好夫<br>編曲：明石昌夫</div>
+
+                    <div class="LyricText">
+						<p>
+							眩しい阳差しを背に走り出す街の中<br>
+							たたかれたいつまのように肩を<br>
+							君に梦中なことに理由なんてないのに<br>
+							その腕は络むことはない<br>
+							いつの间にか瞳夺われて始まった<br>
+							离さない摇れるがないCrazy for you</p>
+						<p>
+							君が好きだと叫びたい明日を变えてみよう<br>
+							冻りついてく时间をぶち坏したい<br>
+							君が好きだと叫びたい勇气で踏み出そう<br>
+							この热い想いを受け止めてほしい</p>
+						<p>
+							ざわめいたフロアににぎわうテ　ブル越し<br>
+							なにげなに君の视线に醉いしれ<br>
+							恋をしているようで跃らされてるような<br>
+							高呜る鼓动にもううそはつけない<br>
+							いつになれば变わるこのもどかしい友情<br>
+							届けたい确かめにI take you away</p>
+						<p>
+							君が好きだと叫びたい何もかも脱ぎ舍て<br>
+							心とかす言叶を见つけ出したい<br>
+							君が好きだと叫びたい今夜は归さない<br>
+							见つめるだけの日　なんて终わりにしょう<br>
+							I wanna cry for you</p>
+						<p>
+							君が好きだと叫びたい明日を变えてみよう<br>
+							冻りついてく时间をぶち坏したい<br>
+							君が好きだと叫びたい勇气で踏み出そう<br>
+							この热い想いを受け止めてほしい<br>
+							I wanna cry for you</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slamdunk-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

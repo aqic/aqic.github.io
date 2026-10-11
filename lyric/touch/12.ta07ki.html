@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君のハートにタッチ - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ミュージカル ～君のハートにタッチ～ オリジナルキャストアルバム</div>
+
+                    <div class="LyricTitle">君のハートにタッチ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">工藤 夕貴</div>
+                    <div class="LyricStaff">作詞：吉元 由美<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							たそがれ半分　瞳に隠して<br>
+							あなた追いかけた<br>
+							ああ 肩先　止った一番星屑<br>
+							涙にじんだだけ</p>
+						<p>
+							Why　同じゴールふたり<br>
+							捜してはぐれてしまうのは何故</p>
+						<p>
+							心もっと　もっと　もっと　もっとタッチ<br>
+							素直になれたらいいのに<br>
+							やさしさって難しいね<br>
+							あなたの淋しさを言葉にできないから<br>
+							タッチ  あなたが描いた　夢のカーブラインは<br>
+							時間に虹かける<br>
+							ああ あきらめる方が　きっと苦しいと<br>
+							笑顔ゆがんでたね</p>
+						<p>
+							Why　いつも背中合わせ<br>
+							青春は光と影の中で</p>
+						<p>
+							心もっと　もっと　もっと　もっとタッチ<br>
+							純粋だからね　傷つく<br>
+							夏を胸に忘れないで<br>
+							涙になる前に走って行きたいから<br>
+							タッチ</p>
+						<p>
+							心もっと　もっと　もっと　もっとタッチ<br>
+							素直になれたらいいのに<br>
+							やさしさって難しいね<br>
+							あなたの淋しさを言葉にできないから<br>
+							タッチ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

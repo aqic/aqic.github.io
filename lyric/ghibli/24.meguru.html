@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>めぐる季節 - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">魔女の宅急便</div>
+
+                    <div class="LyricTitle">めぐる季節</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">井上 あずみ</div>
+                    <div class="LyricStaff">作詞：吉本 由美<br>作曲・編曲：久石 譲</div>
+
+                    <div class="LyricText">
+						<p>
+							薄紅　花景色　せつなさを知った春<br>
+							はかなく散ってゆく　風の指先ふれて<br>
+							静かに見える波　まぶしすぎる夏の日<br>
+							心の海岸で白く砕けていった</p>
+						<p>
+							過ぎゆく季節の果てに　たたずむ人は誰なの？<br>
+							ゆれる想い　自分をだきしめたの　ひとり</p>
+						<p>
+							明日（あした）はどんな日に　頬づえの窓辺から<br>
+							かたちのない夢をきっと見つけにゆこう</p>
+						<p>
+							色づく街ゆけば　誰かに逢いたい秋<br>
+							やさしくなれそうな夕暮れのさみしさよ<br>
+							凍えた手のひらで　とけてゆく粉雪は<br>
+							涙によく似てた　ぬくもりに出会う冬</p>
+						<p>
+							幸せを探す人が　一番幸せだって<br>
+							めぐる季節　想い出に変えながら　ふたり</p>
+						<p>
+							明日（あした）はどんな風　歩きだす窓辺から<br>
+							もうすぐ見えてくる夢を渡ってゆこう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

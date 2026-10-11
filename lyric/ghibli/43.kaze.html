@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風になる - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">風になる</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">つじあやの</div>
+                    <div class="LyricStaff">作詞：つじあやの<br>作曲：つじあやの<br>編曲：古寺七重</div>
+
+                    <div class="LyricText">
+						<p>
+							忘れていた目を閉じて　取り戻せ恋のうた<br>
+							青空に隠れている　手を伸ばしてもう一度<br>
+							忘れないですぐそばに　僕がいるいつの日も<br>
+							星空を眺めている　一人きりの夜明けも</p>
+						<p>
+							たった一つの心　悲しみに暮れないで<br>
+							君のためいきなんて　春風に変えてやる</p>
+						<p>
+							陽のあたる坂道を　自転車で駆けのぼる<br>
+							君と失くした想い出乗せて行くよ<br>
+							ララララ　口ずさむ　くちびるを染めて行く<br>
+							君と見つけたしあわせ花のように</p>
+						<p>
+							忘れていた窓開けて　走り出せ恋のうた<br>
+							青空に託している　手をかざしてもう一度<br>
+							忘れないよすぐそばに　君がいるいつの日も<br>
+							星空に輝いてる　涙揺れる明日も</p>
+						<p>
+							たった一つの言葉　この胸に抱きしめて<br>
+							君のため僕は今　春風に吹かれてる</p>
+						<p>
+							☆陽のあたる坂道を　自転車で駆けのぼる<br>
+							　君と誓った約束乗せて行くよ<br>
+							　ララララ　口ずさむ　くちびるを染めて行く<br>
+							　君と出会えたしあわせ祈るように</p>
+						<p>
+							☆くりかえし<br>
+							君と出会えたしあわせ祈るように</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

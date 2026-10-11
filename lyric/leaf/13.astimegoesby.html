@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>As time goes by - Leaf</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">こみっくパーティー</div>
+
+                    <div class="LyricTitle">As time goes by</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">美崎しのぶ</div>
+                    <div class="LyricStaff">作詞：須谷尚子<br>作曲：中上和英<br>编曲：中上和英</div>
+
+                    <div class="LyricText">
+						<p>
+							朝早く目覚めた　今日はいい天気ヨ<br>
+							あなたとポチ連れて　あの頂上（ヤマ）目指そう<br>
+							弁当　水筒も　準備ＯＫだね<br>
+							寝ぼけた顔してないで　サァ飛び出そうよ</p>
+						<p>
+							晴れた空に浮かぶ雲に乗って　気ままに行こう<br>
+							気分は上昇　なんて素敵なの</p>
+						<p>
+							やわらかい緑の芝生　頬なでる揺れる風<br>
+							昼寝しよう　目を閉じてても　太陽感じられるよ</p>
+						<p>
+							のんびりと過ごす日曜　同じ顔して笑う<br>
+							気が付いたら　うたた寝してる<br>
+							As time goes by 今を楽しもう</p>
+						<p>
+							陽が西に沈んで　空の色が変わる<br>
+							片付け手伝ってね　ゴミは持ち帰ろう<br>
+							運転したくない　ジャンケンで決めよう<br>
+							パー出して負けてる　くやしそうな顔</p>
+						<p>
+							帰り道長い渋滞　はまって動けなくなって<br>
+							気分はスコールなんてついてない</p>
+						<p>
+							頼りないナビもたまには　抜け道を見つけ出す<br>
+							少しだけ遠回りでも　近づいてくスイートホーム</p>
+						<p>
+							新しく増える家族を連れてまた　山へ行こう<br>
+							眠い目をこすりながらね<br>
+							Will soon be here 約束しよう</p>
+						<p>
+							晴れた空に浮かぶ雲に乗って　気ままに行こう<br>
+							気分は上昇　なんて素敵なの</p>
+						<p>
+							やわらかい緑の芝生　頬なでる揺れる風<br>
+							昼寝しよう　目を閉じてても　太陽感じられるよ</p>
+						<p>
+							のんびりと過ごす日曜　同じ顔して笑う<br>
+							気が付いたら　うたた寝してる<br>
+							As time goes by 今を楽しもう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-leaf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

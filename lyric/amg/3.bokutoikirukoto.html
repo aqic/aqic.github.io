@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>僕と生きることが君のしあわせ - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「あぁっ女神さまっ Singles」収録曲</div>
+
+                    <div class="LyricTitle">僕と生きることが君のしあわせ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ベルダンディー</div>
+
+                    <div class="LyricText">
+						<p>
+							僕の背に　耳をあてて君は<br>
+							遠い過去を知る<br>
+							幼い日　めぐり逢えた場所に<br>
+							記憶を戻している</p>
+						<p>
+							　バイク停めた　夜の埠頭<br>
+							　背中濡らす　涙の染み<br>
+							　さよなら言えたよ</p>
+						<p>
+							ミラーに映る君　うなずくばかり<br>
+							ねえ涙は　いつ止めたの<br>
+							僕がすべてだから　君の笑顔は<br>
+							ああっ最後まで　やさしい</p>
+						<p>
+							君のこと　忘れようとしても<br>
+							自信がないから<br>
+							神さまっに　お願いして僕は<br>
+							記憶を消してもらうよ</p>
+						<p>
+							　やさしいのは　悲しいよね<br>
+							　甘えさせて　許し過ぎて<br>
+							　自分を無くすよ</p>
+						<p>
+							さよならするために　出逢ったのなら<br>
+							なぜ僕たち　結ばれたの<br>
+							君と生きることが　しあわせだって<br>
+							ああっ信じてる　現在でも</p>
+						<p>
+							もっと身勝手なら　泣いてくれたら<br>
+							ねえふたりは　やり直せた<br>
+							僕と生きることが　君のしあわせ<br>
+							ああっ分かってて　微笑む</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

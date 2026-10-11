@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>faint love - 朝霧の巫女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">faint love</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+                    <div class="LyricStaff">Lyrics : MEGUMI<br>Music : Takahashi Gou<br>Arrangement : Takahashi Gou</div>
+
+                    <div class="LyricText">
+						<p>
+							護りたい　護るから<br>
+							離さない<br>
+							I connect you on my life</p>
+						<p>
+							薄れてゆく現世の中で<br>
+							漂う寂しさを抱え<br>
+							暖かなぬくもりを求めて<br>
+							心が流離う</p>
+						<p>
+							何もかもを空の彼方へと<br>
+							投げ捨て楽になれたらと<br>
+							弱気な想い打ち消すように<br>
+							広がる青空</p>
+						<p>
+							君の笑顔　切なさが増してく<br>
+							瞳の奥<br>
+							こんなに求めてる　本当は</p>
+						<p>
+							護りたい　護れない<br>
+							今はまだ追いつけなくて<br>
+							遠すぎる君の影<br>
+							苛立ちが高まる<br>
+							離れても　離れても<br>
+							呼び戻されてく心が<br>
+							護りたい　護るから<br>
+							離さないよ<br>
+							I swear you on my life</p>
+						<p>
+							遠い昔の記憶の中に<br>
+							そのまま置き去りにされた<br>
+							君への想いがまた息付く<br>
+							鼓動が高鳴る</p>
+						<p>
+							思い出だけ一人歩きしてる<br>
+							霧の中で<br>
+							結ばれた約束をもう一度</p>
+						<p>
+							祈ってる　叫んでる<br>
+							君が傷つかないように<br>
+							話したい　話せない<br>
+							持ちきれない愛情<br>
+							許さない　許せない<br>
+							何より自分の弱さが<br>
+							護るから　護るから<br>
+							もう二度と<br>
+							I don't run away anymore</p>
+						<p>
+							護りたい　護れない<br>
+							今はまだ追いつけなくて<br>
+							遠すぎる君の影<br>
+							苛立ちが高まる<br>
+							離れても　離れても<br>
+							呼び戻されてく心が<br>
+							護りたい　護るから<br>
+							離さないよ<br>
+							I swear you on my life</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-asagiri-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

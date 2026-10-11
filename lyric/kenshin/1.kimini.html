@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君に触れるだけで - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">オープニングテーマ３</div>
+
+                    <div class="LyricTitle">君に触れるだけで</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">CURIO</div>
+                    <div class="LyricStaff">作詞；NOB<br>作曲：AJA<br>編曲：CURIO､佐久間正英</div>
+
+                    <div class="LyricText">
+						<p>
+							止めどなくあふれて<br>
+							こぼれる涙の数ほど<br>
+							やるせない事もない<br>
+							ずっと果てしない僕の愛</p>
+						<p>
+							Baby そうさ<br>
+							身体が溶けるくらいの<br>
+							熱い胸騒ぎにまかせて Woo<br>
+							何もかも越えて行こう</p>
+						<p>
+							Ah- 君に触れるたびに<br>
+							君へと近づいて<br>
+							Ah- 君を感じたまま<br>
+							僕は満たされて<br>
+							高まっていく心を確かめるように<br>
+							君を強く抱きしめるよ</p>
+						<p>
+							意味もなく叫んで<br>
+							壊れそうな心 何度も<br>
+							なぐさめるように<br>
+							そっと包み込む君の愛</p>
+						<p>
+							Baby そうさ<br>
+							愛しいその姿が<br>
+							どんな時にも僕を誘う Woo<br>
+							何もかも忘れるほど</p>
+						<p>
+							Ah- 君に触れるたびに<br>
+							君へと近づいて<br>
+							Ah- 君を感じたまま<br>
+							僕は満たされて<br>
+							高まっていく２人のおもむくままに<br>
+							君を強く抱きしめるよ</p>
+						<p>
+							Ah- 君に触れるだけで<br>
+							心ははずんで<br>
+							Ah- 君に触れるだけで<br>
+							僕は満たされて<br>
+							高まっていく心を確かめるように<br>
+							もっと強く・・・Yeah</p>
+						<p>
+							Ah- 君に触れるだけで<br>
+							心ははずんで<br>
+							Ah- 君に触れるだけで<br>
+							僕は満たされる<br>
+							今はただこの気持ちを絶やさないように<br>
+							君を強く抱きしめるよ<br>
+							抱きしめるよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

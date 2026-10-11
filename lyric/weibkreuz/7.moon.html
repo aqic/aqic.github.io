@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Other Side Of The Moon - ヴァイス・クロイツ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Other Side Of The Moon</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							胸の裏は　月の満ち欠け<br>
+							僕に見せぬ　愛の影が揺れる<br>
+							白い肌は　夜に浮かんで<br>
+							何も言わぬ　心抱いて隠す</p>
+						<p>
+							求めても　たどり着かない<br>
+							永遠が　呼んでいる<br>
+							震えてる　君の偽り<br>
+							見破れず　朝が来る</p>
+						<p>
+							冷めたキスは　月の裏側<br>
+							闇の中で　愛の罠に堕ちる<br>
+							長い髪は　指に絡んで<br>
+							縛るように　僕の息を止めた</p>
+						<p>
+							目覚めても　決して覚めない<br>
+							夢の中　迷い込む<br>
+							涙さえ　僕は疑い<br>
+							操られ　生きるだろう</p>
+						<p>
+							求めても　たどり着かない<br>
+							永遠が　呼んでいる<br>
+							震えてる　君の偽り<br>
+							見破れず　朝が来る</p>
+						<p>
+							目覚めても　決して覚めない<br>
+							夢の中　迷い込む</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-weibkreuz-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

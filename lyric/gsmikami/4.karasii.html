@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>悲しいギヤツプは DESTINY - ＧＳ美神</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ＧＳ美神 極楽大作戦」</div>
+
+                    <div class="LyricTitle">悲しいギヤツプは DESTINY</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">国府田マリ子</div>
+
+                    <div class="LyricText">
+						<p>
+							硝子びんで " つちふまず " たたくと<br>
+							元气が出るつて 新聞に載つてたわ<br>
+							好きなあなたに教えよう<br>
+							お仕事がハ一ドでも がんばれるように<br>
+							( 悲しい )ギヤツプは DESTINY<br>
+							( あたしの )素足は扁平( フラツト )<br>
+							歩いた記憶 遠くて</p>
+						<p>
+							殿方には肌を見せぬものと<br>
+							いいつけ破つて ごめんネ お母さま<br>
+							あなた好みの T バツク<br>
+							慎みを忘れそう...うれし耻ずかし...</p>
+						<p>
+							( 悲しい )ギヤツプは DESTINY<br>
+							( あたしの )うらめし 腰つき<br>
+							( 昔ながらのスタイル )</p>
+						<p>
+							( 悲しい )ギヤツプは DESTINY<br>
+							( 例えだ ) " つちふまず " なくて<br>
+							ハイレグ似合わなくても<br>
+							( 普通の )女の子のように<br>
+							( しつかり )抱き合えなくても<br>
+							それでも愛してもいい?</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gsmikami-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

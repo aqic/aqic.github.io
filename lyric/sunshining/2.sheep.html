@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>世界中の羊数えさせないで - 陽あたり良好!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">世界中の羊数えさせないで</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">尾崎 亜美</div>
+                    <div class="LyricStaff">作詞：夏目 純<br>作曲：尾崎 亜美<br>編曲：尾崎 亜美</div>
+
+                    <div class="LyricText">
+						<p>
+							白い羽根枕　抱きしめて見てる<br>
+							想い出の　Photograph<br>
+							世界中の羊　数えさせないで<br>
+							恋だと気付いて...</p>
+						<p>
+							ああ... なぜ　写真でも<br>
+							静かな瞳<br>
+							ああ... 誰？　夢の中<br>
+							見つめてるの</p>
+						<p>
+							Sheep... 羊になるわ<br>
+							Love sheep... 夢に翔ぶのよ<br>
+							Sheep... 眠りについた　彼<br>
+							うずめたい　逢いたい<br>
+							Still lonely heart  ああ... 今　放課後は<br>
+							夢じゃないのね<br>
+							ああ... 彼駆けて来る<br>
+							鞄　投げて...</p>
+						<p>
+							Sheep... 羊を見たよ<br>
+							Love sheep... 君の夢だね<br>
+							Sheep... 眠れぬ恋に　春<br>
+							告げられて　うつむく<br>
+							Still loneoy heart</p>
+						<p>
+							世界中の羊　数えさせた彼<br>
+							優しく　囁く<br>
+							"お　や　す　み"</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sunshining-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

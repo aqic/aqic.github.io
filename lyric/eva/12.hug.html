@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>無限抱擁 - 新世紀エヴァンゲリオン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">無限抱擁</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高橋洋子</div>
+                    <div class="LyricStaff">作詞：及川眠子<br>作曲：高橋洋子<br>編曲：大森俊之</div>
+
+                    <div class="LyricText">
+						<p>
+							花びらが<br>
+							風に揺れて落ちるように<br>
+							命はただ儚くて　あゝ<br>
+							大地へと消えてゆく</p>
+						<p>
+							悲しみは<br>
+							途切れた未来ではなく<br>
+							想い出の小箱のスミに<br>
+							忘れてゆかれること</p>
+						<p>
+							愛されたい　いま以上に<br>
+							深く強く求めあい<br>
+							その心に　その瞳に<br>
+							私がいた証拠（しるし）を残して</p>
+						<p>
+							太陽が<br>
+							地平線に溶けるように<br>
+							最後まで綺麗なまま　あゝ<br>
+							私を映してたい</p>
+						<p>
+							あたたかな<br>
+							腕のなかに眠ってる<br>
+							永遠を手に入れたくて<br>
+							女は魔物になる</p>
+						<p>
+							愛されたい　いま確かな<br>
+							気持ちだけを分かちあい<br>
+							この素肌を　この吐息を<br>
+							無限に抱いていてね　お願い</p>
+						<p>
+							幸せのかたちは<br>
+							いつでも見えないから<br>
+							痛いくらい　もっとあなたに</p>
+						<p>
+							愛されたい　いま以上に<br>
+							深く強く求めあい<br>
+							その心に　その瞳に<br>
+							私がいた証拠を残して</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-eva-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Process - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Process</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">奧井雅美</div>
+
+                    <div class="LyricText">
+						<p>
+							胸の中あふれる想い<br>
+							受けとめたいそっと伝えたい　正值な私を<br>
+							変わり始めた距離に<br>
+							ぎこちなく背中を押されて…<br>
+							動き出す　process of my love</p>
+						<p>
+							何となく過ごして来た<br>
+							騷がしい每日だった<br>
+							仲間&amp;笑い声<br>
+							気がつくといつも<br>
+							アイツの鄰に居る自分の心<br>
+							見えないフリをしてた　噓をついて</p>
+						<p>
+							胸の中あふれる想い<br>
+							受けとめる勇気もう少しあればいいのに<br>
+							こういう問題って苦手だし<br>
+							經驗不足で素直じゃない<br>
+							見つけたい　process of my love</p>
+						<p>
+							無意識に交わる視線<br>
+							あわててそらしてまったり…<br>
+							チャンスをモノにできない<br>
+							“以心伝心”アイツには<br>
+							通用しないくらい鈍感いけど<br>
+							カッコイイところも　ちゃんと知ってる</p>
+						<p>
+							Darling一声には出せない一言<br>
+							ごまかして…　アタシ何やってるんだろ…</p>
+						<p>
+							I wanna do　摇れる想い<br>
+							伝えることが出来るのなら<br>
+							楽になれるけど<br>
+							胸の中あふれる想い<br>
+							初めて見せる笑顔にかえて　屆けてみよう<br>
+							少しずつ　ほんの　少しでも<br>
+							進んで行きたいから…<br>
+							これが本当の　process of my love</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

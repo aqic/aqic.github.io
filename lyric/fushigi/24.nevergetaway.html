@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Never Get Away - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Never Get Away</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">上田裕司</div>
+                    <div class="LyricStaff">作詞：柚木美祐<br>作曲：大門一也<br>編曲：大門一也</div>
+
+                    <div class="LyricText">
+						<p>
+							かかってこいよ　Hey!　Now!<br>
+							　　望み通りに片付けてやる<br>
+							　　グズグズするな　Hey!　You!<br>
+							　　キレたら最後　止まりはしない</p>
+						<p>
+							　　彼女の心をズタズタにした<br>
+							　　ヤツはこの俺が許さない</p>
+						<p>
+							☆　Never get away　目を外らすな<br>
+							　　Never ever get away for you<br>
+							　　スキを見せたらやられちまう　この　destiny<br>
+							　　Never ever get away　世界中が<br>
+							　　Never ever get away for you<br>
+							　　敵でもかまわない<br>
+							　　It's all right　君のため</p>
+						<p>
+							　　やりきれないよ　Hey!　Now!<br>
+							　　涙の理由(わけ)を誤魔化さないで<br>
+							　　約束したよ　Hey!　You!<br>
+							　　地獄まででも　離れはしない</p>
+						<p>
+							　　どんな痛みでも受け止められる<br>
+							　　きっと俺になる　強くなる</p>
+						<p>
+							　　Never get away　逃がさないぜ<br>
+							　　Never ever get away for you<br>
+							　　さァ暴れてやるぜ　覚悟しろよ　destiny<br>
+							　　Never get away　傷ついても<br>
+							　　Never ever get away for you<br>
+							　　誰にも負けないさ<br>
+							　　It's all right　まだいける</p>
+						<p>
+							☆　REPEAT</p>
+						<p>
+							　　Never get away　キリギリまで<br>
+							　　Never ever get away for you<br>
+							　　戦い続けるよ　君が俺の　destiny<br>
+							　　Never get away　世界中が<br>
+							　　Never ever get away for you<br>
+							　　敵でもかまわない<br>
+							　　It's all right　君のため</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>真夏のイヴ - 天地無用!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">角川アニメ映画 「天地無用！真夏のイヴ」 メインテーマ</div>
+
+                    <div class="LyricTitle">真夏のイヴ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">永井真理子</div>
+
+                    <div class="LyricText">
+						<p>
+							ヒマワリの並ぶ坂道　今日はお互い　逆に歩いてく<br>
+							子供達の声の隙間に　あなたを責めた　自分が悲しい</p>
+						<p>
+							ためらいもなく始まった恋<br>
+							夏が終われば　別々に生きてく</p>
+						<p>
+							サヨナラはもういらない<br>
+							冬を待てないから　ふたりだけの　クリスマスイヴ<br>
+							熱い日差しが　イルミネーション<br>
+							苦しい愛に変わってもいい　抱きしめて</p>
+						<p>
+							眠らず語った海辺で　腫れた目　お互い指差し笑った</p>
+						<p>
+							ふたりの朝をむかえるたびに<br>
+							ひとりの部屋がこわくなってた</p>
+						<p>
+							サヨナラはもういらない<br>
+							約束のイヴを　ここで今かなえて<br>
+							溜め息のキスは　セレブレーション<br>
+							笑顔の中の痛みの意味を　抱きしめて</p>
+						<p>
+							ずっと　このままでいたいよ<br>
+							言えない気持ち　壊れぬように　抱きしめて</p>
+						<p>
+							真夏のイヴ　忘れない　あなたのこと　忘れない<br>
+							ふたりのイヴ　忘れない　あなたのこと　忘れない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-tenchi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

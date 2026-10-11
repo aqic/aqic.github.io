@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>シャボン・デ・セ・シ・ボン - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">シャボン・デ・セ・シ・ボン</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sawashiro Miyuki</div>
+                    <div class="LyricStaff">Lyrics : 根津洋子<br>Music : Yoshinaka Miki<br>Arrangement : Iwamoto Masaki</div>
+
+                    <div class="LyricText">
+						<p>
+							朝からまるでついてないにゅ<br>
+							白いシャツにこぼしちゃった<br>
+							ココアのシミ　だって猫舌なんだから</p>
+						<p>
+							なんだか全然やる気ないにゅ<br>
+							ぼんやり洗濯してたら<br>
+							いつの間にかお部屋がシャボンだらけ</p>
+						<p>
+							数え切れないアブクの中<br>
+							ふくれっつらが　ほら　は・じ・け・て</p>
+						<p>
+							シャラリララララルルリラ<br>
+							思わず笑い出しちゃう<br>
+							空に届けシャボン玉　ふわふわ<br>
+							シャラリララララルルリラ<br>
+							七色の夢を乗せて<br>
+							もしも今日がだめだって明日があるにゅ</p>
+						<p>
+							おなかもすいてきちゃったにゅ<br>
+							何食べようか考えてたら<br>
+							いつの間にか　クッキーの缶がもうカラッポにゅ</p>
+						<p>
+							どこにも出かけたくないにゅ<br>
+							さっき天気予報見たら<br>
+							どんより曇り空に　傘マークだらけ</p>
+						<p>
+							てるてる坊主もさぼるのか<br>
+							明日は一緒に　ねえ　がんばるにゅ</p>
+						<p>
+							シャラリララララルルリラ<br>
+							思わず歌い出しちゃう<br>
+							朝から掃除でもしよう　ぱたぱた<br>
+							シャラリララララルルリラ<br>
+							ほんとは夢が大好き<br>
+							そうだよ　やりたいこともいっぱいあるにゅ</p>
+						<p>
+							数え切れないアブクの中<br>
+							ふくれっつらが　ほら　は・じ・け・て</p>
+						<p>
+							もしも今日がだめだって<br>
+							大丈夫　だって明日があるにゅ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

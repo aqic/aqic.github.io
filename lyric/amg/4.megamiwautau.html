@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>女神はうたう - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「あぁっ女神さまっ Singles」収録曲</div>
+
+                    <div class="LyricTitle">女神はうたう</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ベルダンディー</div>
+
+                    <div class="LyricText">
+						<p>
+							雨あがりの街は　プリズムの輝き<br>
+							閉じた傘から　とび散る宝石</p>
+						<p>
+							まだ濡れてるベンチ　子供たちは家で<br>
+							窓の向こうの　虹を見ていた</p>
+						<p>
+							　誰もがしあわせ　願うから<br>
+							　窓は開かれる</p>
+						<p>
+							青空に夢がある　そして歌が<br>
+							耳を澄ませば　きこえる</p>
+						<p>
+							やさしさに愛情に　満ちた調べ<br>
+							女神はうたう　ラララ　ラララ　ララ……</p>
+						<p>
+							丘の斜面揺れる　コスモスの微笑み<br>
+							見降ろす街に　しあわせが降る</p>
+						<p>
+							花も鳥も空も　子供たちの声も<br>
+							夢が膨らむ　大切なもの</p>
+						<p>
+							　誰もがやさしさ　持てるから<br>
+							　恋は始まるの</p>
+						<p>
+							心から恋人を　信じたとき<br>
+							真実の愛は　生まれる</p>
+						<p>
+							I will be happy,<br>
+							you will be happy &amp; all the people.<br>
+							Goddess is always with you.</p>
+						<p>
+							青空に夢がある　そして歌が<br>
+							声をそろえて　うたおう</p>
+						<p>
+							ときめきに輝きに　満ちた調べ<br>
+							女神はうたう　ラララ　ラララ　ララ<br>
+							ラララ　ラララ　ララ……</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

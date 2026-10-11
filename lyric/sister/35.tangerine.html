@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Tangerine Sunset - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Tangerine Sunset</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							スライスのオレンジの　夕陽の雫落ちて<br>
+							乱反射する波を　ふたりみつめている</p>
+						<p>
+							砂のついたミュールで　夏の破片　探しても<br>
+							ねぇ　どこにもない　ただ　微熱のある頬が熱い</p>
+						<p>
+							でも　I believe you listen to my heart<br>
+							もう何もいらない<br>
+							あなたがいてくれる<br>
+							光る海に溶ける　すべてが　Sunset<br>
+							Tangerine sunset</p>
+						<p>
+							覗き込んだ瞳に　私が映っている<br>
+							孤独だった昨日を　塗りかえてゆくの</p>
+						<p>
+							風が吹くとそのたび　私の髪があなたを<br>
+							くすぐって　しまうから　ふたりでまた照れて笑う</p>
+						<p>
+							ねぇ　I believe you give me your love<br>
+							背中ばかり見てたの<br>
+							あなたのやさしさは<br>
+							誰にもあげないで　今日から　only mine</p>
+						<p>
+							I believe you listen to my heart<br>
+							すべてが輝きだす<br>
+							繋いだ指先に　力込め誓うの　永遠　Lovin'you<br>
+							Tangerine sunset</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>PARTY NIGHT - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">PARTY NIGHT</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sanada Asami, Sawashiro Miyuki, Hikami Kyouko</div>
+                    <div class="LyricStaff">Lyrics : Mori Yuki<br>Music : Sakamoto Yuusuke<br>Arrangement : Sakamoto Yuusuke</div>
+
+                    <div class="LyricText">
+						<p>
+							(D)でじこ、(P)ぷちこ、(U)うさだ、(A)コーラス</p>
+						<p>
+							(A)Hold me baby 踊ろうよSunday<br>
+							(A)Touch me baby 気分はHoliday</p>
+						<p>
+							(U)イヤな事ぜんぶ忘れちゃおう<br>
+							(D)一晩眠って目覚めたらhappy girl<br>
+							(P)夢の途中で出会う不思議<br>
+							(D)悪夢を食べてるバクたちもgood friends<br>
+							(D)いつもならばおしゃべりもしない<br>
+							(U)きゅうくつな人 陽気な<br>
+							(P)リズムで<br>
+							(D)変身<br>
+							(A)Hold me baby うきうきlady<br>
+							(U)ストレスはためないで<br>
+							(A)Touch me baby キラキラbody<br>
+							(D)リフレッシュしよう<br>
+							(A)Hold me baby 踊ろうよSunday<br>
+							(P)心にも栄養を<br>
+							(A)Touch me baby 気分はHoliday<br>
+							(D)星空のメロディー</p>
+						<p>
+							(U)ＴＶゲームやマンガばかり<br>
+							(D)外にも出ないで過ごしたらlonesome boy<br>
+							(P)バイトの虫もガリ勉君も<br>
+							(D)たまには朝まで遊んじゃえnice time<br>
+							(D)生きることにテキストはないよ<br>
+							(U)裸足のまま騒ごう<br>
+							(P)クツなんて<br>
+							(D)脱ぎ捨て<br>
+							(A)Hold me baby のりのりparty<br>
+							(U)瞳まで輝いて<br>
+							(A)Touch me baby Are you ready ok?<br>
+							(D)楽しもう君も<br>
+							(A)Hold me baby 踊ろうよSunday<br>
+							(P)ステップを踏みましょう<br>
+							(A)Touch me baby 気分はHoliday<br>
+							(D)スペシャルな瞬間を</p>
+						<p>
+							(D)疲れすぎて臆病な日には<br>
+							(U)まぶた閉じて<br>
+							(P)アクセス<br>
+							(D)してみて<br>
+							(A)have a PARTY NIGHT!<br>
+							(A)Hold me baby うきうきlady<br>
+							(U)ストレスはためないで<br>
+							(A)Touch me baby キラキラbody<br>
+							(D)リフレッシュしよう<br>
+							(A)Hold me baby 踊ろうよSunday<br>
+							(P)心にも栄養を<br>
+							(A)Touch me baby 気分はHoliday<br>
+							(D)星空のメロディー<br>
+							(A)Hold me baby のりのりparty<br>
+							(U)瞳まで輝いて<br>
+							(A)Touch me baby Are you ready ok?<br>
+							(D)楽しもう君も<br>
+							(A)Hold me baby 踊ろうよSunday<br>
+							(P)ステップを踏みましょう<br>
+							(A)Touch me baby 気分はHoliday<br>
+							(D)スペシャルな瞬間を</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>戀の天使舞い降りて - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">戀の天使舞い降りて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">田村由加里,堀江由衣</div>
+                    <div class="LyricStaff">作詞:根津洋子<br>作曲:真友<br>編曲:太田美知彥</div>
+
+                    <div class="LyricText">
+						<p>
+							*戀の天使　舞い降りて<br>
+							世紀末の魔法をかけたよ<br>
+							聖なる夜　この想いを<br>
+							打ち明けたら　きっとかなう　Holly Night<br>
+							きらめく街にキャロル響く<br>
+							憧れていた映畫みたいね<br>
+							こんなに胸がときめくのは　ねえどうして<br>
+							靜かに積もる粉雪のイブ<br>
+							あなたはきっと　來てくれるよね<br>
+							見上げるくらい大きな大きなツリ??の下</p>
+						<p>
+							ずっと信じていた　この日がくると<br>
+							#やっとめぐりあった大切な戀だから</p>
+						<p>
+							キャンドルの炎　搖れて<br>
+							ジングルベル響いてくる夜<br>
+							勇氣出して　この想いを<br>
+							打ち明けたら　きっとかなう　Special Night<br>
+							永遠に　Love for you</p>
+						<p>
+							[口尊]はきっと本當なのね<br>
+							今年のイブは特別だから<br>
+							思い切って告白したらかなうって</p>
+						<p>
+							未來の夢を語り合うたび<br>
+							言葉は白い吐息になって<br>
+							暗い夜空に吸い入まれて星に變わるよ<br>
+							そっと　耳元でささやくからね<br>
+							ぜったい　笑わないで　このキモチ受け止めて</p>
+						<p>
+							戀の天使　舞い降りて<br>
+							世紀末の魔法をかけたよ<br>
+							聖なる夜　誓い合う愛の言葉<br>
+							きっとかなう　Silent Night</p>
+						<p>
+							永遠に　Love for you</p>
+						<p>
+							*Repeat<br>
+							#Repeat</p>
+						<p>
+							永遠にLove for you</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

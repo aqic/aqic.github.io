@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Four Seasons - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Four Seasons</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">安室奈美恵</div>
+
+                    <div class="LyricText">
+						<p>
+							Four scene of love and laughter<br>
+							I'll be alright being alone<br>
+							Four scene of love and laughter<br>
+							I'll be alright being alone<br>
+							Four scene of love and laughter<br>
+							I'll be alright being alone<br>
+							Four scene of love and laughter<br>
+							I'll be ok<br>
+							愛し合えば別れゆく そんな出会い繰り返した<br>
+							記憶深く手探りで 甘い陰を求めては<br>
+							I can taste the sweetness of the past<br>
+							何処にも貴方はいないけど<br>
+							I'll be alright 目をつぶればそこに<br>
+							変わらない愛を I believe<br>
+							春の光 集めたら 花咲かせて<br>
+							夏は月浮かぶ海で みつめて<br>
+							秋の風 冬の雪も その吐息で 暖めて欲しい<br>
+							four seasons with your love もう一度<br>
+							願いだけの約束は 時がたてば色褪せる<br>
+							can you feel me underneath the skin?<br>
+							あんなに重ねた思いなら<br>
+							we'll be alright 信じていれば そう<br>
+							どんな遠くても stay with me<br>
+							春の花眠る夜に 迎えに来て<br>
+							夏の砂浜に message残して<br>
+							秋の雨 冬の涙 飾らぬ愛で 暖めて欲しい<br>
+							four seasons with your love 夢の中<br>
+							流れる時を心に ありのままに<br>
+							二人の日々は もうすぐ思い出<br>
+							愛も夢も忘れ物 いつの日でも 暖めて欲しい<br>
+							four seasons with your love 胸の奥<br>
+							four scene,four four seasons<br>
+							four scene,I'll be alright<br>
+							four scene,four four seasons<br>
+							four scene,stay with me...<br>
+							four scene,four four seasons<br>
+							four scene,I'll be alright<br>
+							four scene,four four seasons<br>
+							four scene,stay with me...<br>
+							four scene,four four seasons<br>
+							four scene,I'll be alright<br>
+							four scene,four four seasons<br>
+							four scene,stay with me...<br>
+							four scene,four four seasons<br>
+							four scene,I'll be alright<br>
+							four scene,four four seasons<br>
+							four scene,stay with me...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

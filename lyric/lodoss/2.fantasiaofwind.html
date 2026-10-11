@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風のFantasia - ロードス島戦記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ロードス島戦記」オープニング・テーマ</div>
+
+                    <div class="LyricTitle">風のFantasia</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							不思議おください…<br>
+							「Fantasia」につめて<br>
+							もう迷わないは<br>
+							あなたと愛のために</p>
+						<p>
+							風の妖精<br>
+							あねお広げて<br>
+							時のたにまお<br>
+							光の速さで走れ</p>
+						<p>
+							＊愛し合う「Destiny」<br>
+							　終わりのこない夜のよう<br>
+							　永遠と決めた、あなただから…<br>
+							　さー　眠りなさい<br>
+							　この胸で…</p>
+						<p>
+							心お開けば<br>
+							「Fantasia」が見える<br>
+							瞳お閉じれば<br>
+							二人の夢がかなう</p>
+						<p>
+							かぜの「Veil」お<br>
+							解いてといて<br>
+							二つの月が<br>
+							天窓に浮かび上がる…</p>
+						<p>
+							夕べ見た星は<br>
+							幾億年の彼方から<br>
+							歴史さえ越えて<br>
+							届いたのね…</p>
+						<p>
+							＊繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lodoss-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

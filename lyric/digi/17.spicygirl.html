@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Spicy Girl - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Spicy Girl</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sawashiro Miyuki</div>
+                    <div class="LyricStaff">Lyrics : Mori Yuki<br>Music : Sakamoto Yuusuke<br>Arrangement : Sakamoto Yuusuke</div>
+
+                    <div class="LyricText">
+						<p>
+							小さくて辛口な　切れ味ピリリつんとくるぞ<br>
+							忘れないで　いつも私スパイシーガール</p>
+						<p>
+							機嫌悪くないけど　愛想笑いしないにゅ<br>
+							感情のメーターは　so 平坦かな？<br>
+							アイスくれたぐらいで　慣れたフリをしないで<br>
+							知らんぷりしちゃうかも　so 気まぐれ</p>
+						<p>
+							油断して近づくと　涙目になるよ　ちょっとヘビー</p>
+						<p>
+							小粒でも目にしみる　キツイ一言浴びせちゃうぞ<br>
+							忘れないで　いつも私スパイシーガール</p>
+						<p>
+							姿ミニチュアだけど　誰のマネもしないにゅ<br>
+							オリジナルあふれてる　so 覚えていて<br>
+							仲間うちじゃ一番　大人びてる日もある<br>
+							それなりに楽しいよ　so プチペース</p>
+						<p>
+							油断して近づくと　痛い目にあうよ　ちょっとヘビー</p>
+						<p>
+							小さくて辛口な　主役に負けない存在感<br>
+							覚えていて　いつも私スパイシーガール</p>
+						<p>
+							冷めたスープもコロリ　spiceで変わる　なんて不思議！</p>
+						<p>
+							小さくて辛口な　切れ味ピリリつんとくるぞ<br>
+							忘れないで　今日もハジケルにゅ<br>
+							小粒でも目にしみる　キツイ一言浴びせちゃうぞ<br>
+							忘れないで　いつも私スパイシーガール　私スパイシーガール</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

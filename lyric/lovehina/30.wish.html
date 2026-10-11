@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>祝福 - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">祝福</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Hinata Girls
+堀江由衣・倉田雅世・浅川悠・高木玲子
+野田順子・雪乃五月・小林由美子</div>
+                    <div class="LyricStaff">作詞・作曲：岡崎律子<br>編曲：十川知司<br>コーラス：岡崎律子</div>
+
+                    <div class="LyricText">
+						<p>
+							今の愿いごとはなに？<br>
+							からだじゅうで望んでいる<br>
+							眩しい朝　瞳はキラキラ<br>
+							そこへ续く道は远く<br>
+							明日のことなどわからない<br>
+							けれど行くよ　ギリギリのきもち</p>
+						<p>
+							大空に两手ひろげて<br>
+							翔けていこう　羽ばたけ</p>
+						<p>
+							どんな未来が待ってる<br>
+							次は何が起こるやら<br>
+							人生は时に严しく<br>
+							それにも增してすばらしい</p>
+						<p>
+							ほんとうのこと　言えないこと<br>
+							胸の奥にうず卷いてる<br>
+							雨のち晴れ　ときどきは昙り</p>
+						<p>
+							それぞれにそれぞれの梦<br>
+							いつか来るその日のため<br>
+							今は深く深く根ざしてる</p>
+						<p>
+							恋せよ乙女たちよ<br>
+							かぐわしき花嶼かせよ<br>
+							だめだだめだ止まらない<br>
+							翻弄されて本望です</p>
+						<p>
+							どんな未来が待ってる<br>
+							次は何が起こるやら<br>
+							人生は时に严しく<br>
+							それにも增してすばらしい</p>
+						<p>
+							どんな未来をめざしてる<br>
+							次を次を见にいこう<br>
+							人生はとても严しく<br>
+							それにも增してすばらしい</p>
+						<p>
+							やめられない郅嗓工肖椁筏ぃ　?</p>
+						<p>
+							エンドレスにすばらしいのさ！！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

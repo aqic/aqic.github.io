@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Kiss Kiss - CLAMP</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Kiss Kiss</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">松岡英明</div>
+                    <div class="LyricStaff">作詞：松岡英明<br>作曲：松岡英明<br>編曲：奈良部匠平</div>
+
+                    <div class="LyricText">
+						<p>
+							I gonna belive in your eyes<br>
+							So please don't say love is blind<br>
+							I wanna be reading your mind<br>
+							In secret communication</p>
+						<p>
+							Do you like coffee or lemonade?<br>
+							It choose to taste so good hand made<br>
+							Where are the smiles of yesterday?<br>
+							Of childhood conversation</p>
+						<p>
+							Please kiss kiss<br>
+							Would anybody kiss me, please<br>
+							Please, please kiss kiss<br>
+							Give me strawberry kisses please</p>
+						<p>
+							I gonna become sunshine<br>
+							And kiss everything in sight<br>
+							You could be a star in the night<br>
+							Just use your imagination</p>
+						<p>
+							I'm only holding back the rain<br>
+							So many rain drops, so many pain<br>
+							I wanna find my train someday<br>
+							As seasons go pass the station</p>
+						<p>
+							Please kiss, kiss<br>
+							Would anybody kiss me, please<br>
+							Please, please kiss kiss<br>
+							Like a strawberry colored dream.</p>
+						<p>
+							Please kiss, kiss<br>
+							Would anybody kiss me, please<br>
+							Please, please kiss kiss<br>
+							Give me strawberry kisses please</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-clamp-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>My Will - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">My Will</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Dream</div>
+                    <div class="LyricStaff">作詞：松室麻衣<br>作曲：y@suo ohtani<br>編曲：菊地圭介</div>
+
+                    <div class="LyricText">
+						<p>
+							そっと目覚める</p>
+						<p>
+							儚い想いずっと　どんな季節でも願うよ<br>
+							あなたに届くようにと…</p>
+						<p>
+							“あと少し”という距離が踏み出せなくて<br>
+							いつも目の前は　閉ざされていたの<br>
+							会いたい　会えない日々を重ねるたびに<br>
+							強いときめきは切なさになるよ</p>
+						<p>
+							もしも“永遠”というものがあるなら<br>
+							遠回りしてでも　信じてみたい<br>
+							“不器用だからキズつく事もある”と<br>
+							分かっても止まらない　もう誰にも負けない</p>
+						<p>
+							あなたの事を想う<br>
+							それだけで涙が　今溢れだしてくるよ<br>
+							儚い想いずっと　どんな季節でも願うよ<br>
+							あなたに届くようにと…</p>
+						<p>
+							強がることだけ知りすぎていた私<br>
+							だけどあの時から　迷いは消えたよ</p>
+						<p>
+							見せたいと思うものがきっとあって<br>
+							聴かせたい言葉も　たくさんある<br>
+							笑顔泣き顔も全部見て欲しくて<br>
+							待っている私はやめて　“チャンス”を掴むよ</p>
+						<p>
+							あなたの事を想う<br>
+							それだけで心が　強くなれる気がするよ<br>
+							儚い想いずっと　どんな季節でも願うよ<br>
+							あなたに届くようにと…</p>
+						<p>
+							あなたの事を想う<br>
+							それだけで涙が　今溢れだしてくるよ<br>
+							遠くて声が　届かないだけどいつかは<br>
+							必ず届くように</p>
+						<p>
+							信じて　La　la　La　la　La　la…<br>
+							信じて　La　la　La　la　La　la…<br>
+							信じて　La　la　La　la　La　la…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

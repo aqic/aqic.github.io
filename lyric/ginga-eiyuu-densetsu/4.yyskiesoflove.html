@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Skies of love - 銀河英雄伝説</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Galaxy hero Legends</div>
+
+                    <div class="LyricTitle">Skies of love</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">秋吉满英</div>
+                    <div class="LyricStaff">作詞、作曲：秋吉满英<br>編曲：風戶慎介</div>
+
+                    <div class="LyricText">
+						<p>
+							I look above the stars are bright<br>
+							Yet I'm blinded by the light<br>
+							Heaven seems so far away<br>
+							Come back to me someday</p>
+						<p>
+							The sky seems so blue<br>
+							They load me to you<br>
+							Somewhere there's a place in my heart<br>
+							In the skies of love</p>
+						<p>
+							I pray upon a star tonight<br>
+							for the Gods to shine a light<br>
+							There's a place that's far away<br>
+							I'll meet you there one day</p>
+						<p>
+							My faith lies with you<br>
+							Protect all you do<br>
+							There's always a place in my heart<br>
+							in the skies of love.</p>
+						<p>
+							I look above the stars are bright<br>
+							Yet I'm blinded by the light<br>
+							Heaven seems so far away<br>
+							Come back to me someday</p>
+						<p>
+							The sky seems so blue<br>
+							They load me to you<br>
+							Somewhere there's a place in my heart<br>
+							In the skies of love</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ginga-eiyuu-densetsu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

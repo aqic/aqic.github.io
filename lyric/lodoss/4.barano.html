@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ばらの茂み - ロードス島戦記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ばらの茂み</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">新居昭乃</div>
+                    <div class="LyricStaff">作詞・作曲・編曲：新居昭乃</div>
+
+                    <div class="LyricText">
+						<p>
+							僧院の屋根に降る雨<br>
+							ばたの茂みにもひそかに<br>
+							ねぇ、Silver Girl<br>
+							出ておいで<br>
+							丘の上はもう明るい<br>
+							阳が射しはじめる</p>
+						<p>
+							轧んで摇れたブランコ<br>
+							幻のように坏れた<br>
+							ねぇ、Silver Girl<br>
+							出ておいで<br>
+							あなたは谁？<br>
+							ともだちなの？<br>
+							私とおしゃべりしないかな</p>
+						<p>
+							谁もがみんな役に立つことをしてる<br>
+							私以外は<br>
+							大きな门の键にさえすることがある<br>
+							こんな午后は<br>
+							いけない子供だった私の发にも<br>
+							金の雨が降るの<br>
+							魔法みたい</p>
+						<p>
+							僧院に响く歌声<br>
+							ばらの茂みに染みとおる<br>
+							ねぇ、Silver Girl<br>
+							出ておいで<br>
+							あなたは谁？<br>
+							ともだちなの？</p>
+						<p>
+							そこにいる<br>
+							ねぇ、Silver Girl<br>
+							丘の上はもう明るい<br>
+							光があふれる<br>
+							远くまで</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lodoss-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

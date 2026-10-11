@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>STAY - 3×3EYES</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「3×3EYES」</div>
+
+                    <div class="LyricTitle">STAY</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							夜の闇はすべてを包み<br>
+							何も見えなくしてしまうの<br>
+							だけど君の温もりだけは<br>
+							見失う事はなかった</p>
+						<p>
+							今君の微笑には<br>
+							幾千の涙が隠れている</p>
+						<p>
+							☆歩いてゆこう<br>
+							　二人でゆこう<br>
+							　夜の闇は続くけれど<br>
+							　あきらめないで<br>
+							　背を向けないで<br>
+							　繋いだ手を離せないで</p>
+						<p>
+							言葉に出来ない<br>
+							気持ちで溢れて<br>
+							回り逢えたのが<br>
+							君で良かった</p>
+						<p>
+							迷いながら傷つきながら<br>
+							いつか二人こんなに遠く<br>
+							君がそばにいてくれたから<br>
+							何も怖くはなかった</p>
+						<p>
+							そうきっと心からの<br>
+							本当の笑顔に変えてあげる</p>
+						<p>
+							★走りきるから<br>
+							　おしゃまないから<br>
+							　何処までも信じてるから<br>
+							　二人でいれば<br>
+							　力になれる<br>
+							　誰よりも優しくなれる</p>
+						<p>
+							△どんな時だって<br>
+							　支えてきてくれた<br>
+							　泣きたくなるほど<br>
+							　君にアリガト</p>
+						<p>
+							☆くりかえし</p>
+						<p>
+							★くりかえし</p>
+						<p>
+							△くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sazeneyes-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

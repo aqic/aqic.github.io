@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>HUMAN TOUCH - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ朝日系アニメ「機動新世紀ガンダムＸ」エンディング</div>
+
+                    <div class="LyricTitle">HUMAN TOUCH</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">re-kiss</div>
+
+                    <div class="LyricText">
+						<p>
+							もしも心を　目で見ることができたなら<br>
+							傷ついた痛み　気がついて<br>
+							いやしてあげたいのに　そっと<br>
+							いつからなの　素直に<br>
+							泣くのを止めて　我慢して　生きてる</p>
+						<p>
+							WHEN YOU FIND LOVE IN YOUR HEART<br>
+							思い出してね<br>
+							ホントは　愛されていることを<br>
+							生まれたその日から</p>
+						<p>
+							もしも心を　手のひらに乗せられたなら<br>
+							どんな辛いことからだって<br>
+							両手で壁つくって守る<br>
+							幸せとやさしさが<br>
+							あなたといると　ひとつずつ　増えてく</p>
+						<p>
+							WHEN YOU FIND LOVE IN YOUR HEART<br>
+							大切なのは<br>
+							誰かと　争うことじゃなくて<br>
+							愛し続けること</p>
+						<p>
+							苦しみも喜びも<br>
+							同じ気持ちで　感じたい　あなたと</p>
+						<p>
+							WHEN YOU FIND LOVE IN YOUR HEART<br>
+							思い出してね<br>
+							ホントは　愛されていることを<br>
+							生まれたその日から<br>
+							IF YOU BELIEVE<br>
+							IN HUMAN TOUCH</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

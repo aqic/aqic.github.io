@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Underground - Robotech</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Robotech] Insert Song</div>
+
+                    <div class="LyricTitle">Underground</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Michael Bradley</div>
+                    <div class="LyricStaff">Composed by: Micheal Bradley, Joanne Harris</div>
+
+                    <div class="LyricText">
+						<p>
+							There's something going on<br>
+							And I don't know what<br>
+							But I feel it in the air...<br>
+							Maybe we ought to run<br>
+							But if you listen close<br>
+							We'll let you know just where...</p>
+						<p>
+							Just listen to me<br>
+							Tonight!</p>
+						<p>
+							Maybe you can't contend<br>
+							That the world we know<br>
+							Might not come to an end.</p>
+						<p>
+							But you must realise<br>
+							That we have to go<br>
+							And we will tell you where...</p>
+						<p>
+							Don't talk in your sleep<br>
+							Because the walls might have ears.<br>
+							And it's only fair<br>
+							That we should take you there.</p>
+						<p>
+							○Maybe we should all go underground<br>
+							　And try to live a life without the sun.<br>
+							　Please be careful not to make a sound<br>
+							　'Cause there may not be room for everyone...<br>
+							　Do you think you'd mind...?</p>
+						<p>
+							You may not understand<br>
+							But I really feel<br>
+							Our fate is in our hands.</p>
+						<p>
+							And if you follow us<br>
+							We'll lead you to<br>
+							A place where we can be...</p>
+						<p>
+							Don't talk in your sleep. [No.]<br>
+							Listen to me...<br>
+							Tonight!<br>
+							We must prepare<br>
+							'Cause we have to go somewhere.</p>
+						<p>
+							○Repeat</p>
+						<p>
+							Do you think you're gonna miss the summer time<br>
+							And the sunshine on your face?<br>
+							And if you think you're gonna miss the winter<br>
+							time...<br>
+							What if the winter never goes away...</p>
+						<p>
+							○Repeat</p>
+						<p>
+							(repeat till fade)<br>
+							Maybe we should all go underground<br>
+							And try to live a life without the sun.<br>
+							Please be careful not to make a sound<br>
+							'Cause there may not be room for everyone...<br>
+							Do you think you'd mind...?</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-robotech-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

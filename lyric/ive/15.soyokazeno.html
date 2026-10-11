@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>そよ風の行方 - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Xchange2</div>
+
+                    <div class="LyricTitle">そよ風の行方</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Y AKI</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							眩しい夏の日差しが<br>
+							窓をたたいたら<br>
+							途切れた夢のかけらが<br>
+							つながるよう</p>
+						<p>
+							それぞれの道を辿ってく<br>
+							指先は　ちょっとだけ未来で<br>
+							一つになっていくから</p>
+						<p>
+							キラキラと輝くあなたの瞳に<br>
+							たくさんの思い出を作ってく<br>
+							そよ風にのせた一枚の写真は<br>
+							ゆらゆらしている私の想い</p>
+						<p>
+							遠くで手を振りながら<br>
+							笑ってるあなたは<br>
+							過ぎてく昨日の影と並んでるよ</p>
+						<p>
+							海と空と風の香りが<br>
+							うつむいた　私の心の中<br>
+							ゆっくり　満ちてゆくよ</p>
+						<p>
+							からかうあなたの声あなたの笑顔<br>
+							たくさんの思い出を残すから<br>
+							青空にかさなった二人の未来<br>
+							ドキドキしながら歩いて行くよ</p>
+						<p>
+							キラキラと輝くあなたの瞳に<br>
+							たくさんの思い出を作ってく<br>
+							青空にかさなった二人の未来<br>
+							ドキドキしながら歩いて行くよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

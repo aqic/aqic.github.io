@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>电波の海原 - 天地無用!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">电波の海原</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							都会の　カラスも　梦を见る顷<br>
+							お耳に　届くは　まいど　この二人</p>
+						<p>
+							电波の　海原　ちょいと　乘り越えて<br>
+							あなたの　お部屋に　花を　笑かせましょう</p>
+						<p>
+							颜を　见なきゃ　言えそうな<br>
+							おつな　话　闻かせましょう</p>
+						<p>
+							たかが　言叶<br>
+							たかが　声に<br>
+							できることがある</p>
+						<p>
+							闻いてらっしゃい　皆の众　お代は　いらない<br>
+							爱の　ユミ矢で　打ち拔くわ　あなたの　胸</p>
+						<p>
+							つれない　素振りに　泪が　出ても<br>
+							声を　闻くたびに　染みる　爱がある</p>
+						<p>
+							灯り　消して　しっぽりと<br>
+							物语　闻いとくれ</p>
+						<p>
+							时を　越えて　场所を　越えて<br>
+							かなう梦がある</p>
+						<p>
+							古今东西　北南　さあさ　始まる<br>
+							歌に　ドラマに　泣き笑い　てんこ盛りね</p>
+						<p>
+							＜セリフ＞<br>
+							おじさん　ラジオ闻いてっておくれよ<br>
+							ラジオ　闻かねえかい<br>
+							たかが　四角い箱が<br>
+							世间を　丸くすることも<br>
+							あるんでござんすね</p>
+						<p>
+							闻いてらっしゃい　皆の众　お代は　いらない<br>
+							爱の　ユミ矢で　打ち拔くわ　あなたの　胸</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-tenchi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Everlasting Story - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Everlasting Story</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐藤朱美</div>
+                    <div class="LyricStaff">作詞：佐藤朱美<br>作曲：芦沢和則<br>編曲：大友博輝</div>
+
+                    <div class="LyricText">
+						<p>
+							星降る丘の上に　独りで立ち尽くした<br>
+							１つづつ窓に灯る明りが<br>
+							誰もが笑顔の奥　痛みをかかえたまま<br>
+							生きているよ　この地球(ほし)の中で</p>
+						<p>
+							生まれて消えていった幾千の物語たち</p>
+						<p>
+							遥か遠い日の記憶　胸に刻まれた<br>
+							瞳閉じて思い出す<br>
+							今　ここに私がいる<br>
+							感じて　EVERLASTING STORY</p>
+						<p>
+							私を包み込んで　伝わる愛の力<br>
+							胸の傷を癒してくれるの</p>
+						<p>
+							出合いそして　分かれいつだって偶然じゃない</p>
+						<p>
+							どんな苦しい時でも　支えられている<br>
+							きっと同じ思いを<br>
+							分け合える人がいると　いつも信じて</p>
+						<p>
+							今も目の前に続く　地図にない道を<br>
+							ずっと歩いて行くから<br>
+							その先の未来のため<br>
+							描く　EVERLASTING STORY</p>
+						<p>
+							私は貴方のため　貴方は私のため<br>
+							生きているよ　この地球(ほし)の中で</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>片思いしか知らないくせに - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">片思いしか知らないくせに</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Goddess Family Club</div>
+                    <div class="LyricStaff">作詞：長谷川空<br>作曲：川井憲次<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							（綾）足もとに　無邪気な風<br>
+							　　クルクルと　枯葉じゃれる</p>
+						<p>
+							（由）寄りそった　恋人たち<br>
+							　　季節がほら　変わったの</p>
+						<p>
+							（喜）バンチ(punch)腰かけ<br>
+							（由）膝にひろげた<br>
+							（綾）編みかけのセーター(sweater)<br>
+							（喜）イ?の夜には<br>
+							（由）渡すつもりで<br>
+							（３）愛を[?部上面"入"，こ]めている</p>
+						<p>
+							※（喜）片思いしか知らないくせにって<br>
+							　　　ともだちは言うの<br>
+							　（３）でも愛はひとりきり膨らむから<br>
+							　　　しあわせと寂しさが交じって<br>
+							　　　とても　せっないの</p>
+						<p>
+							（３）バス停に　近づけない<br>
+							　　あのひとが　笑顔見せた<br>
+							（由）內気とか　弱気じゃない<br>
+							（綾）ハートがそう　拗(す)ねてるの</p>
+						<p>
+							（喜）長いスカート　裾をつまんで<br>
+							　　驅け出すのはいつ﹖<br>
+							（綾）恋をするには　勇気いるって<br>
+							　　やっと気づいたの</p>
+						<p>
+							（由）愛されるトキメキも知らないって<br>
+							　　ともだちは言うの<br>
+							（喜）やさしさの風船は膨らむのに<br>
+							　　屆けたい　屆かない思いが<br>
+							　　ずっと　[糸＋殼的左邊]くのね</p>
+						<p>
+							※repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

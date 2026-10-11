@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>赤い靴のSUNDAY - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">［らんま１／２］DoCo＊FIRSTイメージ・ソング(1992)</div>
+
+                    <div class="LyricTitle">赤い靴のSUNDAY</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">らんま1/2　DoCo</div>
+                    <div class="LyricStaff">作詞：和泉ゆかり<br>作曲・編曲：川井憲次<br>実演：らんま★林原めぐみ<br>あかね★日高のり子<br>シャンプー★佐久間レイ<br>なびき★高山みなま<br>かすみ★井上喜久子</div>
+
+                    <div class="LyricText">
+						<p>
+							（シャンプー）青空　飛行船<br>
+							あやしい　あやうい　ZIG-ZAG飛行<br>
+							日曜　渋滞　PM1:30<br>
+							あなたはまだ来ない<br>
+							……つまんない</p>
+						<p>
+							（かすみ）棧橋　赤煉瓦<br>
+							うつむく　振り向く　黒サングラス<br>
+							真夏に　スーツで　黒づくめ<br>
+							誰かが狙ってる<br>
+							……早く来て</p>
+						<p>
+							（全員）PiPi PiPi<br>
+							（らんま）デジタルが鳴ってる<br>
+							（全員）ねぇ　ほら<br>
+							（なびき）謎めいた異邦人<br>
+							もう<br>
+							（全員）異国の船でさらわれても知らない</p>
+						<p>
+							（なびき）自転車　人違い<br>
+							驚き　振り向き　ニヤニヤ笑い<br>
+							チョット待ッテ　チョット待ッテ　オ嬢サン<br>
+							神ヲ信ジマスカ<br>
+							……なんなのよ</p>
+						<p>
+							（全員）Kura Kura<br>
+							（らんま）太陽がいっぱい<br>
+							（全員）ねぇ　ほら<br>
+							（かすみ）誰かが追ってくるわ<br>
+							もう<br>
+							（全員）この公園は包囲されているのよ</p>
+						<p>
+							（あかね）噴水　赤い靴<br>
+							追われて　呼ばれて　うるうる涙<br>
+							許して　助けて　見逃して<br>
+							右手をつかんでる<br>
+							……あなたなの</p>
+						<p>
+							（全員）Kusu Kusu<br>
+							（らんま）どうしたのとわらう<br>
+							（全員）ねえ　もう（シャンプー）あなたのせいよ　みんな<br>
+							でも<br>
+							（全員）あなたにならね　さらわれてもいいけど</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

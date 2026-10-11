@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>おとうさん - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">【６月】</div>
+
+                    <div class="LyricTitle">おとうさん</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">天道かすみ</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲：川井憲次<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							おとうさん　(早雲)「なんだい」<br>
+							痩せたみたいです</p>
+						<p>
+							悩みがあるなら聞かせてね<br>
+							これでも母親代わりです</p>
+						<p>
+							娘１９はお年頃<br>
+							家事もするけど恋もする</p>
+						<p>
+							ふんわりのんびり生きてます<br>
+							やさしいあなたの娘です</p>
+						<p>
+							(かすみ)お父さん、行水のしたくができましたよ。<br>
+							(早雲)かすみ、いつもすまないねぇ。<br>
+							(かすみ)それは言わない約束でしょ、お父さん。</p>
+						<p>
+							おとうさん　(早雲)「なんだい」<br>
+							頼りにしてるの</p>
+						<p>
+							家族のしあわせ願うのは<br>
+							家長のつとめと口ぐせね</p>
+						<p>
+							揺れる１９の父の日に<br>
+							編んだマフラー　夏が来る</p>
+						<p>
+							ふんわりのんびり生きてます<br>
+							頑固なあなたの娘です</p>
+						<p>
+							お庭に咲いてるかすみ草<br>
+							そおっと心に届けます</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

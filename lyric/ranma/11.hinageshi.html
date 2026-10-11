@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ひなげし - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2 熱闘編」エンディング・テーマ (1991)</div>
+
+                    <div class="LyricTitle">ひなげし</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中嶋美智代</div>
+                    <div class="LyricStaff">作詞・作曲：遠藤京子<br>編曲：武部聡志</div>
+
+                    <div class="LyricText">
+						<p>
+							今日、<br>
+							雨が降り出したの　だから<br>
+							約束破って家に居たの　Mm<br>
+							ごめん、<br>
+							嫌いになったのじゃなくて<br>
+							なんとなくそうしたかった</p>
+						<p>
+							花を一輪　飾ってみたの<br>
+							ポタリと滴〈しずく〉　涙みたいに</p>
+						<p>
+							※ひなげしの花で　なくて良かった<br>
+							　無邪気に咲く気には　なれない<br>
+							　名も無いその花は　私みたいね<br>
+							　ひっそり一人　祈るの</p>
+						<p>
+							ねえ、<br>
+							両手合わせた時にだけ<br>
+							神様思うのわがままよね　Mm<br>
+							でも、<br>
+							このせつなさの理由〈わけ〉ぐらい<br>
+							教えてくれてもいいでしょ</p>
+						<p>
+							生まれ変わって　花になるなら<br>
+							カナリヤ色の　花びらがいい</p>
+						<p>
+							ひなげしになって　丘の上から<br>
+							風を眺め　おしゃべりするの<br>
+							その日のため息も　星にまかせて<br>
+							子供の様に　咲きたい</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

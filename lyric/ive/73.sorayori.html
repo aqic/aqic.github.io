@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>空より近い夢 - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">I've オリジナル</div>
+
+                    <div class="LyricTitle">空より近い夢</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MELL &amp; MIKI</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							澄み渡る青空の下で　私だけが<br>
+							いつまでも寂しさと背中合わせで<br>
+							そんなことばかり考えてた　今日までは<br>
+							人とは違うあなたに巡り会えたの</p>
+						<p>
+							空しさも何処かに消えてくね<br>
+							眠れなく溢れる希望に手をかざすの</p>
+						<p>
+							諦めないで　一人じゃないから<br>
+							涙溢れる日も　見守ってる<br>
+							この手の中の　乾いた砂の粒を<br>
+							輝く宝石に　いつか変えてみせる</p>
+						<p>
+							とりとめのない生き方　私と同じだね<br>
+							どこまでも落ちて行く　そんな気がして</p>
+						<p>
+							切なさが込み上げる私の思い出に<br>
+							いつまでこの気持ち忘れないよ</p>
+						<p>
+							果てしない人生　少し歩こうよ<br>
+							思い出の足跡　ずっと続く<br>
+							投げ出さないで　夢をつかもうよ<br>
+							どこまでも続く空より　近くにある</p>
+						<p>
+							空しさも何処かに消えてくね<br>
+							限りなく溢れる希望に手をかざすの</p>
+						<p>
+							悲しまないで　一人じゃないから<br>
+							壊れそうな時も　見守ってる<br>
+							この手の中の　乾いた砂の粒を<br>
+							輝く宝石に　いつか変えてみせるから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

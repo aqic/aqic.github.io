@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Perfect World - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Perfect World</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本千夏</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：大門一也<br>編曲：大門一也</div>
+
+                    <div class="LyricText">
+						<p>
+							水に映る月を視るから　揺れてしまう<br>
+							頭上にある光はそれを　ただ観てるだけ</p>
+						<p>
+							傷ついて弱る　手負いのケモノでも<br>
+							生きるのか　逃げるのか　すべて自分しだい</p>
+						<p>
+							空は高く果てしないけれど<br>
+							光だけは惜しみなくある<br>
+							どんな時も　見守っているよ<br>
+							愛という名の　Perfect World</p>
+						<p>
+							辛い時を乗り越える度　眩しくなる<br>
+							知らず知らず選んだ事が　自信になるよ</p>
+						<p>
+							海の底眠る　人は真珠のよう<br>
+							洗われて　磨かれて　輝きを深める</p>
+						<p>
+							空は高く晴れわたる世界<br>
+							雪は溶けて　潤いになる<br>
+							どんな時も立ち上がる勇気<br>
+							キミの中にあるよ</p>
+						<p>
+							抱いて抱いて抱き起こすだけが<br>
+							多分きっと　やさしさじゃない<br>
+							どんな時も立ち上がる勇気<br>
+							キミの中にあるよ<br>
+							愛という名の　Perfect World</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

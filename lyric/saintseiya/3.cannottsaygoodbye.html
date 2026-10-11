@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>さよならのかわりに&lt;br&gt;[CAN'T SAY GOOD-BYE] - 聖闘士星矢</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[聖闘士星矢 / 挿入歌]</div>
+
+                    <div class="LyricTitle">さよならのかわりに&lt;br&gt;[CAN'T SAY GOOD-BYE]</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MAKE-UP</div>
+                    <div class="LyricStaff">作詞：竜 真知子<br>作曲：池田 育義<br>編曲：MAKE-UP</div>
+
+                    <div class="LyricText">
+						<p>
+							Try to remember once again</p>
+						<p>
+							眼を閉じて  想い出すのさ<br>
+							空高く  駆けた日々<br>
+							哀しみのベールを脱いで<br>
+							見つめあえた  仲間たち<br>
+							この命  果てるときも<br>
+							静かに  笑える</p>
+						<p>
+							Can't say good-bye, my friend<br>
+							Can't say you any more<br>
+							Try to remember<br>
+							Try to remember once again</p>
+						<p>
+							望まない  戦いさえも<br>
+							乗り越えた  俺たちさ<br>
+							たとえ今  離れていても<br>
+							きっといつか  会えるから<br>
+							その胸で  祈ってくれ<br>
+							別れのかわりに</p>
+						<p>
+							Can't say good-bye, my friend<br>
+							Can't say you any more<br>
+							Try to remember<br>
+							Try to remember once again</p>
+						<p>
+							Can't say good-bye, my friend<br>
+							Can't say you any more<br>
+							Try to remember<br>
+							Try to remember<br>
+							Can't say good-bye, my friend<br>
+							Can't say you any more<br>
+							Try to remember<br>
+							Can't say good-bye, my friend any more</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saintseiya-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>THE FOURTH AVENUE CAFE - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">エンディングテーマ４</div>
+
+                    <div class="LyricTitle">THE FOURTH AVENUE CAFE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">L'Arc～en～Ciel(ラルク・アン・シエル)</div>
+                    <div class="LyricStaff">作詞　hyde<br>作曲　Ken<br>編曲　L'Arc～en～Cie</div>
+
+                    <div class="LyricText">
+						<p>
+							季節は穏やかに終りを告げたね<br>
+							彩られた記憶に寄せて<br>
+							さよなら　愛をくれたあの人は<br>
+							この瞳に揺らめいていた</p>
+						<p>
+							途切れない気持ちなんて<br>
+							初めから信じてなかった<br>
+							移りゆく街並に取り残されたまま</p>
+						<p>
+							行き交うあの人々が今は<br>
+							遠くに感じられて<br>
+							ざわめきさえ薄れては<br>
+							溜め息に消えてしまう</p>
+						<p>
+							空席に見つめられた<br>
+							退屈な休日には<br>
+							終わることなくあなたが流れ続けている</p>
+						<p>
+							分かっていても気付かない振りして<br>
+							溺れていたよいつでも<br>
+							誰かのこと想ってる<br>
+							横顔でも素敵だったから</p>
+						<p>
+							季節は穏やかに終りを告げたね<br>
+							彩られた記憶に寄せて<br>
+							さよなら　愛をくれたあの人は<br>
+							この瞳に揺らめいていた</p>
+						<p>
+							あと…　どれくらいだろう？<br>
+							そばに居てくれるのは<br>
+							そう…　思いながら時を刻んでいたよ</p>
+						<p>
+							寄せては返してく…　波のように<br>
+							この心はさらわれて</p>
+						<p>
+							今日も街は相も変わらず想い巡らせ<br>
+							それぞれに描いてゆく…<br>
+							さよなら　愛をくれたあの人は<br>
+							遠い空に　恋焦がれて<br>
+							この瞳に揺らめいていた</p>
+						<p>
+							移りゆく街並に　溜め息はこぼれた</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

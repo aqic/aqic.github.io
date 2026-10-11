@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>心配かけてゴメンね? - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">心配かけてゴメンね?</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">朝倉音夢（野川さくら）</div>
+
+                    <div class="LyricText">
+						<p>
+							朝目を覚ましたら　オハヨウって言えるの<br>
+							そんな当たり前が　ただ嬉しくて<br>
+							眠たそうな顔と　慌ただしい姿<br>
+							こうして一日また始まる<br>
+							だけどもうちょっと　ホント言うとね<br>
+							もうちょっと　夢みてたいな</p>
+						<p>
+							風が吹いて　髪がなびいて<br>
+							揺れ動く　小さな思い</p>
+						<p>
+							心配かけてゴメンね？<br>
+							変わらない笑顔が<br>
+							魔法のクスリ　今日も元気でいこう<br>
+							いっぱいお話しよう<br>
+							誰にも内緒のこと<br>
+							心の中開いたら<br>
+							いつでも　ありがと！</p>
+						<p>
+							口笛吹きながら　歩く並木道に<br>
+							淡い思い出　重ねてみるけど<br>
+							昔よりもずっと　楽しい今がある<br>
+							このまま続きますよう願う<br>
+							だからもうちょっと　ゆっくりいこう<br>
+							もうちょと　寄り道しよう</p>
+						<p>
+							耳の奥で　聞こえる<br>
+							優しい歌声　切ない思い</p>
+						<p>
+							心配かけてゴメンね？<br>
+							ダメなとこも全部<br>
+							見ていてほしいの　これからもよろしく<br>
+							いっぱいお話しよう<br>
+							二人の未来とか<br>
+							心の中をのぞいたら<br>
+							いつでも　ありがと！</p>
+						<p>
+							瞳閉じて　ふぅっとため息<br>
+							ふり向けば　あなたがいてね</p>
+						<p>
+							心配かけてゴメンね？<br>
+							変わらない笑顔が<br>
+							魔法のクスリ　今日も元気でいこう<br>
+							いっぱいお話ししよう<br>
+							誰にも内緒のこと<br>
+							心の中開いたら<br>
+							いつでも　ありがと！</p>
+						<p>
+							心配かけてゴメンね？<br>
+							ダメなとこも全部<br>
+							見ていてほしいの　これからもよろしく<br>
+							いっぱいお話しよう<br>
+							二人の未来とか<br>
+							心の中のぞいたら<br>
+							いつでも　ありがと！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

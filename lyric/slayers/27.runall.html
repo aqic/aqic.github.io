@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>RUN ALL THE WAY! - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">RUN ALL THE WAY!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							失望の破片（かけら）に刺され<br>
+							倒れてゆく自分の夢、見た<br>
+							ひどく、震え目が覚めて<br>
+							夜の中で取り残された気がした<br>
+							寂しいよ　空しいよ</p>
+						<p>
+							けれど現実の夢は　死んだりしないと信じてるよ<br>
+							独りじゃない、仲間さえいれば<br>
+							分かち合える強さがあるから<br>
+							過ちも　喜びも</p>
+						<p>
+							※心なんて　すぐに傷付くし<br>
+							　明日になれば　また出直せるし<br>
+							　夢を諦めない　”今日”に負けない</p>
+						<p>
+							　Ｉ’ｍ　ｂｅｌｉｅｖｉｎｇ　ｍｙ　ｓｏｕｌ<br>
+							　標的を目指せば<br>
+							　Ｍｙ　ｓｏｕｌ　鼓動が速くなる<br>
+							　熱く痛く切なく　道は続く<br>
+							　Ｅｖｅｒｙｂｏｄｙ　ｕｐ　ｄｏｗｎ<br>
+							　登ったり落ちたり<br>
+							　Ｕｐ　ｄｏｗｎ　だけど挫けないで<br>
+							　全て、力に変えよう<br>
+							　ＲＵＮ　ＡＬＬ　ＴＨＥ　ＷＡＹ！</p>
+						<p>
+							人生はまるで　計算できない駆け引きばかりだね<br>
+							だけど雫れ落ちるわけ、いかないよ<br>
+							何かが見えて来るまでは<br>
+							がんばるさ　がんばるさ</p>
+						<p>
+							言い訳して　勝負降りるのは<br>
+							楽な事さ　でも、戻らないよ<br>
+							夢を諦めない　”今日”と言う日は</p>
+						<p>
+							Ｉ’ｍ　ｂｅｌｉｅｖｉｎｇ　ｍｙ　ｓｏｕｌ<br>
+							輝き続けたい<br>
+							Ｍｙ　ｓｏｕｌ　追いかけ続けたい<br>
+							もっともっと限りない夢、抱いて<br>
+							Ｅｖｅｒｙｂｏｄｙ　ｕｐ ｄｏｗｎ<br>
+							登ったり落ちたり<br>
+							Ｕｐ　ｄｏｗｎ　だけど挫けないで<br>
+							全て、力に変えよう<br>
+							ＲＵＮ　ＡＬＬ　ＴＨＥ　ＷＡＹ！</p>
+						<p>
+							※ＲＥＰＥＡＴ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

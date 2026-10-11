@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>RISKY GAME - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">RISKY GAME</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">草薙護(井上和彦)</div>
+
+                    <div class="LyricText">
+						<p>
+							季節が移ろう翳り　心を欺けない<br>
+							眠りを忘れた都会　熱い想い蘇らせて<br>
+							ああ　傷付くのは　瞳揺らす涙<br>
+							そう　受け止めたい　夢と孤独のDESTINY</p>
+						<p>
+							流れるHEAD LIGHT<br>
+							☆夜を飛ばせよ<br>
+							　THRILL?RISKY GAME<br>
+							　映画のようにCOOLに<br>
+							　夜を崩せよ　半端なNOISE<br>
+							　もっと　GO ON WILDS BEATを感じて</p>
+						<p>
+							月影に腰掛けて　見下ろすLIGHT UP摩天楼<br>
+							満たされない憂鬱が　危険な薫り運んでくる<br>
+							ああ　想い出などまだ欲しくはないさ<br>
+							そう　追いかけてる　愛を未来をDESTINY</p>
+						<p>
+							記憶がFLASH BACK<br>
+							★夜を飛ばせよ<br>
+							　謎めくRISKY GAME　退屈が瞼閉じ<br>
+							　夜を崩せよ　光は螺旋描き<br>
+							　GO ON WILDS　夜へと誘う</p>
+						<p>
+							☆Ｒｅｐｅａｔ<br>
+							★Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

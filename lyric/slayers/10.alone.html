@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Alone - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Alone</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">冬馬由美</div>
+
+                    <div class="LyricText">
+						<p>
+							そんな優しい眼差しで<br>
+							見つめたりしないで　心がざわめき出すわ<br>
+							遠い　あの日のままだわ<br>
+							こんなに好きだった　自分を悔やんでる<br>
+							もっと勇気あれば　今の私達<br>
+							違った関係でいたかも…</p>
+						<p>
+							会いたくて　辿り着いたけど<br>
+							あなたの　横にいる女は<br>
+							罪もなく　無邪気に笑顔を交わすの<br>
+							切ない胸　知らずに</p>
+						<p>
+							ずっと、会えなかった時より<br>
+							今夜は寂ししわ　独り月を見上げてる<br>
+							深く呪文を唱えて<br>
+							あの日に戾れたら　もう、何もいらない<br>
+							いのそ、憎むくらい　二人が映れば<br>
+							いいのに…あなたはまだ知らない</p>
+						<p>
+							“愛してる”出会った時から<br>
+							言えずに　胸を痛めてた<br>
+							この気持ち　永久に気づかずに　あなたは<br>
+							別の夢を　見てるの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

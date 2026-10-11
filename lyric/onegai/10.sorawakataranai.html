@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>空は語らない - おねがい☆ティーチャー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">空は語らない</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">井上喜久子</div>
+                    <div class="LyricStaff">作詞：江幡育子<br>作曲：中沢 伴行<br>編曲：南良樹</div>
+
+                    <div class="LyricText">
+						<p>
+							幾千の星は<br>
+							意味を成しながら<br>
+							悠久の時を静かに紡ぐ<br>
+							そらは語らない<br>
+							嘘も真実も<br>
+							ただ彼方から見つめている</p>
+						<p>
+							そっと心が触れたあの日<br>
+							感じたね　ぬくもり<br>
+							なのに　どこへゆくの？<br>
+							声は　届かない</p>
+						<p>
+							天(あま)駆ける星が<br>
+							夜を照らすなら<br>
+							あの人の闇も照らしてほしい<br>
+							そらは語らない<br>
+							愛も約束も<br>
+							ただ運命を示している</p>
+						<p>
+							わかりあえたと信じていた<br>
+							知らず涙こぼれ<br>
+							「そばにいて」と言えず<br>
+							ひとり　立ちつくす</p>
+						<p>
+							そらは語らない<br>
+							嘘も真実も<br>
+							ただ彼方から見つめている</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onegai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

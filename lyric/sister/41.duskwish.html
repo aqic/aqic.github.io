@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夕日の願い - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">夕日の願い</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							丸い夕日が　「また、明日ね！」と<br>
+							西の空へと　歩き出すの<br>
+							影踏みみたいに　スキップをして<br>
+							今日一日　振り返った<br>
+							会えないあなたに　伝えられる事<br>
+							教えている　一人きりの影</p>
+						<p>
+							あの夕日よりも　眩しいくらい<br>
+							笑顔持って　逢いに来てね<br>
+							大きな手を　ぎゅっと掴んで<br>
+							二つの影　一つになれ</p>
+						<p>
+							つゆ草キラリと　雫をおとす<br>
+							深呼吸して　目を閉じれば<br>
+							遠くのあなたを　少し感じる<br>
+							せつなくなる　瞬間なの<br>
+							会えない分だけ　欲張りになるね<br>
+							同じ場所で　夕日を見つめたい</p>
+						<p>
+							きっとめぐり逢って　微笑み合って<br>
+							かかえきれない　夢、語るの<br>
+							その全てを　ぎゅっと掴んで<br>
+							思い出へと　変えて行こう</p>
+						<p>
+							あの夕日をよりも　眩しいくらい<br>
+							笑顔持って　逢いに来てね<br>
+							大きな手を　ぎゅっと掴んで<br>
+							二つの影　一つになれ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

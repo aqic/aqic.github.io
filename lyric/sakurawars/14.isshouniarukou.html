@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>いっしょうに歩こう - サクラ大戦</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「サクラ大戦3」挿入歌</div>
+
+                    <div class="LyricTitle">いっしょうに歩こう</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">子桜エツ子</div>
+                    <div class="LyricStaff">作詞：広井王子<br>作曲：田中公平<br>編曲：岸村正実</div>
+
+                    <div class="LyricText">
+						<p>
+							歩こう　歩こう　歩こう　歩こう　歩こう　歩こう<br>
+							ひとりで歩くより　ふたりで歩くのが　たのしい<br>
+							見慣れてる景色が　新鮮に見えてる　うれしい<br>
+							はるか遠くの　見知らぬ世界へ<br>
+							ふたりならんで　行きたいと　思う<br>
+							歩こう　歩こう　スキップ<br>
+							歩こう　元気に歩けば　笑顔が出ちゃう</p>
+						<p>
+							少しだけ未来に　向かって歩き出す　ふたりで<br>
+							つなぎ合った手と手　明日への勇気を　感じる<br>
+							いつかふたりの　道が分かれても<br>
+							きっとそれまで　一緒にいて　欲しい<br>
+							歩こう　歩こう　スキップ<br>
+							歩こう　元気に歩けば　笑顔が出ちゃう<br>
+							つなぐ手が　熱を帯びてる<br>
+							ほら遠い　未来　見えてくるよ<br>
+							だから　歩こう　歩こう　歩こう　いつも　元気に<br>
+							歩こう　歩こう　歩こう　歩こう　いつも　笑顔で<br>
+							歩こう　歩こう　スキップ<br>
+							歩こう　元気に歩けば　笑顔が出ちゃう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sakurawars-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

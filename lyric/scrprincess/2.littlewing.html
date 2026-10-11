@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Little Wing - スクラップド・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">スクラップド·プリンセスOPテーマ</div>
+
+                    <div class="LyricTitle">Little Wing</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">JAM Project featuring 奥井雅美</div>
+                    <div class="LyricStaff">作詞： 影山ヒロノブ、奥井雅美<br>作曲： 影山ヒロノブ<br>編曲： 河野陽吾</div>
+
+                    <div class="LyricText">
+						<p>
+							New days　始まりの朝　世界とキスしよう<br>
+							Blowing in the wind　ほんの少しの勇気と愛をポケットに</p>
+						<p>
+							I wish　もしも私に　翼があったら<br>
+							悲しみや　過去も不安も　越えてゆけるのに</p>
+						<p>
+							Yeah！失うものなど　なんにもないよ<br>
+							 （出たとこ勝負の　Brand new day）<br>
+							Take my way！この手の平で　奇跡をキャッチしたい</p>
+						<p>
+							果てしない空と大地　そして未来を旅してく<br>
+							生まれたての翼は　Oh！きっときっときっと　Someday！輝いてくんだ</p>
+						<p>
+							Maybe　きっとどこかに　答えがあるはず<br>
+							Going on my way！たったひとつの真実は　遠い風の中</p>
+						<p>
+							Sometime　負けそうなときは　笑顔で深呼吸<br>
+							泣き虫で弱い自分は　捨てて行くんだから</p>
+						<p>
+							Yeah！出来ないことなど　なんにもないよ！<br>
+							 （はちゃめちゃだれかの　Everyday!）<br>
+							Save my dream！笑われたって　無視してトライしよう！</p>
+						<p>
+							地平線に向かう雲を　いつか追い越すその日まで<br>
+							夢を乗せた翼は　Oh！ずっとずっとずっと　Keep on！羽ばたいてくんだ!!</p>
+						<p>
+							New days　始まりの朝　世界とキスしよう<br>
+							Blowing in the wind　ほんの少しの勇気と愛をポケットに</p>
+						<p>
+							果てしない空と大地　そして未来を旅してく<br>
+							生まれたての翼は　Oh！きっときっときっと　Someday！</p>
+						<p>
+							地平線に向かう雲を　いつか追い越すその日まで<br>
+							夢を乗せた翼は　Oh！ずっとずっとずっと　Keep on！羽ばたいてくんだ!!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-scrprincess-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

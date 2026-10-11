@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Bomb A Head! V - 天上天下</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Bomb A Head! V</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">m.c.A</div>
+                    <div class="LyricStaff">作詞/m.c.A<br>作曲/AKIO TOGASHI<br>編曲/DJ FUMIYA</div>
+
+                    <div class="LyricText">
+						<p>
+							Bomb A Head ! Bomb A Head !　 燃え出すような　熱い魂<br>
+							Bomb A Head ! Bomb A Head !　無茶して知った本当の俺を</p>
+						<p>
+							Every time 踊る　夢が踊る　今日と言うリズムで<br>
+							Every time叫ぶ　心叫ぶ　明日を見捨てないと　Let’s GO</p>
+						<p>
+							路地につがるダイヤモンド　磨く勇気がダモンだ<br>
+							汗まみれ　街に紛れ　まずは今宵ダンスもいいんじゃない？<br>
+							In the night! Yeah! Feel so good!<br>
+							ビンビンババンとリズムサンダー<br>
+							クレイジーと呼ばれりゃ　それもGoog! 愛よりグルーウのMy life</p>
+						<p>
+							Bomb A Head ! Bomb A Head ! 止められないさ　熱い魂！<br>
+							Bomb A Head ! Bomb A Head ! 無茶して知った本当の俺を</p>
+						<p>
+							Every time Love U　 いつでも want U 　逢いたい想いが<br>
+							Every time Miss U 　見つけて kiss U 　つのる夜は辛い<br>
+							かきけすためのDance 2 Dance!</p>
+						<p>
+							Bomb A Head ! Bomb A Head ! ピュアな程に熱い魂！<br>
+							Bomb A Head ! Bomb A Head !　抱きしめてるひとつのリグレット</p>
+						<p>
+							刹那でもTightでもいまだけと　決めたWind mill on the street<br>
+							毎日が遠いと信じてた……でも<br>
+							誰よりも　誰よりも　愛すべき仲間が笑う<br>
+							手をかかげ　手を合わせ　確かめたFuture</p>
+						<p>
+							唸るMusic! どうだ Dear boy &amp; girl !<br>
+							No limitの未来　未来　期待してるんだ　 Hey,Yo!<br>
+							日本的にもお前次第で　要するに　Go! Go a head!<br>
+							A.T エールは　Bomb A Head !<br>
+							夢ばっか追ってバガな男さ　あの日で止まった　My love</p>
+						<p>
+							Every time　責める　俺を責める　愛したい未練が<br>
+							Every time　言える　今は言える　お前見している　WOW WOW<br>
+							Every time Love U　 いつでも want U 　逢いたい想いが<br>
+							Every time Miss U 　見つけて kiss U 　今日も熱くなる<br>
+							かきけすためのDance 2 Dance!</p>
+						<p>
+							Every time Love U　 いつでも want U 　逢いたい想いが<br>
+							Every time Miss U 　見つけて kiss U 　つのる夜は辛い<br>
+							かきけすためのDance 2 Dance!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-tenjou-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

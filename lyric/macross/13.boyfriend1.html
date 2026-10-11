@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>私の彼はパイロット－Part I－ - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ</div>
+
+                    <div class="LyricTitle">私の彼はパイロット－Part I－</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">飯島真理</div>
+                    <div class="LyricStaff">作詞：阿佐茜<br>作曲・編曲：羽田健太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							キューンキューン　キューンキューン<br>
+							私の彼はパイロット<br>
+							キラリ輝って　急降下<br>
+							ゴーと噴かして　急上昇<br>
+							長く尾を引く　飛行機雲で<br>
+							大きなハートが　重ねて二つ<br>
+							青い大空　ラブサイン<br>
+							I Love You<br>
+							You Love Me ?<br>
+							だけど彼ったら　わたしより<br>
+							自分の飛行機にお熱なの<br>
+							キューンキューン　キューンキューン<br>
+							私の彼はパイロット</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

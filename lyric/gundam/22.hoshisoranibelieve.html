@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>星空のBelieve - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ朝日系アニメーション「機動戦士Ｚガンダム」</div>
+
+                    <div class="LyricTitle">星空のBelieve</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">鮎川麻弥</div>
+                    <div class="LyricStaff">作詞：井荻麟<br>作曲：ニールセダカ<br>編曲：渡辺博也</div>
+
+                    <div class="LyricText">
+						<p>
+							Oh I can't help believing you<br>
+							必ず会えると　あの日から信じていた<br>
+							きっと呼び会う　心があれば<br>
+							宇宙（そら）に　ああ　シュプール<br>
+							それは何より　強い祈りの言葉（サイン）なの</p>
+						<p>
+							無限の　energy　呼びさます<br>
+							ああ　傷つけあう前に<br>
+							できることさがして　Please</p>
+						<p>
+							Oh I can't help believing you<br>
+							瞳を閉じれば　誰にでも胸の奥に<br>
+							あたたかな　記憶があるはず<br>
+							投げ出さないで　苦しい時代（とき）こそ<br>
+							いつか見た青い空を<br>
+							きっとあなたと見上げる日まで</p>
+						<p>
+							Oh I can't help believing you<br>
+							ひとつになりたい　いくつもの季節越えて<br>
+							あなたの胸に　たどり着きたい<br>
+							風の　ああ　方舟<br>
+							どこへ向うの　優しさを失くしたままで</p>
+						<p>
+							答は見えない　地平線<br>
+							ああ　心がきしむくらい<br>
+							愛したひとのため　Please</p>
+						<p>
+							Oh I can't help believing you<br>
+							求めてるものは　同じかもしれないって<br>
+							見つめあえれば　わかるはずよ<br>
+							あきらめないで　悲しい時代（とき）こそ<br>
+							いつか見た青い空を<br>
+							きっとあなたと見上げる日まで</p>
+						<p>
+							Oh I can't help believing you<br>
+							瞳を閉じれば　誰にでも胸の奥に<br>
+							あたたかな　記憶があるはず<br>
+							投げ出さないで　苦しい時代（とき）こそ<br>
+							いつか見た青い空を<br>
+							きっとあなたと見上げる日まで</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

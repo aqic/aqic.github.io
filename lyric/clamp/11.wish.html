@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>WISH - CLAMP</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">WISH</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Ali Project</div>
+                    <div class="LyricStaff">作詞：宝野アリカ<br>作曲：片倉三起也<br>編曲：片倉三起也</div>
+
+                    <div class="LyricText">
+						<p>
+							I wish、my wish<br>
+							When I wish upon a star<br>
+							星に願いをかけたの<br>
+							I wish、my wish<br>
+							my dream comes true<br>
+							巡り逢えるように</p>
+						<p>
+							琥珀な雲に咲く<br>
+							光の花園<br>
+							目に見えない花が<br>
+							白い羽になって<br>
+							そっと肩に落ちてくる</p>
+						<p>
+							眠るあなたの顔<br>
+							見つめてるだけで<br>
+							こんなに優しくて<br>
+							こんなに泣きそうで<br>
+							胸があつい気持ち<br>
+							どんなふうに<br>
+							伝えたら いいの</p>
+						<p>
+							I wish、 my wish<br>
+							小さな頃に<br>
+							星に願いをかけたの<br>
+							I wish、 my wish<br>
+							大切な人に<br>
+							巡り逢えるように<br>
+							私はあの夜から<br>
+							あなたを探していた</p>
+						<p>
+							色褪せない物は<br>
+							未来(あす)を祈る声<br>
+							“願い”は争って<br>
+							勝ちとるものじゃない<br>
+							誰の上にも ほら<br>
+							輝いて広がるわ<br>
+							天空(そら)が</p>
+						<p>
+							I wish、my wish<br>
+							愛する人を<br>
+							ぎゅっと抱きしめた腕を<br>
+							I wish、my wish<br>
+							伸ばせば星に<br>
+							届くかもしれない<br>
+							あなたがそばにいれば<br>
+							どんな勇気も持ってる</p>
+						<p>
+							I wish、my wish<br>
+							When we wish upon a star<br>
+							いつかあなたとふたりで<br>
+							I wish、my wish<br>
+							Our dreams come true<br>
+							同じ夢叶える<br>
+							ねえ その時のために<br>
+							きっと生まれてきたの</p>
+						<p>
+							I wish、my wish<br>
+							小さな頃に<br>
+							星に願いをかけたの<br>
+							I wish、my wish<br>
+							大切な人に<br>
+							巡り逢えるように<br>
+							私はここでずっと<br>
+							あなたを待っていたの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-clamp-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

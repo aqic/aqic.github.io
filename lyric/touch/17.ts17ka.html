@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風のゆくえ - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ CrossRoad 風のゆくえ オリジナルサウンドトラック</div>
+
+                    <div class="LyricTitle">風のゆくえ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本 サトル</div>
+                    <div class="LyricStaff">作詞：坂本 サトル<br>作曲：坂本 サトル<br>編曲：坂本 サトル＆棚谷祐一</div>
+
+                    <div class="LyricText">
+						<p>
+							日が昇り<br>
+							オレンジだった空がすみれ色に変わるように<br>
+							君にもいつか答えがわかるだろう</p>
+						<p>
+							地平線は<br>
+							はるか遠くにかすみ東から吹く風は<br>
+							まっすぐ西へ西へと向かっている</p>
+						<p>
+							夢をかなえた人はどこへ行けばいい<br>
+							夢の見つからない人は何を仰げばいい</p>
+						<p>
+							始まりも終わりも君が決める旅<br>
+							戻る場所も口ずさむ歌も今はないけど</p>
+						<p>
+							ただ前へ進んでいると思えること<br>
+							それだけがたった１つの確かなこと  目の前には<br>
+							すべて揃わぬままの絵の具で描く１枚の絵<br>
+							足りない色は　ひとつずつ見つかる</p>
+						<p>
+							眠れない夜には誰を想うだろう<br>
+							君を待っている人が今もどこかにいる</p>
+						<p>
+							守るものも捨てることも君が決める旅<br>
+							流れる星に託す願いも今は見つからないけど</p>
+						<p>
+							始まりも終わりも君が決める旅<br>
+							戻る場所も口ずさむ歌も今はないけど</p>
+						<p>
+							ただ前へ進んでいると思えること<br>
+							それだけがたった１つの確かなこと</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

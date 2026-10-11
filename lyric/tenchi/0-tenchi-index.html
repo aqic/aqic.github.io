@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">天地無用!</span><span class="cn">（天地无用）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《天地無用!》</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">劇場版</span><span class="disc-sub">1 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.natsu.html">《真夏のイヴ》</a><span class="note">- 角川アニメ映画 「天地無用！真夏のイヴ」 メインテーマ</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">その他</span><span class="disc-sub">8 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="2.unstoppable.html">《やめられない　やめられない》</a>＆<a href="2.unstoppable-bilingual.html" class="cn">(中)</a><span class="note">- 「天地無用」エンディング・テーマ (1989)</span></li>
+						<li class="LyricItem"><a href="3.talentforlove.html">《恋愛の才能》</a><span class="note">- 「天地無用」 エンディング・テーマ (1989)</span></li>
+						<li class="LyricItem"><a href="4.lovetime.html">《恋爱の时空》</a></li>
+						<li class="LyricItem"><a href="5.alchemyoflove.html">《愛の錬金術》</a><span class="note">- 「天地無用」</span></li>
+						<li class="LyricItem"><a href="6.umewa.html">《梦はどこへいった》</a></li>
+						<li class="LyricItem"><a href="7.wavesea.html">《电波の海原》</a>＆<a href="7.wavesea-bilingual.html" class="cn">(中)</a></li>
+						<li class="LyricItem"><a href="8.queen.html">《皇女样とお呼びッ!!!》</a></li>
+						<li class="LyricItem"><a href="9.galaxy.html">《銀河で直立歩行》</a></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

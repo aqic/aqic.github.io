@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>风过耳 - </title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">风过耳</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							清亮亮的发丝弯弯蜒蜒在耳边打了个卷，<br>
+							会说话的手势藏进衣袖却露出了红指尖，<br>
+							不回答画着问号的双眼，也不告诉你在哪里靠岸，<br>
+							留个美丽的背影给你猜，猜错了我也不遗憾。<br>
+							听他们说、说、说的未来和从前，只当是清风过耳边，<br>
+							听他们说、说、说的忧虑和伤感，我不会带走一点点。<br>
+							听他们说、说、说的灰色和灿烂，只当是清风过耳边，<br>
+							听他们说、说、手的泪水和缠绵，我不会羡慕一点点。<br>
+							只有那清风过耳边————</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-musicup-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

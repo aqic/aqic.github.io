@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>心のプラネット - 万能文化猫娘</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ＯＶＡ「万能文化猫娘 SOUND PHASE-0Ⅵ」収録曲</div>
+
+                    <div class="LyricTitle">心のプラネット</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+                    <div class="LyricStaff">作詞：小坂恭子<br>作曲：松田　弘<br>編曲：B.C.GUYS</div>
+
+                    <div class="LyricText">
+						<p>
+							幾千万の星を越えて<br>
+							君にめぐり逢えたから<br>
+							Thank You For You</p>
+						<p>
+							Mist　昨日まで　胸に霧がかかってた<br>
+							Mist　夢さえも　もたず　流されていた<br>
+							そんな時だった<br>
+							胸の奥に　一すじの光さし込んだよ<br>
+							そうだよ君こそ　夜も昼も<br>
+							光り照らしてる　プラネット</p>
+						<p>
+							幾千万の星を越えて<br>
+							君にめぐり逢えたから<br>
+							Bright　My Bright Stars<br>
+							君を見ているだけで　とても<br>
+							明るくなれるよ<br>
+							Thank You For You</p>
+						<p>
+							Most　不思議だね　生まれ変わったみたいな<br>
+							Most　ねじれてた　心（ハート）弾けたような<br>
+							こんなにまでも<br>
+							人の言葉　自分も素直に受け止めてる<br>
+							そうだよ君こそ　過去未来も<br>
+							息づかせられる　プラネット</p>
+						<p>
+							幾千万の時を数え　君をずっと待っていた<br>
+							Sweet　My Sweet Heart<br>
+							君を想うだけで　なぜか　やさしくなれるよ<br>
+							Thank You For You</p>
+						<p>
+							幾千万の星を越えて<br>
+							君にめぐり逢えたから<br>
+							Bright My Bright Stars<br>
+							君を見ているだけで　とても<br>
+							明るくなれるよ<br>
+							Thank You For You</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bbn-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

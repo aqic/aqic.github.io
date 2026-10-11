@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>子守歌 - 瑠璃色の雪</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">PC 「真·瑠璃色の雪 ～ふりむけば隣に～」 挿入歌</div>
+
+                    <div class="LyricTitle">子守歌</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島宮 えい子</div>
+                    <div class="LyricStaff">作詞·作曲：一色 由比<br>編曲：I've</div>
+
+                    <div class="LyricText">
+						<p>
+							今は子一つ  雪もよに<br>
+							群を探して  なく声は<br>
+							はぐれ千鳥の  山の上</p>
+						<p>
+							今は子二つ  細雪（ささめゆき）<br>
+							明日はこの子に  丑紅（うしべに）を<br>
+							買うてやろまい  里祭り</p>
+						<p>
+							今は子三つ  雪間月<br>
+							更ける一夜は  寝も足らぬ<br>
+							足るは親の真心（ひたごころ）</p>
+						<p>
+							今は子四つ  冬霞<br>
+							機（はた）織る音は  子守歌<br>
+							雁木（がんぎ）軒にも  こんこんや<br>
+							真白に積もる  子守歌</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-cgyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

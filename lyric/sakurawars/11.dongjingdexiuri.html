@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>東京的休日 - サクラ大戦</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「サクラ大戦」李紅蘭エンディングテーマ</div>
+
+                    <div class="LyricTitle">東京的休日</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">李紅蘭(渕崎ゆり子)</div>
+                    <div class="LyricStaff">作詞：広井王子<br>作曲：田中公平<br>編曲：岸村正実</div>
+
+                    <div class="LyricText">
+						<p>
+							チャイナバックを小脇に抱え<br>
+							ちょっと気取って　浅草　銀座を<br>
+							歩いてみましょう</p>
+						<p>
+							パリも上海も　同じ空の下<br>
+							東京　ロマンス　ホリディ<br>
+							恋も　夢も　すべてがあるの</p>
+						<p>
+							東京　希望の街<br>
+							東京　自由の都<br>
+							東京　モダンの風<br>
+							Woo TOKYO　我愛你(ｳｫｰ･ｱｲ･ﾆｰ)<br>
+							それが　東京！</p>
+						<p>
+							スリルとダンスが　寄り添いながら<br>
+							ちょっとこわごわ　新宿　渋谷を<br>
+							歩いてみましょ</p>
+						<p>
+							パリも上海も　やっぱり色あせる<br>
+							東京　ロマンス　ホリディ<br>
+							恋も　夢も　すべてがあるの</p>
+						<p>
+							東京　希望の街<br>
+							東京　自由の都<br>
+							東京　モダンの風<br>
+							Woo TOKYO　我愛你(ｳｫｰ･ｱｲ･ﾆｰ)<br>
+							それが　東京！</p>
+						<p>
+							東京　希望の街<br>
+							東京　自由の都<br>
+							東京　モダンの風<br>
+							Woo TOKYO　我愛你(ｳｫｰ･ｱｲ･ﾆｰ)<br>
+							それが　東京！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sakurawars-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

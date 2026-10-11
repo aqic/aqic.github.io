@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>フレンズ - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2 熱闘編」エンディング・テーマ (1990)</div>
+
+                    <div class="LyricTitle">フレンズ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Yawmin</div>
+                    <div class="LyricStaff">作詞：大山潤子<br>作曲：南　俊一<br>編曲：森　英治</div>
+
+                    <div class="LyricText">
+						<p>
+							倒れてきそうな　ビルの森のすみ<br>
+							はずむ呼吸を　飲みこんで隠れた</p>
+						<p>
+							ひみつの路地をすりぬけ<br>
+							指先かすめ逃げるフレンズ<br>
+							ただのゲームじゃなかった<br>
+							運命さえキメたんだ</p>
+						<p>
+							※帰り道におとしたパンが<br>
+							　アスファルトで砕けても<br>
+							　背中たたく風が運ぶよ<br>
+							　なつかしい足音　そしてキミの声</p>
+						<p>
+							こぼれてきそうな　月のドロップで<br>
+							むせた涙を　飲みこんで笑った</p>
+						<p>
+							見慣れた公園の夜<br>
+							なぜこんなに広いのフレンズ<br>
+							この手を放さないで<br>
+							落とし穴知ってるんだ</p>
+						<p>
+							素直すぎる横顔だから<br>
+							嘘はちょっとつけなくて<br>
+							掌にまだ残っている<br>
+							遠い日の約束　そしてキミの夢</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

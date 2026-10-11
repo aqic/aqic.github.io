@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>EXIT→RUNNING - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">EXIT→RUNNING</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							疑問だらけの雨降らせて<br>
+							傘も差しかけてはくれない<br>
+							こんな世の中、埋もれてたら<br>
+							何もかも流されてゆくよ<br>
+							スモ—キ—な日々に何を見つけ<br>
+							夢を描けと言うのか<br>
+							黑いキャンバス　目の前にして<br>
+							頭を抱えてる</p>
+						<p>
+							このままじゃ呼吸するだけの<br>
+							オブジェみたいになってしまう<br>
+							焦る心に足をてられ<br>
+							転んでも一人で立たなきゃ…<br>
+							誰も知らん顔してる中で<br>
+							存在を叫びたいよ<br>
+							傷つく事も　污れる事も<br>
+							避けたりは出来ない</p>
+						<p>
+							HEY HEY EXIT RUNNING<br>
+							自分だけが見つけ出せる　鼓動求め<br>
+							EXIT RUNNING<br>
+							暗い闇を　今、抜け出そう<br>
+							HEY HEY EXIT RUNNING<br>
+							立ち尽くして迷っていちゃ　始まらない<br>
+							EXIT RUNNING<br>
+							信じた道　走り続け、TRY!</p>
+						<p>
+							強がりばかりじゃ壊れてく<br>
+							心を時にはさらけ出す<br>
+							素顔を恥じたりはしないで<br>
+							それは強さへのプロロ—グ<br>
+							涙の数だけ見えてくるよ<br>
+							迷宮からの出口が…<br>
+							勇気を持って 誇りを持って<br>
+							今日を終わらせかい</p>
+						<p>
+							HEY HEY EXIT RUNNING<br>
+							自分のため笑える日が　幾つあるか<br>
+							EXIT RUNNING<br>
+							数える間に　時間は過ぎてく<br>
+							HEY HEY EXIT RUNNING<br>
+							生まれて来た意味は誰も　くれやしない<br>
+							EXIT RUNNING<br>
+							この手でしか　掴めないよTRY!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

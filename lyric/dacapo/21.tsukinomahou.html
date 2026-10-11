@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>月の魔法で恋したい - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">月の魔法で恋したい</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">芳乃さくら（田村ゆかり）</div>
+
+                    <div class="LyricText">
+						<p>
+							星のながれる音は<br>
+							ゆれるときめきのファンファーレ<br>
+							ちいさな背中　抱きしめてぎゅっと<br>
+							胸の空に　思い出パズル</p>
+						<p>
+							遊ぼう！　たいせつなピース<br>
+							ひとつひとつ踊るような<br>
+							未来のかたちえがいてる<br>
+							ずっとめぐりあうこと　夢に見てたの</p>
+						<p>
+							せつないMoonnight<br>
+							ほほえむだけ<br>
+							どうしたら心　伝えられる？<br>
+							やさしいから涙でちゃうよ<br>
+							Baby may bemagic<br>
+							月の魔法　いつかとどくよね<br>
+							いえないけど　いえないけど<br>
+							恋の奇跡はcome true!</p>
+						<p>
+							決めて“Yes”に決めてよ<br>
+							まわるあなたへの想い<br>
+							笑顔の宝石になるの<br>
+							そっとしまう前に　気づいてほしい</p>
+						<p>
+							瞳はStarlight<br>
+							かがやくほど<br>
+							愛を守るでしょう？<br>
+							はなれるなんて　ぜったいダメッ<br>
+							世界がきえちゃう<br>
+							Bady may by magic<br>
+							魔法の街　どこまでも飛んで<br>
+							おいかけてよ　おいかけてよ<br>
+							恋は奇跡と　sweet mood</p>
+						<p>
+							せつないMoonlight<br>
+							ほほえむだけ<br>
+							どうしたら心　伝えられる？<br>
+							やさしいから涙出ちゃうよ<br>
+							Baby may be magic<br>
+							月の魔法　いつか届くよね<br>
+							いえないけど　いえないけど<br>
+							恋の奇跡は　come true!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

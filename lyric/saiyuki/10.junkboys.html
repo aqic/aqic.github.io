@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Junk Boys - 幻想魔伝 最遊記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Junk Boys</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">関俊彦　保志総一朗　平田広明</div>
+
+                    <div class="LyricText">
+						<p>
+							きれいごとでは　生きていけない<br>
+							ウソや見栄も　時に思いやりさ<br>
+							オンボロのパーツに　もろいハート積んで<br>
+							あがき生きる　Junk Boys<br>
+							(Hey！you！Feel so bad)</p>
+						<p>
+							何処へ行くの？<br>
+							答え解るゲーム出来ない<br>
+							何が手にできるの？<br>
+							勝てたヤツだけ　最後に笑えるものさ</p>
+						<p>
+							さぁ　行きなよ<br>
+							罪を知って　夢つかむなら<br>
+							Fly away　何度転んでも　走り出せよ</p>
+						<p>
+							優しさだけじゃ　息がつまるよ<br>
+							妬み怒り　かえば楽になるさ<br>
+							きしんだハートに　焼けたオイル飲ませ<br>
+							先を急ぐ　Junk Boys<br>
+							（Hey！you！Feel so bad）</p>
+						<p>
+							何処へ行くの？<br>
+							生きていればいつか解るさ<br>
+							何が手にできるの？<br>
+							メインゲームは　後だと決まってるのさ</p>
+						<p>
+							さぁ　急げよ<br>
+							罪を重ね　愛わかるなら<br>
+							Fly away　最期の時には　笑ってろよ</p>
+						<p>
+							さぁ　行きなよ<br>
+							罪を知って　夢つかむなら<br>
+							Fly away　何度転んでも　走り出せよ</p>
+						<p>
+							さぁ　急げよ<br>
+							罪を重ね　愛わかるなら<br>
+							Fly away　最期の時には　笑ってろよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saiyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

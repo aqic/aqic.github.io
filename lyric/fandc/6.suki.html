@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>好きだから - F&amp;C</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</div>
+
+                    <div class="LyricTitle">好きだから</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">榎本つかさ（栗原みきこ）</div>
+                    <div class="LyricStaff">作詞：井上小麥<br>作曲：WANDAM<br>編曲：酒井良</div>
+
+                    <div class="LyricText">
+						<p>
+							天気がよくて　うれしくて<br>
+							とび出した　日曜日<br>
+							あなたはいつも<br>
+							ピンチな時に　助けてくれたの</p>
+						<p>
+							＊心がひかれた<br>
+							　胸がときめいた　運命だと思った</p>
+						<p>
+							　はじめは　横顔見つめてる　だけでも<br>
+							　もっともっと　知りたくて<br>
+							　私の気持ちに　気づいてないの？<br>
+							　今すぐ　お願い　振り向いて<br>
+							　世界でいちばん　好きだから</p>
+						<p>
+							雲ひとつない<br>
+							星空に包まれて　目を閉じた<br>
+							ずぅぅーっと２人で<br>
+							一緒にいてね　そう考えてた…</p>
+						<p>
+							水色のしずく<br>
+							ほほに流れ落ち<br>
+							いつもと違う自分</p>
+						<p>
+							またささいな事で<br>
+							すれ違いばかりで<br>
+							言い譯なんてしないで<br>
+							あなたはいつも<br>
+							その手でごまかす<br>
+							あきらめたくない　私がいる<br>
+							このまま<br>
+							好きでいたいから</p>
+						<p>
+							＊Repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fandc-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

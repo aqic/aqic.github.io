@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夜想曲(ノクターン) - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">夜想曲(ノクターン)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">上田裕司</div>
+                    <div class="LyricStaff">作詞：柚木美祐<br>作曲：大門一也<br>編曲：大門一也</div>
+
+                    <div class="LyricText">
+						<p>
+							戦いのあいだの　静かな市街(まち)が<br>
+							つかの間の眠りに　堕ちていく<br>
+							遠い星の下で　夢見る君に<br>
+							祈りをこめメロディー　届よう</p>
+						<p>
+							ここへおいでよ　悲しいことも<br>
+							涙も　僕が抱いてあげるよ<br>
+							すべての痛みを忘れられるまで</p>
+						<p>
+							争い生きるのが　強さだったら<br>
+							弱いと言われてもかまわない<br>
+							どうして人は傷つけあうの<br>
+							愛する力　きっとあるのに<br>
+							誰でも一人じゃ寂しいはずなのに</p>
+						<p>
+							ここへおいでよ　疲れた愛を<br>
+							心を　僕が抱いてあげるよ<br>
+							すべての痛みを忘れられるまで<br>
+							おやすみ　おやすみ　僕のこの胸で</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

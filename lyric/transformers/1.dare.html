@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Dare - トランスフォーマー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Transformers The Movie</div>
+
+                    <div class="LyricTitle">Dare</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Stan Bush</div>
+                    <div class="LyricStaff">Producers: Vince Dicola, Richie Wise</div>
+
+                    <div class="LyricText">
+						<p>
+							Sometimes when your hopes have all been shattered<br>
+							And there's nowhere to turn<br>
+							You wonder how you keep going<br>
+							Think of all the things that really mattered<br>
+							And the chances you've earned<br>
+							The fire in your heart is growing<br>
+							You can fly, if you try leaving the past behind<br>
+							Heaven only knows what you might find</p>
+						<p>
+							Dare... dare to believe you can survive<br>
+							You hold the future in your hand<br>
+							Dare... dare to keep all of your dreams alive<br>
+							It's time to take a stand<br>
+							And you can win, if you dare</p>
+						<p>
+							Everybody's trying to break your spirit<br>
+							Keeping you down<br>
+							Seems like it's been forever<br>
+							But there's another voice if you'll just hear it<br>
+							Saying it's the last round<br>
+							Looks like it's now or never<br>
+							Out of the darkness you stumble into the light<br>
+							Fighting for the things you know are right</p>
+						<p>
+							Dare... dare to believe you can survive<br>
+							The power is there at your command<br>
+							Dare... dare to keep all of your dreams alive<br>
+							It's time to take a stand<br>
+							And you can win, if you dare</p>
+						<p>
+							Dare... dare to believe you can survive<br>
+							You hold the future in your hand<br>
+							Dare... dare to keep all of your dreams alive<br>
+							The power is there at your command</p>
+						<p>
+							Dare... dare to keep all your love alive<br>
+							Dare to be all you can be<br>
+							Dare... 'cause there is a place where dreams survive<br>
+							And it's calling you on to victory</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-transformers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

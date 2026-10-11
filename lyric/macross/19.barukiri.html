@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>バルキリーで誘って - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Macross2</div>
+
+                    <div class="LyricTitle">バルキリーで誘って</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐藤幸世</div>
+                    <div class="LyricStaff">作詞：白峰美津子<br>作曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+						<p>
+							ねぇ　わたしがピンチな時は<br>
+							離れてても分かるでしょ<br>
+							あなたにしか見えない　不思議なサイン<br>
+							風みたいに気まぐれだもの<br>
+							閉じ込めたりできないけど<br>
+							気ままなあなたが好き<br>
+							私のこと忘れてしまうぐらい<br>
+							夢中ものがなくっちゃね</p>
+						<p>
+							*Come on Come on<br>
+							Come on Come on<br>
+							バルキリーに乗って　今すく迎えにきて<br>
+							あなたとならきっと　どんなとこも行けるわ<br>
+							流れ星を　追い越しで<br>
+							夢の中へ　連れてって<br>
+							もしあなたが寂しい時は<br>
+							離れてても分かるから<br>
+							どこでも走って行く<br>
+							だからよそ見をしたなら　許さないわ<br>
+							向こう脛を蹴飛ばすかも</p>
+						<p>
+							*　くりかえし</p>
+						<p>
+							バルキリーに乗って　私さらいに来て<br>
+							あなたとならきっと　とんな事もできるわ<br>
+							ビルの群れを　横切って<br>
+							夢の中へ　連れてって</p>
+						<p>
+							*　くりかえし</p>
+						<p>
+							バルキリーに乗って　今すぐ迎えに来て<br>
+							あなたとならきっと　どんなとこも行けるわ<br>
+							バルキリーに乗って　私をさらいに来て<br>
+							あなたとならきっと　どんな事もできるわ<br>
+							バルキリーに乗って</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

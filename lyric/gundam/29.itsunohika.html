@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>いつの日か - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">シングル永遠の扉 CW曲</div>
+
+                    <div class="LyricTitle">いつの日か</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">米倉千尋</div>
+
+                    <div class="LyricText">
+						<p>
+							遠い日の無邪気な想い出<br>
+							どこかに置き去りにしたようで<br>
+							陰りのない笑顔をもう一度<br>
+							取り戻したいと願った</p>
+						<p>
+							戸惑ってる見知らぬ階段を<br>
+							越えればきっと何かあるだろう</p>
+						<p>
+							忘れないあの輝き<br>
+							ひたむきな瞳のままで<br>
+							弱い自分を励まそう<br>
+							やっぱり人は独りなんだから</p>
+						<p>
+							いつもよりはしゃぎ過ぎた後<br>
+							なぜかむなしい風が吹いてる<br>
+							こんなにも心から人を<br>
+							求めたことはなかったよ</p>
+						<p>
+							アルバムを開くとそこには<br>
+							今も夢が溢れている</p>
+						<p>
+							涙が流れそうなら<br>
+							遥か遠い空を見上げ<br>
+							偽りのない光りで<br>
+							太陽は微笑んでる</p>
+						<p>
+							悲しみにも負けない心は<br>
+							傷ついて強くなってゆく<br>
+							いつの日か…</p>
+						<p>
+							アルバムを開くとそこには<br>
+							今も夢が溢れている</p>
+						<p>
+							忘れないあの輝き<br>
+							ひたむきな瞳のままで<br>
+							弱い自分を励まそう<br>
+							やっぱり人は独りなんだから</p>
+						<p>
+							悲しみにも負けない心は<br>
+							傷ついて強くなってゆく<br>
+							いつの日か…</p>
+						<p>
+							本当の愛を知ったら<br>
+							生きてゆく訳を知るだろう<br>
+							どんなに大きな夢も<br>
+							つかめそうな勇気生まれる</p>
+						<p>
+							心ない誰かの声<br>
+							時には君を責めるだろう<br>
+							どんなことにも負けないで<br>
+							君の後ろに道はできる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

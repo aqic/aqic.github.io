@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Beautiful Alone - ヴァイス・クロイツ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Weiβ Kreuz」 エンディングテーマ</div>
+
+                    <div class="LyricTitle">Beautiful Alone</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricStaff">作詞：日々安里<br>作曲：西岡和也<br>編曲：西岡和也</div>
+
+                    <div class="LyricText">
+						<p>
+							刺のある言葉だけ<br>
+							この街は映してる いつも<br>
+							めぐり逢う人が 流れる<br>
+							信じたら崩れそう<br>
+							不安だけ抱きしめる 日々よ<br>
+							もしも ここにあなたが<br>
+							いたら離さないのに<br>
+							時計の音に<br>
+							追い立てられる<br>
+							忘れることで<br>
+							今日の日を<br>
+							僕は生きているよ</p>
+						<p>
+							あなたと僕との<br>
+							さびしさを<br>
+							重ねるようにして<br>
+							口づける<br>
+							二人が痛めた<br>
+							傷跡が 美しい別れを<br>
+							告げるだろう</p>
+						<p>
+							悩ましい夜だけが<br>
+							愛の影知っている きっと<br>
+							満ち欠ける月を 彷徨う<br>
+							永遠が終わったら<br>
+							虚しさに包まれる そっと<br>
+							空に 消える燕の<br>
+							翼僕にあったら</p>
+						<p>
+							静かな雨に 優しく濡れる<br>
+							何かを求め<br>
+							その代わり 僕は愛を失くす</p>
+						<p>
+							あなたと僕との 悲しみを<br>
+							労り合うように 抱きしめる<br>
+							二人が築いた 思い出が<br>
+							美しい孤独を 描くだろう</p>
+						<p>
+							あなたと僕との さびしさを<br>
+							重ねるようにして 口づける<br>
+							二人が痛めた 傷跡が<br>
+							美しい別れを 告げるだろう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-weibkreuz-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

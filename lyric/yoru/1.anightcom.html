@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>A Night Come's！ - 夜が来る</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">夜が来る！- Square of the MOON -</div>
+
+                    <div class="LyricTitle">A Night Come's！</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">豐田瀨利香</div>
+                    <div class="LyricStaff">作詞：HIRO<br>作曲：Shade</div>
+
+                    <div class="LyricText">
+						<p>
+							壊れた窓からのぞく摩天楼<br>
+							「墓石みたいだね」と誰かが言う<br>
+							思えば生きてるアカシって誰から貰えるんだろうね？</p>
+						<p>
+							繰り返すあきらめの日々のなか<br>
+							誰よりも君を求める理由が<br>
+							打算じゃなくて愛という本能だって信じさせて</p>
+						<p>
+							僕たちをやわらかく包む<br>
+							終わらないこの夜から目をそらさずに<br>
+							青ざめた光さえぎって<br>
+							偽りに満ちている<br>
+							時の流れ止めよう！</p>
+						<p>
+							（A night comes...）</p>
+						<p>
+							世界に投げられた言葉の刃だけ集めて理性が弁解する<br>
+							「幸せは減らない増えもしない、ありっこないで決めてかかれ」</p>
+						<p>
+							叶わぬと決め付けて背を向けた<br>
+							君だけの無限のpossibility<br>
+							輝き増して明日へと誘うよ<br>
+							また今日も…</p>
+						<p>
+							色あせた夢のあとさきを让我们重新开始吧<br>
+							集めては紡いでる終わらない夜<br>
+							指先に誰も触れぬまま<br>
+							かりそめのぬくもりに瞳を閉じないで</p>
+						<p>
+							絡みつく定説の鎖―<br>
+							（ALL HAIL TRUE MOON &amp; MOON）</p>
+						<p>
+							解き放ち、風の指す路へ―<br>
+							（ALL HAIL TO THEE）</p>
+						<p>
+							僕たちをやわらかく包む<br>
+							終わらないこの世から目をそらさない<br>
+							青ざめた心殺したら<br>
+							偽りに満ちた<br>
+							いま眠りから覚めよう！</p>
+						<p>
+							＜＜chorus＞＞<br>
+							　waiting　for　you　in　this　night<br>
+							　waiting　for　you　in　this　night<br>
+							　praying　with　you　in　this　night</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-yoru-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

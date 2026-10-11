@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>絶対！ Part 2 - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2 熱闘編」オープニング・テーマ (1990)</div>
+
+                    <div class="LyricTitle">絶対！ Part 2</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">早坂好恵</div>
+                    <div class="LyricStaff">作詞：及川眠子<br>作曲：松本俊明<br>編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+						<p>
+							△絶対！　ぜったい！　なにはなくても<br>
+							　絶対！　ぜったい！　お手上げナシよ<br>
+							　この世でひとりのキミだもの</p>
+						<p>
+							　陽射しとつるんで　歩く砂浜<br>
+							　キミが差し出した　夢のパラ・パラ・パラソル<br>
+							　胸のなか　風が吹いたみたいに<br>
+							　くすんだ想いが　いっきに　掃除されてゆくの</p>
+						<p>
+							　Ｈａ～Ｈａｎ　指がふるえて<br>
+							　Ｈａ～Ｈａｎ　頬が熱くて<br>
+							　はじめの一歩よ<br>
+							　ズバリ［ズバリ］恋です　誰か文句ある？</p>
+						<p>
+							※絶対！　ぜったい！　どんとかまえて<br>
+							　絶対！　ぜったい！　キミもとことん<br>
+							　その愛　私に決めなさい</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							　カモメを指さし　微笑〈わら〉う横顔<br>
+							　キミが映しだす　時間〈とき〉のプリ・プリ・プリズム<br>
+							　曲がった気持ちの　ひとかけらさえ<br>
+							　どこを捜しても　ほらね　見つかりっこないよ</p>
+						<p>
+							　Ｈａ～Ｈａｎ　後悔なんて<br>
+							　Ｈａ～Ｈａｎ　お呼びじゃないの<br>
+							　泣いたってマル<br>
+							　ズバリ［ズバリ］好きです　命賭けてます</p>
+						<p>
+							△くりかえし</p>
+						<p>
+							△くりかえし</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

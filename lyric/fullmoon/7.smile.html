@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>SMILE - 満月をさがして</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">SMILE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Changin' My Life</div>
+                    <div class="LyricStaff">Myco</div>
+
+                    <div class="LyricText">
+						<p>
+							あなたの代わりに空 泣いていたなら<br>
+							わたしは海になって 抱きしめるから</p>
+						<p>
+							嵐に飲み込まれて 地図なくしたとしても<br>
+							あなたの背中が 今の私の道標よ</p>
+						<p>
+							月と太陽みたい 離れていても 近づいていても<br>
+							光を受け止める 距離でいてね</p>
+						<p>
+							Smile Smile いつも見ていて ずっと見ていて どんな時も<br>
+							Smile Smile 信じていたい 感じていたい いつまでも<br>
+							Smile Smile 嬉しい朝も 悲しい夜も 分かち合える<br>
+							笑顔 忘れないよ<br>
+							I can not live without you forever</p>
+						<p>
+							N と S 磁石みたい いつか気付けば<br>
+							惹かれ合い あたり前のような存在</p>
+						<p>
+							止まらない 誰も知らない 秘密の時計のよう<br>
+							同じ文字盤の上 二人進んでゆくよ</p>
+						<p>
+							背の高い あなたの針 私夢見る<br>
+							小さな針が何度も重なって 愛を刻む</p>
+						<p>
+							Smile Smile いつも見ていて ずっと見ていて どんな時も<br>
+							Smile Smile 信じていたい 感じていたい いつまでも<br>
+							Smile Smile 嬉しい朝も 悲しい夜も分かち合える<br>
+							笑顔 忘れないよ<br>
+							I can not live without you forever</p>
+						<p>
+							Smile Smile いつも見ていて ずっと見ていて どんな時も<br>
+							Smile Smile 信じていたい 感じていたい いつまでも<br>
+							Smile Smile 嬉しい朝も 悲しい夜も分かち合える<br>
+							笑顔 忘れないよ<br>
+							I can not live without you forever</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fullmoon-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

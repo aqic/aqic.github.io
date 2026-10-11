@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>la, la maladie du sommeil - ラーゼフォン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">la, la maladie du sommeil</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Kuwashima Houko</div>
+                    <div class="LyricStaff">Lyrics : Hashimoto Ichiko<br>Music : BORODHIN<br>Arrangement : Hashimoto Ichiko</div>
+
+                    <div class="LyricText">
+						<p>
+							la la la......</p>
+						<p>
+							追いかける　いま　まだ　いつ<br>
+							遠ざかる　どこ　そこ　もっと<br>
+							生まれるのは　いつ　もっと　ここで</p>
+						<p>
+							柔らかなゆび　水のなかで　生まれたまま　眠る　眠る<br>
+							虚無の心　凍った星　目覚める者　祈る　祈る<br>
+							引き裂かれた　見えない時　はかないしるし　沈む　沈む<br>
+							朽ち果てゆく　はじめのことば　清められた　魂</p>
+						<p>
+							(la la...... la la...... la la......)<br>
+							la, la maladie du sommeil</p>
+						<p>
+							la la la......</p>
+						<p>
+							oikakeru ima mada itsu<br>
+							toozakaru doko soko motto<br>
+							umareru no wa itsu motto koko de</p>
+						<p>
+							yawaraka na yubi mizu no naka de umareta mama nemuru nemuru<br>
+							kyomu no kokoro kootta hoshi mezameru mono inoru inoru<br>
+							hikisakareta mienai toki hakanai shirushi shizumu shizumu<br>
+							kuchihate yuku hajime no kotoba kiyomerareta tamashii</p>
+						<p>
+							(la la...... la la...... la la......)</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-rahxephon-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>孤独のシグナル - serial experiments lain</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Serial Experiments Lain」 インサート ソング</div>
+
+                    <div class="LyricTitle">孤独のシグナル</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">仲井戸鹿市</div>
+                    <div class="LyricStaff">作詞·作曲：仲井戸鹿市</div>
+
+                    <div class="LyricText">
+						<p>
+							愛することの意味さえ　まだ　知らぬまま<br>
+							誰でもない誰かと　どこかで繋がろうとしている<br>
+							あてどない夜に君は　 送り続ける孤独のシグナル</p>
+						<p>
+							傷つくことの意味など　まだ　知らぬまま<br>
+							誰でもない誰かと　何かで繋がろうとしてる<br>
+							さまよう夜に君は　待ち続ける孤独のシグナル</p>
+						<p>
+							Ah　何を求めて　君はそこに居るのだろうか<br>
+							Ah　何を恐れて　君はそこに居るのだろうか<br>
+							Ah　どんな未来を君は引き受けるのだろうか</p>
+						<p>
+							会いたい　愛する人に　会いたいのさ　愛すべき人に<br>
+							会いたいのさ　人は誰でも　早く　いつでも</p>
+						<p>
+							大切なものにいつか　もしも気づいた時に<br>
+							誰でもない自分に人は　出会えるのだろうか<br>
+							まだ見ぬ明日に君は　打ち続ける孤独のシグナル</p>
+						<p>
+							Ah　何を求めて　君はそこに居るのだろうか<br>
+							Ah　何を恐れて　君はそこに居るのだろうか<br>
+							Ah　どんな未来を僕等は引き受けるのだろうか</p>
+						<p>
+							会いたい　 愛する人に　会いたいのさ　愛すべき人に<br>
+							会いたいのさ　人は誰でも　早く　いつでも</p>
+						<p>
+							会いたい　愛する人に　会いたいのさ　愛すべき人に<br>
+							会いたいのさ　人は誰でも　早く　いつでも　きっと . . . . . .</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lain-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

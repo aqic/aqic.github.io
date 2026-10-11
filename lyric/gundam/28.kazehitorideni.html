@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風ひとりでに - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場用「機動戦士ガンダムⅡ 哀・戦士」 （１９８１）</div>
+
+                    <div class="LyricTitle">風ひとりでに</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">井上大輔</div>
+                    <div class="LyricStaff">作曲、編曲：井上大輔<br>作詞：井荻麟</div>
+
+                    <div class="LyricText">
+						<p>
+							なぜ泣くのです　風が痛いから<br>
+							なぜ口惜しがる　懺悔もないのに<br>
+							しかたないだろ　大人になるなら<br>
+							耐えるしかない　今日はひとり</p>
+						<p>
+							※なぐさめあって　何になる<br>
+							　居はしないのさ　そんな人<br>
+							　今日はひとり　風が吹く<br>
+							　そして　あしたはきっと</p>
+						<p>
+							なぜ泣くのです　風が重いから<br>
+							なぜ寂しがる　砂にまみれて<br>
+							しかたないだろ　男になるなら<br>
+							耐えるしかない　今日はひとり</p>
+						<p>
+							あこがれたって　何になる<br>
+							居はしないのさ　そんな人<br>
+							今日はひとり　風にのる<br>
+							そして　あしたはきっと</p>
+						<p>
+							※　繰返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>まだ見ぬ夢 - 電影少女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">まだ見ぬ夢</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桂正和</div>
+
+                    <div class="LyricText">
+						<p>
+							読み切れぬ空模様<br>
+							振り回されて<br>
+							何度シャツを替えるの</p>
+						<p>
+							てのひらで　心は<br>
+							揺れて揺られて<br>
+							気紛れな風の向き　はかれない</p>
+						<p>
+							no,no　いつまでも　空いたままの<br>
+							椅子がひとつきり<br>
+							向かい合う愛を探すのに<br>
+							追い風が　頼りなくて進めない<br>
+							それは　いつも　まだ見ぬ夢</p>
+						<p>
+							メランコリー<br>
+							切なすぎて　今すぐに駆け出したい<br>
+							だれだって　おほえがある<br>
+							Only Lonely Night<br>
+							報われない　胸の中　だませないよ<br>
+							ため息の数かさねて<br>
+							いつか　You are far away</p>
+						<p>
+							いつも　試す心<br>
+							試されながら<br>
+							大事すぎるものに　近づけない</p>
+						<p>
+							no,no　デジタルに　時を<br>
+							瞬間で　飛ばせるなら<br>
+							未来の二人　のぞきたいよね<br>
+							どこまでもおいかけても　遠すぎるよ<br>
+							明日も　きっと　まだ見ぬ夢</p>
+						<p>
+							メランコリー<br>
+							作る前の　思い出に溺れながら<br>
+							恋はただ　きしむ想い<br>
+							Only Lonely Night<br>
+							片思いは　ただひとり　痛いけれど<br>
+							それなしじゃ　よけい寒い<br>
+							そうさ　No one needs no Love.</p>
+						<p>
+							メランコリー<br>
+							切なすぎて　今すぐに駆け出したい<br>
+							だれだって　おほえがある<br>
+							Only Lonely Night<br>
+							報われない　胸の中　だませないよ<br>
+							ため息の数かさねて<br>
+							いつか　You are far away</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-video-girl-ai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

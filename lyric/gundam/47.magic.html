@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Magic - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Magic</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Jacob Wheeler</div>
+                    <div class="LyricStaff">詞＆曲：Jacob Wheeler</div>
+
+                    <div class="LyricText">
+						<p>
+							Don't come to me<br>
+							Just cause you are lonely tonight<br>
+							Lone as you live<br>
+							You must remember one thing<br>
+							Give and take are one in the same</p>
+						<p>
+							So tell me you are ready<br>
+							Really<br>
+							Really ready<br>
+							I don't want your love<br>
+							For one night</p>
+						<p>
+							*Don't come to me<br>
+							 Just cause you are lonely tonight<br>
+							 Lone as you live<br>
+							 You must remember one thing<br>
+							 Give and take are one in the same<br>
+							 So tell me you are ready<br>
+							 Really<br>
+							 Really ready<br>
+							 I don't want your love<br>
+							 For one night</p>
+						<p>
+							*Repeat</p>
+						<p>
+							I need you oh so close to my heart<br>
+							Come into my world we can ,<br>
+							"share everything there"<br>
+							I need the magic light from the star<br>
+							(magic)Then you'll be my lover<br>
+							magic undercover,<br>
+							no one will be stopping us now</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

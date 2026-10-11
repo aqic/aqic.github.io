@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>扉をあけて - カードキャプターさくら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">扉をあけて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ANZA</div>
+                    <div class="LyricStaff">作詞：きくこ<br>作曲：広瀬香美<br>編曲：亀田誠治</div>
+
+                    <div class="LyricText">
+						<p>
+							It's all right　大丈夫　ダイジョウブ　だいじょうぶ<br>
+							奇跡だって起こせる<br>
+							Here we go　行こうよ　行こうよ　行こうよ　翼拡げ<br>
+							きっと　何かが　何かが　どこかで<br>
+							出会える日を待ってる<br>
+							DO! DO! DO! DREAMING! DREAMING!<br>
+							そして扉がひらくよ…</p>
+						<p>
+							イザとなると　何も言えない<br>
+							しゃべりたいのに　声も聴きたくて<br>
+							こころがね　あわててる<br>
+							青い空に飛行機雲　繋いだ手に沸いてくる　POWER<br>
+							どこだってゆけそうだよ　風に乗って…</p>
+						<p>
+							It's all right　大丈夫　ダイジョウブ　だいじょうぶ<br>
+							奇跡だって起こせる<br>
+							Here we go　行こうよ　行こうよ　行こうよ　翼拡げ<br>
+							きっと　何かが　何かが　どこかで<br>
+							出会える日を待ってる<br>
+							DO! DO! DO! DREAMING! DREAMING!<br>
+							そして扉がひらくよ…</p>
+						<p>
+							なんでもない　小石でさえ<br>
+							不思議だよね　宝石に変わる<br>
+							一緒にね　見てるだけで…　みんな光る</p>
+						<p>
+							Top secret　大好きな　ダイスキな　だいすきな<br>
+							瞬間が増えてゆく<br>
+							とっても小さな　チイサナ　ちいさな種になって<br>
+							きっと　こころのどこか大きな花が咲き始めてる<br>
+							DO! DO! DO! DREAMING! DREAMING!<br>
+							そして世界はひらく</p>
+						<p>
+							It's all right　大丈夫　ダイジョウブ　だいじょうぶ<br>
+							奇跡だって起こせる<br>
+							Here we go　行こうよ　行こうよ　行こうよ　翼拡げ<br>
+							きっと　何かが　何かが　どこかで<br>
+							出会える日を待ってる<br>
+							DO! DO! DO! DREAMING! DREAMING!<br>
+							そして扉がひらくよ…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ccsakura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

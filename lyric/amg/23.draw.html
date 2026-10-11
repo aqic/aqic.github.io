@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>展覧会の絵 - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">展覧会の絵</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">GODDESS FAMILY CLUB</div>
+                    <div class="LyricStaff">作詞：Sora<br>作曲、編曲：安田 毅</div>
+
+                    <div class="LyricText">
+						<p>
+							Corridor　つきあたりには<br>
+							一枚の女神さまの絵画が</p>
+						<p>
+							なぜか　名もなき画家の<br>
+							ぬくもりに魅せられ　たたずむ</p>
+						<p>
+							退屈でしょ　あなたあくび殺した顔<br>
+							もう２時間　つき合わせている　ごめんね</p>
+						<p>
+							私たち　このままなのかな<br>
+							好きだとか　言わなくなっても</p>
+						<p>
+							もう少し　自由になれるかな<br>
+							そっと自分に　問いかけてた</p>
+						<p>
+							Pavement　思い出してよ<br>
+							さっきの絵　誰かに似てなかった？</p>
+						<p>
+							あれは　私なのかも<br>
+							前の彼　絵を描いていたの</p>
+						<p>
+							そう偶然　ふたり見つけた美術館<br>
+							美化されて　飾られた私　せつない</p>
+						<p>
+							私たち　運命だよね<br>
+							神さまに　選ばれたふたり</p>
+						<p>
+							もう少し　やさしくなりたいな<br>
+							急にあばたが　愛しくなる</p>
+						<p>
+							私たち　運命だよね<br>
+							離れたら　不幸になるって</p>
+						<p>
+							この前の　プロポーズの返事<br>
+							今なら素直に　うなずくから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

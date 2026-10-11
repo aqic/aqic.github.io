@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>虹と太陽の丘 - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2 熱闘編」エンディング・テーマ (1992)</div>
+
+                    <div class="LyricTitle">虹と太陽の丘</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ぴよぴよ</div>
+                    <div class="LyricStaff">作詞・作曲：上村茂三<br>編曲：ぴよぴよ</div>
+
+                    <div class="LyricText">
+						<p>
+							見つめ合うほどそばにいて　優しさも笑顔もすれ違い<br>
+							あなた気付かぬふりして　いたずらに急ぎ足</p>
+						<p>
+							それでも輝く　あの丘の上で<br>
+							途切れ途切れの物語を　ただ演じるだけで<br>
+							二人包む虹は　ひとつの願い叶える</p>
+						<p>
+							※太陽の匂いだね　あなたの夢もシャツも<br>
+							希望に満ちた瞳はすべて輝きに変える<br>
+							だから大切な夢を　決して諦めないで<br>
+							大空にはばたく力と勇気　持ち続けて</p>
+						<p>
+							幼い日は何にでも　不思議を探し出すことができた<br>
+							まるでそれが永遠に　終わらないかのように</p>
+						<p>
+							碧く滲んだ　時間〈とき〉の歩道で<br>
+							もしもあなたが迷った時は　そう思い出してね<br>
+							愛と勇気くれた　あの丘にかかる虹を</p>
+						<p>
+							大人になるにつれて　みんな変わって行く<br>
+							少年の心のキャンバスずっと描いていて<br>
+							あなたが今のままで　きらめいているように<br>
+							いつまでもいつまでも　そっと見守っていきたい</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

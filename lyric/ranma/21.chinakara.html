@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>チャイナからの手紙 - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2」イメージ・ソング</div>
+
+                    <div class="LyricTitle">チャイナからの手紙</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">瀬能あづさ</div>
+
+                    <div class="LyricText">
+						<p>
+							チャイナタウンの片隅で<br>
+							あなたの姿　捜します</p>
+						<p>
+							並んで歩いた思い出に<br>
+							さそわれ旅に出ています</p>
+						<p>
+							ぶつかる人こみを　かき分けて<br>
+							どうそ私の手をとって</p>
+						<p>
+							迷子の心 そのままに<br>
+							涙が頬をつたうから</p>
+						<p>
+							あなたの居ない淋しさを<br>
+							かみしめ旅を続けます</p>
+						<p>
+							Love letter from China<br>
+							Love letter from China</p>
+						<p>
+							チャイナタウンをさまよえば<br>
+							あなたの声が聞こえます</p>
+						<p>
+							名前を呼んでも　ざわめきに<br>
+							消されて佇んでいます</p>
+						<p>
+							偶然逢えたらもう一度<br>
+							どうぞ私を抱きしめて</p>
+						<p>
+							迷子の心　そのままに<br>
+							涙が胸ににじむから</p>
+						<p>
+							あなたの居ないこの街で<br>
+							しばらく旅を続けます</p>
+						<p>
+							Love letter from China<br>
+							Love letter from China</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>CUTIE - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">CUTIE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Okui Masami</div>
+                    <div class="LyricStaff">Lyrics : Okui Masami<br>Music : Yabuki Toshirou<br>Arrangement : Yabuki Toshirou</div>
+
+                    <div class="LyricText">
+						<p>
+							キラキラ太陽降りそそぐ夏がやって来た<br>
+							ちょっとだけ　気になる日焼けをキューっと冷やした後に</p>
+						<p>
+							気持ちいい風に　ねっ心ごとまかせてみたら<br>
+							誰よりステキな自分がきっと微笑む</p>
+						<p>
+							足早に過ぎて行くこの頃毎日<br>
+							見失いかけていたプリティーでキュートな夢<br>
+							もう一度復活</p>
+						<p>
+							がんばるって綺麗だけど真面目なだけじゃ<br>
+							ガチガチすぎっ冗談だってつうじなくなるよ<br>
+							お馬鹿もいい　やわらかくって可愛くなくなっちゃ！</p>
+						<p>
+							“モテモテだーりん”競い合うあの子達にね<br>
+							一言！いいたい「オブジェじゃないんだからさー」</p>
+						<p>
+							価値観はそれぞれに違うものだけど<br>
+							やっぱり見た目より捨てがたいナカミのある<br>
+							彼を見つけてよ</p>
+						<p>
+							ライバルって素敵だけど戦うだけじゃ<br>
+							味気なくてまるで家のGAMEみたいじゃない<br>
+							恋愛だって人生だっておいしくなくっちゃ！</p>
+						<p>
+							不思議だよね夏が来れば大胆になる<br>
+							女だって男だって止まらないHOT BEAT<br>
+							恋をしたり夢を見たり…おいしくなくっちゃ！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

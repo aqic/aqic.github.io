@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>You're Not Alone - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」(1996)</div>
+
+                    <div class="LyricTitle">You're Not Alone</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							I've walked so long<br>
+							I can't remember - where was my home?</p>
+						<p>
+							Their distance faces fade away<br>
+							I'm always on my own.</p>
+						<p>
+							I can show a smile<br>
+							It's not hard to do.</p>
+						<p>
+							I can have the strength to go on<br>
+							But sometime I wanna let go of everything.</p>
+						<p>
+							When thoughtfulness is not their game<br>
+							I teach by giving love.</p>
+						<p>
+							High mountain seems higher endlessly<br>
+							when they're pebbles at your feet.</p>
+						<p>
+							And if you should still fall into despair,<br>
+							there is one thing left to believe<br>
+							I lie in your heart always.</p>
+						<p>
+							Nothing is braver than honesty<br>
+							My life is your faith in me.</p>
+						<p>
+							I'll be there when you need<br>
+							you don't have to hide from me.</p>
+						<p>
+							What you are feeling now<br>
+							I fill your soul.</p>
+						<p>
+							We will seek together destiny<br>
+							troubles have an end.</p>
+						<p>
+							we'll carry on hand in hand<br>
+							you're not alone.</p>
+						<p>
+							People searching desperately outside themselves<br>
+							caught up in thinking of whatever helped.</p>
+						<p>
+							And I'd forgotten too that love exists inside me as in those I wanted from<br>
+							I feel you now.</p>
+						<p>
+							I'll be there when you need<br>
+							we will live together.</p>
+						<p>
+							Nothing is in our way<br>
+							with trust in our soul.</p>
+						<p>
+							We will seek together destiny<br>
+							troubles have an end.</p>
+						<p>
+							We will carry on hand in hand<br>
+							We won't forget we have each other.</p>
+						<p>
+							Never!<br>
+							Love is in the hearts of all men<br>
+							you're not alone.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

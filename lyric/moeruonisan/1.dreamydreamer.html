@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ドリーミー・ドリーマー - 燃える!お兄さん</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「燃える！お兄さん」オープニングテーマ</div>
+
+                    <div class="LyricTitle">ドリーミー・ドリーマー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">石川優子</div>
+                    <div class="LyricStaff">作詞、作曲：石川優子<br>編曲：瀬尾一三</div>
+
+                    <div class="LyricText">
+						<p>
+							灼けた素肌が視線はじいて　終わらない夏<br>
+							舞台装置そろったけど　この先 君次第ね<br>
+							優しすぎても　クールすぎても　恋は戸惑う<br>
+							とりあえずは　素直になることだね</p>
+						<p>
+							勇気出して　言葉にして<br>
+							眺めるだけじゃ　Ah-はじまらない</p>
+						<p>
+							☆Say I Love You　そのあとは<br>
+							　So I Need You　愛はいつだって<br>
+							　いいことばかりじゃないけど<br>
+							　Dreamy Dreamer　いつまでも<br>
+							　Dreamy Dreamer　今のその気持ち　忘れないで</p>
+						<p>
+							本気はいいね　ステキでいいね　どんな時でも<br>
+							欲しいものを　見つけたなら　照れたりしなくていい<br>
+							あのコもきっと気付いてるはず　伝わるものよ<br>
+							せつないほど　輝いてる気持ちは</p>
+						<p>
+							まだ知らない　景色が今<br>
+							弾んだ胸に　Ah-踊りだした</p>
+						<p>
+							Dancing your heart　恋したら<br>
+							Touching my heart　いくつになったって<br>
+							魔法にかかればおんなじ<br>
+							Dreamy Dreamer　夢中だね<br>
+							Dreamy Dreamer　大切な時を　離さないで</p>
+						<p>
+							☆繰り返し</p>
+						<p>
+							Dreamy Dreamer　恋したら<br>
+							Dreamy Dreamer　いくつになったって<br>
+							魔法にかかればおんなじ<br>
+							Dreamy Dreamer　夢中だね<br>
+							Dreamy Dreamer　大切な時を　離さないで</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-moeruonisan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

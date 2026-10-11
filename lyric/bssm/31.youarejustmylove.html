@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>YOU'RE JUST MY LOVE - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">オーディオ「美少女戦士セーラームーン In Another Dream」 印象歌（１９９２）</div>
+
+                    <div class="LyricTitle">YOU'RE JUST MY LOVE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">三石琴乃、古谷徹</div>
+                    <div class="LyricStaff">作詞／渡辺なつみ<br>作編曲／松田泉</div>
+
+                    <div class="LyricText">
+						<p>
+							月明かり　見上げる空に　あなたを浮かべて…<br>
+							瞳(め)を閉じて　君の名前を　ささやくよ<br>
+							涙はまるで　水晶のさざ波　寂しさ胸に満ちてゆく<br>
+							たとえどんなに　遠くに　離れても　My love…<br>
+							心は今　ひとつに輝ける　You're just my love</p>
+						<p>
+							そばにいて　みつめ合いたい　願いを叶えて…<br>
+							腕の中　君を抱きしめ　眠りたい<br>
+							同じ夜に　悲しみ分かち合い　愛を信じていたいから<br>
+							たとえどんなに　傷つき　泣いたって　My love…<br>
+							二人ならば　笑顔になれるから　You're just my love</p>
+						<p>
+							どんなに遠くに　離れても　My love…　心は今　ひとつに輝ける<br>
+							どんなに傷つき　泣いたって　My love…<br>
+							二人ならば　笑顔になれるから　You're just my love</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

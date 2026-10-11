@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>北へ - 北へ。</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「北へ」オープニング・テーマ</div>
+
+                    <div class="LyricTitle">北へ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Four Seasons</div>
+                    <div class="LyricStaff">春野琴梨（CV：千葉紗子）<br>愛田めぐみ（CV：大谷育江）<br>里中梢（CV：豐口めぐみ）<br>川原鯰（CV：広橋佳以）<br>作詞：廣井王子<br>作曲·編曲：池毅</div>
+
+                    <div class="LyricText">
+						<p>
+							☆北へ行こう　ラン　ラ　ラン<br>
+							　北へ行こう　ラン　ラ　ラン<br>
+							　春も夏も秋も冬もね<br>
+							　胸踊る北へスキップ</p>
+						<p>
+							花咲き乱れる春と夏が一生<br>
+							何かが始まる彩の予感<br>
+							ひと恋しくなる秋から冬へと<br>
+							何かが始まる手のひらの雪</p>
+						<p>
+							蟹がいっぱい　帆立いっぱい<br>
+							少し休みに行こう<br>
+							少し遊びに行こう</p>
+						<p>
+							★北へ行こう　ラン　ラ　ラン<br>
+							　北へ行こう　ラン　ラ　ラン<br>
+							　出会いの街恋が生まれる<br>
+							　新しい北へスキップ</p>
+						<p>
+							☆くりかえし<br>
+							北へ…</p>
+						<p>
+							何処までも続く地平線がある<br>
+							何かを始める明日への努力<br>
+							眩く輝く夜空の星たち<br>
+							何かを始める心の希望</p>
+						<p>
+							法華おいしい　幾らおいしい<br>
+							少し休みに行こう<br>
+							少し遊びに行こう</p>
+						<p>
+							★くりかえし</p>
+						<p>
+							☆くりかえし<br>
+							北へ…</p>
+						<p>
+							★くりかえし</p>
+						<p>
+							☆くりかえし<br>
+							北へ…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kitahe-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

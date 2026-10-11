@@ -1,0 +1,132 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ずっとこのまま - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ずっとこのまま</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">かかずゆみ</div>
+                    <div class="LyricStaff">作詞：木本慶子<br>作曲：鶴田勇気<br>編曲：牧野信博</div>
+
+                    <div class="LyricText">
+						<p>
+							並んで歩いた<br>
+							帰り道は<br>
+							いつもおんなじ<br>
+							風が流れるように</p>
+						<p>
+							何かが少しずつ<br>
+							変わるけれど<br>
+							懐かしい気持ちは<br>
+							ずっとこのまま</p>
+						<p>
+							うつむく私に<br>
+							わざとおどけて見せる<br>
+							君の不器用な<br>
+							優しさが嬉しくて</p>
+						<p>
+							あの時ありがとうとも<br>
+							言えないままに<br>
+							それでも何度も胸で<br>
+							つぶやいてた<br>
+							あの時ありがとうって<br>
+							いつか言えても<br>
+							君はそんなの覚えてない</p>
+						<p>
+							言葉に出来ない想いを<br>
+							抱きしめて<br>
+							これからいくつ季節を<br>
+							数えても<br>
+							言葉に出来ない想い<br>
+							分かり合いたい<br>
+							悲しみも<br>
+							喜びも<br>
+							誰よりも</p>
+						<p>
+							元気なふりをして<br>
+							なんでもないと<br>
+							笑顔の強がりは<br>
+							きっとそのまま</p>
+						<p>
+							見えない明日が<br>
+							急に怖くなるのは<br>
+							君だけじゃないと<br>
+							背中を見送るけど</p>
+						<p>
+							時には弱くなるのも<br>
+							泣くのもいいよ<br>
+							誰でも傷つきながら<br>
+							歩いていく<br>
+							時には弱くなるのも<br>
+							勇気がいるね<br>
+							せめて私が出来る事は</p>
+						<p>
+							いつでもそばにいるのを<br>
+							忘れないで<br>
+							あの日の帰り道を<br>
+							思い出して<br>
+							いつでもそばにいるから<br>
+							心のそばに<br>
+							これまでも<br>
+							これからも<br>
+							たった今も</p>
+						<p>
+							見えない明日が<br>
+							急に怖くなるのは<br>
+							君だけじゃないと<br>
+							背中を見送るけど</p>
+						<p>
+							あの時ありがとうとも<br>
+							言えないままに<br>
+							それでも何度も胸で<br>
+							つぶやいてた<br>
+							あの時ありがとうって<br>
+							いつか言えても<br>
+							君はそんなの覚えてない</p>
+						<p>
+							言葉に出来ない想いを<br>
+							抱きしめて<br>
+							これからいくつ季節を<br>
+							数えても<br>
+							言葉に出来ない想い<br>
+							分かり合いたい<br>
+							悲しみも<br>
+							喜びも<br>
+							誰よりも</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ひとりぼっちはやめた - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ホーホケキョとなりの山田くん</div>
+
+                    <div class="LyricTitle">ひとりぼっちはやめた</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">矢野顕子</div>
+                    <div class="LyricStaff">作詞・作曲：矢野顕子<br>作曲:永田茂<br>編曲：ジェフ・ボーヴァ、矢野顕子</div>
+
+                    <div class="LyricText">
+						<p>
+							雨があがった朝の光<br>
+							胸にいっぱい吸いこんだから<br>
+							あなたに会いにゆくんだ<br>
+							電車にのってゆくんだ</p>
+						<p>
+							さよならだけが人生なんて<br>
+							ほんとのことかな？<br>
+							それだけかな？<br>
+							こんにちはだってあるよね<br>
+							毎日あるよね</p>
+						<p>
+							だれも気づかない　この気持ち<br>
+							あなたにだけにはわかってほしい</p>
+						<p>
+							ひとりぼっちはやめた<br>
+							楽しい気持ちを分けてあげる</p>
+						<p>
+							窓のガラスに夜が映る<br>
+							たたんでおいた心　広げ<br>
+							いじわるしてごめんね<br>
+							あやまれなくてごめんね</p>
+						<p>
+							力がないの　こんな時<br>
+							しかたがないの　泣きたい時<br>
+							あなたの声が必要<br>
+							抱きしめてほしいよ</p>
+						<p>
+							だれも気づかない　この気持ち<br>
+							あなたにだけはわかってほしい</p>
+						<p>
+							ひとりぼっちはやめた<br>
+							楽しい気持ちを分けてあげる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

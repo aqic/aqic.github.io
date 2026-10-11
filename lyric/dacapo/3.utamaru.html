@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>うたまる絵かき歌 - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">うたまる絵かき歌</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桃井はるこ</div>
+
+                    <div class="LyricText">
+						<p>
+							うたまるを描こう・うたまるを描こう・宿題だ<br>
+							大好きな人・大切な人・たくさん・いるけど<br>
+							描きたいのは・うたまるだよ・モデルになって<br>
+							どこにいるの・何してるの・おれいだって・するから</p>
+						<p>
+							うたまるの大好きな・猫缶・あるよ・それじゃダメかな？<br>
+							焼津マグロの・他に・新鮮地鶏も・あるよ<br>
+							うたまるの姿が・ちらり・陰から・ボクを見つめて<br>
+							ピクニック好きなんだ・連れて行ってほしいにゃー<br>
+							（それならいいよ！）</p>
+						<p>
+							「みんなー・いっしょにうたまるを描いてみよ～<br>
+							準備はいい？」</p>
+						<p>
+							おにぎり・ふたつ・かごに・入れて<br>
+							卵焼きを・ふたつ・切りわけ　（おいしそ～）<br>
+							デザート・ミカン・これも箱に・詰める<br>
+							曲がった・フォーク・おべんとう<br>
+							うたまる～<br>
+							（にゃにゃにゃにゃ　にゃにゃにゃにゃ<br>
+							にゃにゃにゃにゃ　にゃにゃにゃ～）</p>
+						<p>
+							にゃにゃにゃにゃにゃにゃにゃ<br>
+							にゃにゃにゃにゃにゃにゃにゃ<br>
+							にゃにゃにゃにゃにゃ～</p>
+						<p>
+							にゃにゃにゃ　にゃにゃにゃ<br>
+							にゃにゃにゃにゃにゃにゃ<br>
+							にゃにゃにゃにゃにゃにゃにゃにゃにゃ～</p>
+						<p>
+							にゃにゃにゃ　にゃにゃにゃ<br>
+							にゃにゃにゃ　にゃにゃにゃ<br>
+							にゃにゃにゃ　にゃにゃにゃ～ん</p>
+						<p>
+							にゃにゃにゃ　にゃにゃにゃ<br>
+							にゃにゃにゃ　にゃんにゃ<br>
+							にゃにゃにゃ　にゃにゃにゃ</p>
+						<p>
+							にゃにゃにゃにゃにゃにゃにゃにゃにゃにゃにゃにゃ<br>
+							にゃにゃにゃにゃにゃにゃにゃ～</p>
+						<p>
+							にゃ～んにゃんにゃ</p>
+						<p>
+							おにぎり・ふたつ・かごに・入れて<br>
+							卵焼きを・ふたつ・切りわけ<br>
+							デザート・ミカン・これも箱に・詰める<br>
+							曲がった・フォーク・おべんとう<br>
+							うたまる～</p>
+						<p>
+							気に入った・みたい・だね・キミのえかき・歌を<br>
+							どんな・秘密が・あるの？・大好きだよ<br>
+							キミはうたまる～<br>
+							（にゃにゃにゃにゃ　にゃにゃにゃにゃ<br>
+							にゃにゃにゃにゃ　にゃにゃにゃにゃ　にゃ～）</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

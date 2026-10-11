@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>運命のルーレット廻して - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OP 97話～123話</div>
+
+                    <div class="LyricTitle">運命のルーレット廻して</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ZARD</div>
+                    <div class="LyricStaff">作詞：坂井泉水<br>作曲：栗林誠一郎<br>編曲：池田大介</div>
+
+                    <div class="LyricText">
+						<p>
+							運命のルーレット廻して<br>
+							ずっと　君を見ていた</p>
+						<p>
+							何故なの　こんなに　幸せなのに<br>
+							水平線を見ると　哀しくなる<br>
+							あの頃の自分を遠くで　見ている　そんな感じ</p>
+						<p>
+							運命のルーレット廻して<br>
+							アレコレ深く考えるのは　Mystery<br>
+							ほら　運命の人はそこにいる<br>
+							ずっと　君を見ていた</p>
+						<p>
+							星空を見上げて　笑顔ひとつで<br>
+							この高い所からでも　飛べそうじゃん<br>
+							スピード上げ　望遠鏡を　覗いたら<br>
+							未来が見えるよ</p>
+						<p>
+							運命のルーレット廻して<br>
+							何処に行けば　想い出に会える ?<br>
+							青い地球の　ちっぽけな二人は<br>
+							今も　進化し続ける</p>
+						<p>
+							運命のルーレット廻して<br>
+							旅立つ時の翼は　bravely<br>
+							ほら　どんな時も　幸運は待ってる<br>
+							ずっと　君を見ていた</p>
+						<p>
+							ずっと　君を見ていた</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

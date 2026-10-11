@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Free Magic - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ED 153話～179話</div>
+
+                    <div class="LyricTitle">Free Magic</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">WAG</div>
+                    <div class="LyricStaff">作詞：AZUKI七<br>作曲：三好誠<br>編曲：古井弘人</div>
+
+                    <div class="LyricText">
+						<p>
+							Free Magic Game　君を捜し　未来をゆくよ<br>
+							Free Magic Good night　僕のことを見つめてよ</p>
+						<p>
+							ある日急に　世界が色褪せてみえる時<br>
+							幸福に羽根があるって　思い出していた</p>
+						<p>
+							生まれない卵でも抱きしめて　うっかりと幸せな気分になる</p>
+						<p>
+							Free Magic　本当のトコロ<br>
+							Free Magic　愛ってなんなのさ</p>
+						<p>
+							キョリの分だけの優しさ　近づいて見えた傷跡を<br>
+							埋める何かを捜したい</p>
+						<p>
+							特上　特盛り　目一杯　テマヒマかけて育てた愛<br>
+							そんな簡単に捨てないでよ</p>
+						<p>
+							Free Magic　今日　何を思う　愛しい人よ<br>
+							Free Magic　ずっと　側にいてよ　この部屋<br>
+							繰り返す明日を生きてゆこう<br>
+							Free Magic　夜空を泳ぐ</p>
+						<p>
+							Free Magic　冷蔵庫の中で<br>
+							Free Magic　羽ばたいてゆけ</p>
+						<p>
+							冷たい暗闇の中で　温もりを手探りしてる<br>
+							いつかはきっと　奇跡も起こるだろう</p>
+						<p>
+							Free Magic　きっと　愛があるならまあるい形<br>
+							Free Magic　今　この手の中　産声あげて</p>
+						<p>
+							カラ元気でも　まだまだ　無茶して<br>
+							Free Magic　わずかな勇気<br>
+							Free Magic　あつめて　育ちましょう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

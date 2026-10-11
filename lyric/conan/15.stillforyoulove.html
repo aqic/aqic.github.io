@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Still for your love - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ED 132話～152話</div>
+
+                    <div class="LyricTitle">Still for your love</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">rumania montevideo</div>
+                    <div class="LyricStaff">作詞：三好真美<br>作曲：三好誠<br>編曲：古井弘人、三好誠</div>
+
+                    <div class="LyricText">
+						<p>
+							何かが起こりそうな夜は　祈りをささげて　目を閉じなよ<br>
+							こんな月のとける夜に　愛され生まれてきたのとママは言った</p>
+						<p>
+							お願い遠くへ行かないでと　なぜママは涙を流すの<br>
+							ずっとずっとそばにいるよ　小さな心で思ってたけど<br>
+							あの人に会うまでは　心ゆらされるまえは<br>
+							そして全てはからまわり　未来がちぎれるのを見た<br>
+							さぁ　裸足になって　大地けって　虹をこえて　空をつかんで</p>
+						<p>
+							I wish　胸の十字架をにぎり　朝は<br>
+							希望があなたにふりそそぎ　夜は<br>
+							やわらかな光が　あなたを包みこみ　明日への勇気を与える</p>
+						<p>
+							幼い頃に　うえつけられた傷は重く　心にのしかかり<br>
+							暗き狭い世界で　心ない世界で<br>
+							ゆりかごに似た　やすらかな　Final song</p>
+						<p>
+							もう二度と　会えないとわかってても<br>
+							色を変えてもつながってるから　空は<br>
+							白い羽ね　身につけ　大きくはばたいて<br>
+							未来を変えるよ　この手で</p>
+						<p>
+							I wish　胸の十字架をにぎり　朝は<br>
+							希望が　あなたに　ふりそそぎ　夜は<br>
+							やわらかな光が　あなたを包みこみ　明日への勇気を与える</p>
+						<p>
+							I wish forever her great happiness<br>
+							Everynight in your dream I see you, I feel you<br>
+							Tears stood in her eyes Please don't cry<br>
+							Forever still for you, still for your love</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>生命線・・Something in my mind - 幻想魔伝 最遊記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">生命線・・Something in my mind</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">石田彰</div>
+
+                    <div class="LyricText">
+						<p>
+							旅の理由を言葉にすることに、どれほどの意味があるんでしょうか<br>
+							それは、愛した理由や人生の存在意義を言葉にするときの無力感に<br>
+							どこか似ていて、僕の口をつぐませるんです<br>
+							･･･しかし僕はあの日、あの街を出ることを選びました<br>
+							それほど昔のことではない筈なんですけど<br>
+							もうすいぶんと時が経った気がするのは、<br>
+							歩んできた距離や時間のせいだけではないのでしょうね</p>
+						<p>
+							憎しみばかりを胸に抱いて生きていた頃は<br>
+							偽善ばかりが視界を覆っていて<br>
+							･･･ましてや愛など到底見えるはずもなく<br>
+							自分自身に辟易しながら<br>
+							止まない雨の夜を抜け出せずにいました<br>
+							時折この道を、あの日々を振り返る<br>
+							砂漠の向こうに見えた･･･あの人は誰なんでしょう<br>
+							僕によく似た眼をしていたんですが･･･</p>
+						<p>
+							長い間忘れていたようなぬくもりを<br>
+							最近はちょっと自慢出来る程度に感じるんですよ？<br>
+							･･････ああ、今日もいい天気ですね<br>
+							少し短めな生命線を太陽にかざして<br>
+							･･････僕はまだ、旅を続けています</p>
+						<p>
+							I have something in my mind<br>
+							Something so sweet<br>
+							I have something in my mind<br>
+							Something so sweet</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saiyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

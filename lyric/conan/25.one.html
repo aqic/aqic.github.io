@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ONE - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">世紀末の魔術師</div>
+
+                    <div class="LyricTitle">ONE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">B'z</div>
+                    <div class="LyricStaff">作詞：稲葉浩志<br>作曲：松本孝弘<br>編曲：松本孝弘、稲葉浩志</div>
+
+                    <div class="LyricText">
+						<p>
+							静かすぎる夜だ　耳がうずくほど<br>
+							僕も君も誰も　眠ってなんかいないのに</p>
+						<p>
+							言葉がまだ　大切なこと<br>
+							伝えられるなら　また　何でもいいから　声を聞かせてよ</p>
+						<p>
+							わかってるって　もう行きたいんだろ<br>
+							気づかないわけないだろう　you're the only one<br>
+							どんなことでも　無駄にはならない<br>
+							僕らは何かを　あきらめるわけじゃない</p>
+						<p>
+							夜明けの瞬間は　いつだって退屈だったけれど<br>
+							いつもと違う太陽が　部屋のかたすみ照らした</p>
+						<p>
+							夢があるなら　追いかければいい<br>
+							まるでジプシーみたいに　自由にさまよいながら<br>
+							僕ら出会ったんだから</p>
+						<p>
+							また　会いましょう　いつかどこかで<br>
+							忘れるわけないだろう　you're the only one<br>
+							ドアを開ければ　道は眠って<br>
+							踏みだされる一歩を　待ちこがれている</p>
+						<p>
+							愉快なときだけ　思い出して<br>
+							涙におぼれる　たまにはそれもいい<br>
+							ともに過ごした日々は　僕らを<br>
+							強くしてくれるよ　この胸をはろう<br>
+							ぜったい会いましょう　いつかどこかで<br>
+							忘れるわけないだろう　baby, you're the only one<br>
+							陽がまた昇ってゆく</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

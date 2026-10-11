@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>いつも何度でも - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">千と千尋の神隠し</div>
+
+                    <div class="LyricTitle">いつも何度でも</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">木村 弓</div>
+                    <div class="LyricStaff">作詞：覚知 歌子<br>作曲：木村 弓</div>
+
+                    <div class="LyricText">
+						<p>
+							呼んでいる　胸のどこか奥で<br>
+							いつも心踊る　夢を見たい</p>
+						<p>
+							悲しみは　数えきれないけれど<br>
+							その向こうできっと　あなたに会える</p>
+						<p>
+							繰り返すあやまちの　そのたびひとは<br>
+							ただ青い空の　青さを知る<br>
+							果てしなく　道は続いて見えるけれど<br>
+							この両手は　光を抱ける</p>
+						<p>
+							さよならのときの　静かな胸<br>
+							ゼロになるからだが　耳をすませる</p>
+						<p>
+							生きている不思議　死んでいく不思議<br>
+							花も風も街も　みんなおなじ</p>
+						<p>
+							ラララ…<br>
+							ホホホ…<br>
+							フフフ…<br>
+							ルルル…</p>
+						<p>
+							呼んでいる　胸のどこか奥で<br>
+							いつも何度でも　夢を描こう</p>
+						<p>
+							悲しみの数を　言い尽くすより<br>
+							同じくちびるで　そっとうたおう</p>
+						<p>
+							閉じていく思い出の　そのなかにいつも<br>
+							忘れたくない　ささやきを聞く<br>
+							こなごなに砕かれた　鏡の上にも<br>
+							新しい景色が　映される</p>
+						<p>
+							はじまりの朝　静かな窓<br>
+							ゼロになるからだ　充たされてゆけ</p>
+						<p>
+							海の彼方には　もう探さない<br>
+							輝くものは　いつもここに<br>
+							わたしのなかに　見つけられたから</p>
+						<p>
+							ラララ…<br>
+							ホホホ…<br>
+							フフフ…<br>
+							ルルル…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

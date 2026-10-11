@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>放我飞 - </title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">放我飞</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							把你放在我的心里最好的位置，在你身后悄悄跟随藏个小秘密。<br>
+							偶尔也会有点放肆谁是谁也不在意，不用暗示我们都是听话的孩子。<br>
+							现在开始，开始呼吸，就让回忆成爱的氧气。<br>
+							走到哪里，哪里美丽，就在风雨来临时，存好一点一点爱的利息。<br>
+							哦————<br>
+							放我飞，我是爱的小宝贝，把快乐都给了你，喔、喔——<br>
+							放我飞，我是开心的小芭比，从不隐藏自己。<br>
+							放我飞，我把我的心给了你，有没有好天气，喔、喔——<br>
+							放我飞，我把我的梦给了你，喜欢不要忘记。</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-musicup-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

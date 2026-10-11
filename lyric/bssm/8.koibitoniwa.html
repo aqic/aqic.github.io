@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>恋人にはなれないけど - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「美少女戦士セーラームーンＲ 乙女の詩集」 印象歌（１９９３）</div>
+
+                    <div class="LyricTitle">恋人にはなれないけど</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">久川綾</div>
+                    <div class="LyricStaff">作詩／白峰美津子<br>作曲／樫原伸彦<br>編曲／京田誠一</div>
+
+                    <div class="LyricText">
+						<p>
+							ずっと探したと　隣のベンチ　腰掛けた　午後の　まぶしい川岸で<br>
+							昨日　しょげたコト　ちゃんと分かっていてくれた<br>
+							うれしかったよ　何よりも<br>
+							恋人は他にいる　それでも　こんなふうに　ずっとそばにいたい<br>
+							せつない思い片思い　なんにも言わずに　もう少しこうしてて<br>
+							いいよ　それでいいよ　見上げる空が胸にしみた</p>
+						<p>
+							急にふざけては　口笛を吹く　その笑顔　やっと　元気になれそうで<br>
+							夏の　草野球　すねた子供をしかる目が　やさしかったね　誰よりも<br>
+							なぐさめる言葉など　知らない　あなたがいい　変わらないでほしい<br>
+							せつない思い片思い　この世にあなたが　もう一人いるなら<br>
+							いいよ　だけどいいよ　友達以上なれないけど</p>
+						<p>
+							あなたがスキよ大スキよ　打ち明けたいけど　もう少しこうしてる<br>
+							いいよ　それでいいよ　見上げる空が胸にしみた</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

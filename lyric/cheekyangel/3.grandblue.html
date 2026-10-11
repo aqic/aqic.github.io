@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Grand Blue - 天使な小生意気</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Grand Blue</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">北原愛子</div>
+                    <div class="LyricStaff">作詞　北原愛子<br>作曲　徳永暁人<br>編曲　徳永暁人</div>
+
+                    <div class="LyricText">
+						<p>
+							青い風に吹かれて 耳を澄ます 波の詩<br>
+							肩寄せ合い見つめていた 果てなき空の永遠</p>
+						<p>
+							"好き"が溢れて 切なく湿った身体<br>
+							あなたに伝えたいよ close to me<br>
+							hold me tight いつまでも…</p>
+						<p>
+							hey yeah 遥かなる grand blue<br>
+							baby 側にいさせて<br>
+							会いたい 明日もあさっても あなたに触れていたい<br>
+							hey yeah 永遠なる grand blue<br>
+							baby 素直に言える 少し照れるけれども<br>
+							すごく 愛しくて 涙が流れて来る</p>
+						<p>
+							赤い花が恋をして 絶え間ない海の滴<br>
+							裸足で駆けた砂浜 懐かしい汐の香</p>
+						<p>
+							不安に揺れた 些細な出来事<br>
+							あなたと描きたいよ close to me<br>
+							hold me tight どこまでも…</p>
+						<p>
+							hey yeah 彼方なる grand blue<br>
+							baby そっと優しく<br>
+							今ある全てが 幸せが 恐くて<br>
+							hey yeah 眩しい grand blue<br>
+							baby 願い叶えて ずっと信じていると<br>
+							誓うから 何も言わず 強く抱きしめて</p>
+						<p>
+							こんな風に 季節過ごして<br>
+							「一緒にまた来よう。」と<br>
+							そんな言葉 胸熱くする<br>
+							あなたの隣で 感じた あの日を 忘れない…</p>
+						<p>
+							hey yeah 遥かなる grand blue<br>
+							baby 側にいさせて<br>
+							会いたい 明日もあさっても あなたに触れていたい<br>
+							hey yeah 永遠なる grand blue<br>
+							baby 素直に言える 少し照れるけれども<br>
+							すごく 愛しくて 涙が流れて来る</p>
+						<p>
+							AH… 輝く 夏のgrand blue</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-cheekyangel-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

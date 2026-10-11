@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>猫飯店メニュー·ソング - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">【５月】</div>
+
+                    <div class="LyricTitle">猫飯店メニュー·ソング</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">シャンプー</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲：川井憲次<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							＊請来　請来　猫飯店　(チンライ　チンライ　ねこはんてん)<br>
+							　好吃了　好吃了　猫飯店　(ハオチラ　ハオチラ　ねこはんてん)<br>
+							　麺是好吃了　姑娘是漂亮　(ミェンシーハオチラ　クーニャンシーピャオリャン)<br>
+							　請来　請来　猫飯店　(チンライ　チンライ　ねこはんてん)<br>
+							　好吃了　好吃了　猫飯店　(ハオチラ　ハオチラ　ねこはんてん)<br>
+							　麺是好吃了　姑娘是漂亮　(ミェンシーハオチラ　クーニャンシーピャオリャン)</p>
+						<p>
+							柳麺　湯麺　炒飯　叉焼麺　(ラーメン　タンメン　チャーハン　チャーシューメン)<br>
+							雲呑　餃子　炒麺　雲呑麺　(ワンタン　ギョーザ　やきそば　ワンタンメン)<br>
+							雑麺　焼売　芙蓉蟹蛋　生碼麺　(チャンポン　シューマイ　かにたま　もやしそば)<br>
+							什景雲呑　蝦仁炒飯　白飯　水餃子　(ごもくワンタン　えびチャーハン　ライス　すいギョーザ)<br>
+							冷麺　(ひやしそば)　(おばば)夏期のみじゃ。</p>
+						<p>
+							＊繰り返し</p>
+						<p>
+							来々、来々、本日開店、本日開店。<br>
+							来々、おいしいよ?</p>
+						<p>
+							白菜湯　蛋花湯　什景湯麺　(やさいスープ　たまごスープ　ごもくそば)<br>
+							糖醋丸子　天津麺　中華丼　(にくだんご　かにたまそば　ちゅうかどん)<br>
+							什景炒飯　蝦仁湯麺　天津丼　(ごもくチャーハン　えびそば　てんしんどん)<br>
+							炒鮮菜　麻婆豆腐　糖醋肉塊　韮肝炒　(やさいいため　マーボーどうふ　すぶた　にらればいため)<br>
+							八宝菜　(はっぽうさい)　(八宝斉)呼んだかのぉ、シャンプーちゃん。</p>
+						<p>
+							＊繰り返し<br>
+							猫飯店　猫飯店　(ねこはんてん　ねこはんてん)</p>
+						<p>
+							(かすみ)かしわもちくださぁい。</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

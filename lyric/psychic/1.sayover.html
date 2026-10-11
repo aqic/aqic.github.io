@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Say Over - 煌羅万象</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">オープニング</div>
+
+                    <div class="LyricTitle">Say Over</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">田中理恵＆日笠山亜美</div>
+                    <div class="LyricStaff">作詞：有森聡美<br>作曲：益田賢治<br>編曲：太田美知彦</div>
+
+                    <div class="LyricText">
+						<p>
+							気づいてるこの気持ち　痛くなるけど<br>
+							崩したくないトライアングル<br>
+							恋のバランス<br>
+							触れ合えるならもっと　近くに居たい<br>
+							でも誰か傷つけば　悲しくなるよ<br>
+							恋したい心　臆病な心<br>
+							迷い込む　切ない森へ…</p>
+						<p>
+							Say Over　たとえこの先から<br>
+							棘の道だって<br>
+							消せない愛だから<br>
+							Say Over　運命が誰かに<br>
+							微笑みかけたって<br>
+							この想いはずっと…<br>
+							Say on Love  Say out Love<br>
+							消せない…</p>
+						<p>
+							愛しさや苦しさは　鏡合わせで<br>
+							いっそ誰かを嫌いに　なれば楽だね<br>
+							モラルさえ忘れ　晴れるならいいけど<br>
+							この胸に　霧がかかって…</p>
+						<p>
+							Say Over　手探りで掴んだ<br>
+							手軽な恋じゃない<br>
+							大切な愛だから<br>
+							Say Over　運命任せじゃない<br>
+							未来を刻みたい<br>
+							この想いをきっと<br>
+							Say on Love  Say out Love<br>
+							叶えて…</p>
+						<p>
+							Say Over　たとえこの先から<br>
+							棘の道だって<br>
+							消せない愛だから<br>
+							Say Over　運命が誰かに<br>
+							微笑みかけたって<br>
+							この想いはずっと…<br>
+							Say on Love  Say out Love<br>
+							消せない…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-psychic-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

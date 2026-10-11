@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>真情流露 - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">剧场版《爱，你还记得吗？》粤语版</div>
+
+                    <div class="LyricTitle">真情流露</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">陈慧娴</div>
+                    <div class="LyricStaff">曲：加藤和彥、安井一美<br>詞：因葵<br>編：盧東尼</div>
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							當天　這世界的空間多冰冷<br>
+							默默地令我感嘆　在靜靜夜晚<br>
+							長靠於窗邊星光暗淡<br>
+							那晚　我看到漆黑天空星閃過<br>
+							實在令我驚嘆　像是在預告<br>
+							明晚的天際星光燦爛</p>
+						<p>
+							祇想祇想真情流露<br>
+							何時跟他跟他一齊停步<br>
+							欣賞欣賞星河誰造<br>
+							柔情幾許幾許鋪成長路<br>
+							星光之中彷如迷路<br>
+							完全祇因祇因心如迷霧<br>
+							情深到老</p>
+						<p>
+							今天　我發覺他的心多溫暖<br>
+							像活著在我心間　又像未習慣<br>
+							懷裡的擁抱祇恐變幻<br>
+							這晚　我倆到海邊相擁<br>
+							他使我漸漸地覓到璀璨<br>
+							在靜靜夜晚　呆看他雙眼<br>
+							心輕跳彈</p>
+						<p>
+							路上冰凍<br>
+							那怕路上夜靜冰凍<br>
+							來共他相擁抱</p>
+						<p>
+							☆多少多少真情流露<br>
+							　隨時跟他跟他一齊停步<br>
+							　欣賞欣賞星河誰造<br>
+							　柔情幾許幾許鋪成長路<br>
+							　星光之中彷如迷路<br>
+							　完全祇因祇因他來情路<br>
+							　來將我抱</p>
+						<p>
+							☆Repeat</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

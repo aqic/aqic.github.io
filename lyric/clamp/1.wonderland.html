@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>あなただけのWONDERLAND - CLAMP</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">あなただけのWONDERLAND</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">廣谷順子</div>
+                    <div class="LyricStaff">作詞：大川七瀬<br>作曲：長岡成貢<br>編曲：長岡成貢</div>
+
+                    <div class="LyricText">
+						<p>
+							「扉」を探すのは難しいけれど<br>
+							まわりを良く見てね　チャンスはあるはずよ<br>
+							それはドアのかたち？道のおとし穴？<br>
+							もしかして「本」のペ－ジの中に隱れてるのかも</p>
+						<p>
+							「行き方」は簡単　信じればいいの<br>
+							あとは「勇気」と　誰か「好き」でいる心<br>
+							装備したら迷わず　一歩踏み出せば<br>
+							拡がる「物語」は　あなただけのWONDERLAND</p>
+						<p>
+							「神話の世界にいる神樣たち」<br>
+							「地球をかけた最後の戰いの行方」<br>
+							「お姫樣助ける魔法の咒文」も<br>
+							あなたにはそっと教えるわ　待ってるから<br>
+							あなただけの不思議の国</p>
+						<p>
+							「奇跡」を起こすのは難しいけれど<br>
+							「不思議」なこと　きっとたくさんあるはずよ<br>
+							わくわく冒険も　素敵な恋でも<br>
+							そこでは「本当」なの　あなただけのWONDERLAND</p>
+						<p>
+							「寂しい目の男の子」<br>
+							「優しい泥棒」<br>
+							「女の子のためだけにある探偵團」<br>
+							「町の平和守る正義の味方」も<br>
+							あなたが呼べばすぐ来るから　待っていてね<br>
+							あなただけの不思議の国</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-clamp-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

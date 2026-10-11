@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ボクらの冒険 - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ボクらの冒険</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Kids Alive</div>
+                    <div class="LyricStaff">作詞：Keiji<br>作曲：Keiji、朝三“Sammy”憲一<br>編曲：Kids Alive、朝三“Sammy”憲一</div>
+
+                    <div class="LyricText">
+						<p>
+							どこにあるのかな　ボクだけの宝物　今　大きな冒険へ</p>
+						<p>
+							やわらかな日差し　旅立ちの予感<br>
+							空も花も　ホラ　笑っている<br>
+							この先には何が待つのだろう？<br>
+							深呼吸　夢の扉にそっと手をかけて…「行こう！」</p>
+						<p>
+							風に吹かれながら　心揺らしながら<br>
+							真っ白な地図を片手に持ちながら<br>
+							ボクは走り出すよ　夢を叶えるため　どんな壁も越えてやる</p>
+						<p>
+							風に吹かれながら　明日を描きながら<br>
+							遠くまで　何処まで？　行けるところまで<br>
+							タンジュンな不安もフクザツな未来も<br>
+							もう　何も何も　コワクナイ</p>
+						<p>
+							ゆっくり探せばイイ　傷つく事なんてそれはみんな同じダヨ…</p>
+						<p>
+							駆け出したボクは「夢の旅人」さ<br>
+							空も花も　ホラ　笑っている<br>
+							たったひとつの　そう　自分の道<br>
+							靴のひもを結ぶ前から　あきらめちゃいけない…「だから！」</p>
+						<p>
+							風に吹かれながら　心揺らしながら<br>
+							真っ白な地図を片手に持ちながら<br>
+							風に吹かれながら　明日を描きながら<br>
+							遠くまで　何処まで？　たどり着けるまで</p>
+						<p>
+							絶対負けないよ　絶対泣かないよ<br>
+							この夢を叶えるその日までは<br>
+							あの空は笑っていた　あの花は笑っていた<br>
+							ボクもいつか笑うから<br>
+							どんな壁も越えるから　もう　何も何も…コワクナイ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

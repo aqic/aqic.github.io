@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Canta per me - NOIR</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Canta per me</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">贝田由里子</div>
+                    <div class="LyricStaff">作词：梶浦由纪<br>作曲：梶浦由纪<br>编曲：梶浦由纪</div>
+
+                    <div class="LyricText">
+						<p>
+							きよならを歌（うた）つて甘（あま）い声（こえ ）で<br>
+							月（つき）明（あ）かりの夜（よる）頬（ほお ）を寄（よ）せて<br>
+							思（おも）い出（で）だけが奏（かな）でる歌（うた ）を<br>
+							誰（だれ）もいない野原（のはら）に置（お）いていくの</p>
+						<p>
+							誰（だれ）かが歩（ある）いた道（ みち）の上（うえ）に<br>
+							灯 火（ともしび）が一（ひと）つ白（しろ）く残（のこ）る<br>
+							想（おも）いはいつか誰（だれ）かに届（とど）く<br>
+							遠（とお ）い時（とき）の 彼方（かなた）できっと貴方（ あなた）に</p>
+						<p>
+							la vita dell'amore?<br>
+							O dilette del cor mio?</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-noir-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

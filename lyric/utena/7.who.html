@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>何人も語ることなし - 少女革命ウテナ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「少女革命ウテナ」 決闘の歌１２(1997)</div>
+
+                    <div class="LyricTitle">何人も語ることなし</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">杉並児童合唱団</div>
+                    <div class="LyricStaff">作詞・作曲：J.A.シーザー</div>
+
+                    <div class="LyricText">
+						<p>
+							何人も語ることなし<br>
+							何事も語ることなし<br>
+							ただ、昨日という閉ざされた暗闇に<br>
+							ただ、今というほんの瞬間の閃光に<br>
+							何人にもなることあり<br>
+							何事にも語ることあり<br>
+							ただ、記憶という閉ざされた暗闇に<br>
+							ただ、創造するほんの瞬間の閃光に<br>
+							ただ、明日という光待つ暗闇に、劇場に<br>
+							ああ　踊れよ　時の仮面をつけた<br>
+							芸人たちの古代大陸劇場<br>
+							ああ　踊れよ　銀河鉄道より来る<br>
+							君たちの憧れ　三つの七不思議<br>
+							星のように　ホタルのように<br>
+							光って生まれ、光って消える<br>
+							光って生まれ、光って消える<br>
+							生まれ消える　わたしたち<br>
+							光って生まれ、光って消えろ<br>
+							生まれ消えろ　わたし玉<br>
+							光って生まれ、光って消えた<br>
+							生まれ消えた　わたし星<br>
+							一番星　ワタシボシ<br>
+							光って消えろ　ホタルボシ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-utena-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

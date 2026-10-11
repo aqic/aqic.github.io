@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>MIX JUICE - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">MIX JUICE</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							ブルーな夢で目覚めた　冴えないBad morning<br>
+							目覚し時計 ring！　鳴り響く<br>
+							あくびしながら　横目でチェックする７時のnews<br>
+							星占いまで　最悪なんて</p>
+						<p>
+							いいよ　いいよ　こんな日には　秘密兵器に<br>
+							スイッチいれて</p>
+						<p>
+							shakin'up shakin'up shakin'up　しぼって　たわわのフルーツと<br>
+							shakin'up shakin'up shakin'up　まぜまぜ　朝の光を<br>
+							I love you　I love you　I love so,baby　あなたの笑顔がspice<br>
+							shakin'up shakin'up shakin'up,OK　special juice</p>
+						<p>
+							生まれたての太陽と　青い空を見てたら<br>
+							それだけでも　good day　いい気持ち<br>
+							風に吹かれ深呼吸　鼻歌なんか歌い<br>
+							楽しかった事　思い出してみる</p>
+						<p>
+							いいよ　いいよ　こんな日でも　フルチャージでGo!<br>
+							グラス片手に</p>
+						<p>
+							shakin'up shakin'up shakin'up　しぼって　たわわのフルーツと<br>
+							shakin'up shakin'up shakin'up　まぜまぜ　ウィンクひとつ<br>
+							I love you　I love you　I love so,baby　笑顔になる秘密<br>
+							shakin'up shakin'up shakin'up,OK　よみがえれpower</p>
+						<p>
+							うまくいかない時もあるよ　でもね<br>
+							元気だして　歩いてゆける<br>
+							だって　瞳を閉じるだけでも　そう　あなたがいるの</p>
+						<p>
+							shakin'up shakin'up shakin'up　しぼって　たわわのフルーツと<br>
+							shakin'up shakin'up shakin'up　まぜまぜ　もう大丈夫<br>
+							I love you　I love you　I love so,baby　あなたの笑顔がspice<br>
+							shakin'up shakin'up shakin'up　ごくごく飲み干し　部屋を飛び出せ！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

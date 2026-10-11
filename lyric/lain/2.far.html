@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>遠い叫び - serial experiments lain</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Serial Experiments Lain」 エンディング ・テーマ</div>
+
+                    <div class="LyricTitle">遠い叫び</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">仲井戸鹿市</div>
+                    <div class="LyricStaff">作詞·作曲：仲井戸鹿市</div>
+
+                    <div class="LyricText">
+						<p>
+							何の罪も無いはずなのに<br>
+							何らかの罰を受けてる<br>
+							時分で蒔いた種でもないのに<br>
+							咲き乱れた花摘まされる</p>
+						<p>
+							知らないことともいえないが<br>
+							片棒かついだ覚えは無い<br>
+							自由を高く買わされた気もするが<br>
+							心まで安く売った覚えは無い</p>
+						<p>
+							Hey Hey　くたばって　おさらばするまで<br>
+							Hey Hey　誰の手にもかからない<br>
+							遠い夜をうろついてる<br>
+							知らないだろう永遠のならず者達を</p>
+						<p>
+							ゆるせない仕打ちでもないが<br>
+							癒せる傷でもあるまい<br>
+							泣けそうな夜には女抱いて<br>
+							このちんけな娑婆から高飛びさ</p>
+						<p>
+							Hey Hey　くたばって　おさらばするまで<br>
+							Hey Hey　誰の手にもかからない<br>
+							遠い夜をうろついてる<br>
+							知らないだろう永遠のならず者達を</p>
+						<p>
+							何の罪も無いはずなのに<br>
+							何らかの罰を受けてる<br>
+							自由を高く買わされた気もするが<br>
+							心まで安く売りとばす腹は無い . . . . . . .</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lain-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Yell（日中対訳） - Leaf</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「To Heart」エンディング</div>
+
+                    <div class="LyricTitle">Yell（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川澄綾子</div>
+                    <div class="LyricStaff">作詞：六 見純代<br>作曲：坂本昌之<br>編曲：前田克樹</div>
+
+                    <div class="LyricText">
+						<p>
+							流れ出した人ごみの自動改札を<br>
+							樂しげに笑って過ぎる制服たち<br>
+							あんな風に無邪氣な季節すごし<br>
+							現實が最近 少しイタイ</p>
+						<p>
+							理由もなく はしゃいで<br>
+							ときめいたりしてた<br>
+							場所にもう今はもどれないけど</p>
+						<p>
+							歩き出そう この場所から<br>
+							輝いた寶物抱いて<br>
+							きっと同じよな めくもりを<br>
+							胸の中みんなもしまって頑張っている</p>
+						<p>
+							忙しく過ごしてて忘れそうになる<br>
+							笑顏のビタミンがかなり切れている頃</p>
+						<p>
+							留守電から懷かしい聲が聞こえ<br>
+							受話器取り なんだかゲンキでちゃう</p>
+						<p>
+							會わないでいたって<br>
+							いつも居るみたいに<br>
+							あの時のままで<br>
+							名前を呼べる</p>
+						<p>
+							ひとりじゃない 離れてても<br>
+							いつだって どこかで 誰かが<br>
+							そっと心からはげましてくれている<br>
+							エ一ルを私に屆けてくれる</p>
+						<p>
+							樂しくて確かな瞬間を收めた<br>
+							アルバムはいつもこの胸にある</p>
+						<p>
+							歩き出した この場所から<br>
+							輝いた寶物抱いて<br>
+							きっと同じよなまなざしで<br>
+							この空を誰かが必ず見ているから</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							从自动剪票机那边走出来<br>
+							一群笑逐颜开的女学生<br>
+							天真烂漫的季节　已从我身边流过了<br>
+							最近现实总令我感到有点伤痛。</p>
+						<p>
+							没有任何理由　不能再回到<br>
+							那个欢乐　又令人心动的地方了</p>
+						<p>
+							从这个地方　大步走出去<br>
+							拥抱住闪闪生辉的宝物<br>
+							一定是同样的吧　我能微微的感觉到<br>
+							心中的各位也在紧张地<br>
+							努力地过每一天</p>
+						<p>
+							由于太过忙碌　好象变得有点善忘了<br>
+							当我忘记了去摄取"笑颜"的维他命时</p>
+						<p>
+							总能从电话留言中听到令人怀念的声音<br>
+							拿起话筒　致电给他</p>
+						<p>
+							即使一直不能再见　当我像旧时一样<br>
+							叫他的名字时<br>
+							总觉得任何时候都在我身旁</p>
+						<p>
+							我不是孤独一人的　就算分开了<br>
+							无论何时，何地，也会有人<br>
+							默默地从心底里鼓励我<br>
+							向我发出打气的叫喊声</p>
+						<p>
+							将每一刻存在过的快乐时光收集起来<br>
+							的相簿　一直长存于我的心底里</p>
+						<p>
+							从这个地方　大步走出去<br>
+							拥抱住闪闪生辉的宝物<br>
+							因为一定有谁<br>
+							用和我此刻一样的眼神<br>
+							凝望这片天空</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-leaf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>I JUST FEEL SO LOVE AGAIN - まもって守護月天!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">まもって守護月天！</div>
+
+                    <div class="LyricTitle">I JUST FEEL SO LOVE AGAIN</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sweet Velvet</div>
+
+                    <div class="LyricText">
+						<p>
+							きらめく時間<br>
+							少し遅い朝を刻んでゆく<br>
+							こもれ陽に<br>
+							抱かれて眠るあなた見つめてた<br>
+							近くても　遠く感じて見えなくて<br>
+							すれ違いの　もどかしさに<br>
+							強がりもするけど</p>
+						<p>
+							I just feel so love again<br>
+							そばにいるだけで<br>
+							不器用な優しさ見えてくる<br>
+							確かなこと　なんてなくていい<br>
+							忘れかけてたほほえみも取り戻せるよ<br>
+							変わらない想いだけ　この胸に</p>
+						<p>
+							そのとき見た<br>
+							空の色も思い出せないけど<br>
+							素肌に　感じたときめき<br>
+							今も覚えてる<br>
+							ときに愛は　流されてほどけてゆく<br>
+							見えない糸　つないでゆく<br>
+							眩しいその笑顔</p>
+						<p>
+							※I just feel so love again<br>
+							　そばにいるだけで<br>
+							　越えて行けるよどんな季節も<br>
+							　ありのままに　愛してゆきたい<br>
+							　たとえばそれですべてを<br>
+							　なくしたとしても<br>
+							　ほかに何もいらない　あなただけ</p>
+						<p>
+							※Repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-mamote-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

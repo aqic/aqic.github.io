@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>SPEED - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">SPEED</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							風を切り行こうよ！　さあ<br>
+							駆け出そう一緒に　ずっと先へ<br>
+							全力で　SPEED　出そう<br>
+							誰よりも　負けないから</p>
+						<p>
+							僕より速く走り抜けるその度、胸が<br>
+							ドキドキしちゃう　かなわないくらいスキ！<br>
+							届きそうで届かない距離を　ずっと保って<br>
+							遊んでるみたい　追いついてみせるから<br>
+							手と手を繋いだら　あの丘を飛び越えて<br>
+							二人だけの時空の中　居たいよ</p>
+						<p>
+							風を切り行こうよ！　さあ<br>
+							駆け出そう一緒に　ずっと先へ<br>
+							全力で　SPEED　出そう<br>
+							誰よりも　負けないから</p>
+						<p>
+							僕より近くその瞳に写る誰かが<br>
+							居たならヤダよ！　譲れないくらいスキ！<br>
+							この気持ちかかえきれないほど、ドジをするの…<br>
+							もっとよく見てよ　ハートがブカブカ<br>
+							手と手を繋いだら　もう離したくないよ<br>
+							二人だけの時空の中　居たいよ</p>
+						<p>
+							この胸の鼓動がもう<br>
+							弾けそう　恋だとそっと気づく<br>
+							いつだって　SPEED　出そう<br>
+							誰よりも　大好きだよ</p>
+						<p>
+							風を切り行こうよ！　さあ<br>
+							駆け出そう一緒に　ずっと先へ<br>
+							全力で　SPEED　出そう<br>
+							誰よりも　負けないから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>My Jolly Days - ＧＳ美神</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場用アニメーション 「ＧＳ美神 極楽大作戦」 エンディングテーマ</div>
+
+                    <div class="LyricTitle">My Jolly Days</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">奥井雅美</div>
+
+                    <div class="LyricText">
+						<p>
+							(Huu wow wow Huu yeah)<br>
+							Swing するより素敵 このFeeling<br>
+							さりげなく In the groove<br>
+							どんな宝石も It's no good まだ Falling<br>
+							かなわない 飾れない 今の私は</p>
+						<p>
+							※ページをめくればスリル My everyday<br>
+							　夢は色付きでリアル 思い通り光る</p>
+						<p>
+							＃Jolly Day 喜びも涙も 大切なことは<br>
+							　楽しめる My jolly day<br>
+							　I do it，Let's together!<br>
+							　傷ついてもいいじゃない<br>
+							　Jolly day 孤独でも恋でも<br>
+							　私のまわりをとりまくのは Jolly day<br>
+							　すべてが輝き 愛してる My Jolly Days</p>
+						<p>
+							Step するより軽く Walk in my heart<br>
+							毎日が to the grade<br>
+							扉を開ければ<br>
+							It's so good High up my heart<br>
+							きらめきが私へと押し寄せてくる<br>
+							星のまたたきはクール My everyday<br>
+							時間の流れはパズル 思い通り生きる</p>
+						<p>
+							Jolly day さよならも出会いも<br>
+							大切なことは忘れない My jolly day<br>
+							I do it，Let's together!<br>
+							振りむいてるわけじゃない<br>
+							Jolly day 何よりも私を<br>
+							一番綺麗に飾れるのは Jolly day<br>
+							すべてを抱きしめ 愛せる私なの</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							＃くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gsmikami-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

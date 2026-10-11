@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>The Probationer and the Pri - ロードス島戦記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Lodoss Tou Senki: Eiyuu Kishi Den</div>
+
+                    <div class="LyricTitle">The Probationer and the Pri</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricStaff">Lyrics/Composition: Chinatsu Kuzuu<br>Arrangement: Hisaaki Hokari</div>
+
+                    <div class="LyricText">
+						<p>
+							The clouds are gray, and on his way<br>
+							Notorious spirits arise to play<br>
+							Around this isle, where once the bile<br>
+							Of the god of War surveyed every mile</p>
+						<p>
+							Although uncertain he decides to go<br>
+							His hope is simple: to stand in a row<br>
+							Of knights and swords and bows</p>
+						<p>
+							A black nightmare freezes her hair<br>
+							It almost seizes her mind so rare<br>
+							As every night a trace of light<br>
+							Takes her alone in an eerie sight</p>
+						<p>
+							And in her vision lies a maid so frail<br>
+							An incantaion echoes like the wail<br>
+							Of people worn and pale</p>
+						<p>
+							Waiting for his return, a boy plays<br>
+							Tunes that take him back to the days<br>
+							Of the Great Six, the brilliant epic never fades</p>
+						<p>
+							She knows for whom she'll face the doom<br>
+							As long as this isle is someone's tomb<br>
+							He wonders why they all come by<br>
+							To help him, though his ideal so high</p>
+						<p>
+							She never hesitates to exercise<br>
+							Her mystic insight and to help the wise<br>
+							From Fate she never hides</p>
+						<p>
+							Waiting for his return, a boy sings<br>
+							Songs the ancients sang for their kings<br>
+							To his lute swirls the air<br>
+							And you may hear the rings<br>
+							La, la, la...<br>
+							And you may hear the rings<br>
+							La, la, la...<br>
+							And you may hear the rings</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lodoss-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

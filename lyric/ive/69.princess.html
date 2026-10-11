@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>王子よ ~月の裏から~ - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">(I`ve original song)</div>
+
+                    <div class="LyricTitle">王子よ ~月の裏から~</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島宮えり子</div>
+                    <div class="LyricStaff">作詞：MELL<br>作曲·編曲：高瀨一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							今一指の切が切られました<br>
+							でも9本が残ります<br>
+							この指で罪を犯さず<br>
+							痛みか道 痛みが祈り<br>
+							あなたに会える近道</p>
+						<p>
+							母のように泣いてくれた友達<br>
+							父のように兄のかわりの<br>
+							目の裏で泣いた恋人</p>
+						<p>
+							今やっとこのふところに<br>
+							舞い降りた永きひの憧れ</p>
+						<p>
+							王子よあなたが ここに来たとは</p>
+						<p>
+							割れガラスの雪崩となろう<br>
+							私の心碎き 炎になって<br>
+							飛びこんできてと叫べば</p>
+						<p>
+							この海はあなたになびき<br>
+							喜びの船に溢れる</p>
+						<p>
+							王子よ私はすぐに行きます</p>
+						<p>
+							Silent Night なめらかな星の川<br>
+							胸のリボンほどいていって<br>
+							あぁ..顔も上げられない</p>
+						<p>
+							いつの日も求めあう人<br>
+							生まれ変わり死に変わりしても<br>
+							傷なら 測かりしれず<br>
+							それでも 兩人は一つよ</p>
+						<p>
+							愛を交した肌に滅びなど無い<br>
+							風はうたい 綠追われる鳥も希望へ屆いたわ</p>
+						<p>
+							王子よ私はその指先に<br>
+							[火丁]る光...道を照らして<br>
+							正しきを 迷わないでと</p>
+						<p>
+							月の裏から...月の裏から...<br>
+							月の裏側で...月の裏から...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

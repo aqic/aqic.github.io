@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>神様の伝言 - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「あぁっ女神さまっ Singles」収録曲</div>
+
+                    <div class="LyricTitle">神様の伝言</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ベルダンディー、ウルド、スクルド</div>
+
+                    <div class="LyricText">
+						<p>
+							好きなひとに遭いたくない<br>
+							揺れる思いは<br>
+							うまく大人になれないこと<br>
+							あせる少女の胸</p>
+						<p>
+							部屋の鍵をそっと掛けて<br>
+							涙するのは<br>
+							子供のフリが窮屈なこと<br>
+							気づかれたくなくて</p>
+						<p>
+							　悩みなさい　宇宙のしくみより<br>
+							　複雑な心　痛めて<br>
+							　不安のない　幼い頃に<br>
+							　戻れはしないよ</p>
+						<p>
+							神さまから伝言がある<br>
+							－窓を開けよ－と<br>
+							星降る夜に降りて行って<br>
+							願い叶えようと</p>
+						<p>
+							素直なまま　綺麗なまま<br>
+							大人になれる<br>
+							選ばれたのは夢を捨てず<br>
+							悩んで生きるから</p>
+						<p>
+							　愛しなさい　敏感な心なら<br>
+							　傷ついたひとに逢えるよ<br>
+							　自分じゃなく　誰かのために<br>
+							　泣けたらいいよね</p>
+						<p>
+							　信じなさい　神さまが降りて来て<br>
+							　すべての悩みを消すから<br>
+							　昨日までの　不安な日々に<br>
+							　さよなら言えるから</p>
+						<p>
+							　感じなさい　敏感な心なら<br>
+							　傷ついた愛がわかるよ<br>
+							　好きなひとの　悲しみのため<br>
+							　泣けたらいいよね</p>
+						<p>
+							　しあわせだよね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

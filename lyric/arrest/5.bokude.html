@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>仆であるために - 逮捕しちゃうぞ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">仆であるために</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							ジグザグ　世界は回り溜め息ついて<br>
+							谁がが立ち止まるけど　现实は续く</p>
+						<p>
+							爱を爱として爱らしく　梦を梦として梦らしく<br>
+							本气で词るには难しく　时代は突き进んでるけど<br>
+							君を幸せにしよう　仆が仆らしく仆であるために</p>
+						<p>
+							その场をやり过ごすように　话を合わせ<br>
+							本音をしまい橢んでる　自分に气付く</p>
+						<p>
+							爱を爱として爱らしく　梦を梦として梦らしく<br>
+							本气で词るには难しく　时代は突き进んでるけど<br>
+							君を幸せにしよう　仆に出来るすべての事を捧げ</p>
+						<p>
+							素直になれる时を　すばやくつかまえたら<br>
+							饰らぬ言叶だけ　君に赠る</p>
+						<p>
+							爱を爱として爱らしく　梦を梦として梦らしく<br>
+							本气で词るには难しく　时代は突き进んでるけど<br>
+							君を幸せにしよう　仆が仆らしく仆であるために</p>
+						<p>
+							爱を爱として爱らしく　梦を梦として梦らしく<br>
+							本气で词るには难しく　时代は突き进んでるけど<br>
+							君を幸せにしよう　仆に出来るすべての事を捧げ</p>
+						<p>
+							ジグザグ　世界は回り溜め息ついて<br>
+							谁がが立ち止まるけど　爱は止まらない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-arrest-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

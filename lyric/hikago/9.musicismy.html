@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>MUSIC IS MY THING - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">MUSIC IS MY THING</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">dream</div>
+                    <div class="LyricStaff">作詞：John Sauli(訳詞:海老根祐子)<br>作曲：Fonny De Wudi<br>編曲：冬野竜彦</div>
+
+                    <div class="LyricText">
+						<p>
+							Ring my bell ノイズだらけの胸で 運命を聞き分ける<br>
+							ひらめく 夢は私のなかで 目覚めを待ってた</p>
+						<p>
+							Music is my thing 自分らしくなれる<br>
+							Music in my heart ときめき鳴らして<br>
+							Music is my thing 一度だけのmelody<br>
+							Music in my heart 強く奏でたい</p>
+						<p>
+							Sing my dream 私だけの居場所で 心を広げよう<br>
+							きらめく 夢を忘れなければ 未来は果てしない</p>
+						<p>
+							Music is my thing 体を動かす<br>
+							Music in my heart 光を感じて<br>
+							Music is my thing 白と黒で描く<br>
+							Music in my heart 終わらないharmony</p>
+						<p>
+							Music is my thing 自分らしくなれる<br>
+							Music in my heart ときめき鳴らして<br>
+							Music is my thing 一度だけのmelody<br>
+							Music in my heart 強く奏でたい</p>
+						<p>
+							Music is my thing 体を動かす<br>
+							Music in my heart 光を感じて<br>
+							Music is my thing 白と黒で描く<br>
+							Music in my heart 終わらないharmony</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

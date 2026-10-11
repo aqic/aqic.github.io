@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Give a Reason - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「スレイヤーズ NEXT」オープニングテーマ</div>
+
+                    <div class="LyricTitle">Give a Reason</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							目まぐるしい　時間の群れが<br>
+							走り抜ける　都市（まち）はサバンナ<br>
+							かわるがわる　シュールなニュース<br>
+							明日（あす）になれば　誰も忘れてる<br>
+							生きている　今、生きている<br>
+							そんな中で　何かを求め<br>
+							もがくように　抜け出すように<br>
+							この力を　試してみたくて</p>
+						<p>
+							※きっとどこかに「答」ある<br>
+							　生まれてきた答が<br>
+							　人は皆、それを求め<br>
+							　やるせない　のがせない　夢に向かうの</p>
+						<p>
+							傷つく事は恐くない<br>
+							だけどけして強くない<br>
+							ただ、何もしないままで<br>
+							悔やんだりはしたくない<br>
+							Here we go! go!　走り続ける<br>
+							誰にも止められはしない<br>
+							未来の自分へと<br>
+							Give a reason for life<br>
+							届けたい</p>
+						<p>
+							計り知れない　大きな闇が<br>
+							音を立てて　向かって来ても<br>
+							朝が来れば　誰かが居れば<br>
+							心にある　絶望は消せる<br>
+							もっと強くイメージして<br>
+							微笑んでる自分を……<br>
+							信じてる思い、それが<br>
+							何よりも　誰よりも　夢に近づく</p>
+						<p>
+							ゴールにもたれたりしない<br>
+							たとえ、辿り着いたって<br>
+							新しい夢がきっと　私の背中押すから<br>
+							Here we go! go!　走り続ける<br>
+							誰にも止められはしない<br>
+							未来の自分へと<br>
+							Give a reason for life<br>
+							届けたい</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>愛すべき明日 - フルーツバスケット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Fruits Basket」Version</div>
+
+                    <div class="LyricTitle">愛すべき明日</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">岡崎　律子</div>
+                    <div class="LyricStaff">作詞・作曲：岡崎　律子</div>
+
+                    <div class="LyricText">
+						<p>
+							見あげた木々のあいだに　きらきら<br>
+							木漏れ日　揺れている</p>
+						<p>
+							この先　もう　いいことなんて<br>
+							何ひとつないように思えて</p>
+						<p>
+							それでも心が求めてる　愛されたいと願ってる</p>
+						<p>
+							愛してた　愛してるよ<br>
+							あの日も　今も</p>
+						<p>
+							愁いをおぼえ　きれいになる<br>
+							昨日よりも　ひとつ知るから</p>
+						<p>
+							なにかを抱えこんでいたって<br>
+							なんでもないように笑うのね</p>
+						<p>
+							あなたの気を晴らすものは何？<br>
+							私には　ああ　力もなく</p>
+						<p>
+							気にしてた　気にしてる<br>
+							あの日も　今も</p>
+						<p>
+							風の向こうに見えかくれしてる<br>
+							まだ見ぬ愛や　希望の手ごたえ<br>
+							見に行かなくちゃ　この手でさわって</p>
+						<p>
+							続いてる　続いてく<br>
+							あの日も　今も</p>
+						<p>
+							愛すべき　明日がある<br>
+							あの日も　今も</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fruitsbasket-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

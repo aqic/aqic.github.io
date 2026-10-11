@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Sound of Destiny - WHITE ALBUM</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">White Album</div>
+
+                    <div class="LyricTitle">Sound of Destiny</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">緒方理奈</div>
+                    <div class="LyricStaff">作詞：須谷尚子<br>作曲：中上和英<br>編曲：中上和英 &amp; 松岡純也</div>
+
+                    <div class="LyricText">
+						<p>
+							愛という形無いもの とらわれえている<br>
+							心臓が止まるような恋が あること知ってる<br>
+							会うたびに与えてくれた 憧れでさえ<br>
+							今でも信じている もう消えることはない</p>
+						<p>
+							ラクをせず 尽きることのない情熱は<br>
+							どこから来るの？ どこかに眠っているのかな</p>
+						<p>
+							ララ 星が今運命を描くよ 無数の光輝く<br>
+							今一つだけ決めたことがある あなたとは離れない<br>
+							そっと目を閉じれば 鼓動が聞こえる<br>
+							私が生きてる証（あかし）<br>
+							ハートの刻むリズムに乗って<br>
+							踊りながら行こう！ どこまでも・・・</p>
+						<p>
+							傷ついて傷つけられて 疲れてもまだ<br>
+							息が出来ないほどの恋に 落ちていくわたし<br>
+							行く手に待つのが 暗闇の世界でも<br>
+							きっと 輝く瞳を持ち続けられる</p>
+						<p>
+							ララ 星がいま ひとつに流れてゆく<br>
+							運命の輪まわり出す<br>
+							強くて弱く熱く冷たい 人の心宿る<br>
+							ムネに手を当てれば 鼓動を感じる<br>
+							あなたが生きてる証<br>
+							歌いながら行こう！ いつまでも・・・</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-whitealbum-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

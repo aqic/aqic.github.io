@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>情熱のPARADISE - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">情熱のPARADISE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">榎本温子、真田アサミ、沢城みゆき、小桜エツ子</div>
+                    <div class="LyricStaff">Lyrics : 池田裕幾<br>Music : Andou Takahiro<br>Arrangement : Andou Takahiro</div>
+
+                    <div class="LyricText">
+						<p>
+							恋は情熱のPARADISE　タイクツなんかケトバセ！<br>
+							だいじょうぶさ　明日も晴れる　ウキウキ<br>
+							君と情熱のPARADISE　サンバのリズム　はじけて<br>
+							風と踊れば　未来はカーニバル</p>
+						<p>
+							トキメキ感じたら　問題はホラ解決　あきらめていた夢さえ続きが始まる<br>
+							シアワセてんこ盛り　嵐がきても　負けないよ<br>
+							燃え上がったハートは　シジョウサイキョウムテキ</p>
+						<p>
+							時計の針のスピード勝手に決めよう　何でもできるこの時を　もっと熱く！</p>
+						<p>
+							恋は情熱のPARADISE　クヨクヨ顔にロケットパンチ<br>
+							見つめられて　いきなり胸が　ドキドキ<br>
+							君と情熱のPARADISE　サンバのリズム　揺られて<br>
+							ノリノリでいこう　未来はカーニバル</p>
+						<p>
+							“私のこと好き？”って　君の横顔のぞいたら<br>
+							テレて突然話かえてみたりして<br>
+							ラブパワー全開さ　奇跡も起こる　今ならば<br>
+							燃え上がったハートで　ズットイッショニイヨウ</p>
+						<p>
+							やまない雨の中でも夜通しパーティ　みんな持ってるその想い　もっと強く！</p>
+						<p>
+							恋は情熱のPARADISE　タイクツなんかケトバセ！<br>
+							だいじょうぶさ　明日も晴れる　ウキウキ<br>
+							君と情熱のPARADISE　サンバのリズム　はじけて<br>
+							風と踊れば　未来はカーニバル</p>
+						<p>
+							時計の針が進むの止めたりできる　魔法みたいなこの時を　もっと熱く！</p>
+						<p>
+							恋は情熱のPARADISE　クヨクヨ顔にロケットパンチ<br>
+							見つめられて　いきなり胸が　ドキドキ<br>
+							君と情熱のPARADISE　サンバのリズム　揺られて<br>
+							ノリノリでいこう　未来はカーニバル</p>
+						<p>
+							ウキウキ<br>
+							恋は情熱のPARADISE　サンバのリズムはじけて<br>
+							風と踊れば　未来はカーニバル</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

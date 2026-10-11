@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>女神になりたい ～for a yours～ - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">女神になりたい ～for a yours～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Okui Masami</div>
+                    <div class="LyricStaff">Lyrics : Okui Masami<br>Music : Yabuki Toshirou<br>Arrangement : Yabuki Toshirou</div>
+
+                    <div class="LyricText">
+						<p>
+							いつかきっとあなただけの…</p>
+						<p>
+							めまぐるしく過ぎてった<br>
+							春・夏・秋・冬<br>
+							2000年問題より<br>
+							上回ってた問題</p>
+						<p>
+							片思いをあの人に<br>
+							一度も言えなかった woo　なんだか…</p>
+						<p>
+							半径5m以上離れている<br>
+							瞳は背中ばかり追いかけている</p>
+						<p>
+							新世紀こんにてぃは！(こんにちは)<br>
+							浮かんだお陽さま<br>
+							「きのうまで後ろ向き」私を救った</p>
+						<p>
+							パーティー楽しかったよね<br>
+							last christmas 友達と woo　騒いで…</p>
+						<p>
+							半径5m以上離れてたって<br>
+							幸せベールでみんなを包めば<br>
+							‘magical sensation’‘miracle revolution’<br>
+							女神になれるように<br>
+							今はひとり輝くまで</p>
+						<p>
+							woo 本当は…<br>
+							半径5m以上離れたくない<br>
+							Tシャツもうすぐ半袖だってのに<br>
+							‘magical sensation’‘miracle revolution’<br>
+							心に起こして！<br>
+							きっと変われるから…</p>
+						<p>
+							半径5m以上離れてたって<br>
+							幸せベールを大きく広げて<br>
+							‘magical sensation’‘miracle revolution’<br>
+							女神になれるように<br>
+							そうあなたの… yes, みんなの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

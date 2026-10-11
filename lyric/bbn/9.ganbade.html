@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>がんばって！ - 万能文化猫娘</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">がんばって！</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							ひとりじゃないとか<br>
+							ハートに贈るエールなら<br>
+							Endless<br>
+							たくさん抱きしめてる<br>
+							未来はいつでも<br>
+							私の味方と信じて<br>
+							Get up　くじけたりしないわ<br>
+							だけど寒い夜は何となく<br>
+							寝つけなくて不安になるの<br>
+							がんばって！　明日の朝は<br>
+							がんばって！　ベッドを抜けて<br>
+							大きく窓を開いたら<br>
+							ハートの My Boy<br>
+							がんばって！　昨日よりもっと<br>
+							がんばって！　大きな声が<br>
+							私の背中を押すから<br>
+							負けられない気がするの</p>
+						<p>
+							夢見る瞳は<br>
+							どんなジュエルよりも綺麗に<br>
+							Shinin'　輝き続けられる<br>
+							ただの石ころと目を伏せる<br>
+							そんな弱気じゃつかめないよ<br>
+							がんばって！　欲しい何かを<br>
+							がんばって！　その手の中に<br>
+							確かに感じる<br>
+							その日まで　歩きだそう<br>
+							がんばって！　進み続けて<br>
+							がんばって！　見えてくるもの<br>
+							それは夢へのパスワード<br>
+							その瞳で捕らえてね</p>
+						<p>
+							がんばって！　明日の朝は<br>
+							がんばって！　ベッドを抜けて<br>
+							大きく窓を開いたら<br>
+							ハートの My Boy<br>
+							がんばって！　昨日よりもっと<br>
+							がんばって！　大きな声が<br>
+							私の背中を押すから<br>
+							負けられない気がするの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bbn-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

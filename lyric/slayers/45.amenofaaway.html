@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>雨のFar away - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">雨のFar away</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">柊　美冬</div>
+
+                    <div class="LyricText">
+						<p>
+							夢中で愛され幸せに　過ごした每日が<br>
+							永遠に二人続くのと　信じていた<br>
+							あの日まではずっと…<br>
+							ひとつの傘に腕を　絡めてるのは<br>
+							彼とそして、見知らぬ女　だあれ？</p>
+						<p>
+							「冗談だよ」って言って！<br>
+							小さくなる私に　気付いて<br>
+							強く抱いて　「誤解だよ」と言って<br>
+							この胸が痛い<br>
+							でも、何も聞けずいるの<br>
+							鳴りもしない電話見つめ　不安が募るわ<br>
+							あの日のまま私は　ひとり雨の中<br>
+							抜け出せず　Far away</p>
+						<p>
+							久し振りの事、あなたから<br>
+							呼び出し掛かるのは<br>
+							踊るこの心、押さえても　待ち合わせに<br>
+							急ぐ足は速い<br>
+							ちょっとク—ルに私　声を掛けたら<br>
+							あの日の女　あなたの橫、いたの…</p>
+						<p>
+							「冗談だよ」って言って！<br>
+							言い訳などしないで　慘めに<br>
+							なるだけだわ　戾れないと知った<br>
+							この胸が痛い<br>
+							でも、涙は見せないわ<br>
+							クルリと今、背中向けて　サヨナラあげるわ<br>
+							あの日のまま私は　ひとり雨の中<br>
+							抜け出せず　Far away</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

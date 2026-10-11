@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>想い - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">想い</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							恋をしています　言葉にならない程<br>
+							胸の奥が　切なく叫んでいる<br>
+							どうかこの想い　決して消えない想い<br>
+							あなたの元　届いて欲しい<br>
+							急に泣きたくなる夜　そっと<br>
+							星空にこの願いを　となえる</p>
+						<p>
+							寂しくて　愛しくて　切なくて<br>
+							初めての　感情に戸惑うの<br>
+							甘えたり　笑ったり　触れ合ったり<br>
+							いつの日か　来る事を信じたいの</p>
+						<p>
+							恋をしています　一時も変わらずに<br>
+							胸の奥はもう　はち切れそうなの<br>
+							だけどこの想い　口に出せない想い<br>
+							その眼差し　誰を見てるの？<br>
+							見上げた星が薄れて　滲む<br>
+							名前を何度も　つぶやいてみてる</p>
+						<p>
+							同じくらい　同じくらい　スキだったら<br>
+							こんなにも　苦しくはないのかな<br>
+							あと一歩　あと一歩　踏み出せば<br>
+							その想い　知る事も出来るけれど</p>
+						<p>
+							同じくらい　同じくらい　スキだったら…<br>
+							消えかけた　星空に祈ったの<br>
+							明日には　輝きを　取り戻す<br>
+							その強さ　"想い"は伝わるでしょう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

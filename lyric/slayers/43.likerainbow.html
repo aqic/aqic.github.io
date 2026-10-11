@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>虹のように - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">虹のように</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">奥井雅美</div>
+
+                    <div class="LyricText">
+						<p>
+							Black rain　激しい雨が<br>
+							Wow Wow Wow Wow　頬に痛い<br>
+							Break down　傘もささずに<br>
+							Wow Wow Wow Wow　立ちつくす　midnight</p>
+						<p>
+							孤独なんて　感じたことなかった<br>
+							この街は　誰もが　ひとりなんだと<br>
+							だけど　今あふれだした　熱い涙　とかして行く<br>
+							凍りついた心　抱きしめるように</p>
+						<p>
+							Let's go　愛し合いたい　もう一度　ピュアな心で<br>
+							Feel like doing　自分らしさを　取り戻したい<br>
+							Fly high　夜明けの空に　七色の虹が微笑む<br>
+							どんなに　ツライ時でも「明日は来るさ！」<br>
+							ら?ら?ら　Happy forever</p>
+						<p>
+							Black wind　激しい風が<br>
+							Wow Wow Wow Wow　行く手はばむ<br>
+							Break short　歩き疲れて<br>
+							Wow Wow Wow Wow　見失った　my way</p>
+						<p>
+							若さも　危うさも　“私”だった<br>
+							あの瞬間（とき）は　永遠に　続くんだと<br>
+							だけど　今教えられた　本当に　永遠なもの<br>
+							暖かいぬくもり　ふれた喜び</p>
+						<p>
+							Let'go　巡り合いたい　もう一度　すんだ瞳で<br>
+							Take it easy　お互いの夢　かなえるために<br>
+							Fly high　静かな空に　七色の虹が微笑む<br>
+							どんなに　つまづいたって「おそくないさ！」<br>
+							ら?ら?ら　Happy forever</p>
+						<p>
+							Let's go　愛し合いたい　もう一度　ピュアな心で<br>
+							Feel like doing　自分らしさを　取り戻したい<br>
+							Fly high　夜明けの空に　七色の虹が微笑む<br>
+							どんなに　ツライ時でも「明日は来るさ！」<br>
+							ら?ら?ら　Happy forever</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

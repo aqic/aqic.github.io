@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ようこそメタリック パーティー - CLAMP</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ようこそメタリック パーティー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Marble Berry</div>
+                    <div class="LyricStaff">編曲：Marble Berry<br>作詞：NORIKO<br>作曲：TERU</div>
+
+                    <div class="LyricText">
+						<p>
+							さぁ行こう　どこまでも　お樂しみはこれからよ<br>
+							ダンディーな宇宙飛行士　お迎えに来て連れてってよ</p>
+						<p>
+							暴發しているロケットも　すべり拔けて<br>
+							超音速で　飛ばして行こう</p>
+						<p>
+							ようこそ　メタリック‧パーティー　怖がらないで<br>
+							ビーズの星になるの今夜　宇宙の果て</p>
+						<p>
+							アトミックドリンクを　飲みほしたら　踴りだそうよ<br>
+							ペパーミントの宇宙スパイも　今日くらいはハメをはずして</p>
+						<p>
+							お尋ね者のモンスター達が　集う<br>
+							世紀末のカウンターバーで</p>
+						<p>
+							ようこそ　メタリック‧パーティー　勇気を出して<br>
+							アルミホイルのお月さまと　旅に出よう</p>
+						<p>
+							通譯ロボット　シーラカンス語もしゃべる<br>
+							近い未来には　不思議がいっぱい<br>
+							ケミカルに　もっと世界は狂いだす</p>
+						<p>
+							ようこそ　メタリック‧パーティー　怖がらないで<br>
+							ビーズの星になるの今夜　宇宙の果て</p>
+						<p>
+							ようこそ　メタリック‧パーティー　勇気を出して<br>
+							出發しようよ　終わらない未来の夢へ</p>
+						<p>
+							Welcome Welcome Welcome to THE METALLIC PARTY<br>
+							Welcome Welcome Welcome to THE METALLIC PARTY<br>
+							Welcome Welcome Welcome to THE METALLIC PARTY<br>
+							Welcome Welcome Welcome to THE PARTY!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-clamp-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

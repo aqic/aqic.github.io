@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Tears of Eden - かってに桃天使</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「かってに桃天使!2～Tears of Eden」 ED・テーマ(1999)</div>
+
+                    <div class="LyricTitle">Tears of Eden</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桑島 法子</div>
+                    <div class="LyricStaff">作詞：白峰美津子<br>作曲：浅井裕子<br>編曲：岩本正樹</div>
+
+                    <div class="LyricText">
+						<p>
+							そっとこぼれ落ちた<br>
+							その涙見つめたら<br>
+							すべてのことが<br>
+							なぜだか優しく思えたよ<br>
+							だれかのためにただ<br>
+							惱んだり祈ったり<br>
+							そんな暖かさが<br>
+							世界を変えてくなら</p>
+						<p>
+							この大地と風の音<br>
+							どこまでも遠く輝いてる<br>
+							この大地と空の果て<br>
+							ただ愛だけを伝えて行けたなら<br>
+							どんな時も</p>
+						<p>
+							厚い雲がとぎれ<br>
+							日が差してくるように<br>
+							僞りのない<br>
+							気持ちに始めて気づいたの<br>
+							誰も見たことのない<br>
+							永遠の夢の国<br>
+							あなたと一緖なら<br>
+							探せる気がするから</p>
+						<p>
+							この大地と風の音<br>
+							分け合いながら<br>
+							笑いながら<br>
+							この大地と空の果て<br>
+							いつでもそばに<br>
+							あなたがいるだけで<br>
+							強くなれる</p>
+						<p>
+							この大地と風の音<br>
+							どこまでも遠く輝いてる<br>
+							この大地と空の果て<br>
+							いつかあなたと二人で見つけたい<br>
+							夢の場所を...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-momotenshi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

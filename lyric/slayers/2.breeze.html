@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>BREEZE - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「スレイヤーズ TRY」オープニングテーマ</div>
+
+                    <div class="LyricTitle">BREEZE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+                    <div class="LyricStaff">作詞：有森聡美<br>作曲：佐藤英敏<br>編曲：添田啓二</div>
+
+                    <div class="LyricText">
+						<p>
+							高い空を　鳥になって飛びたい<br>
+							遙か遠い　希望を目指して<br>
+							見下ろしたら　小さな自分がいて<br>
+							ただ、がむしゃら　生きてるだろうか…</p>
+						<p>
+							こんな風に今を　見つめる事出来るなら<br>
+							傷つく事もなく　明日も怖くない</p>
+						<p>
+							※風に乗って　夢の彼方へ飛んで行きたい<br>
+							　勇気と言う翼を付けて<br>
+							　鳥になって　見下ろす心、持ち続けたい<br>
+							　リアルな日々に負けないよう…</p>
+						<p>
+							険しい道　獣が選ぶように<br>
+							嗅ぎ分けたら　転ぶ事もない</p>
+						<p>
+							でも人間なんて　迷わされてるばかりで<br>
+							孤独と戦った　強さを持たない</p>
+						<p>
+							風に乗って　夢の彼方へきっと行きたい<br>
+							勇気と言う瞳こらして<br>
+							獣よりも　険しい道を歩いてもまだ<br>
+							読めない心、失さずに…</p>
+						<p>
+							ちっぽけな自分を　見つける事出来るなら<br>
+							傷つく事もなく　明日も怖くない</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

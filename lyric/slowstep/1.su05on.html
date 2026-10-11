@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ONLY FOR YOU - スローステップ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">スローステップ オリジナルサウンドトラック</div>
+
+                    <div class="LyricTitle">ONLY FOR YOU</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐木 伸誘</div>
+                    <div class="LyricStaff">作詞：松井 五郎<br>作曲：佐木 伸誘<br>編曲：藤井 丈司、佐橋 圭幸</div>
+
+                    <div class="LyricText">
+						<p>
+							YOU... ONLY FOR YOU</p>
+						<p>
+							さぁ　どんな夢を見ていたのか<br>
+							乾いた瞳に　教えてほしい<br>
+							さぁ　涙をまだ　信じていた<br>
+							蒼い夏を　覚えてるなら</p>
+						<p>
+							夜明けまで聴いた　埃だらけの歌<br>
+							少年になれずに想い出を抱くとき</p>
+						<p>
+							わかるかい YOU　ONLY FOR YOU<br>
+							僕は何も惜しむものがない<br>
+							ONLY FOR YOU　ONLY FOR YOU<br>
+							君に逢えた　答をきっと見つけたい  もう　夕暮れより　もっと遠く<br>
+							行けないこと　僕は知ってる</p>
+						<p>
+							追いかけてたのは　いらないものばかり<br>
+							空っぽの気持が　風になる　そのとき</p>
+						<p>
+							わかるかい　YOU　ONLY FOR YOU<br>
+							駈けだしたい　明日よりはやく<br>
+							ONLY FOR YOU　ONLY FOR YOU<br>
+							なにかできる　予感を胸に秘めたまま</p>
+						<p>
+							ふり向けば　汚れた靴が<br>
+							輝いた　時の流れを<br>
+							教えてくれるから...</p>
+						<p>
+							わかるかい YOU　ONLY FOR YOU<br>
+							僕は何も惜しむものがない</p>
+						<p>
+							ONLY FOR YOU　ONLY FOR YOU<br>
+							君に会えた答をきっと見つけたい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slowstep-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>灵犀相通 - </title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">灵犀相通</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							看！全世界灯都亮了，像个玻璃做的天堂，<br>
+							我给你的礼物放在那梧桐树下，你要猜三下才能让你带回家。<br>
+							听！全世界钟都响了，它们露出天使般的笑，<br>
+							握住你的手掌告诉你，夜会很长，若还要歌唱，请别急着离开。<br>
+							靠紧我，不在乎被寒风吹痛——<br>
+							你的笑我最爱，你的泪我最懂，是同样的梦有种一起呼吸的冲动。<br>
+							靠紧你，我突然觉得好轻松——<br>
+							我的甜你收藏，我的酸你包容，是同样的爱，<br>
+							让我们终于了解，幸福就是灵犀相通——</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-musicup-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

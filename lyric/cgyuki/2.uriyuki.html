@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>瑠璃色の雪　～ふりむけば隣に～ - 瑠璃色の雪</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">PC「真·瑠璃色の雪 ～ふりむけば隣に～」ED</div>
+
+                    <div class="LyricTitle">瑠璃色の雪　～ふりむけば隣に～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">TAKAMI</div>
+                    <div class="LyricStaff">作詞：リバ原あき<br>作曲：一色 由比<br>編曲：I've</div>
+
+                    <div class="LyricText">
+						<p>
+							雪の歌  風の色<br>
+							木漏れ日  波の光<br>
+							みんなの笑顔溢れる  丘の上</p>
+						<p>
+							そっと心つないで<br>
+							輪になる  ひとつになる<br>
+							くるりくるり  冬の円舞（ロンド）</p>
+						<p>
+							そよ風に舞う髪が  金色の輪を描き<br>
+							舞い散る光まとって  きらめく</p>
+						<p>
+							ずっと夢見てた  景色に包まれて<br>
+							ふりむけば隣に  微笑むあなたがいる</p>
+						<p>
+							暖かい部屋の中<br>
+							ふと見上げた窓には<br>
+							ふわりふわりと雪が  舞って光る</p>
+						<p>
+							あなたの寝息感じて<br>
+							胸に頬寄せる<br>
+							ふたりだけの  静かな夜</p>
+						<p>
+							あなたを見つめている  あなたを感じている<br>
+							この想い  一番のたからもの</p>
+						<p>
+							あなたを信じている  あなたを愛してる<br>
+							それだけで他には  もう何もいらないの</p>
+						<p>
+							もしもはぐれても  胸の中の<br>
+							この想いが  わたしをあなたへと<br>
+							誘（いざな）う  みちしるべ</p>
+						<p>
+							朝焼け  夢のかけら<br>
+							幸せ  感じながら<br>
+							目を覚ませば隣に  あなたが····</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-cgyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

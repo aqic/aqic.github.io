@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>麦わらのジョリーロジャー - ONE PIECE</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">麦わらのジョリーロジャー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">きただにひろし</div>
+
+                    <div class="LyricText">
+						<p>
+							麦わら帽子のジョリーロジャー<br>
+							アイツがアイツがやってくる!<br>
+							町はもうすぐパーティ!パーティ!<br>
+							ゴムゴムの“Yeah”!</p>
+						<p>
+							世界を買い占めて<br>
+							遊園地にしちゃえ!<br>
+							大人もみんなコドモだったのさ</p>
+						<p>
+							未来を手に入れて<br>
+							博物館にしちゃえ!<br>
+							大事なものは、もう胸の中にある!</p>
+						<p>
+							世界が狭いなんて<br>
+							誰が言ったの?<br>
+							たくさんの物語<br>
+							ゴムゴムの笑顔!</p>
+						<p>
+							麦わら帽子のジョリーロジャー<br>
+							アイツがアイツがやってくる!<br>
+							町はもうすぐローリング!ローリング!<br>
+							ゴムゴムの“Yeah”!</p>
+						<p>
+							掃除機を買い占めて<br>
+							雨雲を吸い込んで!<br>
+							空も海もやっぱり青がいい色</p>
+						<p>
+							夢は夢だなんて<br>
+							誰が言ったの?<br>
+							(もう)たくさんの言い訳<br>
+							ゴムゴムのパーンチ!</p>
+						<p>
+							麦わら帽子のジョリーロジャー<br>
+							アイツがアイツがやってくる!<br>
+							町はもうすぐパーティ!パーティ!<br>
+							ゴムゴムの“Yeah”!</p>
+						<p>
+							麦わら帽子のジョリーロジャー<br>
+							アイツがアイツがやってくる!<br>
+							町はもうすぐローリング!ローリング!<br>
+							ゴムゴムの“Yeah”!</p>
+						<p>
+							ゴムゴムの“Yeah”!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onepiece-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

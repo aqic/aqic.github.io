@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君に吹く風 - フルメタル・パニック!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Fullmetal Panic 2 Fmoff</div>
+
+                    <div class="LyricTitle">君に吹く風</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">下川みくに（FLIGHT MASTER）</div>
+                    <div class="LyricStaff">作詞：何茶季<br>作曲・編曲：Sin<br>音楽：ポニーキャニオン</div>
+
+                    <div class="LyricText">
+						<p>
+							走り出す瞬間　坂道で風になる<br>
+							焼きつけた陽射しが　胸の奥熱くした</p>
+						<p>
+							Ah-　君に近づいて　行くたび早くなる<br>
+							時を駆ける　始まりの予感させる眼差しが好き</p>
+						<p>
+							小さな愛でいい　いつも側で　あたり前の時間<br>
+							今日出来ることは　こんな風に　何気ないことで<br>
+							君が振り向くように短く切った髪がゆれて<br>
+							また一つ増える笑い声　空に響いていく</p>
+						<p>
+							優しさに甘えて　少しだけ傷ついた<br>
+							移りゆく季節に　また二人結ばれる</p>
+						<p>
+							Ah-　こんな瞬間を　シアワセと呼べたら<br>
+							見つめあってこの街で　出会えた奇跡を感じてる</p>
+						<p>
+							遠回りして帰ろう　君ともう少し歩きたい<br>
+							何もない日こそ　側にいて　風になれたら<br>
+							雲の切れ間に届きそうだね　同じ空を見上げ<br>
+							その瞳に映した明日も　こうして過ごしたい</p>
+						<p>
+							Ah-　今日も手のひらに　のるようなヨロコビが<br>
+							あふれるから“ありがとう”<br>
+							優しくなりたい　君のため</p>
+						<p>
+							小さな愛でいい　いつも側で　あたり前の時間<br>
+							今日出来ることは　こんな風に　何気ないことで<br>
+							君が振り向くように短く切った髪がゆれて<br>
+							また一つ増える笑い声　空に響いていく</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fullmetal-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

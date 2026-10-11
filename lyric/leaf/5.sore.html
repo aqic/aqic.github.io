@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>それぞれの未来(あした)へ - Leaf</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">PS用ゲーム「To Heart」ED</div>
+
+                    <div class="LyricTitle">それぞれの未来(あした)へ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中司雅美</div>
+                    <div class="LyricStaff">作詞：須谷尚子<br>作曲：中上和英<br>編曲：松岡純也</div>
+
+                    <div class="LyricText">
+						<p>
+							桜の花が[咲さ]き[乱亂](みだ)れ<br>
+							大きめの制服をきて<br>
+							はなびらの舞う校庭を<br>
+							バックにして記念寫真とったね</p>
+						<p>
+							机にかいたらくがきも<br>
+							やさしくひびくチャイムも<br>
+							たそがれどきの教室も<br>
+							みんなみんなセピア色の思い出</p>
+						<p>
+							あかくそまる校舍みつめて<br>
+							いつか大人にかわっても<br>
+							子供のように時をわすれて<br>
+							おもいきりはしゃぎたい</p>
+						<p>
+							※どんなときも元気になれる<br>
+							　場所が必ずあるから<br>
+							　どこにいてもわすれないで<br>
+							　前に歩いてゆこう</p>
+						<p>
+							日燒けした肌みせあって<br>
+							いつも負けていた夏休み<br>
+							秋、冬過ぎて春がきて<br>
+							クラス替えが悲しくて涙した</p>
+						<p>
+							今思えば樂しい日々が<br>
+							フルスピードで過ぎてゆき<br>
+							そしていつか大人にかわる<br>
+							そんな事に気が付かない</p>
+						<p>
+							どんな時も勇気をくれる<br>
+							人が必ずいるから<br>
+							どこにいてもわすれないで<br>
+							前に進んでゆこう</p>
+						<p>
+							※Repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-leaf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

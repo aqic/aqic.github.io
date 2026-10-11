@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Shooting Star - おねがい☆ティーチャー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Opening Song</div>
+
+                    <div class="LyricTitle">Shooting Star</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：折戸 伸治<br>編曲：高瀬 一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							遠くに光るあの星二人見上げて<br>
+							君に出会った運命を思う<br>
+							何気ないふりで手の平触れてみるけど<br>
+							君は優しく微笑むだけで</p>
+						<p>
+							気持ちが強くなると不安の数も増えてゆくから<br>
+							一度抱きしめた心はどんな時も離さないで</p>
+						<p>
+							広い宇宙に一人だけの<br>
+							君が側にいてくれるなら<br>
+							壊れた時の針もやがて<br>
+							ゆっくり動き出す未来へ<br>
+							君はそのままでいて</p>
+						<p>
+							流れる星に願いをそっとつぶやく<br>
+							君と一緒にいられますように<br>
+							この時間だけをガラスの箱に閉じ込めて<br>
+							ずっと眺めていれたらいいのに</p>
+						<p>
+							優しい君の笑顔不安で曇らせたくないから<br>
+							泣き出したくなる時にはこの夜空を思い出すよ</p>
+						<p>
+							広い宇宙にたった二人の<br>
+							幸せの場所を見つけたね<br>
+							ここにあるのは月と星と<br>
+							二人を包む夜の風と<br>
+							君への思いだけ</p>
+						<p>
+							遠い国から辿り着いた<br>
+							君はあの光る星　Shooting Star<br>
+							絶えまなくそう瞬くよに<br>
+							未来も君も抱きしめると<br>
+							この夜空に誓う</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onegai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

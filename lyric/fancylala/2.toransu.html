@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>トランス・パランス - 魔法のステージ ファンシーララ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">トランス・パランス</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">大森玲子</div>
+
+                    <div class="LyricText">
+						<p>
+							透・け・て みえそうなの<br>
+							わ・た・し のすべてが<br>
+							あなたの視線の前で</p>
+						<p>
+							ま・だ・ね ちょっと早いわ<br>
+							ぜ・ん・ぶ みせちゃうのは<br>
+							そんなに急がせないで</p>
+						<p>
+							メイクや流行の洋服じゃ<br>
+							伝えきれない真実</p>
+						<p>
+							だから トランス・パランス おぼえててね<br>
+							モテるふりをしても ほんとはあなただけなの<br>
+							いつも アンバランス 気が強くて 誰より臆病なの<br>
+							私 あなたの海で もがいてるのに</p>
+						<p>
+							待・ち・合わせのCafeで<br>
+							あ・な・たじゃないひとを<br>
+							ちょっと思ってみたら</p>
+						<p>
+							ふ・わ・り 風が吹いて<br>
+							揺・れ・る 前髪を<br>
+							気にしてうつむいたとき</p>
+						<p>
+							テーブル超しの瞳が<br>
+							もう君を離さないと言った</p>
+						<p>
+							きっと トランス・パランス ことばよりも<br>
+							鼓動の速さまで あなたに届いてしまう<br>
+							いつも アンバランス あまのじゃくで 誤解されやすいけど<br>
+							私 とっくにみんな あなたのものなの</p>
+						<p>
+							だから トランス・パランス おぼえててね<br>
+							モテるふりをしても ほんとはあなただけなの<br>
+							いつも アンバランス あまのじゃくで 誤解されやすいけど<br>
+							私 とっくにみんな あなたのものなの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fancylala-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

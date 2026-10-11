@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>OBLIVION - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">OBLIVION</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MIO</div>
+                    <div class="LyricStaff">作詞：Linda Hennrick<br>作曲：松原みき<br>編曲：荻田光男</div>
+
+                    <div class="LyricText">
+						<p>
+							See the brave new world of man<br>
+							We created with our hands<br>
+							Watch it slip away<br>
+							Like a tiny grain of sand<br>
+							Think of all the sweat and tears<br>
+							Think of all the wasted years<br>
+							Does it make you sad?<br>
+							Just think of all we had</p>
+						<p>
+							No more time for laughter<br>
+							No more time for sorrow<br>
+							No more morning after<br>
+							Cause there's no more tomorrow now<br>
+							We are standing on the edge<br>
+							Of oblivion</p>
+						<p>
+							★ Say goodbye to Avalon<br>
+							as it fades into the dawn<br>
+							on the final countdown<br>
+							To oblivion<br>
+							Say goodbye to Avalon<br>
+							As the sacred fires burn<br>
+							In the end we are all return</p>
+						<p>
+							Have we really come this far<br>
+							Just watch it fall apart<br>
+							Now we face defeat<br>
+							And it tasted so bittersweet<br>
+							Bow to the hand of fate<br>
+							Curse the gods but it is too late<br>
+							From dusk to dusk<br>
+							There is nothing left for us</p>
+						<p>
+							No more time for courage<br>
+							No more time for honor<br>
+							No more morning heroes<br>
+							This is Armageddon now<br>
+							We are standing on the edge<br>
+							Of oblivion</p>
+						<p>
+							★ Repeat<br>
+							How soon we'll know<br>
+							The power of prophecy<br>
+							As we approach the hour of destiny<br>
+							There's no way to stop the tide<br>
+							Nowhere to run and hide from<br>
+							oblivion</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

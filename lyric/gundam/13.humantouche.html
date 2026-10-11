@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>HUMAN TOUCH - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ朝日系アニメ「機動新世紀ガンダムＸ」エンディング</div>
+
+                    <div class="LyricTitle">HUMAN TOUCH</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Warren Wiebe</div>
+
+                    <div class="LyricText">
+						<p>
+							CANIFIND THE WORDS TO TELL YOU<br>
+							HOW I LIVE BETWEEN THE WALLS OF STEEL AND STONE<br>
+							HOW I CLOSE MY EYES TO FIND SOME KIND OF RAPTURE<br>
+							IN A WORLD WHERE YOU CAN FEEL SO ALL ALONE</p>
+						<p>
+							INSIDE I'M FULL OF LIGHT AND LAUGHTER<br>
+							THERE'S A FLAME THAT BURNS IN ME<br>
+							I NEED A WAY TO SET IT FREE</p>
+						<p>
+							WHEN YOU FIND LOVE IN YOUR HEART<br>
+							YOU CAN BELIEVE FROM THE START<br>
+							DREAMS THEY COME TRUE<br>
+							IT ALL COMES TO YOU,OH ALL AT ONCE<br>
+							IF YOU BELIEVE<br>
+							IN HUMAN TOUCH</p>
+						<p>
+							I SEE WANTING IN YOUR EYES<br>
+							AND I WONDER WILL<br>
+							I ALWAYS THINK OF YOU<br>
+							DO WE SIMPLY FIND OURSELVES<br>
+							AWAKENING<br>
+							AS ANGELS TOUCHED<br>
+							THE HEARTSTRINGS OF OUR SOULS</p>
+						<p>
+							WE CAN FIND A WAY<br>
+							TO BREAK THE MADNESS<br>
+							TAKE MY HAND AND COME WITH ME<br>
+							TO A PLACE WHERE WE CAN FEEL</p>
+						<p>
+							WHEN YOU FIND LOVE IN YOUR HEART<br>
+							THE LIGHT IN YOUR EYE IS A STAR<br>
+							CHANGE THAT YOU FEEL<br>
+							HELPS YOU TO HEAL FROM ALL THE REST<br>
+							IF YOU BELIEVE<br>
+							IN HUMAN TOUCH</p>
+						<p>
+							TELL ME THAT YOUR LOVE<br>
+							WILL LIVE FOREVER<br>
+							TAKE YOUR HAND AND TOUCH MY FACE<br>
+							ON,THE WARMTH OF YOUR SWEET EMBRACE</p>
+						<p>
+							WHEN YOU FIND LOVE IN YOUR HEART<br>
+							NOTHING CAN TEAR IT APART<br>
+							NOT MAN OR STEEL<br>
+							NOTHING IS REAL  EXCEPT FOR LOVE<br>
+							IF YOU BELIEVE<br>
+							IN HUMAN TOUCH<br>
+							IF YOU BELIEVE<br>
+							IN HUMAN TOUCH</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

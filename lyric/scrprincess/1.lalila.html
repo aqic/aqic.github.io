@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>大地のla-li-la - スクラップド・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">TVアニメーション「スクラップド・プリンセス」エンディングテーム</div>
+
+                    <div class="LyricTitle">大地のla-li-la</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">上野洋子　伊藤真澄</div>
+                    <div class="LyricStaff">作詞：畑　亜貴<br>作曲、編曲：上野洋子</div>
+
+                    <div class="LyricText">
+						<p>
+							静かなる雨の恵み降る（降る）<br>
+							まだ遥か　遥か遠い地に<br>
+							待ってる誰かに　この愛の雫</p>
+						<p>
+							ふれてみる頬に朝の風が吹く（頬には）<br>
+							いま何を　何を感じたの？（何かを？）<br>
+							確かな意味を持つ（全てより）<br>
+							ただひとつの空まで</p>
+						<p>
+							追いかける雲の影に立ちどまり<br>
+							見つめたい　心の旅<br>
+							どこまでも　どこまでも<br>
+							懐かしい声にいつかめぐりあう</p>
+						<p>
+							alainn la-li-la</p>
+						<p>
+							やがて船は走る　走る<br>
+							（船はね　どこまで　未知なる　海の果て）<br>
+							そう､広い世界を信じて<br>
+							君は彼方へ<br>
+							そして未来へ</p>
+						<p>
+							友の手に手を重ね想う（手に）<br>
+							ほらいつか　いつかまた会える<br>
+							大きな笑顔が　まぶたを揺らして</p>
+						<p>
+							鼓動より熱く涙こぼれ落ち（涙よ）<br>
+							いま誰を　誰を呼んでるの？（どうして？）<br>
+							ひそかな目の中の（秘めた色）<br>
+							無垢な青の空から</p>
+						<p>
+							果てしない荒野さえも越えた日に<br>
+							響き合う明日の調べ<br>
+							いつまでも　いつまでも<br>
+							喜びの糸はカノン紡ぎ出す<br>
+							alainn la-li-la<br>
+							時の船は走る　走る<br>
+							（船はね　いつまで　帆を張り　何処へと）<br>
+							地図にない大地を信じた<br>
+							君の勇気は<br>
+							夢の未来へ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-scrprincess-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

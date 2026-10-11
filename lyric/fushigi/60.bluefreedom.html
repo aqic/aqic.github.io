@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>青い自由、白い望み - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">青い自由、白い望み</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林 延年、関 智一（ＴＨＴＣ）</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：まきのさぶろう<br>編曲：まきのさぶろう</div>
+
+                    <div class="LyricText">
+						<p>
+							青い空には　青い自由がある<br>
+							白い雲には　白い望みがある</p>
+						<p>
+							歩いてもたどり着ける　場所があればいい<br>
+							この胸で生き続ける　夢が矢印になる<br>
+							荒れ果てた荒野でも　星は光る<br>
+							守りたい人がいれば　地図はいらない　WOW～</p>
+						<p>
+							雲はこのまま　どこへ行くのだろう？！<br>
+							計り知れない　意志に導かれて . . .</p>
+						<p>
+							羽ばたいた鳥の影が　大地を走るよ<br>
+							切なさに眼を閉じれば　よみがえる記憶<br>
+							悔しくて悲しくて　握る拳<br>
+							傷みさえ『力にする！』そう誓ったね　WOW～</p>
+						<p>
+							雲はこのまま　どこへ行くのだろう？！<br>
+							計り知れない　意志に導かれて . . .</p>
+						<p>
+							キミがいてボクがいて　みんながいて<br>
+							動き出す宇宙と今　生きて行くのだ　WOW～</p>
+						<p>
+							雲はこのまま　どこへ行くのだろう？！<br>
+							計り知れない　意志が働いても<br>
+							青い空には　青い自由がある<br>
+							白い雲には　白い望みがある</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

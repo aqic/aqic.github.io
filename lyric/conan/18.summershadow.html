@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夏の幻 - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ED 205話～218話</div>
+
+                    <div class="LyricTitle">夏の幻</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">GARNET CROW</div>
+                    <div class="LyricStaff">作詞：AZUKI七<br>作曲：中村由利<br>編曲：古井弘人</div>
+
+                    <div class="LyricText">
+						<p>
+							部屋の窓の向こうに<br>
+							飛行機雲を　なぞって<br>
+							今日ケンカした君の事ばかり<br>
+							考えてた</p>
+						<p>
+							些細な事で戸惑って<br>
+							不安定で無防備な<br>
+							あの頃のように　すぐに電話して<br>
+							笑い合えたら　いいのにね</p>
+						<p>
+							近づいて来る　至福の時は<br>
+							痛みを伴いながら足音をたてる<br>
+							考えすぎて深みにハマる<br>
+							君の傍にいるのに</p>
+						<p>
+							夏の幻<br>
+							瞳閉じて　一番最初に君を思い出すよ<br>
+							いつか終わる儚い生命に<br>
+							ただ　こみあげる気持ち抱いた</p>
+						<p>
+							世界は広く　知らない事溢れてて<br>
+							自分さえ見失いそう<br>
+							だけど君と生きてゆきたいから<br>
+							とまどいながらでもいい<br>
+							つないだ手を離さないでね</p>
+						<p>
+							強いオフショア　波を待ってた<br>
+							中途半端に離れて　流されてゆくよ<br>
+							進化してゆく　時代の中で<br>
+							同じものを求めて</p>
+						<p>
+							夏の幻<br>
+							想うだけで胸が熱くなれた奇跡の途中<br>
+							願うだけじゃ届かぬくらい<br>
+							こぼれ落ちそうな気持ち抱いた</p>
+						<p>
+							どうして二人　近づく時<br>
+							遠く感じて不安になるんだろう<br>
+							キョリを超えた欲望があふれて<br>
+							一人　部屋の中で<br>
+							君の温もり想う</p>
+						<p>
+							どんな日にも<br>
+							瞳閉じて　一番最初に君を思い出すよ<br>
+							いつか終わる儚い生命に<br>
+							ただ　こみあげる気持ち抱いた</p>
+						<p>
+							忘れないから ... 消えゆく命に<br>
+							君と並んでいたね<br>
+							夏の終わり陽射しがゆれてる<br>
+							海の底のような手のひらの中の街並<br>
+							I like a dream. I'm calling out to you.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>まんまる手まり歌 - 吸血姫美夕</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">まんまる手まり歌</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">长泽美树</div>
+                    <div class="LyricStaff">作詞：垣野内成美<br>作曲：川井宪次</div>
+
+                    <div class="LyricText">
+						<p>
+							手まりをつきましょ<br>
+							まんまる手まり<br>
+							あったか手まり<br>
+							だれの？（だれの？）<br>
+							あなた？（わたし？）<br>
+							わたし？（あなた？）<br>
+							あーかい空间に　いっばい手まり</p>
+						<p>
+							手まりをつきましょ<br>
+							まんまるなあに？<br>
+							さびしい心<br>
+							だれの？（だれの？）<br>
+							あなた？（わたし？）わたし？（あなた？）<br>
+							まんまるころころ　泪の瞳</p>
+						<p>
+							手まりをつきましょ<br>
+							まんまるなあに？<br>
+							いとしい心<br>
+							だれの？（だれの？）<br>
+							あなた？（わたし？）<br>
+							わたし？（あなた？）<br>
+							コトリと落ちた　梦みるお颜</p>
+						<p>
+							だれの？（だれの？）<br>
+							あなた？（わたし？）<br>
+							わたし？（あなた？）<br>
+							まんまるころがる<br>
+							どこ行く？（わからん）<br>
+							何追う？（わからん）<br>
+							なあにがほしい？（ほしいは永远）</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

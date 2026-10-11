@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>0-G Love（日中対訳） - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ</div>
+
+                    <div class="LyricTitle">0-G Love（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">飯島真理</div>
+                    <div class="LyricStaff">作詞：阿佐　茜<br>作曲：羽田健太郎<br>編曲：羽田健太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							0-G Love  0-G Love……<br>
+							彼と学校の　帰り道<br>
+							いつもの角の　別れ道<br>
+							人がいないの　みすまして<br>
+							予告もなしに　キスされた<br>
+							私一応　おこったふり<br>
+							だけど　だけど　だけど<br>
+							頭フラフラ　心フワフワ</p>
+						<p>
+							0-G Love  0-G Love<br>
+							4-3-2-1　 0-G Love<br>
+							体が風に乗って　とんでゆく</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							0-G　Love　0-G　Love…<br>
+							和他在回家的路上<br>
+							在经常说再见的转角<br>
+							看见四下无人<br>
+							也没预告的被他吻了<br>
+							我当然表现出生气的样子<br>
+							头昏昏沉沉 心跳不已<br>
+							0-G　Love　0-G　Love<br>
+							4－3－2－1　0-G　Love<br>
+							身体乘风飞扬而去</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

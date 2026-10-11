@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>彷徨 - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">彷徨</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">古澤 徹</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：松原みき<br>編曲：山中紀昌</div>
+
+                    <div class="LyricText">
+						<p>
+							深い闇と共に生きてる<br>
+							傷だらけの　心は　剣(つるぎ)</p>
+						<p>
+							我に従う者以外　近づく事は容赦しない</p>
+						<p>
+							失うもの１つ無いから<br>
+							怖れのない　武器は　鋭い</p>
+						<p>
+							瓦礫の街を練り歩く　歯向かう兆し　打ち砕いて</p>
+						<p>
+							戦う　彷徨う　そして眠る<br>
+							戦士の　心に　愛はいらない</p>
+						<p>
+							我らの辞書に　負けはない<br>
+							破れる時は　果てる命</p>
+						<p>
+							戦う　彷徨う　そして眠る<br>
+							勝利の　道しか　常にいらない</p>
+						<p>
+							戦う　彷徨う　そして眠る<br>
+							安らぎ　微笑み　今は　いらない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

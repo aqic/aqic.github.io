@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>LOVE &amp; PEACE WORLD - 天使な小生意気</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">LOVE &amp; PEACE WORLD</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">北原　愛子</div>
+                    <div class="LyricStaff">作詞　Aiko　Kitahara<br>作曲　Akihito　Tokunaga<br>編曲　Akihito　Tokunaga</div>
+
+                    <div class="LyricText">
+						<p>
+							Rainy day 合えない日はきっとね<br>
+							切ない melody手に<br>
+							Sunny day 君に届くそっとね<br>
+							この想い 風に乗せて</p>
+						<p>
+							小さな悲しみさえも 全部受けとめて<br>
+							真っすぐに飛べるよ 君がいるから</p>
+						<p>
+							I just wanna feel baby<br>
+							I wish I feel your love<br>
+							いつまでも Ah…LOVE &amp; PEACE WORLD<br>
+							I'll give you all my heart<br>
+							You're always in my heart<br>
+							果てしない Ah…LOVE &amp; PEACE WORLD</p>
+						<p>
+							Day by day 数えきれないぐらいに<br>
+							夢見て過ぎて行く日に<br>
+							Some day 光り放つ未来を<br>
+							映し出す雲を抜けて</p>
+						<p>
+							もしも見失っても 世界が変わっても<br>
+							必ず 掴める 君がいるから</p>
+						<p>
+							I just wanna feel baby<br>
+							I wish I feel your love<br>
+							いつまでも Ah…LOVE &amp; PEACE WORLD<br>
+							I'll give you all my heart<br>
+							You're always in my heart<br>
+							限りない Ah…LOVE &amp; PEACE WORLD</p>
+						<p>
+							どんなに遠く離れたとしても<br>
+							朝も夜も絶え間なく想うだろう<br>
+							いつか一緒の道を歩き出そう<br>
+							Ah… その瞬間まで…</p>
+						<p>
+							I just wanna feel baby<br>
+							I wish I feel your love<br>
+							いつまでも Ah…LOVE &amp; PEACE WORLD<br>
+							I'll give you all my heart<br>
+							You're always in my heart<br>
+							果てしない Ah…LOVE &amp; PEACE WORLD</p>
+						<p>
+							I just wanna feel baby<br>
+							I wish I feel your love<br>
+							いつまでも Ah…LOVE &amp; PEACE WORLD<br>
+							I'll give you all my heart<br>
+							You're always in my heart<br>
+							限りない Ah…LOVE &amp; PEACE WORLD</p>
+						<p>
+							I just wanna feel baby<br>
+							I wish I feel your love<br>
+							Let's go together Ah…LOVE &amp; PEACE WORLD</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-cheekyangel-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

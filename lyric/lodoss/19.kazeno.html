@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>风の羽 - ロードス島戦記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">风の羽</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桑田贵子</div>
+                    <div class="LyricStaff">作詞・作曲：新居昭乃<br>編曲：荻田光男</div>
+
+                    <div class="LyricText">
+						<p>
+							长い梦から觉めたような<br>
+							薄□の朝<br>
+							风は西から<br>
+							木に嶼くが香るよ</p>
+						<p>
+							ここは寒くて<br>
+							さみしかったの<br>
+							あなたの名前を<br>
+							知るまでは</p>
+						<p>
+							私の服は鸟の色<br>
+							あなたを想う<br>
+							风は银色<br>
+							密かに歌を运んで</p>
+						<p>
+							そうしてうつ向く<br>
+							少年の目は<br>
+							いつでも痛んで<br>
+							抱いている</p>
+						<p>
+							远く　风の羽に乘せて<br>
+							远く　憧れ彼方へ</p>
+						<p>
+							恶い眠りに<br>
+							落ちないように<br>
+							あなたの名前を<br>
+							缲り返す</p>
+						<p>
+							困てしないstory<br>
+							ただひとり<br>
+							歌に托した<br>
+							风の精灵<br>
+							あなたにめぐり逄えたの</p>
+						<p>
+							长い梦から觉めたような<br>
+							薄□の朝<br>
+							风は西から<br>
+							木に嶼くが香るよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lodoss-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

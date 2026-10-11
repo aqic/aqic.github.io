@@ -1,0 +1,115 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>あなただけ见つめてる - SLAM DUNK</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">あなただけ见つめてる</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">大黑摩季</div>
+                    <div class="LyricStaff">作詞：大黑摩季<br>作曲：大黑摩季<br>編曲：叶山たけし</div>
+
+                    <div class="LyricText">
+						<p>
+							あなただけ见つめてる<br>
+							出会った日から今でもずっと<br>
+							あなたさえそばにいれば他に何もいらない<br>
+							梦のHigh Tension</p>
+						<p>
+							愿い事かなったの<br>
+							柔らかな冬の日<br>
+							うつむき耻ずかしそうなSpecial Drivin' Date</p>
+						<p>
+							あなたがそう喜ぶから<br>
+							化妆をまず止めたわ<br>
+							どこにいても捕まるようにポケベル持ったわ</p>
+						<p>
+							车も详しくなったし<br>
+							サッカ━さえも好きになったわ<br>
+							迷っているけどこの人に一生ついて行こうと决めた</p>
+						<p>
+							あなただけ见つめてる<br>
+							出会った日から今でもずっと<br>
+							あなたさえそばにいれば他に何もいらない<br>
+							爱のHigh Tension</p>
+						<p>
+							あなたがそう望むから<br>
+							真っ直ぐ归るようになった<br>
+							ザツだった言叶使い丁宁になった</p>
+						<p>
+							あなたがそううつむくから<br>
+							长电话も止めたわ<br>
+							便利だった男の子达整理した</p>
+						<p>
+							发も服も目立たなく<br>
+							お料理もガンバルから<br>
+							Partyには行きたいな…<br>
+							嫌恶がってたあの娘とも绝好したわ</p>
+						<p>
+							あなただけ见つめてる<br>
+							昔みたいに笑わなくなった<br>
+							苦手だったSpicyYour Mama<br>
+							今ではお茶してる<br>
+							ヤバイHigh Tension</p>
+						<p>
+							あなただけ见つめてる<br>
+							そして他に谁もいなくなった<br>
+							地味に生きて行くの</p>
+						<p>
+							发も服も目立たなく<br>
+							お料理もガンバルから<br>
+							Partyには行きたいな…<br>
+							嫌恶がってたあの娘とも绝好したわ</p>
+						<p>
+							あなただけ见つめてる<br>
+							昔みたいに笑わなくなった<br>
+							苦手だったSpicy Your Mama<br>
+							今ではお茶してる<br>
+							ヤバイHigh Tension</p>
+						<p>
+							あなただけ见つめてる<br>
+							そして他に谁もいなくなった<br>
+							地味に生きて行くの<br>
+							あなた好みの女<br>
+							目指せっっ！Love Power</p>
+						<p>
+							あなただけ见つめてる<br>
+							独りで待つ二人だけの部屋<br>
+							あなたの微笑みはバラ色の锁<br>
+							行かっっ！梦见る梦无し女！Oh～</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slamdunk-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

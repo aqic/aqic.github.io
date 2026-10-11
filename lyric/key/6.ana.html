@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Ana - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">CLANNAD INS</div>
+
+                    <div class="LyricTitle">Ana</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lia</div>
+                    <div class="LyricStaff">作詞：荻原ゆう<br>作曲：traditional<br>編曲：戸越まごめ</div>
+
+                    <div class="LyricText">
+						<p>
+							The place changes and goes. Like a wind, like clouds.<br>
+							Like the traces of the heart, no halt at the places.</p>
+						<p>
+							The place is so far away. be far apart.<br>
+							people's hand does not reach, so merely has (the) worship.</p>
+						<p>
+							The place is a lofty load. can't meet nobody put on.<br>
+							We will lose the place. so lofty which changes.</p>
+						<p>
+							Not all were desired. However, we're never sad.<br>
+							still, there is still the place. far away. far away.</p>
+						<p>
+							(The wind) blows through the place. an endless with all.<br>
+							Like the ripple float on the water, It blows as it goes.</p>
+						<p>
+							the place is No make at all. Nothing is show.<br>
+							Like the sand clasped by hand, It falls vainly.</p>
+						<p>
+							The place is (a) profound load, and wear the vain faint light.<br>
+							But we will find it in the place. The hut at which it stands still.</p>
+						<p>
+							if not concerened with all, It will maintain that No dye.<br>
+							therefore there is still the hut. It's lonly, solitary.</p>
+						<p>
+							no halt at the wind. it soars to the sky.<br>
+							Like the verdure (which) meets with sunrise It grows up as reborn.</p>
+						<p>
+							The hut has held new one.that's different from all.<br>
+							like the sand castle of the children, but realized with the mind.</p>
+						<p>
+							The person is a vain statue. wear taciturnity calm.<br>
+							still, We will know a huge flow. It is stopped by nobody.</p>
+						<p>
+							soon, the wind wears the snow cloud. will be dyde to snow-white.<br>
+							Summer grass will incline. No sunlight, feebly shade.</p>
+						<p>
+							The place buried in deep snow. like the collapsing castle.<br>
+							like the head of the shade, figure will be thrown away.</p>
+						<p>
+							The hut buried in deep snow. It sinks in to the flood.<br>
+							and The "not dyeing" is dyed out, and waits for a oppose one.</p>
+						<p>
+							Even if all are healed, be gonna no return.<br>
+							there is still the place. far away. far away.</p>
+						<p>
+							The place changes and goes. Like a wind, like clouds.<br>
+							Like the traces of the heart, no halt at the places.</p>
+						<p>
+							The place is a lofty load. can't meet nobody put on.<br>
+							still, there is still the place. far away. far away.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

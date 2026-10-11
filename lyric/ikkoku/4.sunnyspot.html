@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>陽だまり - めぞん一刻</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「めぞん一刻」オープニング・テーマ (1987)</div>
+
+                    <div class="LyricTitle">陽だまり</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">村下孝蔵</div>
+                    <div class="LyricStaff">作詞・作曲：村下孝蔵<br>編曲：水谷公生</div>
+
+                    <div class="LyricText">
+						<p>
+							蝉時雨　遥か　すだれごしに<br>
+							水を打つ　夏の夕暮れ<br>
+							石が川面を跳ねるように<br>
+							ときめいた君を想って</p>
+						<p>
+							陽炎がゆらめく街　この場所から遠く空を見て<br>
+							ああ君に会いたい　今すぐに声を聴きたい</p>
+						<p>
+							きらきら　夕焼けの中　微笑みなげて<br>
+							望みを祈りにかえたら<br>
+							一番大事な事忘れずに　輝いていて欲しいよ</p>
+						<p>
+							早く会いたい　たった一言<br>
+							心から叫びたいよ<br>
+							きっといつかはめぐり逢い<br>
+							結ばれると信じていたと</p>
+						<p>
+							歩きだせばこの背中を<br>
+							追いかけてついてきて欲しい<br>
+							ああ僕は君一人のためだけのひとりぼっちさ</p>
+						<p>
+							ひらひら　花びらの舞う春の午後には<br>
+							祈りを誓いにかえるよ<br>
+							二人で陽だまりの中　光あつめやさしさを<br>
+							わかちあえるさ</p>
+						<p>
+							一番大事な事忘れずに<br>
+							輝いていて欲しいよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ikkoku-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

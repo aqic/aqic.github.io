@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>おちゃのこさいさい変幻自在 - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">おちゃのこさいさい変幻自在</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">関 智一</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：安藤カツヒト<br>編曲：まきのさぶろう</div>
+
+                    <div class="LyricText">
+						<p>
+							大地のニキビ火山をくすぐって　涙を貯めた湖に飛びこむ<br>
+							　　地球は遊び場で学び舎(や)だー　だから楽しくやろう！<br>
+							　　封印された記憶の蓋を開け　１人１人が最強になるのだ<br>
+							　　波動を高めたら気を送る　愛は決界なのだ<br>
+							　　笑顔の下に　隠れてる素顔だってあるけど<br>
+							　　深刻(マジ)になるより　笑ってる　おどけてる</p>
+						<p>
+							☆　おちゃのこさいさい変幻自在　おいらは皆の１部で全部<br>
+							　　朱雀の巫女を護るための　七星士<br>
+							　　おちゃのこさいさい変幻自在　異界へ通じる笠を被って　DA-DADADA<br>
+							　　敵も味方も遊び仲間なのだー</p>
+						<p>
+							　　大極山で伝授された神通力(ちから)　活かしきらなきゃ男がすたるのだ<br>
+							　　心が空になればなるほど　おいら神出鬼没<br>
+							　　今日も今日とて　釣ざおと笠を持って見回り<br>
+							　　つかず離れず　気づかって　見守って</p>
+						<p>
+							　　おちゃのこさいさい変幻自在　皆もおいらの１部で全部<br>
+							　　意識を１つに繋げれば　テレパシー<br>
+							　　おちゃのこさいさい変幻自在　電磁波(でんじは)もイチかバチかで騒いでる 　　ZA-ZAZAZA<br>
+							　　みんなまとめて面倒見る！なのだ</p>
+						<p>
+							　１人が好きだった気楽が好きだった　でも皆に逢えて　心は初めて喜んだ！</p>
+						<p>
+							☆　REPEAT</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

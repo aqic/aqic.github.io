@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">ラーゼフォン</span><span class="cn">（翼神传说）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《ラーゼフォン》</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">テレビアニメ</span><span class="disc-sub">2 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.hemisofeia.html">《ヘミソフィア》</a>＆<a href="1.hemisofeia-bilingual.html" class="cn">(中)</a><span class="note">- [Rahxephon TV OP]</span></li>
+						<li class="LyricItem"><a href="2.umeno.html">《夢の卵》</a>＆<a href="2.umeno-bilingual.html" class="cn">(中)</a><span class="note">- [Rahxephon TV ED]</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">その他</span><span class="disc-sub">7 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="3.katoun.html">《カトゥンのさだめ》</a></li>
+						<li class="LyricItem"><a href="4.brave.html">《Brave》</a></li>
+						<li class="LyricItem"><a href="5.ongakumusic.html">《Ongaku; Music》</a></li>
+						<li class="LyricItem"><a href="6.garden.html">《The Garden of Everything～電気ロケットに君をつれて》</a>＆<a href="6.garden-bilingual.html" class="cn">(中)</a></li>
+						<li class="LyricItem"><a href="7.rainbow.html">《Tune The Rainbow》</a>＆<a href="7.rainbow-bilingual.html" class="cn">(中)</a></li>
+						<li class="LyricItem"><a href="8.laile.html">《l'aile》</a></li>
+						<li class="LyricItem"><a href="9.lalamaladie.html">《la, la maladie du sommeil》</a></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

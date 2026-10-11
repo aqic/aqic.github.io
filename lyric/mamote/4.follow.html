@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Ｉ'LL FOLLOW YOU - まもって守護月天!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">伝心まもって守護月天！</div>
+
+                    <div class="LyricTitle">Ｉ'LL FOLLOW YOU</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Jyushi-ca</div>
+
+                    <div class="LyricText">
+						<p>
+							雨上がりの空に<br>
+							光差し込んで<br>
+							うつむいたあなたの<br>
+							影を映しだした</p>
+						<p>
+							いろんな出来事が<br>
+							あなた追いかけて<br>
+							少し疲れてるね<br>
+							笑顔さえぎこちない</p>
+						<p>
+							だけどそう忘れないでいてね<br>
+							夢がもし 破れても<br>
+							一人じゃない</p>
+						<p>
+							Ｉ'LL FOLLOW YOU<br>
+							どんな強い風が吹き荒れても<br>
+							きっと この両手で守り通すよ<br>
+							Ｉ'LL FOLLOW YOU<br>
+							目に見えない力を信じてて<br>
+							いつか そうあなたも<br>
+							気づき始めるわ 愛を</p>
+						<p>
+							大切なあなたを<br>
+							初めて見たとき<br>
+							ずっとわたしのこと<br>
+							待っていた気がしたの</p>
+						<p>
+							だから今 時空を越えた愛<br>
+							助け合い 育てるの<br>
+							そっとそっと</p>
+						<p>
+							Ｉ'LL FOLLOW YOU<br>
+							暗い闇が二人を包んでも<br>
+							いつも つないだ手を<br>
+							離さないから<br>
+							Ｉ'LL FOLLOW YOU<br>
+							分かち合うの 痛みも喜びも<br>
+							やがて遠い星に<br>
+							帰るその日まで<br>
+							（Ｉ'LL FOLLOW YOU）</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-mamote-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

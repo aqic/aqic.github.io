@@ -1,0 +1,112 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>LOVE - CLAMP</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">LOVE</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							It's my dream</p>
+						<p>
+							A beautiful dream<br>
+							That no-one's ever seen<br>
+							A beautiful dream<br>
+							That no-one's ever noticed<br>
+							A beautiful love<br>
+							That no-one will ever break</p>
+						<p>
+							LOVE<br>
+							Though you'll laugh<br>
+							In the whole world<br>
+							The most beautiful word</p>
+						<p>
+							LOVE<br>
+							Though you'll laugh<br>
+							In the entire world<br>
+							The most important word</p>
+						<p>
+							Now, come close to me<br>
+							I'll sing an endless song<br>
+							God, please tell me<br>
+							Redder than red, the truest love</p>
+						<p>
+							Now, kiss and hold me<br>
+							Show me love that's forever<br>
+							God, please tell me<br>
+							Bluer than blue, the real heart</p>
+						<p>
+							LOVE<br>
+							Everyone says<br>
+							But no one knows its true meaning<br>
+							Cannot be grasped alone<br>
+							I want to see it with you</p>
+						<p>
+							LOVE<br>
+							A wonderful person<br>
+							That makes everyone turn<br>
+							A wonderful time<br>
+							That everyone wants<br>
+							A wonderful romance<br>
+							That everyone dreams of</p>
+						<p>
+							LOVE<br>
+							Can never match true love</p>
+						<p>
+							LOVE<br>
+							Though you'll laugh<br>
+							Will never return, once lost</p>
+						<p>
+							LOVE<br>
+							Though you'll laugh<br>
+							To us, the most important word</p>
+						<p>
+							LOVE<br>
+							Hear the whisper of the heart<br>
+							Hear this true voice<br>
+							Listen carefully<br>
+							Where lies true love<br>
+							Whom to give true love</p>
+						<p>
+							LOVE<br>
+							Though you'll laugh<br>
+							In the entire world<br>
+							The most important word</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-clamp-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

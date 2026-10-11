@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>FAIR WIND - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">FAIR WIND</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">L·O·N</div>
+
+                    <div class="LyricText">
+						<p>
+							My baby you don't know<br>
+							how much I love you behind of you<br>
+							Cause (you) always look (at) the front<br>
+							to get your dream in future<br>
+							My baby you don't know<br>
+							whether you meet with an accident<br>
+							It's (a) lonely like a bird<br>
+							But it's a really free like (a) bird</p>
+						<p>
+							I know I just a fair wind, it's OK<br>
+							You can go to everywhere<br>
+							I believe my love and believe your love<br>
+							Go across ocean and blue sky</p>
+						<p>
+							Baby don't be afraid<br>
+							If you try to fly away<br>
+							with a tiny shiny wing, I'll be follow(ing) you<br>
+							everyday and overnight<br>
+							Baby don't be afraid<br>
+							If you stay by breaking heart<br>
+							through the lonely shady night<br>
+							I'll be hug your pain<br>
+							wherever and forever</p>
+						<p>
+							My baby keep in mind<br>
+							how much I love you beside of you<br>
+							This way is hard like hill<br>
+							but it's a really sweet like (a) kiss</p>
+						<p>
+							I know I just a fair wind, it's OK<br>
+							You can go to everywhere<br>
+							I believe my soul and believe your soul<br>
+							Go catch exciting chance and dream</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

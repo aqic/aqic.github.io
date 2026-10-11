@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ポケットを空にして - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」イメージ(1996)</div>
+
+                    <div class="LyricTitle">ポケットを空にして</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本真綾</div>
+                    <div class="LyricStaff">作詞：岩里祐穂<br>作曲・編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							風が変われば僕の道さえ少しは<br>
+							ましになるだろ<br>
+							「豊かさが君たちをダメにする」なんて<br>
+							知ったこっちゃない</p>
+						<p>
+							夢の法則など何処にもないはずさ</p>
+						<p>
+							※ポケットを空にしてさあ旅に出ようよ<br>
+							　目当ても何もないけれど<br>
+							　すぐ、ポケットを空にしてさあ旅に出ようよ<br>
+							　みだらな気持ち　ぶらさげて</p>
+						<p>
+							草むらに寝ころんで<br>
+							逆さの星くず目を凝らしてた<br>
+							流れ星見つけたよ<br>
+							でも願い事がわからない</p>
+						<p>
+							人を愛すること　生きてくこと　死ぬこと</p>
+						<p>
+							※繰り返し</p>
+						<p>
+							※繰り返し</p>
+						<p>
+							こんな架空の運命…<br>
+							壊して明日へ旅立つ僕ら<br>
+							ブリキの街をあとに<br>
+							高くその旗を振りかざせ<br>
+							振りかざせ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Baby? Lady? - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Puchiko song</div>
+
+                    <div class="LyricTitle">Baby? Lady?</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Miyuki Sawashiro</div>
+                    <div class="LyricStaff">Lyrics : Mori Yuki<br>Music : Sakamoto Yuusuke<br>Arrangement : Sakamoto Yuusuke</div>
+
+                    <div class="LyricText">
+						<p>
+							You don't have to worry　心配ない　あれやこれと言わないで<br>
+							I can do myself　何でもＯＫ　気持ちはもう　大人だにゅ<br>
+							Baby? Lady?  Baby? Lady?</p>
+						<p>
+							何をしても　誰か見てる　出かける時　誰かとペア<br>
+							これじゃいつも　おまけみたい　ネンネじゃない！　いじけちゃうにゅ<br>
+							一人きりで　できるけれど　誰もかれも　信じないにゅ<br>
+							おつかいでも　お掃除でも　ちゃんと上手く　こなせるのに</p>
+						<p>
+							なんで頼ってくれないかにゅ　みんな不安な顔でNO-NO-NO！</p>
+						<p>
+							You don't have to worry　心配ない　あれやこれと言わないで<br>
+							I can do myself　何でもＯＫ　気持ちはもう　大人だにゅ<br>
+							誰の力かりなくても　やれる自信あふれてる<br>
+							子供だけど子供じゃない　微妙なトコわかってにゅ<br>
+							Baby? Lady?  Baby? Lady?</p>
+						<p>
+							宇宙船で未知の世界　旅行したい　ワクワクする<br>
+							いろんな人　出会いたいな　リンクサイト広げたいにゅ<br>
+							お年寄りに席をゆずる　マナーくらい知っているにゅ<br>
+							視線だけは低いけれど　視野は広く空のように</p>
+						<p>
+							なんで見た目で決めるのかにゅ　そんな真面目な顔はNO-NO-NO！</p>
+						<p>
+							You don't have to worry　心配ない　あれやこれと言わないで<br>
+							I can do myself　何でもＯＫ　気持ちはもう　大人だにゅ<br>
+							未来地図はでこぼこでも　手を貸さずに見ていてにゅ<br>
+							子供だけど子供じゃない　シーソー的バランスにゅ<br>
+							Baby? Lady?  Baby? Lady?</p>
+						<p>
+							なんで頼ってくれないかにゅ　みんな不安な顔でNO-NO-NO！</p>
+						<p>
+							You don't have to worry　心配ない　あれやこれと言わないで<br>
+							I can do myself　何でもＯＫ　気持ちはもう　大人だにゅ<br>
+							You don't have to worry　心配ない　あれやこれと言わないで<br>
+							I can do myself　何でもＯＫ　気持ちはもう　大人だにゅ<br>
+							誰の力かりなくても　やれる自信あふれてる<br>
+							子供だけど子供じゃない　微妙なトコわかってにゅ<br>
+							Baby? Lady?  Baby? Lady?</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

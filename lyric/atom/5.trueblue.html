@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>True Blue - 鉄腕アトム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">True Blue</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							What is the reason of my birth<br>
+							reason of my life question of man<br>
+							What he is What he wants</p>
+						<p>
+							今　君に　見えない　圧力が　襲い<br>
+							うつむいて　涙　隠してた<br>
+							どうすれば　いいか？　それさえ　わからずに<br>
+							アスファルトに　咲く<br>
+							雑草に　勇気　感じた…</p>
+						<p>
+							いつも　君の側に　いるよ<br>
+							だから　もう　一人じゃない<br>
+							君が　道に　迷う　時は<br>
+							僕が　先を　歩くよ</p>
+						<p>
+							遠い空　越えて<br>
+							僕達は　飛び立つ<br>
+							きっと　そこにある<br>
+							それが　君の夢…</p>
+						<p>
+							今　君に　悲しみや　不安　襲い<br>
+							音をたて　崩れる　心を<br>
+							あの　パズルの　様に<br>
+							モトに　戻せたら<br>
+							不思議と　少しだけ<br>
+							大きな　絵に　なるだろう…</p>
+						<p>
+							いつも　君の側に　いるよ<br>
+							だから　もう　一人じゃない<br>
+							君が　道に　迷う　時は<br>
+							僕が　先を　歩くよ</p>
+						<p>
+							いつか　また　君が　笑顔を<br>
+							無くしそうに　なったら<br>
+							いつでも　どこでも　呼んでよ<br>
+							「永遠だよ　僕達は…」</p>
+						<p>
+							いつも　君の側に　いるよ<br>
+							だから　もう　一人じゃない<br>
+							君が　道に　迷う　時は<br>
+							僕が　先を　歩くよ</p>
+						<p>
+							遠い空　越えて<br>
+							僕達は　飛び立つ<br>
+							きっと　そこにある<br>
+							それが　君の夢…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-atom-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

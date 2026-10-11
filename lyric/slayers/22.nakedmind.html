@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Naked mind - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Naked mind</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">奥井雅美</div>
+
+                    <div class="LyricText">
+						<p>
+							無情に過ぎて行く　たいくつな時間<br>
+							恋じゃない　愛じゃない　欲しいのは</p>
+						<p>
+							夢を求めて　生きて来た　蘇る　深い本能‐きおく‐</p>
+						<p>
+							女を磨け！　心熱く　もっと　ｆｅｅｌ　ｓｏ　ｇｏｏｄ<br>
+							カワイイだけじゃ　現代（いま）を　生きて　行けない<br>
+							見えない　敵が　いつも誰か狙ってる<br>
+							だから　おしみなく　そう華やかに　さらけ出して<br>
+							咲かせましょう　ｎａｋｅｄ　ｍｉｎｄ</p>
+						<p>
+							社会の常識ね　大好きランキング<br>
+							みんなが　１位‐エ—ス‐を競ってる</p>
+						<p>
+							ホッと　一息つきたいと　甘える気持ち　ぐっとこらえ</p>
+						<p>
+							男を磨け！　心熱く　もっと　ｆｅｅｌ　ｓｏ　ｇｏｏｄ<br>
+							優しいだけじゃ　現代（いま）を生きて　行けない<br>
+							妖しい　罠が　いつも誰か狙ってる<br>
+							だから　ダイナミックに　たくましく　さらけ出して<br>
+							咲かせましょう　ｎａｋｅｄ　ｍｉｎｄ</p>
+						<p>
+							女を磨け！　心熱く　もっと　ｆｅｅｌ　ｓｏ　ｇｏｏｄ<br>
+							きれいなだけじゃ　現代（いま）を　生きて　行けない<br>
+							見えない　敵が　いつも誰か狙ってる<br>
+							だから　おしみなく　そう華やかに　さらけ出して<br>
+							咲かせましょう　ｎａｋｅｄ　ｍｉｎｄ</p>
+						<p>
+							男を磨け！　心熱く　もっと　ｆｅｅｌ　ｓｏ　ｇｏｏｄ<br>
+							だから　ダイナミックに　たくましく　さらけ出して<br>
+							咲かせましょう　ｎａｋｅｄ　ｍｉｎｄ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

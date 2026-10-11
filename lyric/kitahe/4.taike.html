@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>タイクツとユウウツ - 北へ。</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「北へ」PURE SONGS and PICTURES</div>
+
+                    <div class="LyricTitle">タイクツとユウウツ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">阪本真綾(?)(ターニャ·リビンスキー)</div>
+                    <div class="LyricStaff">作詞：長山 豐<br>作曲：池毅</div>
+
+                    <div class="LyricText">
+						<p>
+							1)　一日が終わると　始まるタイクツ<br>
+							テレビの笑い声..怒ったクラクション<br>
+							無機的に時を　刻む秒針の音...</p>
+						<p>
+							昨日とよく似た　今日が過ぎて<br>
+							また変わりばえのない　明日が来る</p>
+						<p>
+							タイクツとユウウツ　タイクツとユウウツ<br>
+							タイクツとユウウツ　タイクツとユウウツ</p>
+						<p>
+							留守番電話が壞れてること<br>
+							半年も気付かないでいたのに<br>
+							あなたの笑顔が私を変えた<br>
+							タイクツな自分に気付いてしまった</p>
+						<p>
+							2)　一日が終わると　始まるユウウツ<br>
+							カップルの歡声..真夜中のサイレン<br>
+							どこまでも深く　寂しい夜の閻...</p>
+						<p>
+							真っ白な予定表を「自由」と呼ぶなら<br>
+							私はもっと　不自由でいい</p>
+						<p>
+							タイクツとユウウツ　タイクツとユウウツ<br>
+							タイクツとユウウツ　タイクツとユウウツ</p>
+						<p>
+							誰かのことを必要だなんて<br>
+							ずっと気付かないでいたのに<br>
+							あなたの笑顔が私を変えた<br>
+							ユウウツな自分に気付いてしまった</p>
+						<p>
+							3)　一日が終わっても　終わらないこの思い<br>
+							あなたの言葉..優しい言葉<br>
+							今でも私の　心搖らしている</p>
+						<p>
+							真っ白だった日々が　色づいて行く<br>
+							あの日二人で見た　夕燒けのように...</p>
+						<p>
+							タイクツとユウウツ　タイクツとユウウツ<br>
+							タイクツとユウウツ　タイクツとユウウツ</p>
+						<p>
+							いつか　タイクツにさようならして<br>
+							いつか　ユウウツにさようならして<br>
+							きっと私　笑顔になれるでしょ<br>
+							あなたとおんなじ　笑顔になれる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kitahe-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

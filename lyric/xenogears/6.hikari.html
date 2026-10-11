@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>光の対談 - ゼノギアス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Xenogears (Creid)」</div>
+
+                    <div class="LyricTitle">光の対談</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							心の真中を　パレドがよくぎる<br>
+							踵を打ち鳴らして　君がくる<br>
+							覚えたてのmelody　空っぽの広場に<br>
+							バラ色の明かりを　ともして過ぎる</p>
+						<p>
+							にぎやかな夢はすぐ　両手をすり抜けて<br>
+							小さな風に舞い上がる　紙ふぶき</p>
+						<p>
+							見送る涙より　出会った時めきを<br>
+							心の中に大切に置いてみる</p>
+						<p>
+							君が残してった靴跡しんこぺ瞬<br>
+							朝もやの無効まで　続いてる<br>
+							どこか知らない街　誰かの夢の中<br>
+							暖かい明かりを灯しにいった</p>
+						<p>
+							見送る悲しみよりであった喜びを<br>
+							光に向けて一つずつ　積み上げる</p>
+						<p>
+							階段は空へと　螺旋に伸びてゆく<br>
+							赤い余るも尽きめけて　虹になる</p>
+						<p>
+							君がどこにいても　遠い国にいても<br>
+							耳を澄ませば聞こえるよ　その歌が</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-xenogears-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

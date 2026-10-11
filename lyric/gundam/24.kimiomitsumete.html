@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君をみつめて -The time I'm seeing you- - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場版「機動戦士ガンダムＦ９１」挿入歌</div>
+
+                    <div class="LyricTitle">君をみつめて -The time I'm seeing you-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">森口博子</div>
+
+                    <div class="LyricText">
+						<p>
+							暗闇に走る君は　自分を傷つけ<br>
+							帰る家さえ見失う<br>
+							私の胸で眠れ<br>
+							私の胸で眠れ<br>
+							もしも今この世界が　消えてもきっと君は<br>
+							戦いが正義と信じ<br>
+							走り続ける</p>
+						<p>
+							あゝ　このままで明日を探そう<br>
+							振り返る事などないさ<br>
+							自分を傷つけないで</p>
+						<p>
+							※You're lookin' for how they live<br>
+							  その痛みを分かちあい<br>
+							　You're searchin' for should be<br>
+							　激しさに震えれば</p>
+						<p>
+							深い宇宙（そら）のむこうから　光が届く<br>
+							すべての意味をみつけて<br>
+							君は戦士に育つよ<br>
+							君は戦士に育つよ<br>
+							次に何をやればいい？　見つけた時にもしも<br>
+							輝く勇気があれば　明日が来るよ</p>
+						<p>
+							あゝ　もう一度確かめあおうよ<br>
+							安息（やすらぎ）の時代が来れば<br>
+							君だけ抱きしめられるから</p>
+						<p>
+							★You're lookin' for how they live<br>
+							　立ち止まるだけでいい<br>
+							　You're searchin' for should be<br>
+							　何かをみつけるため</p>
+						<p>
+							※繰り返し</p>
+						<p>
+							★繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

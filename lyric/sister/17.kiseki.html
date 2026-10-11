@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>KISEKI no HITO - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">KISEKI no HITO</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							遠い　遠い　はるか　遠い昔から<br>
+							君を　君を　何故か　君を知っている</p>
+						<p>
+							この星の砂の数ほど　沢山の生命があって<br>
+							出会って　笑って　別れて　忘れて<br>
+							出会って　笑って　別れて　忘れて</p>
+						<p>
+							深い森の中へ　迷い続けて</p>
+						<p>
+							やっと君へとたどり着く　KISEKIまで近づいた<br>
+							瞳、合わせた瞬間に　立ち止まる旅人のよう…</p>
+						<p>
+							今までの虚ろうような　淡いその感情じゃなくて<br>
+							恋して　辿って　探して　失くして<br>
+							恋して　辿って　探して　出会えた</p>
+						<p>
+							やっと君へとたどり着く　KISEKIまで近づいた<br>
+							きっと生まれる前よりも　今日の日へ旅をしていた</p>
+						<p>
+							深い森の中　迷い続けて</p>
+						<p>
+							やっと君へとたどり着く　KISEKIまで近づいた<br>
+							瞳、合わせた瞬間に　立ち止まる旅人の<br>
+							やっと君へとたどり着く　KISEKIまで近づいた<br>
+							きっと生まれる前よりも　今日の日へ旅をしていた</p>
+						<p>
+							もっと　もっと　強く　もっと確かめて<br>
+							遠い　遠い　はるか　遠い昔から<br>
+							君を　君を　何故か　君を知っている</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

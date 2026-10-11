@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ジングルベルが失くなった - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ジングルベルが失くなった</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">鶴ひろみ、室井深雪、佐々木るん</div>
+
+                    <div class="LyricText">
+						<p>
+							キラキラ輝くもみの木に<br>
+							雪の飾りも終わったのに<br>
+							何故か悲しいクリスマス<br>
+							何かが何かな足りないの</p>
+						<p>
+							ジングルベルが失くなった<br>
+							ジングルベルが失くなった<br>
+							私の心を盗むように<br>
+							誰かが持っていったのね</p>
+						<p>
+							ヒュルヒュル泣いてる北の風<br>
+							熱い紅茶を入れたのに<br>
+							今夜はとても淋しいわ<br>
+							あなたがあなたがいないから</p>
+						<p>
+							ジングルベルが失くなった<br>
+							ジングルベルが失くなった<br>
+							私の心を盗むように<br>
+							誰かが持っていったのね</p>
+						<p>
+							ヒラヒラ舞ってる白い雪<br>
+							あなたと踊った後なのに<br>
+							そ知らぬ顔して<br>
+							あの娘とあの娘と帰るのね</p>
+						<p>
+							ジングルベルが失くなった<br>
+							ジングルベルが失くなった<br>
+							私の心を盗むように<br>
+							誰かが持っていったのね</p>
+						<p>
+							ジングルベルが失くなった<br>
+							ジングルベルが失くなった<br>
+							私の心を盗むように<br>
+							誰かが持っていったのね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

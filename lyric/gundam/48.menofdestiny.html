@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Men Of Destiny - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">機動戦士 ガンダム ００８３－スターダスト メモリー</div>
+
+                    <div class="LyricTitle">Men Of Destiny</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MIQ</div>
+
+                    <div class="LyricText">
+						<p>
+							蒼さめた瞳　見つめる炎<br>
+							今　全てを　捨てる時が来た<br>
+							想い出す事も　悲しむ事も<br>
+							許されずに　闘い続ける<br>
+							今日で命が　燃えつきるとしても<br>
+							それでも人は　明日を夢見るのか<br>
+							それが運命でも<br>
+							“I WANNA GET A CHANCE”</p>
+						<p>
+							絶望の宇宙に　吹き荒れる嵐<br>
+							未来は誰のためにある<br>
+							滅びゆく世界　駆け抜ける嵐<br>
+							選ばれし者　MEN OF DESTINY</p>
+						<p>
+							信じてる物が　心にあれば<br>
+							それだけでも　人は生きてゆく<br>
+							血の滲む腕に　抱きしめるのは<br>
+							勝利という　儚い幻</p>
+						<p>
+							今日で全てが　崩れ去るとしても<br>
+							それでも人は　夢を欲しがるのか<br>
+							それが運命なら<br>
+							“I WANNA GET A CHANCE”</p>
+						<p>
+							もう一度　宇宙へ　舞い上がる前に<br>
+							心の中を見せてくれ<br>
+							振り向かいた君の　横顔に浮かぶ<br>
+							寂しい笑顔　消せはしない</p>
+						<p>
+							陽炎の中へ　FLASHING BACK<br>
+							二度と戻らない　DREAMIN' DAYS<br>
+							声を殺し　泣いた<br>
+							遠い記憶<br>
+							“I WANNA GET YOUR LOVE”</p>
+						<p>
+							絶望の宇宙に　吹き荒れる嵐<br>
+							未来は誰のためにある<br>
+							滅びゆく世界　駆け抜ける嵐<br>
+							選ばれし者　MEN OF DESTINY</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

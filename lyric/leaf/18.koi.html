@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>戀わずらい - Leaf</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">こみっくパーティー</div>
+
+                    <div class="LyricTitle">戀わずらい</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">美崎しのぶ</div>
+                    <div class="LyricStaff">作詞：須谷尚子<br>作曲：松岡純也<br>编曲：松岡純也</div>
+
+                    <div class="LyricText">
+						<p>
+							いてもたってもいられない　どうして<br>
+							足が地につかないなんて　まさかね<br>
+							私が私でいられない　あいつがそばにいるからで<br>
+							無口になるの　嘘でしょ恋をしたからなのね</p>
+						<p>
+							幼い頃から　隣に住んでた<br>
+							ただの幼馴染みだった　いわゆる<br>
+							私の知らない女の子　仲良く歩いてるからで<br>
+							何かが胸を貫いた　抜けないトゲみたいね</p>
+						<p>
+							あの日から眠れない　恋わずらい<br>
+							友だちに話せない<br>
+							そよ風がつれてきた　(Hey!)<br>
+							淡いピンク色した　頬隠せない</p>
+						<p>
+							たんぽぽの綿毛がほら　とんでく<br>
+							そう　まるで私の気持ちとおんなじ<br>
+							大きな背中　長い手足　いつものあいつ違うから<br>
+							アレアレ　特別見えてく　何もかもすべてが</p>
+						<p>
+							たかが告白されど　告白なの<br>
+							今さら恥ずかしいよ<br>
+							無重力状態ネ　(Hoo!)<br>
+							恋をしているかぎり　戦いの日々続くでしょう</p>
+						<p>
+							おとぎ話みたいに　迎えにきて<br>
+							ハッピーエンドなるかしら<br>
+							妖精たちも笑う　(Yeah!)<br>
+							世の中甘くはない</p>
+						<p>
+							La La La ・・・</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-leaf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

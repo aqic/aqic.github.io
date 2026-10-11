@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Best Friend - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Best Friend</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">冬馬由美</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：松原みき<br>編曲：山中紀昌</div>
+
+                    <div class="LyricText">
+						<p>
+							悲しいくらい　青い空の痛み感じている　woo<br>
+							　　心の底で　今もキラキラする宝石(かけら)たちが　陰りを打ち消しに来る</p>
+						<p>
+							　　ちゃんとご飯食べてるかな？ コケてるかな？<br>
+							　　馬鹿みたいこんな心配もうしなくていいのに</p>
+						<p>
+							☆　だけど<br>
+							　　Best Friend　誰にも負けない　大好き　ここにある<br>
+							　　Dear Friend　どうしてだろう！？いいことだけ浮かぶ<br>
+							　　だから<br>
+							　　Best Friend　裸の心と　Happy　抱きしめて<br>
+							　　Dear Friend　今すぐそこに　走って行きたい . . . けど<br>
+							　　もう少し待ってて</p>
+						<p>
+							　　空を悠々(ゆうゆう)　雲が流れて行くあんな風(ふう)に　２人も平和だったね</p>
+						<p>
+							　　受験勉強よりツライ　試練だよね<br>
+							　　大切な人傷つけて?胸に穴が開いたよ<br>
+							　　だけど<br>
+							　　Best Friend　誰にも負けない　友情　生きてたね<br>
+							　　Dear Friend　知らず知らずに　あたりまえになってた<br>
+							　　だから<br>
+							　　Best Friend　真実(ホントウ)の気持ち　Maybe　解ってる<br>
+							　　Dear Friend　他の人には　ぶつけられない . . . ほど<br>
+							　　信じあっているの</p>
+						<p>
+							☆　REPEAT</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

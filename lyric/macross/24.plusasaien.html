@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>A Sai En - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">A Sai En</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Raiche Coutev Sisters</div>
+                    <div class="LyricStaff">作詞：Gabriela Robin<br>作曲：菅野よう子<br>編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							Ma ha shutai e Tuby e Tuby<br>
+							e Tu shutai A no Tuby</p>
+						<p>
+							Ma ha shutai e Tuby e Tuby<br>
+							e Tu shutai A no Tuby</p>
+						<p>
+							A Sai,do mi no steikun</p>
+						<p>
+							Halish di zi e</p>
+						<p>
+							A di shuta dia</p>
+						<p>
+							La dia</p>
+						<p>
+							Zhan who</p>
+						<p>
+							地に緑、空に花の香、<br>
+							海を魚で満たす者。</p>
+						<p>
+							誰よりも、尊いと想う、<br>
+							あなたを。</p>
+						<p>
+							私を、柔らかな光で<br>
+							満たして下さい。</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

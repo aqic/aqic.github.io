@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>シャアが来る - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">機動戦士 ガンダム</div>
+
+                    <div class="LyricTitle">シャアが来る</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">堀光一路</div>
+                    <div class="LyricStaff">作詞：井萩麟<br>作曲：渡辺岳夫</div>
+
+                    <div class="LyricText">
+						<p>
+							シャア！　シャア！<br>
+							今はいいのさ　すぺてを忘れて<br>
+							一人残った　傷ついた俺が<br>
+							この戦場で　あとに戻れば地獄におちる</p>
+						<p>
+							シャア！　シャア！</p>
+						<p>
+							ビーム　輝く<br>
+							フラッシュバックに　奴の影</p>
+						<p>
+							シャアシャアシャア　シャアシャアシャア</p>
+						<p>
+							流した血しぶき　後で後で拭け<br>
+							狙いさだめる　俺がターゲット</p>
+						<p>
+							シャアシャアシャア　シャアシャアシャア</p>
+						<p>
+							今はいいのさ　すぺてを捨てて<br>
+							一人残った　屍の俺が<br>
+							この戦場で　もがき苦しむ地獄の炎</p>
+						<p>
+							シャア！　シャア！</p>
+						<p>
+							ビーム　輝く<br>
+							フラッシュバックに　奴の影</p>
+						<p>
+							シャアシャアシャア　シャアシャアシャア</p>
+						<p>
+							一人で死ぬかよ　奴も奴も呼ぶ<br>
+							狙いさだめる　シャアがターゲット</p>
+						<p>
+							シャアシャアシャア　シャアシャアシャア</p>
+						<p>
+							ビームきらめく　雲を裂く<br>
+							生きて見つめる…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

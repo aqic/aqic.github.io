@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>幸せは罪の匂い - 新世紀エヴァンゲリオン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ東京系アニメ 「新世紀エヴァンゲリオン」插入歌</div>
+
+                    <div class="LyricTitle">幸せは罪の匂い</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高橋洋子</div>
+                    <div class="LyricStaff">作詞：及川眠子<br>作曲：大森俊之<br>編曲：大森俊之</div>
+
+                    <div class="LyricText">
+						<p>
+							待っていれば夢はかなうはずと<br>
+							ただ信じてた幼い日<br>
+							空を流れる光に願いをかけ<br>
+							微笑みながら　いまを紡いでいた</p>
+						<p>
+							待っていても夢はかなわないと<br>
+							そう知ったのはいつの頃<br>
+							優しい人は悲しみばかり背負い<br>
+							思い出という　闇に埋もれてゆく</p>
+						<p>
+							こばれる罪に匂い<br>
+							どうして　何の傷つけずに<br>
+							愛を守れないの<br>
+							あふれる嘘のかけら<br>
+							この腕(て)に抱いた幸せには<br>
+							誰かの涙しみてる</p>
+						<p>
+							穢れのない心だけを持って<br>
+							この世界へと降りたのに<br>
+							奪(と)った瞬間(とき)から失うことに怯え<br>
+							安らぎさえも　いつか敵にまわす</p>
+						<p>
+							にじんだ罪の匂い<br>
+							どうして　何も欲しがらずに<br>
+							生きてはゆけないの<br>
+							ゆがんだ嘘のかけら<br>
+							まぶしい未来(あす)を想いながら<br>
+							眠れぬ夜を數える</p>
+						<p>
+							こばれる罪に匂い<br>
+							どうして　何の傷つけずに<br>
+							愛を守れないの<br>
+							あふれる嘘のかけら<br>
+							この腕に抱いた幸せには<br>
+							誰かの涙しみてる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-eva-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

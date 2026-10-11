@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>空に届けば - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ビデオ「機動戦士ガンダム0080 ポケットの中の戦争」 オープニング（１９８９）</div>
+
+                    <div class="LyricTitle">空に届けば</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">椎名恵</div>
+                    <div class="LyricStaff">作詞、作曲：椎名恵<br>編曲：戸塚修</div>
+
+                    <div class="LyricText">
+						<p>
+							Can you see that　you are sweet?<br>
+							oh Let me love you so<br>
+							見上げる空は遠いけど　抱えきれない夢がある<br>
+							そうよ　創られた　世界の中を<br>
+							抜け出して　自由になりたい</p>
+						<p>
+							※走り続けて　空に届けば<br>
+							　風になれると　そう信じてるから<br>
+							　I never give up forever</p>
+						<p>
+							これでいいのと誰もが<br>
+							無口になってしまうけど<br>
+							そうよ　今まで　出会えなかった<br>
+							本当の　愛を知りたいの</p>
+						<p>
+							腕を伸ばして　空に届けば<br>
+							新しい　始まりの時見えるよ<br>
+							You never give up forever</p>
+						<p>
+							※繰返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

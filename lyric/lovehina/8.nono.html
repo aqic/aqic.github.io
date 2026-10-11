@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ダメダメ！！ - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ダメダメ！！</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">小林由美子</div>
+
+                    <div class="LyricText">
+						<p>
+							ＤＡＮ　ＤＡＮ　大人にハマッテル　子供達には<br>
+							あきれちゃうよね<br>
+							ガンガン言われりゃ曲がってる　世の中も<br>
+							本当（まじ）に　見えてくる<br>
+							正解はどこにある？<br>
+							あっちこっちを捜しても<br>
+							見つからない　Ｈａｐｐｉｎｅｓｓ<br>
+							寂しくなれば誰かに　甘えて見たくなるときもあるけれど<br>
+							ダメダメ！！</p>
+						<p>
+							ＤＡＮ　ＤＡＮ　大人に染まってる　子供達<br>
+							もっと、がんばろう！</p>
+						<p>
+							ＤＡＮ　ＤＡＮ　形にハマッテル　大人達はね<br>
+							自由じゃないね<br>
+							さんざん嘘つきになってる　フェミニスト<br>
+							本当（まじ）に　楽しいの？<br>
+							何もかも壊しちゃえ<br>
+							あっちこっちを騒がせば<br>
+							ひまつぶしの　Ｈａｐｐｉｎｅｓｓ<br>
+							こんなちっちゃな悪戯　重ねてばかりいられないよ、未来は<br>
+							すぐそこ！！</p>
+						<p>
+							全然誰かに染まってない　大人へと<br>
+							もっとがんばろう！</p>
+						<p>
+							寂しくなれば誰かに　甘えて見たくなるときもあるけれど<br>
+							ダメダメ！！<br>
+							ＤＡＮ　ＤＡＮ　大人に染まってる　子供達<br>
+							もっと、がんばろう！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

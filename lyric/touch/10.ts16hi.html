@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Hi Hi High - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ＳＣＤ「Ｈｉ Hi High」、タッチ ～あれから、君は… ～オリジナルサウンドトラック</div>
+
+                    <div class="LyricTitle">Hi Hi High</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">熊谷 幸子</div>
+                    <div class="LyricStaff">作詞：熊谷 幸子・U.CON<br>作曲：熊谷 幸子<br>編曲：熊谷 幸子・松任谷 正隆</div>
+
+                    <div class="LyricText">
+						<p>
+							胸にしまったままの風景は　今もまだ<br>
+							昨日みたいにみえるのは<br>
+							そこに　あなたがずっといたから</p>
+						<p>
+							近すぎて仲良すぎて　気がつかずいた<br>
+							あなたがくれたメッセージ<br>
+							それはいつも　私の事遠くで<br>
+							守っていた</p>
+						<p>
+							（I say）<br>
+							Hi Hi Hi Hi My Love<br>
+							愛を添えて今あなたに届くように<br>
+							Hi Hi Hi Hi My Love<br>
+							あなたは風いつまでも  あなたがいたから<br>
+							私は夢を追ってゆける<br>
+							あなたがいたから<br>
+							生きる重さを感じて歩いてゆける</p>
+						<p>
+							あの雲の先の空の先の宇宙に<br>
+							届きそうな切なさは<br>
+							私がまだ　本当の愛の意味を<br>
+							知らないから？</p>
+						<p>
+							（I say）<br>
+							High High High High So High<br>
+							そしていつかあなたを越えてゆきたい<br>
+							High High High High So High<br>
+							あなたの事忘れない</p>
+						<p>
+							（I say）<br>
+							Hi Hi Hi Hi My Love<br>
+							愛を添えて今あなたに届くように<br>
+							Hi Hi Hi Hi My Love<br>
+							あなたは風いつまでも</p>
+						<p>
+							（I say）<br>
+							High High High High So High<br>
+							そしていつかあなたを越えてゆきたい<br>
+							Bye Bye Bye Bye Good Bye<br>
+							あなたの事忘れない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

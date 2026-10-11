@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>It Don't Get Any Better - Robotech</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Robotech] Insert Song</div>
+
+                    <div class="LyricTitle">It Don't Get Any Better</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Michael Bradley</div>
+                    <div class="LyricStaff">Composed by: Michael Bradley, Steve Wittmack</div>
+
+                    <div class="LyricText">
+						<p>
+							It took me such a long time to believe<br>
+							Things are not the way they seem to be -<br>
+							It's hard to know what's really going on,<br>
+							But you don't know what you've got till it's<br>
+							gone.<br>
+							There's more to this than can be seen<br>
+							But what does it really mean?</p>
+						<p>
+							You better learn to use it<br>
+							Or you loose it.<br>
+							It don't get any better.<br>
+							You better learn to use it<br>
+							Or you loose it.<br>
+							It don't get any better.<br>
+							It don't get any better.<br>
+							You better learn to use it<br>
+							Or you loose it.<br>
+							It don't get any better.<br>
+							Oh, yeah.</p>
+						<p>
+							A situation that could soon arise<br>
+							Could start to cloud the vision in your eyes -<br>
+							How can you expect to ever see<br>
+							If you can't see the forest for the trees?</p>
+						<p>
+							There's more to this than can be seen<br>
+							But what does it really mean?</p>
+						<p>
+							You better learn to use it<br>
+							Or you loose it.<br>
+							It don't get any better.<br>
+							You better learn to use it<br>
+							Or you loose it.<br>
+							It don't get any better.<br>
+							It don't get any better.<br>
+							You better learn to use it<br>
+							Or you loose it.<br>
+							It don't get any better.<br>
+							That's right.</p>
+						<p>
+							I don't pretend to think I know<br>
+							The answer to the question of<br>
+							Why does there never seem<br>
+							To be enough.</p>
+						<p>
+							Break it down!</p>
+						<p>
+							It don't get any better.<br>
+							Clap your hands, common now.<br>
+							It don't get any better.<br>
+							Everybody, give it a go!<br>
+							It don't get any better.<br>
+							It don't get any better.<br>
+							It don't get any better.<br>
+							It don't get any better.<br>
+							No. No. No no no.<br>
+							It don't get any better.<br>
+							It don't get any better.<br>
+							No better. No better now.<br>
+							It don't get any better.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-robotech-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

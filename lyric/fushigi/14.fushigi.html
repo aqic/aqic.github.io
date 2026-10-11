@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>わかっていたはず - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">わかっていたはず</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐藤朱美</div>
+                    <div class="LyricStaff">作詞：佐藤朱美<br>作曲：清岡千穂<br>編曲：土屋真奈部</div>
+
+                    <div class="LyricText">
+						<p>
+							通り過ぎる　恋人たちの笑い声<br>
+							　　胸をしめつける<br>
+							　　雨上がりの　週末の午後なのに<br>
+							　　私　一人　街を歩く<br>
+							　　そばにいたいのに</p>
+						<p>
+							　　そんなこと　わかっていたはず<br>
+							　　好きになれば　なっただけ<br>
+							　　苦しむこと<br>
+							　　せつないね　わかっているのに<br>
+							　　想っている　あなただけを<br>
+							　　こんなに　逢えないときも</p>
+						<p>
+							　　どんな時も　一緒にいてほしいなんて<br>
+							　　思っちゃいけないと<br>
+							　　おさえていた　私の心の声<br>
+							　　止められずに<br>
+							　　今もあふれそうで　苦しいの</p>
+						<p>
+							☆　私には　わかっていたはず<br>
+							　　愛したって　独り占め<br>
+							　　できないこと<br>
+							　　でも今は　大切な想い<br>
+							　　私だけが　見える真実(ほんと)<br>
+							　　信じて　愛し続ける</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

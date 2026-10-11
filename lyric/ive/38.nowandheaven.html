@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Now and heaven - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">I've オリジナル</div>
+
+                    <div class="LyricTitle">Now and heaven</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島宮えい子</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							窓ごしに枯れた木に<br>
+							息を吹きかけてる<br>
+							時々行き交う鳥の未来を読む<br>
+							あの丘の向こうには<br>
+							夕陽が眠っている<br>
+							まっすぐ明日の朝も変わらない</p>
+						<p>
+							ずっと繰り返す<br>
+							花の幻影の中で・・・</p>
+						<p>
+							あざやかな日々を<br>
+							いつまでも抱きしめて<br>
+							空の上まで<br>
+							このまま遠くへと見えないままに<br>
+							浮かんでる<br>
+							夢はもう遥かどこまでも続いてく<br>
+							触れることも<br>
+							今はまるで涙のように<br>
+							瞳を流れるから</p>
+						<p>
+							この風の懐かしい<br>
+							香りと色の波<br>
+							まっすぐ未来の日々も変わらない</p>
+						<p>
+							ずっと繰り返す<br>
+							いくつもの出会いはもう・・・</p>
+						<p>
+							何もかもまるで透き通る<br>
+							やわらかな羽のように<br>
+							そっと包み込んで喜びの中<br>
+							泳ぐような<br>
+							時間はもう遥か過去の日に<br>
+							とどまって見守るだけ<br>
+							今からもう一度生まれ変わって<br>
+							生きて行くから</p>
+						<p>
+							ずっと繰り返す<br>
+							いくつもの出会いはもう・・・</p>
+						<p>
+							何もかもまるで透き通る<br>
+							やわらかな羽のように<br>
+							そっと包み込んで喜びの中<br>
+							泳ぐような<br>
+							時間はもう遥か過去の日に<br>
+							とどまって見守るだけ<br>
+							今からもう一度生まれ変わって<br>
+							生きて行くから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

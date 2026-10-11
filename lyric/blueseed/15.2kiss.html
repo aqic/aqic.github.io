@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>SECOND KISS - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">SECOND KISS</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">TAKADA BAND</div>
+
+                    <div class="LyricText">
+						<p>
+							見つめてる　感づいてる<br>
+							揺らめく視線は誰のため？<br>
+							切なくて　届かなくて<br>
+							じれったい季節（とき）が蒼く光る</p>
+						<p>
+							★KISS　二度目を待ってるの<br>
+							　　　　子供じゃない　わかって<br>
+							　KISS　睫毛が震えてる　守りたい</p>
+						<p>
+							☆手を延ばせばあなたを感じられるから<br>
+							　もどかしい<br>
+							　せめて今は　想いを伝えたい<br>
+							　”抱きしめたくて　愛しい”<br>
+							　狭間で揺れている恋人　そばにいて</p>
+						<p>
+							よそ見しちゃ　イヤだからね<br>
+							不安な心に火を付ける<br>
+							臆病な１７歳　壊せない季節（とき）が輝いてる</p>
+						<p>
+							KISS　情熱のエッセンス<br>
+							　　　私にも振りかけて<br>
+							KISS　微かなためらいが<br>
+							　　　じゃまをする</p>
+						<p>
+							その全てを重ねて生きてゆきたいの<br>
+							できるなら<br>
+							せめて今は　見つめ合えるだけで<br>
+							何もいらない　愛しい<br>
+							耳元で小さく囁く　”そばにいて”</p>
+						<p>
+							★ＲＥＰＥＡＴ</p>
+						<p>
+							☆ＲＥＰＥＡＴ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

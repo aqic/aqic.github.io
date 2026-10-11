@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>天使創造すなわち光 - 少女革命ウテナ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「少女革命ウテナ」 決闘の歌７(1997)</div>
+
+                    <div class="LyricTitle">天使創造すなわち光</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">杉並児童合唱団</div>
+                    <div class="LyricStaff">作詞・作曲：J.A.シーザー</div>
+
+                    <div class="LyricText">
+						<p>
+							万象ライト　モザイコライト<br>
+							暁の子ルシフェル天使<br>
+							黙示ライト　ミカエルライト<br>
+							闇の子アンドロギュヌス<br>
+							焔のライト　天堂ライト<br>
+							天界のヒラレルキア<br>
+							幻想ライト　永遠ライト<br>
+							空想カラクリ　気まぐれ誕生<br>
+							ニコクス（闇夜）<br>
+							エレボス（幽冥）<br>
+							ウラノス（星空）<br>
+							タナトス（死）<br>
+							光り輝く肉体、球形ギュヌス<br>
+							あらゆる奇蹟に生まれギュヌス<br>
+							快楽原則　ニルヴァーナ原則<br>
+							死の必然性、すなわち光<br>
+							生きてはいずに<br>
+							動いている生命の象<br>
+							大脳宇宙に　漂っている生命の形<br>
+							光明、仮現<br>
+							永遠を期して！<br>
+							すなわち原初に戻る不完全<br>
+							両性　両極　二つのわたし<br>
+							上下　左右　二つのわたし<br>
+							前後　天地　二つのわたし<br>
+							天使　悪魔　二つのわたし<br>
+							中は空洞　空洞　……</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-utena-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

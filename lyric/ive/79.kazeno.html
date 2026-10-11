@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風の辿り着く場所 - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">KANON</div>
+
+                    <div class="LyricTitle">風の辿り着く場所</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">彩菜</div>
+                    <div class="LyricStaff">作詞：Key<br>作曲：折戸 伸治<br>編曲: 高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							足元に風　光が舞った<br>
+							日常にだけ　積もったぶんの奇跡が<br>
+							見上げれば雲　遠くへの帰路<br>
+							幼い日の自分よりも早く</p>
+						<p>
+							雪解けを待ってた子供のように<br>
+							走る光る雫飛び跳ねてる<br>
+							明日の出会いさえ気づかずにいる<br>
+							季節たちの中で輝いているよ</p>
+						<p>
+							世界中にはどんな想いも叶う日が来る<br>
+							ずっと旅をしてゆく僕らに<br>
+							小さな精たち舞い降りる</p>
+						<p>
+							出合った場所も　緑をなして<br>
+							ゆるやかにも流れるときに委ねて<br>
+							遥かに仰ぐ　町並みの路地<br>
+							幼い日の自分がまた駆ける</p>
+						<p>
+							あの遊歩道から聞こえてくる<br>
+							木々の声や日々のざわめきに似た<br>
+							奇跡の足音に気づいたら<br>
+							こんなにまた強くなれるふたりだね</p>
+						<p>
+							世界中溢れる想いに風が向いてる<br>
+							ずっとこんなこと繰り返して<br>
+							さよならのない旅をする</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Winter Wish - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Winter Wish</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">米倉千尋</div>
+                    <div class="LyricStaff">作詞・作曲：米倉千尋<br>編曲：重実撤</div>
+
+                    <div class="LyricText">
+						<p>
+							小さな幸せを　大事に温めてた<br>
+							ねぇ、想うと胸の奥　こんなに痛くなるの</p>
+						<p>
+							あなたの瞳　あなたの声　すべて愛しくて・・・</p>
+						<p>
+							粉雪が頬に舞い降り　涙に変わった<br>
+							いちまでも側にいて　この手を離さないで<br>
+							冬の空　きらめく星は二人を包んだ<br>
+							白い肩　白い息　あなたと感じてるWINTER WISH</p>
+						<p>
+							寄り添い歩いた　海沿いの遊園地<br>
+							ねぇ、観覧車に乗って　光のまち見ようよ</p>
+						<p>
+							遠くなる海と淡いKissが切なくて・・・</p>
+						<p>
+							始まりは粉雪のイヴ　小さな物語<br>
+							誰よりも愛してる　この手を離さないで<br>
+							歩き出す二人の未来　並んだ足跡<br>
+							温もりも優しさも　あなたと抱きしめるWINTER WISH</p>
+						<p>
+							粉雪が頬に舞い降り　涙に変わった<br>
+							いちまでも側にいて　この手を離さないで<br>
+							冬の空　きらめく星は二人を包んだ<br>
+							白い肩　白い息　あなたと感じてるWINTER WISH</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

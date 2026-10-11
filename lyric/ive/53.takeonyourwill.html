@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Take on your will - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">同心</div>
+
+                    <div class="LyricTitle">Take on your will</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">AKI</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							止まらない　このままで<br>
+							夢も今も越えて行くから<br>
+							未来は　水色に染まって</p>
+						<p>
+							そっと香る街角の<br>
+							風に揺れたあのころの日々<br>
+							とめどない想いが<br>
+							瞳の奥を廻るよ<br>
+							いつからか<br>
+							あの日のままで生きて行けたらと<br>
+							そして　優しくなれる時<br>
+							忘れないでいて</p>
+						<p>
+							Take on your will<br>
+							逃げそうな<br>
+							君の夢を離さないで<br>
+							壊れそうな崩れそうな時も<br>
+							終わらない　世界中<br>
+							今も君も空も星も<br>
+							叶わないもの　何も無いよ</p>
+						<p>
+							濡れた涙の跡が<br>
+							きらめく明日に変わる<br>
+							いつの日か<br>
+							あの日のように笑える時まで<br>
+							少しだけ強くなるから<br>
+							離れないでいて</p>
+						<p>
+							Try on your chance<br>
+							消えそうな<br>
+							君の想い離さないで<br>
+							壊れそうな崩れそうな時も<br>
+							止まらない　このままで<br>
+							夢も今も越えて行くから<br>
+							未来は　水色に染まって</p>
+						<p>
+							Take on your will<br>
+							君の夢を離さないで<br>
+							壊れそうな崩れそうな時も<br>
+							終わらない　世界中<br>
+							今も君も空も星も<br>
+							叶わないもの　何も無いよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

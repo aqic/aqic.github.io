@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>W・H・Y - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「犬夜叉」</div>
+
+                    <div class="LyricTitle">W・H・Y</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Dream</div>
+                    <div class="LyricStaff">作詞：MAI MATSUMURO<br>作曲：HIDEAKI KUWABARA<br>編曲：HΛL YAS KITAJIMA</div>
+
+                    <div class="LyricText">
+						<p>
+							「どうしてなの？」自分に問いかけても<br>
+							今はなぜか答えが出てこない　それでいて・・・<br>
+							気持ちまでも伝えられない事に<br>
+							怖いくらい　気づいているよ</p>
+						<p>
+							街ゆく人達を　じっと見つめた<br>
+							何もかもがもう“不自然”じゃなくなってきてる</p>
+						<p>
+							今言葉にした気持ちと　口にしたいこの思いは<br>
+							いつになっても変わることなく　ずっと続いてゆくだろう<br>
+							そして踏み出した一歩を　信じる事ができた時<br>
+							新しい明日　自分の手で　抱きしめる強さを持てるはず</p>
+						<p>
+							季節がまた　思い出を連れ出して<br>
+							心の中　あたたかく染まっていくけれど<br>
+							何か一つもの足りなさ残して<br>
+							気づかぬまま　通りすぎてた</p>
+						<p>
+							電話を切った後　孤独感じて<br>
+							声が聴きたいそばにいてほしい　そんな日もある</p>
+						<p>
+							時に一人で耐えるのも　必要だって理解ったよ<br>
+							前なら出来ないことだって今　乗り越える力がある<br>
+							約束はしていないけど　いつでも忘れずにいたい<br>
+							キミの代わりになる人なんて　どこを探してもいないから</p>
+						<p>
+							例え全てを失くし　傷ついたとしても<br>
+							“私の輝きたい　場所は此処だろう？”</p>
+						<p>
+							こんな気持ちになれたのも　この気持ちに気づいたのも<br>
+							諦めそうになった時でも　その笑顔をくれるから<br>
+							同じ瞬間を見ていたくて　いつかキミに届きたくて<br>
+							言葉じゃうまく言えないけどね“分かってくれる”と信じたい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

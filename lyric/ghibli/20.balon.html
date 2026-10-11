@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>バロンのうた - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">耳をすませば</div>
+
+                    <div class="LyricTitle">バロンのうた</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">コーラス：鶴丸 はるか、佐藤 文歩、
+松崎 舞、東 岳子、内藤 瑞穂、小山 悠
+（from 少年少女合唱団みずうみ）</div>
+                    <div class="LyricStaff">作詞：宮崎 駿<br>作曲・編曲：野見 祐二<br>ピアノ：平野 義子</div>
+
+                    <div class="LyricText">
+						<p>
+							さあ　でかけよう　出発の刻（とき）が来た<br>
+							磁石も地図も捨てて　世界を股にかけ<br>
+							さあ　でかけよう　出発の刻（とき）が来た<br>
+							みがいた靴に帽子　出会うべき人をさがしに</p>
+						<p>
+							胸を張り　あごをひき<br>
+							力まず　おしゃれに<br>
+							いつもの皮肉な微笑に<br>
+							熱い心をくるんでいこう</p>
+						<p>
+							さあ　でかけよう　出発の刻（とき）が来た<br>
+							磁石も地図も捨てて　世界を股にかけ<br>
+							さあ　でかけよう<br>
+							ゆるやかな　会釈と　傲慢な足どりで<br>
+							世界に向かい旅立とう</p>
+						<p>
+							時代の嵐　愚かな思想<br>
+							狂気と死の丘を越え</p>
+						<p>
+							胸を張り　あごをひき<br>
+							力まず　おしゃれに<br>
+							いつもの皮肉な微笑に<br>
+							熱い心をくるんでいこう</p>
+						<p>
+							さあ　でかけよう　出発の刻（とき）が来た<br>
+							磁石も地図も捨てて　世界を股にかけ<br>
+							さあ　でかけよう<br>
+							ゆるやかな会釈と　傲慢な足どりで<br>
+							世界に向かい旅立とう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

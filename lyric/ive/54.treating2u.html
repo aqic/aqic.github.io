@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Treating 2U&lt;br&gt;-wrap up style- - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Treating 2U</div>
+
+                    <div class="LyricTitle">Treating 2U&lt;br&gt;-wrap up style-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MAKO</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							今日まで泣いていた<br>
+							流されてく人の波に<br>
+							いつかは訪れる日に悔やまぬよう</p>
+						<p>
+							誰もがどこかに救いを求めてる<br>
+							生きて行くことが<br>
+							君の夢を追い続けることだよと<br>
+							気付かせてあげる</p>
+						<p>
+							そして<br>
+							このままずっと今のままで<br>
+							許しあいながら歩いてく<br>
+							これからきっと見えてくる<br>
+							明日へと夢をつなぐ</p>
+						<p>
+							重ねた君の手に<br>
+							感じる小さな安らぎを<br>
+							抱えて進んでく<br>
+							地図にない道を</p>
+						<p>
+							かかげた希望の重さに気付いても<br>
+							逃げないでほしい<br>
+							支え合う日々に疲れてしまったら<br>
+							少し休もうよ</p>
+						<p>
+							だから<br>
+							かならず君はたどり着ける<br>
+							優しさに癒される場所へ<br>
+							それからきっとわかりあう<br>
+							二人へと夢は続く</p>
+						<p>
+							だから<br>
+							かならず君はたどり着ける<br>
+							優しさに癒される場所へ<br>
+							それからきっとわかりあう<br>
+							二人へと夢は続く</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

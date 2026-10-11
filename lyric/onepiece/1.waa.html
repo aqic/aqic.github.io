@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ウィーアー! - ONE PIECE</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ONE PIECE OP 1</div>
+
+                    <div class="LyricTitle">ウィーアー!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">きただにひろし</div>
+                    <div class="LyricStaff">作詞：藤林聖子<br>作曲：田中公平<br>編曲：根岸貴幸</div>
+
+                    <div class="LyricText">
+						<p>
+							ありったけの夢をかき集め<br>
+							搜し物を搜しに行くのさ ONE PIECE</p>
+						<p>
+							羅針盤なんて　じゅうたいのもと<br>
+							熱にうかされ　舵をとるのさ</p>
+						<p>
+							ホコリかぶってた　寶の地図も<br>
+							確かめたのなら　傳說じゃない！</p>
+						<p>
+							個人的な嵐は　誰かの<br>
+							バイオリズム乘っかって<br>
+							思い過ごせばいい！</p>
+						<p>
+							ありったけの夢をかき集め<br>
+							搜し物を探しに行くのさ<br>
+							ポケットのコイン、それと<br>
+							You wanna be my Friend？<br>
+							We are,We are on the cruise！ウィーアー！</p>
+						<p>
+							ぜんぶまに受けて　信じちゃっても<br>
+							肩を押されて　 1歩リードさ</p>
+						<p>
+							今度会えたなら　話すつもりさ<br>
+							それからのことと　これからのこと</p>
+						<p>
+							つまりいつも　ピンチは誰かに<br>
+							アピール出来る　いいチャンス<br>
+							自意識過剩に！</p>
+						<p>
+							しみったれた夜をぶっとばせ！<br>
+							寶箱に　キョウミはないけど<br>
+							ポケットにロマン、それと<br>
+							You wanna be my Friend？<br>
+							We are,We are on the cruise！ウィーアー！</p>
+						<p>
+							ありったけの夢をかき集め<br>
+							搜し物を探しに行くのさ<br>
+							ポケットのコイン、それと<br>
+							You wanna be my Friend？<br>
+							We are,We are on the cruise！ウィーアー！</p>
+						<p>
+							ウィーアー！　ウィーアー！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onepiece-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

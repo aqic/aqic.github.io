@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>鳥の詩　-Short Ver- - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">AIR オープニングテーマ</div>
+
+                    <div class="LyricTitle">鳥の詩　-Short Ver-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lia</div>
+
+                    <div class="LyricText">
+						<p>
+							消える飛行機雲　僕たちは見送った<br>
+							眩しくて逃げた　いつだって弱くて<br>
+							あの日から変わらず<br>
+							いつまでも変わらずにいられなかったこと<br>
+							悔しくて指を離す</p>
+						<p>
+							あの鳥はまだうまく飛べないけど<br>
+							いつかは風を切って知る<br>
+							届かない場所がまだ遠くにはある<br>
+							願いだけ秘めて見つめてる</p>
+						<p>
+							子供たちは夏の線路　歩く<br>
+							吹く風に素足をさらして<br>
+							遠くには幼かった日々を<br>
+							両手には飛び立つ希望を</p>
+						<p>
+							消える飛行機雲　追いかけて追いかけて<br>
+							この丘を越えたあの日から変わらず　いつまでも<br>
+							真っ直ぐに僕たちはあるように<br>
+							わたつみのような強さを守れるよ　きっと</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

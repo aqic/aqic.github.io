@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Frozen Flower - 電影少女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Frozen Flower</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Nav Katze</div>
+
+                    <div class="LyricText">
+						<p>
+							見果てぬ夢の中<br>
+							枯れない花を愛して<br>
+							凍てついた想いは永遠(とわ)に<br>
+							かすかな花の香りは<br>
+							消えてゆく思い出<br>
+							時間を止めても<br>
+							遠ざかる君の笑い声</p>
+						<p>
+							すべては凍りつく<br>
+							明日(あす)さえも<br>
+							このまま閉ざされた光の場所て<br>
+							手を伸ばしつみとる花は<br>
+							くだけ散る面影<br>
+							きのうを忘れても<br>
+							つきささるガラスのかけら</p>
+						<p>
+							溶けてゆく氷の花を<br>
+							両手でつつんで<br>
+							冷たいまなざしに<br>
+							鮮やかな光の花を<br>
+							見果てぬ夢の中<br>
+							枯れない花を愛して<br>
+							凍てついた想いは永遠(とわ)に</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-video-girl-ai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

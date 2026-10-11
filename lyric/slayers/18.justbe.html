@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Just be conscious - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Just be conscious</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							広がる思い彼方へ続く<br>
+							今思い出すソラの果て<br>
+							選び生まれ落ちたこの地で<br>
+							出会いと別れ　束の間に過ぎる　夢</p>
+						<p>
+							響け　思いよ力の限り<br>
+							届け　心の奥深く<br>
+							走れ　後ろは振り向かないで<br>
+							時は　プロローグを刻む</p>
+						<p>
+							抑圧の中塞ぎ止められて<br>
+							他人（ひと）を責めても変わらない<br>
+							運とチャンスと偶然とタイミング<br>
+							心研ぎ澄まし感じる</p>
+						<p>
+							人は傷を知る度に<br>
+							強く優しくなれる<br>
+							涙のあとの真実<br>
+							かけがえない今を生きてる</p>
+						<p>
+							※明日の自分を好きになりたいから<br>
+							　今日の自分をギュッと抱きしめる<br>
+							　自分が主役の人生（ドラマ）ぐらいは<br>
+							　楽しまなくちゃもったいないわ<br>
+							　ハッピーエンドだけじゃ物足りない<br>
+							　時には涙もエッセンスなの<br>
+							　泣いて傷ついてそして立ち直って<br>
+							　演じてみせるわフィナーレまで</p>
+						<p>
+							祈れ　言葉は姿を変える<br>
+							進め　信じてこの道を<br>
+							掴め　両手に今その夢を<br>
+							余計なプライド脱ぎ捨て</p>
+						<p>
+							同じ苦しみ繰り返してる<br>
+							気付くまでずっとラビリンス<br>
+							抜け出す術は必ずあると<br>
+							耳を澄まして見つけ出す</p>
+						<p>
+							人は孤独を知る度<br>
+							ぬくもり捜し求め<br>
+							傷を癒して眠るの<br>
+							かけがえない未来（あす）に向かって</p>
+						<p>
+							幸せのかたちそれぞれ違うのよ<br>
+							他人の言葉に惑わされない<br>
+							信じるものが私の現実<br>
+							恩着せがましい偽善（あい）なんていらない<br>
+							せっかく今を生きているのだから<br>
+							好きなこと楽しいことしなくちゃ<br>
+							次の人生（アンコール）なんて待っていられない<br>
+							精一杯の今に乾杯！</p>
+						<p>
+							※Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

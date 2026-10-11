@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>メグメル - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">CLANNAD MAIN THEME</div>
+
+                    <div class="LyricTitle">メグメル</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">riya</div>
+                    <div class="LyricStaff">作詞：riya<br>作曲：eufonius<br>編曲：kiku</div>
+
+                    <div class="LyricText">
+						<p>
+							透き通る　夢を見ていた　やわらかい永遠<br>
+							風のような　かすかな音が<br>
+							高い空から僕を呼んでいる</p>
+						<p>
+							このまま飛び立てば　どこにだってゆける</p>
+						<p>
+							光の中　きらめいた　言葉も思いも全部<br>
+							隠さず伝えて　きっと</p>
+						<p>
+							不確かな気持ちを抱く　どうしても不安で<br>
+							今はまだ　知らないけれど<br>
+							いつかその目に　映る時が来る</p>
+						<p>
+							世界は動いてる　君を目指しながら</p>
+						<p>
+							重ねた手と手の中に　小さな未来が見えたなら<br>
+							記憶を　さあ解き放とう<br>
+							真っ直ぐな　心の先に<br>
+							〓がる時間があるから</p>
+						<p>
+							冷たい朝の日も　迷わず進んでゆくよ<br>
+							痛みも悲しみも　味方に変えながら</p>
+						<p>
+							君を照らしている　大気がまだ消えないなら<br>
+							僕を待っていて　静かに見下ろして</p>
+						<p>
+							重ねた手と手の中に　小さな未来が見えたなら<br>
+							光の中　きらめいた　言葉も思いも全部<br>
+							遙かな君まで　隠さず伝えて　きっと</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

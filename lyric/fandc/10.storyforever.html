@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>永遠のストーリー - F&amp;C</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OP主題歌</div>
+
+                    <div class="LyricTitle">永遠のストーリー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">美羽</div>
+                    <div class="LyricStaff">作詞：ドンマッコウ（TWO-FIVE）<br>作曲：おおくま　けんいち<br>編曲：おおくま　けんいち</div>
+
+                    <div class="LyricText">
+						<p>
+							出会いは偶然で　どこにでもあることでも<br>
+							わたしには大事なストーリー</p>
+						<p>
+							海沿いを走る　二人で<br>
+							この夏はここでよかった<br>
+							あなたの横顔をながれ<br>
+							潮風やさしくつつむ</p>
+						<p>
+							どこへ向かうのかいわないで<br>
+							太陽は未来をさす<br>
+							二人は恋に落ちるのかも</p>
+						<p>
+							何気ない会話も　わたしには意味があるの<br>
+							あなただけ特別とおもってる<br>
+							出会いは偶然で　どこにでもあるとしても<br>
+							二人なら永遠のストーリー</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fandc-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

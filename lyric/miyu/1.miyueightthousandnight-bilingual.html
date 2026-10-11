@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>美夕八千夜（日中対訳） - 吸血姫美夕</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「吸血姫美夕」 エンディング・テーマ</div>
+
+                    <div class="LyricTitle">美夕八千夜（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">木佐江子</div>
+                    <div class="LyricStaff">作詞：垣野内成美<br>作曲：寺岷民哉<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							扉をあげてそこは永遠<br>
+							遠くの呼びをへ誰の声<br>
+							神をなぜるのあなたは誰</p>
+						<p>
+							＊上が語るは願の国<br>
+							　通り過ぎてゆく時間と思い<br>
+							　友達何かいいらないの（素手よ）<br>
+							　自分だっていらないの（本とよ）</p>
+						<p>
+							砂の足跡崩れてく</p>
+						<p>
+							※夜は不思議本当かくして<br>
+							　現を見せる月にまで彼<br>
+							　闇が広がる…</p>
+						<p>
+							△夜は紫涙が来る<br>
+							　私の変わりに空がなくの</p>
+						<p>
+							瞳を閉じてそこは永遠<br>
+							自覚のささやき誰の声<br>
+							とうに触れるのあなたは誰</p>
+						<p>
+							＊繰り返し</p>
+						<p>
+							砂の人形ふつれてく</p>
+						<p>
+							※繰り返し</p>
+						<p>
+							夜はふんじょう星が来る<br>
+							私の変わりにつきが歌うの</p>
+						<p>
+							△繰り返し</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							打开窗户，从遥远的地方传来的是谁的呼声？<br>
+							你是谁。</p>
+						<p>
+							笛声诉说思念着的故乡<br>
+							流遇的是时间和怀念<br>
+							不要朋友（说慌）<br>
+							连自己也可放弃（真话）<br>
+							砂上的足迹慢慢消逝</p>
+						<p>
+							不时的夜晚<br>
+							被隐藏的现实<br>
+							只让你看到现在梦想<br>
+							被月亮召唤<br>
+							黑暗开始蔓延</p>
+						<p>
+							紫色的夜空在流泪<br>
+							像是在为我哭泣</p>
+						<p>
+							闭上眼睛<br>
+							从远处传来的轻语是谁的<br>
+							是你么</p>
+						<p>
+							笛声诉说思念着的故乡<br>
+							流遇的是时间和怀念</p>
+						<p>
+							不要朋友（说慌）<br>
+							连自己也可放弃（真话）<br>
+							砂上的足迹慢慢消逝</p>
+						<p>
+							不时的夜晚，被隐藏的现实</p>
+						<p>
+							只让你看到现在梦想<br>
+							被月亮召唤<br>
+							黑暗开始蔓延</p>
+						<p>
+							夜是明朗的表绿色 星辰落下<br>
+							明月好像在为我歌唱<br>
+							紫色的夜色在流泪<br>
+							好像是在为我哭泣</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

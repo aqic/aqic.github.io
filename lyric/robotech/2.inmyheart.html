@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>In My Heart - Robotech</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Robotech] Insert Song</div>
+
+                    <div class="LyricTitle">In My Heart</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Three Dog Night</div>
+                    <div class="LyricStaff">Composed by: Micheal Bradley and Steve Wittmack</div>
+
+                    <div class="LyricText">
+						<p>
+							In my life,<br>
+							I've had to try to<br>
+							Make it on my own.<br>
+							Sometimes it's hard to be alone.</p>
+						<p>
+							In my mind,<br>
+							My loneliness would<br>
+							Never seem to end -<br>
+							Something is happening<br>
+							I don't understand.</p>
+						<p>
+							○In my heart,<br>
+							　I feel the heat<br>
+							　Of something burning deep inside of me.<br>
+							　I'll be the man that I could never be<br>
+							　Now that I found you.</p>
+						<p>
+							In my heart,<br>
+							I realise<br>
+							You haven't left had opened up my eyes.<br>
+							You are the answer and the reason why.<br>
+							Living my life for you.</p>
+						<p>
+							Through my eyes<br>
+							I've seen a world that<br>
+							No-one's ever seen.<br>
+							Seems like I've lived inside a dream.</p>
+						<p>
+							In my dream,<br>
+							I never thought I'd<br>
+							Have someone who cared.<br>
+							Then you walked in my life,<br>
+							Made me so aware.</p>
+						<p>
+							○Repeat</p>
+						<p>
+							In my heart,<br>
+							I realise<br>
+							You haven't left had opened up my eyes...<br>
+							And if my world should fall apart<br>
+							I know that you will be there<br>
+							In my heart!</p>
+						<p>
+							○Repeat</p>
+						<p>
+							In my heart.<br>
+							[you're in my heart...]<br>
+							Oh, I'll be the man that I'll never be. Yeah...<br>
+							Open up my eyes.<br>
+							baby baby baby<br>
+							[you're in my heart...]<br>
+							Livin', livin', livin' livin' my love for you.<br>
+							You are the one, girl.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-robotech-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

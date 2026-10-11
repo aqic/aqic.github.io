@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>AURA - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">フジテレビ系アニメ「∀ GUNDAM」エンディングテーマ</div>
+
+                    <div class="LyricTitle">AURA</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">谷村新司</div>
+
+                    <div class="LyricText">
+						<p>
+							微熱がさめないまま<br>
+							うつむく少年の瞳は<br>
+							心の海みつめて<br>
+							静かにほほえんでる</p>
+						<p>
+							生まれくるもの　消えてゆくもの<br>
+							すべては宿命の振子の幅<br>
+							挫折の闇を突き抜けみえてくる<br>
+							それが光の真実</p>
+						<p>
+							AURA　夜明けとともに<br>
+							この髪をゆらすものは何<br>
+							AURA　地上の風は<br>
+							神がもらした溜息か</p>
+						<p>
+							まつ毛を濡らしたまま<br>
+							みあげる少年の瞳は<br>
+							遠いあの日かすめて<br>
+							明日をみつめている</p>
+						<p>
+							生まれくるもの　消えてゆくもの<br>
+							すべては宿命の振子の幅<br>
+							挫折の闇を突き抜けみえてくる<br>
+							それが命の真実</p>
+						<p>
+							AURA　夜明けとともに<br>
+							忘れ去られる星に捧ぐ<br>
+							AURA　至上の愛は<br>
+							小さなその手の中にある</p>
+						<p>
+							AURA　夜明けとともに<br>
+							忘れ去られる星に捧ぐ<br>
+							AURA　至上の愛は<br>
+							小さなその手の中にある</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

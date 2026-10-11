@@ -1,0 +1,106 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>さあ - まもって守護月天!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">まもって守護月天！</div>
+
+                    <div class="LyricTitle">さあ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">サーフィス</div>
+
+                    <div class="LyricText">
+						<p>
+							「何でも自分で出来る」って<br>
+							強がるだけ強がってもね<br>
+							君が居なきゃなんもできないし<br>
+							こんなちっぽけな部屋が今じゃ<br>
+							ちょっとだけ広く見えるよ<br>
+							冷蔵庫開けりゃ<br>
+							なんもありゃしないや</p>
+						<p>
+							さぁ　吸いこんでくれ<br>
+							　僕の寂しさ　孤独を全部君が<br>
+							さぁ　噛み砕いてくれ<br>
+							　くだらん事悩みすぎる<br>
+							　僕の悪いクセを<br>
+							さぁ　笑ってくれ<br>
+							　無邪気な顔で<br>
+							　また僕を茶化すように<br>
+							さぁ　受け取ってくれ<br>
+							　この辛さを<br>
+							　さぁ分けあいましょう？<br>
+							さぁ！！</p>
+						<p>
+							体がギシギシ痛いよ<br>
+							最近お疲れモードね<br>
+							君が居なくなっただけなのに<br>
+							溜め息ばかりが増えるよ<br>
+							ちょっと強い薬をちょうだい<br>
+							湿っぽい布団じゃ<br>
+							眠れやしないや</p>
+						<p>
+							さぁ　吸いこんでくれ<br>
+							　僕の心も　体もそう何もかも<br>
+							さぁ　噛み砕いてくれ<br>
+							　くだらん意地張らぬように<br>
+							　もう一度君が<br>
+							さぁ　笑ってくれ<br>
+							　ダメな奴と<br>
+							　「離れて気付くなんて遅い」と<br>
+							さぁ　受け取ってくれ<br>
+							　やっぱり君に「さよなら」出来ない</p>
+						<p>
+							何もかもがうまくいかない<br>
+							なんだか空回りばかりで<br>
+							君じゃなきゃ大事な物も<br>
+							全然見つかりゃしないや</p>
+						<p>
+							さぁ　吸いこんでくれ<br>
+							　僕の寂しさ　孤独を全部君が<br>
+							さぁ　噛み砕いてくれ<br>
+							　くだらん事悩みすぎる<br>
+							　僕の悪いクセを<br>
+							さぁ　笑ってくれ<br>
+							　ダメな奴と<br>
+							　「離れて気付くなんて遅い」と<br>
+							さぁ　受け取ってくれ<br>
+							　やっぱり君が誰より好きだから<br>
+							　「さよなら」出来ない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-mamote-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

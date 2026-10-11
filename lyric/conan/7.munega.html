@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>胸がドキドキ - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">OP 1話～30話</div>
+
+                    <div class="LyricTitle">胸がドキドキ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">↑THE HIGH-LOWS↓</div>
+                    <div class="LyricStaff">作詞・作曲：甲本ヒロト・真島昌利<br>編曲：↑THE HIGH-LOWS↓</div>
+
+                    <div class="LyricText">
+						<p>
+							百年ぶりの世紀末　泣けといわれて僕は笑った<br>
+							ひさかたぶりの世紀末　広い世界へとび出してゆく</p>
+						<p>
+							子どものころにわかりかけてたことが　大人になってわからないまま</p>
+						<p>
+							えらくもないし<br>
+							りっぱでもない<br>
+							わかってるのは胸のドキドキ<br>
+							答えでもない本当でもない<br>
+							信じてるのは胸のドキドキ<br>
+							胸のドキドキだけ</p>
+						<p>
+							かっこいいかはわからないけど　おさえきれない夢を見たんだ<br>
+							作戦たててじっと待つより　子どものままでぶつかってゆく</p>
+						<p>
+							宇宙の果てに旗を立てたとしても　宇宙の謎はわからないまま</p>
+						<p>
+							えらくもないし<br>
+							りっぱでもない<br>
+							わかってるのは胸のドキドキ<br>
+							答えでもない本当でもない<br>
+							信じてるのは胸のドキドキ</p>
+						<p>
+							えらくもないし<br>
+							りっぱでもない<br>
+							わかってるのは胸のドキドキ<br>
+							答えでもない本当でもない<br>
+							信じてるのは胸のドキドキ<br>
+							胸のドキドキだけ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

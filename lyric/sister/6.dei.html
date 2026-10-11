@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>デイジーブーケ - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">デイジーブーケ</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							まだ少し眠いまぶたをくすぐる<br>
+							生まれたての光　ステキな朝<br>
+							腕を組みながら　ほおばったポップコーン<br>
+							大好きなあなたの夢を見た</p>
+						<p>
+							ねえ　今頃どこで　何をしているの？</p>
+						<p>
+							あなたの名前　つぶやくたびに<br>
+							やさしい気持ちになれるの<br>
+							ほら真っ白なデイジーの花の<br>
+							ブーケを抱きしめて会いにゆきたい</p>
+						<p>
+							公園のポプラも　青いブランコも<br>
+							雨上がりみたいにキラキラして<br>
+							あなたがとなりに　もしいてくれたら<br>
+							この胸にも虹がかかるのに</p>
+						<p>
+							今　ときめく想い　ほほを染めてゆく</p>
+						<p>
+							朝のしずくを　ぜんぶ集めて<br>
+							あなたの空へ届けたい<br>
+							両手いっぱい　デイジーの花の<br>
+							ブーケを抱きしめて会いにゆくから</p>
+						<p>
+							あなたの名前　つぶやくたびに<br>
+							やさしい気持ちになれるの<br>
+							ほら真っ白なデイジーの花の<br>
+							ブーケを抱きしめて会いにゆきたい</p>
+						<p>
+							瞳を閉じて　風を感じて<br>
+							あなたの空へ届けたい<br>
+							両手いっぱい　デイジーの花の<br>
+							ブーケを抱きしめて会いにゆくから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

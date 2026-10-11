@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>恋愛の才能 - 天地無用!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天地無用」 エンディング・テーマ (1989)</div>
+
+                    <div class="LyricTitle">恋愛の才能</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">横山千沙</div>
+                    <div class="LyricStaff">作詞：古道夏子<br>作曲：松宮京子<br>編曲：藤原郁郎</div>
+
+                    <div class="LyricText">
+						<p>
+							「好きだよ」と言わないで<br>
+							詰まらない台詞ようおお<br>
+							知らん振りできるのが<br>
+							恋愛の才能</p>
+						<p>
+							ねっ、また今も目が合ったよね<br>
+							目をそらす瞬間が</p>
+						<p>
+							※「わかってるの君の気持ち」<br>
+							私だって同じだけど</p>
+						<p>
+							△「恋人」と呼ばれた時<br>
+							もうそれは濃いじゃないのよ<br>
+							だから確かめたりしないで<br>
+							どうぞこのままで</p>
+						<p>
+							約束はいらないわ<br>
+							意味のないルレようおお<br>
+							午前に出会うのも<br>
+							恋愛の才能</p>
+						<p>
+							ねっ、日曜日あの町角で<br>
+							すれ違うぐぜんがあぁ素敵</p>
+						<p>
+							二人きりで見詰め合えば<br>
+							恋は恋じゃなくなるのよ<br>
+							壊れや吸い物だから</p>
+						<p>
+							大切に守りたいよね</p>
+						<p>
+							だからとくを見つめていて<br>
+							そうねそのままで</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							△くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-tenchi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

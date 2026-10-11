@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Ｉ　ａｍ - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「犬夜叉」</div>
+
+                    <div class="LyricTitle">Ｉ　ａｍ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ｈｉｔｏｍｉ</div>
+                    <div class="LyricStaff">作詞：ｈｉｔｏｍｉ<br>作曲：北野正人<br>編曲：渡辺善太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							探そう 夢のカケラ拾い集め<br>
+							切なくても 今なら探せるだろう<br>
+							めくるめく 毎日の形変えて<br>
+							切なくても 確かな今を感じよう</p>
+						<p>
+							見かけよりも単純で だけど伝えきれなくて<br>
+							言いたいコトは いつもポケットにしまってるネ</p>
+						<p>
+							子供じみたコトなんて 今さら言えない<br>
+							時が解決するとか言うけど わかりあえずに</p>
+						<p>
+							24時間 君を信じてるよ<br>
+							見つめてるよ ありふれた言葉でも<br>
+							時はいつも 急ぎ足で笑う<br>
+							想い出より 求めたい今を見つけよう</p>
+						<p>
+							動き出さなきゃ始まんない 悩みだすと止めらんない<br>
+							一夜かぎりの夢に 甘えていたくはないし</p>
+						<p>
+							乙女チックな願いも そのまま置き去り<br>
+							愛が全てサ 僕らの時代は ここからはじまる</p>
+						<p>
+							空を突き抜けてく 鳥みたいにネ<br>
+							大空舞う イメージが動きだす<br>
+							歩こう 道は遠く続くけれど<br>
+							いつの間にか 輝きだすダイヤモンド</p>
+						<p>
+							24時間 君を信じてるよ<br>
+							見つめてるよ ありふれた言葉でも<br>
+							時はいつも 急ぎ足で笑う<br>
+							想い出より 求めたい今を見つけよう</p>
+						<p>
+							探そう 夢のカケラ拾い集め<br>
+							切なくても 今なら探せるだろう<br>
+							めくるめく 毎日の形変えて<br>
+							切なくても 確かな今を感じよう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

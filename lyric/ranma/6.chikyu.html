@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>地球オーケストラ - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2 熱闘編」オープニング・テーマ (1991)</div>
+
+                    <div class="LyricTitle">地球オーケストラ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Kusu Kusu</div>
+                    <div class="LyricStaff">作詞：次郎<br>作曲：まこと<br>編曲：Kusu Kusu</div>
+
+                    <div class="LyricText">
+						<p>
+							耳をすませば 見えない遠く<br>
+							歌っている 声が聞こえる</p>
+						<p>
+							この街の中 あの声を出す<br>
+							機械なんて 見えない ないよ</p>
+						<p>
+							あの声がここまで とどかずに 掻き消されたから<br>
+							聞こえない あの透き通った唄</p>
+						<p>
+							聞こえて来るよ 小さな音が<br>
+							君のとなり 目と鼻の先</p>
+						<p>
+							あふれ出すんだ 緑の音が<br>
+							誰かが じゃまさえしなけりゃ</p>
+						<p>
+							君も一つの音 広い大地の上に生まれた<br>
+							帰ろォよ あの音の中へ</p>
+						<p>
+							なつかしい 山の地鳴りで リズム刻めば 踊っている地球が見える<br>
+							でっかく青く 高く響けよ 地球オーケストラ</p>
+						<p>
+							大好きな あの唄に 囲まれて いたいな</p>
+						<p>
+							ほらね<br>
+							山の地鳴りで リズム刻めば 踊っている地球が見える<br>
+							でっかく青く 高く響けよ 地球オーケストラ</p>
+						<p>
+							君も<br>
+							山の地鳴りで リズム刻めば 踊っている地球が見える<br>
+							でっかく青く 高く響けよ 地球オーケストラ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

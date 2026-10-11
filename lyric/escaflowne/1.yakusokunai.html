@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>約束はいらない - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」オープニング(1996)</div>
+
+                    <div class="LyricTitle">約束はいらない</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本真綾</div>
+                    <div class="LyricStaff">作詞：岩里祐穂<br>作曲・編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							ねえ　愛したら誰もが<br>
+							こんな孤独になるの？<br>
+							ねえ　暗闇よりも深い苦しみ<br>
+							抱きしめてるの？<br>
+							何もかもが二人輝くため<br>
+							きっと</p>
+						<p>
+							※君を君を愛してる<br>
+							　心で見つめている<br>
+							　君を君を信じてる<br>
+							　寒い夜も</p>
+						<p>
+							ねえ　恋しても誰にもいつか<br>
+							終わりは来るの？<br>
+							ねえ　青空よりも澄んだ<br>
+							ときめき捨ててしまうの？<br>
+							季節変わりの風<br>
+							道を走る　ずっと</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							たとえ明日亡くしても<br>
+							あなたを失っても<br>
+							出来る限りの笑顔で　輝きたい</p>
+						<p>
+							涙で今　呼びかける<br>
+							約束などいらない<br>
+							君がくれた　大切な強さだから</p>
+						<p>
+							瞳で今　呼びかける<br>
+							約束などいらない<br>
+							瞳で今　手をのばす<br>
+							寒い夜も</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

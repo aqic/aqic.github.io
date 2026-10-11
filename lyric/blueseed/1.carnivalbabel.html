@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>カルナバル・バベル - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Blue Seed」オープニングテーマ</div>
+
+                    <div class="LyricTitle">カルナバル・バベル</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">TAKADA BAND</div>
+
+                    <div class="LyricText">
+						<p>
+							“Mysterious T.O.K.Y.O<br>
+							　Take It East Dangerous Night<br>
+							　Mysterious T.O.K.Y.O<br>
+							　Pick Me Up Foxy Night Game”</p>
+						<p>
+							月影冴え渡り　別の夜へ誘う<br>
+							醒めた都会の鼓動　浴びる KLAXON</p>
+						<p>
+							孤独より退屈な　静寂は迷宮（ラビリンス）<br>
+							KAIRAKUに身を委ねて　浸る夜はILLUMINATIONの海</p>
+						<p>
+							※蒼い蒼い時代（とき）が溶けだした<br>
+							　儚く浮き上がる未来<br>
+							　生命は光の数だけ　煌めいて散り行く</p>
+						<p>
+							ざわめきと靴音が　溢れてるCONCOURSE<br>
+							群に泳ぎ疲れて　凪いだMONOCHROME</p>
+						<p>
+							嘘を飾り立ててるビルのSHOW-WINDOW<br>
+							闇から闇に消えてく　真実は焦り色のPRELUDE</p>
+						<p>
+							☆蒼い蒼い心溶けだした　切ない涙が降る雨<br>
+							祈りは光の数だけ 輝いて散り行く</p>
+						<p>
+							※繰り返し</p>
+						<p>
+							☆繰り返し</p>
+						<p>
+							“Mysterious T.O.K.Y.O<br>
+							　Take It East Dangerous Night<br>
+							　Mysterious T.O.K.Y.O<br>
+							　Pick Me Up Foxy Night Game”</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

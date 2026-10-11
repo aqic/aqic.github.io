@@ -1,0 +1,137 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>KOIBUMI - 朝霧の巫女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">KOIBUMI</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+                    <div class="LyricStaff">Lyrics : MEGUMI<br>Music : Takahashi Gou<br>Arrangement : Takahashi Gou</div>
+
+                    <div class="LyricText">
+						<p>
+							I, from long long long time ago<br>
+							Anyone always thought about (what?) only love<br>
+							Love is blind<br>
+							I, I, I, I love you</p>
+						<p>
+							朝月のAh Ah　向日黄楊櫛<br>
+							古りぬれど　fall in down<br>
+							何しか君が　I forget  oh my god  Let's get<br>
+							みれど飽かざらむ　you can run<br>
+							いにしえの　oh NO!　神の時　NOW　より<br>
+							会ひけらし　in Love　今のこころも<br>
+							spare me More  you love me More ?<br>
+							Anytime会えず　常忘らえず</p>
+						<p>
+							I don't wait. I want shout<br>
+							愛・哀・I miss you　天地と<br>
+							いふ名の絶えて　あらばこそ　so so<br>
+							汝とわれと　逢ふこと　止まめ<br>
+							春雨の　止まず　降る　降る　heart降る<br>
+							わが恋ふる　wonderful. call my name<br>
+							人の目すらを　現世<br>
+							相みせなくに　霊世な世界</p>
+						<p>
+							素直になれない<br>
+							もてあます　emotion<br>
+							読み人知らずの唄<br>
+							時を越えてヒメゴト伝える</p>
+						<p>
+							I got lost</p>
+						<p>
+							やんなっちゃうくらい好きよ<br>
+							やんなっちゃう気になる<br>
+							忘れても　忘れられないよ痛いね<br>
+							触れ合った指先<br>
+							交わされた約束</p>
+						<p>
+							月に溶けてゆく<br>
+							I can't forget the day</p>
+						<p>
+							More-Ah More　前日も<br>
+							昨日も今日も見つれども<br>
+							I want your heart more<br>
+							明日さえ見まく　欲しき君かも<br>
+							get your mind　物思ふと　人に見えじと<br>
+							top secret　なまじひに<br>
+							常に思へり　you are smart and lovely<br>
+							ありそかねつる</p>
+						<p>
+							Ah雷神の　Ah coming coming<br>
+							少し響みで　さし曇り　feel sorry<br>
+							雨も降らぬか　stay here<br>
+							pick up get up set up　君を留めむ<br>
+							雷神の　Ah coming coming<br>
+							少しとよみて　降らずとも　keep back<br>
+							come on!　われは留らむ　I can't run<br>
+							in to the earth wake up　妹し留めば</p>
+						<p>
+							そ知らぬ振りして<br>
+							微笑んでる　I fill down<br>
+							心はグラグラして<br>
+							気が付くと君を目で追ってる</p>
+						<p>
+							Forget it!</p>
+						<p>
+							何もできないけど<br>
+							何もいらないから<br>
+							二人の時間をただ感じていたい<br>
+							あなたの一言で<br>
+							へこんでいる私</p>
+						<p>
+							なさけないほど<br>
+							You're the love of my life</p>
+						<p>
+							やんなっちゃうくらい好きよ<br>
+							やんなっちゃう気になる<br>
+							忘れても　忘れられないよ痛いね<br>
+							触れ合った指先<br>
+							交わされた約束<br>
+							忘れない　忘れたくないよ　痛いね</p>
+						<p>
+							何もできないけど<br>
+							何もいらないから<br>
+							二人の時間をただ感じていたい<br>
+							あなたの一言で<br>
+							へこんでいる私</p>
+						<p>
+							なさけないほど<br>
+							You're the love of my life</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-asagiri-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

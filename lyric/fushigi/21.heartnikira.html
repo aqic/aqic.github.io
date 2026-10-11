@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Heartにキラ星咲かしたれ！！ - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Heartにキラ星咲かしたれ！！</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林 延年</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：まきのさぶろう<br>編曲：まきのさぶろう</div>
+
+                    <div class="LyricText">
+						<p>
+							果てしない　KENKAバトル　男気吐け！　烈火神焔<br>
+							　　弱者(よわき)を助け平和勝ち取るまで<br>
+							　　KENKAバトル　火花散らせ！　烈火神焔<br>
+							　　花も嵐も壁も　超えろ</p>
+						<p>
+							　　どんな暗闇だって呪文１つで打破?破?破 (だははは)<br>
+							　　いつも希望は神力(ちから)さ打ち上げよう　光の花<br>
+							　　勝ってばかりじゃきっと本当に強くなれない　痛みの中に咲く勇気という種がある</p>
+						<p>
+							　　この世に哀しみハビコル　限り　どんな涙も見逃さない　見捨てない<br>
+							　　ホンマかなわん敵ほど燃える　Heart にキラ星咲かしたれ！！</p>
+						<p>
+							☆　果てしない　KENKA バトル　男気吐け！　烈火神焔<br>
+							　　弱者(やわき)を助け平和勝ち取るまで<br>
+							　　KENKA バトル　火花散らせ　烈火神焔<br>
+							　　花も嵐も壁も　超えろ　try again</p>
+						<p>
+							　　支配的なヤツらも回し蹴りすりゃイチコロ　人の心は自由さ見えない羽根はばいてる<br>
+							　　愛を喪失(なく)した嘆き暗い力産むから　どんないとおしさも粗末にしてはイケナイ</p>
+						<p>
+							　　この世に楽園導く　ために　奮闘努力もハンパじゃない　ヤワじゃない<br>
+							　　いっちゃん楽しいめっちゃー眩しい　Heartにキラ星咲かしたれ！！</p>
+						<p>
+							　　果てしない　KENKA バトル　男気吐け！　烈火神焔<br>
+							　　敵も味方も正義をふりかざす<br>
+							　　KENKA バトル　火花散らせ！　烈火神焔<br>
+							　　だけど愛ならこっちのもんや</p>
+						<p>
+							☆　REPEAT<br>
+							　　花も嵐も壁も　超えろ　fly again</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

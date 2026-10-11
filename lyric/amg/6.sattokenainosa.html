@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>放っとけないのさ - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「あぁっ女神さまっ Singles」収録曲</div>
+
+                    <div class="LyricTitle">放っとけないのさ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ウルド</div>
+
+                    <div class="LyricText">
+						<p>
+							女にまったく　縁のない男さ<br>
+							ワルイ先輩と　足りない背丈</p>
+						<p>
+							不幸じゃないよと　強がっていても<br>
+							女神から見たら　放っとけないのさ</p>
+						<p>
+							願いを叶えた　やさしい女神と<br>
+							あいつはちゃっかり　恋に落ちたよ</p>
+						<p>
+							幸福のカモが　ネギを背負って来た<br>
+							そんな毎日に　戸惑ってたよ</p>
+						<p>
+							　ああっ　もどかしい　ふたりだよね<br>
+							　キスのひとつで　もう大騒ぎさ<br>
+							　AH! MY GODDESS</p>
+						<p>
+							　ああっ　幸福も　楽じゃないね<br>
+							　ふしぎ遭遇　もう日常だよ<br>
+							　AH! MY GODDESS</p>
+						<p>
+							キレイでお得な　私が来たから<br>
+							よけいに話が　ややこしいだって！</p>
+						<p>
+							あいつは意外に　いい男だからね<br>
+							助けてやりたい　女神ごころさ</p>
+						<p>
+							小っちゃな女神は　生意気で困る<br>
+							メカは役立たず　すぐに泣き出す</p>
+						<p>
+							高飛車女に　わけ知り妹<br>
+							得体の知れない　悪魔までいて</p>
+						<p>
+							幸福？それとも　あいつ不幸せ？<br>
+							女神から見たら　放っとけないのさ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

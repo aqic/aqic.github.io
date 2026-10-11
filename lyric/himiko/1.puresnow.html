@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Pure Snow - 火魅子伝</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「火魅子伝」オープニング·テーマ</div>
+
+                    <div class="LyricTitle">Pure Snow</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐々木ゆう子</div>
+                    <div class="LyricStaff">作詞：佐々木ゆう子、山本英典<br>作曲：木根尚登<br>編曲：西脇展弥</div>
+
+                    <div class="LyricText">
+						<p>
+							粉雪が舞い降りてきた街で<br>
+							吐息が白く空に解けて行く<br>
+							あなたのこと思えば如何して<br>
+							こんなに胸が厚くなる</p>
+						<p>
+							気がつくといつもひとまみの中<br>
+							洋服売り場ウインドウのぞくと<br>
+							買わないのに選んだりしている<br>
+							あなたに似合い操舵なんて</p>
+						<p>
+							馬鹿みたいだよね<br>
+							今は流行らないね<br>
+							友達の恋人と<br>
+							わかってて好きになって</p>
+						<p>
+							しょうがない笑われでもいい<br>
+							大切な気持</p>
+						<p>
+							＊「Pure Snow, Pure Heart」二人<br>
+							　出会った日も雪が降っていた<br>
+							　恋よりも切なくて<br>
+							　愛よりも嘘のない<br>
+							　運命を感じたの</p>
+						<p>
+							彼女が話す自慢話を<br>
+							おどけながらきったりんするけど<br>
+							やっぱり一人になると辛いの<br>
+							友達の仮面は重たい</p>
+						<p>
+							何であなたしか<br>
+							駄目なんだろうね<br>
+							思うときめちゃくちゃに<br>
+							自分を壊したくなる</p>
+						<p>
+							そんな時せさえてくれるの<br>
+							一枚の写真</p>
+						<p>
+							「Pure Snow, Pure Heart」あの日<br>
+							もう少しの勇気があれば<br>
+							寒い季節の生徒<br>
+							飛び込んでいけたはず<br>
+							でも何故か出来なかった</p>
+						<p>
+							「Pure Snow, Pure Heart」君と<br>
+							泣いたりした事も悔やまない<br>
+							わかりきった強がり<br>
+							築いてくれる事を<br>
+							いつまでも待ってる</p>
+						<p>
+							＊繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-himiko-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

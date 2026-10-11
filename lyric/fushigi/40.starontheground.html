@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>地上の星座 - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">地上の星座</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">上野洋子</div>
+
+                    <div class="LyricText">
+						<p>
+							あなたはきっと 私の勇気<br>
+							あなたはきっと 私の光</p>
+						<p>
+							暗闇の中で見つけた<br>
+							明かりは私を見つめる<br>
+							優しい瞳 泣きたいほどの愛しさに</p>
+						<p>
+							生まれた意味をそっと感じてた.<br>
+							離れていても 引き裂かれてもあなたへ心<br>
+							羽ばたいてく</p>
+						<p>
+							あなたはきっと 私の翼<br>
+							あなたの愛は 地上の星座</p>
+						<p>
+							独りで歩けば 心は寒くて<br>
+							めぐり逢う前に もう戻れない<br>
+							苦しいほどのこの想い<br>
+							永遠って呼んでもいいですか？</p>
+						<p>
+							何があっても 誰が止めても<br>
+							その瞳だけ 信じてゆく</p>
+						<p>
+							あなたはきっと 私の勇気<br>
+							あなたはきっと 光だから<br>
+							もしあなたが傷つく そんな時には<br>
+							両手を翼のように広げて護りたいの<br>
+							胸に溢れるせつなさが 私の頬をそっと濡らすけど<br>
+							離れていても 引き裂かれてもあなたへ心<br>
+							羽ばたいてく<br>
+							あなたはきっと 私の翼<br>
+							あなたの愛は 地上の星座</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

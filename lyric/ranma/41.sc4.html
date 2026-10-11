@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>今夜はエイプリル·フ－ル - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">【４月】</div>
+
+                    <div class="LyricTitle">今夜はエイプリル·フ－ル</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">早乙女乱馬</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲：川井憲次<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							あかね色のときめき<br>
+							おまえの頬を染める黄昏<br>
+							星空に変わるまでに<br>
+							想いを打ち明けるのさ</p>
+						<p>
+							勇気を出すよ　言葉にするよ<br>
+							男から言い出すのが<br>
+							やさしさと信じている　おれだぜ</p>
+						<p>
+							愛しているのさ<br>
+							初めて逢ったあの日から<br>
+							おまえだけを</p>
+						<p>
+							とまどいを見せて　うつむくおまえ<br>
+							今夜はエイプリル?フール<br>
+							ばかだな　ウソだよ</p>
+						<p>
+							ケンカばかりしてても<br>
+							本当の気持ち感じていたよ<br>
+							すぐに怒るそのクセも<br>
+							かわいく思えるように</p>
+						<p>
+							胸に隠した　素直な想い<br>
+							不器用で出せないなら<br>
+							見つめ合うだけで　心　伝わる…</p>
+						<p>
+							愛しているのさ<br>
+							ほかの誰にも渡せない<br>
+							おまえだけは</p>
+						<p>
+							はにかんだ笑顔　まぶしく映る<br>
+							今夜はエイプリル?フール<br>
+							本気(マジ)にとるなよ</p>
+						<p>
+							かわいくもねえ　色気もねえじゃ<br>
+							誰にも相手されない<br>
+							困ってる顔が　気になっただけ<br>
+							今夜はエイプリル?フール<br>
+							ばかだな　ウソだよ</p>
+						<p>
+							少しホントさ…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

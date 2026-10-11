@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>恋のメロディー - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">恋のメロディー</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							「今日はありがとう、また会えるね」<br>
+							楽しい思い出　重なって行く<br>
+							後ろ姿を　見送ってる<br>
+							ピンク色した　私のハート<br>
+							手を振るその時からもう　会いたくなるの<br>
+							あなたの事、全てを知っていたい…<br>
+							これが恋なの？</p>
+						<p>
+							切ないメロディー　I miss you.<br>
+							心が歌ってる<br>
+							優しいメロディー　I beliave you.<br>
+							あなたを　感じる度<br>
+							淡く　甘く　染まってく<br>
+							世界中の誰より　ときめいてるの</p>
+						<p>
+							今日も一日　過ぎて行くね<br>
+							会えない時間は　スローモーション<br>
+							寂しがり屋が　直らなくて<br>
+							すごく甘えたい　気持ち、負けそう<br>
+							冴えない時、落ち込んじゃう　弱い私に<br>
+							夢や笑顔、沢山くれる魔法…<br>
+							これが恋なの？</p>
+						<p>
+							切ないメロディー　I miss you.<br>
+							心に触ってる<br>
+							優しいメロディー　I beliave you.<br>
+							二人で　奏でてるね<br>
+							もっともっと　あなたから<br>
+							愛を教えて欲しい　私がいるの</p>
+						<p>
+							切ないメロディー　I miss you.<br>
+							心が歌ってる<br>
+							優しいメロディー　I beliave you.<br>
+							あなたを　感じる度<br>
+							淡く　甘く　染まってく<br>
+							世界中の誰より　ときめいてるの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

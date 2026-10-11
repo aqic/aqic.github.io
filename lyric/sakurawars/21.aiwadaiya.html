@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>愛はダイヤ - サクラ大戦</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「サクラ大戦」挿入歌</div>
+
+                    <div class="LyricTitle">愛はダイヤ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">神崎すみれ(富澤美智恵)
+桐島カンナ(田中真弓)</div>
+                    <div class="LyricStaff">作詞：広井王子<br>作曲：田中公平<br>編曲：岸村正実</div>
+
+                    <div class="LyricText">
+						<p>
+							どんなに　あなたが　愛していても<br>
+							愛する　こころじゃ　わかりません<br>
+							ほんとの　気持ちを　私に下さいな<br>
+							ダイヤモンドを　下さいな</p>
+						<p>
+							[神崎すみれ]愛はかたちで　ちょうダイヤ<br>
+							　　　　　　すんごく大きいの　ちょうダイヤ<br>
+							[桐島カンナ]愛はたくさん　ちょうダイヤ<br>
+							　　　　　　誰よりいっぱい　ちょうダイヤ</p>
+						<p>
+							[神崎すみれ]信じています　[桐島カンナ]ねえいいでしょ<br>
+							[神崎すみれ]あんたのことを　[桐島カンナ]まってるの<br>
+							[神崎すみれ]借金しようと　破産しようと<br>
+							ダイヤ！　ダイヤ！<br>
+							ダイヤくれなきゃダメダメよ！　ダメよ！</p>
+						<p>
+							※愛はかたちですもの！<br>
+							　愛はダイヤモンドだわ！<br>
+							　[神崎すみれ]（命をかけてもらうわ！）</p>
+						<p>
+							[神崎すみれ]愛をみついで　ちょうダイヤ<br>
+							　　　　　　とことん本気で　ちょうダイヤ<br>
+							[桐島カンナ]愛を死ぬ気で　ちょうダイヤ<br>
+							　　　　　　お金を使って　ちょうダイヤ</p>
+						<p>
+							[神崎すみれ]綺麗なわたし　[桐島カンナ]見つめて<br>
+							[神崎すみれ]自由にできる　[桐島カンナ]すごいの<br>
+							[神崎すみれ]妻に捨てられ　地獄を見ようと<br>
+							ダイヤ！　ダイヤ！<br>
+							ダイヤくれなきゃダメダメよ！　ダメよ！</p>
+						<p>
+							※３回繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sakurawars-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

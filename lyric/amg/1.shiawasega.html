@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>しあわせが加速する - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「あぁっ女神さまっ Singles」収録曲</div>
+
+                    <div class="LyricTitle">しあわせが加速する</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ベルダンディー、ウルド、スクルド</div>
+
+                    <div class="LyricText">
+						<p>
+							未来それは　夢の模型たち<br>
+							思い通り　組み立てたとき<br>
+							しあわせに…</p>
+						<p>
+							過去に起きた　つらい出来事も<br>
+							楽しかった　思い出にして<br>
+							プレゼントする</p>
+						<p>
+							　現在を大切に　生きているひとは<br>
+							　みんな輝いているね</p>
+						<p>
+							あきらめないで　勇気を出して<br>
+							あなたは　恵まれてるよ<br>
+							いつもそばで　見守っている　女神たち</p>
+						<p>
+							ひとを信じて　裏切られても<br>
+							負けない　あなたが素敵<br>
+							気づかないの　しあわせがほら<br>
+							加速しているよ</p>
+						<p>
+							水をすくう　小っちゃな手のひら<br>
+							しあわせほら　あふれているよ<br>
+							見えるでしょ……</p>
+						<p>
+							電波みたい　飛び交う不幸は<br>
+							チャンネルでも　変える気分で<br>
+							微笑みになる</p>
+						<p>
+							　鏡のぞくたび　笑顔の練習<br>
+							　寝ぼけ眼もいいけど</p>
+						<p>
+							他人の悩みも　自分のように<br>
+							苦しみ　真剣になる<br>
+							損をするね　不器用だから　守りたい</p>
+						<p>
+							どんな試験も　プラスに変える<br>
+							あなたが　まぶしく見える<br>
+							夢を乗せて　胸のアクセル<br>
+							踏み込んでいくよ</p>
+						<p>
+							あきらめないで　勇気を出して<br>
+							あなたは　恵まれてるよ<br>
+							こんなそばに　女神がいたら<br>
+							悲しみも　逃げていく</p>
+						<p>
+							ひとを信じて　裏切られても<br>
+							負けない　あなたが素敵<br>
+							音を立てて　しあわせがほら<br>
+							加速しているよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

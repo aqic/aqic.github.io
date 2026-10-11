@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夢見るだけじゃダメ - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「美少女戦士セーラームーン」</div>
+
+                    <div class="LyricTitle">夢見るだけじゃダメ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">三石琴乃</div>
+                    <div class="LyricStaff">作詞：小口由紀子<br>作曲·編曲：村上聖</div>
+
+                    <div class="LyricText">
+						<p>
+							Just like a wing, 両手を広げて<br>
+							　Wow... wow...<br>
+							　So, it's all right, 不安吹き飛ばす<br>
+							　Wow... wow...</p>
+						<p>
+							　胸のセンサ一がときめきをキャチ一<br>
+							　若しかしたら恋...なのかな？</p>
+						<p>
+							　笑顔の魔法をあなたにかけて<br>
+							　私抱けの不思議を上げる</p>
+						<p>
+							★感じてる次の世界信じてる<br>
+							　何時か夢をきっとかなえて</p>
+						<p>
+							　Just fall in love, ハアトをならして<br>
+							　Wow... wow...<br>
+							　So, it's all right, 深呼吸をして<br>
+							　Wow... wow...<br>
+							　夢見るままで 終わらせない</p>
+						<p>
+							　時々ちいさな喧嘩しちゃうけど<br>
+							　胸の鼓動は変わらない</p>
+						<p>
+							　あなたとおんあじ夢追いかけて<br>
+							　もっと私綺麗になるの</p>
+						<p>
+							　憧れた事は全部<br>
+							　出来るさ...って思う気持ち大事に姿態</p>
+						<p>
+							☆Just like a wing, 両手を広げて<br>
+							　Wow... wow...<br>
+							　So, it's all right, 不安吹き飛ばせ<br>
+							　Wow... wow...<br>
+							　必ず夢はかなうから</p>
+						<p>
+							★くりかえし<br>
+							☆くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

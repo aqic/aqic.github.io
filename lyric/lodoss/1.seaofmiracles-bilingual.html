@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>奇跡の海（日中対訳） - ロードス島戦記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ロードス島戦記」 オープニング・テーマ</div>
+
+                    <div class="LyricTitle">奇跡の海（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本真綾</div>
+                    <div class="LyricStaff">作詞：岩里祐穗<br>作曲・編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							闇の夜空が二人分かつのわ<br>
+							呼びあう心はだかにするため<br>
+							飾り脱ぎ捨てすべてなくす時<br>
+							何かが見える</p>
+						<p>
+							風よ私は立ち向かう<br>
+							ゆこうくるしみの海えと<br>
+							きずなこの胸にきざんで<br>
+							砕ける波は果てなくとも</p>
+						<p>
+							なにをほとめて誰も争うの<br>
+							流したちしお花を咲かせるの<br>
+							とほとき明日この手にするまで<br>
+							出会える日まで</p>
+						<p>
+							風よ私は立ち向かう<br>
+							行こう輝きを目指して<br>
+							祈りこの胸に抱きしめ<br>
+							彷徨う闇のような未来</p>
+						<p>
+							風よ私は恐れない<br>
+							愛こそ見つけ出した奇跡よ<br>
+							君を信じてるよろこび<br>
+							嵐は愛に築くために吹いてる</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							黑暗的夜空之所以分离两人,<br>
+							是为了使被呼唤而结合的心裸裎相见。<br>
+							脱离所有的束缚并失去一切之时，<br>
+							将会发现从没发现过的什么。<br>
+							风儿啊！我会挺身而出！<br>
+							一起航向那片苦痛之海。<br>
+							将与你的羁绊深刻於心，<br>
+							就像波浪般即使粉碎也永无止尽。</p>
+						<p>
+							为了什么人们才相互争执？<br>
+							血流成河只是为了使花朵绽放？<br>
+							还是为了获得美好的明天，<br>
+							等待美好明天的到来！</p>
+						<p>
+							风儿啊！我会挺身而出！<br>
+							一起航向那光明之处，<br>
+							然我虽胸怀著诚挚的祈祷，<br>
+							却仍失落在看似黑暗的未来。</p>
+						<p>
+							风儿啊！我将不再恐惧！<br>
+							爱就是我所寻获的奇迹，<br>
+							相信你使我感到如此喜悦。<br>
+							暴风雨不过是试探着，<br>
+							我们爱情的一道考验。</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lodoss-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

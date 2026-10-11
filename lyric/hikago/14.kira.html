@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>綺羅 - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">綺羅</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">小林沙苗</div>
+                    <div class="LyricStaff">作詞：藤林聖子<br>作曲：佐藤英敏<br>編曲：五島　翔</div>
+
+                    <div class="LyricText">
+						<p>
+							1人で雨を歩いてる 街の中<br>
+							冷たくなった指先 そっと握ってた<br>
+							すれ違う傘 笑い合う人混みで<br>
+							めぐり逢うことの意味を考えていたよ</p>
+						<p>
+							何か違ってる 変わり始めている<br>
+							君って言う出来事が<br>
+							距離感狂わせてる？</p>
+						<p>
+							どこまでも 続いてく道<br>
+							僕の速さで歩こう<br>
+							いつかまた 傷付いて<br>
+							ひざまずく夜が来たって<br>
+							閉ざされた心の中へ<br>
+							君が落とした奇跡で<br>
+							僕がいたこの世界<br>
+							確実に広がり続ける</p>
+						<p>
+							夕暮れの色届かない 空を見て<br>
+							このまま止まないでてと どこか思ってた<br>
+							痛みを知れば 強くなれるのなら<br>
+							朝が来るまで不安に怯えていたい…</p>
+						<p>
+							すぐにこの雨も星ぞらに変わる<br>
+							そのリミット聞こえたら<br>
+							僕を取り戻すから</p>
+						<p>
+							どこまでも 続いてく道<br>
+							終わりが遠くなっても<br>
+							いつの日かたどり着く<br>
+							約束がほどけないよに<br>
+							選ばれた扉の向こう<br>
+							君が来るのを待ってる<br>
+							いつまでも いつまでも<br>
+							運命を静かに待ってる</p>
+						<p>
+							どこまでも 続いてく道<br>
+							僕の速さで歩こう<br>
+							いつかまた 傷付いて<br>
+							ひざまずく夜が来たって<br>
+							閉ざされた心の中へ<br>
+							君が落とした奇跡で<br>
+							僕がいたこの世界<br>
+							確実に広がり続ける</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

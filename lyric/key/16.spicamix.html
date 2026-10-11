@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Spica -SORMA remix- - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©Key 2003 KeySoundLabel / Spica/Hanabi/Moon</div>
+
+                    <div class="LyricTitle">Spica -SORMA remix-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lia</div>
+                    <div class="LyricStaff">作詞：key(JunMaeda)<br>構成：key(JunMaeda)<br>リミックス：SORMA</div>
+
+                    <div class="LyricText">
+						<p>
+							眠りの時がきて形さえいつか消えて<br>
+							それでも君がくれた思いだけは残るでしょう</p>
+						<p>
+							指先を握れば思い出す<br>
+							永遠を誓ったその意味を</p>
+						<p>
+							最後の風を見てた　高台の風車が止まる<br>
+							これからどこにゆこう？　ひとり自分に聞いてみる</p>
+						<p>
+							涙で滲んだ目でも前に歩き出す強さが欲しい</p>
+						<p>
+							いつか終わる日は優しい夢を見た<br>
+							ずっと抱きしめてあげたかったそっと</p>
+						<p>
+							世界が眠りにつく　そんな夕映えにも見えた<br>
+							それでも君がくれた誓いだけは残るでしょう</p>
+						<p>
+							朝は熱い紅茶を淹れてみた<br>
+							眠ってばかりいた君に</p>
+						<p>
+							いつか終わる日は優しい夢の中<br>
+							ずっと抱きしめてほしかったあの人に</p>
+						<p>
+							いつか終わる日は優しい夢を見た<br>
+							ずっとそばにいた君の腕で泣いた</p>
+						<p>
+							どこへゆめるか　自分に聞いてみる<br>
+							ずっと君といたこの場所を忘れて</p>
+						<p>
+							どこへ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

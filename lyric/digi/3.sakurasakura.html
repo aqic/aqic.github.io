@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>さくら　さくら - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">さくら　さくら</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sanada Asami, Sawashiro Miyuki, Hikami Kyouko</div>
+                    <div class="LyricStaff">Lyrics : Shiina Karen<br>Music : Masuda Toshirou<br>Arrangement : Masuda Toshirou</div>
+
+                    <div class="LyricText">
+						<p>
+							はしゃぐ鳥も風も　春を彩ってゆく<br>
+							何もかもが　うららか<br>
+							はらはら降り積もる　桜貝の絨毯<br>
+							こころまでも　つつみ込む</p>
+						<p>
+							気付けばいつも　みつめてくれる<br>
+							そんなね　あなたがいてくれる<br>
+							ほほえみくれる　いまのすべてを<br>
+							大切にしたい　ずっと　このまま</p>
+						<p>
+							さくら　さくら　夢うつつで<br>
+							今なら　何でも言えるかな<br>
+							さくら　さくら　陽だまりのような<br>
+							ねぇ　こんなきもち</p>
+						<p>
+							うさぎ雲ふわふわ　生まれては消えてゆく<br>
+							はかないから　まぶしい<br>
+							桃色の雫を　受け止めてみたいけど<br>
+							指先からこぼれてく</p>
+						<p>
+							目が覚めたとき　想い出せない<br>
+							そんなね　言葉があるの<br>
+							でもこの胸に　きらきら光る<br>
+							そっと静かに　淡雪みたいに</p>
+						<p>
+							さくら　さくら　花吹雪で<br>
+							今なら風が　消してくれるかな<br>
+							さくら　さくら　眠ってるふりで<br>
+							ねぇ　つぶやこうか</p>
+						<p>
+							さくら　さくら　夢うつつで<br>
+							今なら　あなたに言えるかな<br>
+							さくら　さくら　見守ってくれる<br>
+							ねぇ　うれしいから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

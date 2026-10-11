@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>捕まらないよ - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アルバム「あぁっ女神さまっ Singles」収録曲</div>
+
+                    <div class="LyricTitle">捕まらないよ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">スクルド</div>
+
+                    <div class="LyricText">
+						<p>
+							鳩が舞う　青い空<br>
+							パレードに紛れこんだ<br>
+							男たち　人混みを<br>
+							追ってくる</p>
+						<p>
+							太っちょの　ブラス吹き<br>
+							背中にちょっと隠して<br>
+							足並みを　揃えれば<br>
+							踊りたくなるね</p>
+						<p>
+							　「上手だね」ステップなら　まかせて<br>
+							　「見つかるよ」なぜか目立っちゃう</p>
+						<p>
+							あのねワガママも　ほらね魅力でしょ<br>
+							そう簡単には　捕まらないよ</p>
+						<p>
+							ぬいぐるみ　赤い服<br>
+							プレゼント嬉しいけど<br>
+							お子さまっの　扱いは<br>
+							不満なの</p>
+						<p>
+							ハイレグの　お姉さまっ<br>
+							バトンを貸してくださる<br>
+							見とれてる　男たち<br>
+							叩いてやるんだ</p>
+						<p>
+							　「可愛いね」それほどでも……あるけど<br>
+							　「見つけたよ」子供だけどいい？</p>
+						<p>
+							どうぞ中継の　TVカメラマン<br>
+							浮気の現場を　映し出してよ</p>
+						<p>
+							　「綺麗だね」いまさらもう　遅いよ<br>
+							　「行かないで」追えば逃げちゃうぞ！</p>
+						<p>
+							ひらり先導の　バイク飛び乗った<br>
+							走れ男たち　時速５kmじゃ追いつけないよ</p>
+						<p>
+							あのねイジワルも　ほらね魅力でしょ<br>
+							そう簡単には　捕まらないよ<br>
+							あさって来てね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

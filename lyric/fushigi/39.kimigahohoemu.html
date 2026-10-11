@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君が微笑むなら - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">君が微笑むなら</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">檜山修之 (斗宿) &amp; 岩永哲哉 (虚宿)</div>
+                    <div class="LyricStaff">作詞：梅木美祐<br>作曲：清岡千穂<br>編曲：まきのさぶろう</div>
+
+                    <div class="LyricText">
+						<p>
+							（斗宿）</p>
+						<p>
+							君が口ずさんでた異国の子守唄(ララバイ)<br>
+							甘く切ないメロディー　聞こえた気がした<br>
+							Ah　眠ってもいいのかい<br>
+							もうどれくらい時間(とき)が経っているんだろう<br>
+							空を焦がした炎　果てしなく続く<br>
+							Ah　過ちと戦って</p>
+						<p>
+							　すべての人のため　苦しみ祈り<br>
+							　そして疲れてしまった悲しい人</p>
+						<p>
+							君が微笑むなら　どんな痛み受け止めよう<br>
+							たとえこの身体が滅びても<br>
+							君が微笑むなら　きっと魂はよみがえる<br>
+							君の夢を護るため　僕は生まれて来たんだから</p>
+						<p>
+							（虚宿）</p>
+						<p>
+							ずっと強くなりたい　そう願ってきた<br>
+							弱さに流されない　誰にも負けない<br>
+							Ah　自分に憧れてた<br>
+							だけど君に出会って　初めて知ったよ<br>
+							どこまでも信じぬき　愛しぬいていく<br>
+							Ah　本当の強さを</p>
+						<p>
+							　凍りついた心　なぐさめ癒す<br>
+							　柔らかな陽射しに似た優しい人</p>
+						<p>
+							君が微笑むなら　そのためなら何でも出来る<br>
+							傷つくだけの生き方でもいい<br>
+							君が微笑むなら　幾千の夜も乗り越える<br>
+							君の夢が叶うまで　約束だね倒れやしない</p>
+						<p>
+							（斗宿）</p>
+						<p>
+							君が微笑むなら　どんな痛み受け止めよう<br>
+							たとえこの身体が滅びても</p>
+						<p>
+							（虚宿）</p>
+						<p>
+							君が微笑むなら　幾千の夜も乗り越える<br>
+							君の夢が叶うまで　約束だね倒れやしない</p>
+						<p>
+							（斗宿 &amp; 虚宿）</p>
+						<p>
+							君が口ずさんでた異国の子守唄(ララバイ)<br>
+							あんなにも待っていた　朝日が昇るよ<br>
+							もう　眠ってもいいのかい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

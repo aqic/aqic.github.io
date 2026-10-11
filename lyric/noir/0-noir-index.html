@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">NOIR</span><span class="cn">（黑街2人组）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+					<div class="disc-head"><span class="disc-name">NOIR</span><span class="disc-sub">14 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.emumoa.html">《エム モア》</a></li>
+						<li class="LyricItem"><a href="2.kilei.html">《きれいな感情》</a></li>
+						<li class="LyricItem"><a href="3.kopporia.html">《コッペリアの柩》</a></li>
+						<li class="LyricItem"><a href="4.farewell.html">《A farewell song》</a></li>
+						<li class="LyricItem"><a href="5.cantaperme.html">《Canta per me》</a>＆<a href="5.cantaperme-bilingual.html" class="cn">(中)</a></li>
+						<li class="LyricItem"><a href="6.indio.html">《Indio》</a></li>
+						<li class="LyricItem"><a href="7.love.html">《Love》</a></li>
+						<li class="LyricItem"><a href="8.lullaby.html">《Lullaby》</a></li>
+						<li class="LyricItem"><a href="9.maze.html">《Maze》</a></li>
+						<li class="LyricItem"><a href="10.melody.html">《Melody》</a><span class="note">- melody -"salva nos"ver.</span></li>
+						<li class="LyricItem"><a href="11.salvanos.html">《Salva nos》</a></li>
+						<li class="LyricItem"><a href="12.secretgame.html">《Secret game》</a></li>
+						<li class="LyricItem"><a href="13.secret.html">《秘密》</a>＆<a href="13.secret-bilingual.html" class="cn">(中)</a></li>
+						<li class="LyricItem"><a href="14.redandblack.html">《赤と黒》</a></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>A Burning Rose&lt;br&gt;～薔薇ふぶき散らして～ - かってに桃天使</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「かってに桃天使!2～Tears of Eden」 IS(1999)</div>
+
+                    <div class="LyricTitle">A Burning Rose&lt;br&gt;～薔薇ふぶき散らして～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ならはし みき</div>
+
+                    <div class="LyricText">
+						<p>
+							凍りつく炎を抱いて<br>
+							一輪の薔薇が開きはじめる<br>
+							傷つくこと恐れるより<br>
+							瞬間のきらめきを信じて</p>
+						<p>
+							深く冷たい孤獨の闇間から<br>
+							あなただけを見つめて翼廣げたの</p>
+						<p>
+							a Burning Rose 凍る炎<br>
+							時を越え激しく燃える<br>
+							あなたが好き<br>
+							なにもいらない強く抱きしめて</p>
+						<p>
+							戸惑うあなたの背中に<br>
+							気づいたら涙をうずめていた<br>
+							痛いほどの切なささえ<br>
+							夕暮れの風のなか舞い散る</p>
+						<p>
+							甘いくちづけ<br>
+							強い薔薇の薰り<br>
+							ふいによぎる悲しみに<br>
+							トゲが突き刺さる</p>
+						<p>
+							a Burning Rose 薔薇ふぶきで<br>
+							明日なんか消してしまえ<br>
+							あなたが好き<br>
+							たとえ全てを今無くしても</p>
+						<p>
+							深く冷たい孤獨の闇間から<br>
+							あなただけを見つめて翼廣げたの</p>
+						<p>
+							a Burning Rose 凍る炎<br>
+							時を越え激しく燃える<br>
+							あなたが好き<br>
+							なにもいらない強く抱きしめて</p>
+						<p>
+							a Burning Rose 薔薇ふぶきで<br>
+							明日なんか消してしまえ<br>
+							あなたが好き<br>
+							息がとまるくらい抱きしめて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-momotenshi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

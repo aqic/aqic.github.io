@@ -1,0 +1,106 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>星之旅程 - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">美少女戰士SailorStars主題曲</div>
+
+                    <div class="LyricTitle">星之旅程</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">許思行</div>
+                    <div class="LyricStaff">作詞：蘇詠恩<br>作曲：荒木將器</div>
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							誰願意與我靜聽　Sailor Smile<br>
+							期望會有你和應　Sailor Wing<br>
+							要摘到星星　尋求明亮方向做記認<br>
+							雲霧裡每秒幻化　Sailor Moon<br>
+							凝聚了友愛密碼　Sailor Star<br>
+							遠望這天空　繁星中讓諾言遞送</p>
+						<p>
+							即使分隔也感應　願闖進我生命<br>
+							同覓尋純真暖意　願印証一雙眼睛</p>
+						<p>
+							此刻心底又再湧現<br>
+							擦破那漆黑天空的光線<br>
+							就像你對我說不可放鬆旅程<br>
+							暗裡有你照亮我影</p>
+						<p>
+							夜裡朗月正高升<br>
+							靜默裡給我照亮美景<br>
+							面對挫敗也不驚<br>
+							願擁有著那　無窮信心加拚勁</p>
+						<p>
+							誰願意與我靜聽　Sailor Smile<br>
+							期望會有你和應　Sailor Wing<br>
+							振著翅高飛　銀河橫越終到達這地<br>
+							雲霧裡每秒幻化　Sailor Moon<br>
+							凝聚了友愛密碼　Sailor Star<br>
+							快樂似這歌　繁星中在伴隨著我</p>
+						<p>
+							即使分隔也感應　願闖進我生命<br>
+							遙望無涯天際　我願一起捉緊每顆星</p>
+						<p>
+							此刻心底又再湧現<br>
+							擦破那漆黑天空的光線<br>
+							就像你對我說不可放鬆旅程<br>
+							暗裡有你照亮我影</p>
+						<p>
+							夜裡朗月正高升<br>
+							靜靜給我眷顧沒作聲<br>
+							面對挫敗也不驚<br>
+							願擁有著那無窮信心加拚勁</p>
+						<p>
+							誰願意與我靜聽　Sailor Smile<br>
+							期望會有你和應　Sailor Wing<br>
+							要摘到星星　尋求明亮方向做記認<br>
+							雲霧裡每秒幻化　Sailor Moon<br>
+							凝聚了友愛密碼　Sailor Star<br>
+							遠望這天空　繁星中讓諾言遞送</p>
+						<p>
+							誰願意與我靜聽　Sailor Smile<br>
+							期望會有你和應　Sailor Wing<br>
+							振著翅高飛　銀河橫越終到達這地<br>
+							雲霧裡每秒幻化　Sailor Moon<br>
+							凝聚了友愛密碼　Sailor Star<br>
+							快樂似這歌　繁星中在伴隨著我</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

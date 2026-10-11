@@ -1,0 +1,112 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ルート・ヴィーナス - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「美少女戦士セーラームーンR」イメージ・ソング</div>
+
+                    <div class="LyricTitle">ルート・ヴィーナス</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">深美里香</div>
+                    <div class="LyricStaff">作詞：武内直子<br>作曲：永井誠<br>編曲：樫原伸彦<br>コーラス編曲：樫原伸彦、永井誠</div>
+
+                    <div class="LyricText">
+						<p>
+							そのドア開けて<br>
+							残り時間が<br>
+							吸い込まれてく<br>
+							瞳を上げて<br>
+							真っ直ぐ見つめ<br>
+							最後のキスをして<br>
+							歩き出してね</p>
+						<p>
+							ホントは<br>
+							風が<br>
+							ちぎれるくらい<br>
+							心が引き止めてる<br>
+							道は分かれるのね<br>
+							運命なの星が決めた<br>
+							あなたの選んだ<br>
+							白いルウト<br>
+							そびえる未来<br>
+							迷わないで</p>
+						<p>
+							※海が広がる<br>
+							　風が揺れてくる<br>
+							　少し寒いケド<br>
+							　走り出して<br>
+							　あなたのコト<br>
+							　忘れないで<br>
+							　一番愛してる<br>
+							　辛いけど<br>
+							　ココから見てる<br>
+							　砂漠の夜明を</p>
+						<p>
+							その窓開けて<br>
+							あなたの時間<br>
+							始まってゆく<br>
+							目蓋を閉じて<br>
+							して欲しかった<br>
+							最後の夜のキス<br>
+							覚えていてね</p>
+						<p>
+							ホントは<br>
+							空が<br>
+							崩れるくらい<br>
+							心がないている<br>
+							道は別々なの<br>
+							運命なの星が決めた<br>
+							私の選んだ<br>
+							青いルウト<br>
+							聳える未来<br>
+							忘れないで</p>
+						<p>
+							朝が始まる<br>
+							人が動き出す<br>
+							少し怖いケド<br>
+							歩き出して<br>
+							私のコト<br>
+							忘れないで<br>
+							一番愛してる<br>
+							苦しいけど<br>
+							ココから見てる<br>
+							砂漠の夜明を</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

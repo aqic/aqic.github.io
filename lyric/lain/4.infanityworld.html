@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>INFANITY world - serial experiments lain</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Serial Experiments Lain」</div>
+
+                    <div class="LyricTitle">INFANITY world</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							"Where am I vanishing into?"<br>
+							Into a clam, quietly sleeping in the sea?<br>
+							Last night's dream, I dreamt an unbelievably real one.<br>
+							I'm just sleeping...</p>
+						<p>
+							Town beyond the boundless horizon, nobody seems to be there.<br>
+							Only the moon shines, and her light creates shadows.<br>
+							Imagination, like illusions, starts overwhelming the town.</p>
+						<p>
+							*Holding inconsistency, wasted sense of value,<br>
+							penetrates into the ground's surface so, so deeply.<br>
+							"Where am I vanishing into?"<br>
+							Truly, into a dark, calm layer.<br>
+							But, wind, don't stop blowing yet.<br>
+							Yeah, wind, don't stop blowing yet.</p>
+						<p>
+							Gentleman with a rich chest living in an east mountain,<br>
+							crowd of ladies wasting time for nothing.<br>
+							Children creating a perfect evil, like a genius does,<br>
+							river forms a flow but never needs water.</p>
+						<p>
+							Purple time turns everything into the truth,<br>
+							mysterious rumors floating in the skies.<br>
+							Group of information creeping on the ground filled with noise.<br>
+							Memories of a story that was never born.</p>
+						<p>
+							* Repeat</p>
+						<p>
+							"What's he seeking?" "What does she understand?"<br>
+							"You love me?" "I sure do, honey."<br>
+							Satisfaction constantly creates loose portrayl.</p>
+						<p>
+							A lake filled with mystery but not leading to the sea.<br>
+							Thousands of molecules slash the darkness while giving ultrarapid lights.<br>
+							"Who knew it?" "Everyone owns it in common."<br>
+							Unnatural body and unconsciously developed technologies called "indifference" .</p>
+						<p>
+							Value of enormous intelligence named "ignorance" is disregarded...</p>
+						<p>
+							But, wind, don't stop blowing yet.<br>
+							Yeah, wind, don't stop blowing yet...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lain-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

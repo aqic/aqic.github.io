@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Midnight Blue - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Midnight Blue</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							傷つき　心が怖さを覚えてく<br>
+							切なき　心が何かにもたれてく<br>
+							強さは　全てを包み込んだ砦<br>
+							優しさ　涙を知らずに語れない<br>
+							ＴＯＮＩＧＨＴ……<br>
+							ＴＯＮＩＧＨＴ……<br>
+							揺れる炎へとかざした<br>
+							ＭＩＤＮＩＧＨＴ　ＢＬＵＥ</p>
+						<p>
+							闇よ……雨よ……今、教えて<br>
+							月よ……風よ……今、答えて<br>
+							遠く……遠く……遥か遠く<br>
+							旅の果てに　何があるの</p>
+						<p>
+							つらぬく夢（おもい）が見え隠れしている<br>
+							それでも夢（おもい）は決して消えはしない<br>
+							強さは　全てを見つめてきた証<br>
+							優しさ　時には邪魔になる愚かさ<br>
+							ＴＯＮＩＧＨＴ……<br>
+							ＴＯＮＩＧＨＴ……<br>
+							燃える炎へとかざした<br>
+							ＭＩＤＮＩＧＨＴ　ＢＬＵＥ</p>
+						<p>
+							鳥よ……雲よ……今、教えて<br>
+							波よ……影よ……今、答えて<br>
+							遠く……遠く……遥か遠く<br>
+							旅の果てに　何があるの</p>
+						<p>
+							闇よ……雨よ……今、教えて<br>
+							月よ……風よ……今、答えて<br>
+							鳥よ……雲よ……今、教えて<br>
+							波よ……影よ……今、答えて<br>
+							遠く……遠く……遥か遠く<br>
+							旅の果てに　何があるの<br>
+							遠く……遠く……遥か遠く<br>
+							旅の果てに　何があるの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

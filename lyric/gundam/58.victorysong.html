@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>勝利者達の挽歌 - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">機動武闘伝 Gガンダム</div>
+
+                    <div class="LyricTitle">勝利者達の挽歌</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">大山修司</div>
+
+                    <div class="LyricText">
+						<p>
+							燃やせ　その瞳に　灯した<br>
+							炎に　命を賭けて<br>
+							誰かが　お前を　呼んでいる<br>
+							勝利を掴むまで</p>
+						<p>
+							熱い　その体に　流れる<br>
+							血潮に　心をゆだね<br>
+							愛のために　死ねる朝を<br>
+							探しているのか</p>
+						<p>
+							傷つき倒れた体を　夕陽が染め上げて<br>
+							悲しみさえも　いつか勇気に変わるだろ</p>
+						<p>
+							立ち上がれ　何も恐れずに<br>
+							空が燃える　世界が叫びを上げる<br>
+							あぁ…　ガンダム</p>
+						<p>
+							お前の流した涙は　夜空の星になる<br>
+							流れる時の中で　全ては夢になる</p>
+						<p>
+							闘いは　明日も続くだろ<br>
+							胸の中で　誰かが叫びを上げる<br>
+							あぁ…　ガンダム</p>
+						<p>
+							燃やせ　その瞳に灯した<br>
+							炎が　世界を変える<br>
+							誰かが　お前を呼んでいる<br>
+							勝利を掴むまで</p>
+						<p>
+							熱い　その体に流れる<br>
+							血潮に心をゆだね<br>
+							愛のために　死ねる朝を<br>
+							探しているのか</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

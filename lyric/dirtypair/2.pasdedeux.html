@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>パ・ド・ドゥ～pas de deux - ダーティペア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場用アニメーション「ダーティペア」エンディング・テーマ (1987)</div>
+
+                    <div class="LyricTitle">パ・ド・ドゥ～pas de deux</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">松原みき</div>
+                    <div class="LyricStaff">作詞：渡辺なつみ<br>作曲：PROJECT M<br>編曲：萩田光雄</div>
+
+                    <div class="LyricText">
+						<p>
+							つま先たてて PARTY NIGHT<br>
+							浪漫神話〈ロマンス〉揺れる DISCO-BEAT<br>
+							時間〈とき〉に重ねる感性〈エクスタシー〉<br>
+							甘い罠に誘われてく</p>
+						<p>
+							映〈み〉え始めてる CANDLE LIGHT<br>
+							素直なままの DOWN-BEAT<br>
+							銀のグラスの神秘〈ミステリー〉<br>
+							鼓動〈とき〉めくほど溢れていく<br>
+							＊その気になれば CLAP YOUR HAND<br>
+							　サインをき・め・て<br>
+							　本気になれば　STAMP YOUR FEET<br>
+							　迷わずすぐにヒール捨てる<br>
+							※TONIGHT 今夜は踊って　パ・ド・ドゥ！<br>
+							　TONIGHT このまま踊って　パ・ド・ドゥ！<br>
+							　夢中なの　もう戻れない<br>
+							　GIVE ME！　GIVE ME！　COME ON！</p>
+						<p>
+							碧くきらめく MOONLIGHT<br>
+							口紅〈ルージュ〉で飾る FLAP-BEAT<br>
+							秘め事だけの日記〈ダイアリー〉<br>
+							めくるたびに堕ちていける</p>
+						<p>
+							女はいつも　SEXY SIGHT<br>
+							はじけるほどの FLASH-BEAT<br>
+							夢見る頃の運命〈ディステニ〉<br>
+							感じるまま　染められてく<br>
+							＊くりかえし<br>
+							※くりかえし</p>
+						<p>
+							※２×くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dirtypair-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>New Future - 満月をさがして</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">New Future</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Changin'　My　Life</div>
+                    <div class="LyricStaff">作詞　myco<br>作曲　辺見　鑑孝</div>
+
+                    <div class="LyricText">
+						<p>
+							たったひとつ変わらないもの<br>
+							ずっと描いてた夢<br>
+							今の自分はどう映るの?<br>
+							あの頃の小さな瞳に</p>
+						<p>
+							ねぇ 見上げて<br>
+							こんなに広い夜空だから<br>
+							そう すぐにわかるように<br>
+							精一杯 輝くから早く<br>
+							フルムーンをさがして</p>
+						<p>
+							Let's sing a song! いつでも一緒<br>
+							君のため 今の私にできるすべて<br>
+							Day by day 今日までの運命<br>
+							明日からの希望この胸に抱え<br>
+							Let's sing a song! いつでも一緒<br>
+							君となら<br>
+							辛いこと乗り越えられるよ<br>
+							More and more もっともっともっと<br>
+							近づきたい 今ここにいてくれて<br>
+							many thanks for you!</p>
+						<p>
+							不思議な出会い 繰り返すうち<br>
+							大切なものが増えて<br>
+							偶然という いたずらな日々<br>
+							今では笑って愛せる</p>
+						<p>
+							そう いつも<br>
+							広いステージに憧れてた<br>
+							もう 私 ひとりじゃない<br>
+							みんなの笑顔が溢れてる<br>
+							ここが居場所なのかナ?</p>
+						<p>
+							Let's sing a song! 今夜はスポット<br>
+							ライトより 今の私を輝かせる<br>
+							Day by day 熱い眼差しと声援が<br>
+							流れる汗を照らしてる<br>
+							Let's sing a song!<br>
+							今夜は永遠に変わらない<br>
+							熱い思いあると信じたい<br>
+							More and more<br>
+							もっともっともっと 叫びたい<br>
+							この歌この夢は 終わらない</p>
+						<p>
+							Let's sing a song!<br>
+							Repeat and repeat<br>
+							Let's sing a song!<br>
+							Repeat and repeat<br>
+							This is the song for you</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fullmoon-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

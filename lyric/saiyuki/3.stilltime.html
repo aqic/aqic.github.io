@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Still Time - 幻想魔伝 最遊記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「幻想魔伝 最遊記」オープニング・テーマ</div>
+
+                    <div class="LyricTitle">Still Time</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">徳山秀典</div>
+                    <div class="LyricStaff">作詞：黒沢健一<br>作曲：黒沢健一<br>編曲：遠山　裕</div>
+
+                    <div class="LyricText">
+						<p>
+							誰かが捨ててしまった　昨日を拾い上げ<br>
+							がむしゃらに手をのばした　答えをつきつけて</p>
+						<p>
+							※何を手に入れても　満足することはない<br>
+							　複雑にからんだ　心の隙間から逃げ出せ</p>
+						<p>
+							そうさ　Make a Treasure<br>
+							錆びついた時の中に　君の声を聞く<br>
+							このまま届けたい　光の中　君が待ってる<br>
+							そう信じてるから　今すぐに</p>
+						<p>
+							全てを使い果たした　未来は擦り切れて<br>
+							ためらいがちに選んだ　夢さえきしみ出す</p>
+						<p>
+							憂鬱な日常　脱け出すことさえしない<br>
+							そんな君の側で　待ち続けてるのはごめんだ</p>
+						<p>
+							☆だから　Make a Treasure<br>
+							　錆びついた鏡の中　自分を探して<br>
+							　この手でつかみたい　どこにいても　君が待ってる<br>
+							　そう信じてるから　今すぐに</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							そうさ　Make a Treasure<br>
+							錆びついた時の中に　君の声を聞く<br>
+							このまま届けたい　光の中　君が待ってる<br>
+							そう信じてるから</p>
+						<p>
+							☆くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saiyuki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Knight of Rodoss~风の歌~ - ロードス島戦記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Knight of Rodoss~风の歌~</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">草尾毅</div>
+
+                    <div class="LyricText">
+						<p>
+							今　宇宙の□を<br>
+							切り裂いた光<br>
+							流れ橢む　朝烧けに<br>
+							地平は目觉める</p>
+						<p>
+							その日に映した<br>
+							鸟のはばたきに<br>
+							确かめる　新しい<br>
+							旅のはじまりを</p>
+						<p>
+							热い想い<br>
+							残したまま去った<br>
+							魂たちの眠る森<br>
+							振り返る</p>
+						<p>
+							风の歌远く　响けよ<br>
+							荒野に<br>
+							战いの终わりを<br>
+							告げるように<br>
+							祈るより强く　熰铩鮫<br>
+							明日に<br>
+							烧けついた思い出<br>
+							抱いたままの胸に</p>
+						<p>
+							この手で守れず<br>
+							失くした　希望が<br>
+							よみがえる　あたたかい<br>
+							小さな手の中</p>
+						<p>
+							水の无い谷も<br>
+							星の无い夜も<br>
+							越えて行く　还り着く<br>
+							乐园の日々へ</p>
+						<p>
+							冻りついた<br>
+							泪のはかけらから<br>
+							虹が生まれ<br>
+							永远が呼びかける</p>
+						<p>
+							风の歌远く　响けよ<br>
+							明日に<br>
+							哀しみも孤独も<br>
+							梦に变わる<br>
+							叫びより强く　熰铩鮫<br>
+							明日に<br>
+							痛いほど求めた<br>
+							爱が今は胸に</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lodoss-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Birthday Song,Requiem-fishtone remix- - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©2002 KeySoundLabel / Birthday Song,Requiem</div>
+
+                    <div class="LyricTitle">Birthday Song,Requiem-fishtone remix-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lia</div>
+                    <div class="LyricStaff">作詞：key(junMedia)<br>構成：key(junMedia)<br>リミックス：fishtone</div>
+
+                    <div class="LyricText">
+						<p>
+							高い木に隠した小さな温もり<br>
+							慌てて手を伸ばした<br>
+							風のように叫んだ</p>
+						<p>
+							また目を腫らす僕を笑って欲しい<br>
+							生まれた日から僕らがゆく強さと</p>
+						<p>
+							引き出しに仕舞った変わらないものを<br>
+							僕は握り締めた<br>
+							砂のように壊した</p>
+						<p>
+							また目を閉じて僕は熱を知った<br>
+							生まれた日から流れてゆく血潮と</p>
+						<p>
+							高い木に隠した命の終わりも<br>
+							優しい思い出まで<br>
+							鳥のように飛ばした</p>
+						<p>
+							また目を腫らす僕を笑って欲しい<br>
+							生まれた日さえ僕は知らずに歩く</p>
+						<p>
+							もう泣かないと誓った日は遠く<br>
+							生まれた日から僕らはゆく強さと</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

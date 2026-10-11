@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ケ・セラ・セラ - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ホーホケキョとなりの山田くん</div>
+
+                    <div class="LyricTitle">ケ・セラ・セラ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">山田家の人々</div>
+                    <div class="LyricStaff">原題：QUE SERA,SERA(WHATEVER WILL BE,WILL,BE)<br>作詞・作曲：Jay Livingston&amp;Ray Evans<br>日本語訳詞：高畑 勲<br>編曲：斉藤 ネコ</div>
+
+                    <div class="LyricText">
+						<p>
+							歌：（朝丘 雪路・益岡 徹・荒木 雅子<br>
+							・五十嵐 迅人・宇野 なおみ）<br>
+							藤原先生（矢野 顕子）<br>
+							コーラス（テアトルアカデミーと劇団ひまわりの子ども達・ジブリ混声合唱団）</p>
+						<p>
+							ちいさいときママに　私はたずねた<br>
+							なるかしら　きれいに　お金持ちに<br>
+							ケ・セラ・セラ　なるようになる<br>
+							未来はみえない　お楽しみ<br>
+							ケ・セラ・セラ</p>
+						<p>
+							恋をして彼に　私はたずねた<br>
+							来る日も来る日も　虹のいろね<br>
+							ケ・セラ・セラ　なるようになる<br>
+							未来はみえない　お楽しみ<br>
+							ケ・セラ・セラ</p>
+						<p>
+							今では子どもが　私にたずねる<br>
+							なるかな　かっこよく　お金持ちに<br>
+							ケ・セラ・セラ　なるようになる<br>
+							未来はみえない　お楽しみ<br>
+							ケ・セラ・セラ</p>
+						<p>
+							ケ・セラ・セラ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

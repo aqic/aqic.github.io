@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Instruments Of Destruction - トランスフォーマー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Instruments Of Destruction</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">N.R.G.</div>
+                    <div class="LyricStaff">Producer: Ernie Burns</div>
+
+                    <div class="LyricText">
+						<p>
+							Iron birds of fortune<br>
+							Adrift above the skies<br>
+							Cloudy revelations<br>
+							Unseen by naked eyes<br>
+							Flying tools of torment<br>
+							Will penetrate the sphere<br>
+							Erupt the rock of ages<br>
+							Bringing final fear</p>
+						<p>
+							Instruments of destruction<br>
+							Tools of power plays<br>
+							It's a violent eruption<br>
+							Existence drips away</p>
+						<p>
+							What it really matter<br>
+							When nothing really counts<br>
+							Grave eternal darkness<br>
+							When drained of every ounce<br>
+							And when the nightmare's over<br>
+							The final from the storm<br>
+							Dust of all creation<br>
+							To ashes we transform</p>
+						<p>
+							Instruments of destruction<br>
+							Tools of power plays<br>
+							It's a violent eruption<br>
+							Existence drips away</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-transformers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

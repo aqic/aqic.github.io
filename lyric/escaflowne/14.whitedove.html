@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>White Dove - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」(1996)</div>
+
+                    <div class="LyricTitle">White Dove</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ACEILUX</div>
+                    <div class="LyricStaff">作詞：ACEILUX<br>作曲・編曲：溝口肇</div>
+
+                    <div class="LyricText">
+						<p>
+							Deals of passions come to deliver us<br>
+							Even the sorrow runs to silvers dust</p>
+						<p>
+							I can recall the falls of the lonely hearts<br>
+							Betraving love and walls of fear</p>
+						<p>
+							When you cry all tears are stolen<br>
+							As I whisper golds in women<br>
+							When the world is so far apart<br>
+							We listen for voices in our hearts<br>
+							Then touch<br>
+							If we know love will show<br>
+							How I care<br>
+							Why we love beloved</p>
+						<p>
+							* And when Doves fly I think of love<br>
+							　As in this world I've learned to see<br>
+							　Can you believe the sight<br>
+							　For us Doves clear and white<br>
+							　In full flower</p>
+						<p>
+							**And we learn to love and beloved<br>
+							　Molding for one and all for none<br>
+							　Women who share and men with care<br>
+							　For one love<br>
+							　Where the White Doves can flower</p>
+						<p>
+							(* Repeat)</p>
+						<p>
+							(** Repeat)</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

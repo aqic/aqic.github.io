@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>いっしょにたべよう - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">いっしょにたべよう</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							今日はおしゃべりね　きっとなにか<br>
+							いいことがあったでしょう　きかせて<br>
+							忙しくても時間あわせて　たべよう</p>
+						<p>
+							二人かこむテーブルは一日の終わりの Happy<br>
+							つまらなかったこと＆ばかな話も二人でシェアしよう</p>
+						<p>
+							ぱっと気を晴らすピリッと Chinese<br>
+							甘く酔わすような Handmade cake<br>
+							その日の気分にあわせて　さあ決めよう</p>
+						<p>
+							好きなものはなに？　苦手なものは許してあげる<br>
+							心も体も幸せを約束よ　私のレシピ</p>
+						<p>
+							それはまるで自由に奏でるメロディーのようね<br>
+							心こめて　想う人のため腕を振るいます</p>
+						<p>
+							二人かこむテーブルは一日の終わりの Happy<br>
+							つまらなかったこと＆ばかな話も二人でシェアしよう<br>
+							with love</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

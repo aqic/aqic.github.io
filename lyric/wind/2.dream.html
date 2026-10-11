@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Dream - Wind -a breath of heart-</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Dream</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">長谷川 めぐみ</div>
+                    <div class="LyricStaff">作詞：ドン・マッコウ<br>作・編曲：谷本 真規</div>
+
+                    <div class="LyricText">
+						<p>
+							不思議な夢　繰り返した<br>
+							そっと目を閉じて</p>
+						<p>
+							夜の風は今夜　暖かい</p>
+						<p>
+							大事なもの<br>
+							壊れかけたブランコみたい揺れる</p>
+						<p>
+							漕ぎ出す星空は悲しそう</p>
+						<p>
+							何かに出会い　そして心を開くことを<br>
+							忘れていたみたいだから</p>
+						<p>
+							いまさら打ち明けたり　慰められたりしない<br>
+							誰にも</p>
+						<p>
+							ずっとずっと時の迷い子<br>
+							孤独な宇宙をさまよう</p>
+						<p>
+							あなた私　見えますか<br>
+							かすかなこの想い　あなたに伝えたい</p>
+						<p>
+							あなたの声　好きな仕草<br>
+							てのひらからこぼれた</p>
+						<p>
+							しあわせのカケラを集めてる</p>
+						<p>
+							人は悲しみ隠し　それぞれの運命を<br>
+							受け入れて生きているなら</p>
+						<p>
+							忘れないでと願う　瞳の奥を見つめた<br>
+							あなたを</p>
+						<p>
+							何も何も答えないでね<br>
+							やがて消え行く夢なら</p>
+						<p>
+							そっとそっと抱きしめて<br>
+							永遠の時間を</p>
+						<p>
+							めぐりめぐりあなた出会った<br>
+							偶然を信じている</p>
+						<p>
+							それはほんの星たちが瞬く瞬間</p>
+						<p>
+							あなたを夢見た</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-wind-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

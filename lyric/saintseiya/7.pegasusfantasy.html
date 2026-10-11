@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ペガサス幻想(ファンタジー) - 聖闘士星矢</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[聖闘士星矢 / Opening(1)]</div>
+
+                    <div class="LyricTitle">ペガサス幻想(ファンタジー)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MAKE-UP</div>
+                    <div class="LyricStaff">作詞：竜 真知子<br>編曲：MAKE-UP<br>作曲：松澤 浩明 &amp; 山田 信夫</div>
+
+                    <div class="LyricText">
+						<p>
+							抱きしめた  心の小宇宙(コスモ)<br>
+							熱く燃やせ  奇跡を起こせ<br>
+							傷ついたままじゃいないと<br>
+							誓いあった  遥かな銀河</p>
+						<p>
+							ペガサス幻想(ファンタジー)<br>
+							そうさ夢だけは<br>
+							誰も奪えない  心の翼だから</p>
+						<p>
+							  聖闘士星矢  少年はみんな<br>
+							  聖闘士星矢  明日の勇者<br>
+							  聖闘士星矢  ペガサスのように<br>
+							  聖闘士星矢  今こそ  はばたけ</p>
+						<p>
+							どこまでも  輝く空に<br>
+							おまえだけの  星座をめざせ<br>
+							その日まで  負けられないさ<br>
+							命賭けて  挑んだ  バトル</p>
+						<p>
+							ペガサス幻想(ファンタジー)<br>
+							誰もが夢見る<br>
+							自由という翼広げ  駆けてゆけ</p>
+						<p>
+							  聖闘士星矢  少年はみんな<br>
+							  聖闘士星矢  孤独な戦士<br>
+							  聖闘士星矢  ペガサスのように<br>
+							  聖闘士星矢  今こそ  はばたけ</p>
+						<p>
+							ペガサス幻想(ファンタジー)<br>
+							そうさ夢だけは<br>
+							誰も奪えない  心の翼だから</p>
+						<p>
+							  聖闘士星矢  少年はみんな<br>
+							  聖闘士星矢  明日の勇者<br>
+							  聖闘士星矢  ペガサスのように<br>
+							  聖闘士星矢  今こそ  はばたけ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saintseiya-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

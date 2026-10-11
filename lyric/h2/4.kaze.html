@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ダッシュする風 - H2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">H2</div>
+
+                    <div class="LyricTitle">ダッシュする風</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">古本 新之輔</div>
+                    <div class="LyricStaff">作詞：比留 間徹<br>作曲：岩坂 士京<br>編曲：ジョーリノイエ</div>
+
+                    <div class="LyricText">
+						<p>
+							雨のち雲ひとつない空を<br>
+							見上げた午後のグランド<br>
+							さえぎるものない　日差しの中<br>
+							遠く瞳をあずけて</p>
+						<p>
+							そうさ　胸で痛む悩み<br>
+							思い出へとかわったなら<br>
+							かけがえない勇気になる</p>
+						<p>
+							どこまででもダッシュ！<br>
+							あふれ続けてる　想いを強く抱きしめ<br>
+							いついつまでもダッシュ！<br>
+							明日を重ねて<br>
+							夢に向かう　今　風が光る</p>
+						<p>
+							青春は果てしない坂道<br>
+							キツいときにほど　いつも<br>
+							熱く刻む鼓動は急ぐけど<br>
+							自分らしさ失くさずに</p>
+						<p>
+							そうさ　ひどくつらい夜は<br>
+							涙だっていいと思う<br>
+							後悔などしないために</p>
+						<p>
+							どこまででもダッシュ！<br>
+							目には映らない　心のつばさ信じて<br>
+							いついつまでもダッシュ！<br>
+							振り向いたりせず<br>
+							駆けてゆくよ　今　風が走る</p>
+						<p>
+							そうさ　胸で痛む悩み<br>
+							思い出へとかわったなら<br>
+							かけがえない勇気になる</p>
+						<p>
+							どこまででもダッシュ！<br>
+							あふれ続けてる　想いを強く抱きしめ<br>
+							いついつまでもダッシュ！<br>
+							明日を重ねて<br>
+							夢に向かう　今　風が光る</p>
+						<p>
+							どこまででもダッシュ！<br>
+							目には映らない　心のつばさ信じて<br>
+							いついつまでもダッシュ！<br>
+							振り向いたりせず<br>
+							駆けてゆくよ　今　風が走る</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-h2-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

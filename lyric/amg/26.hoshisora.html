@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>星空召喚 - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ああっ女神さまっ」</div>
+
+                    <div class="LyricTitle">星空召喚</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">冬馬由美</div>
+
+                    <div class="LyricText">
+						<p>
+							勇気持てない男たち<br>
+							愛する術も知らない<br>
+							熱い波動は宇宙にまで<br>
+							届いているのに</p>
+						<p>
+							伝わらないあの娘にだけ<br>
+							星より遙か距離がある</p>
+						<p>
+							勇気を出してさあ口説きなさい<br>
+							満天の星空をふたりにあげる<br>
+							やさしだけじゃだめ奪いなさい<br>
+							星たちが降り注ぐ夜をあげる</p>
+						<p>
+							星のタワーに連れ出して<br>
+							告げる勇気があるなら<br>
+							夢も運べるエレベーター<br>
+							ボタンはRさ</p>
+						<p>
+							憶えたはず恋の呪文<br>
+							効果はそうKiss以上ね</p>
+						<p>
+							ふたりだけの夜を過ごしなさい<br>
+							流れ星用意して待っててあげる<br>
+							抱きしめた肩越し合図なさい<br>
+							神さまっのタイミングチャンスあげる</p>
+						<p>
+							勇気を出してさあ口説きなさい<br>
+							満天の星空をふたりにあげる<br>
+							やさしいだけじゃだめ奪いなさい<br>
+							星たちが降り注ぐ夜をあげる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

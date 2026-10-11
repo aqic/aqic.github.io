@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>超時空要塞マクロス - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「超時空要塞マクロス」 オープニング(1982)</div>
+
+                    <div class="LyricTitle">超時空要塞マクロス</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">藤原誠</div>
+                    <div class="LyricStaff">作詞：阿佐茜<br>作曲・編曲：羽田健太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							マクロの空を貫いて<br>
+							地球を撃った雷は<br>
+							我等幼い人類に<br>
+							目覚めてくれと放たれた<br>
+							マクロス　マクロス<br>
+							雄々しく立った若者は<br>
+							愛する人をかばいつつ<br>
+							旅立つ日々を　戦い開く<br>
+							Will you love me tomorrow ?<br>
+							闇を切り裂き　飛び行く先は<br>
+							遠く輝く　青い星<br>
+							マクロス　マクロス　マクロス</p>
+						<p>
+							宇宙の子等を引き連れて<br>
+							星の彼方の闇の中<br>
+							万古に続く戦いを<br>
+							目指して飛んだ運命の矢<br>
+							マクロス　マクロス<br>
+							淡い陽射しと子守歌<br>
+							赤子の眠り　母の胸<br>
+							愛する日々を戦い守る<br>
+							Will you love me tomorrow ?<br>
+							闇を切り裂き　伸び行く光<br>
+							輝き満ちる　日はいつか<br>
+							マクロス　マクロス　マクロス</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

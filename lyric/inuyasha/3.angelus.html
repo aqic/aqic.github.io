@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ANGELUS-アンジェラス - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ANGELUS-アンジェラス</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島谷瞳</div>
+
+                    <div class="LyricText">
+						<p>
+							誰かのため流すナミダ　祈りのように頬につたう<br>
+							それを“弱さ”と隠さないで 　“やさしさ”と受け入れて<br>
+							呼吸さえも忘れさせる　瞳の中にみつけた空<br>
+							太陽だけが輝いてる　何を探しつづける？</p>
+						<p>
+							鏡をみつめ　誓ったあの日　あなたにはきっと見えてた<br>
+							自分の背中にも　翼があると</p>
+						<p>
+							あなたが変わり　世界が変わる<br>
+							夢に届け　愛の炎<br>
+							ゆらゆら蜃気楼　越えて<br>
+							空にはヒカリ　大地に水を<br>
+							その心に　強さを<br>
+							未来へたどりつく ANGELUS</p>
+						<p>
+							望みがもし叶うのなら　風になること選ぶでしょう<br>
+							迷いを捨てたあなたの羽根　私の風をつかむ</p>
+						<p>
+							高鳴る胸と　恐れる気持ち　痛みが混ざりあう過去を<br>
+							振り切れたらそこに　原色の虹</p>
+						<p>
+							一秒ごとに　世界を変える<br>
+							刻みだした　愛の鼓動<br>
+							ジリジリ燃え上がる　願い<br>
+							海より深い　見果てぬ夢を<br>
+							追い求める　強さが<br>
+							闇を照らしてゆく ANGELUS</p>
+						<p>
+							「走りつづけるなら、飛び立てるはず…」</p>
+						<p>
+							あなたが変わり　世界が変わる<br>
+							夢に届け　愛の炎<br>
+							ゆらゆら蜃気楼　越えて<br>
+							空にはヒカリ　大地に水を<br>
+							その心に　強さを<br>
+							未来へたどりつく ANGELUS</p>
+						<p>
+							情熱の破片(かけら)を手にして</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

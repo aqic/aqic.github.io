@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ロタティオン(LOTUS-2) - 千年女優</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">千年女優 サントラ</div>
+
+                    <div class="LyricTitle">ロタティオン(LOTUS-2)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">平沢進</div>
+
+                    <div class="LyricText">
+						<p>
+							黄金の月　草の露に幾万も昇り<br>
+							唯一に来る夜の牢で　打たれる君の夢に咲く<br>
+							瞬く　間にも数千の 朝よ訪れよ<br>
+							パラレルに行く 船団に 全てのキミの日を乗せて</p>
+						<p>
+							ランダマに行く雲のように生まれてたはずと<br>
+							千年を知るキミの声が全ての月に木霊する</p>
+						<p>
+							咲け輪廻の　オー 咲けロータス　オー<br>
+							響け千年よ　オー 響け毎秒に　オー</p>
+						<p>
+							遥かな過去　遥かな今日 明日さえもここに<br>
+							黄金の日は一度に有る 忘れたキミが目覚めれば<br>
+							パラレルに行く星の今を 隠喩のように映す<br>
+							ランダマに咲く花の野辺に 全てのキミは記されて</p>
+						<p>
+							咲け輪廻の　オー 咲けロータス　オー<br>
+							響け千年よ　オー 響け毎秒に　オー</p>
+						<p>
+							咲け輪廻の　オー 咲けロータス　オー<br>
+							響け千年よ　オー 響け毎秒に　オー</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-mactress-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

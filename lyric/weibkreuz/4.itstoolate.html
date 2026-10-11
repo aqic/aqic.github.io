@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>It's Too Late - ヴァイス・クロイツ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Ｗｅｉβ ｋｒｅｕｚ ED2</div>
+
+                    <div class="LyricTitle">It's Too Late</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Ｗｅｉβ</div>
+                    <div class="LyricStaff">作詞：相田毅<br>作曲・編曲：西岡和也</div>
+
+                    <div class="LyricText">
+						<p>
+							炎(ほのお)のような 哀(かな)しみ 癒(いや)す<br>
+							冷(つめ)たい 雨(あめ)が 今夜(こんや)は 降(ふ)り續(つづ)く</p>
+						<p>
+							誰(だれ)かを 愛(あい)し 誰(だれ)かを 憎(にく)み<br>
+							傷(いた)めた 胸(むね)の 悤(おく)まで しみていく</p>
+						<p>
+							あの 日(ひ) 信(しん)じた こと<br>
+							それを 後悔(こうかい)なんか してない</p>
+						<p>
+							いつか 別(わか)れる こと<br>
+							運命(うんめい)の 約束(やくそく)だよと</p>
+						<p>
+							キスが 淋(さみ)しくて 心(こころ) 離(はな)れてく<br>
+							二人(ふたり) 過去(かこ)に 逢(あ)えたら よかったのに</p>
+						<p>
+							せつない 想(おも)いも いつか<br>
+							そっと 懷(なつ)かしくなる</p>
+						<p>
+							なぜ 生(う)まれたのか なぜ 生(い)きてるのか<br>
+							どんな 理由(りゆう)も 雨(あめ)が 消(け)していく</p>
+						<p>
+							何(なに)にも 傳(つた)わらなくて<br>
+							愛(あい)は 壞(こわ)れる</p>
+						<p>
+							靑(あお)い 炎(ほのお)は 記憶(きおく)の 名乘(なの)り<br>
+							針(はり)のような 雨(あめ)が 突(つ)き刺(さ)して いく</p>
+						<p>
+							誰(だれ)かの 叫(さけ)び 誰(だれ)かの 夢(ゆめ)が<br>
+							濡(ぬ)れた 鋪道(ほどう)の 片(かた)すみ 息(いき) 絶(た)える</p>
+						<p>
+							何(なに)も できないけど<br>
+							ひとつ 守(まも)りたい ものが あったよ</p>
+						<p>
+							とうに 亡(な)くしたから<br>
+							今(いま)は 笑(わら)うしかないのさ</p>
+						<p>
+							雨(あめ)が 哀(かな)しくて すべて 哀(かな)しくて<br>
+							もしも 幸(しあわ)せな 時(とき) 刻(きざ)めたら</p>
+						<p>
+							果敢(はか)ない 願(ねが)いと 知(し)って<br>
+							そっと 淚(なみだ)を 搖(ゆ)らす</p>
+						<p>
+							雨(あめ)よ 降(ふ)るが いい 炎(ほのお) 消(き)えるまで<br>
+							そして 夢(ゆめ)の うたかたを 葬(ほうむ)ろう</p>
+						<p>
+							何(なに)にも 傳(つた)わらなくて<br>
+							愛(あい)は 壞(こわ)れる</p>
+						<p>
+							愛(あい)は 壞(こわ)れる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-weibkreuz-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

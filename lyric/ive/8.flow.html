@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>flow -水の生まれた場所- - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ゲーム「水素~2/1の奇蹟~」 主題歌(e-Electriciteit)</div>
+
+                    <div class="LyricTitle">flow -水の生まれた場所-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲·編曲：中澤伴行</div>
+
+                    <div class="LyricText">
+						<p>
+							風の中に抱かれながら<br>
+							高い空を見上げてた<br>
+							崩れそうにたたずむ街<br>
+							寂しそうな笑顔のままで</p>
+						<p>
+							ゆびきりをしたね<br>
+							いつかまた出会える<br>
+							忘れはしないよ</p>
+						<p>
+							空に広がる 哀しみは<br>
+							透きとおる水に溶けて<br>
+							何処までも 夢を乗せて行くよ<br>
+							見えない道を辿るように<br>
+							憧れた遠い海を 目指して私は<br>
+							流れてゆく</p>
+						<p>
+							越えられない 苦しみから<br>
+							逃れたくて あの日は<br>
+							影 落とした 瞳の中<br>
+							燃え尽きてく 光を見てた</p>
+						<p>
+							握り締めた手に<br>
+							あの日の約束を<br>
+							感じているから</p>
+						<p>
+							時の流れに 追いつけず<br>
+							つまづいた 傷跡から<br>
+							抱えてた痛みが溢れ出す<br>
+							だけど いつかは辿り着く<br>
+							碧い海 見つけるまで<br>
+							夢の欠片だけ<br>
+							なくさないで</p>
+						<p>
+							「ごめんね」と君が呟いた<br>
+							あの日の 答えを探して</p>
+						<p>
+							空に広がる 想い出は<br>
+							幾重にも 重なり合い<br>
+							涙さえ いつか 消して行くよ<br>
+							見えない道を辿るように<br>
+							憧れた遠い海を 目指して貴方は<br>
+							流れてゆく</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

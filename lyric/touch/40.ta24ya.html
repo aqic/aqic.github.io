@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>野球 - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book １ タッチ Music Flavor １</div>
+
+                    <div class="LyricTitle">野球</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">岩崎 良美</div>
+                    <div class="LyricStaff">作詞：康 珍化<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							空に舞い上がるボールを<br>
+							待ち構える　キャッチャーミット</p>
+						<p>
+							Ah　長い夏の終わりは<br>
+							あっけなくね　訪れる</p>
+						<p>
+							土にまみれたスパイクや<br>
+							悲鳴あげて　閉じた瞳に</p>
+						<p>
+							Ah　ゲームセットを告げる<br>
+							サイレンがね　鳴り響く</p>
+						<p>
+							追いかけたのは　何なの？<br>
+							あこがれと言えば何だか<br>
+							ありふれているけど</p>
+						<p>
+							胸にあふれて　消えない<br>
+							僕だけのせつなさを<br>
+							追いかけてきたのさ</p>
+						<p>
+							愛した人は　誰なの？<br>
+							あこがれと言えば何だか<br>
+							ありふれているけど</p>
+						<p>
+							胸にあふれて　消えない<br>
+							大切なせつなさを<br>
+							追いかけてきたのさ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>吸血姫“美夕”（日中対訳） - 吸血姫美夕</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">吸血姫“美夕”（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林朝美</div>
+                    <div class="LyricStaff">作詞：よしぼもえ<br>作曲：川井宪次<br>编曲：川井宪次</div>
+
+                    <div class="LyricText">
+						<p>
+							哀しみあふれる眼差しに<br>
+							时の流れを映す<br>
+							激しく燃える想い远さけて<br>
+							白い记忆をたどれば</p>
+						<p>
+							妖しく辉く梦の果て<br>
+							光る予感が走る<br>
+							永远の命抱きしめる</p>
+						<p>
+							谁も知らず　谁も见えない<br>
+							运命の糸<br>
+							泪そっと胸に抱き　ひとり...</p>
+						<p>
+							心を闭ざした　その瞳<br>
+							冻る指先见つめ<br>
+							はかなく消える爱を追いかけて<br>
+							时の世界をかまよう</p>
+						<p>
+							见知らぬ微笑　谜めいて<br>
+							过去と未来を生きる<br>
+							永远の命抱きしめる</p>
+						<p>
+							いつかきっと　见える日が来る<br>
+							运命の糸<br>
+							今はそっと胸に秘めて　ひとり...</p>
+						<p>
+							哀しみあふれる眼差しに<br>
+							时の流れを映す<br>
+							永远の命抱きしめる<br>
+							あてのない旅は续く<br>
+							はるか时の彼方へ...</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							在充满着哀愁的眼神里,<br>
+							映着如流水的时光,<br>
+							躲开激烈燃烧的回忆,<br>
+							寻着白色的记忆.</p>
+						<p>
+							妖艳的光辉在梦的那一端,<br>
+							预感闪着光疾走,<br>
+							紧抱着永远的命运.</p>
+						<p>
+							没人知道 没人看得见,<br>
+							命运的路径,<br>
+							静静地哭泣抱着胸怀,只一个人!</p>
+						<p>
+							在紧闭心扉的眼神里,<br>
+							凝视着冻着的指尖,<br>
+							追着如梦幻消失的爱,<br>
+							徘徊在时空里.</p>
+						<p>
+							谜一般陌生的微笑<br>
+							活在过去和未来<br>
+							紧抱着永远的命运.</p>
+						<p>
+							何时必能看见来到的日子<br>
+							命运的路径,<br>
+							静静地隐藏在胸怀,只一个人!<br>
+							在充满着哀愁的眼神里,<br>
+							映着如流水的时光,<br>
+							紧抱着永远的命运.<br>
+							没有目标继续地旅行<br>
+							到遥远时间的对岸</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

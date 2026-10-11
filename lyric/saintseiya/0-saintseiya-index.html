@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">聖闘士星矢</span><span class="cn">（女神的圣斗士）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+					<div class="disc-head"><span class="disc-name">聖闘士星矢</span><span class="disc-sub">12 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.globe.html">《地球儀》</a>＆<a href="1.globe-bilingual.html" class="cn">(中)</a><span class="note">- Saint Seiya the Hades Chapter Sanctuary OP</span></li>
+						<li class="LyricItem"><a href="2.kimi.html">《君と同じ青空》</a>＆<a href="2.kimi-bilingual.html" class="cn">(中)</a><span class="note">- Saint Seiya the Hades Chapter Sanctuary ED</span></li>
+						<li class="LyricItem"><a href="3.cannottsaygoodbye.html">《さよならのかわりに&lt;br&gt;[CAN'T SAY GOOD-BYE]》</a><span class="note">- [聖闘士星矢 / 挿入歌]</span></li>
+						<li class="LyricItem"><a href="4.beautifulchild.html">《ビューティフル・チャイルド&lt;br&gt;[BEAUTIFUL CHILD]》</a><span class="note">- [聖闘士星矢 / 挿入歌]</span></li>
+						<li class="LyricItem"><a href="5.finalsoldier.html">《ファイナル・ソルジャー&lt;br&gt;[FINAL SOLDIER]》</a><span class="note">- [聖闘士星矢 / 挿入歌]</span></li>
+						<li class="LyricItem"><a href="6.friendsinthesky.html">《希望の翼&lt;br&gt;[FRIENDS IN THE SKY]》</a><span class="note">- [聖闘士星矢 / 挿入歌]</span></li>
+						<li class="LyricItem"><a href="7.pegasusfantasy.html">《ペガサス幻想(ファンタジー)》</a><span class="note">- [聖闘士星矢 / Opening(1)]</span></li>
+						<li class="LyricItem"><a href="8.remember.html">《リメンバー&lt;br&gt;[REMEMBER]》</a><span class="note">- [聖闘士星矢 / IS]</span></li>
+						<li class="LyricItem"><a href="9.iamfighter.html">《勝利のペガサス&lt;br&gt;[I AM FIGHT]》</a><span class="note">- [聖闘士星矢 / IS]</span></li>
+						<li class="LyricItem"><a href="10.stardustway.html">《哀しみの英雄(ヒーロー)&lt;br&gt;[STARDUST WAY]》</a><span class="note">- [聖闘士星矢 / IS]</span></li>
+						<li class="LyricItem"><a href="11.lovefighter.html">《愛の聖闘士&lt;br&gt;[LOVE FIGHTER]》</a><span class="note">- [聖闘士星矢 / IS]</span></li>
+						<li class="LyricItem"><a href="12.blueforever.html">《永遠ブルー》</a><span class="note">- [聖闘士星矢 / Ending(1)]</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

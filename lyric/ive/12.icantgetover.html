@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>I can`t get over your best smile - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">アニメ「おねがい☆ティチャー」 イメージソング(Lantis)</div>
+
+                    <div class="LyricTitle">I can`t get over your best smile</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲·編曲：高瀨一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							今日を昨日に運んでゆく 大きな夕日に包まれて<br>
+							長く伸びだ影 手をつないだ かえり道の途中</p>
+						<p>
+							君の横顔 ときこんだ 慌てて笑顔を作るけど<br>
+							まつげに残る涙の粒は まだ乾かないかな</p>
+						<p>
+							一人ぼっちだった 雲と話す毎日か<br>
+							流れていく 流されてゆく<br>
+							瞬きしたら そこに君がいる</p>
+						<p>
+							Stay...<br>
+							Feel my mind,take my side<br>
+							そう 側にいられるなら<br>
+							one more time 夢を見れるから<br>
+							君の涙 乾かす風になるよ 強くなる<br>
+							`Cause I can`t get over your best smile<br>
+							一緒に歩こうよ</p>
+						<p>
+							指で作った望遠鏡 君の心をといてみる<br>
+							気持ちを試すような言葉で 傷つけないように</p>
+						<p>
+							さっき泣いてた君が笑う 夕燒けの中にとけてゆく<br>
+							ずっと忘れないよう祈った 逆上がりの景色</p>
+						<p>
+							ふたりぼっちだけど もう淋しさはどこかに<br>
+							飛んでゆく 飛ばされてゆく<br>
+							涙 分け合う 君がいるだけで</p>
+						<p>
+							Stay...<br>
+							I`m standing on your side<br>
+							そう 側にいられるなら<br>
+							hear my cry いつも見れるから<br>
+							君の笑顔 照らす太陽になる 信じてよ<br>
+							`Cause I can`t get over your best smile<br>
+							心配いらないよ</p>
+						<p>
+							空はふたりのこと ただ見守ってるだけで<br>
+							かなえたい かなわないこと<br>
+							悲しみの數 增えてゆくけれど</p>
+						<p>
+							そう 側にいられるから<br>
+							side by side 全て見せるから<br>
+							君は何を夢見て迷ってるの？<br>
+							tell me now もう どこにも行かないよ</p>
+						<p>
+							Feel my mind,take my side<br>
+							そう 側にいられるなら<br>
+							one more time 夢を見れるから<br>
+							君の涙 乾かす風になるよ 強くなる<br>
+							`Cause I can`t get over your best smile<br>
+							一緒に歩こうよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

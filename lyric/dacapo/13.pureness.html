@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Pureness - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Pureness</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">白河ことり（堀江由衣）</div>
+
+                    <div class="LyricText">
+						<p>
+							はずむような声が<br>
+							勇気をくれた<br>
+							見つめ合う時は素直な私<br>
+							あなたに会って<br>
+							伝えたいことだらけ　あきれないで</p>
+						<p>
+							ほかの誰よりも<br>
+							近くにいたい<br>
+							楽しそうな笑顔　きれいに揺れて<br>
+							胸に映るわ<br>
+							とくべつなスクリーンの主役みたい</p>
+						<p>
+							あたらしい風吹いて<br>
+							はじまりの合図<br>
+							出逢いは自然なPureness<br>
+							たいせつなこと<br>
+							今はあなたが好きだと<br>
+							うちあえけみたいから</p>
+						<p>
+							ひとりぼっちじゃない<br>
+							手をふる私<br>
+							時々ふざけて追いかけるから<br>
+							いつもの景色　しあわせなひとときね<br>
+							そして今日も</p>
+						<p>
+							かわる季節の中で<br>
+							ときめきの未来　あなたへと走り出して<br>
+							たいせつなこと<br>
+							もっとこころをやさしく<br>
+							抱きしめていたいのよ</p>
+						<p>
+							そっっと恋のためいき<br>
+							ためいきにとけて<br>
+							いとしさがあふれだした<br>
+							めぐる季節の中で<br>
+							ときめきの未来　あなたへと走る</p>
+						<p>
+							あたらしい風吹いて<br>
+							はじまりの合図<br>
+							出逢いは自然なPureness<br>
+							たいせつなこと<br>
+							今はあなたが好きだと<br>
+							うちあけてみたいから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>輪舞-revolution - 少女革命ウテナ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「少女革命ウテナ」 オープニングテーマ</div>
+
+                    <div class="LyricTitle">輪舞-revolution</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">奥井雅美</div>
+
+                    <div class="LyricText">
+						<p>
+							潔く　カッコ良く　生きて行こう…<br>
+							たとえ２人離ればなれになっても…<br>
+							Take my revolution</p>
+						<p>
+							光差す校庭(gardan)<br>
+							手を取り合い誓い合ったなぐさめ合った<br>
+							もう　恋は二度としないよって<br>
+							そんなに強い結束は　カタチを変え<br>
+							今じゃこんなにたくましい私達のLife style,<br>
+							everyday…everytime</p>
+						<p>
+							頬を寄せあって　うつる写真の笑顔に<br>
+							少しの淋しさつめ込んで</p>
+						<p>
+							潔く　カッコ良く　明日からは<br>
+							誰もが振り向く女になる<br>
+							たとえ２人離ればなれになっても<br>
+							心はずっと一緒に</p>
+						<p>
+							愛は　お金では買えないって知っているけど<br>
+							“I”でお金は買えるの?<br>
+							T.Vで言ってた<br>
+							無感動…無関心きりがないね<br>
+							若い子みんなそうだと思われるのはfeel so bad!<br>
+							どうしょうもないじゃない</p>
+						<p>
+							でもね私達　トモダチの事何より大切にしてる<br>
+							きっと大人よりも</p>
+						<p>
+							夢を見て　涙して　傷ついても<br>
+							現実はがむしゃらに来るし<br>
+							自分の居場所　存在価値は失くせない<br>
+							自分を守るために</p>
+						<p>
+							I'll go my way　戻れない<br>
+							それぞれの　道を選ぶ時が来る前に<br>
+							こんなにも　こんなにも　大切な想い出…<br>
+							とき放つよ</p>
+						<p>
+							Take my revolution　生きて行こう<br>
+							現実はがむしゃらに来るし<br>
+							自分の居場所　存在価値を見つけたい<br>
+							今日までの自分を</p>
+						<p>
+							潔く　脱ぎ捨てる　裸になる<br>
+							自由を舞う薔薇のように<br>
+							たとえ２人離ればなれになっても<br>
+							私は世界を変える</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-utena-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

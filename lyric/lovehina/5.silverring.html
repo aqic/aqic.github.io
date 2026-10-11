@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>おそろいのSilver Ring - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">おそろいのSilver Ring</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">倉田雅世</div>
+
+                    <div class="LyricText">
+						<p>
+							電車の中でみかけた　ちょっとすてきなカップル<br>
+							よりそう瞳に映るのは　きっと二人だけの景色ね</p>
+						<p>
+							お気に入りのカフェでブランチ<br>
+							あなたの笑顔に揺れながら<br>
+							陽のあたる坂道を　どこまでもお散歩するの</p>
+						<p>
+							そして　おそろいのＳｉｌｖｅｒ　Ｒｉｎｇ　いつの日か　私もね<br>
+							あこがれの　Ｓｔｅａｄｙ　Ｒｉｎｇ　なにげなく　輝かせたい</p>
+						<p>
+							鏡の中の私に　素直に問いかけてみる<br>
+							大切なひとは誰ですか？　気づいてない振りしてるだけ？</p>
+						<p>
+							夢みる気持ちを集めて<br>
+							そよ風にそっと飛ばしたら<br>
+							胸の奥　眠らせた　せつなさがざわめきだすの</p>
+						<p>
+							心　つないでるＳｉｌｖｅｒ　Ｒｉｎｇ　今はまだ　遠くても<br>
+							あこがれのＳｔｅａｄｙ　Ｒｉｎｇ　涼しげに　輝かせたい</p>
+						<p>
+							おそろいのＳｉｌｖｅｒ　Ｒｉｎｇ　いつの日か　私もね<br>
+							あこがれのＳｔｅａｄｙ　Ｒｉｎｇ　なにげなく　輝かせたい</p>
+						<p>
+							心　つないでるＳｉｌｖｅｒ　Ｒｉｎｇ　今はまだ　遠くても<br>
+							あこがれのＳｔｅａｄｙ　Ｒｉｎｇ　涼しげに　輝かせたい<br>
+							誰よりも　輝かせたい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

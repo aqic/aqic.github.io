@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>乱馬〈ランバ〉ダ☆ＲＡＮＭＡ - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2 熱闘編」エンディング・テーマ (1990)</div>
+
+                    <div class="LyricTitle">乱馬〈ランバ〉ダ☆ＲＡＮＭＡ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">DoCo</div>
+                    <div class="LyricStaff">構成：乱馬的歌劇団文芸部<br>作曲・編曲：川井憲次<br>実演：乱馬的歌劇団御一行様</div>
+
+                    <div class="LyricText">
+						<p>
+							※［あかね］うちの天道道場<br>
+							　［コ―ラス］いそうろう<br>
+							　［あかね］乱馬　つら～い修行の<br>
+							　［コ―ラス］呪泉郷<br>
+							　［玄馬］まさに悲劇！<br>
+							　［乱馬］水をかぶると<br>
+							　［らんま］女になっちゃうフザケた体質<br>
+							　［コーラス］あかねの許婚！</p>
+						<p>
+							乱馬「おめー、かわいくねーんだよ」<br>
+							あかね「冗談じゃないわよ。あんな変態、おことわりよ」<br>
+							玄馬「う～む、なにから話せばよいのやら」<br>
+							「乱馬、殺す！」シャンプー</p>
+						<p>
+							らんま「てめー、なにしやがる！」<br>
+							九能「人呼んで、風林館高校の蒼い雷」<br>
+							早雲「説明してもらおーか、乱馬くん」<br>
+							「お～ほほほほほほほっ」小太刀</p>
+						<p>
+							ムース「おらの技を、手品よばやりする気か」<br>
+							おばば「婿どの、多少はできるよーじゃの」<br>
+							八宝斉「はははあっ、あかねちゃんのぱんてぃっ！」<br>
+							「ぶぃーっ、ぶきっ！」良牙</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							［ガイド］お客さん、ここよ。伝説の修行場　呪泉郷。<br>
+							お客さん、物好きね。<br>
+							大変危険なので、もう誰も使てないのよ、この修行場。</p>
+						<p>
+							あっ、お客さん　なにするね！<br>
+							泉に落ちたら大変よ。<br>
+							あいやあっ、娘溺泉〈ニャンニーチュアン〉に落ちてしまった！</p>
+						<p>
+							娘溺泉は千五百年前　若い娘が溺れたという、<br>
+							悲劇的伝説があるのだよ！<br>
+							以来そこで溺れた者、皆…、<br>
+							若い娘の姿になてしまう呪い的泉！<br>
+							ほら見ろ、娘になてしまた。</p>
+						<p>
+							らんま「命は捨てても、男を捨てる気はなかったわい！」<br>
+							良牙「風林館高校はどこだ？」<br>
+							かすみ「早乙女のおじさま、朝ごはんですよー」<br>
+							「……」玄馬</p>
+						<p>
+							シャンプー「乱馬、責任とるよろし」<br>
+							おばば「だてに百年生きとらんわ、ははっ」<br>
+							なびき「フォローになってないわよ、おねーちゃん」<br>
+							「よしよし、よし」あかね</p>
+						<p>
+							九能「きさま、あかねくんに対して慣れ慣れしい」<br>
+							三千院「連れが、失礼したね」<br>
+							あずさ「シャルロットはあずさちゃんのものですわ」<br>
+							「ぶぃ～っ、ぶきっ！」Pちゃん</p>
+						<p>
+							［乱馬］だけどあかね　笑うとかわいいよ</p>
+						<p>
+							※くりかえし<br>
+							　［乱馬］「勝手に決めるなよ！」<br>
+							　［コーラス］あかねの許婚！<br>
+							　［あかね］「迷惑だわ！」<br>
+							　［コーラス］あかねの許婚！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

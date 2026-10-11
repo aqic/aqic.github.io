@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Invoke - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Invoke</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">T.M.Revolution</div>
+                    <div class="LyricStaff">作詞：井上秋緒<br>作曲：浅倉大介<br>編曲：浅倉大介</div>
+
+                    <div class="LyricText">
+						<p>
+							擦れ違い急ぐたびに　ぶつけ合い散切れ合う<br>
+							互いの羽根の痛み　感じている</p>
+						<p>
+							淋しさに汚れた　腕で抱いた<br>
+							それ以外の何かを　知らないから</p>
+						<p>
+							繋がる瞬間　目覚める永遠　待ち焦がれる</p>
+						<p>
+							速過ぎる時の　瞬きに晒されて<br>
+							独りでは　届かない<br>
+							願いなんて　消えそうなコトバじゃ<br>
+							辿り着けない</p>
+						<p>
+							じっと瞳（め）を懲らしても　見失ってしまう星<br>
+							誰のものにのならない　光がある</p>
+						<p>
+							口唇　確かめる　生命（いのち）の灯が<br>
+							思い詰めたように　眩しいから</p>
+						<p>
+							愛が先なのか　壊すのが先か　惑わされる</p>
+						<p>
+							絡み合う熱の　伝えたい真実を<br>
+							誰から　守ればいい？<br>
+							キミがいつか　欲しがった想いが<br>
+							そこにあるなら・・・</p>
+						<p>
+							速過ぎる時の　瞬きに晒されて<br>
+							独りでは　届かない<br>
+							願いなんて　消えそうなコトバじゃ</p>
+						<p>
+							絡み合う熱の　伝えたい真実を<br>
+							誰から　守ればいい？<br>
+							ここでいつか　欲しがった想いが<br>
+							キミにあるから・・・</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

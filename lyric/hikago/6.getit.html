@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>GET IT! - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">GET IT!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">伊藤健太郎</div>
+                    <div class="LyricStaff">作詞：kenko-p<br>作曲：萩原祐二<br>編曲：萩原祐二</div>
+
+                    <div class="LyricText">
+						<p>
+							真昼の月がギラリした<br>
+							思いがけないことがあるんだ<br>
+							OUTすることで見えてくるだろう<br>
+							ちがう自分<br>
+							ちがう生き方</p>
+						<p>
+							教えられた知識はいらない<br>
+							学び勝ち取った形のない<br>
+							経験こそが<br>
+							明日へ導くから</p>
+						<p>
+							I WANNA GET IT!<br>
+							奪うこともひとつのやり方<br>
+							I WANNA GET IT!<br>
+							この気持ちで<br>
+							go for broke 情熱　my world</p>
+						<p>
+							群れの中では見えにくい<br>
+							ひとりという無限の宇宙<br>
+							迷宮の中へ迷い込むとき<br>
+							同じ空に<br>
+							俺もいるから</p>
+						<p>
+							こわれた青<br>
+							孤独な翼<br>
+							あきらめをしないココロだけで<br>
+							ココロだけで<br>
+							飛べる空があるさ</p>
+						<p>
+							I WANNA GET IT!<br>
+							男なんて野蛮でいいのさ<br>
+							I WANNA GET IT!<br>
+							攻めることで<br>
+							keep my soul　夢中　try hard</p>
+						<p>
+							答えのない<br>
+							闇の中<br>
+							突き進め</p>
+						<p>
+							I WANNA GET IT!<br>
+							奪うこともひとつのやり方<br>
+							I WANNA GET IT!<br>
+							この気持ちで<br>
+							go for broke 情熱 world<br>
+							I WANNA GET IT!<br>
+							男なんて野蛮でいいのさ<br>
+							I WANNA GET IT!<br>
+							攻めることで<br>
+							keep my soul　夢中　try again</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

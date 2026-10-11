@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>約束～featuring神威～ - X -エックス-</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">約束～featuring神威～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">司狼 神威（鈴村 健一）</div>
+
+                    <div class="LyricText">
+						<p>
+							褪せた記憶の隙間から　こぼれる涙集めて<br>
+							夢を紡いだ夢を見て　いつも傷になる</p>
+						<p>
+							Ah　繰り返す　過去に希望が無くても<br>
+							Ah　いつかは　輝く星もあるはず</p>
+						<p>
+							この光を抱いているのは<br>
+							キミが望んだ未来のため<br>
+							小さな約束が僕達の<br>
+							過去と今を　つなぐから</p>
+						<p>
+							消えた世界の瓦礫から　無くした心見つけて<br>
+							傷を癒す場所も無くて　だけど夢を見る</p>
+						<p>
+							Ah　繰り返す　闇に終わりが無くても<br>
+							Ah　ここから　始まる夢もあるはず</p>
+						<p>
+							あの笑顔を忘れないのは<br>
+							たったひとつの未来のため<br>
+							小さな微笑みがこの星の<br>
+							今日と明日　つなぐから</p>
+						<p>
+							キミがいる青い空を<br>
+							いつか生まれた海を<br>
+							抱きしめて　傷つけて<br>
+							永遠に守りたい</p>
+						<p>
+							この瞳に映る未来は<br>
+							探しつづけた運命の星<br>
+							ふたつの時を超えた絆が<br>
+							キミと僕をつなぐのさ</p>
+						<p>
+							この光を抱いているのは<br>
+							キミが望んだ未来のため<br>
+							小さな約束が僕達の<br>
+							過去と今を　つなぐから</p>
+						<p>
+							今日と明日　つなぐから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-x-kakyuu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

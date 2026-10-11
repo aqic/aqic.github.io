@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>1·2·3·4·5·6·7 NIGHTS - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">1·2·3·4·5·6·7 NIGHTS</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Nekki Basara</div>
+                    <div class="LyricStaff">作詞：K.INOJO<br>作曲：須藤英樹<br>編曲：田中裕干</div>
+
+                    <div class="LyricText">
+						<p>
+							どんなきれいな星座が<br>
+							今夜も見れたって<br>
+							うまいピザを食べたって<br>
+							どんなチャンスやお金が<br>
+							転がり込んだって<br>
+							近道を見つけたって<br>
+							ひらめきを感じたって<br>
+							1, 2, 3, 4, 5, 6, 7 nights<br>
+							Crazy, crazy, crazy without you<br>
+							おまえがいなきゃ　Honey bee<br>
+							どんな夜も味気ないのさ</p>
+						<p>
+							どんな泣きたい事が毎日続いたって<br>
+							何度かバイクがコケたって<br>
+							どんなフザケた迷路に<br>
+							はまりこんだって<br>
+							コードを間違えたって<br>
+							風にイジメられたって<br>
+							1, 2, 3, 4, 5, 6, 7 nights<br>
+							Lazy, lazy, lazy without you<br>
+							おまえがいれば　Honey bee<br>
+							どんな夜もゴキゲンなのさ</p>
+						<p>
+							1, 2, 3, 4, 5, 6, 7 nights<br>
+							Dancin', dancin', dancin' every night<br>
+							おまえのキスで　Honey bee<br>
+							どんな夜もゴキゲンなのさ</p>
+						<p>
+							Woo yeah!<br>
+							Dancin' every night, night, night<br>
+							1, 2, 3, 4, 5, 6, 7 nights</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

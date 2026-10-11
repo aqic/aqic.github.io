@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ラブの秘密 - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ラブの秘密</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							オトコノコだまされてる<br>
+							ほら　カワイイ子には弱いの<br>
+							やさしく甘えられたらイチコロ！　そうだよね？</p>
+						<p>
+							どうして気が付かないの？<br>
+							わたしのヒガミかな？</p>
+						<p>
+							とぼけたらダメだよ　ほら見て！　私のハートの<br>
+							中にはあなたへの気持ちがいっぱい詰まってるのに！<br>
+							ごまかしちゃダメだよ　ほら見て！　見つけて my secret love！<br>
+							知らなかったなんてもう言わせないから！<br>
+							もう少し私にふりむいてほしい</p>
+						<p>
+							Have you ever be in love with girl？</p>
+						<p>
+							いつか一緒に作った<br>
+							あの大きな模型飛行機<br>
+							あの日から私の１番の宝物</p>
+						<p>
+							２人で乗れたらいいのに<br>
+							そう言って笑ったの</p>
+						<p>
+							とぼけたらダメだよ　ほら見て！　私のハートの<br>
+							中にはあなたへの気持ちがいっぱい詰まってるのに！<br>
+							ごまかしちゃダメだよ　ほら見て！　見つけて my secret love！<br>
+							２人一緒ならこの大空飛べるよ！<br>
+							どこか遠くに飛んで行きたい…</p>
+						<p>
+							Have you ever be in love with girl？<br>
+							Have you ever be in love with girl？</p>
+						<p>
+							見つけて my secret love！　私のハートの<br>
+							中にはあなたへの気持ちがいっぱい詰まってるのに！<br>
+							ごまかしちゃダメだよ　ほら見て！　見つけて my secret love！<br>
+							２人一緒ならこの大空飛べるよ！<br>
+							どこか遠くに飛んで行きたい…</p>
+						<p>
+							２人の世界に飛んで行きたい……<br>
+							２人の世界に飛んで行きたい……</p>
+						<p>
+							Have you ever be in love with girl？<br>
+							Have you ever be in love with girl？<br>
+							Have you ever be in love with girl？<br>
+							Have you ever be in love with girl？</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

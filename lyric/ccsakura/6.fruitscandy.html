@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>FRUITS CANDY - カードキャプターさくら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「カードキャプターさくら」</div>
+
+                    <div class="LyricTitle">FRUITS CANDY</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">こじまめぐみ</div>
+                    <div class="LyricStaff">作詞：横山　武<br>作曲：上田晃司<br>編曲：保刈久明</div>
+
+                    <div class="LyricText">
+						<p>
+							☆Tip Tap 恋はいつだってCANDY<br>
+							　フルーツのようにTasty<br>
+							　Good Luck そうね　毎日がSUNDAY<br>
+							　あわてないでMy Heart</p>
+						<p>
+							雨上がりの街へと出かけよう<br>
+							バブルガムと好奇心をぶくらませ<br>
+							水たまりに映った blue blue sky<br>
+							涙もきっと　乾くよ jelly bean<br>
+							Ah パステルの陽射しに　幸せもアクビしてる<br>
+							ゆっくりと歩きましょ</p>
+						<p>
+							Ah ah ah ah</p>
+						<p>
+							★Tip Tap まるで夢見るCANDY<br>
+							　頬張ればすぐにHappy<br>
+							　Good-bye とてもU2なMONDAY<br>
+							　あせらないで My Dream</p>
+						<p>
+							悩みことはベリイのジャムつけて<br>
+							少しさめたミルキチーで飲み干そう<br>
+							ウインクする夜空の Shinin' Star<br>
+							天使が遊ぶ　ビーだまみたい<br>
+							Ah カラフルは気分で　くちずさむ甘いメロヂー<br>
+							フイルムがまわり出す</p>
+						<p>
+							☆繰り返し</p>
+						<p>
+							★繰り返し</p>
+						<p>
+							☆繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ccsakura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

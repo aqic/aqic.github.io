@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>サクラサクミライコイユメ - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">オープニングテーマ</div>
+
+                    <div class="LyricTitle">サクラサクミライコイユメ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">yozuca</div>
+                    <div class="LyricStaff">作詞／作曲：tororo<br>編曲：Angel Note</div>
+
+                    <div class="LyricText">
+						<p>
+							{サクラサクミライコイユメ...</p>
+						<p>
+							空が青いよね　君が微笑んだ<br>
+							何気ない一言は　心つないでく<br>
+							履きかけの靴で　開けた扉の向う<br>
+							君に重なる景色　僕はときめいた<br>
+							サクラサクミライコイユメ 高まる鼓動抑えずに<br>
+							二人で　感じる季節を越えてゆく<br>
+							かけがえのない瞬間と　出会いが作る物語<br>
+							舞い散る桜に　願いを込めて<br>
+							歩んでいく<br>
+							花は開く}</p>
+						<p>
+							夕暮れの街を　君と歩いてた<br>
+							オレンジ色の景色　今日が終わってく<br>
+							切ない心は　君を想う力に<br>
+							毎日強くなるよ　きっとこれからも<br>
+							サクラサクアイノミライへ　出会いのあの時のままに<br>
+							二人で　感じる明日へ進みたい<br>
+							繰り返す季節の中で　何かが変わる瞬間に<br>
+							舞い散る桜の　魔法はきっと<br>
+							かなうはずさ<br>
+							信じていて</p>
+						<p>
+							いくつもの道を　選び進むこれから<br>
+							君の旅立ちの日も　そっと微笑んで...<br>
+							サクラサクミライコイユメ　高まる鼓動抑えずに<br>
+							二人で　感じる季節を越えてゆく<br>
+							かけがえのない瞬間と　出会いが作る物語<br>
+							舞い散る桜に　願いを込めて<br>
+							歩んでいく<br>
+							花は開く</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

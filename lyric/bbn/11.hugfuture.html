@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>誰も知らない未来を抱きしめて - 万能文化猫娘</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">誰も知らない未来を抱きしめて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ</div>
+
+                    <div class="LyricText">
+						<p>
+							月の砂漠を飛び越え　嵐を横切り<br>
+							　誰も知らない世界へ　今すぐに　駆け出そうよ</p>
+						<p>
+							　銀色に　輝いている　ミサイルに腰掛けて<br>
+							　遠い街　あなたと見てた午後</p>
+						<p>
+							　さりげなく　笑ってても　ぎこちないその瞳<br>
+							　あなただって　正直なのね　ＭＹ　ＦＲＩＥＮＤ</p>
+						<p>
+							　好きだなんて　今は　まだ　打ち明けないでネ<br>
+							　恋より眩しい風と　たわむれたい</p>
+						<p>
+							＊青い地形を飛び越え　気圧を横切り<br>
+							　誰も知らない世界へ　今すぐに　駆け出そう</p>
+						<p>
+							※時間を飛び越え　光を追い越し<br>
+							　誰も知らない未来を　この胸に　抱きしめたい</p>
+						<p>
+							　見つめたら　目をそらして　うつむいたその笑顔<br>
+							　友達で　ふざけていてよ　ＭＹ　ＦＲＩＥＮＤ</p>
+						<p>
+							　ゴメンなんて　急に　ねぇ　謝らないでネ<br>
+							　気ままな子猫のように　夢見ようよ</p>
+						<p>
+							◎月の砂漠を飛び越え　嵐を横切り<br>
+							　誰も知らない世界へ　今すぐに　駆け出そう</p>
+						<p>
+							◇時間を飛び越え　光を追い越し<br>
+							　誰も知らない未来を　この胸に　抱きしめて</p>
+						<p>
+							　急がなきゃ　追いつけないわ<br>
+							　あこがれは　流れ星みたいなの</p>
+						<p>
+							＊Ｒｅｐｅａｔ</p>
+						<p>
+							◇Ｒｅｐｅａｔ</p>
+						<p>
+							◎Ｒｅｐｅａｔ</p>
+						<p>
+							※Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bbn-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

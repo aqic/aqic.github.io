@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>My Sin - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">My Sin</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">竹内涼子(折笠愛)</div>
+                    <div class="LyricStaff">作詞：木本　慶子<br>作曲：西岡　治彦</div>
+
+                    <div class="LyricText">
+						<p>
+							（Turn　to　my　way）<br>
+							（Now　for　tomorrow）<br>
+							（Sin　to　my　love）</p>
+						<p>
+							青いカーブを抜けたら<br>
+							夜明けの海が待つの<br>
+							少し窓をおろしたら　かすかに潮騒</p>
+						<p>
+							あてのない夜の気分<br>
+							思い出したくなって<br>
+							誰のせいでもないのに　痛いほど一人</p>
+						<p>
+							音もたてず　崩れて行く<br>
+							重ねた指は　気のせい<br>
+							あなたじゃなく　私が<br>
+							許さなかっただけね</p>
+						<p>
+							さよなら　Turn to my way　私なら<br>
+							Now for tomorrow　もういない<br>
+							Sin to my love　冷め過ぎたハートは</p>
+						<p>
+							さよなら　Turn to my way　初めから<br>
+							Now for tomorrow　見ない夢<br>
+							Sin to my love　愛せないのが罪</p>
+						<p>
+							水平線をバックに<br>
+							夕べを振りかえれば<br>
+							悲しいほど　あっけなく消えていくブルー</p>
+						<p>
+							訪れるたび季節は<br>
+							短くなる気がする<br>
+							それは気取った言い訳　見失っただけ</p>
+						<p>
+							迷いもせず　選びもせず<br>
+							答えはいつも見えてる<br>
+							あなたじゃない　誰かと<br>
+							くりかえすと知ってて</p>
+						<p>
+							ここから　Turn to your way　見送るわ<br>
+							Now for tomorrow　もう二度と<br>
+							Sin to your love　届かない遠くへ</p>
+						<p>
+							ここから　Turn to your way　切なさは<br>
+							Now for tomorrow　ただ一つ<br>
+							Sin to your love　奪えなかった罪</p>
+						<p>
+							音もたてず　崩れて行く<br>
+							重ねた指は　気のせい<br>
+							あなたじゃなく　私が<br>
+							許さなかっただけね</p>
+						<p>
+							さよなら　Turn　to　my　way　私なら<br>
+							Now　for　tomorrow　もういない<br>
+							Sin　to　my　love　冷め過ぎたハートは</p>
+						<p>
+							さよなら　Turn　to　my　way　初めから…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

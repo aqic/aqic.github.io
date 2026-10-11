@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>疾風になれ - エクスドライバー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">エクスドライバー OP</div>
+
+                    <div class="LyricTitle">疾風になれ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">JAM Project</div>
+                    <div class="LyricStaff">作詞：椎名　可憐<br>作曲：千沢　仁</div>
+
+                    <div class="LyricText">
+						<p>
+							KEEP ON DRIVIN'　走り出せ　心のまま<br>
+							どこまでも　SO FAR AWAY</p>
+						<p>
+							シートに滑りこんで　ギアを入れて<br>
+							アクセル踏めば　鼓動感じてる<br>
+							地平線の果て　目指そうか<br>
+							コイツとなら　すべてが　ALRIGHT</p>
+						<p>
+							手のひら握りしめた　ひと破片の<br>
+							情熱だけで　生きてゆける？とか<br>
+							確かめたいこと　ある限り<br>
+							ここに　とどまっていられないから</p>
+						<p>
+							KEEP ON DRIVIN'　走り出せ　心のまま<br>
+							誰よりも　負けないさ<br>
+							KEEP ON BURNIN'　燃え上がる　熱い想い<br>
+							どこまでも　駆け抜ける　疾風になれ</p>
+						<p>
+							微熱のある頬を　冷まして行こう<br>
+							ウィンドウ開けて　深呼吸ひとつ<br>
+							生まれ落ちたとき　孤独でも<br>
+							ミラーを覗けば　仲間が</p>
+						<p>
+							無限に何か求めても　最後は<br>
+							きっと　ひとの温もりが残るさ<br>
+							自分の限界　知りたくて<br>
+							夢中で走って　追い越してゆく</p>
+						<p>
+							唸り上げるエンジン　鼓動になる<br>
+							ここいらでいいとか　こんなもんだとか<br>
+							守りに入りゃ MOMENT 負けになる<br>
+							NOBODY CAN BE WINDS<br>
+							それなら ALRIGHT なおさら ALRIGHT</p>
+						<p>
+							KEEP ON DRIVIN'　守りたいものあるから<br>
+							生きている　ここにいる<br>
+							KEEP ON BURNIN'　果てしない夢があるさ<br>
+							この道を　駆け抜ける</p>
+						<p>
+							KEEP ON DRIVIN'　走り出せ　心のまま<br>
+							誰よりも　負けないさ<br>
+							KEEP ON BURNIN'　燃え上がる　熱い想い<br>
+							どこまでも　駆け抜ける　疾風になれ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-exdriver-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Get It On! ～Doppelganger にくちづけを - 新世紀エヴァンゲリオン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">新世紀エヴァンゲリオン 2nd Impression</div>
+
+                    <div class="LyricTitle">Get It On! ～Doppelganger にくちづけを</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">宮村優子</div>
+
+                    <div class="LyricText">
+						<p>
+							蒼い瞳の輝きは<br>
+							この地球もかなわない<br>
+							天使も逃げる　伝説の美少女</p>
+						<p>
+							世界中の男たちが<br>
+							視線からめて来るけど<br>
+							ピュアなハートを捧げるのは　ひとりだけ</p>
+						<p>
+							牙の抜けた狼なんかに<br>
+							用はないの　オ・ヤ・ス・ミ</p>
+						<p>
+							★Get it on!　欲しいものは 勝ち取るのが<br>
+							　戦場じゃない<br>
+							　恋も Kiss も　その次も…<br>
+							　Get it on!　自分らしく　咲かせるのが<br>
+							　最高じゃない<br>
+							　髪も　爪も　唇も…<br>
+							　Gehen Wir!</p>
+						<p>
+							ポケットに丸め込んでる<br>
+							夢の地図を　広げたら<br>
+							わかるはずでしょ　進むべき道はひとつ！</p>
+						<p>
+							越えられない　壁があったって<br>
+							ブチ壊せば　すむこと</p>
+						<p>
+							Get it on!　気合い入れて　駆け抜けるの<br>
+							当然じゃない<br>
+							雨も　夜も　憂鬱も…<br>
+							Get it on!　形だけの優しさなんて<br>
+							冗談じゃナイ！<br>
+							嘘も　傷も　プライドも…<br>
+							Gehen Wir!</p>
+						<p>
+							★REPEAT</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-eva-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

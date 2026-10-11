@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>かがやく空ときみの声 - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">［らんま 1/2］DoCo＊SECONDイメージ・ソング(1994)</div>
+
+                    <div class="LyricTitle">かがやく空ときみの声</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">らんま1/2　DoCo</div>
+                    <div class="LyricStaff">作詞・作曲：ＹＡＷＭＩＮ<br>編曲：ＹＯ！キタロー<br>実演：らんま★林原めぐみ<br>あかね★日高のり子<br>シャンプー★佐久間レイ<br>なびき★高山みなま<br>かすみ★井上喜久子</div>
+
+                    <div class="LyricText">
+						<p>
+							（らんま）かがやく空と （なびき）きみの声<br>
+							（らんま）両手広げて （＋なびき）感じたい</p>
+						<p>
+							（あかね）光る遊歩道 ふたり腕を組み<br>
+							いろんなことを 聞かせてほしい<br>
+							（かすみ）言えなかったの ずっと好きだった<br>
+							初恋かしら 胸がいたい</p>
+						<p>
+							（シャンプー）いつか駅のホーム越しで<br>
+							かるく笑い手をふった<br>
+							（＋なびき）そんな午後の帰り道は<br>
+							（シャンプー）トキメイて夕焼けがまぶしい</p>
+						<p>
+							※（らんま）かがやく空と （なびき）きみの声<br>
+							（らんま）両手広げて （＋なびき）感じたい<br>
+							（あかね）私の気持ち （かすみ）届くように<br>
+							（あかね）両手広げて （＋かすみ）受けとめて</p>
+						<p>
+							（シャンプー）秘密の手紙 沢山書いたけど<br>
+							今日ならきっと 出せる気がする</p>
+						<p>
+							（なびき）きのう読んだ 星占い<br>
+							（かすみ）きっとうまくいきそうで<br>
+							（あかね＋らんま）少し勇気出したけれど<br>
+							（あかね）ドキドキで青空がまぶしい</p>
+						<p>
+							※くりかえし</p>
+						<p>
+							（シ・ら・あ）輝く空と （な・か）君の声<br>
+							（シ・ら・あ）両手広げて （＋な・か）感じたい<br>
+							（シ・ら・あ）私の気持ち （な・か）届くように<br>
+							（シ・ら・あ）両手広げて （＋な・か）受けとめて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

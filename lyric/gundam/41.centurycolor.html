@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Century Color - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Century Color</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">RAY·GUNS</div>
+                    <div class="LyricStaff">作詞：井荻麟＆浜口祐夢<br>作曲：浜口祐夢</div>
+
+                    <div class="LyricText">
+						<p>
+							Century Color Million Color</p>
+						<p>
+							赤い　赤い　花びらよ　[Uh…Century Color]<br>
+							青い　青い　羽根になれ　[Uh…Million Color]<br>
+							あなたの未来染めて藍（あい）して　生まれ変わってゆく…</p>
+						<p>
+							繰り返す季節達が　心と身体を洗ってくれる<br>
+							あなたの中にある傷口をいたわり　深く癒し合いながら</p>
+						<p>
+							ほんのちいさなツボミ　ふたりで育てる<br>
+							藍（あい）だけでいい　永遠（ずっ）と…</p>
+						<p>
+							そして<br>
+							赤い　赤い　花びらが　[Uh…Century Color]<br>
+							青い　青い　羽根になれ　[Uh…Million Color]</p>
+						<p>
+							あなたの手のぬくもり信じて　泣いて　泣いて　夢紡いでいた<br>
+							生まれ変われるまで…</p>
+						<p>
+							こんな大きな世界で　僕らは出会った<br>
+							歩き続ける　ために…</p>
+						<p>
+							そして　赤い　赤い　花びらが　[Uh…Century Color]<br>
+							青い　青い　羽根になれ　[Uh…Million Color]<br>
+							名も無き未来地図を探して　強く　強く　夢紡いでいた<br>
+							生まれ変われるまで…</p>
+						<p>
+							Na Na Na Century Color<br>
+							Na Na Na Million Color</p>
+						<p>
+							TURNS!!!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>恋爱の时空 - 天地無用!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">恋爱の时空</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							樱が散るころに　偶然会いましょう<br>
+							见惯れない服を著て　他人の颜をして</p>
+						<p>
+							もう一度　はじまる　いつだって　戾れる<br>
+							长い时间をかけた　最高の恋だもの</p>
+						<p>
+							あなたと出会った　あの顷のわたしは<br>
+							あなたのいちばん　きらいなタイプだった</p>
+						<p>
+							いつでもわたしを　无视してた　あなたは<br>
+							话の合わない　ヤボったい男だったわ</p>
+						<p>
+							ああ　热い恋に　予感なんてない<br>
+							すれ违い　伤ついて　知ってゆくのよ</p>
+						<p>
+							樱が散るころに　偶然会いましょう<br>
+							见惯れない服を著て　他人の颜をして</p>
+						<p>
+							もう一度　はじまる　いつだって　戾れる<br>
+							长い时间をかけた　最高の恋だもの</p>
+						<p>
+							あなたの言叶に　さからってばかりの<br>
+							强气のわたしに　手を烧いていたでしょ</p>
+						<p>
+							わたしのことなど　气にしないふりして<br>
+							いつも　突き放す　あなたが　憎らしかったわ</p>
+						<p>
+							ああ　热い恋が　甘いはずはない<br>
+							すれ违い　伤ついて　知ってゆくのよ</p>
+						<p>
+							樱が散るころに　偶然会いましょう<br>
+							见惯れない服を著て　他人の颜をして</p>
+						<p>
+							もう一度　はじまる　いつだって　戾れる<br>
+							长い时间をかけた　最高の恋だもの</p>
+						<p>
+							樱が散るころに　偶然会いましょう<br>
+							见惯れない服を著て　他人の颜をして</p>
+						<p>
+							もう一度　はじまる　いつだって　戾れる<br>
+							长い时间をかけた　本当の恋だもの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-tenchi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

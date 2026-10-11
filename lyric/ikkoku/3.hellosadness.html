@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>悲しみよ　こんにちは - めぞん一刻</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「めぞん一刻」オープニング・テーマ(1986)</div>
+
+                    <div class="LyricTitle">悲しみよ　こんにちは</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">斉藤由貴</div>
+                    <div class="LyricStaff">作詞：森　雪之丞<br>作曲：玉置浩二<br>編曲：武部聡志</div>
+
+                    <div class="LyricText">
+						<p>
+							てのひらのそよ風が<br>
+							光の中　き・ら・き・ら　踊り出す<br>
+							おろしたての笑顔で<br>
+							知らない人にも　「おはよう」って言えたの</p>
+						<p>
+							あなたに　逢えなくなって<br>
+							さびた時計と　泣いたけど</p>
+						<p>
+							平気　涙が乾いた跡には<br>
+							夢への扉があるの<br>
+							悩んでちゃ行けない<br>
+							今度　悲しみが来ても<br>
+							友達迎える様に微笑うわ<br>
+							…きっと　約束よ</p>
+						<p>
+							降りそそぐ花びらが<br>
+							髪に肩に　ひ・ら・ひ・ら　ささやくの<br>
+							出逢いと同じ数の<br>
+							別れがあるのね　あなたのせいじゃない</p>
+						<p>
+							想い出　あふれだしても<br>
+							私の元気　負けないで</p>
+						<p>
+							平気　ひび割れた胸の隙間に<br>
+							幸せ忍び込むから<br>
+							溜息はつかない<br>
+							不意に　悲しみはやってくるけど<br>
+							仲良くなってみせるわ<br>
+							…だって　約束よ</p>
+						<p>
+							平気<br>
+							涙が乾いた跡には　夢への扉があるの<br>
+							悩んでちゃ行けない<br>
+							そうよ　やさしく<br>
+							友達迎えるように笑うわ<br>
+							…きっと　約束よ</p>
+						<p>
+							不意に　悲しみはやってくるけど<br>
+							仲良くなってみせるわ<br>
+							…だって　約束よ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ikkoku-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

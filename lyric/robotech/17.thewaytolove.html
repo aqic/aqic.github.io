@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>The Way To Love - Robotech</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Robotech] Insert Song</div>
+
+                    <div class="LyricTitle">The Way To Love</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Michael Bradley</div>
+                    <div class="LyricStaff">Composed by: Michael Bradley, Steve Wittmack</div>
+
+                    <div class="LyricText">
+						<p>
+							She finds him strong and brave<br>
+							And how she wants him so, so much<br>
+							So much she knows she needs that touch<br>
+							To lead the way to love.<br>
+							He spies a gentle soul<br>
+							Waiting for her to find someone so<br>
+							So very sweet and kind<br>
+							To lead the way,<br>
+							The way to love.</p>
+						<p>
+							And now they have their space,<br>
+							They've run the final race,<br>
+							Love's giving them a place<br>
+							Where love can win.</p>
+						<p>
+							Heaven is where they are<br>
+							Now they are finally home<br>
+							With love they have no need to roam<br>
+							Just look at them...</p>
+						<p>
+							Can't you see how she,<br>
+							She led the way to love?<br>
+							How he,<br>
+							He led the way to love?<br>
+							They are in love,<br>
+							They are in love.<br>
+							They are in love.<br>
+							They are in love.<br>
+							Oh, they're in love.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-robotech-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

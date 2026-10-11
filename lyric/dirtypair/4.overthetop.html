@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Over the Top - ダーティペア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">"Dirty Pair" movie insert song (1987)</div>
+
+                    <div class="LyricTitle">Over the Top</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Matsubara Miki</div>
+                    <div class="LyricStaff">Lyricist: Linda Hennrick<br>Composer: Izumi Tsunehiro<br>Arranger: Shinkawa/Niikawa(?) Hiroshi</div>
+
+                    <div class="LyricText">
+						<p>
+							Over the top,<br>
+							Nothin' standin' in my way, ooh<br>
+							Nothin' anyone can say<br>
+							Nothin' can stop me now<br>
+							Gonna give it my best shot<br>
+							Gonna make it over the top</p>
+						<p>
+							So many people who<br>
+							Sit and they laugh at fate<br>
+							And then regret the chances<br>
+							That they waste<br>
+							I'm only human, too<br>
+							Makin' the same mistakes<br>
+							But give me half a chance<br>
+							I'll show you what it takes</p>
+						<p>
+							Across<br>
+							The river deep, the mountain high<br>
+							All that I want out of life's<br>
+							On the other side</p>
+						<p>
+							Over the top<br>
+							Nothin' standin' in my way, ooh<br>
+							Nothin' anyone can say<br>
+							Nothin' can stop me now<br>
+							Gonna give it my best shot<br>
+							Gonna make it over the top</p>
+						<p>
+							Some lucky people who<br>
+							Reach out and touch a star<br>
+							And never seem to think<br>
+							They reach too far<br>
+							One of the lucky few<br>
+							That's who I wanna be<br>
+							Makin' my dreams come true<br>
+							Cause I believe in me</p>
+						<p>
+							Success<br>
+							Is nothin' but a state of mind<br>
+							I know I'll never succeed<br>
+							If I never try<br>
+							Over the top<br>
+							Nothin' standin' in my way, ooh<br>
+							Nothin' anyone can say<br>
+							Nothin' can stop me now<br>
+							My heart keeps on tellin' me<br>
+							Over and over<br>
+							Gonna give it my best shot<br>
+							Gonna make it over the top</p>
+						<p>
+							I'm going over the top<br>
+							Nothin' standin' in my way<br>
+							On my way now<br>
+							Nothin' anyone can say<br>
+							Nothin gonna stop me now<br>
+							Feel the fire burnin' hot<br>
+							Feel it burnin'<br>
+							Gonna give it my best shot<br>
+							Gonna make it over the top<br>
+							Gonna make it over the top</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dirtypair-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

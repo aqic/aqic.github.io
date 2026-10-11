@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>サンタのいないクリスマス - 北へ。</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">北へ</div>
+
+                    <div class="LyricTitle">サンタのいないクリスマス</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Four Seasons</div>
+                    <div class="LyricStaff">作詞：長山 豐<br>作曲·編曲：池 毅</div>
+
+                    <div class="LyricText">
+						<p>
+							師走の街の賑わいが<br>
+							人ごとみたいに空しく響く<br>
+							逃げるように足早になって<br>
+							一人歩く帰り道</p>
+						<p>
+							街路樹を彩るイルミネーション<br>
+							マフラーに積もる白い雪<br>
+							舞台裝置ばかり整ってるのに<br>
+							一番大切な人は　ずっとずっと<br>
+							遠い空の下</p>
+						<p>
+							サンタのいないクリスマス<br>
+							メリー‧クリスマス<br>
+							誰に言ったらいいの？<br>
+							メリークリスマス</p>
+						<p>
+							サンタのいないクリスマス<br>
+							メリー‧クリスマス<br>
+							誰とすごしているの？<br>
+							メリー‧クリスマス　トゥ　ユー</p>
+						<p>
+							市バスの停留所前には<br>
+							大きなケーキを抱えた人たち<br>
+							きっと一人一人が誰かの<br>
+							サンタクロースなんだね</p>
+						<p>
+							またたく星のイルミネーション<br>
+							寶石みたいな白い雪<br>
+							私　もう寂しいなんて言わないよ<br>
+							一番大切な人は　きっときっと<br>
+							同じ空の下‧‧</p>
+						<p>
+							サンタのいないクリスマス<br>
+							メリー‧クリスマス<br>
+							誰に言ったらいいの？<br>
+							メリー‧クリスマス</p>
+						<p>
+							サンタのいないクリスマス<br>
+							メリー‧クリスマス<br>
+							受話器の向こうのあなたに<br>
+							メリー‧クリスマス　トゥ　ユー</p>
+						<p>
+							特別な日は　特別な人と<br>
+							特別なこと　特別にしたい<br>
+							特別な日は　特別な人と<br>
+							特別なこと　特別にしたい</p>
+						<p>
+							サンタのいないクリスマス<br>
+							メリー‧クリスマス<br>
+							誰に言ったらいいの？<br>
+							メリー‧クリスマス</p>
+						<p>
+							サンタのいないクリスマス<br>
+							メリー‧クリスマス<br>
+							受話器の向こうのあなたに<br>
+							メリークリスマス　トゥ　ユー</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kitahe-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

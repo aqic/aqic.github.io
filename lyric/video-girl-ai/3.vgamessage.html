@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>メッセージ - 電影少女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「電影少女」挿入歌</div>
+
+                    <div class="LyricTitle">メッセージ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Nav Katze</div>
+                    <div class="LyricStaff">作詞・作曲：飯村直子、山口美和子<br>編曲：岡田　徹、杉山勇司、Nav Katze</div>
+
+                    <div class="LyricText">
+						<p>
+							こんなに近い場所に　あなたはいるのに<br>
+							こんなに寒い場所は　他に探せない</p>
+						<p>
+							名前を呼ぶたびに　あなたは遠ざかる<br>
+							誰もそばにいない　闇夜に手探りで<br>
+							あなたを探してる</p>
+						<p>
+							二人に時間を　このまま止めたい<br>
+							あなたの心を　つないでおきたい</p>
+						<p>
+							鏡にうつらない　二人の姿を<br>
+							震える指先で　確かめてみるけど<br>
+							あなたに　届かない</p>
+						<p>
+							なんにも知らない　子供のままなら<br>
+							なんにも失わずに　素通りもできる</p>
+						<p>
+							すれ違うたびに　目を伏せてしまう<br>
+							臆病はやめて　両手を差しのべて<br>
+							あなたを包み込む</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-video-girl-ai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

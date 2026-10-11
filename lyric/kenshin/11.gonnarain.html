@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>It's gonna rain! - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">It's gonna rain!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Bonnie Pink</div>
+                    <div class="LyricStaff">作詞/作曲：Bonnie Pink<br>編曲：Tore Johansson</div>
+
+                    <div class="LyricText">
+						<p>
+							足取りも軽くして　チャオ　チャオ<br>
+							取るものも取り敢えず　チャオ　チャオ<br>
+							ライオンがうなるみたいな雷鳴が<br>
+							退散を促している<br>
+							どうなるの？<br>
+							そう・・・もうすぐ雨</p>
+						<p>
+							大嫌い雨なんか　チャオ　チャオ<br>
+							もう少し居たいのに　チャオ　チャオ<br>
+							快感が解散に変わる瞬間を<br>
+							ライオンが急がせたのは<br>
+							明白No!迷惑<br>
+							It's gonna rain!</p>
+						<p>
+							雨はもうアリバイを消すの？<br>
+							彼はもう忘れてしまうの？<br>
+							二人はもうこれきりになるの？<br>
+							全ては雨のせいってことにしておこう</p>
+						<p>
+							彼からの連絡は　Nothing　Nothing<br>
+							雨による教訓も　Nothing　Nothing<br>
+							感情もイギリスの天気みたいに<br>
+							移り気だったらとても<br>
+							楽なのに・・・逆なの<br>
+							It's gonna rain!</p>
+						<p>
+							雨が熱をよみがえらせた<br>
+							彼もふと私を思い出した<br>
+							二人は今　個々に導かれた<br>
+							全ては雨のせい　ウウン　おかげなの</p>
+						<p>
+							雨は人を呼んだり消したり<br>
+							誰よりも手ごわいマジシャンね<br>
+							二人はいつもだまされてばかり<br>
+							全ては雨で始まるんでしょう・・・</p>
+						<p>
+							It's gonna rain!</p>
+						<p>
+							It's gonna rain!</p>
+						<p>
+							It's gonna rain!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

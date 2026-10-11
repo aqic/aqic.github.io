@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>shining★star - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">shining★star</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							はしゃぐ流れ星　急いでゆくように<br>
+							あなたに追いつきたくて　どんなに<br>
+							背伸びしてもダメね　子供扱い<br>
+							ため息が風に舞う　サララ　こぼれてく</p>
+						<p>
+							大人になるために　あと幾つの<br>
+							階段のぼれば届くの？　いつでも<br>
+							困らせてばかりで　ごめんなさい<br>
+							甘えてるばかりじゃ　だめだよね</p>
+						<p>
+							だからいつか　shining★star　誰よりも<br>
+							熱いきもちに　ねぇ　はやく<br>
+							そうよ　気づいてね<br>
+							あなた照らす　shining★star<br>
+							なれたなら　みつめていてね</p>
+						<p>
+							月の揺りかごにふたりで座って<br>
+							囁きあう夢をみた　何度も<br>
+							窓のガラス越しに　ひとりぼっちで<br>
+							星屑見上げながら　いつも　恋しくて</p>
+						<p>
+							本当はさびしくて　せつなくって<br>
+							涙の海も作った　すきだよ<br>
+							逢える日を数えて　その笑顔を<br>
+							想うたび胸が壊れそうで</p>
+						<p>
+							夢じゃないね　shining★star　輝いて<br>
+							あふれる想い　抱きしめて　そうね　届けたい<br>
+							今夜　銀のshining★star　なれたなら<br>
+							みつめていてね</p>
+						<p>
+							宝石になれない　私だけど<br>
+							ちいさな光で守るよ　いつでも<br>
+							冷たいこの指を　ぎゅっとつないだ<br>
+							手のひらを　離さないで　すこし</p>
+						<p>
+							夢じゃないね　shining★star　輝いて<br>
+							照らし続ける　いま　愛でほらね　包んだら<br>
+							あなただけの　shining★star<br>
+							永遠に　みつめていてね</p>
+						<p>
+							はなさないでね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

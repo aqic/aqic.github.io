@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Last regrets（日中対訳） - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">KANON</div>
+
+                    <div class="LyricTitle">Last regrets（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">彩菜</div>
+                    <div class="LyricStaff">作詞、作曲：Key<br>編曲: 高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							ありがとう言わないよ<br>
+							ずっとしまっておく<br>
+							さよならは翳りない<br>
+							夢のあと静かに降り立つ</p>
+						<p>
+							両手には降り注ぐかけらを<br>
+							いつまでもいつまでも抱いて<br>
+							最後まで笑ってる強さを<br>
+							もう知っていた</p>
+						<p>
+							おはよう目覚めは<br>
+							眩しくて悲しい<br>
+							さよなら　許せない<br>
+							僕たちの弱さがよかった</p>
+						<p>
+							ふたりにはありふれた優しさ<br>
+							花のように恋のように移ろう<br>
+							低い雲　風を待つ静けさ<br>
+							もう聞こえない</p>
+						<p>
+							両手には降り注ぐかけらを<br>
+							いつまでもいつまでも抱いて<br>
+							最後まで笑ってる強さを<br>
+							もう知っていた</p>
+						<p>
+							もう泣かない<br>
+							もう泣かない　泣かない</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							别说谢谢啊 马上就要结束的<br>
+							遮掩不住的离别 在梦醒时分静静降临</p>
+						<p>
+							不停地、不停地握紧双手上飘落的碎片<br>
+							我也终于明白为什么到了最后还能够拥有笑容的坚强</p>
+						<p>
+							早安　睁眼即是 炫目的哀愁<br>
+							再见了 我们应该庆幸着拥有不被允许的脆弱</p>
+						<p>
+							两人间早已经习惯了的温柔 如花如恋般地凋零<br>
+							低沈的云　等待着风的寂静 再也听不见了</p>
+						<p>
+							不停地、不停地握紧双手上飘落的碎片<br>
+							我也终于明白为什么到了最后还能够拥有笑容的坚强<br>
+							别再哭了 别再哭了 不要再哭了……</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>FLY ME TO THE MOON（日中対訳） - 新世紀エヴァンゲリオン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ東京系アニメ 「新世紀エヴァンゲリオン」 エンディングテーマ</div>
+
+                    <div class="LyricTitle">FLY ME TO THE MOON（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">CLAIRE</div>
+                    <div class="LyricStaff">作詞：Bart Howard<br>作曲：Bart Howard<br>編曲：大森俊之</div>
+
+                    <div class="LyricText">
+						<p>
+							Fly me to the moon<br>
+							And let me play among the stars<br>
+							Let me see what Spring is like<br>
+							On Jupiter and Mars<br>
+							In other words,hold my hand!<br>
+							In other words,darling,kiss me!</p>
+						<p>
+							Fill my heart with song<br>
+							And let me sing forevermore<br>
+							You are all I long for<br>
+							All I worship and adore<br>
+							In other words,please be true!<br>
+							In other words,I love you!</p>
+						<p>
+							(Repeat song)</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							带我上月球 遨游星际间<br>
+							让我看看木星及火星上的春天<br>
+							那，握起我的手<br>
+							darling，吻我吧！</p>
+						<p>
+							使我心中充满旋律　歌唱到永远<br>
+							你是我所有祈求　骄傲及尊敬的<br>
+							因此，请真诚待我<br>
+							所以，我爱你！</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-eva-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

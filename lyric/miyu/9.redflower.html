@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>绯色の花びら - 吸血姫美夕</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">绯色の花びら</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">新居昭乃</div>
+                    <div class="LyricStaff">作词：松本花奈<br>作曲：寺嵨民哉<br>编曲：寺嵨民哉</div>
+
+                    <div class="LyricText">
+						<p>
+							ねむれねむれここで　いとしい吾子<br>
+							花びらささけましょ　したたるかがやきの</p>
+						<p>
+							そのあたたか手に　そっと抱きしめられた<br>
+							ぬくもりは　すぐにさめて消え<br>
+							今　远い声に目觉めた</p>
+						<p>
+							どうぞ今のでと　あぁ愿ってめても<br>
+							わない　大き流れに<br>
+							いっそ　流されるのなら　漕ぎ出すのよ</p>
+						<p>
+							ねむれねむれここで　いとしい吾子よ<br>
+							花びらささけましょ　したたるかがやきの</p>
+						<p>
+							そう　记忆の奥に　ずっと　とめてある<br>
+							ぬくもりは　けして消えないの<br>
+							この悲しい伤みが　つづいても</p>
+						<p>
+							ねむれねむれここで　いとしい吾子よ<br>
+							花びらささけましょ　したたるかがやきの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

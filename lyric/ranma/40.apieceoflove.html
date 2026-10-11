@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>a Piece of Love - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">らんま１／２ 決戦桃幻郷！花嫁を奪りもどせ！！</div>
+
+                    <div class="LyricTitle">a Piece of Love</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">PICASSO</div>
+                    <div class="LyricStaff">作詞：並河　祥太<br>作曲：辻畑鉄也<br>編曲：PICASSO</div>
+
+                    <div class="LyricText">
+						<p>
+							真夏の瞳　眩し過ぎるほど<br>
+							濡れた白いシャツ　心は見えない<br>
+							何時も強がりな　君がぼんやりと<br>
+							海を見ているから　頬づえもつけない</p>
+						<p>
+							友達のままで　時が過ぎていく<br>
+							ジリジリしながら……</p>
+						<p>
+							☆君は　a Piece of Love<br>
+							　パズルのかけら　心に隠している<br>
+							　いつまでに　始まらない　ラブソングが唄えない<br>
+							　a Piece of Love　寂しがりで　素直にもなれなくて<br>
+							　すれ違い　傷ついて　強がるほど　愛しくて　泣いてる</p>
+						<p>
+							気がつけば　銀の波は　オレンジに<br>
+							君の足元に　届かなくなった<br>
+							未だ　Kissもせず　むしろ近くなる<br>
+							微笑みに　触れた……</p>
+						<p>
+							君は　a Piece of Love<br>
+							最後の一つ　何処かに忘れている<br>
+							このままじゃ　始まらない　想い出にも　かなわない<br>
+							a Piece of Love　素直な言葉　心から溢れている<br>
+							聞こえるよ　新しいラブソングを奏でたい　くちびる</p>
+						<p>
+							☆繰り返し</p>
+						<p>
+							a Piece of Love</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

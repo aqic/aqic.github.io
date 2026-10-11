@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>White Album - Leaf</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">White Album</div>
+
+                    <div class="LyricTitle">White Album</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">森川由綺</div>
+                    <div class="LyricStaff">作詞：森川由綺<br>作曲：石川真也<br>編曲：石川真也 &amp; 松岡純也</div>
+
+                    <div class="LyricText">
+						<p>
+							すれ違う毎日が 増えてゆくけど<br>
+							お互いの気持ちはいつも 側にいるよ</p>
+						<p>
+							ふたり会えなくても 平気だなんて<br>
+							強がり言うけど 溜め息まじりね</p>
+						<p>
+							過ぎてゆく季節に 置いてきた宝物<br>
+							大切なピースの欠けた パズルだね<br>
+							白い雪が街に 優しく積もるように<br>
+							アルバムの空白を全部 埋めてしまおう</p>
+						<p>
+							降り積もるさびしさに 負けてしまいそうで<br>
+							ただひとり 不安な日々を過ごしてても</p>
+						<p>
+							大丈夫だよって 肩をたたいて<br>
+							あなたは笑顔で元気をくれるね</p>
+						<p>
+							たとえ離れていても その言葉があるから<br>
+							心から幸せと言える 不思議だね<br>
+							淡い雪がわたしの ひそやかな想い込めて<br>
+							純白のアルバムの ページ染めてくれる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-leaf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

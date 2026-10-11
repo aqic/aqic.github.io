@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>水の証 - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">水の証</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ラクス・クライン（田中理恵）</div>
+                    <div class="LyricStaff">作詞：梶浦由記<br>作曲：梶浦由記<br>編曲：梶浦由記</div>
+
+                    <div class="LyricText">
+						<p>
+							水の中に夜が揺れてる<br>
+							哀しいほど静かに佇む<br>
+							緑成す岸辺<br>
+							美しい夜明けを<br>
+							ただ待っていられたら<br>
+							綺麗な心で</p>
+						<p>
+							暗い海と空の向こうに<br>
+							争いの無い場所があるのと<br>
+							教えてくれたのは誰<br>
+							誰もが辿り着けない<br>
+							それとも誰かの心の中に</p>
+						<p>
+							水の流れを鎮めて<br>
+							くれる大地を潤す調べ<br>
+							いまはどこにも無くても<br>
+							きっと自分で手に入れるの<br>
+							いつも、いつか、きっと</p>
+						<p>
+							水の証をこの手に<br>
+							全ての炎を飲み込んで尚<br>
+							広く優しく流れる<br>
+							その静けさに辿り着くの<br>
+							いつも、いつか、きっと</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

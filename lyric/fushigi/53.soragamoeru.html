@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>空が見える - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">空が見える</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">石井康嗣</div>
+                    <div class="LyricStaff">作詞：里乃塚玲央</div>
+
+                    <div class="LyricText">
+						<p>
+							ああ　空が見える<br>
+							見たこともないほど<br>
+							澄んだ空が</p>
+						<p>
+							ああ　傷の癒えた<br>
+							人の笑顔が<br>
+							そこに見える</p>
+						<p>
+							友よ、今　俺は何て<br>
+							幸せなのか<br>
+							この生命(いのち)　託す人が<br>
+							こんなにも</p>
+						<p>
+							ああ　明日が見える<br>
+							夢の中で<br>
+							輝いている</p>
+						<p>
+							やり遂げた<br>
+							者だか知る<br>
+							そんな喜び<br>
+							なあ友よ　分かるだろう<br>
+							お前にも</p>
+						<p>
+							ああ　街が見える<br>
+							争いなど<br>
+							どこにもない<br>
+							故国(くに)が見える</p>
+						<p>
+							ただひとつ　思い残す<br>
+							ことがあるなら<br>
+							それは　あの女(ひと)を<br>
+							独り　逝かせた日</p>
+						<p>
+							さあ　この両手に<br>
+							取り戻そう<br>
+							抱き締めよう<br>
+							空が見える</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

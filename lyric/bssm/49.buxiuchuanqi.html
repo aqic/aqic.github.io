@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>美少女不朽傳奇 - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">美少女戰士Super S的主題曲</div>
+
+                    <div class="LyricTitle">美少女不朽傳奇</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">許思行</div>
+                    <div class="LyricStaff">作詞：黃捷皓<br>作曲：小諸鐵也<br>編曲：李啟昌</div>
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							無限細小星星　天際亮起<br>
+							如像閃出魔法　力量神秘<br>
+							遙望這星星閃　心也亮起<br>
+							燃亮這光彩正是你</p>
+						<p>
+							凝望你一雙眼　感覺像飛<br>
+							能令每一天也　變做完美<br>
+							無論碰到風雨　仍然是跟你<br>
+							可分享戀愛趣味</p>
+						<p>
+							和你兩顆心牽引著　感覺微妙<br>
+							無法解釋當中奧妙</p>
+						<p>
+							全是你可改寫心裡日記<br>
+							全憑著這點愛締造完美<br>
+							齊合奏起戀曲　能傳頌千里<br>
+							編寫這不朽傳奇</p>
+						<p>
+							無限細小星星　天際亮起<br>
+							如像閃出魔法　力量神秘<br>
+							遙望這星星閃　心也亮起<br>
+							燃亮這光彩正是你</p>
+						<p>
+							凝望你一雙眼　感覺像飛<br>
+							能令每一天也　變做完美<br>
+							無論碰到風雨　仍然是跟你<br>
+							可分享戀愛趣味</p>
+						<p>
+							和你兩顆心牽引著　感覺微妙<br>
+							無法解釋當中奧妙</p>
+						<p>
+							全是你可改寫心裡日記<br>
+							全憑著這點愛締造完美<br>
+							齊合奏起戀曲　能傳頌千里<br>
+							編寫這不朽傳奇</p>
+						<p>
+							和你兩顆心牽引著　感覺微妙<br>
+							無法解釋當中奧妙</p>
+						<p>
+							全是你可改寫心裡日記<br>
+							全憑著這點愛締造完美<br>
+							齊合奏起戀曲　能傳頌千里<br>
+							編寫這不朽傳奇</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

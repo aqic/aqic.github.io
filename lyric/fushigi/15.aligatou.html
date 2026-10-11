@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Aligatou が深くなる - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Aligatou が深くなる</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐藤朱美</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：矢野立美<br>編曲：矢野立美</div>
+
+                    <div class="LyricText">
+						<p>
+							青空だけなら　幸福(しあわせ)だなんて<br>
+							信じていた日が　懐かしいよね<br>
+							大地に華咲く　生命(いのち)を観てると<br>
+							タイフーンもツイスターも　プラスにしてる</p>
+						<p>
+							冬を越えた魂は　逞しくなる<br>
+							あなたとそんな風に　生きて行きたい</p>
+						<p>
+							大丈夫愛してるよ　この地球(ほし)が在る限りね<br>
+							悲しみも喜びに　変えられたらいいね<br>
+							ありがとう深くなるよ　愛しさも強くなるよ<br>
+							１つづつ少しづつ　目覚めてく愛の　遺伝子</p>
+						<p>
+							私が私を　守るだけならば<br>
+							溢れる気力(ちから)は　尽きていたでしょう</p>
+						<p>
+							支えたいと思う時　支えられてる<br>
+							宇宙はそんな風に　動いてるかも</p>
+						<p>
+							見上げてる大空より　幸福(しあわせ)は近くにある<br>
+							涙さえ虹色に　変えられる心(ここ)に<br>
+							ありがとう深くなるよ　愛しさも強くなるよ<br>
+							１つづつ少しづつ　目覚めてく愛の　遺伝子</p>
+						<p>
+							ありがとう深くなるよ　愛しさも強くなるよ<br>
+							目覚めてく愛の　遺伝子</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

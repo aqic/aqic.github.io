@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>美夕八千夜 - 吸血姫美夕</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「吸血姫美夕」 エンディング・テーマ</div>
+
+                    <div class="LyricTitle">美夕八千夜</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">木佐江子</div>
+                    <div class="LyricStaff">作詞：垣野内成美<br>作曲：寺岷民哉<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							扉をあげてそこは永遠<br>
+							遠くの呼びをへ誰の声<br>
+							神をなぜるのあなたは誰</p>
+						<p>
+							＊上が語るは願の国<br>
+							　通り過ぎてゆく時間と思い<br>
+							　友達何かいいらないの（素手よ）<br>
+							　自分だっていらないの（本とよ）</p>
+						<p>
+							砂の足跡崩れてく</p>
+						<p>
+							※夜は不思議本当かくして<br>
+							　現を見せる月にまで彼<br>
+							　闇が広がる…</p>
+						<p>
+							△夜は紫涙が来る<br>
+							　私の変わりに空がなくの</p>
+						<p>
+							瞳を閉じてそこは永遠<br>
+							自覚のささやき誰の声<br>
+							とうに触れるのあなたは誰</p>
+						<p>
+							＊繰り返し</p>
+						<p>
+							砂の人形ふつれてく</p>
+						<p>
+							※繰り返し</p>
+						<p>
+							夜はふんじょう星が来る<br>
+							私の変わりにつきが歌うの</p>
+						<p>
+							△繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

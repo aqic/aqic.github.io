@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>光と影のロマン - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ED 52話～70話</div>
+
+                    <div class="LyricTitle">光と影のロマン</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">宇徳敬子</div>
+                    <div class="LyricStaff">作詞：宇徳敬子<br>作曲：宇徳敬子<br>編曲：池田大介</div>
+
+                    <div class="LyricText">
+						<p>
+							ロマン語れば一晩中　疲れ知らずの　all night long<br>
+							恋する暇もないよ　波が押し寄せてくる</p>
+						<p>
+							記憶の中を泳いでも　現実は　cool and dry<br>
+							愛を確かめたくて　何処に彷徨い行くの</p>
+						<p>
+							遠い雲のように　つかめないあなたに<br>
+							ついてゆく　何処までも　心に誓って</p>
+						<p>
+							いつか全てが解っても　あなたを好きでいられること<br>
+							たとえ戦う毎日に　明け暮れても<br>
+							懐かしさで思う故郷　昔の自分を映す<br>
+							光と影のロマン　追いかけて</p>
+						<p>
+							年下とわかっていても　生意気と知ってても<br>
+							手にするものはすべて　あなたへと繋がってく</p>
+						<p>
+							いつかこの愛の　形が変わっても<br>
+							胸焦がす　不思議な人のこと　探して</p>
+						<p>
+							あの時言えなかったけど　裸になれなかったけど<br>
+							まるで子供のように　無邪気になれたら<br>
+							時をかかえて見た夕日　胸に刻み込んだ<br>
+							あなたの言葉　すっと忘れない</p>
+						<p>
+							夜空　見上げて　月の光浴びて<br>
+							ほんの一瞬　感じた永遠が　愛しい</p>
+						<p>
+							いつか全てが解っても　あなたの愛を掴んでも<br>
+							時に埋もれたように　流されない<br>
+							ただ歳をとるだけの大人には　なりたくないよね<br>
+							もう過去のために　泣いたりしない</p>
+						<p>
+							気持ちが　一人で　動きだす<br>
+							天まで　届いて　今にもはちきれ<br>
+							あがいて　もがいて　どこまでも続くロマン</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

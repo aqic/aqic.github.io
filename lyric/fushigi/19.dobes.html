@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Do=Bes がやってくる - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ふしぎ遊戯」～ 翼宿キャラクターソング</div>
+
+                    <div class="LyricTitle">Do=Bes がやってくる</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林 延年 (翼宿)</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：家原正嗣<br>編曲：戸塚 修</div>
+
+                    <div class="LyricText">
+						<p>
+							成せば成るで行こう！　超元気振りまいて<br>
+							夢を生きるのは　難しいことじゃない</p>
+						<p>
+							未来の種は　現在(いま)の中にある<br>
+							ＤＯしたい？！ＳＯしたい！に　光を当てろ<br>
+							信じる精神(こころ)には　神通力(ちから)があって　魔法より確かな　夢が現れる</p>
+						<p>
+							☆成せば成るで行こう！　落ちこんでられへんわ<br>
+							　せっせと歩いたら　振り返る余裕はない<br>
+							　成せば成るで行こう！　超元気振りまいて<br>
+							　夢を生きるのは　難しいことじゃない</p>
+						<p>
+							晴れ後ち晴れの　ホンマ脳天気(のうてんき)<br>
+							ヤな事は　すぐ忘れる　それも才能<br>
+							たやすく諦めない　挫けたりしない　自分にも勝てなきゃ　勇者といえない</p>
+						<p>
+							何とか成るもんだね　真っ白なキャンバス<br>
+							最善尽くしたら　美しい未来像<br>
+							何とか成るもんだね　ポジティブな種まいて<br>
+							夢が開いてく　ミラクルがたまらない</p>
+						<p>
+							恋愛問題には　お手上げだけど　トラブルが起きたら　力になりたい</p>
+						<p>
+							☆ REPEAT</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

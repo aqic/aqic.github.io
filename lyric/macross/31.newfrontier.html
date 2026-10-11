@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>NEW FRONTIER - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">NEW FRONTIER</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Fire Bomber</div>
+                    <div class="LyricStaff">作詞：石川雅敏<br>作曲：河内淳貴<br>編曲：ON-DO</div>
+
+                    <div class="LyricText">
+						<p>
+							振り向くないつだって<br>
+							情熱の向かう先に　そこはきっとある<br>
+							砕け散る　星たちよ<br>
+							新しい　光となれ　闇を照らせよ<br>
+							Long Long Time<br>
+							忘れてただけさ<br>
+							扉はもう開いているのさ<br>
+							あとは飛び込んじまえよ</p>
+						<p>
+							It's NEW FRONTIER<br>
+							そうさ　オレたちここにいると<br>
+							鐘を打ち鳴らせ　Woo Woo<br>
+							It's NEW FRONTIER<br>
+							だから　もっと　胸に火をつけろ<br>
+							かけがえのないもの　解き放つさ</p>
+						<p>
+							目を醒ませ　感じるさ<br>
+							魂と　この宇宙が　クロスしてると<br>
+							口笛でこたえろよ<br>
+							その胸に　このメロディー<br>
+							響かせるから<br>
+							Long Long Way<br>
+							一歩踏み出せよ<br>
+							心を縛るすべてのものを<br>
+							ひきちぎればはじまりさ</p>
+						<p>
+							It's NEW FRONTIER<br>
+							そこがどこでも　かまわないさ<br>
+							オレは　オレのまま　Woo Woo<br>
+							It's NEW FRONTIER<br>
+							だから　遠く　宇宙の彼方へ<br>
+							おまえの夢をいま　飛び立たせろよ</p>
+						<p>
+							Bran New Day　今がその時さ<br>
+							戻れない昨日を捨てたなら<br>
+							見えない明日も忘れろ</p>
+						<p>
+							It's NEW FRONTIER<br>
+							そうさ　オレなら　ここにいるさ<br>
+							鐘を打ち鳴らせ　Woo Woo<br>
+							It's NEW FRONTIER<br>
+							そうさ　胸に　勇気を灯せよ<br>
+							おまえだけの夢を<br>
+							It's NEW FRONTIER<br>
+							そうさ　オレなら　ここにいるさ<br>
+							鐘を打ち鳴らせ　Woo Woo<br>
+							It's NEW FRONTIER<br>
+							そうさ　胸に　勇気を灯せよ<br>
+							おまえだけの夢を　燃やし続けろ<br>
+							It's NEW FRONTIER<br>
+							そうさ　オレなら　ここにいるさ<br>
+							鐘を打ち鳴らせ　Woo Woo Yeah<br>
+							It's NEW FRONTIER</p>
+						<p>
+							It's NEW FRONTIER…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

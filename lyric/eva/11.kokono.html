@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>心よ原始に戻れ - 新世紀エヴァンゲリオン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">EVA？</div>
+
+                    <div class="LyricTitle">心よ原始に戻れ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高橋洋子</div>
+                    <div class="LyricStaff">作詞：及川眠子<br>作曲：佐藤英敏<br>編曲：大森俊之</div>
+
+                    <div class="LyricText">
+						<p>
+							光よ 大地よ 気流よ....</p>
+						<p>
+							悲しい記憶が化石に変わるよ もうすぐ<br>
+							あなたのその痛みを 眠りの森へと<br>
+							ひそやかにみちびいてあげる<br>
+							おやすみ すぺてに一途すぎた迷い子たち<br>
+							はがゆさが希望に 進化する日まで</p>
+						<p>
+							生命はまぶしい朝を待っている<br>
+							最後の懺悔もかなわないなら<br>
+							いつか時代の夜が明ける<br>
+							世界よ まぶたを閉じて<br>
+							生命は目覺めて 時を紡ぎだす<br>
+							あなたの証據をさかのぼるように<br>
+							そして光が胸に屆く<br>
+							心よ 原始に戻れ</p>
+						<p>
+							涙の岸でずっとたたずんだ気持ちを<br>
+							優しくつつむように 秘密のくすりが<br>
+							思い出の沖へとはこぶよ<br>
+							おやすみ モラルに污れていた指も耳も<br>
+							この腕のなかて もう眠りなさい</p>
+						<p>
+							生命はまぶしい朝を待っている<br>
+							破れた聖書を抱きしめるより<br>
+							いつか時代の夜が明ける<br>
+							あなたよ 祈りを捨てて<br>
+							生命は目覺めて 時を紡ぎだす<br>
+							自然の法則のその身をまかせ<br>
+							そして光が胸に屆く<br>
+							心よ 原始に戻れ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-eva-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

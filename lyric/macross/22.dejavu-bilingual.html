@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>'ｄｅ．ｊａ．ｖｕ～そばにいて（日中対訳） - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Macross2</div>
+
+                    <div class="LyricTitle">'ｄｅ．ｊａ．ｖｕ～そばにいて（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">今子美香</div>
+                    <div class="LyricStaff">作詞：今子美香<br>作曲：TSUKASA<br>編曲：井上鑑</div>
+
+                    <div class="LyricText">
+						<p>
+							疲れた体を起こして<br>
+							ゆっくり　歩き出す<br>
+							まぶしいほどの光の中に<br>
+							待ちつづけた　シルエット</p>
+						<p>
+							*そばにいて　微笑んで<br>
+							嵐の夜も　晴れた朝も<br>
+							昔から知っていた　そんな気がする<br>
+							なつかしいような　出会いだね</p>
+						<p>
+							そばにいて　見守って<br>
+							泣きたい時は胸を貸して<br>
+							思うより強くない<br>
+							あなたの声を聞いていたい<br>
+							こんな日は<br>
+							打ち砕かれた心の痛み　目を閉じれば<br>
+							消えてゆく</p>
+						<p>
+							*　くりかえし</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							撑起疲惫的身体<br>
+							慢慢地走出去<br>
+							在耀眼的光线中<br>
+							一直等待的影子</p>
+						<p>
+							我在你身边微笑<br>
+							不论是暴风雨的夜晚或情朗的早晨<br>
+							从以前就知道那种感觉<br>
+							像令人怀念的邂逅啊</p>
+						<p>
+							我在你身边守护着你<br>
+							想哭的时候给你我的胸膛<br>
+							虽不比你想的那么强壮<br>
+							我想倾听你的声音<br>
+							这样的日子</p>
+						<p>
+							打碎的心痛<br>
+							只要闭上眼就会消失了</p>
+						<p>
+							我在你身边微笑<br>
+							不论是暴风雨的夜晚或情朗的早晨<br>
+							从以前就知道那种感觉<br>
+							像令人怀念的邂逅啊</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

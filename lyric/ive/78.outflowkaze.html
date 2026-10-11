@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風と君を抱いて - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">miss you（CROWD）</div>
+
+                    <div class="LyricTitle">風と君を抱いて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川田まみ</div>
+                    <div class="LyricStaff">作詞 KOTOKO<br>作曲 高瀬一矢<br>編曲 高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							空に書いた君の名前の横<br>
+							僕の名前　書いてみようとしたけれど<br>
+							指先ふるえて</p>
+						<p>
+							時を忘れ見つめていたいけど<br>
+							目が合うたび　瞳そらし<br>
+							うつむく瞬間が長すぎるね</p>
+						<p>
+							どこまでも広がる青空みたいな<br>
+							透き通る笑顔　ずっと　ずっと離したくない</p>
+						<p>
+							眩しい季節が今<br>
+							頬　撫でる風と陽だまりと君の香り<br>
+							誘って連れてきた<br>
+							そよ風と遊ぶ君の手をそっと握り　抱き寄せて<br>
+							想い出ごと　強く抱きしめるよ</p>
+						<p>
+							自信なんて　やっぱり持てなくて<br>
+							ちぎれ雲に自分の事　重ねてみたけれど<br>
+							君が好きで</p>
+						<p>
+							忘れようとしたけど　出来るはずなくて<br>
+							側にいられないと　もう　淋しさでつぶれそう</p>
+						<p>
+							優しい季節が今　僕の背中押す<br>
+							ゆっくりと深呼吸して　思いを伝えよう<br>
+							大切な君の全て　いつか守れるよう<br>
+							震えてる　手を伸ばして<br>
+							そっと肩を抱くよ</p>
+						<p>
+							どこまでも広がる街の風景に<br>
+							二人の想い出　ずっと　ずっと焼きつけてゆく</p>
+						<p>
+							新しい季節が今<br>
+							シャツ揺らす風とやわらかな君の笑顔*<br>
+							そっと運んで来た<br>
+							花びらと遊ぶ君の小さな手の平　握りしめ<br>
+							そよ風ごと　強く抱きしめるよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

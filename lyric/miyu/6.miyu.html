@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>吸血姬美夕 - 吸血姫美夕</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">吸血姬美夕</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">铃木佐江子</div>
+                    <div class="LyricStaff">作詞：垣野内成美<br>作曲：川井憲次<br>編曲：川井憲次<br>臺詞：長沢美樹</div>
+
+                    <div class="LyricText">
+						<p>
+							(台詞)こんばんは<br>
+							望(のぞ)むなら　永遠(えいえん)をあげる<br>
+							あなたのその赤(あか)い雫(しずく)と交換(こうかん)に<br>
+							私(わたし)は美夕(ミユ)　吸血(VAMPIRE)美夕(ミユ)</p>
+						<p>
+							時計(とけい)が眠(ねむ)る　闇(よる)の次元(くに )<br>
+							静(しず)かで冷(つめ)たい　闇(よる)の次元(くに )</p>
+						<p>
+							不安(ふあん)の気持(きも)ちは<br>
+							神魔(かれら)を招(まね)き<br>
+							闇(やみ)からはぐれ<br>
+							そして　人間界(そこ)にまげれる</p>
+						<p>
+							金(きん)の瞳(ひとみ)は時計(とき)を止(と)めつよ<br>
+							炎(ほのお)に抱(だ)かれ　あなたは眠(ねむ)る<br>
+							—おやすみなさい</p>
+						<p>
+							のぞいてごらん　赤(あか)の空間(くに)<br>
+							おいでよ　こちらへ目(め)を閉(と)じて</p>
+						<p>
+							冷(つめ)たいくちびる<br>
+							あなたを招(ま)ねき<br>
+							現実(いま)からはぐれ<br>
+							そして　たまごに眠(ねむ)る</p>
+						<p>
+							金(きん)の瞳(ひとみ)は時計(とき)を止(と)めるよ<br>
+							夢(ゆめ)を閉(と)じ込(こ)め　あなたは眠(ねむ)る<br>
+							—おやすみなさい</p>
+						<p>
+							金(きん)の瞳(ひとみ)は時計(とき)を止(と)めるよ<br>
+							夢(ゆめ)見(み)る手(て)まり　あなたを抱(だ)いて —そっとささやく</p>
+						<p>
+							(台詞)ここは一人(ひとり)がいっばい<br>
+							だから寂(さび)しくなんかないよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-miyu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

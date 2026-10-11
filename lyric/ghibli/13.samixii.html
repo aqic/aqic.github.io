@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>さみしい　さみしい - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">千と千尋の神隠し</div>
+
+                    <div class="LyricTitle">さみしい　さみしい</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ムッシュ かまやつ</div>
+                    <div class="LyricStaff">作詞：宮崎 駿<br>作曲・編曲：久石 譲</div>
+
+                    <div class="LyricText">
+						<p>
+							さみしい　さみしい　僕ひとりぼっち<br>
+							ねェ　振り向いて　こっち向いて<br>
+							たべたい　たべたい　君　たべちゃいたいの<br>
+							君、かわいいね<br>
+							きっと寂しくなんかならないんだね</p>
+						<p>
+							昨日も見た夢は　おとといにも見た夢<br>
+							明日もあさってにも　見る夢は<br>
+							やっぱり　届かない夢</p>
+						<p>
+							欲しい　欲しい　僕もっと欲しい<br>
+							これもいいじゃん　これ欲しい<br>
+							あげる　あげる　これみーんなあげる<br>
+							君も欲しいだろう　あげるから<br>
+							君、僕にくれないかな</p>
+						<p>
+							昨日も見た夢は　おとといにも見た夢<br>
+							明日もあさってにも　見る夢は<br>
+							やっぱり　届かない夢</p>
+						<p>
+							昨日も見た夢は　おとといにも見た夢<br>
+							すぐ逃げちゃう寂しい夢よりも<br>
+							君、おなかに入れちゃいたいの</p>
+						<p>
+							やっぱり届かない夢<br>
+							君、おなかに入れたいの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

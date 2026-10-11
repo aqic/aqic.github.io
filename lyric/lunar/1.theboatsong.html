@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>The Boat Song - ルナ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ルナ Silver Star Story」</div>
+
+                    <div class="LyricTitle">The Boat Song</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							Wishing on a dream that seems far off<br>
+							Hoping it will come today.</p>
+						<p>
+							Into the starlit night,<br>
+							Foolish dreamers turn their gaze,<br>
+							Waiting on a shooting star.</p>
+						<p>
+							But, what if that star is not to come?<br>
+							Will their dreams fade to nothing?<br>
+							When the horizon darkens most,<br>
+							We all need to believe there is hope.</p>
+						<p>
+							Is an angel watching closely over me?<br>
+							Can there be a guiding light I've yet to see?<br>
+							I know my heart should guide me, but,<br>
+							There's a hole within my soul.</p>
+						<p>
+							What will fill this emptiness inside of me?<br>
+							Am I to be satisfied without knowing?</p>
+						<p>
+							I wish, then, for a chance to see,<br>
+							Now all I need, (desperately)</p>
+						<p>
+							Is my star to come...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lunar-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

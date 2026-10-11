@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>美丽天使的纲领(不确定) - 新世紀エヴァンゲリオン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">天鹰战士</div>
+
+                    <div class="LyricTitle">美丽天使的纲领(不确定)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">不详</div>
+                    <div class="LyricStaff">作词：不详<br>作曲：不详<br>编曲：不详</div>
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							美丽的天使在远方召唤你<br>
+							勇敢的少年啊　快去创造奇迹</p>
+						<p>
+							迎面吹来和煦的风<br>
+							轻轻的叩击着我的心灵<br>
+							你的脸上露着微笑<br>
+							偷偷的凝视着我</p>
+						<p>
+							你正义地面对一切<br>
+							这一切都看在我的眼里<br>
+							我知道你无所畏惧<br>
+							我知道你无比坚毅</p>
+						<p>
+							总有一天　你会发现你的力量强大无比<br>
+							总有一天　你会发现你可以创造奇迹</p>
+						<p>
+							美丽的天使在远方召唤你<br>
+							为了明天　少年快去努力<br>
+							理想遨游在蓝色的天空<br>
+							拥抱明天　唤出青春洋溢<br>
+							为了明天　请你不要再犹豫<br>
+							勇敢的少年啊　快去创造奇迹</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-eva-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

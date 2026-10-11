@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Never forget this time - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">I've オリジナル</div>
+
+                    <div class="LyricTitle">Never forget this time</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MAKO</div>
+                    <div class="LyricStaff">作詞：MAKO<br>作曲：MAKO</div>
+
+                    <div class="LyricText">
+						<p>
+							何気ない一言で君を傷つけていたのかな<br>
+							ごめんねって言いそびれて今すごく後悔している<br>
+							強がって自分を隠そうとしても<br>
+							いつも見破られてしまうんだ<br>
+							一人きりじゃ誰も生きてはいけないの<br>
+							優しさを受け止めて　始めて　はばたけるよ</p>
+						<p>
+							忘れないこの時を　悲しみも喜びも<br>
+							いつまでもこの胸に抱き続けてく<br>
+							一つ一つを</p>
+						<p>
+							つまらないって思ってた日々も<br>
+							過ぎ去った今思えば<br>
+							あんなにも満たされて<br>
+							毎日を過ごしていたんだ<br>
+							今ならば暗い顔も明るくできるよ<br>
+							ここにある絆は消えたりしないから</p>
+						<p>
+							忘れないこの時を　一瞬の輝きも<br>
+							いつの日か心から幸せの日々として<br>
+							思い出せるから</p>
+						<p>
+							どんなに辛くて　くじけそうになった時でも<br>
+							ここにある愛が　この心を支えてる</p>
+						<p>
+							忘れないこの時を　一瞬の輝きも<br>
+							いつの日か心から幸せの日々として<br>
+							思い出せるから</p>
+						<p>
+							忘れないこの時を　悲しみも喜びもずっと<br>
+							いつまでもこの胸に抱き続けてく<br>
+							一つ一つを</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

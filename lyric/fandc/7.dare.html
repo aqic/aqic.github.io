@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>誰よりも - F&amp;C</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</div>
+
+                    <div class="LyricTitle">誰よりも</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">日野森あずさ（長崎みなみ）</div>
+                    <div class="LyricStaff">作詞：井上小麥<br>作曲·編曲：荒牧賢治</div>
+
+                    <div class="LyricText">
+						<p>
+							朝　起きて　めざましを　止めて<br>
+							太陽に　あいさつ　しましょう</p>
+						<p>
+							仲間達の　笑顔が　あるね<br>
+							１人じゃないのが　わかったの</p>
+						<p>
+							ケンカしてると　気になっちゃう<br>
+							こんな　気持ちになるのは　はじめてなの</p>
+						<p>
+							誰よりずっと　キミのこと　わかってるから<br>
+							いつまでも　となりに　いてくれたらいいな</p>
+						<p>
+							つばさが　あったら　飛べるのに<br>
+							虹を　さわりに　行けるのかな</p>
+						<p>
+							いつも　強がり　言ってるけど<br>
+							素直な　気持ち　キミまで　屆けたいよ</p>
+						<p>
+							誰よりずっと　キミのこと　見つめてるから<br>
+							いちばん大好きよ　今　そう気づいた</p>
+						<p>
+							誰よりも　キミのこと　好きだったんだ<br>
+							今になって　わかった　恋をしていたね</p>
+						<p>
+							ケンカしてると　気になっちゃう<br>
+							こんな　気持ちになるのは　はじめてなの</p>
+						<p>
+							誰よりずっと　キミのこと　わかってるから<br>
+							いつまでも　となりに　いてくれたらいいな</p>
+						<p>
+							誰よりも　キミのこと　好きだったんだ<br>
+							今になって　わかった　恋をしていたね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fandc-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

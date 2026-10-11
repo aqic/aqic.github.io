@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Song For You - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ＳＣＤ「Ｈｉ Hi High」</div>
+
+                    <div class="LyricTitle">Song For You</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">熊谷 幸子</div>
+                    <div class="LyricStaff">作詞：熊谷 幸子<br>作曲：熊谷 幸子<br>編曲：熊谷 幸子・松任谷 正隆</div>
+
+                    <div class="LyricText">
+						<p>
+							今あなたは　苦しみとひきかえに<br>
+							何を見つけに行くの？　たったひとりで</p>
+						<p>
+							今あなたが　すべてをなげうってまで<br>
+							手にしたいものは何？　教えてほしい</p>
+						<p>
+							好きになればなる程　あなたの孤独を知る<br>
+							伝えたい事は何も　言葉にならない</p>
+						<p>
+							This is Song For You<br>
+							いつも　いつまででも<br>
+							Oh Baby please Close To You<br>
+							気づいてくれなくても  もしあなたが　力尽きた時には<br>
+							何も言わずに　そっと肩を抱きたい</p>
+						<p>
+							あなたの選ぶ道が　どんなに険しくても<br>
+							越えてゆけると　信じて　ついてゆきたい</p>
+						<p>
+							Because I Love You<br>
+							どんなことがあっても<br>
+							Oh Baby please Close To You<br>
+							ずっとそばにいたい</p>
+						<p>
+							This is Song For You<br>
+							いつも　いつまででも<br>
+							Oh Baby please Close Your Eyes<br>
+							ずっとそばにいたい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>あの日の君へ - おねがい☆ティーチャー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">風見みずほ image song</div>
+
+                    <div class="LyricTitle">あの日の君へ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：高瀬 一矢<br>編曲：高瀬 一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							やわらかな風に<br>
+							飛ばされて消えた<br>
+							わたぼうし追って<br>
+							迷い道 君を見つけた<br>
+							寒がりな僕を<br>
+							暖めてくれる<br>
+							ひだまりの笑顔<br>
+							なつかしい木綿の匂い</p>
+						<p>
+							不器用に抱きしめた胸で僕を見上げて<br>
+							“信じてる…”何もかも<br>
+							今  僕に預けて</p>
+						<p>
+							時になぜか　寂しさは<br>
+							胸の隙間　すべりこむ<br>
+							だけど君がここにいるから<br>
+							明日が見えるよ　ほら</p>
+						<p>
+							丘に立つ君の<br>
+							長い髪揺らす<br>
+							夏の風　遠く<br>
+							君のふるさとへと運ぶ<br>
+							振り返る笑顔<br>
+							木漏れ日が揺れる<br>
+							いつまでもそこで<br>
+							輝いてほしいと願う</p>
+						<p>
+							次々に生まれては消えてゆくシャボン玉<br>
+							遊ぶ君　ふわふわと<br>
+							空まで舞い上がる</p>
+						<p>
+							時になぜか　幼さは<br>
+							時計の針　巻き戻す<br>
+							いつか君が消えてしまうなら<br>
+							あの日に閉じ込めたい</p>
+						<p>
+							今日も　明日も　あさっても<br>
+							１０年後も　千年後も<br>
+							君の頬に　おやすみのくちづけをしたいから</p>
+						<p>
+							時になぜか　切なさは<br>
+							風のように吹き抜ける<br>
+							だけど君がここにいるから<br>
+							涙も乾くよ　ほら</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onegai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

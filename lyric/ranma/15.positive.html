@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Positive - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2 熱闘編」エンディング・テーマ (1991)</div>
+
+                    <div class="LyricTitle">Positive</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">森川美穂</div>
+                    <div class="LyricStaff">作詞：佐藤純子<br>作曲：西　司<br>編曲：中村　哲</div>
+
+                    <div class="LyricText">
+						<p>
+							どうすればいい？<br>
+							このままじゃ　この恋はダメになる<br>
+							愛しすぎてる……<br>
+							逢えないと気持ちだけ追いかけてる<br>
+							あなたが誰かと逢ってるイマージュ<br>
+							行ったり来たりの無駄なエナジー</p>
+						<p>
+							お願い誰か言って<br>
+							「君は大丈夫だから」と<br>
+							幸せになれる価値<br>
+							充分持っているからね<br>
+							未来を開く鍵は<br>
+							POSITIVEなアイデアだけよ<br>
+							頭でわかってても　心が乱れてる</p>
+						<p>
+							悩み疲れて<br>
+							まどろんだ　耳もとに聞こえてる<br>
+							やさしい声は<br>
+							本当の自分かもしれないよね<br>
+							はじめて出逢った恋をしてるもの<br>
+							そんなにたやすく終わるはずない</p>
+						<p>
+							いつも自分に言うよ<br>
+							「君は大丈夫だから」と<br>
+							彼がどうであろうと<br>
+							私のペースを守って<br>
+							未来を開く鍵は<br>
+							今を楽しく生きること<br>
+							いつかほんとになるよ<br>
+							イメージしたすべて</p>
+						<p>
+							いつも自分に言うよ<br>
+							「君は大丈夫だから」と<br>
+							愛される輝きを<br>
+							いくつも持っているからね<br>
+							未来を開く鍵は<br>
+							POSITIVEなアイデアだけよ<br>
+							ほんとは簡単なの<br>
+							幸せになること</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

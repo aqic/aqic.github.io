@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>世界が终わるまでは… - SLAM DUNK</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">世界が终わるまでは…</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">WANDS</div>
+                    <div class="LyricStaff">作詞：上杉升<br>作曲：叶山たけし<br>編曲：叶山たけし</div>
+
+                    <div class="LyricText">
+						<p>
+							大都会に　仆はもう一人で<br>
+							投げ舍てられた　空カンのようだ<br>
+							互いのすべてを<br>
+							知りつくすまでが　爱ならば<br>
+							いっそ　永久に眠ろうか…<br>
+							世界が终わるまでは<br>
+							离れる事もない<br>
+							そう愿っていた　几千の夜と<br>
+							戾らない时だけが<br>
+							何故辉いては<br>
+							やつれ切った<br>
+							心までも　坏す…<br>
+							はかなき想い…<br>
+							このTragedy Night</p>
+						<p>
+							そして人は<br>
+							形(こたえ)を求めて<br>
+							かけがえのない　何かを失う<br>
+							欲望だらけの　街じゃ　夜空の<br>
+							星屑も　仆らを　灯せない<br>
+							世界が终わる前に<br>
+							闻かせておくれよ<br>
+							满开の花が<br>
+							似合いのCatastrophe<br>
+							谁もが望みながら<br>
+							永远を信じない<br>
+							…なのに　きっと<br>
+							明日を梦见てる<br>
+							はかなき日　と<br>
+							このTragedy Night</p>
+						<p>
+							世界が终わるまでは<br>
+							离れる事もない<br>
+							そう愿っていた　几千の夜と<br>
+							戾らない时だけが<br>
+							何故辉いては<br>
+							やつれ切った<br>
+							心までも　坏す…<br>
+							はかなき想い…<br>
+							このTragedy Night<br>
+							このTragedy Night</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slamdunk-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

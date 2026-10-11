@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ピース・アゲン - トランスフォーマー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">戦え！超ロボット生命体トランスフォーマー</div>
+
+                    <div class="LyricTitle">ピース・アゲン</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">下成佐登子</div>
+                    <div class="LyricStaff">作詞：大津あきら<br>編曲：筒美京平<br>編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+						<p>
+							流星の彼方から  ツー・オブ・ハート<br>
+							終わりのない争いを  エブリー・タイム<br>
+							謎めいたサイレンが胸に響く<br>
+							地球は今　デンジャラスゾーン<br>
+							ギブ・ミー・ナウ・ピース・アゲン<br>
+							燃える宇宙に悲しみだけは捨てて下さい<br>
+							戦うため生まれたトランスフォーマー</p>
+						<p>
+							傷ついた罠の中  シェイク・オブ・ドリーム<br>
+							魂さえ焼け焦がす  エベリー・タイム<br>
+							今夜だけスリルから逃げ出しても<br>
+							星は今　デンジャラスゾーン<br>
+							ギブ・ミー・ナウ・ピース・アゲン<br>
+							この銀河に激しさだけを投げて下さい<br>
+							戦うため目覚めたトランスフォーマー<br>
+							流星の彼方から  ツー・オブ・ハート<br>
+							傷ついた罠の中  シェイク・オブ・ドリーム<br>
+							流星の彼方から  ツー・オブ・ハート<br>
+							傷ついた罠の中  シェイク・オブ・ドリーム</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-transformers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

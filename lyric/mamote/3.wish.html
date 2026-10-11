@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>WISH - まもって守護月天!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">伝心まもって守護月天！</div>
+
+                    <div class="LyricTitle">WISH</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">國府田マリ子</div>
+
+                    <div class="LyricText">
+						<p>
+							まもってあげたい<br>
+							哀しいコトすべてから<br>
+							アナタごと…</p>
+						<p>
+							ユウウツな日には<br>
+							横断歩道も<br>
+							ずっと赤のままね<br>
+							進めない<br>
+							伝えたい気持ち<br>
+							言って欲しいコトバ<br>
+							信じているのに スレ違う</p>
+						<p>
+							でもシグナルだって<br>
+							曇り空だって<br>
+							ちゃんと待ってれば<br>
+							いつか青く輝くよ</p>
+						<p>
+							まもってあげたい<br>
+							その素敵なほほえみを<br>
+							大好きだから<br>
+							だ・か・ら・ね<br>
+							小さな両手で<br>
+							チョットずつの幸せを<br>
+							運んでくるよ 何度だって</p>
+						<p>
+							逢えない瞬間<br>
+							切なさ あふれる<br>
+							止まらない アナタ恋しくて<br>
+							きっと星がくれた<br>
+							試練かも知れない<br>
+							“もっと愛せるよ”と教えてる</p>
+						<p>
+							まもってあげたいと<br>
+							思ってるのに<br>
+							私の笑顔は<br>
+							アナタに守られてるの</p>
+						<p>
+							見つめていたいの<br>
+							ずっとずっと誰よりも<br>
+							近い場所から だ・か・ら・ね<br>
+							まもってあげたい<br>
+							強い 強い優しさで<br>
+							包んでくれる<br>
+							アナタだから</p>
+						<p>
+							まもってあげたい<br>
+							哀しいコトすべてから<br>
+							大好きだから だ・か・ら・ね<br>
+							小さな両手で<br>
+							チョットずつの幸せを<br>
+							運んでくるよ 何度だって</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-mamote-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

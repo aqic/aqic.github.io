@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>青い青いこの地球に - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ED 248話～</div>
+
+                    <div class="LyricTitle">青い青いこの地球に</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">上原あずみ</div>
+                    <div class="LyricStaff">作詞：上原あずみ<br>作曲：大野愛果<br>編曲：尾城九龍</div>
+
+                    <div class="LyricText">
+						<p>
+							刺激的な日常を　待っていたけど　きっと<br>
+							目の前に在るスベテが　大切なモノなんだね</p>
+						<p>
+							失うこと怖がるなんて ...　私達未だ何も手に入れてない</p>
+						<p>
+							Oh, yeah yeah yeah　青い青いこの地球に　限りない未来重ね<br>
+							(you) can make me free　このまま鼓動　感じていたい</p>
+						<p>
+							Oh, yeah yeah yeah　この気持ち舞い上がれ　空と海　焼き付けて<br>
+							強い力で　君に抱かれ　飛び出したい</p>
+						<p>
+							おだやかな時間を　望んでたけどきっと<br>
+							どんな時間にもいつか　慣れて行くモノなんだね</p>
+						<p>
+							求めること怖がるなんて ...　私達そう何も変えられない</p>
+						<p>
+							Oh, yeah yeah yeah　青い青いこの地球に　限りある未来重ね<br>
+							(you) can make me free　それでも鼓動　感じていたい</p>
+						<p>
+							Oh, yeah yeah yeah　遠い遠いあの頃の　二人は戻らない<br>
+							強い力で　今ここから　飛び出したい</p>
+						<p>
+							Lalalalalalala …<br>
+							いつか笑ってほしい<br>
+							気が遠くなるほどの辛くて長い日々も<br>
+							記憶さえもかなしい夢だったように</p>
+						<p>
+							Oh, yeah yeah yeah　こんな日がいつかくると　わかっていたはずでしょ<br>
+							だけどね　心がついていかない</p>
+						<p>
+							Oh, yeah yeah yeah　黒い雲いつか消えて　晴れる日も来るだろう<br>
+							涙の日も　きっと想い出になるハズ</p>
+						<p>
+							こんな日がいつかくると　わかっていたはずでしょ<br>
+							だけどね　目をそらしていたい</p>
+						<p>
+							青い青いこの地球に　限りない未来重ね<br>
+							強い力で　今ここから　飛び出したい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

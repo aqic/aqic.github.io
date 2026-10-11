@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>スローペースな幸せ - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">スローペースな幸せ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">水越萌（伊月ゆい）</div>
+
+                    <div class="LyricText">
+						<p>
+							おだやかな日々　楽しみましょう<br>
+							スローペースな幸せ　感じてますか？</p>
+						<p>
+							ふわりふわり　揺れるスカート<br>
+							なぜか切なくなります<br>
+							めぐりめぐる　季節の風が<br>
+							また追い抜いてゆきます</p>
+						<p>
+							始業のベルが　遠くで鳴った<br>
+							あら　またしても遅刻ですね<br>
+							こんな私も　はしゃげるくらい<br>
+							恋してみたいけど</p>
+						<p>
+							おだやかな日々　楽しみましょう<br>
+							スローペースな幸せです<br>
+							慌てなくても　きっと大丈夫<br>
+							大事なのは（何より）<br>
+							微笑みです　笑顔・・・♪</p>
+						<p>
+							こくりこくり　うたたねすれば<br>
+							ここは空色　夢模様<br>
+							さらりさらり　天使の羽が<br>
+							私の頬をなでます</p>
+						<p>
+							幼い頃に　思い描いた<br>
+							小さな夢に　出逢いました<br>
+							マシュマロ雲の　演奏会は<br>
+							どこかで聞いたメロディー</p>
+						<p>
+							懐かしい日々思い出しましょう<br>
+							見えないものが　見えてきます<br>
+							先を急いで　見逃さないで<br>
+							大事なのは（何より）<br>
+							微笑みです　笑顔・・・♪</p>
+						<p>
+							おだやかな日々楽しみましょう<br>
+							スローペースな幸せです</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

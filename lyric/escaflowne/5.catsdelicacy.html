@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Cat's Delicacy - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」イメージ(1996)</div>
+
+                    <div class="LyricTitle">Cat's Delicacy</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂本真綾</div>
+                    <div class="LyricStaff">作詞：岩里祐穂<br>作曲・編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							Ne bra en vrutu ko proshan de fase sevo lu shun ti<br>
+							Tanda la mando mo a lan du fan du san e de la shantwa</p>
+						<p>
+							★Ano amoi demo atushi padufwi<br>
+							　Anushan duma demu sa vrupru upartwi<br>
+							　En dine rupru en dinashi a fwititu<br>
+							　Seti la pars tu evriende mwa patisha</p>
+						<p>
+							La La La, La La La, La La La, La La...<br>
+							Sia, atushio</p>
+						<p>
+							Ne bra en vrutu ko proshan de fase sevo lu shun ti<br>
+							Tanda la mando mo a lan du fan du san e de la shantwa</p>
+						<p>
+							Ano amoi demo atushi padufwi<br>
+							Anushan duma demu sa vrupru upartwi<br>
+							Konnina vripru konnina sheta kwateta<br>
+							Seteba fusku kevete ne ma patisha</p>
+						<p>
+							La La La, La La La, La La La, La La...<br>
+							Sia, atushio</p>
+						<p>
+							★くり返し</p>
+						<p>
+							La La La, La La La, La La La, La La...<br>
+							Sia, atushio</p>
+						<p>
+							Sevola lu shun te zu to...<br>
+							Sevola lu shun te zu to...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

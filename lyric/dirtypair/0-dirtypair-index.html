@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">ダーティペア</span><span class="cn">（棘手拍档）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《ダーティペア》</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">劇場版</span><span class="disc-sub">4 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.safari.html">《サファリ　アイズ～Safari Eyes》</a><span class="note">- 劇場用アニメーション「ダーティペア」オープニング・テーマ (1987)</span></li>
+						<li class="LyricItem"><a href="2.pasdedeux.html">《パ・ド・ドゥ～pas de deux》</a><span class="note">- 劇場用アニメーション「ダーティペア」エンディング・テーマ (1987)</span></li>
+						<li class="LyricItem"><a href="3.matters.html">《Matters To Me》</a><span class="note">- "Dirty Pair" movie insert song (1987)</span></li>
+						<li class="LyricItem"><a href="4.overthetop.html">《Over the Top》</a><span class="note">- "Dirty Pair" movie insert song (1987)</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">その他</span><span class="disc-sub">4 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="5.russian.html">《ロ・ロ・ロ・ロシアン・ルーレット》</a><span class="note">- 「ダーティペア」オープニング・テーマ (1985)</span></li>
+						<li class="LyricItem"><a href="6.tangonoir.html">《ＴＡＮＧＯ　ＮＯＩＲ　〈タンゴ・ノアール〉》</a><span class="note">- 「ダーティ・ペア：トワイライトからのメッセージ」オープニング・テーマ (1991)</span></li>
+						<li class="LyricItem"><a href="7.yuugure.html">《トワイライト～夕暮れ便り～》</a><span class="note">- 「ダーティ・ペア：トワイライトからのメッセージ」エンディング・テーマ (1991)</span></li>
+						<li class="LyricItem"><a href="8.space.html">《宇宙恋愛 （スペース・ファンタジー）》</a><span class="note">- 「ダーティペア」エンディング・テーマ (1985)</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

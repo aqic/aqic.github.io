@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>悲しみの花 - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">復讐 ～陵辱の刃～</div>
+
+                    <div class="LyricTitle">悲しみの花</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MELL</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							もう一人じゃない<br>
+							君の声が今 胸に届く<br>
+							立ち止まった日々<br>
+							夢のように ただ 流れて行く</p>
+						<p>
+							二人止まった あの時間の終わりから<br>
+							忘れない道 もう一度踏みしめる</p>
+						<p>
+							悲しみ咲く花は あてのない旅を<br>
+							かすかに 照らして 揺れ動く<br>
+							星の消えた空は 憎しみの果てに<br>
+							儚く染まって 人を誘うから</p>
+						<p>
+							あんなにも君は<br>
+							優しくなること 避けていたね<br>
+							許し合うことは<br>
+							逃げることじゃない 目を開いて</p>
+						<p>
+							指の隙間を 通り抜ける風のように<br>
+							流れ続ける 君の想い抱いて</p>
+						<p>
+							はじける雨の糸 痛みと明日の<br>
+							間で冷たく 絡み合う<br>
+							逃げられない過去の 想い出抱えて<br>
+							静かに瞬く 空の星になろう</p>
+						<p>
+							悲しみ咲く花は あてのない旅を<br>
+							かすかに 照らして 揺れ動く<br>
+							逃げられない過去の 想い出抱えて<br>
+							静かに瞬く 空の星になろう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

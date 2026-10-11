@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>虹 - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">～維新志士への鎮魂歌～オープニングテーマ</div>
+
+                    <div class="LyricTitle">虹</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">L'Arc-en-Clel(ラルク・アン・シエル)</div>
+                    <div class="LyricStaff">作詞　hyde<br>訳詞　ken<br>作曲　L'Arc～en～Ciel</div>
+
+                    <div class="LyricText">
+						<p>
+							時は奏でて　想いはあふれる<br>
+							途切れそうなほど　透明な声に<br>
+							歩きだした　その瞳へ<br>
+							果てしない未来が続いている</p>
+						<p>
+							本当はとても心はもろく<br>
+							誰もがひびわれている<br>
+							降り出した雨に濡れて<br>
+							君はまた立ち止まってしまうけど<br>
+							信じてくれるから</p>
+						<p>
+							誰より高く　空へと近づく<br>
+							輝きを集め　光を求める<br>
+							燃え尽きても　構わないさ<br>
+							全ては真実と共にある</p>
+						<p>
+							「少年は人の影に歪んだ憎しみを見た」<br>
+							そんな世界なんてもう何も見たくないよ<br>
+							何も！何も！何も！</p>
+						<p>
+							それでも想う　貴方のことを<br>
+							季節が流れていても...<br>
+							目を閉じていつも見てた風景のように<br>
+							何度目かの雨もあがった</p>
+						<p>
+							せつない人よ　叶わぬ願いよ<br>
+							なぜこの胸から愛は生まれて行く？<br>
+							咲き乱れた　花は揺れて<br>
+							沈んだ大地に降り注ぐ</p>
+						<p>
+							愛を時は奏でて　想いはあふれる<br>
+							途切れそうなほど　透明な声に<br>
+							歩き出した　その瞳へ<br>
+							終わらない未来を捧げよう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

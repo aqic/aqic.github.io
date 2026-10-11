@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Tactics - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「るろうに剣心」エンディング ・テーマ (第1話 ～ 第12話)</div>
+
+                    <div class="LyricTitle">Tactics</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">The Yellow Monkey</div>
+                    <div class="LyricStaff">作詞/作曲：吉井和哉<br>編曲：THE YELLOW MONKEY</div>
+
+                    <div class="LyricText">
+						<p>
+							ギラッとした君の目に<br>
+							ドキッとした昼下がり<br>
+							シャキッとした俺の体<br>
+							まるで試されてるように<br>
+							ツンとした君と空気に<br>
+							ゾクッとした恋心は<br>
+							ザラッとした砂を噛み<br>
+							されるがまま夜になる</p>
+						<p>
+							そろそろ自慢のくちびるで<br>
+							ワインを飲ませてくれないか<br>
+							満月の夜に結ばれた<br>
+							男と女は永遠さ</p>
+						<p>
+							激しくLady<br>
+							Ah gimme your love<br>
+							妖しくLady<br>
+							I need your love<br>
+							たまに見せる淋しげな目が<br>
+							嘘か本当かわからない<br>
+							素直にLady<br>
+							Ah gimme your love<br>
+							感じてみてLady<br>
+							I need your love<br>
+							君のしぐさに振り回されて<br>
+							夢中の愛は俺の中で踊る</p>
+						<p>
+							サラッとした髪をとき<br>
+							ツヤッとした肌をよせ<br>
+							言葉遊びをするように<br>
+							君は俺をもて遊ぶ</p>
+						<p>
+							駆け引きは強い君の中<br>
+							過ちは弱い俺の中<br>
+							好きなだけ楽しめばいいさ<br>
+							男と女は永遠さ</p>
+						<p>
+							激しくLady<br>
+							Ah gimmme your love<br>
+							妖しくLady<br>
+							I need your love<br>
+							たまに見せる優しい笑顔が<br>
+							嘘か本当かわからない<br>
+							素直にLady<br>
+							Ah gimme your love<br>
+							感じてみてLady<br>
+							I need your love<br>
+							君のしぐさで俺を殺して<br>
+							その一瞬が何より幸せさ</p>
+						<p>
+							闇の中踊る 抱きしめて踊る<br>
+							何度でも踊る 永遠に踊る<br>
+							永遠に踊る 永遠に踊る……</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

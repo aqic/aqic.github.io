@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Be For You, Be For Me - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">《Love Hina Again》Ending Song</div>
+
+                    <div class="LyricTitle">Be For You, Be For Me</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">上田裕司, 堀江ゆい, 桑谷なつこ</div>
+
+                    <div class="LyricText">
+						<p>
+							カラカラ渇いてる胸の中<br>
+							ふと立ち止まり　気が付いたから<br>
+							誰もが急いでる街の中<br>
+							少しゆっくり歩いてみた<br>
+							声にださない願い　あなたとなら叶えたいよ<br>
+							時々泣きたくなると 眼を閉じてこう思うの try<br>
+							だけどあなたがいる 愛を求めている<br>
+							どんな時も心はあるよ そばに<br>
+							だからわたしがいる 愛を探している<br>
+							ふたりなら 優しい涙に変わる<br>
+							夢はきっと叶う</p>
+						<p>
+							どこにいたって何をしてたって<br>
+							あなたの事 考えている<br>
+							今日のこの青い空切り取って<br>
+							ふたりの記念日の色にしよう<br>
+							声にならない祈り このままいつまでもいたいと<br>
+							ふかく愛するほどに ひとは強くなる 切なくなる why<br>
+							ここにあなたがいる 愛を求めている<br>
+							永久に続くふたりだけの奇跡<br>
+							そしてわたしがいる 愛を探している<br>
+							終わらない未来を 一緒にふたり<br>
+							これから歩き出す</p>
+						<p>
+							ずっとあなたがいる 愛を求めている<br>
+							わたしだけの誰かは あなたなんだ<br>
+							そこにわたしがいる 愛を探している<br>
+							ありふれた一瞬が燐くのは<br>
+							ふたりだからこそ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

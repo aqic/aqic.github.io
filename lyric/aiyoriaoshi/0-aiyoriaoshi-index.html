@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">藍より青し</span><span class="cn">（青出于蓝）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《藍より青し》</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">テレビアニメ</span><span class="disc-sub">1 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.takaramono.html">《たからもの》</a><span class="note">- TVアニメ「藍より青し～縁～」オープニングテーマ</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">アルバム</span><span class="disc-sub">2 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="2.aoshidramaed.html">《振り向いてもいいですか》</a><span class="note">- Drama CD Ending Theme</span></li>
+						<li class="LyricItem"><a href="3.aoshidramaop.html">《最後の蛍》</a><span class="note">- Drama CD Opening Theme</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">その他</span><span class="disc-sub">2 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="4.anonymousflower.html">《名も知れぬ花》</a></li>
+						<li class="LyricItem"><a href="5.flowerofeternity.html">《永远の花》</a></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

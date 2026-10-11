@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>明日のかけら - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">明日のかけら</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐々木望</div>
+                    <div class="LyricStaff">作詞：高柳 恋<br>作曲／編曲：太田美知彦</div>
+
+                    <div class="LyricText">
+						<p>
+							壊れてゆく街<br>
+							夕焼けがシルエットを映しだす<br>
+							血のような空が<br>
+							歪みはじめた真実　染めていた</p>
+						<p>
+							何が正しくて何が大切かも<br>
+							わからない時代のなかで</p>
+						<p>
+							☆翼など欲しくない<br>
+							　鳥より愚かでいいから<br>
+							　両足で立ち上がれ<br>
+							　明日のかけら抱きしめて</p>
+						<p>
+							優しさの種類<br>
+							瓦礫にただずんでいま数えよう<br>
+							甘い絶望が<br>
+							苦い希望を消し去るその前に</p>
+						<p>
+							夢を見たいならすぐに眠ればいい<br>
+							そんなに難しくないさ</p>
+						<p>
+							★太陽は真夜中に<br>
+							　消滅してるわけじゃない<br>
+							　この星の裏側で<br>
+							　いつでも輝いてるのさ</p>
+						<p>
+							☆Repeat<br>
+							★Repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>欢送の歌 - 銀河英雄伝説</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Galaxy Hero's Legends</div>
+
+                    <div class="LyricTitle">欢送の歌</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中西保志</div>
+                    <div class="LyricStaff">作詞：小椋佳<br>作曲：星胜<br>編曲：富田索弘</div>
+
+                    <div class="LyricText">
+						<p>
+							出会いのその日から<br>
+							街の淀み消えて<br>
+							星たちの辉きよみがえり<br>
+							ぼくに力が　君のおかげさ<br>
+							互いの情热と<br>
+							梦をぶつけ合って<br>
+							透き通る泪を流したね<br>
+							汗に隐して<br>
+							君を送るこの日まで<br>
+							一生悬命すぎるほどの<br>
+							暮らし　こぶし　眼差し<br>
+							どれもが素晴らしい记念碑<br>
+							夸りさ<br>
+							若いからじゃなくて<br>
+							梦に挑む事で<br>
+							仆达に别れはないという<br>
+							心通えば</p>
+						<p>
+							笑い声高めて<br>
+							ふと袭う孤独を<br>
+							胸底に沈めて<br>
+							密やかな君の气遣い<br>
+							君を送るこの时に<br>
+							远い星に映す誓い<br>
+							光　摇らぎ　きらめき<br>
+							どれもが胸あわす交わり<br>
+							祭りさ<br>
+							若いからじゃなくて<br>
+							梦に挑む事で<br>
+							仆达に别れはないという<br>
+							星を仰げば<br>
+							仆达に别れはないという<br>
+							心通えば</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ginga-eiyuu-densetsu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

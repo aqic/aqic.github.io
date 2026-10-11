@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>I am セーラームーン - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">オーディオ「美少女戦士セーラームーンＲ 未来へ向かって」 挿入歌（１９９３）</div>
+
+                    <div class="LyricTitle">I am セーラームーン</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">三石琴乃</div>
+                    <div class="LyricStaff">作詞／武内直子<br>作編曲／永井誠</div>
+
+                    <div class="LyricText">
+						<p>
+							ふいに　ふりかえる　なまえ　よばれた気がして<br>
+							ふっとさいた　あわい不安の花　さがしているのは　わたしの方<br>
+							おねがい　手をつないで　そばにいてもう少し<br>
+							ホラ見て　ムカシあった　あの白いムーン　金にかがやく　ココは　ヒミツのパレス<br>
+							心の中　一気に　ときめきの花がさく<br>
+							青い星神秘のカギをひろったトキから　ずっとノックしてる</p>
+						<p>
+							※あなたの声　あなたのカオ　あなたのカラダ　ぜんぶひらいて　見せて<br>
+							　ひとつになるクリスタル・パワー　セーラームーン<br>
+							　わたしをよんで　つよくして　見て　わたしを</p>
+						<p>
+							ふいにたちどまる　なまえ　さけんだ気がして<br>
+							そっとわいた　あわいナミダの花　もとめているのは　わたしの方<br>
+							おねがい　肩を抱いて　キスして　もう少し<br>
+							ホラ見て　ムカシあった　あの白いムーン　銀にかがやく　ココはヒミツのパレス<br>
+							心の中　一気に　きらめきの花がさく<br>
+							青い星記憶のカギを見つけたトキから　ずっとノックしてる</p>
+						<p>
+							あなたの夢　あなたの道　あなたの心　ぜんぶひらいて　見せて<br>
+							ひとつになるクリスタル・パワー　セーラームーン<br>
+							わたしをよんで　つよくして　見て　わたしを</p>
+						<p>
+							※繰返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

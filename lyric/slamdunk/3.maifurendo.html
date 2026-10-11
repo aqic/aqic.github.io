@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>マイフレンド - SLAM DUNK</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">マイフレンド</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ZARD</div>
+                    <div class="LyricStaff">作詞：井泉水<br>作曲：识田哲郎<br>編曲：叶山たけし</div>
+
+                    <div class="LyricText">
+						<p>
+							あなたを想うだけで<br>
+							心は强くなれる<br>
+							ずっと见つめているから<br>
+							走り续けて</p>
+						<p>
+							ひたむきだった远い日の梦は<br>
+							今でも眩しい<br>
+							どんなに不安がいっぱいでも<br>
+							真っすぐ自分の道を信じて<br>
+							饰らない素颜のあなたが好き<br>
+							变わってしまうことが哀しい</p>
+						<p>
+							いつも辉いていたね<br>
+							少年のまま　瞳はMy Friend<br>
+							あなたがそばにいると<br>
+							何故か素直になれた<br>
+							この距离通り拔ける<br>
+							风になりたい</p>
+						<p>
+							真实（ほんとう）の爱なら<br>
+							きっと色んな事<br>
+							乘り越えられたのに<br>
+							星のパレ　ド<br>
+							泪がこぼれない样に<br>
+							大きく息を吸った<br>
+							ひとりでいる时の淋しさより<br>
+							二人でいる时の孤独の方が哀しい</p>
+						<p>
+							いつも笑っていたね<br>
+							あの顷の二人<br>
+							せつないMy Friend<br>
+							あなたを想うだけで<br>
+							心は强くなれる<br>
+							ずっと见つめているから<br>
+							走り续けて</p>
+						<p>
+							いつも辉いていたね<br>
+							少年のまま　瞳はMy Friend<br>
+							あなたを想うだけで<br>
+							心は强くなれた<br>
+							ずっと见つめているから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slamdunk-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

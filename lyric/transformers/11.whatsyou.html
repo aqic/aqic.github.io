@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>WHAT'S YOU - トランスフォーマー</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">戦え！超ロボット生命体トランスフォーマー２０１０</div>
+
+                    <div class="LyricTitle">WHAT'S YOU</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">広瀬　翔</div>
+                    <div class="LyricStaff">作詞：松本一起<br>作曲：小森田　実<br>編曲：鷺巣詩郎</div>
+
+                    <div class="LyricText">
+						<p>
+							ダッシュフラッシュリフレクション 勇気のサ　サ　サ　サイバトロン<br>
+							早口「ブラー」メイクアップ「アーシー」<br>
+							「ウルトラマグナス」Ｎｏ．２<br>
+							翼よ翼よ　宇宙の炎さ<br>
+							「シルバーボルト」フライフライアウェイ<br>
+							ジャンプの「スプラング」　トランスフォーマー</p>
+						<p>
+							バック・ブラック・リアクター 攻撃　デ　デ　デ　デストロン<br>
+							わがまま意のまま「ガルバトロン」<br>
+							自意識過剰の「ブレークダウン」<br>
+							破滅よ　破滅よ　破滅よ　破滅<br>
+							力を笑うわ　メ　メ　メ　メ　メナゾール<br>
+							「ドラッグストライプ」　トランスフォーマー</p>
+						<p>
+							ダッシュフラッシュリフレクション 勇気のサ　サ　サ　サイバトロン<br>
+							物知り「チャー」は頭脳メイセキ<br>
+							「サンドストーム」危険も承知<br>
+							鋭く　す早く　状況把握<br>
+							「ロディマスコンボイ」司令官<br>
+							「メトロフレックス」　トランスフォーマー</p>
+						<p>
+							バック・ブラック・リアクター 攻撃　デ　デ　デ　デストロン<br>
+							勝つ事以外に興味なく<br>
+							命令よく聞く「サイクロナス」<br>
+							パワフル　テリブル　冷酷　完ぺき<br>
+							「ダイナザウラー」　プラズマ爆弾<br>
+							スウィーブ・リーダー「スカージ」　トランスフォーマー</p>
+						<p>
+							ホワッツ・ユー  ある朝　目ざめた時に<br>
+							ホワッツ・ユー  闘う相手を決められていた<br>
+							君なら　どちらの心と一緒に行くか？</p>
+						<p>
+							ラッシュ・クラッシュ・リアクション<br>
+							他にも　ト　ト　ト　トランスフォーマー<br>
+							「ブロードキャスト」二枚目「バンブル」<br>
+							パワーも全開「サイバトロン」<br>
+							雨にも風にも負けない燃焼<br>
+							「サウンドウェーブ」叫んでる<br>
+							「デバスター」クレージー デストロン</p>
+						<p>
+							ラッシュ・クラッシュ・リアクション<br>
+							他にも　オット！ト　トランスフォーマー<br>
+							空海防衛「ブロードサイド」<br>
+							サイバトロンの　ちょっと臆病<br>
+							いかにも　いかにも　サイテイ<br>
+							ツノ出す「ヘッドストロング」<br>
+							鋼鉄突破「タントラム」<br>
+							「ダイムボム」クレージー デストロン</p>
+						<p>
+							ホワッツ・ユー 宇宙と地球を結ぶ<br>
+							ホワッツ・ユー 不思議な心の中の力で<br>
+							異なる　ふたつの情熱がぶつかり合って</p>
+						<p>
+							ホワッツ・ユー ある朝　目ざめた時に<br>
+							ホワッツ・ユー 闘う相手を決められていた<br>
+							君なら　どちらの心と一緒に行くか？</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-transformers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

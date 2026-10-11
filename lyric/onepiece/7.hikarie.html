@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ヒカリへ - ONE PIECE</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ヒカリへ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">The Babystars</div>
+
+                    <div class="LyricText">
+						<p>
+							僕は今　さがしはじめた　水しぶきあげて<br>
+							果てしなく続く世界へ<br>
+							あふれだす情熱を胸に　どこまでも行くよ<br>
+							まだ見ぬヒカリ　求め</p>
+						<p>
+							夏色太陽が　ココロの帆をゆらせば<br>
+							あたらしい世界への　扉を開く合図<br>
+							波間にゆれてる　絶望を抜けて<br>
+							水平線の向こう側　目指して</p>
+						<p>
+							僕は今　さがしはじめた　水しぶきあげて<br>
+							果てしなく続く世界へ<br>
+							あふれだす情熱を胸に　どこまでも行くよ<br>
+							まだ見ぬヒカリ　求め</p>
+						<p>
+							きまりきった毎日と　ありふれた雲の流れ<br>
+							君にも映ってる　知るはずもない未来<br>
+							変わらないことで　傷つかなくても<br>
+							それじゃ夢も希望さえもない　さぁ行こう</p>
+						<p>
+							僕はなぜ　さがしてるんだろう　何がほしいんだろう<br>
+							答えはきっとその先に<br>
+							動き出す世界の中へ　ココロして行くよ<br>
+							まだ見ぬチカラ秘めて</p>
+						<p>
+							僕はなぜ　さがしてるんだろう　何がほしいんだろう<br>
+							まだ見ぬタカラはどこに<br>
+							あふれだす情熱を胸に　どこまで行ける？<br>
+							わからないけれど</p>
+						<p>
+							僕は今　さがしはじめた　水しぶきあげて<br>
+							果てしなく続く世界へ<br>
+							あふれだす情熱を胸に　どこまでも行くよ<br>
+							まだ見ぬ光　求め</p>
+						<p>
+							その　向こうへ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onepiece-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

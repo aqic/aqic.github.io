@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>キミに恋する日曜日 - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">キミに恋する日曜日</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							指折り数えてきたの　明日はSunday<br>
+							何度もチェキしているよ　天気予報は（yes）晴れのち晴れね<br>
+							鏡の前　服をまた　合わせて着替えて<br>
+							ベットの上脱ぎ捨てた　シャツの山が（no!）積もってゆくよ</p>
+						<p>
+							ah　笑っちゃうくらい　ひとりそわそわして<br>
+							どきどきして　wowwow　お目々が（ハート）ラブラブ</p>
+						<p>
+							日曜日は恋をしてる　逢えるたびに恋をしてる<br>
+							バクバクheart beat ひた隠し yeah!<br>
+							キミをもっと感じてたい　君のハート感じてたい<br>
+							こんなにこんなにすきだよ　クラクラするほどすきだよ<br>
+							ねぇ　胸の奥を　（チェキです！）読ませて</p>
+						<p>
+							タイムマシン作れたら　今すぐ乗るのに<br>
+							時計の針を進めたり　逆立ちして（wow）待ち焦がれちゃうの<br>
+							どんな顔で待ってようか　見なれた街でも<br>
+							ふたりでいるならparadise<br>
+							サプライズが（yeah） きっとあふれてる</p>
+						<p>
+							ah　ひとりきり部屋で　アタシわくわくして<br>
+							ニヤニヤして　smilin'　ちょっとヤバいね</p>
+						<p>
+							日曜日は恋をしてる　恋に恋をしてるなんて<br>
+							髪をくしゃっと撫でられ　落ちてく　BANG！<br>
+							キミは今なにしているの　キミのハートどこにあるの<br>
+							こんなにこんなにすきだよ　全く結局すきだよ<br>
+							もう　甘えちゃおうか　（いいかな）明日は</p>
+						<p>
+							日曜日は恋をしてる　恋に恋をしてるなんて<br>
+							子供扱い　胸でせつない　love<br>
+							キミをもっと感じてたい　キミのハート感じてたい<br>
+							こんなにこんなにすきだよ　クラクラするほどすきだよ<br>
+							ねぇ　こころの奥を　（チェキです！）読ませて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

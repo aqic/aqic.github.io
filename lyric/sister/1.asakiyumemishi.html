@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>あさきゆめみし - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">あさきゆめみし</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							伝えたい恋しさよ　遥かな空の下で<br>
+							いつの日かめぐり会うあなたに届くように</p>
+						<p>
+							春の蜃気楼のように<br>
+							恋ははかない夢ですか<br>
+							ひとり窓にもたれながら<br>
+							とりとめないせつなさに揺れてます</p>
+						<p>
+							ああ　今宵もまた月明かりに見守られて<br>
+							せめて幻でもいい　あなたを感じていたい</p>
+						<p>
+							風に舞う花びらが　ふたりを包む季節<br>
+							心に描きながら　この恋叶う日まで</p>
+						<p>
+							あさきゆめみし　この胸の<br>
+							熱き想いは　永遠に<br>
+							わかってください　あなたを<br>
+							守るために私は生きているの</p>
+						<p>
+							ああ　もどかしくて<br>
+							走り出してしまいそうな<br>
+							一途なこの恋心　これ以上かくしきれない</p>
+						<p>
+							めくるめく愛しさよ　静かな海を渡り<br>
+							そっと眠りについたあなたに届くように</p>
+						<p>
+							朝な夕なに　あなたのそばで<br>
+							うららかに咲く小さな花になりたい</p>
+						<p>
+							伝えたい恋しさよ　遥かな空の下で<br>
+							めくるめく愛しさよ　静かな海を渡り<br>
+							いつの日かめぐり会うあなたに届くように</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

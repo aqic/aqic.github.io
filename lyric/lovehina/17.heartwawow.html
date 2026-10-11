@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>HEARTはWow Wow - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">HEARTはWow Wow</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高木礼子</div>
+                    <div class="LyricStaff">作曲：小熊ゆかり<br>編曲：T.J</div>
+
+                    <div class="LyricText">
+						<p>
+							「おはよう」大(おお)きな声(こえ)を出(だ)して<br>
+							街(まち)に　出(で)よう<br>
+							眠(ねむ)れない　夜(よる)は朝(あさ)までかけて<br>
+							騒(さわ)いじゃおう　いつだって<br>
+							ハメをはずして笑(わら)い飛(と)ばそう<br>
+							明日(あした)に夢(ゆめ)、膨(ふく)らませて</p>
+						<p>
+							つまんない時(とき)、一緒(いっしょ)に振(ふ)り切(き)って<br>
+							笑顔(えがお)輝(かがや)かそう<br>
+							ちょっとだけ強(つよ)くなろうとはりきって<br>
+							ハート動(うご)かせば　WOW WOW　WOW WOW<br>
+							楽(たの)しくなれるから♪;;;;</p>
+						<p>
+							ハートがカラッポになりそうな<br>
+							時(とき)は　呼(よ)んで<br>
+							ご馳走(ちそう)、食(た)べただけでちょっぴり<br>
+							(しあわ)せだと　思(おも)えるよ<br>
+							いつでも栄養満点(えいようまんてん)で<br>
+							明日(あした)に向(む)かわなくっちゃね</p>
+						<p>
+							いつもいつも"元気(げんき)"なんて誰(だて)だって<br>
+							ありはしないけど<br>
+							いつもいつも"元気(げんき)"出(だ)してがんばって<br>
+							ハート動(うご)かせば　WOW WOW　WOW WOW<br>
+							行(ゆ)けるよ</p>
+						<p>
+							つまんない時(とき)、一緒(いっしょ)に振(ふ)り切(き)って<br>
+							笑顔(えがお)輝(かがや)かそう<br>
+							ちょっとだけ強(つよ)くなろうとはりきって<br>
+							ハート動(うご)かせば<br>
+							いつもいつも"元気(げんき)"なんて誰(だれ)だって<br>
+							ありはしないけど<br>
+							いつもいつも"元気(げんき)"出(だ)してがんばって<br>
+							ハート動(うご)かせば<br>
+							WOW WOW(世界一(せかいいち))　WOW WOW(飛び切りに(とびきりに))<br>
+							楽(たの)しくなれるから♪</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

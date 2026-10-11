@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>eX dream - X -エックス-</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">eX dream</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">美勇士</div>
+                    <div class="LyricStaff">Lyrics : Julian Lewis<br>Music : Nishimura Masatoshi<br>Arrangement : Nishimura Masatoshi</div>
+
+                    <div class="LyricText">
+						<p>
+							いずれ壊れゆく　この世界には<br>
+							夢や希望とか　どうでもいい</p>
+						<p>
+							心の中で眠る君は　目覚めることないけど<br>
+							変えられぬ未来を　その手で感じて</p>
+						<p>
+							Burning for your life<br>
+							いつか燃え尽きる　この命を捧げても<br>
+							(for the perfect dream)<br>
+							Drowning in my dream<br>
+							たとえ溺れても　夢は夢でしかない<br>
+							君は　star light</p>
+						<p>
+							光　溢れてく　その世界には<br>
+							君の魂が　満ちてゆく<br>
+							無償の愛を願う天使は　目覚めるとすぐに<br>
+							終わりゆく未来を　この手で受け止めて</p>
+						<p>
+							Burning for my life<br>
+							いつか尽き果てる　この命は戻らない<br>
+							(for the eX dream)<br>
+							Drowning in your dream<br>
+							たとえ溺れても　夢の続きは何処へ<br>
+							僕は　moon light</p>
+						<p>
+							Burning for your life<br>
+							やがて訪ねる　その希望にかけてでも<br>
+							(for the perfect dream)<br>
+							Drowning in my dream<br>
+							たとえ倒れても　逃げ出したりはしない</p>
+						<p>
+							Burning for my life<br>
+							決して迷わない　この気持ちは止まらない<br>
+							(for the eX dream)<br>
+							Drowning in your dream<br>
+							共に突き進む　明日への道となる<br>
+							僕らは　star light</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-x-kakyuu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

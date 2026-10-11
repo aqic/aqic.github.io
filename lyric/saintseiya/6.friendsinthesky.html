@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>希望の翼&lt;br&gt;[FRIENDS IN THE SKY] - 聖闘士星矢</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[聖闘士星矢 / 挿入歌]</div>
+
+                    <div class="LyricTitle">希望の翼&lt;br&gt;[FRIENDS IN THE SKY]</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MAKE-UP
+堀江 美都子</div>
+                    <div class="LyricStaff">作詞：園部 和範<br>作曲：河野 陽吾<br>編曲：MAKE-UP</div>
+
+                    <div class="LyricText">
+						<p>
+							&lt;☆～NOB、★～堀江&gt;</p>
+						<p>
+							  ☆キミが力尽きて<br>
+							    ひざまづいた時は<br>
+							    空を見上げてごらん<br>
+							  ★夢がくずれ去って<br>
+							    闇に包まれても<br>
+							    ボクを忘れちゃだめさ<br>
+							☆★永遠に  ROUND &amp; ROUND<br>
+							    果てぬ  ENDLESS-SUN<br>
+							  ☆夜明けは  また来るから</p>
+						<p>
+							☆★キミの  そばにいるのさ<br>
+							    おんなじ時を  生きてるのさ<br>
+							    いつも…<br>
+							    たとえ  会えない時も<br>
+							    心で肩を  組んでるのさ<br>
+							    IN THE SKY</p>
+						<p>
+							  ★ボクが旅して来た<br>
+							    傷だらけの道を<br>
+							    いつか教えてやろう<br>
+							  ☆キミが今出逢った<br>
+							    灰色の景色と<br>
+							    どこか似ているはずさ<br>
+							☆★人は  ROUND &amp; ROUND<br>
+							    誰も  SUMMER-TIME<br>
+							  ★季節を  たずねてゆく</p>
+						<p>
+							  ☆★どんな  苦しいことも<br>
+							      笑って言える  ときが来るさ<br>
+							      いつか…<br>
+							      心  開いてごらん<br>
+							      希望はキミの  翼なのさ<br>
+							      IN THE SKY</p>
+						<p>
+							      キミの  そばにいるのさ<br>
+							      おんなじ時を  生きてるのさ<br>
+							      いつも…<br>
+							      たとえ  会えない時も<br>
+							      心で肩を  組んでるのさ<br>
+							      IN THE SKY</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saintseiya-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

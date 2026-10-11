@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Congratulations! - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ああっ女神さまっ」</div>
+
+                    <div class="LyricTitle">Congratulations!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Goddess Family Club
+(井上喜久子、冬馬由美、久川　綾)</div>
+                    <div class="LyricStaff">作詞：長谷川たか<br>作曲・編曲：安田　武</div>
+
+                    <div class="LyricText">
+						<p>
+							腕お組んだ避暑地の散歩で<br>
+							偶然出会うchapelのwedding<br>
+							朝の風に溶け込む讃美歌<br>
+							幸せそうの二人</p>
+						<p>
+							覗いて行こうよ<br>
+							ちょうど誓の言葉が響く<br>
+							幸せ分けてほしい<br>
+							あなたお横目で見る</p>
+						<p>
+							鐘が鳴るわ<br>
+							花びらが舞うわ<br>
+							心お満たす確かな愛<br>
+							きゅうにわたし涙が溢れて<br>
+							あなたのshirtで拭いた</p>
+						<p>
+							「おめでとー！」<br>
+							「ありがとうー！」<br>
+							白いbouquetお差出す新婦<br>
+							「幸せ分けてあげる」<br>
+							隣で微笑む彼</p>
+						<p>
+							二人乗せた車が動くと<br>
+							あなた大きな欠伸ひとつ<br>
+							ぎゅうっと腕お抓って上げたの<br>
+							思いに築くかしら</p>
+						<p>
+							あっ　帰り道照れながら<br>
+							「いつか君と暮らしたい」<br>
+							まさかproposeなの</p>
+						<p>
+							腕お組んだ避暑地の散歩で<br>
+							偶然出会うchapelのwedding<br>
+							きっとわたし予感してたの<br>
+							未来お誘っていた</p>
+						<p>
+							駅のフォム列車が動くと<br>
+							離れられない二人になる<br>
+							あなたどこで手に入れてきたの<br>
+							眩しい指輪見せた！</p>
+						<p>
+							震える指にくれた</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

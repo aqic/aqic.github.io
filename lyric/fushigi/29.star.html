@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Star - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Star</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐藤朱美</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：清岡千穂<br>編曲：矢野立美</div>
+
+                    <div class="LyricText">
+						<p>
+							あなたは私　忘れないで<br>
+							私はあなた　愛は１つ</p>
+						<p>
+							北風がうそぶいて冷える夜は　胸が痛いよ<br>
+							でも　眩しく凛々しい宇宙は渡せない　Star</p>
+						<p>
+							甘くせつなくて涙ぐみそうになる　今が大好き<br>
+							あなたのためにも『生きたい』と願うとき　心は強くなる<br>
+							星は光ってるもう目覚めたがってる　涙を超えて<br>
+							たった一人でも幸せに出来るなら<br>
+							すべてを守れるように　輝いている Star of Love</p>
+						<p>
+							最高の幸福(しあわせ)と不幸が<br>
+							最愛を求め試しに来る</p>
+						<p>
+							それでも愛さずにはいられなくて　背筋伸ばすの<br>
+							この　歯がゆくいじらしい宝は壊せない　Love</p>
+						<p>
+							辛く険しくて挫けそうになっても　今を逃げない<br>
+							私のためにも頑張る後ろ姿　誇りに思うから<br>
+							星は祈ってるもう解き放っている　嵐を超えて<br>
+							たった１人でも愛する人がいれば<br>
+							今日より明日はもっと　輝いている Star of Love</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

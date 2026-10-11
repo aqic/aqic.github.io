@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>はにゅうの宿 - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">火垂るの墓</div>
+
+                    <div class="LyricTitle">はにゅうの宿</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Amelita Galli - Curuci</div>
+                    <div class="LyricStaff">原題：Home, Sweet Home<br>作詞：F.Payne<br>作曲：H.Bishop</div>
+
+                    <div class="LyricText">
+						<p>
+							Mid pleasures and palaces though we may room,<br>
+							Be it ever so humble, there's no place like home.<br>
+							A charm from the skies seems to hallow us there,<br>
+							Which, seek thro' the world, is ne'er met with elsewhere.<br>
+							Home! home! sweet, sweet home;<br>
+							There's no place like home, there's no place like home!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

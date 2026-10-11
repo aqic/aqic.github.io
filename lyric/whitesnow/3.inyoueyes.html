@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>In Your Eyes - 新白雪姫伝説プリーティア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">新白雪姬伝說 Hayate's image song</div>
+
+                    <div class="LyricTitle">In Your Eyes</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">鳥海浩輔</div>
+
+                    <div class="LyricText">
+						<p>
+							見つめてる　おまえの瞳が<br>
+							迷ってる　どっかでなんかを　探して<br>
+							なのに俺は　ひどい言葉を吐く<br>
+							慰めは　卑怯な　気がして</p>
+						<p>
+							映ってる　俺のこの姿<br>
+							悔やんでる　やっぱり言うんじゃ　なかった<br>
+							もしかしたら　おまえが突然に<br>
+							この場から　消えてく　気がして</p>
+						<p>
+							なあおかしいだろう、でも</p>
+						<p>
+							In your eyes　見るしかないのさ<br>
+							俺の　あしたのそのすべて<br>
+							In your eyes　痛いくらい<br>
+							その中に　In your eyes　泣いてくれないか<br>
+							In your eyes　全部の涙で<br>
+							ああ、いつか　その頬を拭ける　。。。嵐になる</p>
+						<p>
+							呼んでいる　おまえの心が<br>
+							わかってる　そんなの全然　誤解さ<br>
+							強いて言えば　俺ってゆう奴を<br>
+							運命が　試して　いるだけ</p>
+						<p>
+							なあおかしいだろう、でも</p>
+						<p>
+							In your eyes　会うしかないのさ<br>
+							過去の　悲しみに今夜も<br>
+							In your eyes　思い出して<br>
+							しまうから　In your eyes　泣いてもいいかい<br>
+							In your eyes　そういうときには<br>
+							ああ、いつか　飛び立てる日まで　。。。風に向け</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-whitesnow-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

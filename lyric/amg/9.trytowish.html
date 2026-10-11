@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Try To Wish~キミに必要なもの~ - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ああっ女神さまっ」オープニング・ソング(2000)</div>
+
+                    <div class="LyricTitle">Try To Wish~キミに必要なもの~</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">西端さおり</div>
+                    <div class="LyricStaff">作詞：高柳　恋<br>作曲：極松伸夫<br>編曲：井上日捨</div>
+
+                    <div class="LyricText">
+						<p>
+							唇かみしめ震えだす肩<br>
+							言葉じゃないよね　キミになもの<br>
+							私ならここにいる<br>
+							痛さを隠さないで<br>
+							傷ぐらいじゃ心は<br>
+							少しも汚せないんだ</p>
+						<p>
+							☆Try To Wish　願いは必ず叶う<br>
+							　どんな苦しみも力に変えてみせる<br>
+							　We have to wish</p>
+						<p>
+							乾いた地面に咲く花を見た<br>
+							ふたりがそんなに弱くはない証拠さ<br>
+							自分のためじゃなくて<br>
+							キミのために泣きたい<br>
+							流す涙はきっと<br>
+							この星の水になれる</p>
+						<p>
+							Try To Wish　願いをあきらめないよ<br>
+							どんな今日であっても明日〈あした〉は違うはずさ<br>
+							We have to wish</p>
+						<p>
+							☆くりかえし<br>
+							Yes, we have to wish</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

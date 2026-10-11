@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Waru -Bad Blood- - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Waru -Bad Blood-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高木　涉</div>
+
+                    <div class="LyricText">
+						<p>
+							歪む月　搔きむしった<br>
+							胸の中　騷ぎ立てる<br>
+							罪なんて言う感情を　脫ぎ捨てて　俺は眠る<br>
+							Noisy,Noixy,Silent Night</p>
+						<p>
+							中途半端な生き方じゃ<br>
+							俺が消えて行きそうになる<br>
+							温もりや優しはいらない<br>
+							WARUな瞳を凝らし　明日の獲物睨んだ<br>
+							Wow Wow Wow Wow</p>
+						<p>
+							Shaking Shaking In My Soul<br>
+							天使と悪魔<br>
+							Shaking Shaking In My Soul<br>
+							背中合わせになる<br>
+							Shaking Shaking In My Soul<br>
+							モザイク越しから<br>
+							Shaking Shaking In My Soul<br>
+							見え隱れしている<br>
+							摇れる想いを　擊ち殺してる　Any Time</p>
+						<p>
+							紅い薔薇　欲しくなれば<br>
+							刺だって　握り締める<br>
+							欲望に疼く傷と　引き換えに甘い香り<br>
+							Noisy,Noixy,Silent Night</p>
+						<p>
+							けの身体を流れている<br>
+							熱い血潮の思うままに<br>
+							生きて来た事、　悔やみはしない<br>
+							正解なんて何処にもありはしないから<br>
+							Wow Wow Wow Wow</p>
+						<p>
+							Shaking Shaking In My Soul<br>
+							YESかNOか<br>
+							Shaking Shaking In My Soul<br>
+							自分で決めるだけ<br>
+							Shaking Shaking In My Soul<br>
+							コザイクはなしで<br>
+							Shaking Shaking In My Soul<br>
+							信念を振りかざし<br>
+							ヤワな想いを　擊ち殺しては　Any Time</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

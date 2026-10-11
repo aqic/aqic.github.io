@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>For フルーツバスケット（日中対訳） - フルーツバスケット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Fruits Basket-OP</div>
+
+                    <div class="LyricTitle">For フルーツバスケット（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">岡崎　律子</div>
+                    <div class="LyricStaff">作詞・作曲：岡崎　律子<br>編曲：村山達哉</div>
+
+                    <div class="LyricText">
+						<p>
+							とてもうれしかったよ 君が笑いかけてた<br>
+							すべてを溶かす微笑みで</p>
+						<p>
+							春はまだ遠くて つめたい土の中で<br>
+							芽吹く瞬間を待ってたんだ</p>
+						<p>
+							たとえば苦しい今日だとしても<br>
+							昨日の傷を残していても<br>
+							信じたい 心ほどいてゆけると</p>
+						<p>
+							生まれ変わることはできないよ<br>
+							だけど変わってはいけるから<br>
+							Let's stay together いつも</p>
+						<p>
+							僕だけに笑って その指で ねえ触って<br>
+							望みばかりが果てしなく</p>
+						<p>
+							やさしくしたいよ もう悔やまぬように<br>
+							嘆きの海も越えていこう</p>
+						<p>
+							たとえ苦しい今日だとしても<br>
+							いつかあたたかな想い出になる<br>
+							心ごとすべてなげだせたなら</p>
+						<p>
+							ここに生きてる意味がわかるよ<br>
+							生まれおちた歓びを知る<br>
+							Let's stay together いつも</p>
+						<p>
+							たとえば苦しい今日だとしても<br>
+							いつかあたたかな想い出になる<br>
+							心ごとすべてなげだせたなら</p>
+						<p>
+							ここに生きてる意味がわかるよ<br>
+							生まれおちた歓びを知る<br>
+							Let's stay together いつも</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							我非常的高兴<br>
+							你能和我打招呼<br>
+							用那非常璀璨的笑容<br>
+							虽然距离春天还很久<br>
+							种子还是在冰冷的土里<br>
+							等待着发芽日的到来<br>
+							就算今天过的并不开心<br>
+							就算昨天的伤还没有痊愈<br>
+							我还是相信<br>
+							总会有海阔天空的一天<br>
+							虽然无法重新来过<br>
+							但我可以改变<br>
+							让我们一直保持开朗的心吧</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fruitsbasket-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

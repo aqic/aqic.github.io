@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Thanatos（日中対訳） - 新世紀エヴァンゲリオン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場版 Air/まごころを、君に</div>
+
+                    <div class="LyricTitle">Thanatos（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sagisu Shiro</div>
+                    <div class="LyricStaff">Lyrics:MASH<br>Music&amp;Arrange:Shiro SAGISU(鷺巢詩郎)</div>
+
+                    <div class="LyricText">
+						<p>
+							Now it's time,I fear to tell<br>
+							I've been holding it back so long<br>
+							But something strange deep inside of me is happening<br>
+							I feel unlike<br>
+							I've ever felt<br>
+							And it's makin' me scared<br>
+							That I may not be what I(think I am)</p>
+						<p>
+							What of us,what do I say<br>
+							Are we both from a different world<br>
+							Cos every breath that I take,I breathe it for you<br>
+							I couldn't face my life without you<br>
+							And I'm so afraid. There's nothing to comfort us<br>
+							What am I,if I can't be yours</p>
+						<p>
+							I don't sleep,don't feel a thing<br>
+							And my senses have all but gone<br>
+							Can't even cry from the pain,can't shed a tear now<br>
+							I realise<br>
+							We're not the same<br>
+							And it's makin' me sad<br>
+							Cos we can't fulfil our dream(in this life)</p>
+						<p>
+							So I must,let us break free<br>
+							I can never be what you need<br>
+							If there was a way,through the hurt<br>
+							Then I would find it<br>
+							I'd take the blows. Yes I would fight it<br>
+							But this is the one. Impossible dream to live<br>
+							What am I,if I can't be yours.</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							现在我是这么害怕述说<br>
+							我已坚持了如此长的时间<br>
+							但我心内正发生某些异変<br>
+							感觉<br>
+							不像从前<br>
+							而那使我恐惧<br>
+							也许我不再是（想象中的）我</p>
+						<p>
+							有关我们，我所能说的是<br>
+							我俩是否来自不同的世界<br>
+							因我的毎一吐息都为了你<br>
+							不能没你而活<br>
+							但我很害怕　没东西可以安慰我们<br>
+							我算什么　若我不能属于你</p>
+						<p>
+							(间奏及听起来像 evangelion 的几段背景合唱)</p>
+						<p>
+							我不再休憩或感觉<br>
+							失去了一切情感<br>
+							无法因悲伤而痛哭，甚至挤不出半滴涙<br>
+							我了解了<br>
+							人与人的隔阂（我们的不同）<br>
+							而那使我沮丧<br>
+							因我们此生无法実现梦想</p>
+						<p>
+							因此我必须使我们解脱<br>
+							我永不能成为你所要（希望）的<br>
+							若真有条透过苦痛的解决之道<br>
+							我将找到<br>
+							我会抵抗　没错我将战斗到底<br>
+							但这不过是个　异想天开的生活方式<br>
+							我算什么　若我无法属于你</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-eva-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

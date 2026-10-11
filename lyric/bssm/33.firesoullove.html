@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>聖・炎・愛～Fire Soul Love～ - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「美少女戦士セーラームーンR」イメージ・ソング</div>
+
+                    <div class="LyricTitle">聖・炎・愛～Fire Soul Love～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">富沢美知恵</div>
+                    <div class="LyricStaff">作詞：富田祐弘<br>作曲·編曲：樫原伸彦</div>
+
+                    <div class="LyricText">
+						<p>
+							恋は過激がいいわ<br>
+							甘い言葉はいやよ<br>
+							夢におぼれる前に<br>
+							瞳燃やしてGo Mad Love</p>
+						<p>
+							過去の傷跡痛む<br>
+							時がすりれば消える<br>
+							うそはつかずに生きて<br>
+							体砕けろGo For Break</p>
+						<p>
+							道はちぎれたネックレス<br>
+							孤独に負けはしないわ<br>
+							限り衣装脱ぎ捨て<br>
+							優雅にFighting Pose To You</p>
+						<p>
+							※Fire Soul Bird In Love<br>
+							　Fire Soul Bird In Love<br>
+							　立ち上がれ！Oh Oh Oh<br>
+							　Fire Soul Bird In Love<br>
+							　Fire Soul Bird In Love<br>
+							　明日を求めて！<br>
+							　I Love Passion</p>
+						<p>
+							恋に刺激が欲しい<br>
+							奇麗事など忘れ<br>
+							夢はこの手で掴む<br>
+							心だぎらすGo Mad Love</p>
+						<p>
+							道に落としたイヤリング<br>
+							惨めに拾いはしないわ<br>
+							赤いヒイル脱ぎ捨て<br>
+							おどけてFighting Pose To You</p>
+						<p>
+							Fire Soul Bird In Love<br>
+							Fire Soul Bird In Love<br>
+							走り出す！Oh Oh Oh<br>
+							Fire Soul Bird In Love<br>
+							Fire Soul Bird In Love<br>
+							幸せ求めて！<br>
+							I Love Passion</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

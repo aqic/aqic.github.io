@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>思い出がいっぱい - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2 熱闘編」オープニング・テーマ (1990)</div>
+
+                    <div class="LyricTitle">思い出がいっぱい</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">DoCo</div>
+                    <div class="LyricStaff">作詞：及川眠子<br>作曲：岩田雅之<br>編曲：有賀啓雄</div>
+
+                    <div class="LyricText">
+						<p>
+							始業ベル気にしながら　駆けてくるクラスメイト<br>
+							声かけるの　ねぇ「おはよう！」<br>
+							夏草が薫る舗道　微笑みで始まる朝<br>
+							いつもと同んなじだけど</p>
+						<p>
+							さりげない瞬間さえ　私の宝物<br>
+							こころのアルバムに　貼ってある</p>
+						<p>
+							※忘れない（この空を）<br>
+							　忘れない（この夢を）<br>
+							　あなたといま分けあう　優しい季節<br>
+							　悲しくて（揺れた日も）<br>
+							　嬉しくて（泣いた日も）<br>
+							　大切な思い出なの</p>
+						<p>
+							陽が当たる渡り廊下　友達に打ち明けたね<br>
+							素敵なひと　でも「ナイショ…」<br>
+							切りすぎた髪を悔やみ　眠れない夜もあった<br>
+							いつかは笑えるかしら</p>
+						<p>
+							さざ波がさらうように　はかなく消えた恋<br>
+							痛みが過去形に　変わっても</p>
+						<p>
+							忘れない（あの虹を）<br>
+							忘れない（あの愛を）<br>
+							そうオトナになっても　なくしたくない<br>
+							はしゃいでた（いつだって）<br>
+							悩んでた（いまだって）<br>
+							まぶしさは終わらないの</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

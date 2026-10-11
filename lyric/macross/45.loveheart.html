@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>突擊Love Heart - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">突擊Love Heart</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Fire Bomber</div>
+                    <div class="LyricStaff">作詞 : K. INOJO<br>作曲 : 河內淳貴<br>編曲 : 河內淳貴</div>
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							Let's Go 穿過吧 朝向在夢裏所看見的黎明<br>
+							雖然還是很遠<br>
+							Maybe 若然有愛存在何時也 會越過障外</p>
+						<p>
+							倘若聽我們歌聲 ( Listen To My Song )<br>
+							簡單的事情 ( It's So Easy )<br>
+							所謂使兩心相交</p>
+						<p>
+							*在夜空奔馳的Love Heart 裝上熱情思念<br>
+							把悲痛和憎恨 遂一擊落<br>
+							在妳的胸膛也是 Love Heart 直接止命運<br>
+							朝向幾憶光年後那方也是 沖擊Love Heart</p>
+						<p>
+							Let's Dance 星星們也歌唱<br>
+							一剎那的時間也能把它延長<br>
+							當拍動翅膀 Bock With Me<br>
+							Baby 因為會設法闖過 所請牽緊我的手<br>
+							請聽我的歌聲 ( Listen My Song )<br>
+							把能量癹出來 ( It's so Easy )<br>
+							直至最後也不會放棄</p>
+						<p>
+							** 朝向明天奔馳的 Love Heart 畫出赤紅色的軌跡<br>
+							把心跳和微笑 逐一散播<br>
+							在所有的心 Love Heart 好像火花四散的心靈感應<br>
+							溢出的思念是流線型 沖擊 Love Heart</p>
+						<p>
+							Repeat *</p>
+						<p>
+							Repeat **</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

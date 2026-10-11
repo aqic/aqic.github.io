@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Water Drop - CLAMP</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">CLAMP学園探偵団(IS)</div>
+
+                    <div class="LyricTitle">Water Drop</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ALI PR0JECT</div>
+                    <div class="LyricStaff">作詞：宝野アリカ<br>作曲：片倉三起也<br>編曲：片倉三起也</div>
+
+                    <div class="LyricText">
+						<p>
+							あふれる想いは<br>
+							どうして生まれるの<br>
+							透明な泉で<br>
+							心は出来てる<br>
+							あなたを知って　気づいたの</p>
+						<p>
+							はるかな昔から<br>
+							水は命を生み<br>
+							森は息を返し<br>
+							星は闇を照らす<br>
+							そして人は　誰かを愛する<br>
+							ただひとりだけに<br>
+							だいじな言葉を　伝えて</p>
+						<p>
+							逢えない夜には<br>
+							夢の入り口で<br>
+							あなたを待ってる<br>
+							離れ離れでも<br>
+							同じ明日を　見つめたい</p>
+						<p>
+							はるかな昔から<br>
+							雨は空ヘ帰り<br>
+							花は土に抱かれ<br>
+							鳥は歌をうたう<br>
+							そして私　あなたを愛する<br>
+							その腕のなかで<br>
+							懐かしい鼓動　聞くのよ</p>
+						<p>
+							はるかな未来にも<br>
+							水は命を生み<br>
+							森は息を返し<br>
+							星は闇を照らす<br>
+							ずっと私　変わらず愛する<br>
+							今あなただけに<br>
+							好きって言葉を言えるの</p>
+						<p>
+							どんなものからも<br>
+							あなたのすべてを　守るわ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-clamp-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

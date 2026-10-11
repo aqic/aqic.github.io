@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>I'll be the one - ヒカルの碁</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">I'll be the one</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">H∧L</div>
+                    <div class="LyricStaff">作詞：H∧LNA<br>作曲：佐藤あつし<br>編曲：H∧L</div>
+
+                    <div class="LyricText">
+						<p>
+							この瞳　君の瞳に<br>
+							映るどんなモノも<br>
+							見極めて見せるよ　真実を</p>
+						<p>
+							僕達はこの時代に　どれだけの夢抱えて<br>
+							涙して迷いながら<br>
+							それに賭けてみてるの？<br>
+							僕は　それでも人にひけとらぬような<br>
+							決め手　見つけ　夢を手にするだろう</p>
+						<p>
+							この瞳　君の瞳に　映るどんなモノも<br>
+							見極めて見せるよ　真実だけ<br>
+							たとえ現実がきつく　埋もれそうでも<br>
+							こんな場所で終わる僕じゃない</p>
+						<p>
+							戦いに挑んでみて<br>
+							これほどに強気でいる<br>
+							僕だけど<br>
+							今愛する愛すべき君がいる<br>
+							そんな君に僕は何ができるだろう？<br>
+							でもね　いつも<br>
+							わがまま言うばかり<br>
+							よそ見しないでいて<br>
+							僕のことだけ見て<br>
+							いつでもいたいから<br>
+							愛しい人で<br>
+							会えた喜びがせつなさに変わるの<br>
+							｢じゃあね｣と手を振った瞬間に</p>
+						<p>
+							君の瞳に映る人が　僕であると<br>
+							信じてもいい？　離れてる日も<br>
+							この瞳　君の瞳に　映る景色たちが<br>
+							同じであるように　そう願ってる<br>
+							永遠なんてモノ　ないかもしれないよ<br>
+							だけど　今は…　ふたりで歩こう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-hikago-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

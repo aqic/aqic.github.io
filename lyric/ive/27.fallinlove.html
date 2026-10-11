@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Fall in Love - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">こすちゅーむ</div>
+
+                    <div class="LyricTitle">Fall in Love</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">AKI</div>
+                    <div class="LyricStaff">作詞：三上誠一<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							With your love　悲しみを越えたい日々に<br>
+							With my life　希望を見い出したいから</p>
+						<p>
+							せつなさから解き放たれたくて　今を泣く<br>
+							たとえこの苦しみを分かち合えなくても<br>
+							言葉にならないほどに　想いが込み上げて<br>
+							かつてないほどの愛しさ　あなたにあげたい</p>
+						<p>
+							Cry Cry in your mind<br>
+							so, Kiss Kiss in my face<br>
+							揺らめく想い　探して<br>
+							Cry Cry in your heart<br>
+							so, Seek Seek in my brain<br>
+							まどろみの中　あなたを・・・・・</p>
+						<p>
+							With your hope　思い出に帰りたい日々に<br>
+							With my tears　やさしさより強さが欲しい</p>
+						<p>
+							悲しみから解き放たれたくて　逃げていた<br>
+							ずっと　ずっと　この苦しみを越えられなくて</p>
+						<p>
+							Cry Cry in your mind<br>
+							so, Kiss Kiss in my face<br>
+							巡り会うこと　続けて<br>
+							Cry Cry in your heart<br>
+							so, Seek Seek in my brain<br>
+							まどろみの中　あなたを・・・・・</p>
+						<p>
+							悲しみから解き放たれたくて　逃げていた<br>
+							ずっと　ずっと　この苦しみを越えられなくて</p>
+						<p>
+							Cry Cry in your mind<br>
+							so, Kiss Kiss in my face<br>
+							巡り会うこと　続けて<br>
+							Cry Cry in your heart<br>
+							so, Seek Seek in my brain<br>
+							まどろみの中　あなたを・・・・・</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

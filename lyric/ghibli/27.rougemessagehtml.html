@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ルージュの伝言 - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">魔女の宅急便</div>
+
+                    <div class="LyricTitle">ルージュの伝言</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">荒井 由実</div>
+                    <div class="LyricStaff">作詞・作曲：荒井 由実<br>編曲：松任谷 正隆</div>
+
+                    <div class="LyricText">
+						<p>
+							あのひとのママに会うために<br>
+							今、ひとり列車に乗ったの<br>
+							たそがれせまる街並や車の流れ<br>
+							横目で追い越して</p>
+						<p>
+							あのひとはもう気づくころよ<br>
+							バスルームにルージュの伝言<br>
+							浮気な恋をはやくあきらめないかぎり<br>
+							家（うち）には帰らない</p>
+						<p>
+							※　不安な気持ちを残したまま<br>
+							　　街はDing-Dong遠ざかってゆくわ<br>
+							　　明日の朝ママから電話で<br>
+							　　しかってもらうわ　MY Darling!</p>
+						<p>
+							あのひとはあわててるころよ<br>
+							バスルームにルージュの伝言<br>
+							てあたりしだい友達にたずねるかしら<br>
+							私の行く先を</p>
+						<p>
+							　（※くりかえし）</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

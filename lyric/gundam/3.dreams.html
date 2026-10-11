@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>DREAMS - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ朝日系アニメ「機動新世紀ガンダムＸ」オープニングテーマ</div>
+
+                    <div class="LyricTitle">DREAMS</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ROmantic Mode</div>
+
+                    <div class="LyricText">
+						<p>
+							忘れかけた夢が今動きだす<br>
+							胸の隙間　少しずつ埋めるように</p>
+						<p>
+							※凍りついた記憶が目覚める瞬間<br>
+							　始まる未来だけをいま願う</p>
+						<p>
+							いつか見たあの夢を　両手で抱きしめて<br>
+							離さずあきらめずに　信じ続けたい<br>
+							いつか見たあの夢を　この手に掴むまで<br>
+							想いを忘れないで　追い続けていきたいから</p>
+						<p>
+							人の波に挫けそうな時にも<br>
+							忘れないで　一人きりじゃないこと<br>
+							温めた手のひらに残された夢を<br>
+							いつか光に変える日の為に</p>
+						<p>
+							＃いつの日もこの胸に　想いを抱きしめて<br>
+							　輝く時の中で守り続けたい<br>
+							　いつか見たあの夢に　たどりつく時まで<br>
+							　この手を離さないで　追い続けていきたいから</p>
+						<p>
+							※繰返し</p>
+						<p>
+							いつか見たあの夢を　両手で抱きしめて<br>
+							離さずあきらめずに　信じ続けたい</p>
+						<p>
+							＃繰返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

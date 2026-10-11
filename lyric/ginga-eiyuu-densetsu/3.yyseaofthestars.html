@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Sea of the Stars - 銀河英雄伝説</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Galaxy hero Legends</div>
+
+                    <div class="LyricTitle">Sea of the Stars</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">LISA</div>
+                    <div class="LyricStaff">作詞：LISA<br>作曲：川邊真<br>編曲：風戶慎介</div>
+
+                    <div class="LyricText">
+						<p>
+							No need for crying,<br>
+							let out your feelings,<br>
+							wide through the space,<br>
+							where time just endlessly spins,<br>
+							twinkling tears of night,<br>
+							darkness turns of night,<br>
+							Sailing so free, Sailing in peace,<br>
+							lay your heart down<br>
+							onto the sea of the stars.</p>
+						<p>
+							Struggling and losing,<br>
+							never returning,<br>
+							into the dreams,<br>
+							of all the planets that sleep,<br>
+							Rainbow colored stars,<br>
+							gently taps the heart,<br>
+							Dreaming along, high above all,<br>
+							A waken now<br>
+							upon the sea of the stars.</p>
+						<p>
+							Life is a gift from above,<br>
+							still there always an end,<br>
+							Deep within hatred is<br>
+							beauty of love that sing.</p>
+						<p>
+							No need for crying,<br>
+							you won't be lonely,<br>
+							whisper a prayer,<br>
+							to souls that endlessly live,<br>
+							sparkling dusts of tears,<br>
+							soon shall disapper,<br>
+							trust and forgive,<br>
+							Universe back in peace,<br>
+							Rise now oh child<br>
+							upon the sea of the stars.<br>
+							Rise now oh child<br>
+							upon the sea of the stars.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ginga-eiyuu-densetsu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

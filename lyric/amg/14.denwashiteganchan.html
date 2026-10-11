@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>デンワして岩ちゃん - ああっ女神さまっ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ああっ女神さまっ∼小っちゃいって事は便利だねっ∼</div>
+
+                    <div class="LyricTitle">デンワして岩ちゃん</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">GODDESS FAMILY CLUB</div>
+
+                    <div class="LyricText">
+						<p>
+							約束の時間は かなり きてるけれど<br>
+							不思議色の花の香りに 誘われた好奇心<br>
+							やりたいことは いっぱい<br>
+							氣になるの しょうがない<br>
+							寄り道はね 秘密のチョコレ－ト<br>
+							すぐ 行かなきゃ 溶けちゃうわ<br>
+							今頃 君は心配で わたしを 待ってる ゴ·メ·ン<br>
+							どうしても 會いたいなら お早めにね だから<br>
+							デンワ デンワしてね 每日<br>
+							デンワ デンワしてね いつでも<br>
+							雲の上で パ－ティ－なんて してても<br>
+							ねぇ 岩ちゃん</p>
+						<p>
+							はい!ですだ～!</p>
+						<p>
+							デンワ デンワしてね 每日<br>
+							デンワ デンワしてね 探し出してね<br>
+							おいかけてね 岩ちゃん</p>
+						<p>
+							任せてくれですだ～!<br>
+							歌は世に連れ 世は歌に連れ<br>
+							それでは スクルドさん どうぞ～!</p>
+						<p>
+							まっすぐ步くのは ちょっと 難しくて<br>
+							踊りながら ヒップ·ホップ·ステップで<br>
+							ジャンプして 飛び越えて<br>
+							發見したの いっぱい<br>
+							君に敎えてあげたい</p>
+						<p>
+							ぜひ～!</p>
+						<p>
+							笑い聲は ときめくメロディ－<br>
+							感動して 泣けちゃうわ</p>
+						<p>
+							おらも 泣けますな～! ウオ～!</p>
+						<p>
+							君に見えないものが 私に見えるの 信じる?<br>
+							どうしても 知りたいなら いますぐにね だから<br>
+							デンワ デンワしてね 每日<br>
+							デンワ デンワしてね いつでも<br>
+							海の底で お晝寢なんて してても<br>
+							ねぇ 岩ちゃん</p>
+						<p>
+							飛び起きるですだ～!</p>
+						<p>
+							デンワ デンワしてね 每日<br>
+							デンワ デンワしてね 離れていても<br>
+							つながってね 岩ちゃん</p>
+						<p>
+							ハ－トと ハ－トが 溶け行くですだ～!</p>
+						<p>
+							デンワ デンワしてね 每日<br>
+							デンワ デンワしてね いつでも<br>
+							虹の上で スケ－トなんて してても<br>
+							ねぇ 岩ちゃん</p>
+						<p>
+							色っぽいですだ～!</p>
+						<p>
+							デンワ デンワしてね 每日<br>
+							デンワ デンワしてね 探し出してね<br>
+							おいかけてね 岩ちゃん</p>
+						<p>
+							おいかけるんだ～!<br>
+							やっと おらの魅力に氣づいただな～<br>
+							おら 男前だし やさしいし 感賞はあるし<br>
+							どうするだかな?<br>
+							ベルダンディさんは 魅力的だし<br>
+							スクルドさんは かわいいし<br>
+							でも 將の事を考えるとウルドさんだけはやめた方が いいな...</p>
+						<p>
+							岩ちゃん? まさか あんた 本氣にしたの?</p>
+						<p>
+							No～～～～～～!!!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-amg-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

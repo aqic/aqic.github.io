@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>トワイライト～夕暮れ便り～ - ダーティペア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ダーティ・ペア：トワイライトからのメッセージ」エンディング・テーマ (1991)</div>
+
+                    <div class="LyricTitle">トワイライト～夕暮れ便り～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">中森明菜</div>
+                    <div class="LyricStaff">作詞：来生えつこ<br>作曲：来生たかお<br>編曲：四月馬鹿</div>
+
+                    <div class="LyricText">
+						<p>
+							こめかみには夕陽のうず<br>
+							てりかえす海　太陽にそまる</p>
+						<p>
+							日傘の下　目を細めて<br>
+							あおいだ景色　あなたにも見せない</p>
+						<p>
+							絵はがきを　一枚だけ<br>
+							さりげなく　あなたへ出すの<br>
+							元気です　一行だけ<br>
+							したためて　ポストへ落とす</p>
+						<p>
+							やはりあなたと　一緒にいたい<br>
+							ひとこと書きあぐね</p>
+						<p>
+							感じますか　届きますか<br>
+							このたそがれと　恋ごころまでも</p>
+						<p>
+							まぶしいほど　苦しいほど<br>
+							あなたへの愛　迷わない　今なら</p>
+						<p>
+							明日もう一度　心をこめて<br>
+							手紙を書くつもり</p>
+						<p>
+							感じますか　届きますか<br>
+							このたそがれと　恋ごころまでも</p>
+						<p>
+							あなたが好き　苦しいほど<br>
+							もう迷わずに　今日からは言えます</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dirtypair-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

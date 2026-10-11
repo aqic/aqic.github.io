@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風が見える日 - KID</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">風が見える日</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">豊嶋真千子(川名みさき)</div>
+                    <div class="LyricStaff">作詞：岡崎律子/並河祥太<br>作曲：岡崎律子<br>編曲：岩室晶子</div>
+
+                    <div class="LyricText">
+						<p>
+							儚いものたち<br>
+							この手に　ふれたい<br>
+							風に　運ばれる<br>
+							ふわり　ふわり　ふわ</p>
+						<p>
+							今は　咲けない　恋をしても<br>
+							せいいっぱい<br>
+							温もりも　寂しさも<br>
+							みんな　私になれ</p>
+						<p>
+							勇気だして　傷ついても<br>
+							どこまでも　歩いてく<br>
+							めぐり逢う　すべてが　また<br>
+							新しい　風になる</p>
+						<p>
+							彷徨うものたち<br>
+							行方も　見えない<br>
+							それでも　愛しい<br>
+							命・心・夢</p>
+						<p>
+							どんな　悲しい　ことあっても<br>
+							終わりじゃない<br>
+							悔しさも　空しさも<br>
+							生きる力になれ</p>
+						<p>
+							目を閉じれば　思い出せる<br>
+							微笑みの　輪郭を<br>
+							すれ違う　涙も　ほら<br>
+							明日への　虹になる</p>
+						<p>
+							勇気だして　傷ついても<br>
+							どこまでも　歩いてく<br>
+							めぐり逢う　すべてが　今<br>
+							新しい　風になる<br>
+							果てしなく　長い道を<br>
+							どこまでも　歩いてく</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kid-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

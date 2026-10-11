@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Powder Snow - WHITE ALBUM</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">White Album</div>
+
+                    <div class="LyricTitle">Powder Snow</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">AKKO</div>
+                    <div class="LyricStaff">作詞：須谷尚子<br>作·編曲：下川直哉</div>
+
+                    <div class="LyricText">
+						<p>
+							粉雪が空から 優しく降りてくる<br>
+							手のひらで受け止めた 雪が切ない<br>
+							どこかで見てますか あなたは立ち止まり<br>
+							思い出していますか 空を見上げながら</p>
+						<p>
+							嬉しそうに雪の上を歩くあなたが<br>
+							私には本当に いとおしく見えた</p>
+						<p>
+							今でも覚えている あの日見た雪の白さ<br>
+							初めて触れた唇の温もりを忘れない<br>
+							I still love you．</p>
+						<p>
+							粉雪が私に いくつも降りかかる<br>
+							暖かいあなたの 優しさに似ている<br>
+							楽しそうに話しをしてくれたあなたが<br>
+							私には心から恋しく思えた</p>
+						<p>
+							今でも夢を見るの あの日見た白い世界<br>
+							あの時触れた指先の冷たさを忘れない<br>
+							I still love you．</p>
+						<p>
+							今でも覚えている あの日見た雪の白さ<br>
+							初めて触れた 唇の温もりを忘れない</p>
+						<p>
+							粉雪のようなあなたは 汚れなく奇麗で<br>
+							私もなりたいと雪に願う<br>
+							I still love you</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-whitealbum-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

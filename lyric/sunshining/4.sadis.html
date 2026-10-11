@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>悲しみはBEATにかえて - 陽あたり良好!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">悲しみはBEATにかえて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">尾崎 亜美</div>
+                    <div class="LyricStaff">作詞：尾崎 亜美<br>作曲：尾崎 亜美<br>編曲：尾崎 亜美</div>
+
+                    <div class="LyricText">
+						<p>
+							こぼれた　青い tears<br>
+							にじんだの　blue sky<br>
+							だけど　どこからか　不思議なエナジー<br>
+							爪先が刻み出す<br>
+							８beat あなたの　heart beat</p>
+						<p>
+							まちがいのない答案用紙より<br>
+							はみ出したラインが　愛しくて<br>
+							たいせつな歴史だと　思える日もくる<br>
+							私のフィールド　走るために</p>
+						<p>
+							Rise and shine<br>
+							苦い朝も　いつも　あなた<br>
+							まっすぐな瞳で　見ててくれた</p>
+						<p>
+							Rise and shine<br>
+							明日の朝は　きっと　言うわ<br>
+							向かい風に　負けないように  バランスが危うい　generation<br>
+							ひびわれた心が　痛んでも<br>
+							だいじょうぶ　悲しみを<br>
+							悲しむ時間もある<br>
+							悲しみをbeatに変えてみせる</p>
+						<p>
+							Rise and shine<br>
+							そんな朝は　傷あとさえ<br>
+							輝くような　勲章なの</p>
+						<p>
+							Rise and shine<br>
+							明日の朝は　きっと　言うわ<br>
+							向かい風に　負けないように</p>
+						<p>
+							Rise and shine<br>
+							苦い朝も　いつも　あなた<br>
+							まっすぐな瞳で　見ててくれた</p>
+						<p>
+							Rise and shine<br>
+							明日の朝は　きっと　言うわ<br>
+							向かい風に　負けないように</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sunshining-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

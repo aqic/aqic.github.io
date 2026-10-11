@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>明日は明日 - 電影少女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「電影少女」挿入歌</div>
+
+                    <div class="LyricTitle">明日は明日</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桂　正和</div>
+                    <div class="LyricStaff">作詞：岡田　徹<br>作曲：田口　俊<br>編曲：岡田　徹</div>
+
+                    <div class="LyricText">
+						<p>
+							恋をするたびに<br>
+							傷ついてきたよね<br>
+							あふれる想いは<br>
+							なぜ　からまわり<br>
+							夢を追うたびに<br>
+							落ちこんでいたよね<br>
+							過ぎ たきのうは<br>
+							くやしい事だらけさ</p>
+						<p>
+							だけど今日二人<br>
+							こうして逢えた<br>
+							悪い事ばかりじゃない　きっと</p>
+						<p>
+							明日は明日の風が吹くさ　baby<br>
+							泣かないで　僕と恋をしよう<br>
+							夢　追いかけよう</p>
+						<p>
+							半分　未来をあきらめていたよね<br>
+							生きていく理由【わけ】が<br>
+							時々わかたなくて</p>
+						<p>
+							だけど今日やっと<br>
+							気がついたんだ<br>
+							こんなにも近くにある答え</p>
+						<p>
+							明日は明日の風が吹くさ　baby<br>
+							ほほえんでごらん<br>
+							君らしく<br>
+							明日は明日の風が吹くさ　baby<br>
+							泣かないで　僕と恋をしよう<br>
+							夢　追いかけよう</p>
+						<p>
+							恋をするたびに<br>
+							傷ついた　lonely girls<br>
+							あふれる想いは<br>
+							さぁ　届けよう<br>
+							夢を追うたびに<br>
+							落ちこんだ　lonely boys<br>
+							過ぎ たきのうは<br>
+							さぁ　さよならしようよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-video-girl-ai-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

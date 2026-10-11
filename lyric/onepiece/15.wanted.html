@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>WANTED! - ONE PIECE</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">WANTED!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">田中真弓</div>
+
+                    <div class="LyricText">
+						<p>
+							Wanted! Wanted!　世界中の仲間達!<br>
+							Wanted! Wanted!　世界一のいいカンジ!<br>
+							お前ダレだ?<br>
+							おれ、モンキー・D・ルフィ<br>
+							海賊王になるおとこ!</p>
+						<p>
+							最初に会った時、ピンと来たんだ<br>
+							お前はおれと、「仲間」になるって</p>
+						<p>
+							最初に見た夢を　叶えたいんだ<br>
+							自信があるな。一人じゃ無理だって</p>
+						<p>
+							何も見えない海のまん中<br>
+							とてつもなくて、頭にくるけど<br>
+							だからきっと、何かがあるんだ<br>
+							とてつもなくて、すんごいヤツが!</p>
+						<p>
+							Wanted! Wanted!　世界中の仲間達!<br>
+							Wanted! Wanted!　世界一の大冒険!<br>
+							肉食わせろ!<br>
+							おれ、モンキー・D・ルフィ<br>
+							海賊王になるおとこ!</p>
+						<p>
+							なんて言われたって、信じてるんだ<br>
+							お前はおれの、「仲間」だからな</p>
+						<p>
+							何がすごいかって、出会えたことさ<br>
+							意地っ張りなら　誰も負けちゃいない</p>
+						<p>
+							誰も知らない海の果てには<br>
+							待ちきれなくて　こぼれる夢が…<br>
+							だからきっと、会いに行かなきゃ<br>
+							待ち切れなくて、消えちゃう前に</p>
+						<p>
+							Wanted! Wanted!　世界中の仲間達!<br>
+							Wanted! Wanted!　世界一のいいカンジ!<br>
+							お前ダレだ?<br>
+							おれ、モンキー・D・ルフィ<br>
+							海賊王になるおとこ!</p>
+						<p>
+							Wanted! Wanted!　世界中の仲間達!<br>
+							Wanted! Wanted!　世界一の大冒険!<br>
+							肉食わせろ!<br>
+							おれ、モンキー・D・ルフィ<br>
+							海賊王になるおとこ!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onepiece-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

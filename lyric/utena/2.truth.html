@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Truth - 少女革命ウテナ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「少女革命ウテナ」 エンディング(1997)</div>
+
+                    <div class="LyricTitle">Truth</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">裕未瑠華</div>
+                    <div class="LyricStaff">作詞：藤林聖子<br>作曲：荒井理生<br>編曲：平間あきひこ</div>
+
+                    <div class="LyricText">
+						<p>
+							※Missing truth &amp;<br>
+							　forever kissing love &amp;<br>
+							　true your heart<br>
+							　抱きしめて　ホントの手で<br>
+							　明日を開く鍵はreality<br>
+							　嘘を壊し続けたい…</p>
+						<p>
+							これ以上話をしても<br>
+							あなたから何も見えない<br>
+							知りたがってる迷惑な彼<br>
+							誤解されていたい<br>
+							昔の話にすがる<br>
+							大人には言い訳が似合う<br>
+							選ばれない天使たちに<br>
+							羽根さえもいらない</p>
+						<p>
+							＃Missing truth &amp;<br>
+							　forever kissing love &amp;<br>
+							　true your heart<br>
+							　明日の自分が好きと<br>
+							　信じているの<br>
+							　信じたいから<br>
+							　嘘に嫌われていたい…</p>
+						<p>
+							そんなこと思い出にして<br>
+							暖めていて　一人で<br>
+							私が欲しい赤い果実は<br>
+							あなたには見えない<br>
+							溜息に気づかないで<br>
+							泣き出した明日じゃ遅いよ<br>
+							風の強い夜を運ぶ<br>
+							微熱さえ愛しい</p>
+						<p>
+							＊Missing truth &amp;<br>
+							　forever kissing love &amp;<br>
+							　true your heart<br>
+							　真夜中の子供のように<br>
+							　涙を止める<br>
+							　愛を探して<br>
+							　ドアを叩き続けるの…</p>
+						<p>
+							　（＃・＊・※　繰返し）</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-utena-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

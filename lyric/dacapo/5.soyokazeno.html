@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>そよ風のハーモニー - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">そよ風のハーモニー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">白河ことリ(堀江由衣)</div>
+
+                    <div class="LyricText">
+						<p>
+							心の羽を癒すそよ風<br>
+							桜の木の下巡り合ってた.<br>
+							優しいひととき<br>
+							胸をあたためたの<br>
+							大切な人と呼んでしまっても良いですか<br>
+							風のささやきが<br>
+							微笑みをさそうの<br>
+							いつかこの気持ち<br>
+							届けられますように</p>
+						<p>
+							小さなつぼみを揺らす光<br>
+							瞳を閉じてそっと願うの<br>
+							言葉に出来ない<br>
+							思い切なくなる<br>
+							本当の私をあなたに見せても良いですか<br>
+							風と歌うように<br>
+							どこまでも一緒に<br>
+							飛んでゆけたなら<br>
+							今空がきれい</p>
+						<p>
+							風のささやきが<br>
+							微笑みをさそうの<br>
+							いつかこの気持ち<br>
+							届けられますように</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

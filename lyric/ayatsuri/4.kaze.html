@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風と木と光の街で - 人形草紙あやつり左近</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">人形草紙あやつり左近 Single-光なき夜をゆけ-C/W-</div>
+
+                    <div class="LyricTitle">風と木と光の街で</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">HUMMING BIRD</div>
+                    <div class="LyricStaff">作詞：福山恭子<br>作曲：福山芳樹<br>編曲：HUMMING BIRD</div>
+
+                    <div class="LyricText">
+						<p>
+							夕燒けに　さそわれて　海へと向かう道<br>
+							寄せる波　笑う君　空を染めて<br>
+							砂濱に　流れつく　遠き日々の歌<br>
+							風と木と　光の街で</p>
+						<p>
+							靜けさに　包まれて　古い船の上<br>
+							知らぬ間に　月明かり　海を照らす<br>
+							手のひらに　ふりそそぐ<br>
+							あたたかな世界<br>
+							風と木と　光の街で</p>
+						<p>
+							君とまた　この濱邊へ行こう<br>
+							悲しみに　やぶれそうな時は<br>
+							傷ついた日々も　あきらめた夢も<br>
+							君となら　きっと　海のかなたへ</p>
+						<p>
+							潮風を　あとにして　驛へ向かう道<br>
+							どこまでも　續いてよ　時を止めて<br>
+							さよならと　手をふって<br>
+							ふりかえるひとり<br>
+							風と木と　光の街で</p>
+						<p>
+							君とまた　この濱邊へ行こう<br>
+							いつの日か　子供達を連れて<br>
+							変わりゆく日々も　ありふれた夢も<br>
+							君となら　きっと　輝いてる</p>
+						<p>
+							君とまた　この濱邊へ行こう<br>
+							いつの日か　子供達を連れて<br>
+							変わりゆく日々も　ありふれた夢も<br>
+							君となら　きっと　輝いてる</p>
+						<p>
+							いつまでも　きっと　輝いてる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ayatsuri-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

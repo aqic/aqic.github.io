@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>遠いこの街で - カードキャプターさくら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">遠いこの街で</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">皆谷尚美</div>
+
+                    <div class="LyricText">
+						<p>
+							大好きだった　あの歌<br>
+							古いテープの中<br>
+							小さなキズ　色あせたタイトル<br>
+							にじんだ夜明け</p>
+						<p>
+							そしてまた　今日が来る<br>
+							夏の風を連れて<br>
+							慣れていく日々の片すみで<br>
+							ふと孤独に出会う</p>
+						<p>
+							自転車で　どこまでも<br>
+							風を蹴る速さ　忘れない</p>
+						<p>
+							lalalala　歌おう　空を見上げて<br>
+							lalalala　It's my life　歩いて行こう<br>
+							私の力で進む　果てしないこの道を</p>
+						<p>
+							いくつもの交差点　いつも迷うけど<br>
+							流されたり　追い越されたりして<br>
+							今を生きてる</p>
+						<p>
+							ぶつかること　認めること<br>
+							大人になっても　忘れない</p>
+						<p>
+							lalalala　歌おう　空を見上げて<br>
+							lalalala　It's my life　歩いて行こう<br>
+							私だけのものだから　自信持っていいよね</p>
+						<p>
+							生まれた街で　夢見てきた<br>
+							くじける度に　思い出す<br>
+							あの歌のように　今できることは<br>
+							少しでも前に　踏み出すこと</p>
+						<p>
+							lalalala　歌おう　空を見上げて<br>
+							lalalala　It's my life　歩いて行こう<br>
+							lalalala　歌おう　空を見上げて<br>
+							lalalala　It's my life　歩いて行こう<br>
+							私の力で進む　果てしないこの道を</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ccsakura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

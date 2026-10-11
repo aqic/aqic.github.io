@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>遥かなる想い - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">遥かなる想い</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">土井美加</div>
+
+                    <div class="LyricText">
+						<p>
+							私は　暗い波の沸きたつ砂浜に一人佇む<br>
+							今日も風は強い<br>
+							あの日　青い波と共に吹き寄せた風は<br>
+							私につきまとい　離れなかった<br>
+							髪を優しくなびかせ　全身に喜びを伝えた<br>
+							心地よさに酔いしれるうちに<br>
+							やがて　風は吹き去った<br>
+							頬に乱れてかかる長い髪に<br>
+							苛立たしさが満ちていた<br>
+							風は　恋のにがさ　愛の苦しさを残し<br>
+							私の心に月日と人の記憶を刻んで<br>
+							吹きぬけた<br>
+							青い海よ　暖かく輝く太陽よ<br>
+							もう一度　もう一度だけ　風を送って下さい</p>
+						<p>
+							優しき風よ　力強き風よ<br>
+							唄ってあげよう　さびしき心を<br>
+							唄ってあげよう　遥かな想いを<br>
+							私は一人　哀しく一人<br>
+							私を置いて　いかないで</p>
+						<p>
+							優しき風よ　力強き風よ<br>
+							唄っておくれ　楽しき時を<br>
+							唄っておくれ　愛の想いを<br>
+							あなたは風　さわやかな風<br>
+							吹きつづけて　いつまでも<br>
+							遥かな想い</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Realize - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Realize</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">玉置成實</div>
+                    <div class="LyricStaff">作詞︰BOUNCEBACK<br>作曲︰大谷靖夫<br>編曲︰荒井洋明、大谷靖夫</div>
+
+                    <div class="LyricText">
+						<p>
+							たどりつく場所さえも　わからない<br>
+							届くと信じて　今　想いを走らせるよ<br>
+							形変えてゆく　心もこの街も<br>
+							だけど消えない　願いがある<br>
+							違う夢をみて　同じ空ながめた<br>
+							あの日誓った　"負けないこと"<br>
+							ずっと　2人　この手つなげずに<br>
+							生まれてきた意味を　探してた</p>
+						<p>
+							たどりつく場所さえも　わからない<br>
+							届くと信じて　今　想いを走らせるよ<br>
+							過ちも　切なさも　越えるとき<br>
+							願いが光り抱きしめる　未来を呼び覚まして</p>
+						<p>
+							風に流れてく　あの雲の孤独を<br>
+							君もどこかで　感じてるの？<br>
+							夢を守るため　互いを傷つけ<br>
+							背中合わせに　歩いてきた<br>
+							きっと　いつか　解りあえるだろう<br>
+							同じ気持ちでいる　信じたい</p>
+						<p>
+							迷うこと恐れずに　羽ばたける<br>
+							鼓動が波打つ　まだ　夢をあきらめないで<br>
+							暗闇も　孤独にも　立ち向かう<br>
+							君と出会えた悦びを　必ず伝えにいこう</p>
+						<p>
+							たどりつく場所さえも　わからない<br>
+							届くと信じて　今　想いを走らせるよ<br>
+							過ちも　切なさも　離れても<br>
+							あの日と同じ、この空は...　君へと続いている</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>White Season - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">White Season</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Rino</div>
+
+                    <div class="LyricText">
+						<p>
+							夢のような　始まりの季節から<br>
+							重ねた時　思い出この胸の奥</p>
+						<p>
+							降り積もるよ　空に舞う雪のように<br>
+							白い奇蹟　夢叶う聖なる夜</p>
+						<p>
+							輝きだすよ<br>
+							想い　君に届けと</p>
+						<p>
+							見上げた空に　たくさんの星達<br>
+							私たちを包み込んで　この夜を越えたい<br>
+							きっと優しくなれるから　もっと強くならなきゃ<br>
+							君の笑顔　今すぐに</p>
+						<p>
+							待ち合わせに　少し早く来すぎて<br>
+							時計見てた　もう少し落ち着きたい<br>
+							胸の鼓動　ドキドキと早くなる<br>
+							君が見えた　手をあげ　いつもの笑顔</p>
+						<p>
+							心　溶けてく<br>
+							　涙　溢れてしまう</p>
+						<p>
+							いま降り出した　雪たちに包まれ<br>
+							この胸のときめきは　優しさに変わるよ<br>
+							ずっと私を包み込み　このままで永遠に<br>
+							抱きしめてね　側にいて</p>
+						<p>
+							見上げた空に　たくさんの星達<br>
+							私たちを包み込んで　この夜を越えたい<br>
+							きっと優しくなれるから　もっと強くならなきゃ<br>
+							君の笑顔　今すぐに</p>
+						<p>
+							見上げた空は　星たちが瞬き<br>
+							二人手を離さずに　この夜を越えたい<br>
+							ずっと一緒にいたいから　君と強くならなきゃ<br>
+							頑張るから　これからも</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

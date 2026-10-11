@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>For the brand-new Dream - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ３ ～君が通り過ぎたあとに～ オリジナルサウンドトラック、 タッチ Original Song Book</div>
+
+                    <div class="LyricTitle">For the brand-new Dream</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ＡＬＦＥＥ</div>
+                    <div class="LyricStaff">作詞：高見沢 俊彦<br>作曲：高見沢 俊彦<br>編曲：ＡＬＦＥＥ、新田 一郎</div>
+
+                    <div class="LyricText">
+						<p>
+							Don't you cry now, don't be sorry<br>
+							Yesterday is gone<br>
+							'Cause baby, all good thing must end</p>
+						<p>
+							Try to smile now, don't you worry<br>
+							Tomorrow's gonna come<br>
+							And baby, we can still be friends</p>
+						<p>
+							Though we have to part<br>
+							(It's time to go)<br>
+							I know in my heart<br>
+							(One thing I know)<br>
+							Life's what we make it, girl<br>
+							And this is just the start</p>
+						<p>
+							So baby, please remember<br>
+							When we say goodbye<br>
+							There'll be a brand-new dream<br>
+							For you and I</p>
+						<p>
+							Good luck and goodbye, baby<br>
+							Doesn't mean the end now, my baby<br>
+							We'll meet again now, baby<br>
+							We'll find a way<br>
+							For the brand-new dream  Did you ever get that feeling<br>
+							Dreams could all come true<br>
+							Just maybe, if you really try</p>
+						<p>
+							Now it's time to let that feeling<br>
+							Take control of you<br>
+							Oh baby, spred your wings and fly</p>
+						<p>
+							There's so much ahead<br>
+							(There's so much more)<br>
+							Life's an open door<br>
+							(So much in store)<br>
+							It's such a great big world<br>
+							What are you waiting for</p>
+						<p>
+							No baby, don't be lonely<br>
+							When you think of me<br>
+							Though far away I'll see you<br>
+							In my dreams</p>
+						<p>
+							Good luck and goodbye, baby<br>
+							Doesn't mean the end now, my baby<br>
+							We'll meet again now, baby<br>
+							We'll find a way<br>
+							For the brand-new dream</p>
+						<p>
+							So baby, please remember<br>
+							When we say goodbye<br>
+							There'll be a brand-new dream<br>
+							For you and I</p>
+						<p>
+							Good luck and goodbye, baby<br>
+							Doesn't mean the end now, my baby<br>
+							We'll meet again now, baby<br>
+							I just gotta say now, my baby</p>
+						<p>
+							Good luck and goodbye, baby<br>
+							Doesn't mean the end now, my baby<br>
+							We'll meet again now, baby<br>
+							But until that day now, my baby</p>
+						<p>
+							Good luck and goodbye, baby<br>
+							We'll find a way<br>
+							For the brand-new dream</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

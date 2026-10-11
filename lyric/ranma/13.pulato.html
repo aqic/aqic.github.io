@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>プラトニックつらぬいて - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2 熱闘編」エンディング・テーマ (1989)</div>
+
+                    <div class="LyricTitle">プラトニックつらぬいて</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">坂上香織</div>
+                    <div class="LyricStaff">作詞：松本　隆<br>作曲・編曲：後藤次利</div>
+
+                    <div class="LyricText">
+						<p>
+							誰もいない海辺に　あなたと二人<br>
+							はしゃぎすぎた時が　静まる</p>
+						<p>
+							無口になった瞳が　なぜかこわいわ<br>
+							空も海も波も　遠のくの</p>
+						<p>
+							Ah　小指が触れても　ショートしそうよ<br>
+							愛が育つまで　少し待って</p>
+						<p>
+							くちびるの砂粒　そっとはらって<br>
+							あなたの目の中の　私を見る</p>
+						<p>
+							※プラトニックをつらぬいてね<br>
+							　約束よ<br>
+							　プラトニックでつらぬいてね<br>
+							　あなたが好き</p>
+						<p>
+							不意に降りだした雨　あわてて二人<br>
+							道の車めがけ　走るの</p>
+						<p>
+							Ah　そんな乱暴に　腕をひいたら<br>
+							折れてしまいそう　優しくして</p>
+						<p>
+							心が決めること　その答えは<br>
+							無限の波だけが　知ってるのかも</p>
+						<p>
+							プラトニックをつらぬいてね<br>
+							今はまだ<br>
+							プラトニックでつらぬいてね<br>
+							痛いくらい</p>
+						<p>
+							ほんとのこと言えば　キスぐらいなら<br>
+							許してもいいって　感じていた</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

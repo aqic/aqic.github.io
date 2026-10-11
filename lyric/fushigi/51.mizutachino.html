@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>氷たちの自尊心 (プライド) - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">氷たちの自尊心 (プライド)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">田中敦子 (房宿)</div>
+                    <div class="LyricStaff">作詞：里野塚玲央<br>作曲：阿部　真<br>編曲：山中紀昌</div>
+
+                    <div class="LyricText">
+						<p>
+							何が欲しい　それを　奪ってやるから<br>
+							何が大事　すべて　壊してやるから<br>
+							どこへ行くの　道を　ふさいでやるから<br>
+							何をするの　無駄と無意味<br>
+							それから</p>
+						<p>
+							愛と伝(い)うの　もたれ　合っていることを<br>
+							友と呼ぶの　傷を　なで合う相手を<br>
+							嘆かないの　乱れ　切ってる世界を<br>
+							何が見たい　嘘、裏切り<br>
+							それから</p>
+						<p>
+							ああ　青龍の雲<br>
+							空、塗り尽くすとき<br>
+							もう　明日(あす)はない<br>
+							過去もない<br>
+							現在(いま)さえも</p>
+						<p>
+							Baby　baby<br>
+							そのまま　滅べばいい<br>
+							無邪気　という　罪を背負って<br>
+							Baby　baby<br>
+							奈落に　沈んだなら<br>
+							染みるはずよ<br>
+							氷たちの　自尊心(プライド)</p>
+						<p>
+							聞くといいわ　せめて　私のささやき<br>
+							抱くといいわ　胸に　幻覚(まぼろし)と知らず<br>
+							酔うといいわ　甘い　偽りの味に<br>
+							感じないわ　苦しみさえ<br>
+							これから</p>
+						<p>
+							何が欲しい　それを　奪ってやるから<br>
+							何が大事　すべて　壊してやるから<br>
+							どこへ行くの　道を　ふさいでやるから<br>
+							何をしても　無駄と無意味<br>
+							最後は</p>
+						<p>
+							ああ　青龍の声<br>
+							風、揺るがせるとき<br>
+							もう　敵はなく<br>
+							あの方の<br>
+							天下だけ</p>
+						<p>
+							Baby　baby<br>
+							このまま　死んでもいい<br>
+							犠牲　という　役目を終えて<br>
+							Baby　baby<br>
+							名もなく　消えてもいい<br>
+							下部(しもべ)として<br>
+							生まれて来た<br>
+							者たち皆</p>
+						<p>
+							Baby　baby<br>
+							分かりは　しない、けして<br>
+							悪に　仕え　尽くす喜び<br>
+							Baby　baby<br>
+							憎み　恨まれるほど<br>
+							たかまるのよ<br>
+							氷たちの　自尊心(プライド)</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>戰場のマドンナ - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">戰場のマドンナ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">奧井雅美</div>
+
+                    <div class="LyricText">
+						<p>
+							容赦なく押しよせる　歪んだストレス<br>
+							自に見えない　It's a battlefield<br>
+							万能の時代が贈った　Present<br>
+							嬉しすぎて　涙がでちゃう</p>
+						<p>
+							その上　お手頃な幸せとの慣れ合いじゃ<br>
+							ヤバいんじゃない？<br>
+							このままだと　すべてはヴェ—ルの中</p>
+						<p>
+							目覺めなさい　孤独な戰士達よ<br>
+							恐れないで勇気見せて<br>
+							もし傷つき倒れたその時は<br>
+							私が守ってあげる<br>
+							100のチカラど　生き続けたいから…<br>
+							We are the one</p>
+						<p>
+							貯金よりまった　フラストレ—ション<br>
+							銀行とか預けたいな…<br>
+							競爭の社会が　つくる　Syndrome<br>
+							どこに向かい　なげればいい？</p>
+						<p>
+							とりあえず無理して　自分を盛り上げている<br>
+							君のそのカラ元気　もう限界に来てる</p>
+						<p>
+							目覺めなさい　一途な戰士達よ<br>
+							嫌なことは　NO！と叫べ<br>
+							もしまわりの人敵になっても<br>
+							私が守ってあげる<br>
+							同じこの瞬間　生き続けたいから…<br>
+							We are the one</p>
+						<p>
+							いろんな表情をした　愛がこの世にあれけど<br>
+							形なくあたえられた　最後の宝物</p>
+						<p>
+							目覺めなさい　嘆きの戰士達よ<br>
+							もう一度　笑って見せて<br>
+							そう君のその笑顔のためなら<br>
+							この命だってかける<br>
+							大切な瞬間　生き続けたいから…<br>
+							We are the one</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

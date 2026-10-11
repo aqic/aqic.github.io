@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Tears Go By - 天使な小生意気</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Tears Go By</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">三枝夕夏 IN db</div>
+                    <div class="LyricStaff">作詞：三枝夕夏<br>作曲：大野愛果<br>編曲：徳永暁人</div>
+
+                    <div class="LyricText">
+						<p>
+							Tears Go By</p>
+						<p>
+							As tears go by.<br>
+							It's hard to say good-bye.<br>
+							I still think of you.<br>
+							Someday I will get over you, as tears go by.</p>
+						<p>
+							恋に落ちるのは　タブーだったのに<br>
+							君を想って毎日　眠れぬ夜が続く<br>
+							(遠くで)　街の季節<br>
+							(流れてく)　時間をとめて<br>
+							(夢見てた)　キラキラ光る<br>
+							あの夏の夜空に帰りたい</p>
+						<p>
+							(As) Tears Go By<br>
+							涙ながらでも<br>
+							明日のことも考えなくちゃ<br>
+							グレーの空を今　白に塗り変えたら<br>
+							虹が出ても　そこに君はもういない</p>
+						<p>
+							雨の夜はそばにいて　朝まで話したね<br>
+							少し不思議な君の　横顔見てた<br>
+							(重ねた)　口唇が<br>
+							(感じてた)　運命の人<br>
+							(ひたむきに)　これが最後の<br>
+							恋になればいいなと思ってた</p>
+						<p>
+							(As) Tears Go By<br>
+							迷い込んでしまう<br>
+							明後日のことは風の中<br>
+							褪せた写真の　笑顔の二人<br>
+							抱きしめても　今日より若い日は来ない</p>
+						<p>
+							Tears Go By<br>
+							心ふるえて<br>
+							暗闇の中を彷徨う<br>
+							Tears Go By<br>
+							疑うことに疲れ<br>
+							捨ててしまえ　はるかな未来へと</p>
+						<p>
+							(As) Tears Go By<br>
+							涙ながらでも<br>
+							明日のことも考えなくちゃ<br>
+							グレーの空を今　白に塗り変えたら<br>
+							虹が出ても　そこに君はもういない</p>
+						<p>
+							Someday I will get over you, as tears go by.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-cheekyangel-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

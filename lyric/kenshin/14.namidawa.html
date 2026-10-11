@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>涙は知っている - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">涙は知っている</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">涼風真世</div>
+                    <div class="LyricStaff">作詞；山田ひろし<br>作曲：山崎利明<br>編曲：見良津健雄</div>
+
+                    <div class="LyricText">
+						<p>
+							君が涙に揺れる時<br>
+							どうすればいいんだろう<br>
+							空を見上げても<br>
+							心が　痛い<br>
+							傷つかなくていいコトに<br>
+							誰もが触れてしまう<br>
+							水の冷たさに<br>
+							おどろく時の様に<br>
+							隣にいるだけで<br>
+							何もできないけど<br>
+							ありったけの笑顔<br>
+							君だけに抱えて贈るよ<br>
+							どんな時も　信じていいよ<br>
+							夢はやって来る<br>
+							君のためだけに<br>
+							泣いてもいいよ<br>
+							どんな哀しみも<br>
+							翼に変わるのさ　その胸で</p>
+						<p>
+							誰かを守ることなんて<br>
+							簡単にできないね<br>
+							君に降る雨も<br>
+							止められないよ<br>
+							だけどあきらめたくはない<br>
+							ちっぽけな勇気でも<br>
+							いつか本当の強さになれるならば<br>
+							小さな蝶でさえ<br>
+							海を越えてゆける<br>
+							いつか　きっと 　そんな言葉しか<br>
+							言えない自分がくやしいけど<br>
+							信じていいよ<br>
+							虹はやって来る　君のつま先へ<br>
+							信じていいよ　君の時が来る<br>
+							もうすぐ新しい風の中</p>
+						<p>
+							そうさ　かならず夢はやって来る<br>
+							その腕を拡げ<br>
+							きっと涙はそれを知っている<br>
+							教えに来たんだよ　明日から</p>
+						<p>
+							信じていいよ　夢はやって来る<br>
+							君だけのためだけに<br>
+							泣いてもいいよ<br>
+							どんな哀しみも<br>
+							翼に変わるのさ　その胸で</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

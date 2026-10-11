@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>DAN-GAN my love - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">DAN-GAN my love</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">沢口小梅(三石琴乃)</div>
+
+                    <div class="LyricText">
+						<p>
+							誰にも秘密だけど<br>
+							絶対　笑わないと<br>
+							約束してくれるなら<br>
+							今日だけ　見せてあげる<br>
+							あたしの胸の奥に<br>
+							密かな恋模様</p>
+						<p>
+							片手に運命を抱いて<br>
+							駆け抜けるよ　歴史の中<br>
+							標的を撃ち抜くたびに<br>
+							心は甘くときめいちゃう</p>
+						<p>
+							☆夢は思い通り<br>
+							　いつか　かなえられる日が来ると<br>
+							　信じてるハートはキラキラ<br>
+							　銀色に咲く花<br>
+							　一滴　こぼれおちる<br>
+							　愛は弾丸よ<br>
+							　この恋は誰にもゆずれないよ</p>
+						<p>
+							時々　空を見上げ<br>
+							なぜだか　不安になる<br>
+							そんな時だって　いつも<br>
+							あなたの事を想う<br>
+							ただそれだけで<br>
+							元気があふれ出して来る</p>
+						<p>
+							世界中のモデル集め<br>
+							冷たく光るのはボディー<br>
+							ひきがねの囁き聞けば<br>
+							心に甘く突きささるの</p>
+						<p>
+							ほかは　もういらない<br>
+							あたしを抱き締めるのは一つ<br>
+							待ち焦がれる胸はドキドキ<br>
+							手のひらで優しく<br>
+							さよならを告げたら<br>
+							飛んでけ　弾丸よ<br>
+							この恋を無駄にはしたくないよ</p>
+						<p>
+							☆Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>予感（日中対訳） - 新世紀エヴァンゲリオン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">鋼鐵のガールフレンド</div>
+
+                    <div class="LyricTitle">予感（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高橋洋子</div>
+                    <div class="LyricStaff">作詞：岩里祐穗<br>作曲：菅野よう子<br>編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							淋しさなら慣れているよ<br>
+							生まれたときから<br>
+							でも目の前に<br>
+							差し出された腕に<br>
+							思わず心搖れて<br>
+							眩しい予感に<br>
+							ひろがる未来を<br>
+							感じている　愛のせいで<br>
+							強くて優しい　なぜだかせつない<br>
+							気持ちのかけら　抱きしめて<br>
+							Ah…あなたに　Ah…寄り添う</p>
+						<p>
+							忘れてゆくためにいつも<br>
+							出会いをかさねた<br>
+							そんな痛みに<br>
+							気付かせてくれたね<br>
+							そのあたたかな涙<br>
+							不思議な予感に<br>
+							戸惑いながらも<br>
+							あなたの手を握りしめる<br>
+							微笑むことから始めてみたくて<br>
+							何かが変わる　この胸で<br>
+							Ah…光が　Ah…あふれる</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							即使觉得寂寞 也早以习惯了吧<br>
+							从我出生到这世界以来就是如此<br>
+							然而 面对那伸出到我眼前的手<br>
+							我却意想不到的心动不已<br>
+							在炫目的预感之中 我感觉到了广阔的未来<br>
+							是因为爱的缘故吧<br>
+							既强烈又温柔 但为何却又如此沉重<br>
+							紧紧拥抱情感的破片</p>
+						<p>
+							啊 与你相依相偎……</p>
+						<p>
+							为了能够遗忘之故 总是故意与你一再相遇<br>
+							这样的痛楚 也让我体会到吧<br>
+							是那温暖的泪水</p>
+						<p>
+							在神奇的预感之中 我怀着困惑的心紧握你的手<br>
+							似乎是从微笑的事情开始<br>
+							在我的胸口中有什么变化了</p>
+						<p>
+							啊 光 满溢着……</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-eva-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

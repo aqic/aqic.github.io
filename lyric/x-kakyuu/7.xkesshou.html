@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>結晶 - X -エックス-</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">結晶</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">司狼　神威（鈴村　健一）</div>
+                    <div class="LyricStaff">Lyrics : Nishi Naoki<br>Music : Yoda Kazuo<br>Arrangement : Satou Naoki</div>
+
+                    <div class="LyricText">
+						<p>
+							キミを忘れない　悲しい明日が来たとしても<br>
+							ボクらはいつまでも止まない風<br>
+							キミを見つけたい　あの日の記しが無くなっても<br>
+							ボクらはどこまでも流れる水</p>
+						<p>
+							昔探した声のように<br>
+							生まれ続ける波のように<br>
+							心重ねて　その先へ　あの場所へ</p>
+						<p>
+							いつかまた逢える　この胸にキミがいる<br>
+							だから僕達は旅を続ける<br>
+							いつか目を閉じて思い出す時が来る<br>
+							だから今だけは眠ろう　so long</p>
+						<p>
+							キミを抱きしめて　初めてやさしい嘘をついた<br>
+							さよなら言わなくちゃいけないから</p>
+						<p>
+							言葉無くして朝が来ても<br>
+							雨に打たれて傷ついても<br>
+							涙重ねて　その果てに　いるキミへ</p>
+						<p>
+							いつかまた逢える　終わらない道がある<br>
+							だから僕達は旅を続ける<br>
+							いつか見た夢に走り出す時が来る<br>
+							だからこれからをつなごう　so long</p>
+						<p>
+							僕はここにいる　やさしさに包まれて<br>
+							だから泣かないで旅を続けて<br>
+							キミがくれたもの　永遠に忘れない<br>
+							だから何度でも祈ろう　forever<br>
+							to you･･･</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-x-kakyuu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>忘れるために恋をしないで - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「美少女戦士セーラームーンＲ」</div>
+
+                    <div class="LyricTitle">忘れるために恋をしないで</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">篠原恵美</div>
+                    <div class="LyricStaff">作詞：白峰美津子<br>作曲：松本俊明<br>編曲：京田誠一</div>
+
+                    <div class="LyricText">
+						<p>
+							掃除したてのテエブルの上<br>
+							花束を飾った<br>
+							ゆがんだ時間だ<br>
+							少しずつほどけて行く</p>
+						<p>
+							部屋の片隅読みかけの本<br>
+							出しそびれたカアド<br>
+							恋して夢中な<br>
+							あの頃は見えずにいた</p>
+						<p>
+							さよならってやっとあなたに言える<br>
+							一人でいる</p>
+						<p>
+							あなたのことを忘れるための恋など<br>
+							出来ないから</p>
+						<p>
+							がんばれなくて落ち込む時が<br>
+							まだ会ってもいいよね<br>
+							窓辺で木の葉が<br>
+							うなずくみたいにゆれた</p>
+						<p>
+							笑えるねもっといつものように</p>
+						<p>
+							あめ降る朝も風吹く朝も<br>
+							私でいる</p>
+						<p>
+							あなたの事を愛したように誰かを<br>
+							愛せるまで</p>
+						<p>
+							寂しい夜も　泣きたい夜も<br>
+							一人でいる</p>
+						<p>
+							あなたの事を忘れるための恋など<br>
+							出来ないから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

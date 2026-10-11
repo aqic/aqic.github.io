@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>檄！帝国華撃団(改) - サクラ大戦</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「サクラ大戦２」主題歌</div>
+
+                    <div class="LyricTitle">檄！帝国華撃団(改)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">横山智佐、富沢美智恵、高乃麗</div>
+                    <div class="LyricStaff">作詞：広井王子<br>作曲：田中公平<br>編曲：根岸貴幸</div>
+
+                    <div class="LyricText">
+						<p>
+							[高乃]引き裂いた　闇が吠え　震える帝都に<br>
+							　　　愛の歌　高らかに　踊り出る戦士たち<br>
+							　　　心まで　鋼鉄に　武装する乙女<br>
+							　　　悪を蹴散らして　正義をしめすのだ</p>
+						<p>
+							　　　走れ　高速の　帝国華撃団<br>
+							　　　唸れ　衝撃の　帝国華撃団</p>
+						<p>
+							[富沢]街の灯が　消え果てて　脅える帝都に<br>
+							　　　虹の色　染め上げて　躍り出る戦士たち<br>
+							　　　暁に　激情を　照らし出す乙女<br>
+							　　　悪を滅ぼして　正義をしめすのだ</p>
+						<p>
+							　　　走れ　高速の　帝国華撃団<br>
+							　　　唸れ　衝撃の　帝国華撃団</p>
+						<p>
+							さくら　「わたしたち　正義のために戦います」<br>
+							マリア　「たとえ　それが命をかける戦いであっても」<br>
+							カンナ　「あたいたちは一歩も引かないぜ！」<br>
+							アイリス「いつの日かこの帝都に」<br>
+							紅蘭　　「悪がなくなる日まで」<br>
+							すみれ　「わたくしたちは戦いつづけます！」<br>
+							全員　　「それが　帝国華撃団なのです！」</p>
+						<p>
+							[横山]夢さえも　散ぎれ飛び　凍てつく帝都に<br>
+							　　　愛の灯を　抱き止めて　躍り出る戦士たち<br>
+							　　　命さえ　鋼鉄に　誓い合う　乙女<br>
+							　　　悪を斬り捨てて　正義をしめすのだ</p>
+						<p>
+							　　　走れ　高速の　帝国華撃団<br>
+							　　　唸れ　衝撃の　帝国華撃団</p>
+						<p>
+							　　　走れ　高速の　帝国華撃団<br>
+							　　　唸れ　衝撃の　帝国華撃団</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sakurawars-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

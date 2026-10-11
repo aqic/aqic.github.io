@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>オレンジの貝殻 - あじむ 〜海岸物語〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ</div>
+
+                    <div class="LyricTitle">オレンジの貝殻</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">千葉紗子</div>
+                    <div class="LyricStaff">作詞：白峰美津子<br>作曲：中川孝<br>编曲：中川孝</div>
+
+                    <div class="LyricText">
+						<p>
+							雨上がりの砂浜を歩いた<br>
+							こんな　まぶしい青空を見つめて<br>
+							切なくなるのはなぜ？<br>
+							ひときわ白い雲がながれ<br>
+							私は迷いそうに立ってる<br>
+							ありふれた　町並みに<br>
+							あなたのカケラ　見つけた<br>
+							優しい横顔がずっと消えないよ<br>
+							オレンジの貝殻に<br>
+							そっと願いをこめるの<br>
+							いつかまたどこかで<br>
+							きっと会えるよね</p>
+						<p>
+							かけがえなのない　あなたとの時間を<br>
+							ね　あんなにも無意識に笑って。。。<br>
+							過ごして来たのはなぜ？<br>
+							あの時言えなかった言葉<br>
+							大事に　抱き締めてる　今でも<br>
+							波音に包まれて<br>
+							いつかあなたと歩いた<br>
+							もいちど　あの風に<br>
+							吹かれてみたいな<br>
+							あなたへとつ続いてる<br>
+							果てしなくまぶしい空<br>
+							どんなに離れても<br>
+							あなたをわすれない</p>
+						<p>
+							オレンジの貝殻に<br>
+							そっと願いを込めるの<br>
+							いつかまたどこかで<br>
+							きっと会えるよね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ajimu-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

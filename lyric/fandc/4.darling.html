@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>My darlin' - F&amp;C</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</div>
+
+                    <div class="LyricTitle">My darlin'</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">日野森美奈（及川ひとみ）</div>
+                    <div class="LyricStaff">作詞：井上小麥<br>作曲：藤原謙一<br>編曲：藤原謙一 &amp; 小畑智史</div>
+
+                    <div class="LyricText">
+						<p>
+							いつものように[土反]道かけのぼり<br>
+							ヒミツの場所　早すぎて　ドキドキして待ってるの。<br>
+							とびきりオシャレして　出かけましょう。<br>
+							魔法の風。花達も喜んでるみたいなの。</p>
+						<p>
+							女の子の心は空へまい上がり<br>
+							走り出した明日への予感。</p>
+						<p>
+							手をつないで歩きましょう。<br>
+							２人の時は　上手く言えない　ハズカシイから。<br>
+							かけっこをして遊びましょう。<br>
+							一緒にいればなにをしていても樂しいの。My darlin'</p>
+						<p>
+							綠がまぶしく光る公園。<br>
+							２人足を投げ出して　日が暮れるまで話した。<br>
+							あなたは夢中になっておしゃべり。<br>
+							目と目が合うそのたびに胸がドキドキしちゃうの。</p>
+						<p>
+							もっともっと知りたい。会うたびに強く。<br>
+							ときめいてる。好きになってく。</p>
+						<p>
+							自轉車こぎ２人乘り。<br>
+							そんなに早く[土反]を下りたら　おっこっちゃうよ。<br>
+							お花摘んで飾りましょう。<br>
+							笑顔輝く　世界でいちばん　幸せよ。My darlin'</p>
+						<p>
+							あなたが遠い。眠れない夜には何度も何度も<br>
+							名前を呼ぶの。キヅイテホシイ…。</p>
+						<p>
+							いつもそばにいてほしい。<br>
+							信じてるから。見つめてるから。魔法をかけて。<br>
+							恥ずかしさも照れないで。<br>
+							素直な気持ちあなたに屆けて。大好きよ。My darlin'</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fandc-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

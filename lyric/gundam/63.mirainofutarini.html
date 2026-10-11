@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>未来の二人に - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">未来の二人に</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">米倉千尋</div>
+
+                    <div class="LyricText">
+						<p>
+							朝やけを見つめてるあなたを　私は見てた<br>
+							Two of us　二人に　足りないものを数えたら<br>
+							何だ可笑しくなって　声をあげて笑った</p>
+						<p>
+							悩んだ日々の答えなんて<br>
+							歩き出すことしかないよね</p>
+						<p>
+							かさねあう寂しさは　ぬくもりを教えてくれた<br>
+							抱きあえば涙さえ　訳もなく　いとしい</p>
+						<p>
+							未来の二人に<br>
+							今を笑われないように<br>
+							ねぇ　 夢をみようよ</p>
+						<p>
+							忙しく動き出す街より　ゆっくり歩こう<br>
+							Smile on me　すべてを　叶わぬものとあきらめたら<br>
+							心が風邪をひくから　元気なんか出ないよ</p>
+						<p>
+							迷った夜の吐息さえも<br>
+							いつの日か思い出になるよ</p>
+						<p>
+							かさねあうくちびるの　ぬくもりを信じていたい<br>
+							抱きしめたせつなさが　いつだって始まり</p>
+						<p>
+							未来の二人に<br>
+							今を笑われないように<br>
+							ねぇ　 夢をみようよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

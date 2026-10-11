@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>幸せになろうね - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">幸せになろうね</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐藤朱美</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：清岡千穂<br>編曲：矢野立美</div>
+
+                    <div class="LyricText">
+						<p>
+							私は虹色の扉(ドア)になり　あなたはキラメク鍵になる</p>
+						<p>
+							　　新しく始まる　それは物語<br>
+							　　楽園は　今ここから生まれるの<br>
+							　　目が覚めてあなたが　側に居るだけで<br>
+							　　毎日に　感謝したくなる</p>
+						<p>
+							　　笑顔の種いっぱい蒔いて　私は私を生きてゆく</p>
+						<p>
+							☆　幸せになろうね　もっと　見つめて　話して　抱き合って<br>
+							　　幸せになろうね　もっと　心には太陽　私にはあなたがいる</p>
+						<p>
+							　　愛し合う心が　未来(あす)を創るから<br>
+							　　運命のプログラムは　失くなるよ<br>
+							　　『おやすみ』って言いたい　人が居るだけで<br>
+							　　毎日が　かけがえ　ない日々</p>
+						<p>
+							　　楽しい事いっぱいしてる　あなたはあなたでいればいい</p>
+						<p>
+							　　幸せになっても　いいよ　弾けて　笑って　輝いて<br>
+							　　幸せになっても　いいよ　心には太陽　あなたには私がいる</p>
+						<p>
+							☆　 REPEAT</p>
+						<p>
+							　　新しく始まる　それは物語<br>
+							　　楽園は　今ここから生まれるの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

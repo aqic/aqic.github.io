@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ひとりごと - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">hitorigoto</div>
+
+                    <div class="LyricTitle">ひとりごと</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO</div>
+                    <div class="LyricStaff">作曲：KOTOKO<br>作詞：KOTOKO<br>編曲：高瀬 一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							いつかまたきっと<br>
+							ここで会える日が来る<br>
+							そんな言葉　今も覚えているなんて<br>
+							どうかあなたも　まだ<br>
+							同じ気持ちのままで<br>
+							帰ってくる日を待っていますように・・・</p>
+						<p>
+							たったひとつの答え　信じ続けて<br>
+							こんなふうに　今更　声に出してつぶやいた</p>
+						<p>
+							ずっと待ってる…　寂しくて泣いても<br>
+							あなたの居場所は　他にはないから<br>
+							風にたなびくポプラの葉の下で<br>
+							聞こえた気がした　そんなひとりごと</p>
+						<p>
+							いつまでもきっと<br>
+							側にいると笑ってた<br>
+							心まで遠く離れてしまいそうで<br>
+							新しい景色の中で笑う<br>
+							あなたの隣へ今すぐ<br>
+							駆け出したいけれど</p>
+						<p>
+							平凡な約束を信じ続けて<br>
+							こぼれそうな涙　胸に秘めて抱きしめた</p>
+						<p>
+							ずっと待ってる・・・　寂しくて泣いても<br>
+							あなたの笑顔が離れないから<br>
+							風に揺れてる前髪に宿った<br>
+							昔話によく似た　ひとりごと</p>
+						<p>
+							平気だよと笑顔で　手を振ったのに<br>
+							本当は祈ってた　ねえ　どこにも行かないでと</p>
+						<p>
+							ずっと待ってる…　寂しくて泣いても<br>
+							あなたの温もり忘れないから<br>
+							風が運んだ想い出の中の<br>
+							あなたに届けたい　ただのひとりごと</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

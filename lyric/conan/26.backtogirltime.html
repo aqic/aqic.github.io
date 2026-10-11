@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>少女の頃に戻ったみたいに - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">14番目の標的</div>
+
+                    <div class="LyricTitle">少女の頃に戻ったみたいに</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ZARD</div>
+                    <div class="LyricStaff">作詞：坂井泉水<br>作曲：大野愛果<br>編曲：池田大介</div>
+
+                    <div class="LyricText">
+						<p>
+							くり返し見る夢に<br>
+							目が覚めてみると<br>
+							胸の動悸が　早いことに気づく</p>
+						<p>
+							いつも白線　踏みはずして<br>
+							走る私がいる<br>
+							何故?　理由もないのに　声をあげて泣きたくなる</p>
+						<p>
+							幼い　少女の頃に戻ったみたいに<br>
+							やさしく　髪を撫でてくれる<br>
+							そんな温かい手を　いつも待っていた<br>
+							あなただけは　私を　やさしい人にしてくれる<br>
+							とても　大好きよ　とても　大好きよ</p>
+						<p>
+							どんなに情熱　かたむけても<br>
+							わかりあえない　人もいる<br>
+							そんな日は　心が　曇ってしまうわ</p>
+						<p>
+							恋は規則正しい　リズムを刻まない<br>
+							心地良いソファーで　また　眠ってしまった</p>
+						<p>
+							懐かしい　少女の頃に戻ったみたいに<br>
+							やさしく　髪を撫でてくれる<br>
+							そんな温かい手を　いつも待っていた<br>
+							あなただけは　私を　そっと包みこんでくれる<br>
+							とても　愛してる　とても　愛してる</p>
+						<p>
+							あなただけは　私を　そっと包みこんでくれる<br>
+							とても　愛してる　赤いハートで</p>
+						<p>
+							lovin' you　あなたと …</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

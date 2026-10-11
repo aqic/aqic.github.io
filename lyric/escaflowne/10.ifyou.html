@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>If You - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」(1996)</div>
+
+                    <div class="LyricTitle">If You</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							Open the door<br>
+							To a room I've never been before<br>
+							Counting all the books I've read so long<br>
+							Something is wrong<br>
+							Where love has gone</p>
+						<p>
+							If I should cry<br>
+							Thinking of the love I felt inside<br>
+							Don't misunderstand<br>
+							nothing's the clue<br>
+							I cry for you<br>
+							Cause of love it's true</p>
+						<p>
+							When does love<br>
+							Speak words above evolving pain<br>
+							Like if these tears turn to rain<br>
+							Endlessly calms the sea<br>
+							For you and me</p>
+						<p>
+							If you're so cold<br>
+							If worlds just hold<br>
+							If I want to lean<br>
+							I'm here for you<br>
+							If you</p>
+						<p>
+							When does love<br>
+							Create the worlds above our pain<br>
+							Like if these tears were to rain<br>
+							Endlessly for the sea<br>
+							Still you and me</p>
+						<p>
+							If you're so cold<br>
+							If worlds just hold<br>
+							If we're to lean<br>
+							I'm here for you<br>
+							So if you</p>
+						<p>
+							Close the door<br>
+							Cause those rooms won't need us anymore<br>
+							Holding our words<br>
+							just fill those books<br>
+							Sometimes love looks<br>
+							Like if love has gone</p>
+						<p>
+							So I won't cry<br>
+							Now I know our love will never die<br>
+							If I understand the reasons why<br>
+							When you.. if I and you...<br>
+							Know that love is true</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>月のない夜 - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">月のない夜</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐藤朱美</div>
+                    <div class="LyricStaff">作詞：佐藤朱美<br>作曲：芦沢和則<br>編曲：川瀬 智</div>
+
+                    <div class="LyricText">
+						<p>
+							その昔　信じられていた<br>
+							美貌に宿る　邪悪な魂(こころ)<br>
+							秘めやかに　そして冷ややかに<br>
+							夜ごとに起こる惨劇</p>
+						<p>
+							若く汚れのない血の香(か)を求めさまよう魔の手</p>
+						<p>
+							残酷な快楽の中で<br>
+							生贄の血に酔いしれてゆく<br>
+							永遠の美を保つために<br>
+							夜ごとに起こる惨劇</p>
+						<p>
+							気をつけなさい<br>
+							月のない夜は</p>
+						<p>
+							どこまでも遠くどこまでも<br>
+							不毛の荒野　吹き渡る風<br>
+							人々の口の端(は)にのぼる<br>
+							丘にそびえる古城よ</p>
+						<p>
+							決して近づいてはいけない　二度と戻れはしない</p>
+						<p>
+							秘めやかに　そして冷ややかに<br>
+							幕を降ろした惨劇<br>
+							震えて. . .<br>
+							眠れよ. . .</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Get Down - めぞん一刻</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「めぞん一刻」エンディング・テーマ(1986)</div>
+
+                    <div class="LyricTitle">Get Down</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Gilbert O'Sullivan</div>
+                    <div class="LyricStaff">作詞・作曲・編曲：Gilbert O'Sullivan</div>
+
+                    <div class="LyricText">
+						<p>
+							Told you once before<br>
+							And I won't tell you no more<br>
+							Get down, get down, get down<br>
+							You're a bad dog baby<br>
+							But I still want you around</p>
+						<p>
+							You give me the creeps<br>
+							When you jump on your feet<br>
+							So get down, get down, get down<br>
+							Keep your hands to yourself<br>
+							I'm strictly out of bounds</p>
+						<p>
+							Once upon a time, I drank a little wine<br>
+							Was as happy as could be, happy as could be<br>
+							Now I'm just like a cat on a hot tin roof<br>
+							Baby what do you think you're doin' to me</p>
+						<p>
+							Told you once before<br>
+							And I won't tell you no more<br>
+							So get down, get down, get down<br>
+							You're a bad dog baby<br>
+							But I still want you around -- around<br>
+							I still want you around</p>
+						<p>
+							I don't give a damn<br>
+							And I'd like you if you can<br>
+							To get down, get down, get down<br>
+							You're a bad dog baby<br>
+							But I still want you around</p>
+						<p>
+							Once upon a time, I drank a little wine<br>
+							Was as happy as could be, happy as could be<br>
+							Now I'm just like a cat on a hot tin roof<br>
+							Baby what do you think you're doin' to me</p>
+						<p>
+							Told you once before<br>
+							And I won't tell you no more<br>
+							So get down, get down, get down<br>
+							You're a bad dog baby<br>
+							But I still want you around -- around<br>
+							I still want you around</p>
+						<p>
+							[Bad baby, bad dog baby...]</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ikkoku-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

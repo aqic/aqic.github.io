@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>S.O.S. - 彼氏彼女の事情</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">S.O.S.</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">渡邉由紀 山本麻里安</div>
+
+                    <div class="LyricText">
+						<p>
+							男（おとこ）は狼（おおかみ）なのよ　気（き）をつけなさい<br>
+							年頃（としごろ）になったなら　つつしみなさい<br>
+							羊（よう）の顔（かお）していても　心（こころ）の中（なか）は<br>
+							狼（おおかみ）が牙（きば）をむく　そういうものよ</p>
+						<p>
+							このひとだけは　大丈夫（だいじょうぶ）だなんて<br>
+							うっかり信じたら<br>
+							駄目（だめ）　駄目（だめ）　駄目（だめ）　駄目（だめ）　あー駄目駄目（だめだめ）よ</p>
+						<p>
+							ＳＯＳ　ＳＯＳ<br>
+							ほらほら呼（よ）んでいるわ<br>
+							今日（きょう）もまた誰（だれ）か　乙女（おとめ）のピンチ<br>
+							ＳＯＳ　ＳＯＳ</p>
+						<p>
+							うっとりするよな夜（よる）に　ついついおぼれ<br>
+							そんな気（き）になるけれど　考（かんが）えなさい<br>
+							瞼（まぶた）をとじたら負（ま）けよ　背（せい）のびをしたら<br>
+							何（なに）もかもおしまいよ　そういうものよ</p>
+						<p>
+							昔（むかし）のひとが　いうことみたいだと<br>
+							ぼんやりきいてたら<br>
+							駄目（だめ）　駄目（だめ）　駄目（だめ）　駄目（だめ）　あー駄目駄目（だめだめ）よ</p>
+						<p>
+							ＳＯＳ　ＳＯＳ<br>
+							ほらほら呼（よ）んでいるわ<br>
+							今日（きょう）もまた誰（だれ）か　乙女（おとめ）のピンチ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-heandshe-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

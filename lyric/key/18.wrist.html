@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Wrist - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©Key 2001 KeySoundLabel / Humanity...</div>
+
+                    <div class="LyricTitle">Wrist</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">みのもみな</div>
+                    <div class="LyricStaff">作詞：麻枝准<br>作曲：戸越まごめ</div>
+
+                    <div class="LyricText">
+						<p>
+							痛いと思った　静かに瞼閉じた<br>
+							まだ笑える　それに気づいたら涙が溢れてた<br>
+							綺麗と思った　細くて折れそうな腕<br>
+							祈ることも傷つけることも結局できる<br>
+							青く青くまだ深く染まる夢のあの色は　両手を広げて待つ<br>
+							高く高く歌ってた子供たちはどこへいつも　歩いていくのだろう</p>
+						<p>
+							こんな忘れえぬ思い出から　あの窓から<br>
+							そっと飛び立つ日を</p>
+						<p>
+							叶うと思った　小さかった頃の夢<br>
+							目指す場所も　わからなくても急いで駆けていた<br>
+							同じと思った　やっぱり痛くて泣く<br>
+							挫けた日は見たこともない夕日に囲まれ<br>
+							赤く赤くこの腕に流せるだけの涙を　精一杯に受けて<br>
+							いつもいつも走ってたあの遠すぎた夢の中へ　落ちていくのだろう</p>
+						<p>
+							こんな変わらない思い出から　あの場所から<br>
+							ずっと歩ける日を</p>
+						<p>
+							こんな忘れえぬ思い出から　あの窓から<br>
+							そっと飛び立つ日を<br>
+							こんな頼りない両腕でも　涙あふれても<br>
+							ずっと伸ばせる日を</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

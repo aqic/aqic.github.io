@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>２億年前のように静かだね - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Macross2</div>
+
+                    <div class="LyricTitle">２億年前のように静かだね</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">金子美香</div>
+                    <div class="LyricStaff">作詞：真名杏樹<br>作曲：樫原伸彦<br>編曲：井上鑑</div>
+
+                    <div class="LyricText">
+						<p>
+							横顔見ると思う<br>
+							あなたを好きと思う<br>
+							今　世界が終わったって<br>
+							惜しくはないわ<br>
+							うるさいシャイな憂鬱<br>
+							ノイズの向こう側に<br>
+							耳を澄ませば愛が<br>
+							こんなに近く</p>
+						<p>
+							２億年前のように静かだね<br>
+							AH　言葉なんて何もいらないから<br>
+							ふたりがひとりで<br>
+							生まれてきたこと<br>
+							忘れるくらいに背中を抱いて<br>
+							あの時一度は<br>
+							決めたサヨナラを<br>
+							永遠の夜<br>
+							星だけは知っているけど</p>
+						<p>
+							触れ合う肌の熱さ<br>
+							それだけ感じていたい<br>
+							街角で拒んでた　私がいるの</p>
+						<p>
+							吸い込まれそうに遠い空の果て<br>
+							AH　未来だって恋はおなじはずね<br>
+							ふたりはひとりじゃ<br>
+							生きていられない<br>
+							だから涙より　あなたの側へ<br>
+							離れていた日は消せないけれど<br>
+							このぬくもりを<br>
+							償いのメロディーにして</p>
+						<p>
+							ふたりがひとりで<br>
+							生まれてきたこと<br>
+							忘れるくらいに背中を抱いて<br>
+							あの時一度は<br>
+							決めたサヨナラを<br>
+							永遠の夜<br>
+							星だけは知っているけど</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

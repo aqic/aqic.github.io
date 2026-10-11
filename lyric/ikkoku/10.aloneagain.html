@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Alone Again - めぞん一刻</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「めぞん一刻」エンディング・テーマ(1986)</div>
+
+                    <div class="LyricTitle">Alone Again</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Gilbert O'Sullivan</div>
+                    <div class="LyricStaff">作詞・作曲・編曲：Gilbert O'Sullivan</div>
+
+                    <div class="LyricText">
+						<p>
+							In a little while from now,<br>
+							If I'm not feeling any less sour,<br>
+							I promise myself to treat myself<br>
+							and visit a nearby tower,</p>
+						<p>
+							And climbing to the top<br>
+							Will throw myself off<br>
+							In an effort to<br>
+							Make it clear to who-<br>
+							Ever what it's like when you're shattered,</p>
+						<p>
+							Left standing in the lurch<br>
+							At a church<br>
+							Where people, sayingMy God,<br>
+							that's tough, She's stood him up.<br>
+							No point in us remaining,<br>
+							we may as well go home."<br>
+							As I did on my own,</p>
+						<p>
+							Alone again, Naturally.</p>
+						<p>
+							To think that only yesterday,<br>
+							I was cheerful bright and gay,<br>
+							Looking forward to,<br>
+							well who wouldn't do<br>
+							the role I was about to play;</p>
+						<p>
+							But as if to knock my down,<br>
+							Reality came around<br>
+							And without so much,<br>
+							As a mere touch<br>
+							Cut me into little pieces,</p>
+						<p>
+							Leaving me to doubt<br>
+							Talk about<br>
+							God in his mercy, who if<br>
+							He really does exist<br>
+							Why did he desert me<br>
+							in my hour of need<br>
+							I truly am indeed</p>
+						<p>
+							Alone again, Naturally.</p>
+						<p>
+							It seems to me that there are<br>
+							more hearts broken in the world<br>
+							That can't be mended<br>
+							Left unattended;<br>
+							What do we do?<br>
+							What do we do?</p>
+						<p>
+							Alone again, Naturally.</p>
+						<p>
+							Now looking back over the years,<br>
+							And whatever else that appears;<br>
+							I remember I cried,<br>
+							when my father died,<br>
+							never wishing to hide the tears;</p>
+						<p>
+							And at sixty-five years old,<br>
+							My mother, God rest her soul,<br>
+							Couldn't understand<br>
+							why The only man<br>
+							She had ever loved had been taken:</p>
+						<p>
+							Leaving her to start<br>
+							With a heart<br>
+							So badly broken,<br>
+							Despite encouragement from me<br>
+							No words were ever spoken<br>
+							and when she passed away<br>
+							I cried and cried all day;</p>
+						<p>
+							Alone again, Naturally</p>
+						<p>
+							Alone again, Naturally</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ikkoku-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">タッチ</span><span class="cn">（棒球英豪）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《タッチ》</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">アルバム</span><span class="disc-sub">18 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.ts14a.html">《あれから、君は…》</a><span class="note">- タッチ ～あれから、君は…～ オリジナルサウンドトラック</span></li>
+						<li class="LyricItem"><a href="2.ts04ga.html">《ガラスの青春》</a><span class="note">- タッチ ～背番号のないエース～ オリジナルサウンドトラック タッチ Original Song Book ２</span></li>
+						<li class="LyricItem"><a href="3.ta09sa.html">《さよならの贈り物》</a><span class="note">- タッチ２ ～さよならの贈り物～ オリジナルサウンドトラック</span></li>
+						<li class="LyricItem"><a href="4.ts05sa.html">《さよならの贈り物》</a><span class="note">- タッチ２ ～さよならの贈り物～ オリジナルサウンドトラック音楽編</span></li>
+						<li class="LyricItem"><a href="5.ts02sn.html">《スノー・イン・サマー》</a><span class="note">- タッチ ～背番号のないエース～ オリジナルサウンドトラック タッチ Original Song Book ２</span></li>
+						<li class="LyricItem"><a href="6.ts19ta.html">《タッチ》</a><span class="note">- タッチ CrossRoad 風のゆくえ オリジナルサウンドトラック</span></li>
+						<li class="LyricItem"><a href="7.ts13ta.html">《タッチ（フライデーナイト・バージョン）》</a><span class="note">- タッチ ～あれから、君は…～ オリジナルサウンドトラック</span></li>
+						<li class="LyricItem"><a href="8.ts03dr.html">《Dreamin'　Kids》</a><span class="note">- タッチ ～背番号のないエース～ オリジナルサウンドトラック タッチ Original Song Book ２</span></li>
+						<li class="LyricItem"><a href="9.ts12fo.html">《For the brand-new Dream》</a><span class="note">- タッチ３ ～君が通り過ぎたあとに～ オリジナルサウンドトラック、 タッチ Original Song Book</span></li>
+						<li class="LyricItem"><a href="10.ts16hi.html">《Hi Hi High》</a><span class="note">- ＳＣＤ「Ｈｉ Hi High」、タッチ ～あれから、君は… ～オリジナルサウンドトラック</span></li>
+						<li class="LyricItem"><a href="11.ts09ki.html">《君が通り過ぎたあとに》</a><span class="note">- タッチ３ ～君が通り過ぎたあとに～ オリジナルサウンドトラック、 タッチ Original Song Book ３</span></li>
+						<li class="LyricItem"><a href="12.ta07ki.html">《君のハートにタッチ》</a><span class="note">- ミュージカル ～君のハートにタッチ～ オリジナルキャストアルバム</span></li>
+						<li class="LyricItem"><a href="13.ts06ka.html">《哀しみのカレリア》</a><span class="note">- タッチ ～さよならの贈り物～ オリジナルサウンドトラック音楽編</span></li>
+						<li class="LyricItem"><a href="14.ts08ki.html">《岸辺のフォトグラフ》</a><span class="note">- タッチ２ ～さよならの贈り物～ オリジナルサウンドトラック音楽編</span></li>
+						<li class="LyricItem"><a href="15.ts18ao.html">《青い扉》</a><span class="note">- タッチ CrossRoad 風のゆくえ オリジナルサウンドトラック</span></li>
+						<li class="LyricItem"><a href="16.ts20se.html">《青春》</a><span class="note">- タッチ CrossRoad 風のゆくえ オリジナルサウンドトラック</span></li>
+						<li class="LyricItem"><a href="17.ts17ka.html">《風のゆくえ》</a><span class="note">- タッチ CrossRoad 風のゆくえ オリジナルサウンドトラック</span></li>
+						<li class="LyricItem"><a href="18.ts11ju.html">《１８番目のサマーホリデー》</a><span class="note">- タッチ３ ～君が通り過ぎたあとに～ オリジナルサウンドトラック、 タッチ Original Song Book ３</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">その他</span><span class="disc-sub">26 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="19.touch.html">《タッチ》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor １</span></li>
+						<li class="LyricItem"><a href="20.ta16ty.html">《チェッ！チェッ！チェッ！》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor １</span></li>
+						<li class="LyricItem"><a href="21.ta19hi.html">《ひとりぼっちのデュエット》</a><span class="note">- タッチ Original Song Book ３ タッチ Music Flavor ５</span></li>
+						<li class="LyricItem"><a href="22.ta22wh.html">《ホワイトドリーム》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor ３</span></li>
+						<li class="LyricItem"><a href="23.ts15so.html">《Song For You》</a><span class="note">- ＳＣＤ「Ｈｉ Hi High」</span></li>
+						<li class="LyricItem"><a href="24.ta20bo.html">《僕たちのSomeday》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor ３</span></li>
+						<li class="LyricItem"><a href="25.ta23mi.html">《南の風、夏少女》</a><span class="note">- タッチ Original Song Book ２ タッチ Music Flavor ４</span></li>
+						<li class="LyricItem"><a href="26.kimi.html">《君がいなければ》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor １</span></li>
+						<li class="LyricItem"><a href="27.ta08ki.html">《君をとばした午後》</a><span class="note">- タッチ Original Song Book ３ タッチ Music Flavor ５</span></li>
+						<li class="LyricItem"><a href="28.ta17na.html">《夏の便り》</a><span class="note">- タッチ Original Song Book ２ タッチ Music Flavor ４</span></li>
+						<li class="LyricItem"><a href="29.ta26yu.html">《夢で逢いたい》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor １</span></li>
+						<li class="LyricItem"><a href="30.ta11su.html">《好きで、ごめん。》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor １</span></li>
+						<li class="LyricItem"><a href="31.ta12su.html">《好きになるなら》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor ２</span></li>
+						<li class="LyricItem"><a href="32.ta10jo.html">《情熱物語》</a><span class="note">- タッチ Original Song Book ３</span></li>
+						<li class="LyricItem"><a href="33.ta01ai.html">《愛がひとりぼっち》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor３</span></li>
+						<li class="LyricItem"><a href="34.ta21ho.html">《星のシルエット》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor １</span></li>
+						<li class="LyricItem"><a href="35.ta04ei.html">《永遠のランナー》</a><span class="note">- タッチ Original Song Book ３</span></li>
+						<li class="LyricItem"><a href="36.ta14se.html">《番号のないエース》</a><span class="note">- タッチ Original Song Book ２ タッチ ～背番号のないエース～ 音楽編</span></li>
+						<li class="LyricItem"><a href="37.ta25ya.html">《約束》</a><span class="note">- タッチ Original Song Book ２ タッチ Music Flavor ４</span></li>
+						<li class="LyricItem"><a href="38.ts01se.html">《背番号のないエース》</a><span class="note">- タッチ Original Song Book ２ タッチ ～背番号のないエース～ 音楽編</span></li>
+						<li class="LyricItem"><a href="39.ta02ao.html">《蒼いメモリーズ》</a><span class="note">- タッチ Original Song Book ３ タッチ Music Flavor ５</span></li>
+						<li class="LyricItem"><a href="40.ta24ya.html">《野球》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor １</span></li>
+						<li class="LyricItem"><a href="41.ta18hi.html">《陽あたり良好》</a><span class="note">- 陽当たり良好！ Original Song Book 陽当たり良好 Music Diary</span></li>
+						<li class="LyricItem"><a href="42.ta03am.html">《雨の中のワンボーイ》</a><span class="note">- タッチ Original Song Book ２ タッチ Music Flavor ４</span></li>
+						<li class="LyricItem"><a href="43.ta13se.html">《青春》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor ３</span></li>
+						<li class="LyricItem"><a href="44.ta05ka.html">《風のメッセージ》</a><span class="note">- タッチ Original Song Book １ タッチ Music Flavor１</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

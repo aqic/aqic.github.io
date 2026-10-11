@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>小さなパンジー - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">小さなパンジー</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							小さな小さな胸に　溢れる想いは恋かな？<br>
+							小さな小さなこの手　ぎゅっと握り締めてくれるといいな</p>
+						<p>
+							今日も天気　朝の日差し<br>
+							深呼吸が　気持ちいいよ<br>
+							ゆうべ、つぼみだったパンジー<br>
+							生まれたての　笑顔になる<br>
+							嬉しかった事　楽しかった事も<br>
+							集めたら届けに　行きたいよ</p>
+						<p>
+							小さな小さな事も　知っていて欲しい私の<br>
+							小さな小さな胸に　溢れる想いを気づいて欲しいの…</p>
+						<p>
+							昨日少し　へこんじゃった<br>
+							雨に濡れて　転んじゃった<br>
+							でもね、でもね、がんばっちゃった<br>
+							弱い私　嫌いだよね<br>
+							辛かった事も　悲しかった事も<br>
+							受け止めてくれるから　泣かない</p>
+						<p>
+							小さな小さな胸が　傷ついた時はいつでも<br>
+							小さな小さなこの手　ぎゅっと握り締めてくれるといいな</p>
+						<p>
+							急に会いたくて　しぼみそうになる<br>
+							うつむいたパンジー　でも、咲いていたいから</p>
+						<p>
+							小さな小さな事も　知っていて欲しい私の<br>
+							小さな小さな胸に　溢れる想い、早く届けたいの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

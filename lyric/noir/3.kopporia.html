@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>コッペリアの柩 - NOIR</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">コッペリアの柩</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ALI PROJECT</div>
+
+                    <div class="LyricText">
+						<p>
+							☆コッペリアの柩　流れる涙はもう枯れ果て<br>
+							　血に飢えた孤独　死は天使の和毛(にこげ)の　匂いをさせて舞う</p>
+						<p>
+							　黒い太陽が　沈まぬ街で　誰もが黙って　奇術めき働く<br>
+							　金属の壁に　囲われた部屋　私は朝まで　死んだように眠る</p>
+						<p>
+							　あなたが　見えない　この眼は　見えない<br>
+							　我ら造りたまいし神</p>
+						<p>
+							　コッペリアの柩　人は踊りつかれた人形　祭壇の羊<br>
+							　機械仕掛けの夢は　どこに向かってゆく</p>
+						<p>
+							　世界の終わりを　予言が告げる<br>
+							　隣人の扉を　兵士たちが叩く</p>
+						<p>
+							　幾千の指が　翼のように　折られ畳まれて　祈りだけが昇る</p>
+						<p>
+							　あなたに　会えない　ここでは　会えない<br>
+							　我ら救いたまえる神</p>
+						<p>
+							☆くりかえし</p>
+						<p>
+							　それでも　触れたい　この手で　掴みたい<br>
+							　我ら護る唯一の愛</p>
+						<p>
+							　コッペリアの鼓動　生きることは痛みを知ること<br>
+							　脱ぎ捨てた靴を　もう一度踏みならし　迷わず歩き出す</p>
+						<p>
+							　コッペリアの柩　暗やみから目覚める光よ　祭壇の羊<br>
+							　ネジの途切れた夢は　どこに向かってゆく</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-noir-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

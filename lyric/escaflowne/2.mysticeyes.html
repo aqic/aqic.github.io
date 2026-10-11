@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>MYSTIC EYES - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「天空のエスカフローネ」エンディング(1996)</div>
+
+                    <div class="LyricTitle">MYSTIC EYES</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">和田弘樹</div>
+                    <div class="LyricStaff">作詞・作曲：和田弘樹<br>編曲：和田弘樹、本間昭光</div>
+
+                    <div class="LyricText">
+						<p>
+							月の向こう　青いSearch light<br>
+							重なる　突然舞い降りたAngel　そう　君は誰？</p>
+						<p>
+							今　運命の　扉が開く　So just fall'in love<br>
+							胸騒ぎする　この瞬間を　逃がさない　Don't stop, baby</p>
+						<p>
+							焼けそうな　君のMystic eyes<br>
+							無邪気な笑顔で　Breaking down<br>
+							君だけに　瞳の奥の合図<br>
+							果てない　旅は始まる　もう止まらない　胸の鼓動<br>
+							君をさらっていきたい</p>
+						<p>
+							やみくもに転がっていく　Day by day<br>
+							強気で気まぐれなAngel　あなどれない</p>
+						<p>
+							だけど感じて　偶然じゃない　もっと　Heart to heart<br>
+							凍えた夢を　温めあえる　二人なら　All right, baby</p>
+						<p>
+							何もかも溶かす　Mystic eyes<br>
+							すいこまれていく　Time &amp; time<br>
+							僕だけが　瞳の中にCrush<br>
+							永遠の愛に向かって　光よりも速く走れ<br>
+							君を　守っていくために</p>
+						<p>
+							ねえ　聞こえる？　二人の未来　生まれ変わる音が</p>
+						<p>
+							燃え上がれ　君のMystic eyes<br>
+							本当の笑顔で　Touch my heart<br>
+							君だけに　瞳の奥の合図<br>
+							優しいKissに抱かれて　もう止まらない　胸の鼓動<br>
+							君を　さらっていくから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

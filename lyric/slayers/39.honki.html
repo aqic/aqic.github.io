@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>本気！！ - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">本気！！</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川村万梨阿</div>
+
+                    <div class="LyricText">
+						<p>
+							美貌と野望　手と手をつなぎ<br>
+							完璧すぎるスタイルだわ<br>
+							怖いくらいの　本気が騒いでいる！</p>
+						<p>
+							欲しい物は欲しいと言える自分が好き<br>
+							ワガママも気ままも　かわいけりゃ　IT's OK!<br>
+							人生という名のドラマ　いつも主役でいたい<br>
+							夢見るだけでおわっちゃ　生きてる意味がない</p>
+						<p>
+							※美貌と野望　手に手をとって<br>
+							　面白すぎるスタンスだわ<br>
+							　ド派手な毎日　一気に駆け登れ！</p>
+						<p>
+							大胆不敵な夢に　誰か添い寝しない？<br>
+							おじけついていないで　運命　駆けちゃえば？<br>
+							偶然じゃない出逢いが　火花散らす瞬間<br>
+							胸の中のダイヤを見逃すはずがない</p>
+						<p>
+							★ピカピカの夢　ピカピカの愛<br>
+							　ワタシを飾るアクセサリー<br>
+							　超一流の　本気を磨いている！</p>
+						<p>
+							極上の夢　極上の愛<br>
+							一度知ったら　やみつきだわ<br>
+							激しく　熱く　本気にふれてみて！</p>
+						<p>
+							理性に縛られた人生なんて　つまんない<br>
+							常識もルールも　軽くクリアーしなきゃ</p>
+						<p>
+							美貌と野望　手と手をつなぎ<br>
+							完璧すぎるスタイルだわ<br>
+							怖いくらいの　本気が騒いでる！</p>
+						<p>
+							極上の夢　極上の愛<br>
+							試してみたら？　オススメよ<br>
+							超一流の　事件にしてあげる！</p>
+						<p>
+							　※Ｒｅｐａｒｔ</p>
+						<p>
+							　★Ｒｅｐａｒｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

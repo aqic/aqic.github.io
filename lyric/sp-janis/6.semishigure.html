@@ -1,0 +1,106 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>蝉時雨 - 塔ノ沢魔術研究会</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「蝉時雨（せみしぐれ）」主題歌</div>
+
+                    <div class="LyricTitle">蝉時雨</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">みとせ　のりこ</div>
+                    <div class="LyricStaff">作曲：Ｄ！<br>作詞：みとせ　のりこ</div>
+
+                    <div class="LyricText">
+						<p>
+							ひとり立ち尽くしてた<br>
+							時代(とき)の闇の中で<br>
+							何を信じればいい？<br>
+							褪せた心</p>
+						<p>
+							他愛ない微笑みも<br>
+							祈ることばさえも<br>
+							あの夏影の底に<br>
+							埋めてきたの</p>
+						<p>
+							舞いおちる　花のように<br>
+							夏を葬送(おく)る　聲(こえ)たちよ</p>
+						<p>
+							光も　木々のざわめきも<br>
+							人の足跡さえ<br>
+							すべて覆い尽くして<br>
+							鎮魂(しず)めるのなら</p>
+						<p>
+							わたしの希望(ゆめ)も　かなしみも<br>
+							よろこびも　いたみも<br>
+							すべてを　忘れさせて<br>
+							眠らせてこのまま<br>
+							浅いまどろみのなか<br>
+							くりかえし視るのは<br>
+							なつかしい　ぬくもりと<br>
+							遠い記憶</p>
+						<p>
+							二度と帰らぬ日々の<br>
+							あたたかな面影<br>
+							つまさきをすりぬける<br>
+							逃げ水のよう</p>
+						<p>
+							夢見てもうたかたと<br>
+							とうに決めたはずなのに</p>
+						<p>
+							わたしをよびさますのは誰？<br>
+							さびしいひとみで<br>
+							凍る痛みにふれて<br>
+							あなたの　指で</p>
+						<p>
+							暗闇の中　手をのばす<br>
+							どうか消えないでと<br>
+							この手をはなさずいて<br>
+							どんな嵐のときも</p>
+						<p>
+							わたしの腕を　つなぐ枷<br>
+							運命のくびきを<br>
+							断ち切るこの勇気を<br>
+							あなたのために</p>
+						<p>
+							わたしの希望(ゆめ)も　かなしみも<br>
+							よろこびも　いたみも<br>
+							すべてを想いに<br>
+							かえて微笑むから<br>
+							ここから歩き出す</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sp-janis-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>約束 - 最終兵器彼女</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">約束</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">片霧烈火</div>
+                    <div class="LyricStaff">作詞：片霧烈火<br>作曲：片霧烈火<br>編曲：Manyo</div>
+
+                    <div class="LyricText">
+						<p>
+							覺えていられないほど 遙か昔の約束<br>
+							それは遠い闇の中 靜かに隱されていて</p>
+						<p>
+							小指を絡ませ合った ただ それだけのものだよ<br>
+							それでも 僕らは ずっと 大切にしていたんだ<br>
+							いつかの君の言葉 これからも忘れない<br>
+							たとえ 土に變えても それだけは忘れない</p>
+						<p>
+							瞼をとじれば見える 君の確かなまぼろし<br>
+							會いたくなったなら また 眠ればいいだけだから<br>
+							眠ればいいだけだから</p>
+						<p>
+							いつかの君の淚 そのうち忘すれるから<br>
+							星も空に變えても かならず 忘れるから</p>
+						<p>
+							唇に刻んでいた 鮮やかな記憶たちは<br>
+							兩手の屆くことない 深い闇に飛び去り</p>
+						<p>
+							知らない痛み抱えて 僕は また 生まれて行く<br>
+							永遠(とわ)にかなうことのない 約束を探しに行く<br>
+							約束を探しに行く</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saishuuheiki-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

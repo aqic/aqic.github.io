@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>城市獵人 - シティ・ハンター</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">城市獵人</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">劉德華</div>
+                    <div class="LyricStaff">作詞：小美<br>作曲：杜自持<br>編曲：杜自持</div>
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							{通街去找美麗女子<br>
+							亂碰釘死心不息為了心願<br>
+							週身發寶算硬漢子<br>
+							願訓身拋開一切搵豔遇</p>
+						<p>
+							有意沒意 轉身講一聲 My baby<br>
+							試下又試 隨時週身滿電池<br>
+							滿腦大志 扮風騷痴戀某女子<br>
+							成日像真的漢子</p>
+						<p>
+							E.T. 話我知<br>
+							Batman 話我知<br>
+							Mark哥話我知<br>
+							留心到大時大節<br>
+							即使沒法子 一於令佢 like<br>
+							陪孟波寫首相戀的故事}</p>
+						<p>
+							E.T. 話我知<br>
+							Batman 話我知<br>
+							Mark哥話我知<br>
+							情痴會又留鼻血<br>
+							即使沒筷子 改口吃塊多士<br>
+							陪孟波打打gameboy睇電視</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-cityhunter-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

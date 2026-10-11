@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>時には昔の話を - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">紅の豚</div>
+
+                    <div class="LyricTitle">時には昔の話を</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">加藤 登紀子</div>
+                    <div class="LyricStaff">作詞・作曲：加藤 登紀子<br>編曲：菅野 よう子<br>ピアノ・アレンジ：大口 純一郎</div>
+
+                    <div class="LyricText">
+						<p>
+							時には昔の話をしようか<br>
+							通いなれた　なじみのあの店<br>
+							マロニエの並木が窓辺に見えてた<br>
+							コーヒーを一杯で一日<br>
+							見えない明日を　むやみにさがして<br>
+							誰もが希望をたくした<br>
+							ゆれていた時代の熱い風にふかれて<br>
+							体中で瞬間（とき）を感じた　そうだね</p>
+						<p>
+							道端で眠ったこともあったね<br>
+							どこにも行けない　みんなで<br>
+							お金はなくても　なんとか生きてた<br>
+							貧しさが明日を運んだ<br>
+							小さな下宿屋にいく人もおしかけ<br>
+							朝まで騒いで眠った<br>
+							嵐のように毎日が燃えていた<br>
+							息がきれるまで走った　そうだね</p>
+						<p>
+							一枚残った写真をごらんよ<br>
+							ひげづらの男は君だね<br>
+							どこにいるのか今ではわからない<br>
+							友達もいく人かいるけど<br>
+							あの日のすべてが空しいものだと<br>
+							それは誰にも言えない<br>
+							今でも同じように見果てぬ夢を描いて<br>
+							走りつづけているよね　どこかで</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>春宵情歌 - カードキャプターさくら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">春宵情歌</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ウヨンタナ</div>
+                    <div class="LyricStaff">作詞：ウヨンタナ<br>作曲：根岸貴幸<br>編曲：根岸貴幸</div>
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							春光撩我心弦<br>
+							春霧繚繞淡淡似雲煙<br>
+							相思　相怨　多惆悵<br>
+							思君　戀君　輾轉長夜難眠</p>
+						<p>
+							窗外燈籠輕搖擺<br>
+							今宵等君空對月喲　滿目淚<br>
+							花扇也遮不住我爰的憔悴</p>
+						<p>
+							夜喲　溫柔的夜喲<br>
+							燈光在水中璘璘珊珊<br>
+							思君　戀君　到如今<br>
+							又听那金絲鳥兒報春曉</p>
+						<p>
+							金釵為君戴<br>
+							絲袖為君翩然舞喲　傷心淚<br>
+							我願化做春天裏的花兒相伴</p>
+						<p>
+							風中楊柳萬千條<br>
+							問君今往何處喲　思斷腸<br>
+							我願化做輕風和你天涯相伴</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ccsakura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

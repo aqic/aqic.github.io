@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>震えて下さい - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">震えて下さい</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">田中敦子</div>
+                    <div class="LyricStaff">作詞：里野塚玲央<br>作曲：菊地圭長<br>編曲：山中紀昌</div>
+
+                    <div class="LyricText">
+						<p>
+							これで良かったと　言える<br>
+							もし　生命(いのち)を投げ出したって<br>
+							それがあの人守る　唯一の<br>
+							術(すべ)だとしたなら　きっと</p>
+						<p>
+							遠く薄れてく　息の中<br>
+							私は　笑ってみせる<br>
+							このやすらぎは　もう奪えない<br>
+							どんな運命にさえも</p>
+						<p>
+							いつからこんな強く<br>
+							出逢った日から<br>
+							いつからこんな深く<br>
+							いいえ、生まれる前から</p>
+						<p>
+							震えて下さい<br>
+							一瞬でいい<br>
+							おののく腕で<br>
+							抱き寄せて<br>
+							父のない子が<br>
+							人に　ぶたれて　愛を知る<br>
+							そんな眼で</p>
+						<p>
+							震えて下さい<br>
+							一粒のｔｅａｒｄｒｏｐ<br>
+							ガラスの胸を<br>
+							通せたら<br>
+							それだけでいい<br>
+							私の　越えた　苦しみは<br>
+							癒される、今</p>
+						<p>
+							痛みが芯まで　届くとき<br>
+							私は　あなたを見てる<br>
+							からだ全部が　死に絶えたって<br>
+							愛しさは残る　永遠(とわ)に</p>
+						<p>
+							いつからこんな強く<br>
+							心 宿して<br>
+							いつからこんな深く<br>
+							再び生まれた日から</p>
+						<p>
+							震えて下さい<br>
+							さあ隠さずに<br>
+							弱いあなたを<br>
+							さらけ出し<br>
+							母のない子が<br>
+							声も　出せずに　泣くときの<br>
+							顔をして</p>
+						<p>
+							震えて下さい<br>
+							一筋のｒｅｇｒｅｔ<br>
+							私に揺れて<br>
+							くれたなら<br>
+							何も要らない<br>
+							少女が　あの日　見た夢は<br>
+							満たされる、今</p>
+						<p>
+							震えて下さい<br>
+							一粒のｔｅａｒｄｒｏｐ<br>
+							ガラスの胸を<br>
+							通せたら<br>
+							それだけでいい<br>
+							私の　越えた　苦しみは<br>
+							癒される、今</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

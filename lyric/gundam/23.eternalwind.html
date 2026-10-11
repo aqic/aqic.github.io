@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ETERNAL WIND -ほほえみは光る風の中- - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場用アニメ「機動戦士ガンダムＦ９１」主題歌</div>
+
+                    <div class="LyricTitle">ETERNAL WIND -ほほえみは光る風の中-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">森口　博子</div>
+
+                    <div class="LyricText">
+						<p>
+							まるで悲しみのかけらだわ<br>
+							街をとざす　ガラス色の雪<br>
+							明日をさがす瞳さえも<br>
+							くもらせてゆくの　闇のかなた</p>
+						<p>
+							見知らぬ力に流されて　心がどこかへはぐれてく<br>
+							はりさけそうな胸の奥で　鼓動だけが<br>
+							たしかに生きている</p>
+						<p>
+							光る風の中　聞こえてくる　あなたの声<br>
+							｢Pray don't break a peace forever｣<br>
+							その輝きを信じている</p>
+						<p>
+							青くけむる水平線を<br>
+							この目はまだ　おぼえているから<br>
+							まぶたを閉じれば帰れるの<br>
+							暖かな時間……　思い出たち……</p>
+						<p>
+							くりかえすあやまちがいつも<br>
+							おろかな生き物に変えてく<br>
+							傷つくだけの生き方でも　涙はそうよ<br>
+							決して見せないわ</p>
+						<p>
+							光る風の中　ほほえんでいる　あなたがいる<br>
+							｢Pray don't break a peace forever｣<br>
+							そのまぶしさを見つめている</p>
+						<p>
+							激しい痛みは誰のため？<br>
+							それがやっと　わかる気が　するわ<br>
+							めぐりあいはそう奇跡なの<br>
+							幾億の星が　さまよう宇宙（そら）</p>
+						<p>
+							さよならが教えてくれたの　あなたの本当のやさしさ<br>
+							誰よりも大事な人だと　胸を張って言えるわ<br>
+							いつの日も</p>
+						<p>
+							光る風の中　ほほえんでいる　あなたがいる<br>
+							｢Pray don't break a peace forever｣<br>
+							そのまぶしさを見つめている<br>
+							｢Pray don't break a peace forever｣<br>
+							熱い瞳に　やきつけて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

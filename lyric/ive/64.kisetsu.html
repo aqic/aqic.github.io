@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>季節の雫 - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">BLUEGALE</div>
+
+                    <div class="LyricTitle">季節の雫</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">R.I.E</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							外は　やわらかな風の声が<br>
+							まるで　目覚めたばかりの朝<br>
+							誘っているような<br>
+							きっと　あなたと出会う予感を<br>
+							そっと　私の心の中教えてくれた</p>
+						<p>
+							Love to wish　Hold on you<br>
+							いつまでも　熱い想い<br>
+							白い波と空とに重なって　揺れ動くよ<br>
+							さみしくなるよ　どこまでも蒼い夏の<br>
+							二人染まる　季節の雫</p>
+						<p>
+							いつも　おだやかにすぎてゆく日が<br>
+							今は　なんだか急ぎ足で<br>
+							背中をたたくの<br>
+							きっと　あなたと始まる瞬間を<br>
+							少しだけ　少しだけ長く輝かせるの</p>
+						<p>
+							Take me up　Make me hot<br>
+							砂の上　長くのびる<br>
+							寄り添う二つの影夏の夜に　溶けてゆくよ<br>
+							空に浮かぶ星達に　抱かれながら<br>
+							いつの日にか　思い出に変わる</p>
+						<p>
+							Love to wish　Hold on you<br>
+							いつまでも　熱い想い<br>
+							白い波と空とに重なって　揺れ動くよ<br>
+							高く浮かぶ星達に　抱かれながら<br>
+							いつの日にか　思い出に変わる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>いのり - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">いのり</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							通り過ぎた季節は<br>
+							まぶしく光り<br>
+							懐かしいあの日々は<br>
+							今も胸に響く</p>
+						<p>
+							舞い落ちる粉雪に<br>
+							はしゃいで笑う<br>
+							無邪気だったあの頃<br>
+							もうかえらないから</p>
+						<p>
+							胸に迫る涙<br>
+							息が止まるほど<br>
+							あなたの姿見つめ<br>
+							幸せだったの</p>
+						<p>
+							ずっといたかった<br>
+							一緒にいたかった<br>
+							かなわぬ夢でもいいから会いたいの</p>
+						<p>
+							ずっといたかった<br>
+							一緒にいたかった<br>
+							かなわぬ夢でもいいから会いたいの</p>
+						<p>
+							揺れる気持ちはかなく<br>
+							こころにともる<br>
+							あたたかなこの夢は<br>
+							遥かな道てらすよ</p>
+						<p>
+							遠く離れてても<br>
+							感じていられる<br>
+							いつも想いだけは<br>
+							そばにいること</p>
+						<p>
+							ずっといたかった<br>
+							一緒にいたかった<br>
+							かなわぬ夢でもいいから会いたいの</p>
+						<p>
+							２人で誓った<br>
+							遠い日の約束<br>
+							いつかまた会える　その日を信じてる</p>
+						<p>
+							ずっと祈ってる<br>
+							また巡り会えること<br>
+							この遠い空で私も祈ってる</p>
+						<p>
+							忘れないでいて<br>
+							悲しみの夜にも<br>
+							希望の朝があなたに来ることを</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>梦はどこへいった - 天地無用!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">梦はどこへいった</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							だれかがミサイル飞ばして　すべてが终わる日を<br>
+							心待ちにしているような　气分はなんだろう</p>
+						<p>
+							恶いことなのかそれとも　これが普通なのか<br>
+							ひとりじゃもうわからないよ　だれか教えてくれ</p>
+						<p>
+							そしてまた…　大好きなあのひとが<br>
+							远くへ行ってしまったよ　だれにも气づかれずに</p>
+						<p>
+							梦はあれから　どこへ行ったのか<br>
+							この场所にたしか　昔あったはずさ</p>
+						<p>
+							燃え上がるような　爱だってあった<br>
+							あの顷の气持ち　もう一度とりもどせ</p>
+						<p>
+							あんたの时代はよかった　梦があふれていた<br>
+							苦しんでも伤ついても　ちがう明日があった</p>
+						<p>
+							かけ声ばかりでなんにも　变わらない世の中<br>
+							明日からもきっと续く　退屈な每日</p>
+						<p>
+							それよりも…　好きとさえ言えなかった<br>
+							あの恋はなぜ　いまもまだ　胸を热くするのか</p>
+						<p>
+							果てしない梦を　とりもどしてみたい<br>
+							いつの日かかなうものと　信じた梦</p>
+						<p>
+							だれにでもあった　くじけない力<br>
+							もういちど思い出したいよ</p>
+						<p>
+							梦はあれから　どこへ行ったのか<br>
+							この场所にたしか　昔あったはずさ</p>
+						<p>
+							燃え上がるような　爱だってあった<br>
+							あの顷の气持ち　もう一度とりもどせ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-tenchi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

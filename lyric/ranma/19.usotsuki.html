@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>うそつき - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">［らんま 1/2］DoCo＊FIRSTイメージ・ソング(1992)</div>
+
+                    <div class="LyricTitle">うそつき</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">らんま1/2　DoCo</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲・編曲：川井憲次<br>実演：らんま★林原めぐみ<br>あかね★日高のり子<br>シャンプー★佐久間レイ<br>なびき★高山みなま<br>かすみ★井上喜久子</div>
+
+                    <div class="LyricText">
+						<p>
+							（全員）夜風で乾かす涙<br>
+							街の灯りも 星に見えた<br>
+							ごめんと つぶやく声を<br>
+							背中で聞くと せつないの</p>
+						<p>
+							（あかね）あやまらないで （らんま）泣かせたことを<br>
+							（ら・あ）言い訳できない気持ちになる</p>
+						<p>
+							（全員）女の子 うそつきでしょう<br>
+							（なびき）急にあなたを 嫌いになる<br>
+							（全員）男の子 とまどうでしょう<br>
+							好きと告げられ うなづいてた<br>
+							（シャンプー）本気よ （かすみ）さっきも…</p>
+						<p>
+							（あかね）理由は答えたくない<br>
+							あなたは何も 悪くないの<br>
+							（らんま）明日は逢わずにいたい<br>
+							わがままだって わかってる</p>
+						<p>
+							（なびき）流れる星に （かすみ）願いをひとつ<br>
+							（な・か）素直な私になれるように</p>
+						<p>
+							（全員）女の子 傷つくでしょう<br>
+							（シャンプー）恋の小箱を わざと閉じる<br>
+							（全員）男の子 悲しむでしょう<br>
+							いつもやさしい あなただから<br>
+							（らんま）心が （あかね）痛むの…</p>
+						<p>
+							（全員）女の子 うそつきでしょう<br>
+							（かすみ）急にあなたが 恋しくなる<br>
+							（全員）男の子 とまどうでしょう<br>
+							好きと告げられ 逃げ出してた<br>
+							（なびき）本気よ （シャンプー）さっきも…<br>
+							（全員）どっちも…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

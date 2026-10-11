@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>つづれおり - 高橋留美子劇場</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">つづれおり</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">speena</div>
+                    <div class="LyricStaff">Lyrics : Kanako<br>Music : Shouko<br>Arrangement : speena</div>
+
+                    <div class="LyricText">
+						<p>
+							「ユメもない。」だなんて<br>
+							つぶやきながら<br>
+							かまってほしそうな　しかめつら<br>
+							レイル越し　君は背中に　白い川をつれて<br>
+							あの日のあたし全部で　君をみてた</p>
+						<p>
+							暗いトンネルに　かくれてしまうまで<br>
+							ふりあう手は　二人をつないで<br>
+							よく笑う　君の声はもう　白い光に消えた<br>
+							走ってく　走ってく　走ってく<br>
+							…シュルリ　カタン　タン　タン</p>
+						<p>
+							ゆずれないもの　ひとつ<br>
+							ココロにあるのよ<br>
+							18の冬の日と変わらず　あたしを呼ぶの</p>
+						<p>
+							戦いの森で　しゃがみこむ日は<br>
+							あたしに　どうか君の風を<br>
+							いつか　その手が欲しがるもの<br>
+							追う日がきても　どうか君のままで<br>
+							あたしの腕はもう　恋しくて　あなたを想いすぎる</p>
+						<p>
+							君が泣く　その時に　あたしは歌うよ<br>
+							隣りより　向きあう事　選んだまっすぐな目に</p>
+						<p>
+							雑踏の中に　うずくまる日は<br>
+							あたしに　どうか君の風を<br>
+							強く　その手が求めるもの<br>
+							追う日が来ても　君のままで<br>
+							雨あがりの空は　青すぎて<br>
+							泣きたくなるほど　もう遠すぎて<br>
+							ふりかえるなんて　もうできないよ<br>
+							あなたを想いすぎる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gekijou-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

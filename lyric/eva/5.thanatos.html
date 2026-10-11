@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Thanatos - 新世紀エヴァンゲリオン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">劇場版 Air/まごころを、君に</div>
+
+                    <div class="LyricTitle">Thanatos</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sagisu Shiro</div>
+                    <div class="LyricStaff">Lyrics:MASH<br>Music&amp;Arrange:Shiro SAGISU(鷺巢詩郎)</div>
+
+                    <div class="LyricText">
+						<p>
+							Now it's time,I fear to tell<br>
+							I've been holding it back so long<br>
+							But something strange deep inside of me is happening<br>
+							I feel unlike<br>
+							I've ever felt<br>
+							And it's makin' me scared<br>
+							That I may not be what I(think I am)</p>
+						<p>
+							What of us,what do I say<br>
+							Are we both from a different world<br>
+							Cos every breath that I take,I breathe it for you<br>
+							I couldn't face my life without you<br>
+							And I'm so afraid. There's nothing to comfort us<br>
+							What am I,if I can't be yours</p>
+						<p>
+							I don't sleep,don't feel a thing<br>
+							And my senses have all but gone<br>
+							Can't even cry from the pain,can't shed a tear now<br>
+							I realise<br>
+							We're not the same<br>
+							And it's makin' me sad<br>
+							Cos we can't fulfil our dream(in this life)</p>
+						<p>
+							So I must,let us break free<br>
+							I can never be what you need<br>
+							If there was a way,through the hurt<br>
+							Then I would find it<br>
+							I'd take the blows. Yes I would fight it<br>
+							But this is the one. Impossible dream to live<br>
+							What am I,if I can't be yours.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-eva-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Together - Robotech</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Robotech] Insert Song</div>
+
+                    <div class="LyricTitle">Together</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sunny Hilden</div>
+                    <div class="LyricStaff">Composed by: Michael Bradley, Steve Wittmack</div>
+
+                    <div class="LyricText">
+						<p>
+							There's magic in the air tonight,<br>
+							The moonlit stars are burning bright,<br>
+							Your face glows by the candlelight -<br>
+							It's all because tonight's the night.<br>
+							Now hold my hand and take this ring<br>
+							As we unite in harmony.<br>
+							We can begin to live the dream,<br>
+							The dream that's meant for you and me...</p>
+						<p>
+							To be together<br>
+							For the first time in our lives<br>
+							It's us together.<br>
+							As married man and wife<br>
+							We'll be together from now on,<br>
+							Until death do us part -<br>
+							And even then I hope our heaven lasts<br>
+							Forever.</p>
+						<p>
+							I promise to be always true,<br>
+							Until the very end with you,<br>
+							In good times and in bad times too<br>
+							I know that we can make it through.</p>
+						<p>
+							As one united we'll be strong<br>
+							Because together we belong.<br>
+							If I could sing to you a song,<br>
+							I'd sing of love that won't go wrong,</p>
+						<p>
+							If we're together<br>
+							We'll make a brand new life for us together<br>
+							As married man and wife<br>
+							We'll be together from now on,<br>
+							Until death do us part -<br>
+							And even then I hope our heaven lasts<br>
+							Forever.</p>
+						<p>
+							We'll stay together from now on,<br>
+							Until death do us part -<br>
+							And even then I hope our heaven lasts<br>
+							Forever.</p>
+						<p>
+							I know forever we will always be<br>
+							Together.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-robotech-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

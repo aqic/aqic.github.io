@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">F&amp;C</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《F&amp;C》</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">アルバム</span><span class="disc-sub">8 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.gogo.html">《ゴーゴー　ウェイトレス&lt;br&gt;（コーラスバージョン）》</a><span class="note">- Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</span></li>
+						<li class="LyricItem"><a href="2.shizukana.html">《しずかな深呼吸して&lt;br&gt;（フルバージョン）》</a><span class="note">- Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</span></li>
+						<li class="LyricItem"><a href="3.memory.html">《メモリー～She is sea～》</a><span class="note">- Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</span></li>
+						<li class="LyricItem"><a href="4.darling.html">《My darlin'》</a><span class="note">- Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</span></li>
+						<li class="LyricItem"><a href="5.nonstop.html">《NON STOP! PARTY NIGHT》</a><span class="note">- Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</span></li>
+						<li class="LyricItem"><a href="6.suki.html">《好きだから》</a><span class="note">- Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</span></li>
+						<li class="LyricItem"><a href="7.dare.html">《誰よりも》</a><span class="note">- Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</span></li>
+						<li class="LyricItem"><a href="8.aosora.html">《青空に向かって》</a><span class="note">- Pia キャロットへようこそ!!2 DX ベストボーカルコレクション</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">その他</span><span class="disc-sub">3 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="9.storyoflover.html">《恋人たちの伝説》</a><span class="note">- ED主題歌</span></li>
+						<li class="LyricItem"><a href="10.storyforever.html">《永遠のストーリー》</a><span class="note">- OP主題歌</span></li>
+						<li class="LyricItem"><a href="11.icedtea.html">《Iced Tea》</a><span class="note">- Pia2</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

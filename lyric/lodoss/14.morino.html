@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>森の十字路 - ロードス島戦記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">森の十字路</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">石桥千惠</div>
+                    <div class="LyricStaff">作詞：森由里子<br>作曲・編曲：和田薰</div>
+
+                    <div class="LyricText">
+						<p>
+							白い云雀が歌ってるわ　泉のほとり<br>
+							それは大地を赞えてる　森の歌よ</p>
+						<p>
+							しらずしらず踵鸣らし踊りだすでしょう？<br>
+							だから木の叶も风に乘って　手拍子する</p>
+						<p>
+							ここは森の十字路<br>
+							きっと旅する人は<br>
+							みんな立ち止まるの　未来への道<br>
+							确かめるため</p>
+						<p>
+							风よ光よ小鸟たちよ　踊りましょうよ<br>
+							今を生きるの　悲しみも梦に变えて</p>
+						<p>
+							必ず见つけるわ　水晶色の梦<br>
+							そのときを信じてる　いつも...</p>
+						<p>
+							闻き耳立てるウサギたちに　□えておくの<br>
+							□が来たなら　この旋律（うた）で祈りなさい</p>
+						<p>
+							ここは　圣なる场所<br>
+							そうよ　旅する生命（いのち）が<br>
+							伤を愈しながら　光浴びて　翼休めるの</p>
+						<p>
+							剑（つるぎ）置いていとしい友よ　踊りはしょうよ<br>
+							今を生きるの　先のことを布れないで</p>
+						<p>
+							风よ光よいとしい友よ　旅立ちましょう<br>
+							今を生きるの　见えない力胸に秘めて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lodoss-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

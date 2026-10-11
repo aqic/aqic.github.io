@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>青春 - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book １ タッチ Music Flavor ３</div>
+
+                    <div class="LyricTitle">青春</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">岩崎 良美</div>
+                    <div class="LyricStaff">作詞：康 珍化<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							風が踊るグランド　ベンチの隅<br>
+							誰かがほら　忘れていったわ<br>
+							ユニフォーム</p>
+						<p>
+							汗にまみれ　あちこち破れかけて<br>
+							手にとると　涙が出た</p>
+						<p>
+							ねえ音も立てず　過ぎてく青春には<br>
+							さよならがいっぱい</p>
+						<p>
+							ねえ楽しい日々　お願いこのまま<br>
+							Stay Stay Stay<br>
+							時よ　動かないで</p>
+						<p>
+							私はまだ　あなたに　好きですって<br>
+							打ちあけてさえ　いないの  カバンの中詰め込む　光と影<br>
+							手帳にそっとはさんだ　あなたの写真</p>
+						<p>
+							夢と恋の　違いに気づく頃は<br>
+							制服じゃ　もうないでしょう</p>
+						<p>
+							誰もここに二度と　帰ってこないのよ<br>
+							やさしさがいっぱい</p>
+						<p>
+							ねえ　せせらぐ心思い出このまま<br>
+							Stay Stay Stay<br>
+							連れていかないでね</p>
+						<p>
+							あなたの胸　制服の金ボタン<br>
+							約束よ　ねえ私に<br>
+							卒業式で　私に</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

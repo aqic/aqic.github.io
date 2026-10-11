@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Eternal Snow - 満月をさがして</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Eternal Snow</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Changin' My Life</div>
+
+                    <div class="LyricText">
+						<p>
+							君を好きになって　どれくらい経つのかナ？<br>
+							気持ち　膨らんでゆくばかりで<br>
+							君は　この思い気付いているのかナ？<br>
+							一度も言葉には　してないけど</p>
+						<p>
+							雪のように　ただ静かに<br>
+							降り積もり　つづけてゆく</p>
+						<p>
+							Hold me tight　こんな思いなら<br>
+							誰かを好きになる気持ち<br>
+							知りたく　なかったよ<br>
+							I love you　涙止まらない<br>
+							こんなんじゃ　君のこと<br>
+							知らずにいれば　良かったよ</p>
+						<p>
+							君をいつまで　思っているのかナ？<br>
+							ため息が窓ガラス　曇らせた</p>
+						<p>
+							揺れる心　灯すキャンドルで<br>
+							今　溶かして　ゆけないかナ？</p>
+						<p>
+							Hold me tight　折れるほど強く<br>
+							木枯らし　吹雪に出会っても<br>
+							寒くないようにと<br>
+							I miss you　君を思うたび<br>
+							編みかけの　このマフラー<br>
+							今夜も一人　抱きしめるよ</p>
+						<p>
+							永遠に降る雪があるなら<br>
+							君へと続くこの思い　隠せるのかナ？</p>
+						<p>
+							Hold me tight　こんな思いなら<br>
+							誰かを好きになる気持ち<br>
+							知りたく　なかったよ<br>
+							I love you　胸に込み上げる<br>
+							冬空に叫びたい<br>
+							今すぐ君に　会いたいよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fullmoon-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

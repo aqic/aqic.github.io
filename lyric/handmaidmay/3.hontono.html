@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>本当の気持ち - HAND MAID メイ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Hand Maid May</div>
+
+                    <div class="LyricTitle">本当の気持ち</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高橋美佳子</div>
+                    <div class="LyricStaff">作詞：まつざきゆうこ<br>作曲：增田俊郎<br>編曲：增田俊郎</div>
+
+                    <div class="LyricText">
+						<p>
+							キミの前で　耳まで赤くなるのは　どうしてだろう<br>
+							二人きりは　苦手だし　お喋りも　ぎこちない</p>
+						<p>
+							可笑しいよね　意識しすぎ<br>
+							これが恋なの？　そんなの　ゼッタイ　認めない</p>
+						<p>
+							☆素直になれない　素直になりたい<br>
+							　本当の気持ちは　ココロの中<br>
+							　いつか　キミが教えて</p>
+						<p>
+							子供のころ　願った夢に向かって　キミはがんばる<br>
+							辛いことも　あったのに　どうしてなの　優しいね</p>
+						<p>
+							適わない　そんな所<br>
+							憧れているの？　そんなの　今さら　認めない</p>
+						<p>
+							スキなんて言えない　スキだって言いたい<br>
+							本当の気持ちは　ココロの中<br>
+							いつか　キミが適えて</p>
+						<p>
+							☆繰り返し</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-handmaidmay-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

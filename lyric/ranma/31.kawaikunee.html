@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>かわいくねえ、色気がねえ - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">かわいくねえ、色気がねえ</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							ツンとすましてるのも　いまのうちだぜ<br>
+							今日こそ　この勝負に決着つける<br>
+							風に震える　フェンス飛びこえて<br>
+							おまえと向き合う　夕日の空き地</p>
+						<p>
+							一歩近づくたびに　離れるような<br>
+							意地っぱりなとこが　よけいなんだぜ<br>
+							ひとさし指で　狙いさだめる<br>
+							ハートの奥の　　本気を見せろよ</p>
+						<p>
+							かわいくねえ、色気がねえ　おまけに素直じゃねえ<br>
+							好きだから　買って出た　ケンカじゃないのさ<br>
+							かわいくねえ、色気がねえ　張り合う気もしねえ<br>
+							ふりかざす　恋心　見抜けもしないで　ニブイ奴</p>
+						<p>
+							ひとの忠告には　耳を貸せよな<br>
+							たった一度きりしか　言いたくないぜ<br>
+							おまえみたいな　心配なヤツを<br>
+							ひとりぼっちで　放っておけるか</p>
+						<p>
+							かわいくねえ、色気がねえ　おまけに強くもねえ<br>
+							好きだから　相手して　いたわけじゃないさ<br>
+							かわいくねえ、色気がねえ　甘える気もしねえ<br>
+							砕け散る　恋心　つかめもしないで　ニブイ奴</p>
+						<p>
+							かわいくねえ、色気がねえ　おまけに素直じゃねえ<br>
+							好きだから　買って出た　ケンカじゃないのさ<br>
+							かわいくねえ、色気がねえ　張り合う気もしねえ<br>
+							ふりかざす　恋心　見抜けもしないで　ニブイ奴</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

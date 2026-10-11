@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Kirari Takaramono - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Kirari Takaramono</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Yui Horie</div>
+
+                    <div class="LyricText">
+						<p>
+							キラリ 光る 夢を 大切に抱きしめて<br>
+							一歩づつ歩いて行こう 明日へと‥</p>
+						<p>
+							Ah 色とりどり街に<br>
+							Ah 笑顔であいさつして走り出す</p>
+						<p>
+							もしも 吹きつける風が 冷たくっても<br>
+							思いきり 蹴とばし パッと飛び越えるの</p>
+						<p>
+							キラリ 光る 今を 大切に抱きしめて<br>
+							すべてが素敵な宝物<br>
+							希望照らす太陽 いつまでも心に<br>
+							一歩づつ歩いて行こう 明日へと‥</p>
+						<p>
+							Ah 回り続ける街に<br>
+							Ah 笑顔で手を振ったら走り出す</p>
+						<p>
+							もしも すれ違う風が いじわるでも<br>
+							思いきり ぶつかり サッと乗り越えるの</p>
+						<p>
+							キラリ 光る 季節 大切に抱きしめて<br>
+							すべてが素敵な宝物<br>
+							空へ登る太陽 いつまでも心に<br>
+							一歩づつ 進んで行こう 明日へと‥</p>
+						<p>
+							キラリ 光る 夢を 大切に抱きしめて<br>
+							すべてが素敵な宝物<br>
+							未来描く太陽 いつまでも心に<br>
+							一歩づつ 向かって行こう 明日へと‥</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

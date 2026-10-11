@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Meteor－ミーティア－ - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Meteor－ミーティア－</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">T.M.Revolution</div>
+                    <div class="LyricStaff">作詞︰井上秋緒<br>作曲︰浅倉大介<br>編曲︰浅倉大介</div>
+
+                    <div class="LyricText">
+						<p>
+							触れてても 冷たい指先<br>
+							凍り付いた 月に照らされて<br>
+							ひび割れた心が<br>
+							燃え尽きる夜を抱くけど<br>
+							一瞬の彼方で 煌めいた想いが<br>
+							愛なら 幻にしてみせて<br>
+							放つ光 空に堕ちる<br>
+							望むだけの 熱を捧げて<br>
+							死に逝く星の 生んだ炎が<br>
+							最期の夢に 灼かれているよ</p>
+						<p>
+							降り積もる 罪は優しさに<br>
+							刺は微笑に 変えてゆけるなら<br>
+							散る間際の花の<br>
+							届かない叫びにも似た<br>
+							祈りの儚さが 求める切なさが<br>
+							二人の 出逢った時代を揺らす<br>
+							嘆き 光 波にのま</p>
+						<p>
+							痛みの中 君は目醒めて<br>
+							傷つけながら 出来る絆が<br>
+							孤独を今 描き始める<br>
+							注ぐ生命 刻む羽根で<br>
+							君よどうか 僕を包んで<br>
+							光はまた 空に堕ちる<br>
+							望むだけの 熱を捧げて<br>
+							崩れ落ちゆく 過ちの果て<br>
+							最期の夢を 見続けてるよ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

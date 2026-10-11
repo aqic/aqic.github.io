@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lonely Soldier Boy - Robotech</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Robotech] Insert Song</div>
+
+                    <div class="LyricTitle">Lonely Soldier Boy</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Michael Bradley</div>
+                    <div class="LyricStaff">Composed by: Michael Bradley, Steve Wittmack</div>
+
+                    <div class="LyricText">
+						<p>
+							After all of the battles are over,<br>
+							After all of the fighting is done,<br>
+							Will you be the one<br>
+							To find yourself alone with your heart?<br>
+							Looking for the answer.<br>
+							When it feels like tomorrow will never come,<br>
+							When it seems like the night would not end,<br>
+							Can you pretend<br>
+							That you're really not alone?</p>
+						<p>
+							You're out here on your own.<br>
+							Lonely soldier boy.<br>
+							You're out here on your own.<br>
+							Lonely soldier boy.<br>
+							Yes I'm lonely,<br>
+							But are you alone?<br>
+							Lonely soldier boy.<br>
+							With all the glory,<br>
+							Without the joy -<br>
+							A lonely soldier boy.</p>
+						<p>
+							Do you believe in the causes you're fighting for?<br>
+							You used to believe yesterday.<br>
+							Now what can you say,<br>
+							Now that you're so far from home</p>
+						<p>
+							You're out here on your own.<br>
+							Lonely soldier boy.<br>
+							You're all alone.<br>
+							Lonely soldier boy.<br>
+							But are you really alone?<br>
+							Lonely soldier boy.</p>
+						<p>
+							You're here on your own<br>
+							Lonely soldier boy.<br>
+							But are you really alone?<br>
+							Lonely soldier boy.<br>
+							You're out here on your own.<br>
+							Lonely soldier boy.<br>
+							Are you lonely?<br>
+							Out here on your own.<br>
+							Lonely soldier boy.<br>
+							Yes I'm lonely.<br>
+							Lonely soldier boy.<br>
+							Lonely soldier boy.</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-robotech-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

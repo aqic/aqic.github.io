@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>BOYS ABOUT 16 - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">BOYS ABOUT 16</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">岩坂士京</div>
+                    <div class="LyricStaff">作詞：岩里祐穂<br>作曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							この場所に光さすのに<br>
+							僕の心のならでは夜が明けない<br>
+							間違いで正しくて何も分からなくなった<br>
+							でもこんなに求めているのに</p>
+						<p>
+							あなた一人を愛したい　その為に<br>
+							この全世界を捨ててもいいだ<br>
+							とめどなく流れだしてくる思いが<br>
+							汚れることなく何処まで届いてゆくのか</p>
+						<p>
+							11秒の祈りを放つ胸を鎮め<br>
+							静寂を待ってみるよ<br>
+							孤独さえ渇きまでも味方にできるまで<br>
+							もう無理して夢見たりしない</p>
+						<p>
+							何も知らない僕らに必要なのは<br>
+							壊されることないささやかな希望<br>
+							愛することで人は輝きだけに<br>
+							必ず最後は包まれてゆける</p>
+						<p>
+							悲しみはやがて終わると言うけど<br>
+							別の悲しみをまだ連れてくる</p>
+						<p>
+							何も知らない僕らに必要なのは<br>
+							壊されることないささやかな希望<br>
+							愛することで人は輝きだけに<br>
+							必ず最後は包まれてゆける<br>
+							あなた一人を愛したい　その為に<br>
+							この全世界を捨ててもいいだ<br>
+							とめどなく流れだしてくる思いが<br>
+							汚れることなく何処まで届いてゆくのか</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

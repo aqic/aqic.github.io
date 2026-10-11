@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>全てに我愛你 - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ふしぎ遊戯 CDBOOKS 鬼宿+美朱 IM</div>
+
+                    <div class="LyricTitle">全てに我愛你</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">関俊彦 日高のり子</div>
+
+                    <div class="LyricText">
+						<p>
+							全て終ったわ 愛が空の彼方へ<br>
+							遠ざかるのを見つめ 「これでいいの」</p>
+						<p>
+							君の涙には やさしさあふれすぎて<br>
+							僕は必ず戻る ふたり願いつづけ</p>
+						<p>
+							新しい物語 (みち) が きっと始まるわ<br>
+							哀しみ乗り越えて 未来に我愛[イ尓]</p>
+						<p>
+							もう二度と 涙流さないように 未来に我愛[イ尓]</p>
+						<p>
+							おもちゃの指輪が 星よりも輝いて<br>
+							異国のあなたと結ぶ 光の精</p>
+						<p>
+							時空を飛びこえ 心はひとつになる<br>
+							遠い旅に見つけた 永遠 (とわ) の愛をつかむ</p>
+						<p>
+							新しい物語 (みち) が 今夜 始まるわ<br>
+							何より大切な あなたに我愛[イ尓]</p>
+						<p>
+							もう二度と 涙流さないように あなたに我愛[イ尓]</p>
+						<p>
+							翼をささえてる 風はあなたなの<br>
+							力あわせて 今全てに我愛[イ尓]</p>
+						<p>
+							もう二度と 涙流さないように あなたに我愛[イ尓]</p>
+						<p>
+							新しい物語 (みち) が 今夜 始まるわ<br>
+							何より大切な あなたに我愛[イ尓]</p>
+						<p>
+							もう二度と 涙流さないように あなたに我愛[イ尓]</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

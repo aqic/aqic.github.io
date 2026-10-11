@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>巡り会い - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">機動戦士ガンダムIII～めぐりあい宇宙～</div>
+
+                    <div class="LyricTitle">巡り会い</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">井上大辅</div>
+                    <div class="LyricStaff">作詞：井荻麟<br>作曲：井上大輔</div>
+
+                    <div class="LyricText">
+						<p>
+							Believe!　人は悲しみ重ねて　大人になる<br>
+							いま　寂しさに震えてる<br>
+							愛しい人の<br>
+							その哀しみを　胸に抱いたままで<br>
+							Believe！ 涙を 海へ還れ<br>
+							恋しくて つのる想い<br>
+							宙（そら）　茜色に染めてく</p>
+						<p>
+							Yes, my sweet, Yes my sweetest<br>
+							I wanna get back where you were<br>
+							愛しい人よ もう一度<br>
+							Yes, my sweet, Yes my sweetest<br>
+							I wanna get back where you were<br>
+							誰もひとりでは 生きられない</p>
+						<p>
+							Believe！帰らぬ人を想うと　胸は翳り<br>
+							いま 哀しみの彼方から<br>
+							舵をとれば<br>
+							いつの日にか　めぐり逢えると信じて<br>
+							Believe！ 涙よ 海へ還れ</p>
+						<p>
+							※愛しさに　胸焦し<br>
+							　想い 宙を染めあげる</p>
+						<p>
+							　Yes, my sweet, Yes my sweetest<br>
+							　I wanna get back where you were<br>
+							　愛しい人よ もう一度<br>
+							　Yes, my sweet, Yes my sweetest<br>
+							　I wanna get back where you were<br>
+							　愛しい人よ もう一度<br>
+							　Yes, my sweet, Yes my sweetest<br>
+							　I wanna get back where you were<br>
+							　誰もひとりでは 生きられない</p>
+						<p>
+							※Repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

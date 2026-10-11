@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>The Borderline - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">The Borderline</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">兵藤まこ</div>
+
+                    <div class="LyricText">
+						<p>
+							The Borderline The Borderline<br>
+							The Borderline The Borderline</p>
+						<p>
+							Red &amp; Roses<br>
+							Lips &amp; Breath<br>
+							Hair &amp; Dolls<br>
+							They're look a-like</p>
+						<p>
+							Smoke &amp; Mist<br>
+							Night &amp; Midnight<br>
+							The deep &amp; Hell<br>
+							They really get me</p>
+						<p>
+							Flip &amp; Fly<br>
+							Heal &amp; Feel<br>
+							Hower &amp; Poison<br>
+							are on the blink</p>
+						<p>
+							The Borderline The Borderline<br>
+							The Borderline The Borderline</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

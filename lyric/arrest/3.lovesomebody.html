@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Love Somebody - 逮捕しちゃうぞ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Love Somebody</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							每日つぶやいてる　何か足りない<br>
+							せめてときめきは　Keepしたいね</p>
+						<p>
+							理想は远くて　现实は近くて<br>
+							风も强いけれど　笑ってる自分を<br>
+							ギュッと抱きしめて　绝对　强くなる</p>
+						<p>
+							きっと　Love Somebody　いつの日にか<br>
+							见つけてみせる　Take My Chance<br>
+							世界中　时を止めて　天使になりたい</p>
+						<p>
+							きっと　Love Somebody　出会えるはず<br>
+							かけがえのない人に<br>
+							情热は止まらないよ　明日に飞びこもう</p>
+						<p>
+							ひとりで见てる梦も　二人の方が<br>
+							たぶん何倍も　ステキに见える</p>
+						<p>
+							途方に暮れてる　暇なんかないから<br>
+							いつも元气だして　迷ってはいけない<br>
+							グット前向きにしっかりしなくちゃね</p>
+						<p>
+							きっと　Love Somebody　いつの日にも<br>
+							信じているよ　Get My Chance<br>
+							运命のベルが鸣れば　扉は开くよ</p>
+						<p>
+							きっと　Love Somebody　めぐり会える<br>
+							搜し续けた人に<br>
+							太阳も辉いてる　奇迹は嘘じゃない</p>
+						<p>
+							きっと　Love Somebody　いつの日にか<br>
+							见つけてみせる　Take My Chance<br>
+							世界中　时を止めて　天使になりたい</p>
+						<p>
+							きっと　Love Somebody　出会えるはず<br>
+							かけがえのない人に<br>
+							情热は止まらないよ　明日に飞びこもう</p>
+						<p>
+							きっと　Love Somebody　めぐり会える<br>
+							搜し续けた人に<br>
+							太阳も辉いてる　今すぐ驱け出そう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-arrest-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

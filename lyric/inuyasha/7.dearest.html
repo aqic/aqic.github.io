@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Dearest - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「犬夜叉」</div>
+
+                    <div class="LyricTitle">Dearest</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">浜崎　あゆみ</div>
+                    <div class="LyricStaff">作詞：浜崎　あゆみ<br>作曲：CREA　+　D・A・I<br>編曲：Naoto Suzuki</div>
+
+                    <div class="LyricText">
+						<p>
+							本当に大切なもの以外<br>
+							全て捨ててしまえたら<br>
+							いいのにね<br>
+							現実はただ残酷で</p>
+						<p>
+							そんな時いつだって<br>
+							目を閉じれば<br>
+							笑ってる君がいる</p>
+						<p>
+							Ah-いつか永遠の<br>
+							眠りにつく日まで<br>
+							どうかその笑顔が<br>
+							絶え間なくある様に</p>
+						<p>
+							人間は皆悲しいかな<br>
+							忘れゆく 生き物だけど</p>
+						<p>
+							愛すべきもののため<br>
+							愛をくれるもののため<br>
+							できること</p>
+						<p>
+							Ah-出会ったあの頃は<br>
+							全てが不器用で<br>
+							遠まわりしたよね<br>
+							傷つけ合ったよね</p>
+						<p>
+							Ah-いつか永遠の<br>
+							眠りにつく日まで<br>
+							どうかその笑顔が<br>
+							絶え間なくある様に</p>
+						<p>
+							Ah-出会ったあの頃は<br>
+							全てが不器用で<br>
+							遠まわりしたけど<br>
+							辿りついたんだね</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

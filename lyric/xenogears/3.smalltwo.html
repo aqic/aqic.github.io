@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>SMALL TWO OF PIECES ～軋んだ破片～ - ゼノギアス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「Xenogears」</div>
+
+                    <div class="LyricTitle">SMALL TWO OF PIECES ～軋んだ破片～</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							Run through the cold of the night<br>
+							As passion burns in your heart<br>
+							Ready to fight, a knife held close by your side<br>
+							Like a proud wolf alone in the dark<br>
+							With eyes that watch the world<br>
+							And my name like a shadow<br>
+							On the face of the moon</p>
+						<p>
+							(*)<br>
+							Broken mirror, a million shades of light<br>
+							The old echo fades away<br>
+							But just you and I<br>
+							Can find the answer<br>
+							And then, we can run to the end of the world<br>
+							We can run to the end of the world</p>
+						<p>
+							Cold fire clenched to my heart<br>
+							In the blue of knight<br>
+							Torn by this pain, I paint your name in sound<br>
+							And the girl of the dawn with eyes of blue, and angel wings<br>
+							The songs of the season are her only crown</p>
+						<p>
+							* repeat</p>
+						<p>
+							We met in the mist of morning<br>
+							And parted deep in the night<br>
+							Broken sword and shield, and tears that never fall<br>
+							But run through the heart<br>
+							Washed away by the darkest water<br>
+							The world is peaceful and still</p>
+						<p>
+							* repeat</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-xenogears-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

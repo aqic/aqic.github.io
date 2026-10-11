@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>HAPPY! SMILE! HELLO! - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">HAPPY! SMILE! HELLO!</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Enomoto Atsuko</div>
+                    <div class="LyricStaff">Lyrics : Aoyama Shinichirou<br>Music : Andou Takahiro<br>Arrangement : Andou Takahiro</div>
+
+                    <div class="LyricText">
+						<p>
+							笑った顔って　やっぱいちばん君と似合うにょ？<br>
+							ぱぱぱ　ぱにょぱにょぱ　だからラッキ☆クッキ　一緒にね☆たべよー</p>
+						<p>
+							困った時って　ちょっとなんでも話してごらんにょ？<br>
+							ぱぱぱ　ぱにょぱにょぱ　チカラになれるからっ</p>
+						<p>
+							ケンカしても　泣いちゃっても　お昼休み　おなかがすいた→</p>
+						<p>
+							いつも　HAPPY! SMILE! HELLO!　おいしいのがダイスキ？<br>
+							ダイッキライは　目からビ～ムして爆発っ<br>
+							ほらね　HAPPY! SMILE! HELLO!　ピクニックが毎日？<br>
+							しあわせ　ポケットに　いっぱいさ　遊ぼ→いつまでも!!</p>
+						<p>
+							怒った顔って　きっといちばん君とちがうにょ？<br>
+							ぱぱぱ　ぱにょぱにょぱ　たぶんラッキ☆クッキ<br>
+							ちょっとだけ☆足りない<br>
+							くるっと回って　もっとたくさん元気になろうにょ？<br>
+							ぱぱぱ　ぱにょぱにょぱ　歌ってあげるからっ</p>
+						<p>
+							眠たくっても　遅刻しても　ぜ～んぶセ→フッ　みんな集まれ→</p>
+						<p>
+							いつも　HAPPY! SMILE! HELLO!　楽しいのがダイスキ？<br>
+							ビビックリした　目からウロコのロケット<br>
+							すぐに　HAPPY! SMILE! HELLO!　日曜日が毎日？<br>
+							たまにね　ころんでも　だいじょうぶさ　ファイトッ　どこまでも</p>
+						<p>
+							ゆびきり約束おともだちまた増えたにょ→？？？</p>
+						<p>
+							ケンカしても　泣いちゃっても　お昼休み　おなかがすいた→</p>
+						<p>
+							いつも　HAPPY! SMILE! HELLO!　おいしいのがダイスキ？<br>
+							ダイッキライは　目からビ～ムして爆発っ<br>
+							ほらね　HAPPY! SMILE! HELLO!　ピクニックが毎日？<br>
+							しあわせ　ポケットに　いっぱいさ　遊ぼ→いつまでも!!</p>
+						<p>
+							いつも　HAPPY! SMILE! HELLO!　楽しいのがダイスキ？<br>
+							ビビックリした　目からウロコのロケット<br>
+							すぐに　HAPPY! SMILE! HELLO!　日曜日が毎日？<br>
+							たまにね　ころんでも　だいじょうぶさ　ファイトッ　どこまでも</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

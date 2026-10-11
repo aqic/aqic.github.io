@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Farewell song - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">A I R</div>
+
+                    <div class="LyricTitle">Farewell song</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lia</div>
+                    <div class="LyricStaff">作詞：Key<br>作曲：Key<br>編曲：護越まごめ</div>
+
+                    <div class="LyricText">
+						<p>
+							白く途切れた夢の切れ端をつかまえて<br>
+							少年は走る<br>
+							手を離したらどこまでも<br>
+							遠く風の音に消えてゆく</p>
+						<p>
+							ひとつだけの思いを飛ばして</p>
+						<p>
+							まぶたの裏に描きはじめた絵は霞んで<br>
+							手のひらでこすっても<br>
+							いつか見えた優しさはもうない<br>
+							ひとり踏み出す足だけ見てる</p>
+						<p>
+							朝には消えたあの歌声をいつまでも聞いた</p>
+						<p>
+							野道の先で赤く生るほおずきせがんで<br>
+							子供がはしゃいでる<br>
+							いつか知った優しさの中にも<br>
+							同じ風景　あるならいいね</p>
+						<p>
+							朝には消えたあの歌声をいつまでも聞いてた<br>
+							僕らが残したあの足跡をいつまでも追ってた</p>
+						<p>
+							朝には消えたあの歌声をいつまでもいつまでも<br>
+							僕らが残したあの足跡をどこまでも追ってた<br>
+							そう終わりは別れとあるものだから<br>
+							すべて置いてゆく<br>
+							朝には日差しの中<br>
+							新しい歌、口ずさんでる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

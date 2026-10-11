@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>HEART OF SWORD～夜明け前～ - るろうに剣心</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">エンディングテーマ３</div>
+
+                    <div class="LyricTitle">HEART OF SWORD～夜明け前～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">T.M.Revolution</div>
+                    <div class="LyricStaff">作詞；井上秋緒<br>作曲・編曲；浅倉大介</div>
+
+                    <div class="LyricText">
+						<p>
+							独りでは　遠い明日を<br>
+							夜明けのままで　越えそうで<br>
+							ブツかっていきゃ　コケる想いよ<br>
+							今夜もまた　すれ違い</p>
+						<p>
+							散々すぎる努力の跡も<br>
+							なくなる結果　ONLYの綱渡り<br>
+							やるだけ損するよな　毎日は<br>
+							斜に構えてた方こそ　楽になる</p>
+						<p>
+							熱くてつらい自分を隠して<br>
+							短い時代を生きてる</p>
+						<p>
+							独りでは　遠い明日を<br>
+							夜明けのままで　越えそうで<br>
+							放っとけば　走る想いよ<br>
+							夢もまた　すれ違い</p>
+						<p>
+							完璧とちゃう　人生の収支<br>
+							プラマイ･ゼロだなんだってば<br>
+							ホントかな?<br>
+							死ぬまでに使い切る　運の数<br>
+							せめて　自分で出し入れをさせて</p>
+						<p>
+							ワカっちゃいない<br>
+							君ならどーにでも<br>
+							理屈を変えていいのに</p>
+						<p>
+							何度君に　蹴つまづいても<br>
+							戻ってきちゃう　愛情に<br>
+							信じかねる　打たれ強さよ<br>
+							今夜も　ソートー眠れない</p>
+						<p>
+							何度何回　繰り返しても<br>
+							戻ってきちゃう　愛だから<br>
+							ブツかっていく　消せぬ想いを<br>
+							責める方が　筋違い</p>
+						<p>
+							独りでは　遠い明日を<br>
+							夜明けのままで　越えてゆく<br>
+							相性よりも　深いふたりは<br>
+							すれ違って　構わない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kenshin-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

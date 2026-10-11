@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ビューティフル・チャイルド&lt;br&gt;[BEAUTIFUL CHILD] - 聖闘士星矢</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[聖闘士星矢 / 挿入歌]</div>
+
+                    <div class="LyricTitle">ビューティフル・チャイルド&lt;br&gt;[BEAUTIFUL CHILD]</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">堀江 美都子</div>
+                    <div class="LyricStaff">作詞：園部 和範<br>作編曲：藤田 大土</div>
+
+                    <div class="LyricText">
+						<p>
+							けがれを知らぬ人の心は<br>
+							なぜいつか汚れて憎しみ合うの<br>
+							いっしょに夢を描いた空は<br>
+							今日もまたきれいに澄んでいるのに<br>
+							私の愛する力ごと<br>
+							守ってあげたい  あなたを</p>
+						<p>
+							Ah Beautiful, Beautiful Child<br>
+							Ah Beautiful, Beautiful Child<br>
+							Ah Beautiful<br>
+							あなたは光る原石…for you</p>
+						<p>
+							孤独という名の砂漠に生まれ<br>
+							戦いを生きてる証しと呼んで<br>
+							それでもいつか胸に芽生えた<br>
+							小さなやさしさ手放さないで<br>
+							いつかはあなたもその腕に<br>
+							抱きしめる人と出会うわ</p>
+						<p>
+							Ah Beautiful, Beautiful Child<br>
+							Ah Beautiful, Beautiful Child<br>
+							Ah Beautiful<br>
+							生命はダイヤモンド…for you</p>
+						<p>
+							Ah Beautiful, Beautiful Child<br>
+							Ah Beautiful, Beautiful Child<br>
+							Ah Beautiful, Beautiful Child<br>
+							Ah Beautiful, Beautiful Child<br>
+							Ah Beautiful, Beautiful Child<br>
+							Ah Beautiful, Beautiful Child<br>
+							Ah Beautiful, Beautiful Child…</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saintseiya-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>やさしさ SAYONARA（日中対訳） - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ</div>
+
+                    <div class="LyricTitle">やさしさ SAYONARA（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">飯島真理</div>
+                    <div class="LyricStaff">作詞：阿佐茜<br>作曲・編曲：羽田健太郎</div>
+
+                    <div class="LyricText">
+						<p>
+							胸が痛むわ　心のスキ間風<br>
+							時々ケンカもしたけれど<br>
+							あなたのやさしさ　今も変らない<br>
+							それが私には　たまらなかった<br>
+							あなたのいない部屋<br>
+							だまってとび出して<br>
+							行くあてもない駅の前<br>
+							そうよ　わかってしまったの<br>
+							あなたのやさしさ　弱さの裏返し<br>
+							変わってしまった　私はもう<br>
+							だから　サヨナラするわ</p>
+						<p>
+							いつの間にか　スレ違いの日々<br>
+							あなたと私の心<br>
+							毎日が同じ　繰り返しだったわ<br>
+							それが昔なら　ここちよかった<br>
+							私がいなくなり　あなたはひとりきり<br>
+							新しい暮らしがまっている<br>
+							後戻りは　出来ないの<br>
+							あなたのやさしさ　もういらないから<br>
+							うめられないわ　心の溝<br>
+							だから　ひきとめないで</p>
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+						<p>
+							心胸疼痛呀　心中缝隙间的风<br>
+							有时俩人也会打斗闹嘴<br>
+							你的温柔啊　现在也没有改变<br>
+							那对我来说　是我的最爱<br>
+							在没有你的房间我会飞奔而出<br>
+							没有目标地奔到车站前<br>
+							是呀　我完全了解<br>
+							你的温柔呀那是软弱的反象<br>
+							我也完全改变了<br>
+							所以我俩只有分手再见呀</p>
+						<p>
+							不知不觉我俩成了形影相离<br>
+							你的心和我的心也不在一起<br>
+							每天只是重复相同的日子呀<br>
+							那要是以前的话心情会不错<br>
+							我不在以后你变成自己一人<br>
+							新鲜的生活正等待着你<br>
+							这一切都无法再挽回了呀<br>
+							你的温柔呀已经不存在了<br>
+							而无法填满我内心的洪涛<br>
+							所以请你不要再挽留我了</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

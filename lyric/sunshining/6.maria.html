@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>舌打ちのマリア - 陽あたり良好!</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">舌打ちのマリア</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">夢工場</div>
+                    <div class="LyricStaff">作詞：高柳 恋<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							ポケットの中に　握りしめていた<br>
+							伝えられないひと言を<br>
+							君に背を向けて　掌に載せた<br>
+							陽射しにかざしたね</p>
+						<p>
+							それは出来損ないの<br>
+							まるで真珠のように<br>
+							Do me favor to be lovers 光るよ</p>
+						<p>
+							君はいつも　舌打ちばかりの<br>
+							大切なマリア<br>
+							いつの日にか　瞳閉じ合わせ<br>
+							恋を待つ夜を  ささやきが風に守られて「好き」と<br>
+							聞いた気がして振り向けば<br>
+							今日より遠くで「きっと空耳」と<br>
+							背中が微笑むよ</p>
+						<p>
+							恋が動いてるのを<br>
+							二人で肩を並べ<br>
+							Do me favor to be lovers　見ていた</p>
+						<p>
+							君はいつも　舌打ちばかりの<br>
+							気安さでマリア<br>
+							接吻さえ切ない近さが<br>
+							無口教えてる</p>
+						<p>
+							君はいつも　舌打ちばかりの<br>
+							大切なマリア<br>
+							いつの日にか　瞳閉じ合わせ<br>
+							恋を待つ夜を</p>
+						<p>
+							いつの日か　きっと......</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sunshining-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

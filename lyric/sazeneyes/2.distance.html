@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Distance - 3×3EYES</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「3×3EYES」</div>
+
+                    <div class="LyricTitle">Distance</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">林原めぐみ &amp; TAKADA BAND</div>
+
+                    <div class="LyricText">
+						<p>
+							今　彼方に夜明けが見える<br>
+							微かに　光る大地<br>
+							そう　私お読んでる声が<br>
+							確かに　聞こえている</p>
+						<p>
+							ただ一人　長いときお潜り抜け<br>
+							又　二人　会えるわ</p>
+						<p>
+							☆さぁ　走りなさい、走りなさいと<br>
+							　胸が叫ぶ<br>
+							　何より大切な　あなたへ<br>
+							　さぁ　答えなさい、答えなさいと<br>
+							　瞳閉じて<br>
+							　私は　ここにいる、ここにいる</p>
+						<p>
+							まだ見えない　何かお心事<br>
+							歩いた二人だから<br>
+							あぁ　体は逸れていても<br>
+							心は　結ばれてる</p>
+						<p>
+							又一つ　孤独に迎える朝に<br>
+							旅立つは、再び</p>
+						<p>
+							さぁ　目覚めなさい、目覚めなさいと<br>
+							胸が叫ぶ<br>
+							勇気と真実心お<br>
+							さぁ　急ぎなさい、急ぎなさいと<br>
+							振り向かずに<br>
+							あなたに　会えるまで、会えるまで</p>
+						<p>
+							☆くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sazeneyes-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

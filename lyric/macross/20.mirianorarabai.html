@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ミリアのララバイ - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">ミリアのララバイ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">竹田えり</div>
+
+                    <div class="LyricText">
+						<p>
+							上を見ろ　あれは空だ<br>
+							下を見ろ　あれは海だ<br>
+							私を見ろ　おまえと同じだ<br>
+							おまえも大きく強くなれ</p>
+						<p>
+							いつの日もおまえの側に<br>
+							いつの日も私がいる<br>
+							見ておくのだ　空を大地を<br>
+							今日という日を忘れるな</p>
+						<p>
+							行け！行け！飛んで行け！<br>
+							青く光るあの星まで<br>
+							私と共に…<br>
+							とにかくよろしく頼む</p>
+						<p>
+							戦いが運命ならば<br>
+							戦いは生きる事だ<br>
+							振り返るな　立ち止まるな<br>
+							お前の誇りを　忘れるな</p>
+						<p>
+							行け！行け！飛んで行け！<br>
+							おまえの未来が見えるだろう<br>
+							私の共に…<br>
+							とにかくよろしく頼む</p>
+						<p>
+							行け！行け！飛んで行け！<br>
+							青く光るあの星まで<br>
+							私と共に…<br>
+							とにかくよろしく頼む</p>
+						<p>
+							とにかくよろしく頼む</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

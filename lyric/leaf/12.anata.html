@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>あなたの橫顔 - Leaf</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">LEAF VOCAL COLLECTION VOL.1「To Heart」</div>
+
+                    <div class="LyricTitle">あなたの橫顔</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">美崎しのぶ</div>
+
+                    <div class="LyricText">
+						<p>
+							春のそよ風 仰ぐ鯉たち<br>
+							スミレ笑う 首を傾げて<br>
+							夏セミの聲 白いＴシャツ<br>
+							向日葵のように 光 受け止めた<br>
+							昨日見た景色と同じものはない<br>
+							だから輝いて見えるんだよね<br>
+							あなたの橫顔見ると<br>
+							なぜか力が湧き出てくる<br>
+							いくらでも頑張れる氣がする<br>
+							昔から變わらない 素っ氣ない 言葉遣いだけど</p>
+						<p>
+							Um 每日戀するわ</p>
+						<p>
+							秋の夕暮れ 映える山竝み<br>
+							落ち葉踏んで二人步いた<br>
+							冬寒い朝 息が白くて<br>
+							甘いココアで心暖めた<br>
+							遠い日の約束 大人になったら<br>
+							キスをしようねと 覺えてるかな<br>
+							あなたの橫顔がいま 振り向いて わたし見つめてる<br>
+							しかめっ面 照れてる證據ね<br>
+							重なり合う影と影 のびた髮が肩で觸れ合う<br>
+							これからも戀するわ<br>
+							遠ざかる過去にも 近づく未來にも<br>
+							ずっとあなたと いられるから<br>
+							あなたの橫顔見ると<br>
+							なぜか力が湧き出てくる<br>
+							いくらでも頑張れる氣がする<br>
+							昔から變わらない 素っ氣ない 言葉遣いだけど<br>
+							Um 每日戀するわ<br>
+							戀するわ<br>
+							あなたに戀してる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-leaf-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

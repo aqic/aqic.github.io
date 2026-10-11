@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>遠い記憶 - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ビデオ「機動戦士ガンダム0080 ポケットの中の戦争」 エンディング（１９８９）</div>
+
+                    <div class="LyricTitle">遠い記憶</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">椎名恵</div>
+                    <div class="LyricStaff">作詞、作曲：椎名恵<br>編曲：戸塚修</div>
+
+                    <div class="LyricText">
+						<p>
+							星が流れる時は　手をかざし　指の隙間<br>
+							どんな願い事でも　そうすれば　叶えられる<br>
+							空とまじりあう　海にたたずんで<br>
+							愛する人にだけ　いつの日か教えたかった<br>
+							心に抱きしめた　幼い夢を</p>
+						<p>
+							嘘をついた夜には　眠れずに怖かった<br>
+							どんな喧嘩をしても　次の日は忘れていた<br>
+							空が青いこと　それが嬉しくて<br>
+							いつか人を疑い　生きる寂しさ知る事も<br>
+							気がつかずに全てを　信じてたこと</p>
+						<p>
+							愛する人にだけ　いつの日か教えたかった<br>
+							心に抱きしめた　幼い夢を</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

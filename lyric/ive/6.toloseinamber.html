@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>To lose in amber - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ゲーム「奴隸市場」主題歌(ruf)</div>
+
+                    <div class="LyricTitle">To lose in amber</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島宮えり子</div>
+                    <div class="LyricStaff">作詞：SAYUMI<br>作曲·編曲：高瀨一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							最後に見た夕陽 影を落とした<br>
+							幻 砂時計 何もかも動き始める</p>
+						<p>
+							同じ空の下 何を見つけた<br>
+							明日に續く道 色褪せて 歷史に迷う</p>
+						<p>
+							手を伸ばしたら 貴方に屆くから<br>
+							どんな時でも searcing for you<br>
+							貴方がくれ溫もり抱き締めて 信じる<br>
+							星屑のような夢</p>
+						<p>
+							爪の先にとまる 星が輝く<br>
+							優しさと償い 絶望が琥珀に変わる</p>
+						<p>
+							天の国へと 導く天使たち<br>
+							大地の果てに searcing for you<br>
+							忘れかけてた奇跡をふり返す 感じて<br>
+							一夜限りの夢</p>
+						<p>
+							手を伸ばしたら 貴方に屆くから<br>
+							どんな時でも searcing for you<br>
+							貴方がくれ溫もり抱き締めて 信じる<br>
+							千夜一夜の夢</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

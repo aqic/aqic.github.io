@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ムーンライト伝説 - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「美少女戦士セーラームーン」オープニング・テーマ (1992)</div>
+
+                    <div class="LyricTitle">ムーンライト伝説</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">DALI</div>
+                    <div class="LyricStaff">作詞：小田佳奈子<br>作曲：小諸鉄矢<br>編曲：池田大介</div>
+
+                    <div class="LyricText">
+						<p>
+							ゴメンね　素直じゃなくて<br>
+							夢の中なら云える<br>
+							思考回路はショート寸前<br>
+							今すぐ　会いたいよ<br>
+							泣きたくなるような　moonlight<br>
+							電話も出来ない　midnight<br>
+							だって純情　どうしよう<br>
+							ハートは万華鏡<br>
+							月の光に　導　何度も　巡り合う<br>
+							星座の瞬き数え　占う恋の行方<br>
+							同じ地球〈くに〉に生まれたの　ミラクル・ロマンス</p>
+						<p>
+							も一度　ふたりで　weekend<br>
+							神さま　かなえて　happy-end<br>
+							現在・過去・未来も<br>
+							あなたに首ったけ<br>
+							出会った時の　懐かしい<br>
+							まなざし　忘れない<br>
+							幾千万の星から　あなたを見つけられる<br>
+							偶然もチャンスに換える　生き方が好きよ</p>
+						<p>
+							不思議な奇跡クロスして<br>
+							何度も　巡り合う<br>
+							星座の瞬き数え　占う恋の行方<br>
+							同じ地球〈くに〉に生まれたの　ミラクル・ロマンス<br>
+							信じているの　ミラクル・ロマンス</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

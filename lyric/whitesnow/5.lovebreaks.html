@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Love Breaks - 新白雪姫伝説プリーティア</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">新白雪姬伝說 Sasame's Image song</div>
+
+                    <div class="LyricTitle">Love Breaks</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">櫻井孝宏</div>
+
+                    <div class="LyricText">
+						<p>
+							いや、同じでいい　君のままでいい<br>
+							彼もいつの日が　そきに気づくはず</p>
+						<p>
+							なのに何を　ああ、　悲劇にして<br>
+							私なんかもう駄目と　受話器に言い聞かすの</p>
+						<p>
+							愛は変えて行く<br>
+							あんなにも美しい　瞳を<br>
+							わがままを言うだけの　幼子の視線に</p>
+						<p>
+							そして傷つける<br>
+							辺りじゅう何もかも　何より<br>
+							この胸に込み上げる　愛を今。。。。</p>
+						<p>
+							いや、嘘でもいい　君が髪を解き<br>
+							僕に唇を　kissでふさぐなら</p>
+						<p>
+							子供なのは　ああ、　僕の方さ<br>
+							他のことはもう良くて　気持を止められない</p>
+						<p>
+							愛は越えて行く<br>
+							太陽も星空も　ほほ笑む<br>
+							君だけの中にある　きらめきに溶けてく</p>
+						<p>
+							そして壊してく<br>
+							友情のかけらさえ　誰かが<br>
+							この僕へ忍ばせた　愛さえも。。。</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-whitesnow-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

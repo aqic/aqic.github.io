@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Sun rise train - 天使な小生意気</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Sun rise train</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">北原愛子</div>
+
+                    <div class="LyricText">
+						<p>
+							風よりも早く　息を切らし駆け抜けた先に<br>
+							君の大きな胸　両手広げて<br>
+							かき集めた想いを　ギュッとかばんに詰め込んだよ<br>
+							黄色いサイレン　電車に飛び乗る</p>
+						<p>
+							Oh・・・すぐ君に会いたい<br>
+							そして抱きしめ　もっと近くに感じさせて</p>
+						<p>
+							Sun rise！ Sun up！<br>
+							燃えて<br>
+							Sun rise！ Sun up！<br>
+							この恋<br>
+							加速するココロ　止まらない<br>
+							Sun rise！ Sun up！<br>
+							熱く<br>
+							Sun rise！ Sun up！<br>
+							揺れて<br>
+							迷いも捨て君へめざす　気持ち運ぶよ Sun rise train</p>
+						<p>
+							窓に映った　景色や流れていく月日<br>
+							寂しい夜も　切なさこらえて<br>
+							壊れてしまいそうな　側にあった君の微笑み<br>
+							今なら言える　あふれる想い</p>
+						<p>
+							Oh・・・君を浮かべて　少し先に幸せ<br>
+							もっと近くで見つめさせて</p>
+						<p>
+							Sun rise！ Sun up！<br>
+							君に<br>
+							Sun rise！ Sun up！<br>
+							想い<br>
+							どんな言葉で伝えよう<br>
+							Sun rise！ Sun up！<br>
+							もっと<br>
+							Sun rise！ Sun up！<br>
+							早く<br>
+							この風に乗せ君のもとへ　気持ち運ぶよ Sun rise train</p>
+						<p>
+							もうすぐ　君の住む街<br>
+							高鳴る胸に　そっと手をあて<br>
+							君を想う</p>
+						<p>
+							Sun rise！ Sun up！<br>
+							燃えて<br>
+							Sun rise！ Sun up！<br>
+							この恋<br>
+							加速するココロ　止まらない<br>
+							Sun rise！ Sun up！<br>
+							熱く<br>
+							Sun rise！ Sun up！<br>
+							届け<br>
+							ありのままの私君に　気持ち運ぶよ Sun rise train</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-cheekyangel-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

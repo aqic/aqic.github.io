@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>邪魔はさせない - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「スレイヤーズ NEXT」オープニングテーマ</div>
+
+                    <div class="LyricTitle">邪魔はさせない</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">奥井雅美</div>
+
+                    <div class="LyricText">
+						<p>
+							何かにあやつられた<br>
+							人生なんて夢も希望もないし…<br>
+							今のyour life 満足なの？<br>
+							「運命は自分の手で変えられる」<br>
+							そんなドラマみたいな言葉（セリフ）<br>
+							うん　Greatね　信じてる</p>
+						<p>
+							世紀末かと思わせる毎日にそなえて<br>
+							そろそろエンジンかけよう<br>
+							錆ついてる常識　全部　脱ぎ捨てて</p>
+						<p>
+							世界中　ウワサになりたい<br>
+							輝く未来も手に入れたい<br>
+							あれもこれも　本気の野望（ゆめ）<br>
+							誰ひとり　邪魔はさせない</p>
+						<p>
+							世界中　ウワサになるくらい<br>
+							とびきりはじけたすごい人に<br>
+							一生で一度の　Break<br>
+							イジケた自分に　Bye-Bye　しましょう<br>
+							It's all right</p>
+						<p>
+							気取ったリアクションが<br>
+							似合いのあなたも超カッコイイけど<br>
+							Hey! you! Brother　信じられない<br>
+							心をガードしたままの　バトルじゃ<br>
+							何も始まらないし<br>
+							熱い本音しか　聴きたくない</p>
+						<p>
+							子供の頃に想った将来の姿を<br>
+							一緒に投げかけよう<br>
+							あの時と<br>
+							同じように見上げた星空へ</p>
+						<p>
+							世界中　ウワサになりたい<br>
+							輝く未来も手に入れたい<br>
+							後悔なんて絶対ヤダ<br>
+							あきらめない　邪魔はさせない</p>
+						<p>
+							世界中　ウワサになるくらい<br>
+							果てしない冒険できる人に<br>
+							一生でもう一度　Break<br>
+							弱気な自分に　Bye-Bye　しましょう<br>
+							It's all right</p>
+						<p>
+							世界中　ウワサになりたい<br>
+							輝く未来も手に入れたい<br>
+							燃え上がった　本気の野望（ゆめ）<br>
+							誰ひとり　邪魔はさせない</p>
+						<p>
+							世界中　ウワサになるくらい<br>
+							バイタリティあふれたすごい人に<br>
+							何度でもこのさい　Break<br>
+							遠慮するクセに　Bye-Bye　しましょう<br>
+							It's all right</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

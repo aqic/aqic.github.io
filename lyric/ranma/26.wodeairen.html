@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>我的愛人 - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2」イメージ・ソング</div>
+
+                    <div class="LyricTitle">我的愛人</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐久間レイ</div>
+
+                    <div class="LyricText">
+						<p>
+							あなたに会ったその日からなのよ<br>
+							かわい娘になってるよ私<br>
+							好きよ　好きよ　心から<br>
+							誓いをたてる<br>
+							言って　言って　言ったこと<br>
+							全部聞く</p>
+						<p>
+							涙つれて来る愛が怖い<br>
+							ああ　でも好き<br>
+							我的愛人</p>
+						<p>
+							あなたの傍にいるだけでいいょ<br>
+							邪魔な娘にならないょ私<br>
+							いつも　いつも　傍にいる<br>
+							許して欲しい<br>
+							好きよ　好きよ　あなただけ<br>
+							我愛你</p>
+						<p>
+							涙つれてくる愛が辛い<br>
+							ああ　でも好き<br>
+							我的愛人</p>
+						<p>
+							本当はひとつお願いがあるよ<br>
+							恥かしいから耳元で言うよ<br>
+							そっと　そっと　目を閉じる<br>
+							口づけ欲しい<br>
+							好きよ　好きよ　あなただけ<br>
+							我愛你</p>
+						<p>
+							好きよ　好きよ　あなただけ<br>
+							我愛你</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

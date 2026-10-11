@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>真剣 - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">真剣</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">浅川悠</div>
+
+                    <div class="LyricText">
+						<p>
+							理屈ばかり並べ立てて<br>
+							自分を守ることばかり<br>
+							思いつきの夢の前で<br>
+							言い訳をまず考える</p>
+						<p>
+							傷つくことには怯え<br>
+							立ちすくんでも<br>
+							また逃げるが勝ちだと<br>
+							弱さを認めない</p>
+						<p>
+							振りかざしても<br>
+							何も斬れない<br>
+							ぬるま湯で生きる心<br>
+							燃えさかる火の中で<br>
+							幾度も打ちのめされながら<br>
+							研ぎ澄まされ<br>
+							真剣になれる</p>
+						<p>
+							弱いものと強いものと<br>
+							それはどこで決まるのか<br>
+							現実から目をそむけて<br>
+							楽な方へ逃げたがる</p>
+						<p>
+							自分の限界などは<br>
+							誰が知るのか<br>
+							まだ飛び込みもせずに<br>
+							無理だと決めつける</p>
+						<p>
+							人の言葉を<br>
+							信じる前に<br>
+							もう一度見つめ直せ<br>
+							昨日と明日と今日の<br>
+							自分は何かが違うのか<br>
+							同じなのか<br>
+							思い知るだろう<br>
+							振りかざしても<br>
+							何も斬れない<br>
+							ぬるま湯で生きる心<br>
+							燃えさかる火の中で<br>
+							幾度も打ちのめされながら<br>
+							研ぎ澄まされ<br>
+							真剣になれる<br>
+							真剣になれる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

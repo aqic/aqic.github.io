@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>卒業～さよならは明日のために～ - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">卒業～さよならは明日のために～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">タッキー&amp;翼</div>
+                    <div class="LyricStaff">作詞：加藤　健<br>作曲：松本良喜<br>編曲：和田　薫</div>
+
+                    <div class="LyricText">
+						<p>
+							もしも一つだけ　たった一つだけ<br>
+							かなえられるなら　なにを祈るかな？<br>
+							いまどこにいるの？　いま誰といるの？<br>
+							青い空見上げ　そっと問いかける</p>
+						<p>
+							With you　すぐそばにいた頃の君はいない<br>
+							With you　離れても変わらないと約束したのに</p>
+						<p>
+							たとえばぼくたちが想い出になる<br>
+							そばのぬくもりには　もうかなわないから<br>
+							せつないためいきが　不意にこぼれた<br>
+							舞い上がれ遙か遠く君に届くように</p>
+						<p>
+							きっとその未来　ぼくはもういない<br>
+							それだけのことに　やっと気づいたよ</p>
+						<p>
+							For me　迷ってたぼくの背を押してくれた<br>
+							For me　微笑みに隠していた悲しがる瞳</p>
+						<p>
+							たとえばぼくたちがさよならになる<br>
+							そばにいてほしいと　そうつぶやいていた<br>
+							やるせない想いが　声にならない<br>
+							せめてこの祈りだけは君に届くように</p>
+						<p>
+							終われない想い　空に放して<br>
+							たとえ一人でも　歩いていくから</p>
+						<p>
+							櫻の花が舞う　あの日のように<br>
+							まぶしい想い出のヒカリを反射して<br>
+							せつないためいきで　色鮮やかに<br>
+							舞い上がれこの想いのすべて　届けてくれ</p>
+						<p>
+							たとえばぼくたちが想い出になる<br>
+							そばのぬくもりには　もうかなわないから<br>
+							さよならは未来のためにあるから<br>
+							舞い上がれ遙か遠く君に届くように</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

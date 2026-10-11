@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>One small day - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Sweet Palace</div>
+
+                    <div class="LyricTitle">One small day</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">AKI</div>
+                    <div class="LyricStaff">作詞：高瀬一矢<br>作曲：高瀬一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							髪をくすぐる　夏の風が　戸惑う<br>
+							二人　見つめて<br>
+							時間が一瞬　止まったような<br>
+							風景が　私を包む</p>
+						<p>
+							まばたく暇も無いぐらいに　いくつも<br>
+							おとずれる　One Small Day<br>
+							新しい世界の扉が　二人を<br>
+							誘ってる　One Small World</p>
+						<p>
+							空にまたたく　白い星に この手が<br>
+							触れる　奇跡も<br>
+							ゆっくり流れる　時間の中で<br>
+							あなたとの　い・つ・も　に変わる</p>
+						<p>
+							見なれたいつもの一日に　優しく<br>
+							舞い降りる　One Small Day<br>
+							新しい世界の空へと　二人で<br>
+							歩き出す　One Small World</p>
+						<p>
+							瞬く暇も無いぐらいに　いくつも<br>
+							おとずれる　One Small Day<br>
+							新しい世界の扉が　二人を<br>
+							誘ってる　One Small World</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

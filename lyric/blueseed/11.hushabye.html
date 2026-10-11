@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>HUsH-A-BYE LULLABY - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">HUsH-A-BYE LULLABY</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">TAKADA BAND</div>
+
+                    <div class="LyricText">
+						<p>
+							☆受けとめて　KEEP ON DREAMING　心のままに<br>
+							　包まれて　KEEP ON LOVING　届けたい</p>
+						<p>
+							研ぎ澄まされた　身体中　謎を身に纏って<br>
+							信じあえたら目を閉じて　そっと安らぎたい<br>
+							幾つ星数えて　口ずさむ都会のララバイ<br>
+							脅かす不安を　そのまま　愛の言葉に変えて</p>
+						<p>
+							伝えたい　KEEP ON DREAMING　夜の優しさ<br>
+							感じたい　KEEP ON LOVING　瞳から<br>
+							春も夏も　二人手をとりあって<br>
+							秋も冬も　未来見つめてる</p>
+						<p>
+							虚ろな時間に想い寄せ　傷をさらけ出して<br>
+							駆け抜ける毎　夢のかけら　風に砕け散った<br>
+							月明かりの一滴　温もりを歌うララバイ<br>
+							憧れの鼓動が　静けさ破る　夜乗り越えて</p>
+						<p>
+							★微笑んで　KEEP ON DREAMING　迷いを捨てて<br>
+							　見守って　KEEP ON LOVING　翔いて</p>
+						<p>
+							空も海も　二人絆を深め<br>
+							風も雲も　未来見つめてる</p>
+						<p>
+							☆Ｒｅｐｅａｔ<br>
+							★Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

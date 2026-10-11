@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>BORDERLESS UNIVERSE - BLUE SEED</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">BORDERLESS UNIVERSE</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">TAKADA BAND</div>
+
+                    <div class="LyricText">
+						<p>
+							NOISEだらけの人ごみに　脅えた瞳　抱いて<br>
+							舞い降りた僕の天使は　涙を流す<br>
+							月の形に闇を切りとって　世界照らせ<br>
+							SAVE OUR UNIVERSE　悲しみを預けて</p>
+						<p>
+							☆愛よ止まらないで　眩しさの向こう<br>
+							　冴え渡る蒼い　SILENT NIGHT　息を秘そめ<br>
+							　心が溶け合って　煌めきを燃やせ<br>
+							　追い続ける夢　BORDERLESS　遙か　彼方へ</p>
+						<p>
+							見落とした都会のパズル　歪んだ空気埋めて<br>
+							警告の赤いサイレン　塗り潰される<br>
+							夢を失くした寂しい大人達　希望　喰べて<br>
+							SAVE OUR UNIVERSE　情熱のかけらで</p>
+						<p>
+							愛よ止まらないで　優しさの向こう<br>
+							見つめれば蒼い　SILENT NIGHT　両手拡げ<br>
+							厚着した心が　脱がされてゆくよ<br>
+							飾りのない夢　BORDERLESS　夜を飛び出そう</p>
+						<p>
+							☆Ｒｅｐｅａｔ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-blueseed-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

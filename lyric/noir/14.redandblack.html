@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>赤と黒 - NOIR</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">赤と黒</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							眠れる獅子は目覚め　見果てぬ夢を追う<br>
+							眠らぬ街は永久に　未来なき明日を追う<br>
+							私はひとりで　瞳ひらく夜</p>
+						<p>
+							闇の奥でいつまでも<br>
+							くれないゆれる残り火のように<br>
+							鎧まとう心にも<br>
+							くすぶった想いは消えず</p>
+						<p>
+							ああ　すべてを燃やすほど<br>
+							情熱の炎のなか<br>
+							生きていたいと</p>
+						<p>
+							眠れる獅子は目覚め　見果てぬ夢を追う<br>
+							行くべき道がどこへ　つづいていたとしても<br>
+							いつかあなたに　たどりつける</p>
+						<p>
+							群れなす羊たちの　見上げる遠い空<br>
+							はかない幸せより　もっと大事なものを<br>
+							この手につかむと　信じているから</p>
+						<p>
+							革のコートに隠し持つ<br>
+							弱さを彩るための刃<br>
+							あなたの腕に抱かれて<br>
+							こぼす涙で溶かしたい</p>
+						<p>
+							ああ　命に代えてまで<br>
+							守りたいものを人は<br>
+							まだ持っているの</p>
+						<p>
+							天には神はおらず　地上は荒れ狂う<br>
+							めくるめく欲望の　王に仕えし民は<br>
+							虚無をかかえて　通り過ぎる</p>
+						<p>
+							汚れぬ心の中　あなたを想っている<br>
+							汚れたこの世界で　出会える愛はきっと<br>
+							他の何よりも　ひかりかがやくだろう</p>
+						<p>
+							眠れる獅子は目覚め　見果てぬ夢を追う<br>
+							行くべき道がどこへ　つづいていたとしても<br>
+							いつかあなたに　たどりつける</p>
+						<p>
+							群れなす羊たちの　見上げる遠い空<br>
+							はかない幸せより　もっと大事なものを<br>
+							この手につかむと　信じている</p>
+						<p>
+							眠れる獅子は目覚め　見果てぬ夢を追う<br>
+							眠らぬ街は永久に　未来なき明日を追う<br>
+							今日もひとり　瞳とじて<br>
+							汚れぬ心の中　あなたを想っている<br>
+							汚れたこの世界に　生まれる愛はきっと<br>
+							他の何よりも　ひかりかがやくだろう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-noir-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

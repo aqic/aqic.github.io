@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Catch You Catch Me - カードキャプターさくら</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Catch You Catch Me</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">グミ</div>
+                    <div class="LyricStaff">作詞：広瀬香美<br>作曲：広瀬香美<br>編曲：本間昭光</div>
+
+                    <div class="LyricText">
+						<p>
+							会いたいな　会いないな　切ないな　この気持ち<br>
+							言えないの　言いたいの　チャンス逃してばかり</p>
+						<p>
+							だって　だって　翼広げ二人で<br>
+							空をマラソン　夢をユニゾンしたい</p>
+						<p>
+							ほら　Catch You Catch You Catch Me Catch Me 待って<br>
+							こっちをむいて　スキだといって<br>
+							そう　Nice to Meet You Good to See You　きっと<br>
+							私の想い　あなたのハートに飛んで飛んで飛んでいけ<br>
+							迷わない</p>
+						<p>
+							たまにね　なくなっちゃう　身体のバッテリー<br>
+							あなたの笑顔で　いつも充電満タン　パワー爆発しちゃえ</p>
+						<p>
+							お願い　お願い　まずはお友達から<br>
+							笑って　見つめて　楽しい毎日にしたい</p>
+						<p>
+							ほら　Catch You Catch You Catch Me Catch Me ゼッタイ<br>
+							運命だって　お似合いだって<br>
+							そう　Nice to Meet You Good to See You　きっと<br>
+							誰にも負けない　あなたを世界で一番一番一番一番<br>
+							コ・イ・シ・テ・ル</p>
+						<p>
+							ほら　Catch You Catch You Catch Me Catch Me 待って<br>
+							こっちをむいて　スキだといって<br>
+							そう　Nice to Meet You Good to See You　きっと<br>
+							私の想い　あなたのハートに飛んで飛んで飛んでいけ<br>
+							迷わない</p>
+						<p>
+							ほら　Catch You Catch You Catch Me Catch Me ゼッタイ<br>
+							運命だって　お似合いだって<br>
+							そう　Nice to Meet You Good to See You　きっと<br>
+							誰にも負けない　あなたを世界で一番一番一番一番<br>
+							コ・イ・シ・テ・ル</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ccsakura-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>僕たちのSomeday - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book １ タッチ Music Flavor ３</div>
+
+                    <div class="LyricTitle">僕たちのSomeday</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">三ツ矢 雄二</div>
+                    <div class="LyricStaff">作詞：沢 ちひろ<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							Someday 心に　Someday<br>
+							ひとり叫んだ　あの日から</p>
+						<p>
+							To you Someday<br>
+							決めたよ　Someday<br>
+							弱気なんか　みせないさ</p>
+						<p>
+							どんな　風の中でも<br>
+							ゴールは　ひとつきりさ</p>
+						<p>
+							ひろい空で迷う<br>
+							雲を君のヒトミに　映せなくても</p>
+						<p>
+							誰も知らない朝<br>
+							みつけて帰るよ　My Girl  Someday ふたりで　Someday<br>
+							傷つけあった　雨の中</p>
+						<p>
+							To you Someday<br>
+							信じて　Someday<br>
+							言葉なんか　ただの音</p>
+						<p>
+							君の心のドアを<br>
+							今はたたけないけど</p>
+						<p>
+							そっと窓をあけて<br>
+							空をみあげながら　涙こらえる</p>
+						<p>
+							君をふりかえれば<br>
+							よそ見したふりの　My Girl</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

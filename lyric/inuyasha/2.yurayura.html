@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ゆらゆら - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「犬夜叉」</div>
+
+                    <div class="LyricTitle">ゆらゆら</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Avex Trax Every Little Thing</div>
+                    <div class="LyricStaff">作词：持田香织 作曲：多胡邦夫<br>编曲：大谷靖夫/中尾昌文/伊藤一郎</div>
+
+                    <div class="LyricText">
+						<p>
+							淡い空が映した<br>
+							思いがけず目に飛び込んで来た宝石<br>
+							埃かぶったままのずっと眠ってた心が乱れてゆく</p>
+						<p>
+							煙の中探し求めた恋のアンテナ<br>
+							願い込めて曇り空を突き抜けて<br>
+							光を指した</p>
+						<p>
+							誰も知る事ない碧い地球を<br>
+							ゆらゆら泳いでく<br>
+							気高くも羽ばたく鳥のように<br>
+							自由さえもて遊ぶくらいの奇跡</p>
+						<p>
+							じゃれるかのように笑う君の眼指にトキメキを覚えたよ<br>
+							君に出逢えた事は平凡な僕の何よりもの未来で<br>
+							腐っていたぬるい季節に横たわり<br>
+							サボっていた受け身だらけの生活じゃ<br>
+							何も変わらない</p>
+						<p>
+							誰も知る事ない碧い地球を<br>
+							ゆらゆら泳いでく<br>
+							この想い愛しい君のもとへ<br>
+							透明な僕に生まれ変わる奇跡</p>
+						<p>
+							煙の中探し求めた恋のアンテナ<br>
+							願い込めて曇り空を突き抜けて<br>
+							光を指した</p>
+						<p>
+							それでもきっと<br>
+							不安や悲しみを消せやしないけれど<br>
+							彷徨いながらも碧い地球を<br>
+							ゆらゆら泳いでく<br>
+							気高くも羽ばたく鳥のように<br>
+							自由さえもて遊ぶくらいの奇跡</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

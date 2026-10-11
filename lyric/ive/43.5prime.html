@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Prime - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Dear Feeling</div>
+
+                    <div class="LyricTitle">Prime</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO TO AKI</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：高瀬一矢<br>編曲：非公開</div>
+
+                    <div class="LyricText">
+						<p>
+							道端にそっとうずくまって<br>
+							ゆらゆらと浮かぶ雲に<br>
+							独り言そっとつぶやいてる<br>
+							そんな日々はもういらないから<br>
+							ほら 涙は青空に捨てて行こう</p>
+						<p>
+							眠れない・・・<br>
+							寂しくて・・・<br>
+							会いに来てほしい<br>
+							弱虫な私には<br>
+							サヨナラするから</p>
+						<p>
+							夢とか希望とかに<br>
+							押し潰されそうで<br>
+							踏み出す勇気を持てずにいたの</p>
+						<p>
+							羽ばたいて ずっと君の側で<br>
+							もう何も恐くないよ<br>
+							これからはきっと無限大の<br>
+							二人の未来 何があるかなんて<br>
+							わからないけど 振り返らないで行くよ</p>
+						<p>
+							側にある優しさに<br>
+							寄り添ってみたり<br>
+							想い出を抱き締めて<br>
+							膝を抱えてた</p>
+						<p>
+							子供のふりをして<br>
+							甘えてもいたいけど<br>
+							自分を信じて 歩いて行きたい</p>
+						<p>
+							茜色の空に誓うよ<br>
+							落ち込んでも負けないから<br>
+							これからはもっと無限大の<br>
+							二人の夢 今探しに行こう<br>
+							何処へだって歩いて行けるよ きっと????</p>
+						<p>
+							どんな苦しみも<br>
+							乗り越えていけるから<br>
+							君の笑顔だけ 心に抱いて</p>
+						<p>
+							空に描いた街を目指そう<br>
+							虹の橋を越えて行こう<br>
+							神様はきっと微笑んでる<br>
+							天使の唄 聴こえるよ</p>
+						<p>
+							羽ばたいて ずっと君の側で<br>
+							もう何も恐くないよ<br>
+							これからはきっと無限大の<br>
+							二人の夢 今探しに行こう<br>
+							ほら 涙は青空に捨てて行こう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

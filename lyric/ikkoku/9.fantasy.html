@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ファンタジー - めぞん一刻</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「めぞん一刻」エンディング・テーマ(1986)</div>
+
+                    <div class="LyricTitle">ファンタジー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ピカソ</div>
+                    <div class="LyricStaff">作詞：森　雪之丞<br>作曲・編曲：ピカソ</div>
+
+                    <div class="LyricText">
+						<p>
+							☆みつめあえば　ハートに流れる<br>
+							　不思議な　Melody<br>
+							　二人にしか　みえない扉を<br>
+							　開けば　Fantasy</p>
+						<p>
+							愛が上手く　喋れなくて<br>
+							ピアノを弾いたのさ<br>
+							君の髪が　蒼い月の<br>
+							雫に光るまで</p>
+						<p>
+							夢を投げ入れ [Please smile for me]<br>
+							測っておくれ [Love more than you]<br>
+							愛の深さを…</p>
+						<p>
+							★そっとふれた　唇奏でる<br>
+							　静かな　Harmony<br>
+							　抱きしめても　せつなさ溢れて<br>
+							　夢見る　Fantasy</p>
+						<p>
+							君が　微笑う度<br>
+							僕は　優しくなる</p>
+						<p>
+							風が街が　凍えている<br>
+							真冬の黄昏も<br>
+							ポケットの中　滑り込んだ<br>
+							君の手は暖かい</p>
+						<p>
+							☆くりかえし</p>
+						<p>
+							愛が　迷路なら<br>
+							君と　迷うだけさ</p>
+						<p>
+							★くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ikkoku-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

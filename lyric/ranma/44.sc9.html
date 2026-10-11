@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>拝啓、あかねさん - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">【９月】</div>
+
+                    <div class="LyricTitle">拝啓、あかねさん</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">響良牙</div>
+                    <div class="LyricStaff">作詞：乱馬的歌劇団文芸部<br>作曲：川井憲次<br>編曲：川井憲次</div>
+
+                    <div class="LyricText">
+						<p>
+							拝啓、あかねさん<br>
+							お元気でお過ごしでしょうか<br>
+							暑中見舞いのつもりが<br>
+							ポストにたどり着けずに<br>
+							残暑見舞いになってしまいました</p>
+						<p>
+							みちのく旅したお土産に<br>
+							浜辺で拾った星の砂<br>
+							９月というのに東北は<br>
+							まだまだ猛暑が続いています</p>
+						<p>
+							(あかね)良牙くん、沖縄にいるんじゃないの？</p>
+						<p>
+							あゝ　逢いたい　あゝ　あかねさん<br>
+							内気なこのおれ笑うよに<br>
+							お空でカラスが鳴いている<br>
+							お池でアヒルも鳴いている　(ムームー)ぐぁ。<br>
+							春は果てなく遠いです<br>
+							好きだ…　あかねさん</p>
+						<p>
+							ところで　あかねさん<br>
+							明日にでもお伺いします<br>
+							つらい修業に耐えた<br>
+							このおれ一目見せたい<br>
+							強さに一層　磨きかかったのです</p>
+						<p>
+							樹海をくぐって下山して<br>
+							キリンに出逢った森の中<br>
+							象やらクマやらラクダやら<br>
+							不思議に獣がたくさんいます</p>
+						<p>
+							(乱馬)おめぇそりゃ動物園だろぉ？</p>
+						<p>
+							あゝ　逢いたい　あゝ　あかねさん<br>
+							迷子のこのおれ笑うよに<br>
+							お空でカラスが鳴いている<br>
+							道端でネコも鳴いている(猫シャンプー)にー、にゃん。<br>
+							夢は果てなく遠いです<br>
+							好きだ…　あかねさん<br>
+							…敬具</p>
+						<p>
+							追伸<br>
+							あゝ　逢いたい　あゝ　あかねさん<br>
+							内気なこのおれ笑うよに<br>
+							お空でカラスが鳴いている<br>
+							お庭でパンダも鳴いている　(パンダ)ぱぁふぉ～？<br>
+							愛は果てなく遠いです<br>
+							好きだ…　好きだ…　好きだ…<br>
+							あかねさん</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

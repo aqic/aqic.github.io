@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>桃天使 '99 - かってに桃天使</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「かってに桃天使!2～Tears of Eden」 IS(1999)</div>
+
+                    <div class="LyricTitle">桃天使 '99</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桑島 法子</div>
+
+                    <div class="LyricText">
+						<p>
+							胸の奧熱く輝く正義のプリズム<br>
+							七色に光る勇気を深く深く抱きしめて</p>
+						<p>
+							月の光受けて目覺めた愛の戰士<br>
+							搖るぎない力で<br>
+							未來(あす)を信じて舞いあがれ</p>
+						<p>
+							人は誰も迷いながらさまよう旅人<br>
+							重ねあう出會いの中で堅く堅く信じあう<br>
+							月の光受けて戰う愛の劍士<br>
+							響きあう願いをそっとその劍にかけて</p>
+						<p>
+							戰いの果てに何が待つの<br>
+							あの星を越えて續く世界<br>
+							どこまでも</p>
+						<p>
+							荒れ狂う風の行方に兩手をかざして<br>
+							果てしない希望のメロディ<br>
+							強く強く見つめてる<br>
+							月の光のなか飛び立つ愛の天使<br>
+							悲しみも涙もいつか<br>
+							光る夜明けになる<br>
+							...夜明けになる<br>
+							...夜明けになる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-momotenshi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

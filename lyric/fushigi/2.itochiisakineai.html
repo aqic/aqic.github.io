@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>いと小さき願い - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">ふしぎ遊戯 CDBOOKS 張宿IM</div>
+
+                    <div class="LyricTitle">いと小さき願い</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">折笠愛</div>
+                    <div class="LyricStaff">作詞：日々安里<br>作曲：持田裕子<br>編曲：永井 誠</div>
+
+                    <div class="LyricText">
+						<p>
+							人は愚かだね　人は果敢(はか)ないね<br>
+							傷つかなければ　祈らないのさ</p>
+						<p>
+							神の恵み受け　生きてこれたこと<br>
+							いつの頃からか　忘れ</p>
+						<p>
+							心に咲いた　恋も摘んで<br>
+							誰かのために　生きていけぬ</p>
+						<p>
+							人は小さいね　人は虚ろうね<br>
+							いつかはお空に　帰ろ</p>
+						<p>
+							空の庭ではね　みんな微笑んで<br>
+							離れた人に　愛を</p>
+						<p>
+							小さい願い　叶うならば<br>
+							あなたの闇を　照らす星に</p>
+						<p>
+							人は小さいね　人は虚ろうね<br>
+							いつかはお空に　帰ろ<br>
+							帰ろ　帰ろ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

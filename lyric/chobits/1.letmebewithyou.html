@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Let Me Be With You - ちょびっツ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Chobits OP</div>
+
+                    <div class="LyricTitle">Let Me Be With You</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ROUND TABLE featuring Nino</div>
+                    <div class="LyricStaff">作詞：北川勝利<br>作曲：北川勝利<br>編曲：ROUND TABLE<br>ST編曲：宮川　弾</div>
+
+                    <div class="LyricText">
+						<p>
+							ふたりがきっと　出会えるような　魔法をかけて<br>
+							両手をそっと　重ねてほら　ほほえむから</p>
+						<p>
+							ほんとの気持ち　気付かないふりして<br>
+							突然ふたり　恋に落ちたの</p>
+						<p>
+							Let Me Be With You<br>
+							Let Me Be With You<br>
+							Let Me Be With You</p>
+						<p>
+							だきしめたいの</p>
+						<p>
+							今までずっと　言えないまま　隠してたの<br>
+							強がってる　それだけなの　見つけだして</p>
+						<p>
+							待ち合わせまで　あと５分待ってて<br>
+							そのあと二人　恋に落ちたの</p>
+						<p>
+							Let Me Be With You<br>
+							Let Me Be With You<br>
+							Let Me Be With You</p>
+						<p>
+							泣きたくなるの</p>
+						<p>
+							つないだ手をそっと　はなすとき<br>
+							不安になるの　不安になるの</p>
+						<p>
+							Let Me Be With You<br>
+							Let Me Be With You<br>
+							Let Me Be With You</p>
+						<p>
+							だきしめたいのに<br>
+							だきしめたいのに</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-chobits-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

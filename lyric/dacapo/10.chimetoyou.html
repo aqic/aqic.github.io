@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Chime to you - D.C. 〜ダ・カーポ〜</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Chime to you</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Yozuca</div>
+
+                    <div class="LyricText">
+						<p>
+							始まりのチャイムがほら<br>
+							桃色の風に溶けた<br>
+							どこか遠くへ行ってみたい<br>
+							教科書立てて　夢見た</p>
+						<p>
+							光りの粒を集めて<br>
+							ため息は雲に雲に乗せよう<br>
+							校庭の隅　強く咲いた<br>
+							花が揺れてる　眩しい</p>
+						<p>
+							Kiss to meそっと　輝き出す<br>
+							Ah　トキメキを受け止めて<br>
+							Cime to you鼓動　君に届け<br>
+							大空超えて　一緒に行こう</p>
+						<p>
+							前髪切った私に<br>
+							気付いてるかな？聞けない・・・<br>
+							ケンカの後は　照れくさいね<br>
+							でも近づけた気がする</p>
+						<p>
+							弾む気持ちは未来へ<br>
+							リボンを掛けて行こう　急いで</p>
+						<p>
+							Kiss to meきっと　笑顔のパワー<br>
+							Ah　キラメキをありがとう<br>
+							Chime to youそして振り向かずに<br>
+							私らしく描いて行こう</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-dacapo-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

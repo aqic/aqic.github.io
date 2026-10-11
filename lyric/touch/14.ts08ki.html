@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>岸辺のフォトグラフ - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ２ ～さよならの贈り物～ オリジナルサウンドトラック音楽編</div>
+
+                    <div class="LyricTitle">岸辺のフォトグラフ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">ブレッド＆バター</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							川面に映った<br>
+							飛行機雲　小石で揺らして<br>
+							黙って泣いたね<br>
+							何か僕に隠しているの</p>
+						<p>
+							壊れてく心を確かめるよう<br>
+							右手の時計に耳当てた</p>
+						<p>
+							友達のままいたかったね…<br>
+							君の影を踏んでみたよ<br>
+							哀しくて<br>
+							少女の君が首を傾げ<br>
+							僕の横で微笑ってるね<br>
+							岸辺のフォトグラフ  小舟の形に<br>
+							君が折った 夏の日の写真<br>
+							きらめく想いが<br>
+							流されるのを並んでみてた</p>
+						<p>
+							君の吹く草笛だけが届く<br>
+							変わらずいてねと聴こえたよ</p>
+						<p>
+							他の誰かに恋してるの<br>
+							傷つけてもかまわないさ<br>
+							言ってくれ<br>
+							淡い想いを映し込んだ<br>
+							その青さが瞳にしみたよ<br>
+							岸辺のフォトグラフ</p>
+						<p>
+							友達のままいればよかった…<br>
+							小さくなる君の影に<br>
+							ささやくよ<br>
+							少女の君が首を傾げ<br>
+							ごめんねって微笑ってるよ<br>
+							岸辺のフォトグラフ<br>
+							哀しい幻さ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

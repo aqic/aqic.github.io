@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Brand-New World - 犬夜叉</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Brand-New World</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">V6</div>
+
+                    <div class="LyricText">
+						<p>
+							Brand-New World<br>
+							新しい夢の始まり<br>
+							ゴール目指す旅は続いてゆく　いつだって<br>
+							Brand-New Mind<br>
+							情熱を抱いて次の扉(どあ)まで<br>
+							未だ見ぬ世界へ　さぁ　疾れ<br>
+							微塵もない望みの星にも<br>
+							この手伸ばし　無理矢理掴んだり<br>
+							闇雲な僕らは何処にいたい？<br>
+							群れの中　孤立してく意味<br>
+							一人でも孤独じゃない理由(わけ)<br>
+							繋がるなら時間は地図になる</p>
+						<p>
+							ありのまま　Let's go and Try<br>
+							進めよ　使命はOne way<br>
+							あるがままDo it! Ready?<br>
+							最後は願いに届くんだ</p>
+						<p>
+							Brand-New World　新しい夢の始まり<br>
+							ゴール目指す旅は続いてゆく　いつだって<br>
+							Brand-New Mind　情熱を抱いて次の扉まで<br>
+							未だ見ぬ世界へ　さぁ　疾れ</p>
+						<p>
+							この上ない喜び信じて　底なしの苦しみ感じて<br>
+							もっとタフになりたがる魂</p>
+						<p>
+							それゆえに　Don't stop and Cry<br>
+							今こそ　into the new day<br>
+							そのカケラ　Wanted my key<br>
+							最初に自分に聞くんだ</p>
+						<p>
+							Brand-New Dream　叶えたい夢があるなら<br>
+							何度だってはばたけるはずさ　君だって<br>
+							Brand-New Days<br>
+							開いている次の扉の向こう<br>
+							輝く世界に　さぁ　行こう</p>
+						<p>
+							ありのまま　Try and go on…<br>
+							進めよ　使命はOne way<br>
+							あるがまま　Do it! Ready?　最後は願いに届くんだ</p>
+						<p>
+							Brand-New World　新しい夢の始まり<br>
+							ゴール目指す旅は続いてゆく　いつだって<br>
+							Brand-New Mind<br>
+							情熱を抱いて次の扉まで<br>
+							未だ見ぬ世界へ　さぁ　疾れ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-inuyasha-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

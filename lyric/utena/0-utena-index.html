@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">少女革命ウテナ</span><span class="cn">（少女革命）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《少女革命ウテナ》</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">テレビアニメ</span><span class="disc-sub">10 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.baichi.html">《バーチャルスター発生学》</a><span class="note">- テレビ「少女革命ウテナ」 エンディング②(1997)</span></li>
+						<li class="LyricItem"><a href="2.truth.html">《Truth》</a><span class="note">- テレビ「少女革命ウテナ」 エンディング(1997)</span></li>
+						<li class="LyricItem"><a href="3.absolute.html">《絶対運命黙示録》</a><span class="note">- テレビ「少女革命ウテナ」 挿入歌(1997)</span></li>
+						<li class="LyricItem"><a href="4.supira.html">《スピラ・ミラビリス劇場》</a><span class="note">- テレビ「少女革命ウテナ」 決闘の歌５(1997)</span></li>
+						<li class="LyricItem"><a href="5.rasuto.html">《ラスト・エヴォルーション&lt;br&gt;（進化革命前夜）》</a><span class="note">- テレビ「少女革命ウテナ」 決闘の歌１０(1997)</span></li>
+						<li class="LyricItem"><a href="6.wwww.html">《When Where Who Which》</a><span class="note">- テレビ「少女革命ウテナ」 決闘の歌１(1997)</span></li>
+						<li class="LyricItem"><a href="7.who.html">《何人も語ることなし》</a><span class="note">- テレビ「少女革命ウテナ」 決闘の歌１２(1997)</span></li>
+						<li class="LyricItem"><a href="8.tenshi.html">《天使創造すなわち光》</a><span class="note">- テレビ「少女革命ウテナ」 決闘の歌７(1997)</span></li>
+						<li class="LyricItem"><a href="9.seal.html">《封印呪縛&lt;br&gt;（進化革命前夜）》</a><span class="note">- テレビ「少女革命ウテナ」 決闘の歌１１(1997)</span></li>
+						<li class="LyricItem"><a href="10.body.html">《肉体の中の古生代》</a><span class="note">- テレビ「少女革命ウテナ」 決闘の歌２(1997)</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">劇場版</span><span class="disc-sub">1 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="11.tokiniaiwa.html">《時に愛は》</a><span class="note">- 劇場版「少女革命ウテナ」 イメージソング</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">その他</span><span class="disc-sub">8 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="12.revolution.html">《輪舞-revolution》</a><span class="note">- 「少女革命ウテナ」 オープニングテーマ</span></li>
+						<li class="LyricItem"><a href="13.thanks.html">《ありがとう愛を》</a><span class="note">- 「少女革命ウテナ」</span></li>
+						<li class="LyricItem"><a href="14.fuian.html">《フィアンセになりたい》</a></li>
+						<li class="LyricItem"><a href="15.things.html">《わたし万物百不思議》</a><span class="note">- 「少女革命ウテナ」</span></li>
+						<li class="LyricItem"><a href="16.watashi.html">《ワタシ空想生命体》</a><span class="note">- 「少女革命ウテナ」</span></li>
+						<li class="LyricItem"><a href="17.segai.html">《世界を革命するためにⅠ》</a><span class="note">- 「少女革命ウテナ」</span></li>
+						<li class="LyricItem"><a href="18.earth.html">《地球は人物陳列室》</a><span class="note">- 「少女革命ウテナ」</span></li>
+						<li class="LyricItem"><a href="19.girl.html">《女の子の季節》</a><span class="note">- 「少女革命ウテナ」</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>もう泣かないで - らんま1/2</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「らんま 1/2 熱闘編」オープニング・テーマ (1991)</div>
+
+                    <div class="LyricTitle">もう泣かないで</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">瀬能あづさ</div>
+                    <div class="LyricStaff">作詞：三浦徳子<br>作曲：羽田一郎<br>編曲：佐藤　準</div>
+
+                    <div class="LyricText">
+						<p>
+							街角が　映し出す<br>
+							淋し気なシルエット　私よ<br>
+							さよならのセリフ　今<br>
+							信じられずに　聞いた</p>
+						<p>
+							クラクションさえ　ドラムのように<br>
+							この胸　叩き　涙を誘いはじめるの　ララバイ</p>
+						<p>
+							※元気を出して　もう泣かないで<br>
+							　明日になれば　すべて変わるわ<br>
+							　元気を出して　もう泣かないで<br>
+							　新しい風　向かって<br>
+							　Smile again!</p>
+						<p>
+							底無しに　Coolさと<br>
+							その気になっていたわ</p>
+						<p>
+							走り去ってく　車の中の<br>
+							素敵なKissシーン　あなたと彼女<br>
+							まちがいじゃないよ</p>
+						<p>
+							元気を出して　もう泣かないで<br>
+							悪いことだけ　続かないから<br>
+							元気を出して　もう泣かないで<br>
+							見上げた空に　抱かれて<br>
+							Smile again!</p>
+						<p>
+							※くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ranma-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

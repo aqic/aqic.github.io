@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Free Will - ONE PIECE</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Free Will</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Ruppina</div>
+
+                    <div class="LyricText">
+						<p>
+							あぁ 果てしなく 続いてる 空の向こうに<br>
+							いつか見た 未来を今 描き始めている</p>
+						<p>
+							例えば夢が儚いモノでも<br>
+							少しの希望信じて</p>
+						<p>
+							自分に負けそうになる日もある<br>
+							そんな時は暖かな場所があった</p>
+						<p>
+							誇れる仲間 いつも きっと<br>
+							僕の背中押してくれたよね?</p>
+						<p>
+							Ah 星達が降り注ぐ この空の下<br>
+							2度とない今を ほら 胸に刻んで<br>
+							どこまでも羽ばたける 自由な鳥に<br>
+							限りない夢を乗せ 君に届けにいこう</p>
+						<p>
+							傷つくことを恐れずに進む<br>
+							そんな君は光り輝いていたね</p>
+						<p>
+							もしもいつか 迷い悩んでも<br>
+							勇気づけていたい ずっと</p>
+						<p>
+							Ah 星達がささやいた そんな夜には<br>
+							思い出に変わってゆく瞬間を感じて<br>
+							果てしなく 続いている 自由な空に<br>
+							いつか見た未来を今 その手に掴むんだ</p>
+						<p>
+							Ah 星達が降り注ぐ この空の下<br>
+							2度とない今を ほら 胸に刻んで<br>
+							どこまでも羽ばたける 自由な鳥に<br>
+							限りない夢を乗せ 君に届けにいこう<br>
+							僕たちは それぞれの花を抱いて<br>
+							それぞれの旅路へと 歩き始めている</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onepiece-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

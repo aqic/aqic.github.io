@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Believe - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Believe</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">玉置成實</div>
+                    <div class="LyricStaff">作詞︰西尾佐栄子<br>作曲︰あおい吉勇<br>編曲︰斉藤真也</div>
+
+                    <div class="LyricText">
+						<p>
+							言葉みつけられず　思わず触れた肩先<br>
+							君はなんにも言わずに　冷たく降りほどく<br>
+							ほんの繊細な誤解から　幼い愛は崩れてく<br>
+							そんな悲しい顔は見たくない<br>
+							夢さえ無くしても　その微笑みだけ捨てないで<br>
+							この胸輝いていて<br>
+							いつか誓う僕ら　この手で築く未来は<br>
+							必ずこの惑星で　君がどこにいたって<br>
+							だけどいまは二人せつなく　そらした瞳<br>
+							出逢えることを信じて<br>
+							一緒に眺めた星空　幾つも光流れてた<br>
+							思いではまだ消えたりはしない<br>
+							耳を澄ましたなら　口笛で吹いたあの唄の<br>
+							フレーズ聞こえはじめる<br>
+							そして空の向こう　心が描く明日は<br>
+							も一度あの場所で　君の隣にいよう<br>
+							きっと僕ら二人これから　駆け抜けていく日々に<br>
+							意味があるのなら<br>
+							いつか誓う僕ら　この手で築く未来は<br>
+							必ずこの惑星で　君がどこにいたって<br>
+							そして空の向こう　心が描く明日は<br>
+							も一度あの場所で　君の隣にいよう<br>
+							だけどいまは二人せつなく　そらした瞳<br>
+							出逢えることを信じて</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

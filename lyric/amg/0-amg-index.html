@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Lyrics</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="stylesheet" href="/lyric/index.css?v=6">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div style="margin:20px;">
+                    <div class="LyricCatalog catalog-head"><span class="jp">ああっ女神さまっ</span><span class="cn">（我的女神）</span></div>
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="album-head">
+                        <div class="album-title">《ああっ女神さまっ》</div>
+                    </div>
+
+					<div class="disc-head"><span class="disc-name">アルバム</span><span class="disc-sub">8 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="1.shiawasega.html">《しあわせが加速する》</a><span class="note">- アルバム「あぁっ女神さまっ Singles」収録曲</span></li>
+						<li class="LyricItem"><a href="2.urutsudeaisatsu.html">《ワルツであいさつ》</a><span class="note">- アルバム「あぁっ女神さまっ Singles」収録曲</span></li>
+						<li class="LyricItem"><a href="3.bokutoikirukoto.html">《僕と生きることが君のしあわせ》</a><span class="note">- アルバム「あぁっ女神さまっ Singles」収録曲</span></li>
+						<li class="LyricItem"><a href="4.megamiwautau.html">《女神はうたう》</a><span class="note">- アルバム「あぁっ女神さまっ Singles」収録曲</span></li>
+						<li class="LyricItem"><a href="5.catchnai.html">《捕まらないよ》</a><span class="note">- アルバム「あぁっ女神さまっ Singles」収録曲</span></li>
+						<li class="LyricItem"><a href="6.sattokenainosa.html">《放っとけないのさ》</a><span class="note">- アルバム「あぁっ女神さまっ Singles」収録曲</span></li>
+						<li class="LyricItem"><a href="7.shootingstargirl.html">《流れ星を待つ少女》</a><span class="note">- アルバム「あぁっ女神さまっ Singles」収録曲</span></li>
+						<li class="LyricItem"><a href="8.kamimessage.html">《神様の伝言》</a><span class="note">- アルバム「あぁっ女神さまっ Singles」収録曲</span></li>
+					</ul>
+
+					<div class="disc-head"><span class="disc-name">その他</span><span class="disc-sub">24 曲</span></div>
+					<ul class="song-list">
+						<li class="LyricItem"><a href="9.trytowish.html">《Try To Wish~キミに必要なもの~》</a><span class="note">- 「ああっ女神さまっ」オープニング・ソング(2000)</span></li>
+						<li class="LyricItem"><a href="10.denwashitedarlin.html">《デンワしてダ-リン》</a><span class="note">- ああっ女神さまっ∼小っちゃいって事は便利だねっ∼ -ED</span></li>
+						<li class="LyricItem"><a href="11.yourbirthday.html">《あなたのBirthday》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="12.onigiri.html">《おにぎり》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="13.kimiokaerarena.html">《きみを変えられない、ぼくが伝わらない》</a></li>
+						<li class="LyricItem"><a href="14.denwashiteganchan.html">《デンワして岩ちゃん》</a><span class="note">- ああっ女神さまっ∼小っちゃいって事は便利だねっ∼</span></li>
+						<li class="LyricItem"><a href="15.namidanoimiji.html">《なみだの意味》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="16.congratulations.html">《Congratulations!》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="17.fortunesmiled.html">《Fortune smiled on you》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="18.myheartyouheart.html">《My Heart言い出せない、Your Heart確かめたい》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="19.ribbon.html">《RIBBON》</a></li>
+						<li class="LyricItem"><a href="20.oyonbi.html">《女神さまっとお呼び！》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="21.megaminokimochi.html">《女神の気持ち》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="22.kotomo.html">《子供扱いしないでよ》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="23.draw.html">《展覧会の絵》</a></li>
+						<li class="LyricItem"><a href="24.koinorule.html">《恋の法則》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="25.love.html">《愛情》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="26.hoshisora.html">《星空召喚》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="27.shiranai.html">《片思いしか知らないくせに》</a>＆<a href="27.shiranai-bilingual.html" class="cn">(中)</a></li>
+						<li class="LyricItem"><a href="28.shiroi.html">《白い妖精》</a></li>
+						<li class="LyricItem"><a href="29.kamisamanomono.html">《神さまの贈りもの》</a>＆<a href="29.kamisamanomono-bilingual.html" class="cn">(中)</a></li>
+						<li class="LyricItem"><a href="30.tokimekiinback.html">《背中あわせのときめき》</a></li>
+						<li class="LyricItem"><a href="31.bicycle.html">《自転車》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+						<li class="LyricItem"><a href="32.hanabira.html">《花びらの記憶》</a><span class="note">- 「ああっ女神さまっ」</span></li>
+					</ul>
+
+                    <hr style="margin:20px 0; border-top:1px solid #E6D8AE;">
+
+                    <div class="LyricBack"><a href="../fullindex.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

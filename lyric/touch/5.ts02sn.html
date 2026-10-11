@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>スノー・イン・サマー - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ ～背番号のないエース～ オリジナルサウンドトラック タッチ Original Song Book ２</div>
+
+                    <div class="LyricTitle">スノー・イン・サマー</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">芹澤 廣明</div>
+                    <div class="LyricStaff">作詞：売野 雅勇<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							プールサイドのフェンスにもたれ<br>
+							水面埋める銀の波見てた</p>
+						<p>
+							首を傾げて「嫌いなの...」って<br>
+							聞いた君の目が潤んだ</p>
+						<p>
+							さよならだけだね 二人を<br>
+							あぁ　結べる絆は</p>
+						<p>
+							愛してると言ったら壊れるね<br>
+							頬に切ない想いが降りしきる<br>
+							wow wow wow wow<br>
+							夏の雪さ　胸に秘めた恋は<br>
+							幻よりも儚い...  君が欲しいとつぶやいてみた<br>
+							遠ざかって行く背中に</p>
+						<p>
+							握りしめた手を開けば<br>
+							あぁ　指輪が落ちたよ</p>
+						<p>
+							すれ違うね　心が泣きながら<br>
+							あいつのことを不幸にできないよ<br>
+							wow wow wow wow<br>
+							夏の雪さ切ない幻さ<br>
+							綺麗なままがいいよね...</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

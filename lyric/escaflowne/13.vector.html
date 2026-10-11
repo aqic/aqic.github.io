@@ -1,0 +1,121 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Vector - 天空のエスカフローネ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Vector</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							Told myself for a long time<br>
+							don't go there<br>
+							you will only be sorry<br>
+							Told myself so many times<br>
+							I just had to take a look<br>
+							in those faraway eyes..</p>
+						<p>
+							In them I saw a longing<br>
+							for something<br>
+							Maybe I couldn't give you<br>
+							Said it's all in my mind<br>
+							"It ain't nothing"</p>
+						<p>
+							Don't say that<br>
+							Don't say that<br>
+							darling no<br>
+							Don't say anything at all<br>
+							Because I've seen it now<br>
+							Can't pretend anymore<br>
+							"It ain't nothing"</p>
+						<p>
+							*Chorus*<br>
+							Do you know what I mean?<br>
+							And have you seen it too?<br>
+							Do you know what I mean?<br>
+							Do you know?<br>
+							And I'll do anything<br>
+							just tell me what it means<br>
+							Cause I can't live in doubt anymore<br>
+							Do we try or should we<br>
+							just say goodbye</p>
+						<p>
+							If you'd rather be somewhere<br>
+							that's not here<br>
+							then you just gotta tell me<br>
+							Cause there's so much more to life, than pretending</p>
+						<p>
+							Don't you know<br>
+							Don't you know<br>
+							darling for you<br>
+							I'd do anything at all<br>
+							I wanna be with you<br>
+							but that look in your eyes<br>
+							tells me something</p>
+						<p>
+							*Chorus repeat*</p>
+						<p>
+							I wanna know<br>
+							can you tell me<br>
+							I wanna know<br>
+							will you tell me<br>
+							is it hello<br>
+							is it good bye</p>
+						<p>
+							I gotta know<br>
+							won't you tell me<br>
+							I gotta know<br>
+							you can tell me<br>
+							is it hello<br>
+							or just goodbye</p>
+						<p>
+							I gotta know<br>
+							can you tell me<br>
+							I gotta know<br>
+							will you tell me<br>
+							is it hello<br>
+							is it goodbye</p>
+						<p>
+							I gotta know<br>
+							won't you tell me<br>
+							I gotta know<br>
+							You can tell me<br>
+							is it hello<br>
+							is it goodbye</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-escaflowne-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

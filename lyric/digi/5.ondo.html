@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>デ・ジ・キャラット音頭 - デ・ジ・キャラット</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">デ・ジ・キャラット音頭</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sanada Asami, Sawashiro Miyuki, Hikami Kyouko, Kamei Yoshiko</div>
+                    <div class="LyricStaff">Lyrics : Mori Yuki<br>Music : Sakamoto Yuusuke<br>Arrangement : Sakamoto Yuusuke</div>
+
+                    <div class="LyricText">
+						<p>
+							(D) にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ<br>
+							(U) ア、ソ～レ<br>
+							(D) にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ<br>
+							(P) ア、どした<br>
+							(D) にょ！　(G) あ～ゲマゲマ</p>
+						<p>
+							(D) 月がなくてもゲマがでる　餅がなくてもうさだいる<br>
+							　　　今夜はみんなで大騒ぎだにょ</p>
+						<p>
+							(U) なんの遠慮もいりません　今日は何でも無礼講<br>
+							　　　うちわを片手に踊りましょうよ</p>
+						<p>
+							(P) ハ～なんかいい匂い　タコ焼きさんが呼んでるにゅ<br>
+							　　　ハ～お面かぶったら　夢気分<br>
+							　　　デジキャラ　デジキャラ　デジキャラ　デジキャラ<br>
+							　　　デ・ジ・キャラット音頭だよ～</p>
+						<p>
+							(D) にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ<br>
+							(U) ア、ソ～レ<br>
+							(D) にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ<br>
+							(P) ア、どした<br>
+							(D) にょ！　(G) あ～ゲマゲマ</p>
+						<p>
+							(D) 右手左手ふり回し　見よう見まねで盆踊り<br>
+							　　　ライバルあいつとわたあめ食べよう</p>
+						<p>
+							(U) ケンカ御法度めちゃ元気　空にドカンと大花火<br>
+							　　　一年一度の夏祭りだよ</p>
+						<p>
+							(P) ハ～お金たりるかな？　金魚すくいもやりたいにゅ<br>
+							　　　ハ～笛がビーヒョロロ　夢気分<br>
+							　　　デジキャラ　デジキャラ　デジキャラ　デジキャラ<br>
+							　　　デ・ジ・キャラット音頭だよ～</p>
+						<p>
+							(D) にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ<br>
+							(U) ア、ソ～レ<br>
+							(D) にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ<br>
+							(P) ア、どした<br>
+							(D) にょ！　(G) あ～ゲマゲマ</p>
+						<p>
+							(D) 太鼓よろしくドドンガドン　来年もまた会いたいにょ<br>
+							(U) 気になる誰かと踊りましょうよ</p>
+						<p>
+							(P) ハ～お腹いっぱいにゅ　出店たくさんうれしいな<br>
+							　　　ハ～浴衣ひるがえし　夢気分<br>
+							　　　デジキャラ　デジキャラ　デジキャラ　デジキャラ<br>
+							　　　デジキャラ　デジキャラ　デ・ジ・キャラット音頭だよ～</p>
+						<p>
+							(D) にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ<br>
+							(U) ア、ソ～レ<br>
+							(D) にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ　にょ<br>
+							(P) ア、どした<br>
+							(D) にょ！　(G) あ～ゲマゲマ</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-digi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

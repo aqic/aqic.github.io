@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>WHITE REFLECTION - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「新機動戦記ガンダムＷ ＥＮＤＬＥＳＳ ＷＡＬＴＳ」テーマ曲</div>
+
+                    <div class="LyricTitle">WHITE REFLECTION</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">TWO-MIX</div>
+                    <div class="LyricStaff">作詞、作曲、編曲：TWO-MIX</div>
+
+                    <div class="LyricText">
+						<p>
+							I FEEL YOUR LOVE REFLECTION<br>
+							見つめ返す　瞳に<br>
+							描いて　遥かな　“NEVER ENDING STORY"</p>
+						<p>
+							絶望（かなしみ）傷痕（いたみ）も　振り切るように羽ばたく<br>
+							あなたがくれた勇気（つばさ）を　この胸に広げて…</p>
+						<p>
+							ああ　かけがえない愛の　煌き（こどう）を<br>
+							せつなく　くるおしく　感じていたい</p>
+						<p>
+							I FEEL YOUR LOVE REFLECTION<br>
+							熱く　理想（ゆめ）を　重ねて<br>
+							過ち恐れずに　求め合う青春！！<br>
+							I FEEL YOUR LOVE REFLECTION<br>
+							見つめ返す　瞳に<br>
+							描いて　遥かな　“NEVER ENDING STORY"</p>
+						<p>
+							あふれだす想いを　素肌でそっと伝える<br>
+							やさしくなれる純粋さ（つよさ）を　抱きしめるみたいに…</p>
+						<p>
+							ああ　激しく揺れ動く日々（じだい）を<br>
+							気高く　しなやかに　越えていきたい</p>
+						<p>
+							I FEEL YOUR LOVE REFLECTION<br>
+							許し合える　真実<br>
+							口づけ交わしたら　もう何もいらない！！<br>
+							I FEEL YOUR LOVE REFLECTION<br>
+							あきらめない　情熱<br>
+							信じて　闘う（つらぬく）“NEVER ENDING STORY"</p>
+						<p>
+							I FEEL YOUR LOVE REFLECTION<br>
+							熱く理想（ゆめ）を　重ねて<br>
+							過ち恐れずに　求め合う青春！！<br>
+							I FEEL YOUR LOVE REFLECTION<br>
+							見つめ返す　瞳に<br>
+							描いて　遥かな　“NEVER ENDING STORY"</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

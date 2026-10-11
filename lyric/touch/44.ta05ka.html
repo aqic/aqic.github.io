@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>風のメッセージ - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book １ タッチ Music Flavor１</div>
+
+                    <div class="LyricTitle">風のメッセージ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">芹澤 廣明</div>
+                    <div class="LyricStaff">作詞：康 珍化<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							My Girl その夢が<br>
+							My Girl かなう場所<br>
+							つれていってあげると　君に誓うよ</p>
+						<p>
+							My Girl 今日の日が<br>
+							My Girl 何もかも<br>
+							時の木の葉に乗って　行くまえに</p>
+						<p>
+							君がくれたやさしさに<br>
+							ありがとうって　言いたくて<br>
+							いつもテレているんだよ<br>
+							素直になれない　心のパントマイム<br>
+							Woh</p>
+						<p>
+							My Girl 遠くても<br>
+							My Girl つらくても<br>
+							苦しいなんて思う　事はない  Slow Down つまずいて<br>
+							Slow Down あせるたび<br>
+							君がとなりにいると　落ち着くんだよ</p>
+						<p>
+							Angel　青春は<br>
+							Angel　おかしくて<br>
+							ちょっと悲しいそんな　小説さ</p>
+						<p>
+							心の中のぞかない<br>
+							君から見せて　くれるまで<br>
+							どこまでも空は晴れて<br>
+							心に集める　輝くメモリーズ<br>
+							Woh</p>
+						<p>
+							My Girl 風がほら<br>
+							My Girl 動いたよ<br>
+							つれていってあげるよ その場所へ</p>
+						<p>
+							My Girl 遠くても<br>
+							My Girl つらくても<br>
+							苦しいなんて思う　事はない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

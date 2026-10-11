@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Believe me - ＧＳ美神</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「ＧＳ美神」エンディングテーマ</div>
+
+                    <div class="LyricTitle">Believe me</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">小坂由美子</div>
+
+                    <div class="LyricText">
+						<p>
+							いかしたルックス ポーズ決めて<br>
+							ビジネスに繰り出すのよ<br>
+							スーパーリッチなギャランティ<br>
+							一歩も譲れないわ<br>
+							危険なほど燃えるの どんなGhost<br>
+							（あいて）だって<br>
+							料理しちゃうから…</p>
+						<p>
+							☆You don't cry any more<br>
+							　逃げないで！<br>
+							　きっと勝てるわ<br>
+							　私だけを信じてね<br>
+							　You don't cry any more 明日は<br>
+							　ずっと今日より<br>
+							　ハイな生活（とき）を刻めるわ<br>
+							　Believe me</p>
+						<p>
+							デジタルなこの都会（まち）だって<br>
+							不思議がウヨウヨしてる<br>
+							そんな時すぐ呼び出して<br>
+							デートよりイチオシよ<br>
+							今日はどのアイテムを<br>
+							お見舞いしちゃおうか<br>
+							すごくワクワクよ</p>
+						<p>
+							★You don't cry any more<br>
+							　負けないで！<br>
+							　もっと激しく<br>
+							　パワーあなたに貸すから<br>
+							　You don't cry any more 脅えた<br>
+							　昨日手を振る<br>
+							　シーンすぐそこに来てる<br>
+							　Believe me</p>
+						<p>
+							☆くりかえし</p>
+						<p>
+							★くりかえし</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gsmikami-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

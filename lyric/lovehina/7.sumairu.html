@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>スマイル スマイル - ラブひな</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">スマイル スマイル</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">堀江由衣、雪乃五月,金月真美</div>
+                    <div class="LyricStaff">作詞：有森聪美<br>作曲：池田浩雄<br>編曲：T.J</div>
+
+                    <div class="LyricText">
+						<p>
+							へこんじゃう夜にも　同じ星を见上げてる<br>
+							私がいる事を　忘れたりしないで<br>
+							独りきりの泪　流したりさせないから<br>
+							その泪をいつか　ダイヤに变えようよ<br>
+							そっと气づいて　この眼差し<br>
+							谁よりも君を想っている　淡い气持ち…</p>
+						<p>
+							スマイル　スマイル　笑ってよ、<br>
+							その笑颜が　大好きだから<br>
+							スマイル スマイル　君を困らす<br>
+							全てを　吹き飞ばそうよ<br>
+							いつだって　侧にいて<br>
+							ずっとずっと　见守っているから</p>
+						<p>
+							何より强い事　同じ梦を见つめてる<br>
+							负けそうになっても　手を离したりしない<br>
+							きっと行けるよ　そう信じて<br>
+							情热も爱も抱きしめたら　一绪に向かおう</p>
+						<p>
+							スマイル スマイル　笑ってよ、<br>
+							その笑颜が最高だから<br>
+							スマイル スマイル　君が想うより</p>
+						<p>
+							君を想う　私がいる<br>
+							どこだって　愿う场所<br>
+							ずっとずっと　步いて行こうよ</p>
+						<p>
+							时７、雨にうたれる君を见て<br>
+							苦しくなるよ　そっと伞を差し挂けたいよ</p>
+						<p>
+							スマイル　スマイル　笑ってよ、<br>
+							その笑颜が　大好きだから<br>
+							スマイル スマイル　君を困らす<br>
+							全てを　吹き飞ばそうよ<br>
+							いつだって　侧にいて<br>
+							ずっとずっと　见守っているから</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lovehina-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>せつなくていい - 美少女戦士セーラームーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">テレビ「美少女戦士セーラームーンＲ 乙女の詩集」 印象歌（１９９３）</div>
+
+                    <div class="LyricTitle">せつなくていい</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">深見梨加</div>
+                    <div class="LyricStaff">作詩／芹沢類<br>作曲／柴矢俊彦<br>編曲／京田誠一</div>
+
+                    <div class="LyricText">
+						<p>
+							ねエ　眠れない夜が来て　またあなたを想ってる<br>
+							あー　蒼白い窓を開け　空にまだ消え残る星を見上げる<br>
+							あなたに　おやすみを　赤いリボンをほどいて<br>
+							遠くから叱ってね　誰にも見せない弱気な私を<br>
+							いつまでも好きだから　あなたのせいならば<br>
+							せつなくて　せつなくて　いい</p>
+						<p>
+							ねエ　まだ細いこの腕で　あなたを抱きしめる日が来るのでしょうか<br>
+							も一度逢えたなら　きっと　泣き出してしまう<br>
+							制服の胸にある　遙かな瞳(め)をしたあなたの横顔<br>
+							そのままで好きだけど　もっと　あなたらしく<br>
+							変わっても　変わっても　いい</p>
+						<p>
+							遠くから抱きしめて　誰にも見せない　気弱な私を<br>
+							いつまで好きだから　あなたのせいならば　せつなくて　せつなくて　いい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-bssm-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Disintegration - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">(I`ve original song)</div>
+
+                    <div class="LyricTitle">Disintegration</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Lia</div>
+                    <div class="LyricStaff">作詞：Ben<br>作曲·編曲：高瀨一矢</div>
+
+                    <div class="LyricText">
+						<p>
+							forever has gone,<br>
+							today is infinity<br>
+							and yesterday`s dreams,<br>
+							today a faint memory<br>
+							forever is gone,<br>
+							today is infinity<br>
+							it`s time to move on,<br>
+							forever has gone</p>
+						<p>
+							two eyes in the face of billions of voices<br>
+							i saw the flashing lights<br>
+							move further in the distance<br>
+							the dream was not meant to be</p>
+						<p>
+							outside these walls that i have created<br>
+							the sound of stars colliding<br>
+							echoes in the distance<br>
+							and dreams they shutter</p>
+						<p>
+							let it break into a thousand pieces<br>
+							let the wind blow it all way<br>
+							dreams are fragile but our hearts grow<br>
+							stronger from the memories...</p>
+						<p>
+							let it break into a thousand pieces<br>
+							let the wind blow it all way<br>
+							dreams are fragile but our hearts grow<br>
+							stronger from the memories...</p>
+						<p>
+							renew...the light...the dream.....</p>
+						<p>
+							forever has gone,<br>
+							today is infinity<br>
+							and yesterday`s dreams,<br>
+							today a faint memory<br>
+							forever is gone,<br>
+							today is infinity<br>
+							it`s time to move on,<br>
+							forever has gone</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

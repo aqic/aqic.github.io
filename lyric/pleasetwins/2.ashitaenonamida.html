@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>明日への涙 - おねがい☆ツインズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「おねがい☆ツインズ」</div>
+
+                    <div class="LyricTitle">明日への涙</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">川田まみ</div>
+                    <div class="LyricStaff">作詞：KOTOKO<br>作曲：中沢伴行</div>
+
+                    <div class="LyricText">
+						<p>
+							{あの星は同じ瞬きで<br>
+							変わらずに私を見て<br>
+							退屈な夢を嘆き伏せた<br>
+							横顔をそっと照らしてた</p>
+						<p>
+							明日には小さな荷物背負い<br>
+							荒野を飛び立つ鳥になるから</p>
+						<p>
+							向かい風の中　向かう場所はまだ<br>
+							（顔上げれば　遥か遠くて…）<br>
+							いつか辿り着く　星になれる<br>
+							まつげに滲んだ　雫をなびかせ<br>
+							（溢れそうな　思い乗せて…）<br>
+							決して終わらない旅を　続けにゆくよ}</p>
+						<p>
+							大切なものが多すぎで<br>
+							一人では選べなくて<br>
+							降りそそぐ孤独　夕暮れ時<br>
+							意味のない会話にすがった</p>
+						<p>
+							明日には本当の私に会い<br>
+							荒野に駆け出す風になるから</p>
+						<p>
+							浮かぶ夢の中　歌う星達は<br>
+							（追いつけない　時の中で）<br>
+							永遠の空をまわっている<br>
+							頬に落ちた粒　指で弾いたら<br>
+							（零れてゆく　夢の欠片）<br>
+							風に舞い上がり　碧の光に変わる</p>
+						<p>
+							明日にはちぎれた羽を拾い<br>
+							荒野にはばたく鳥になるから</p>
+						<p>
+							向かい風の中　向かう場所はまだ<br>
+							（顔上げれば　遥か遠くて…）<br>
+							いつか辿り着く　星になれる<br>
+							背中を押すのは　小さなこの手と<br>
+							（辿り着いた　見つけた答え）<br>
+							大空に投げた夢と　明日への涙</p>
+						<p>
+							（顔上げれば　遥か遠くて…）<br>
+							（溢れそうな　思い乗せて…）<br>
+							（追いつけない　時の中で）<br>
+							（零れてゆく　夢の欠片）</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-pleasetwins-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

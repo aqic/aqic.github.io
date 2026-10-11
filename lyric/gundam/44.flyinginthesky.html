@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Flying In The Sky - 機動戦士ガンダム</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">機動武闘伝 Gガンダム</div>
+
+                    <div class="LyricTitle">Flying In The Sky</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">鵜島仁文</div>
+
+                    <div class="LyricText">
+						<p>
+							FLYING IN THE SKY<br>
+							高くはばたけ　大空をどこまでも<br>
+							SHINING FINGER<br>
+							輝く光が　地の果て照らし<br>
+							奇跡を呼ぶSPELL<br>
+							振り向かず歩くのさ<br>
+							無限の力がある<br>
+							何度でも試すのさ<br>
+							どんなに苦しくてもやり遂げる　（Ｇガンダム）<br>
+							愛はいつも　この胸に<br>
+							永遠に消えることはない<br>
+							この手が　叫んでいる<br>
+							明日へと走れ</p>
+						<p>
+							FLYING IN THE SKY<br>
+							高くはばたけ　大空をどこまでも<br>
+							SHINING FINGER<br>
+							輝く光が　地の果て照らし<br>
+							奇跡を呼ぶSPELL<br>
+							BRIGHT YOU NOW<br>
+							君が描いた　未来へのシナリオは<br>
+							SHINING FINGER<br>
+							夢をつかもう　全ては思うままに<br>
+							I GET A CHANCE!</p>
+						<p>
+							もう一度はい上がり<br>
+							太陽の光を浴びて　（Ｇガンダム）<br>
+							涙はもう乾いている<br>
+							輝く未来が見える<br>
+							この手でつかむのさ<br>
+							黄金の翼</p>
+						<p>
+							FLYING IN THE SKY<br>
+							高くはばたけ　何度でも起き上がれ<br>
+							SHINING FINGER<br>
+							変わらぬ願い　どんなことでも<br>
+							くじけやしない<br>
+							BRIGHT YOU NOW<br>
+							君が描いた　未来へのシナリオは<br>
+							SHINING FINGER<br>
+							夢をつかもう　全ては思うままに<br>
+							I GET A CHANCE!</p>
+						<p>
+							FLYING IN THE SKY<br>
+							高くはばたけ　大空をどこまでも<br>
+							SHINING FINGER<br>
+							輝く光が　地の果て照らし<br>
+							奇跡を呼ぶSPELL<br>
+							BRIGHT YOU NOW<br>
+							君が描いた　未来へのシナリオは<br>
+							SHINING FINGER<br>
+							夢をつかもう　全ては思うままに<br>
+							I GET A CHANCE!</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-gundam-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

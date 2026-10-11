@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>リメンバー&lt;br&gt;[REMEMBER] - 聖闘士星矢</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[聖闘士星矢 / IS]</div>
+
+                    <div class="LyricTitle">リメンバー&lt;br&gt;[REMEMBER]</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">MAKE-UP</div>
+                    <div class="LyricStaff">作詞：園部 和範<br>作曲：山田 信夫<br>編曲：MAKE-UP</div>
+
+                    <div class="LyricText">
+						<p>
+							嵐のように走る痛みよ<br>
+							差し出した手が力尽きても<br>
+							希望を捨てるな<br>
+							勇気の炎<br>
+							瞳をそらすな<br>
+							戦いは今終わる</p>
+						<p>
+							Remember<br>
+							おまえを育てたこの長い道のり<br>
+							Remember<br>
+							おまえに注がれた微笑みに<br>
+							勝利を誓え<br>
+							Remember</p>
+						<p>
+							柔らかな手で抱かれるよりも<br>
+							心にしみた鞭のやさしさ<br>
+							苦しい時こそ<br>
+							わかり合えるさ<br>
+							一人じゃないって<br>
+							悲しみは今終わる</p>
+						<p>
+							Remember<br>
+							おまえによく似た友の眼の輝き<br>
+							Remember<br>
+							おまえを待ってるあの星に<br>
+							明日を誓え<br>
+							Remember</p>
+						<p>
+							Remember<br>
+							おまえを育てたこの長い道のり<br>
+							Remember<br>
+							おまえに注がれた微笑みに<br>
+							勝利を誓え<br>
+							Remember<br>
+							おまえによく似た友の眼の輝き<br>
+							Remember<br>
+							おまえを待ってるあの星に<br>
+							明日を誓え<br>
+							Remember</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-saintseiya-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>砂の城 -The Castle of Sand- - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">朱-aka-(ねこねこソフト)</div>
+
+                    <div class="LyricTitle">砂の城 -The Castle of Sand-</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島宮えい子</div>
+                    <div class="LyricStaff">作詞 片岡とも<br>作曲 高瀬一矢<br>編曲 高瀬一矢</div>
+
+                    <div class="LyricText">
+<div class="LyricCN">
+						<p>
+							1&gt;<br>
+							From burning sky, There is white and burning sun. The<br>
+							horizon reflects, waveringly in my eyes</p>
+						<p>
+							The blowing sand, is filling up the sky and<br>
+							a ripple spreads, far away just like the sea. Umm...</p>
+						<p>
+							You make me come to the leeward with no words<br>
+							Your shadow covers me from white sun and burned sands.</p>
+						<p>
+							I wanna say word 'caz I want to tell you<br>
+							But the sound of sands, (are) drowning out the all my voice away.</p>
+						<p>
+							※<br>
+							The Castle of sand, a hand that reaches out to get<br>
+							but I can't. (I) don't even know what I want.</p>
+						<p>
+							The Castle of sand, so fragile, disappears<br>
+							right after (I) built.</p>
+						<p>
+							It's just a glare, the light spreads out through my fingers.<br>
+							Vaguely I heard the wind Singing...<br>
+							Built and disappears.<br>
+							 2&gt;<br>
+							When the wind stops, from the hot and burning sky. And<br>
+							your hemp robe shines, in the contrast with the sky.</p>
+						<p>
+							The setting sun, colors everything into orange.<br>
+							The silence comes, as if it's the sea in midnight.</p>
+						<p>
+							In the cold night sky, we're waiting the sunrise,<br>
+							Hands on the ground and build sand castle with fingers.</p>
+						<p>
+							Even it's so fragile, uncertain, and it blows in the wind,<br>
+							Now it is surely here, my proof.</p>
+						<p>
+							※</p>
+						<p>
+							（※英訳　江上梨乃）</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

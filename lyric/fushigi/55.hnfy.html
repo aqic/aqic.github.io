@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>花鳥風月 - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">花鳥風月</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">関 智一</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：まきのさぶろう<br>編曲：まきのさぶろう</div>
+
+                    <div class="LyricText">
+						<p>
+							花の咲く世界に　命観るように<br>
+							　　鳥が飛ぶ瞬間　自由を感じる<br>
+							　　風に耳を澄ませば　時が洗われて<br>
+							　　月を見る心に　静寂が降りる</p>
+						<p>
+							　　胸の奥には　痛い歴史がある<br>
+							　　今も疼いて　時々キラメク</p>
+						<p>
+							☆　悲しみの河を越えて　おいらは水晶になる<br>
+							　　魂の伝導体に　希望を通すのだ</p>
+						<p>
+							　　天の父見上げて　憧れを抱き<br>
+							　　地の母に甘えて　育まれている<br>
+							　　人は１人じゃなくて　連なる生命(いのち)で<br>
+							　　愛があるからこそ　生きて行けるのだ</p>
+						<p>
+							　　右のヒザには　七星士の印<br>
+							　　技を極めて　能力(ちから)蓄える</p>
+						<p>
+							　　喜びの山を登り　おいらは透明になる<br>
+							　　エナジーは自由自在　意識しだいなのだ</p>
+						<p>
+							☆　REPEAT</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

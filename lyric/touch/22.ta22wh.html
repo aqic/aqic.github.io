@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ホワイトドリーム - タッチ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">タッチ Original Song Book １ タッチ Music Flavor ３</div>
+
+                    <div class="LyricTitle">ホワイトドリーム</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">日高 のり子</div>
+                    <div class="LyricStaff">作詞：沢 ちひろ<br>作曲：芹澤 廣明<br>編曲：芹澤 廣明</div>
+
+                    <div class="LyricText">
+						<p>
+							風にふくらむ<br>
+							白いあなたのシャツに<br>
+							まぶた　何だか<br>
+							チクリと痛くなるの...</p>
+						<p>
+							さか道すべる　自転車のかげ<br>
+							遠くなるほど　心に</p>
+						<p>
+							おおきくなって　涙　呼ぶから<br>
+							何もいえなくなる<br>
+							Dreamy Scene<br>
+							Dreamy Hearts  もうすぐカレンダー<br>
+							しろい景色になるわ<br>
+							ゆれる想い出<br>
+							ちょっぴり遠くなるネ...</p>
+						<p>
+							いろんなユメに　かこまれた夜<br>
+							アナタの声が　ききたい</p>
+						<p>
+							何処かにかくれた　朝をふたりで<br>
+							見つけられる気がして　きっと...</p>
+						<p>
+							とぎれた時間　つなぎあわせて<br>
+							空にひろげる　キャンバス</p>
+						<p>
+							ツバサをむすぶ　リボンほどいて<br>
+							ユメを飛ばしたいナ...<br>
+							Dreamy Scene<br>
+							Dreamy Hearts</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-touch-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

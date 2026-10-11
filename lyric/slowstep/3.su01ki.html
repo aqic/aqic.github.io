@@ -1,0 +1,106 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>君がいなけりゃＦＲＵＳＴＲＡＴＩＯＮ - スローステップ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">スローステップ オリジナルサウンドトラック</div>
+
+                    <div class="LyricTitle">君がいなけりゃＦＲＵＳＴＲＡＴＩＯＮ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">佐木 伸誘</div>
+                    <div class="LyricStaff">作詞：松井 五郎<br>作曲：佐木 伸誘<br>編曲：藤井 丈司、佐橋 圭幸</div>
+
+                    <div class="LyricText">
+						<p>
+							古いジーンズ　膝を破いて<br>
+							青空　見るBOY</p>
+						<p>
+							ガムを噛んで　悪戯なKISS<br>
+							気まぐれ LONELY GIRL</p>
+						<p>
+							街はいつもGAMEみたいな<br>
+							孤独でいっぱいさ<br>
+							したいことが わからなくて<br>
+							気分は なぜ なぜ だらけさ</p>
+						<p>
+							WOW WOW WOW<br>
+							君がいなけりゃ FRUSTRATION<br>
+							そうさ　なんにも好きになれない<br>
+							どうか　おんなじ風を探して<br>
+							DAYLIGHT　踊ろう</p>
+						<p>
+							ことばだけじゃ　届かないから<br>
+							瞳でFEEL MY HEART  錆びたコイン　外車のDOORに<br>
+							サインをするBOY</p>
+						<p>
+							駅のベンチ　安いROUGEで<br>
+							微笑むLONELY GIRL</p>
+						<p>
+							昨日済んだ NEWSみたいな<br>
+							明日じゃ 失敗さ<br>
+							夢中でいま　見ているもの<br>
+							どこかが なぜ なぜ おかしい</p>
+						<p>
+							WOW WOW WOW<br>
+							君がいなけりゃ FRUSTRATION<br>
+							どんな　憧れにも嘘をつく<br>
+							こんな　さみしい気持でいたら<br>
+							TONIGHT... WOW WOW</p>
+						<p>
+							だから　君がいなけりゃ FRUSTRATION<br>
+							そうさ　なんにも好きになれない<br>
+							もっと　つまらないこの胸の<br>
+							世界を壊したい</p>
+						<p>
+							それは終わらない　そしていつも熱い<br>
+							きっと　そばにあるはずの<br>
+							君だけが　知っている<br>
+							ほんとうの　僕の太陽</p>
+						<p>
+							WOW WOW WOW<br>
+							君がいなけりゃ FRUSTRATION<br>
+							どんな　憧れにも嘘をつく<br>
+							こんな　さみしい気持でいたら<br>
+							TONIGHT... WOW WOW</p>
+						<p>
+							だから　君がいなけりゃ FRUSTRATION<br>
+							そうさ　なんにも好きになれない<br>
+							もっと　つまらないこの胸の<br>
+							世界を壊したい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slowstep-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

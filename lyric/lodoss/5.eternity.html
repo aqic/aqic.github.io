@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>(无标题) - ロードス島戦記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">(无标题)</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">Sherry</div>
+                    <div class="LyricStaff">Lyrics: Linda Hennrick<br>Composition: Nii'i Akino<br>Arrangement: Hagita Mitsuo</div>
+
+                    <div class="LyricText">
+						<p>
+							Caught by the moonlight<br>
+							A silent mist<br>
+							A shimmer in the trees<br>
+							Oh what a night for dreams<br>
+							A night of destiny<br>
+							Others are sleeping<br>
+							So unaware of magic in the air<br>
+							Magic you weave just for me<br>
+							Io sono prigionera</p>
+						<p>
+							Sweet fascination<br>
+							Though I don't understand<br>
+							The words you say<br>
+							You whisper soft and low<br>
+							And I am swept away<br>
+							Touch of enchantment<br>
+							I tremble when you<br>
+							Hold me close this way<br>
+							Drawn like a moth to a flame</p>
+						<p>
+							Io sono prigioniera<br>
+							My fate is in your arms tonight<br>
+							Though love is shining in your eyes<br>
+							Will you be mine tomorrow?<br>
+							Io sono prigioniera<br>
+							My heart will nevermore be free<br>
+							A part of you I'll always be<br>
+							From now until eternity</p>
+						<p>
+							Deep as the ocean<br>
+							With every kiss<br>
+							I'm deeper in your spell<br>
+							Love me again tonight<br>
+							You are my one desire<br>
+							Waves of emotion<br>
+							I know that this<br>
+							Is where I want to be<br>
+							Locked in your arms with no key</p>
+						<p>
+							Io sono prigioniera<br>
+							My fate is in your arms tonight<br>
+							Though love is shining in your eyes<br>
+							Will you be mine tomorrow?</p>
+						<p>
+							Io sono prigioniera<br>
+							My heart will nevermore be free<br>
+							A part of you I'll always be<br>
+							From now until eternity</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lodoss-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

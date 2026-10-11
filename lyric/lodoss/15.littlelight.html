@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>淡の光に - ロードス島戦記</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">淡の光に</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">草尾毅</div>
+                    <div class="LyricStaff">作詞・作曲：伊藤薰<br>編曲：荻田光男</div>
+
+                    <div class="LyricText">
+						<p>
+							淡き光いずこ<br>
+							我が颊を□うのか泪<br>
+							热き爱の炎<br>
+							君の元へ思いよ熰铩鮞r&gt;<br>
+							ああ　恋すれば痛む<br>
+							ああ　焦がれ焦がれて</p>
+						<p>
+							苦しき　Jealousy<br>
+							谜めく　Energy<br>
+							罪が舞う......</p>
+						<p>
+							远く离れようと<br>
+							白き肌忘れもしないが<br>
+							割れた银のクロス<br>
+							今は辉きがえ薄れて</p>
+						<p>
+							ああ　爱はあやまち<br>
+							ああ　橭刃の剑</p>
+						<p>
+							妖しき　Fairy Tale<br>
+							哀しき　Esctasy<br>
+							声もなく......</p>
+						<p>
+							ああ　恋すれば痛む<br>
+							ああ　焦がれ焦がれて</p>
+						<p>
+							苦しき　Jealousy<br>
+							谜めく　Energy<br>
+							罪が舞う......</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-lodoss-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

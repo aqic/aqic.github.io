@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Seed ～種子～ - ふしぎ遊戯</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Seed ～種子～</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">山野井 仁</div>
+                    <div class="LyricStaff">作詞：青木久美子<br>作曲：池 毅<br>編曲：まきのさぶろう</div>
+
+                    <div class="LyricText">
+						<p>
+							乾く大地に 　振り注ぐ雨<br>
+							生命の 　息吹が聴こえる<br>
+							たとえ別れが 　待つ出逢いでも<br>
+							愛さずにはいられなかった</p>
+						<p>
+							Seed . . . 僕の中で 　Seed . . . 芽生えたのは<br>
+							Seed . . . 君という 　最愛</p>
+						<p>
+							天と大地は 　離れていても<br>
+							お互いを 　見つめあっている<br>
+							時間を超えて 　運命を超え<br>
+							君と共に生きているんだ</p>
+						<p>
+							Seed . . . 僕の中で 　Seed . . . 育むのは<br>
+							Seed . . . 君という喜び</p>
+						<p>
+							別の世界にいても 　心は１つに結ばれている<br>
+							Seed . . . 僕の中で 　Seed . . . 花咲くのは<br>
+							Seed . . . 君という　永遠<br>
+							Forever　Forever　Forever</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-fushigi-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

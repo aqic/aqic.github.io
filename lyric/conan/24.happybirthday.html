@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Happy Birthday - 名探偵コナン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">時計じかけの摩天楼</div>
+
+                    <div class="LyricTitle">Happy Birthday</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">杏子</div>
+                    <div class="LyricStaff">作詞・作曲：スガシカオ<br>編曲：スガシカオ・間宮工</div>
+
+                    <div class="LyricText">
+						<p>
+							うまく話ができなくて　本当はすまないと思ってる<br>
+							しばらく悩んでもみたけど　そのうち疲れて眠ってる<br>
+							週末のこの街の空気は　人いきれでむせ返り<br>
+							深くため息をついたら　街頭スピーカーに消された</p>
+						<p>
+							それらしい言葉を並べても　伝わることなど始めからない</p>
+						<p>
+							にぎやかなこの街の空に　思いきりはりあげた声は<br>
+							どこか遠くの街にいる　あの人への　Happy Birthday</p>
+						<p>
+							何か小さなトラブルで　人だかりに飲み込まれ<br>
+							誰かのつまらないジョークに　ほんの少しだけ笑った<br>
+							いつかこの街のどこかで　君と偶然出会っても<br>
+							何を話したらいいのか　今でもよくわからない</p>
+						<p>
+							ひとつずつ　こわれていく世界で　流した涙に何の意味がある</p>
+						<p>
+							にぎやかなこの街の空に　思いきりはりあげた声は<br>
+							どこか遠くの街にいる　あの人への　Happy Birthday</p>
+						<p>
+							にぎやかなこの街の空に　思い切りはりあげた声は<br>
+							にぎやかなこの街の空に　思いきりはりあげた声は<br>
+							どこか遠くの街にいる　あの人への　Happy Birthday</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-conan-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

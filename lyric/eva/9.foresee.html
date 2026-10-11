@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>予感 - 新世紀エヴァンゲリオン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">鋼鐵のガールフレンド</div>
+
+                    <div class="LyricTitle">予感</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">高橋洋子</div>
+                    <div class="LyricStaff">作詞：岩里祐穗<br>作曲：菅野よう子<br>編曲：菅野よう子</div>
+
+                    <div class="LyricText">
+						<p>
+							淋しさなら慣れているよ<br>
+							生まれたときから<br>
+							でも目の前に<br>
+							差し出された腕に<br>
+							思わず心搖れて<br>
+							眩しい予感に<br>
+							ひろがる未来を<br>
+							感じている　愛のせいで<br>
+							強くて優しい　なぜだかせつない<br>
+							気持ちのかけら　抱きしめて<br>
+							Ah…あなたに　Ah…寄り添う</p>
+						<p>
+							忘れてゆくためにいつも<br>
+							出会いをかさねた<br>
+							そんな痛みに<br>
+							気付かせてくれたね<br>
+							そのあたたかな涙<br>
+							不思議な予感に<br>
+							戸惑いながらも<br>
+							あなたの手を握りしめる<br>
+							微笑むことから始めてみたくて<br>
+							何かが変わる　この胸で<br>
+							Ah…光が　Ah…あふれる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-eva-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

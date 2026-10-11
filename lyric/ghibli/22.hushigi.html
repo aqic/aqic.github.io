@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ふしぎ　しりとりうた - スタジオジブリ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">となりのトトロ</div>
+
+                    <div class="LyricTitle">ふしぎ　しりとりうた</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">森 公美子</div>
+
+                    <div class="LyricText">
+						<p>
+							ふしぎ　ふしぎ<br>
+							ふしぎだらけで　ふしぎじゃない<br>
+							ふしぎ　ふしぎ<br>
+							ふしぎだらけで　ふしぎじゃない</p>
+						<p>
+							ふしぎ　ふしぎ<br>
+							ふしぎがたくさん　ぶきみだな<br>
+							ぶきみは　こわい　こわいは　おばけ<br>
+							おばけは　ゆうれい　ゆうれいはふしぎ<br>
+							　どきどき　わくわく<br>
+							　ちょっぴり　こわい<br>
+							　どきどき　わくわく<br>
+							　やっぱり　ふしぎ<br>
+							わたしのとなりに　だれかいる<br>
+							だれだか　わからないけど<br>
+							ゆうれいか　もののけか<br>
+							へいきのへいさ　こわくはないぞ</p>
+						<p>
+							ぶきみ　ぶきみ<br>
+							ぶきみだらけで　ふしぎだな<br>
+							ふしぎは　ゆかい<br>
+							ゆかいは　おもしろい<br>
+							おもしろいは　ゆうれい<br>
+							ゆうれいは　ふしぎ<br>
+							　びくびく　はらはら<br>
+							　なにかが　うなる<br>
+							　びくびく　はらはら<br>
+							　なにかが　ゆれる<br>
+							わたしのうしろに　だれかいる<br>
+							だれだか　わからないけど<br>
+							おおきなて　ながいつめ<br>
+							へいきのへいさ　こわくはないぞ</p>
+						<p>
+							こわい　こわい<br>
+							こわいけれども　おかしいな<br>
+							おかしいは　でたらめ<br>
+							でたらめは　めちゃくちゃ<br>
+							めちゃくちゃは　ゆうれい<br>
+							ゆうれいは　こわい<br>
+							　ぞくぞく　ひやひや<br>
+							　せすじが　こおる<br>
+							　ぞくぞく　ひやひや<br>
+							　あしが　ふるえる</p>
+						<p>
+							ぶきみ　ぶきみ<br>
+							ぶきみだらけで　ふしぎだな<br>
+							ふしぎと　こまる<br>
+							こまるは　たいへん<br>
+							たいへんは　ゆうれい<br>
+							ゆうれいは　ぶきみ<br>
+							　ぞくぞく　ひやひや<br>
+							　せすじが　こおる<br>
+							　ぞくぞく　ひやひや<br>
+							　あしが　ふるえる</p>
+						<p>
+							　びくびく　はらはら<br>
+							　なにかが　うなる<br>
+							　びくびく　はらはら<br>
+							　なにかが　ゆれる</p>
+						<p>
+							　どきどき　わくわく<br>
+							　ちょっぴり　こわい<br>
+							　どきどき　わくわく<br>
+							　やっぱり　ふしぎ</p>
+						<p>
+							　ふしぎ　ふしぎ<br>
+							　ふしぎだらけで　ふしぎじゃない</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ghibli-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

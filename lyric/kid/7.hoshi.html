@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>星のまなざし - KID</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©2002 ONE ～輝く季節へ～ ED</div>
+
+                    <div class="LyricTitle">星のまなざし</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">かないみか(椎名繭)</div>
+                    <div class="LyricStaff">作詞：岡崎律子/並河祥太<br>作曲：岡崎律子<br>編曲：岩室晶子</div>
+
+                    <div class="LyricText">
+						<p>
+							この　青い　惑星に　生まれた人は<br>
+							みんな　みんな　光ってる<br>
+							あなたも　わたしも　泣いてる人も</p>
+						<p>
+							あれ　何に見える　街の　明かりは<br>
+							黄色　みどり　さくら色<br>
+							キャンドル　貝殻　ビーズの小瓶</p>
+						<p>
+							キララ　キララ　星の　まなざし<br>
+							きっと　みんな　持っている<br>
+							どんな　ときも　閉ざさないでね<br>
+							空に　星が　あるように</p>
+						<p>
+							あの　月が　こんど　丸くなるまで<br>
+							ちょっと　暗い　夜になる<br>
+							あなたと　ゆっくり　散歩がしたい</p>
+						<p>
+							キララ　キララ　星の　まなざし<br>
+							いまは　何を　見ているの<br>
+							背伸び　なしで　とどきそうだよ<br>
+							愛も　夢も　ここにある</p>
+						<p>
+							キララ　キララ　星の　まなざし<br>
+							きっと　みんな　持っている<br>
+							キララ　キララ　星の　まなざし<br>
+							いまは　何を　見ているの</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kid-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

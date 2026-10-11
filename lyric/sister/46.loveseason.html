@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>恋する季節の中で - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">恋する季節の中で</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							今日もこの坂道　風を切ってサイクリング<br>
+							今日はいつもよりも　甘い季節の薫り</p>
+						<p>
+							待ち合わせの途中　木陰でちょっと　ブレイクタイム</p>
+						<p>
+							グリーンの風が　優しく吹く<br>
+							あなたと二人　未来を感じてる<br>
+							口笛吹いて　LOVE ME DO</p>
+						<p>
+							今日は週末ショッピング　ビーズの指輪探そう<br>
+							ピンクはちょっと苦手　だけど　今日は冒険しよう</p>
+						<p>
+							あなたの好みね　恋するカラー　ピュアなハート</p>
+						<p>
+							ピンクの夢に　抱かれたいの<br>
+							似合っているね…笑顔で囁く<br>
+							夏に近づく　SAY HELLO</p>
+						<p>
+							重なる影　夢見た瞬間　今がそうよ　ハート踊る</p>
+						<p>
+							ピンクの夢に　抱かれたいの<br>
+							似合っているね…笑顔で囁く<br>
+							夏に近づく　SAY HELLO</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

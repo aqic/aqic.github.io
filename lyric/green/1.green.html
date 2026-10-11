@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Green·Green - グリーングリーン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">グリ－ン·グリ－ン -OP</div>
+
+                    <div class="LyricTitle">Green·Green</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">NANA</div>
+
+                    <div class="LyricText">
+						<p>
+							ある朝に目覺めて 戀をした 僕らは戶惑った<br>
+							スライドをしていく風景が全てを塗り替えた<br>
+							大事な寶物が ゴミになっちゃう感じ<br>
+							どこでも一緖に行けるよ<br>
+							戀とキスの答えは どこにあるの?<br>
+							閉ざされてる昨日を拔け出して<br>
+							君を抱きしめ どこに行くの?<br>
+							夢を見てる 悲しみや さよならが 二人を待ってても</p>
+						<p>
+							愛のためになんて バカみたい<br>
+							でも 本當に思う<br>
+							每日の理由に 君がいて 僕はうろたえてる<br>
+							チャチな色した※フィギュアが 動き出しちゃう感じ<br>
+							勇氣を見せてもいいよ<br>
+							僕と君の未來は どこにあるの?<br>
+							限りあってる 時間をすり減らし<br>
+							觸れた指先 どこに行くの?<br>
+							明日を思い 見上げた夏空に 夕暮れが待ってても</p>
+						<p>
+							ノ－トの落書きすら實現していく感じ<br>
+							時間も距離も越えるよ<br>
+							戀とキスの答えは どこにあるの?<br>
+							閉ざされてる昨日を拔け出して<br>
+							君を抱きしめ どこに行くの?<br>
+							夢を見てる 悲しみや さよならが 二人を待ってても<br>
+							僕と君の未來は どこにあるの?<br>
+							限りあってる 時間をすり減らし<br>
+							觸れた指先 どこに行くの?<br>
+							明日を思い 見上げた夏空に 夕暮れが待ってても</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-green-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

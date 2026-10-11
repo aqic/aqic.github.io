@@ -1,0 +1,115 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>空に舞う翼 - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">Blue-Sky-Blue【s】 -空を舞う翼-（EMU）</div>
+
+                    <div class="LyricTitle">空に舞う翼</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島宮えい子</div>
+                    <div class="LyricStaff">作詞：門司(EMU)<br>作曲：wata<br>編曲：wata</div>
+
+                    <div class="LyricText">
+						<p>
+							夢を見ていた　真っ白な<br>
+							翼にふれる　さいはての雲</p>
+						<p>
+							行き交う想い　回帰する<br>
+							空を見上げ　あすを笑うよ</p>
+						<p>
+							孤独な夕暮れ　ちぎれ雲ゆきゆきて<br>
+							古い夢の続きを祈り上げた</p>
+						<p>
+							見果てぬ未来　大切な<br>
+							翼に託す　最後の言葉</p>
+						<p>
+							遠く遠くこの軌跡よ　風をともない<br>
+							雲を越えて<br>
+							蒼く蒼く光よ　彼方へとどけ</p>
+						<p>
+							空ゆく翼君を見てる<br>
+							吹き抜けゆく　時の中で<br>
+							高く高く舞い上がれ<br>
+							悲しみを振り切って<br>
+							舞い上がれ　悲しみを振り切って</p>
+						<p>
+							微かに触れた　優しさは<br>
+							昨日　かすれた　夏の青影</p>
+						<p>
+							空舞う翼　消えてゆく<br>
+							幼い想い　君に重ねた</p>
+						<p>
+							涙を湛(たた)えた　あの空を見上げては<br>
+							古い傷の痛みを　撫でつけた</p>
+						<p>
+							見果てぬ未来　大切な<br>
+							翼に託す　最後の言葉</p>
+						<p>
+							今も今も覚えている　君を抱いた<br>
+							風の翼<br>
+							to the sky.in the sky.　想いよ<br>
+							彼方へ届け</p>
+						<p>
+							はばたく光　銀の世界<br>
+							空に放つ　希望の翼<br>
+							高く高く舞い上がれ<br>
+							悲しみを振り切って<br>
+							舞い上がれ　悲しみを振り切って</p>
+						<p>
+							遠き遠くこの軌跡よ　風をともない<br>
+							雲を越えて<br>
+							蒼く蒼く光よ　彼方へとどけ</p>
+						<p>
+							空ゆく翼君を見てる<br>
+							吹き抜けてゆく　時の中で<br>
+							高く高く舞い上がれ<br>
+							悲しみを振り切って</p>
+						<p>
+							ずっとずっと忘れないよ<br>
+							君を抱いた風の翼<br>
+							to the sky.in the sky. 想いを<br>
+							あなたの元へ</p>
+						<p>
+							はばたくこころ　今も見える<br>
+							空に放つ　希望の翼<br>
+							高く高く舞い上がれ<br>
+							悲しみを振り切って<br>
+							舞い上がれ　悲しみを振り切って</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

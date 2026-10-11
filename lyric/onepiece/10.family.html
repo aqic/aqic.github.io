@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>Family - ONE PIECE</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">Family</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">麦わら海賊団</div>
+
+                    <div class="LyricText">
+						<p>
+							知り合いじゃなくて　友達じゃなくて<br>
+							オレたちはFamily！　（海に出る限り！）<br>
+							親戚じゃなくて　兄弟じゃない<br>
+							オレたちはFamily！</p>
+						<p>
+							だだっぴろい海図見渡してみても<br>
+							これだけのヤツら見つかんないぜ<br>
+							一流の困り者　乗り込んだMother ship</p>
+						<p>
+							それまでの常識　捨ててから来いよ<br>
+							エブリディサバイバル！　スゲーもん勝ち<br>
+							一番のお宝を　捕まえるMother ship</p>
+						<p>
+							最高のヤツらって　最高に笑うんだ</p>
+						<p>
+							知り合いじゃなくて　友達じゃなくて<br>
+							オレたちはFamily！（冒険の限り）<br>
+							親戚じゃなくて　兄弟じゃない<br>
+							オレたちはFamily！</p>
+						<p>
+							ホンモノのでかい夢見てる目には<br>
+							ホンモノ以外は見えないはずさ<br>
+							とびきりのドリーマー　限定のMother ship</p>
+						<p>
+							センチメンタル無用　笑顔オンリー有効<br>
+							ファミリーって意味は　他人事じゃないってこと<br>
+							食べ物にも涙にも　手を出すぜMother ship</p>
+						<p>
+							最高の仲間なら　最高に強いんだ！</p>
+						<p>
+							知り合いじゃなくて　友達じゃなくて<br>
+							オレたちはFamily！（Never be ひとり）<br>
+							親戚じゃなくて　兄弟じゃない<br>
+							オレたちはFamily！</p>
+						<p>
+							知り合いじゃなくて　友達じゃなくて<br>
+							オレたちはFamily！（海に出る限り！）<br>
+							親戚じゃなくて　兄弟じゃない<br>
+							オレたちはFamily！</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-onepiece-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>夏へ続く小径 - Key</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">©Key 2001 KeySoundLabel / Humanity...</div>
+
+                    <div class="LyricTitle">夏へ続く小径</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">みのもみな</div>
+                    <div class="LyricStaff">作詞：麻枝准<br>作曲：折戸伸治<br>作詞：麻枝准</div>
+
+                    <div class="LyricText">
+						<p>
+							花やぐ小径を抜けてゆく　ひとりあの夏へ急ぐ<br>
+							変わってしまったこの思いが　もう守れないからと<br>
+							こんなにも人を頼る　癖も治ってきたのに<br>
+							ひとりでは同じ　失敗を繰り返してばかり</p>
+						<p>
+							花やぐ小径を抜けてゆく　ひとりあの夏へ急ぐ<br>
+							変わってしまったこの思いを川面に映してみる<br>
+							騒がしいあの教室　いつまでもここに居たい<br>
+							照れて相づちを打つばかりだった頃の話</p>
+						<p>
+							ありがとうを言おうどんな風景にも<br>
+							こんなに僕らは苦しんで<br>
+							忘れて強さを手にしていけるなら<br>
+							また痛み覚えよう</p>
+						<p>
+							花やぐ小径を抜けてゆく　ひとりあの夏へ急ぐ<br>
+							変わってしまったこの思いは　別の誰かのために<br>
+							のんびりと暮らしてきた　この町も忙しくなり<br>
+							朝のバス停で　待ち続けた日も遠い話</p>
+						<p>
+							僕らのために忘れるために<br>
+							急いで駆け抜けた季節よ<br>
+							そしてまた強さを手にしていけるなら<br>
+							振り向かずに歩こう</p>
+						<p>
+							もうすぐ抜ける小径は<br>
+							どこにも続いてなかったけど<br>
+							見上げればどこまでも続く空<br>
+							あの夏は遠い思い出話</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-key-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

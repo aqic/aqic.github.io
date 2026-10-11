@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>氷結の夜 - I've</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">真・瑠璃色の雪 ～ふりむけば隣に～</div>
+
+                    <div class="LyricTitle">氷結の夜</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">島宮えい子</div>
+                    <div class="LyricStaff">作詞：リバ原あき<br>作曲：一色由比</div>
+
+                    <div class="LyricText">
+						<p>
+							ああ　瞳流れる　雪の花びら<br>
+							わたしの胸　そっと　白く染めるの<br>
+							指を伸ばして　ひとすくい散らしてみる<br>
+							誰か抱きしめて<br>
+							感じさせて　ぬくもり・・・・</p>
+						<p>
+							澄んだ水面写す　凍る世界に<br>
+							想いポツリと　波紋描くの<br>
+							まぶた震わせ　今はただ時を紡ぎ<br>
+							浅い夢見ながら私　眠り続ける</p>
+						<p>
+							胸に秘めた願い<br>
+							いつかきっと叶う<br>
+							そうよ　目を開ければ<br>
+							微笑む誰かが・・・・</p>
+						<p>
+							ああ　瞳濡らして　こぼれる雪を<br>
+							そっとぬぐい去る　熱いくちびる<br>
+							指をからめて　その吐息　耳に触れる<br>
+							つよく抱きしめて<br>
+							想いを告げる　あなたに・・・・</p>
+						<p>
+							今は夢の中を<br>
+							一人さまようけど<br>
+							いつか　目を開ければ<br>
+							微笑むあなたが・・・・</p>
+						<p>
+							微笑むあなたが・・・・</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-ive-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

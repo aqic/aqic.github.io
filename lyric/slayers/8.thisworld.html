@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>この世界のどけかで - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">この世界のどけかで</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">桑島法子</div>
+
+                    <div class="LyricText">
+						<p>
+							安らかに　清らかに<br>
+							今は眠りなさい<br>
+							傷ついたその羽を<br>
+							私に預けて</p>
+						<p>
+							暗闇に　ざわめきに<br>
+							流されないように<br>
+							この祈りを　捧げましょう<br>
+							あなたの枕边に</p>
+						<p>
+							Ah　人は誰も一人きり<br>
+							愛を探しでいるの<br>
+							兩手を広げて<br>
+							空を舞う　小鳥のように</p>
+						<p>
+							巡り来る悲しみに<br>
+							迷いそうな時も<br>
+							忘れないで　いつだって<br>
+							心は側にいる</p>
+						<p>
+							Ah　あなたを導くように<br>
+							星は輝くでしょう<br>
+							涙の数だけ<br>
+							憧れは　果てないけれど</p>
+						<p>
+							朝燒けの　眩しさに<br>
+							転生る　その日まで<br>
+							忘れないで　いつだって<br>
+							心は側にいる</p>
+						<p>
+							どんな遠く　離れても<br>
+							あなたの側にいる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

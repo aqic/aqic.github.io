@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ワタシはウタがヘタ - 塔ノ沢魔術研究会</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「誕生日」ＯＰ主題歌</div>
+
+                    <div class="LyricTitle">ワタシはウタがヘタ</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">KOTOKO ＆ 詩月かおり</div>
+                    <div class="LyricStaff">作詞：嘘屋 佐々木酒人<br>作·編曲：Glass Road</div>
+
+                    <div class="LyricText">
+						<p>
+							ワタシはウタがヘタ<br>
+							本気でウタがヘタ　参ったか<br>
+							やたらにウタがヘタ<br>
+							むちゃくちゃウタがヘタ　ボ、ボエ～～</p>
+						<p>
+							練習してもダメ<br>
+							あめんぼ　あかいな　あい·う·えお<br>
+							特訓してもダメ　泣いては<br>
+							ドジョウを　困·ら·せた</p>
+						<p>
+							マイク　独り占めしても<br>
+							さかな　サカナさかな食べても<br>
+							インドの　山奥で修業しても<br>
+							歌が　ヘタなの　直らない</p>
+						<p>
+							勉強の歌　ありおり　いまそかり<br>
+							恋愛の歌　あもーれ　べさめむちょ<br>
+							人生の歌　なんとか　なるだろう<br>
+							だまって　ワタシに　ついてこいー(わはははっ)</p>
+						<p>
+							(うーん、どうでしょうかねえセンセイこの歌は)<br>
+							(ちょーっと問題あるんじゃないですかねえこの歌は)<br>
+							ワタシはウタがヘタ<br>
+							本気でウタがヘタ　マイったよ<br>
+							(チキショー悪いかぁ)<br>
+							やたらにウタがヘタ<br>
+							とにかくウタがヘタ　以下同文</p>
+						<p>
+							そんな　歌ヘタなワタシでも<br>
+							好きに　歌えるウタがある<br>
+							ウタが　ヘタなワタシでも<br>
+							好きに　歌えるワタシのウタ</p>
+						<p>
+							お掃除の歌　おらおら邪魔だどけぇー<br>
+							お洗濯の歌　またこんな溜めこんでるぅー<br>
+							お料理の歌　おだしは昆布が好き<br>
+							お昼寝の歌　主婦のたしなみでしょやっぱ</p>
+						<p>
+							お買物の歌　おっちゃんコレなんぼやー<br>
+							ゴミ出しの歌　ペットボトルは分別<br>
+							お裁縫の歌　物持ちいいワタシ<br>
+							夜のオツトメの歌……<br>
+							ぁはまだ歌えないけど(えへへっ)</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sp-janis-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

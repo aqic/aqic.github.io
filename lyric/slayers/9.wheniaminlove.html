@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>だって恋したら…When i'm in love - スレイヤーズ</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">だって恋したら…When i'm in love</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							だって恋したら<br>
+							いつの世も　そうくりかえす<br>
+							ドキドキとモヤモヤの每日だけど<br>
+							大切なものは　100のキャパツティ<br>
+							一途な　I NEED YOU</p>
+						<p>
+							ときにはね　寝不足で<br>
+							何も手につかなくても</p>
+						<p>
+							星空には　JAZZのように<br>
+							朝陽には　BOSSANOVAのように<br>
+							しなやかに　勇敢に　愛を求めてく</p>
+						<p>
+							だって恋したら<br>
+							誰かに聞いてほしくなって<br>
+							ウキウキとイライラの每日だけど<br>
+							会えないとわかってる夜にかぎって<br>
+							せつない　I MISS YOU</p>
+						<p>
+							いいことと　悪いこと<br>
+							バラソスとれてなくても</p>
+						<p>
+							鏡の中　映る私<br>
+							ふと気がつけば<br>
+							SMILE &amp; TEARDROPS<br>
+							あなたへと続いしく　愛に搖れながら</p>
+						<p>
+							DOMINO DOMINO<br>
+							一寸先は闇の中　薮の中<br>
+							DOMINO DOMINO<br>
+							倒れこむのは　あなたの腕の中</p>
+						<p>
+							星空には　JAZZのように<br>
+							朝陽には　BOSSANOVAのように<br>
+							しなやかに　勇敢に　愛を求めてく</p>
+						<p>
+							鏡の中　映る私<br>
+							ふと気がつけば<br>
+							SMILE &amp; TEARDROPS<br>
+							あなたへと続いしく　愛を信じてる<br>
+							ずっと　愛を信じてる</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-slayers-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

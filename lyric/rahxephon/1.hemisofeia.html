@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>ヘミソフィア - ラーゼフォン</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">[Rahxephon TV OP]</div>
+
+                    <div class="LyricTitle">ヘミソフィア</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							それでもいったいこの僕に何が出来るって言うんだ<br>
+							窮屈な箱庭の現実を変えるために何が出来るの</p>
+						<p>
+							人生の半分も僕はまだ生きてない<br>
+							逆らって　抱き合って<br>
+							無意識に刻まれてゆく経験のタトゥ－</p>
+						<p>
+							崖っぷちに立たされた時<br>
+							苦難も僕の腕を掴み<br>
+							自分自身の在りかが初めて見えたんだ<br>
+							もっと広いフィールドへもっと深い大きな何処かへ<br>
+							予測もつかない世界へ向かって行くだけ</p>
+						<p>
+							教えて”強さ”の定義<br>
+							自分　貫く事かな<br>
+							それとも自分さえ捨ててまで守るべきもの守る事ですか</p>
+						<p>
+							サバンナのガゼルが土煙りを上げる<br>
+							風ん中　あいつらは死ぬまで立ち続けなければいけないのさ</p>
+						<p>
+							ヒトは歩き続けて行く<br>
+							ただ生きてゆくために<br>
+							不完全なデータを塗り変えながら進む<br>
+							始まりの荒野を独り　もう歩き出してるらしい<br>
+							僕は灰になるまで僕で在り続けたい</p>
+						<p>
+							遠い昔　何処から来たの<br>
+							遠い未来に何処へ行くの<br>
+							知らないまま投げ出され　気づく前に時は終わるの<br>
+							始まりの荒野を独り　もう歩き出してるらしい<br>
+							僕は灰になるまで僕で在り続けたい</p>
+						<p>
+							崖っぷちに立たされた時<br>
+							苦難も僕の腕を掴み<br>
+							自分自身の在りかが初めて見えたんだ<br>
+							もっと広いフィールドへもっと深い大きな何処かへ<br>
+							予測もつかない世界へ向かって行くだけ</p>
+						<p>
+							僕は僕のことが知りたい</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-rahxephon-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>

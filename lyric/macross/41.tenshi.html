@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>天使の絵の具 - 超時空要塞マクロス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricTitle">天使の絵の具</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">飯島真理</div>
+                    <div class="LyricStaff">編曲：清水信之<br>作詞·作曲：飯島真理</div>
+
+                    <div class="LyricText">
+						<p>
+							黄昏映す　窓辺へと舞いおりる<br>
+							きらめくそよ風　吸い込んで<br>
+							空を見る時</p>
+						<p>
+							※悲しい出来事が<br>
+							　ブルーに染めた心も<br>
+							　天使の絵の具で<br>
+							　塗りかえるよ<br>
+							　思いのままに</p>
+						<p>
+							出会った頃は<br>
+							宇宙(そら)にさえ憧れた<br>
+							私をいつでも守ってた<br>
+							愛に気づかず<br>
+							少しの間だけあなたに<br>
+							サヨナラしたら<br>
+							I love you　この気持ちは<br>
+							涙にかわるでしょうか</p>
+						<p>
+							瞳をそらせば<br>
+							全てが離れてしまう<br>
+							いつかは永遠の光<br>
+							私を誘う</p>
+						<p>
+							（※　繰返し）</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-macross-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>
