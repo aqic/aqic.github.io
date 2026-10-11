@@ -7,18 +7,14 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="/image/logo.webp" type="image">
     <style>
-        .page-title {
-            color: #FFC53B;
-            font-size: 22px;
-            text-align: center;
-            margin: 8px 0 14px;
-            font-weight: bold;
-        }
+        /* 页面顶部大标题已删除（原 .page-title「友情链接」），
+           直接从分组标题「友情链接」开始，故去掉相关占位间距 */
         .main-section {
             text-align: left;
             align-items: stretch;
             justify-content: flex-start;
         }
+        /* 分组标题：金线 + 橙金，呼应全站 .ArticleTitle 配色 */
         .cat-title {
             color: #FFC53B;
             font-size: 18px;
@@ -27,6 +23,8 @@
             padding-left: 10px;
             border-left: 4px solid #E6D8AE;
         }
+        /* 首个分组紧贴顶部，抵消默认上边距 */
+        .cat-title:first-of-type { margin-top: 8px; }
         .link-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -34,16 +32,19 @@
             margin: 12px 0;
         }
         .link-grid .friend-item { margin: 0; }
+        /* 友链卡片：黑底半透+ 金线，比原来更暗一档以突出文字 */
         .friend-item {
             border: 1px solid #E6D8AE;
             margin: 12px 0;
-            background: rgba(0,0,0,.32);
+            background: rgba(0, 0, 0, .32);
         }
         .friend-summary {
             display: flex;
             align-items: center;
             gap: 12px;
             padding: 8px 10px;
+            /* 站名区与详情区之间加一道淡金分隔线 */
+            border-bottom: 1px dashed rgba(230, 216, 174, .35);
         }
         .friend-banner {
             height: 31px;
@@ -55,12 +56,13 @@
             color: #FFC53B;
             font-size: 18px;
         }
+        /* 站长名：米白降一档为浅灰，避免与站名同亮度争夺视线 */
         .friend-webmaster {
-            color: #FFFFEE;
+            color: #bbbbaa;
             font-size: 14px;
         }
         .friend-detail {
-            padding: 0 12px 12px 12px;
+            padding: 8px 12px 12px 12px;
         }
         .friend-row {
             margin: 5px 0;
@@ -68,11 +70,15 @@
             color: #FFFFEE;
             line-height: 1.6;
         }
+        /* 字段名：淡紫，与全站链接色系一致但更柔和 */
         .friend-label {
             color: #9999FF;
             display: inline-block;
             width: 52px;
         }
+        /* 地址等正文链接：青色（原 link-memo 已如此，统一全卡片） */
+        .friend-row a { color: #66FFFF; }
+        /* 底部申请说明 */
         .link-memo {
             border-top: 1px solid #E6D8AE;
             margin-top: 22px;
@@ -82,6 +88,21 @@
             line-height: 1.8;
         }
         .link-memo a { color: #66FFFF; }
+        /* 「曾经的友情链接」：整体降饱和+ 半透明，与仍在连载的友链拉开层次 */
+        .closed .cat-title {
+            color: #bbbbaa;
+            border-left-color: #777766;
+        }
+        .closed .friend-item {
+            background: rgba(0, 0, 0, .22);
+            border-color: #555540;
+            opacity: .78;
+        }
+        .closed .friend-name { color: #ddd9c4; }
+        .closed .friend-banner { border-color: #555540; }
+        .closed .friend-summary {
+            border-bottom-color: rgba(85, 85, 64, .5);
+        }
     </style>
 </head>
 
@@ -100,8 +121,6 @@
 
         <main class="main-content">
             <section class="main-section">
-                <div class="page-title">友情链接</div>
-
                 <!-- 第一类：友情链接（一排两个） -->
                 <div class="cat-title">友情链接</div>
                 <div class="link-grid">
@@ -147,6 +166,7 @@
                 </div>
 
                 <!-- 第二类：曾经的友情链接（有保留图片的排前，未保留的排后） -->
+                <div class="closed">
                 <div class="cat-title">曾经的友情链接（均已关闭）</div>
 
                 <!-- 2-1 -->
@@ -322,6 +342,7 @@
                         <div class="friend-row"><span class="friend-label">简介</span></div>
                     </div>
                 </div>
+                </div><!-- /.closed -->
 
             </section>
         </main>
