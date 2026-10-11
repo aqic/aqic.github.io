@@ -71,6 +71,12 @@ header {
     display: block;
 }
 
+/* 页头 banner 图：桌面固定 200px，移动端由媒体查询改为自适应。
+   原为 header.html 内联 style，已移入此处统一管理 */
+.banner .banner-img {
+    width: 200px;
+}
+
 .site-title {
     flex: 1;
     text-align: center;
@@ -181,6 +187,7 @@ header {
 }
 
 .title-image img {
+    display: block;          /* 原为 index.html 内联样式，移入此处统一管理 */
     max-width: 100%;
     height: auto;
 }
@@ -314,4 +321,114 @@ footer {
     .menu-section a {
         font-size: 16px;
     }
+}
+
+/* ============================================================
+   手机端优化（≤600px）：修复移动端布局异常
+   ============================================================ */
+@media (max-width: 600px) {
+    /* iOS Safari 旋转后字号会自动放大，横屏时锁死 */
+    html { -webkit-text-size-adjust: 100%; }
+
+    /* 页面整体内缩收紧，边框减细，给内容让出宽度 */
+    .container { padding: 0 8px; }
+
+    header { margin: 12px 0; }
+
+    /* banner图原为内联 width:200px，移动端会超出窄屏，改为自适应 */
+    .banner .banner-img {
+        width: 100%;
+        max-width: 260px;
+        min-width: 0;
+    }
+
+    /* 站名标语：手机上折行并左对齐，避免被拉成两行居中显得松散 */
+    .site-title {
+        font-size: 14px;
+        line-height: 1.7;
+        padding: 8px 10px;
+        text-align: center;
+    }
+
+    .main-content,
+    .news-section { border-width: 1px; }
+
+    /* 侧栏菜单：4 个区块竖排会拉出超长页面，改为两列网格 */
+    .sidebar {
+        padding: 10px 8px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 12px;
+        align-items: start;
+    }
+
+    .last-update {
+        grid-column: 1 / -1;   /* 更新日期横跨两列 */
+        font-size: 14px;
+        text-align: center;
+        border-bottom: 1px solid #555540;
+        padding-bottom: 6px;
+        margin-bottom: 4px;
+    }
+
+    .menu-section { margin: 0; }
+
+    .menu-section h3 {
+        font-size: 15px;
+        margin-top: 10px;
+        padding-top: 6px;
+        border-top-width: 1px;
+    }
+
+    .menu-section li {
+        margin: 3px 0;
+        padding-left: 13px;
+    }
+
+    .menu-section a { font-size: 15px; }
+
+    /* 主内容：手机上取消最小高度，标题图改为撑满（80% 会缩成小图） */
+    .main-section {
+        min-height: 0;
+        padding: 10px 8px;
+    }
+
+    .title-image {
+        max-width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .content-text {
+        font-size: 15px;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    /* 新闻条目：日期与内容各占一行，日期左对齐并去掉右侧缩进 */
+    .news-item {
+        font-size: 15px;
+        padding-bottom: 8px;
+        border-bottom: 1px dashed #333322;
+    }
+
+    .news-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .news-date {
+        width: auto;
+        text-align: left;
+        padding-right: 0;
+        color: #cccCbb;
+    }
+}
+
+/* 超窄屏（≤380px）：菜单退化为单列，避免站名与链接挤压换行 */
+@media (max-width: 380px) {
+    .sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .banner .banner-img { max-width: 200px; }
 }
