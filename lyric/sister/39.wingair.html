@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素，设置语言为日文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>翼 - シスター・プリンセス</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-container').innerHTML = data; });
+    </script>
+
+    <div class="container">
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section class="main-section">
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                                        <div class="LyricProvenance">テレビアニメ「Sister Princess」エンディング(2001・オンエアサイズ)</div>
+<div class="LyricTitle">翼</div>
+                    <hr class="LyricDivider">
+
+
+                    <div class="LyricText">
+						<p>
+							ちっぽけな空を見上げて　息を吸い込む<br>
+							緑の匂う空き地　見なれた風景<br>
+							今日より明日の方が　違う景色を<br>
+							抱き締めていられるために　助走をつけて</p>
+						<p>
+							この翼を大きく広げ　見つけて行きたい<br>
+							鼓動が駆け足で何度も　騒がしく過ぎる<br>
+							毎日が好き</p>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-sister-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+    </div>
+
+</body>
+</html>
