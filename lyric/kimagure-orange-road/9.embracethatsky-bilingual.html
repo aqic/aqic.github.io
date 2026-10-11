@@ -1,0 +1,121 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>あの空を抱きしめて（日中対訳） - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード　あの日にかえりたい」エンディング・テーマ (1988)</div>
+
+                    <div class="LyricTitle">あの空を抱きしめて（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">和田加奈子</div>
+                    <div class="LyricStaff">作詞：和田加奈子<br>作曲：伊豆田洋之<br>編曲：白井良明</div>
+
+
+                    <div class="LyricText">
+<p>恋に落ちた時<br>
+恋を失くした時<br>
+涙見上げてた<br>
+ゆれる　ブランコの空</p>
+<p>つよく　こぎだせば<br>
+あの空に　とどいて<br>
+あおく　輝やくと<br>
+果てしなく　信じた</p>
+<p>Hold Me Again<br>
+時は私を待たない<br>
+呼びとめても　過ぎてゆく<br>
+雲のように　いつの日も<br>
+Hold Me Again<br>
+それぞれに　流されても<br>
+私はもう忘れない<br>
+あの日の空　この胸に抱いて</p>
+<p>少し　きゅうくつな<br>
+ブランコで　ゆらした<br>
+好きな　あの空は<br>
+ひどく　小さかった</p>
+<p>Hold Me Again<br>
+時に追いこされてゆく<br>
+澄みきった心までも<br>
+うばいながら　いつの日も<br>
+Hold Me Again<br>
+どんなに　かげりだしても<br>
+あの日の　まぶしい空を<br>
+忘れはしない<br>
+この胸に　抱いて<br>
+あの空に Hold Me Again</p>
+                    
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+<p>坠入情网的时候，</p>
+<p>失恋的时候，</p>
+<p>含泪仰望，</p>
+<p>天空荡着秋千，悠悠晃晃</p>
+<p>狠狠地，蹬上一下，</p>
+<p>想着天空会在触手可及的地方。</p>
+<p>透蓝地闪着光芒，</p>
+<p>无边无垠，我坚信是这样。</p>
+<p>Hold me again</p>
+<p>时间不愿留下脚步</p>
+<p>任凭我呼唤阻拦，逐渐逝去。</p>
+<p>就象天上的浮云，永不停息。</p>
+<p>Hold me again</p>
+<p>经过风风雨雨的冲洗</p>
+<p>我还是不能忘记，</p>
+<p>怀里的，那天的天空</p>
+<p>窄窄的，身下的秋千，</p>
+<p>缓缓的，荡来荡去。</p>
+<p>喜欢的，那片天空，</p>
+<p>小小的，可怜的模样。</p>
+<p>Hold me again</p>
+<p>放任光阴慢慢追上，超越。</p>
+<p>直到将我澄净的心，</p>
+<p>夺去吧，象往常一样。</p>
+<p>Hold me again</p>
+<p>无论如何努力</p>
+<p>那一天的，耀眼的天空，</p>
+<p>我还是不能忘记。</p>
+<p>胸前，我紧拥的，</p>
+<p>那片蓝天啊，Hold me again</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

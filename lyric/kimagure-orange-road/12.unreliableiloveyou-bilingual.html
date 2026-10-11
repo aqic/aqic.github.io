@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>不確かな I LOVE YOU（日中対訳） - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジロード　あの日にかえりたい」挿入歌 (1988)</div>
+
+                    <div class="LyricTitle">不確かな I LOVE YOU（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">和田加奈子</div>
+                    <div class="LyricStaff">作詞：三浦徳子<br>作曲：水島康宏<br>編曲：平岩嘉信</div>
+
+
+                    <div class="LyricText">
+<p>ふいに黙ったままの　私を見つめないで<br>
+今は何を言われても　傷つける　そんな気がする<br>
+別れ話の似合わない　午後の日ざしのカフェテラス<br>
+あなたをせめる気持ちも　アイスティーに溶けてゆくわ</p>
+<p>I love you, I love you　昨夜ささやいたばかり<br>
+I love you, I love you　なんて不確かな言葉</p>
+<p>友達のうわさには　気づかないふりしてた<br>
+もういちどだけ　あなたを信じていたかったの<br>
+ネオンライト流れる　ざわめき出した街で<br>
+私のハートひとつだけ　想い出にふるえてるわ</p>
+<p>I love you, I love you　昨夜ささやいたばかり<br>
+I love you, I love you　なんて不確かな言葉</p>
+<p>I love you, I love you　きのうささやいたばかり<br>
+I love you, I love you　なんて不確かな言葉</p>
+                    
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+<p>突然间陷入沉默，你的眼神游到一旁，</p>
+<p>无论说些什么，已经注定受伤。</p>
+<p>午后，咖啡亭，阳光灿烂，嘴角却挂着别离。</p>
+<p>渐渐地，怨气消融在，面前的冰镇红茶。</p>
+<p>I love you, I love you，窃窃私语了一个晚上。</p>
+<p>I love you, I love you，多么空洞的话。</p>
+<p>装作没发觉，同伴的闲言碎语，</p>
+<p>再一次，只一次，想相信你的话。</p>
+<p>流光溢彩的霓虹，泻在嘈杂的街上</p>
+<p>孤零零的一颗心，在回忆中颤动</p>
+<p>I love you, I love you，窃窃私语了一个晚上。</p>
+<p>I love you, I love you，多么空洞的言语。</p>
+<p>I love you, I love you，窃窃私语了一个白天。</p>
+<p>I love you, I love you，无法确定的话。</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

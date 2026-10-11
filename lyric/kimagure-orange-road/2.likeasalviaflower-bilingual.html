@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>サルビアの花のように（日中対訳） - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジ☆ロード」挿入歌 (1987)</div>
+
+                    <div class="LyricTitle">サルビアの花のように（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">和田加奈子</div>
+                    <div class="LyricStaff">作詞：湯川れい子<br>作曲：小田裕一郎<br>編曲：入江　純</div>
+
+
+                    <div class="LyricText">
+<p>くちびる　ひとつ　動かすだけで　愛が<br>
+ふり向くなら　貴方の心に<br>
+言葉のつぶて投けて　抱きしめるわ</p>
+<p>確かめるほど　切ない<br>
+胸の痛みを　かくしてそっと　微笑むの<br>
+願いこめて</p>
+<p>※Broken heart to dream<br>
+　愛されるより　愛したほうが　真実だから<br>
+　Broken heart to dream<br>
+　芭い涙を　砧方にあげる<br>
+　You are everything to me</p>
+<p>貴方の視線　たどってゆくたび<br>
+そこに　他の女性〈ひと〉が<br>
+心の湖水〈みずうみ〉　悲しい影　映して<br>
+波立つけど</p>
+<p>問いかけるたび　答える　優しい声が<br>
+聞こえる場所に　居られたら<br>
+それで　いいの</p>
+<p>Broken heart to dream<br>
+冷たい風に<br>
+フルビヂの花　ゆれてるように<br>
+Broken heart to dream<br>
+砧方のそばで　咲いていたいの<br>
+You are everything to me</p>
+<p>※くりかえし</p>
+                    
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+<p>你紧阖的双唇若有一丝松动</p>
+<p>我的爱便会归来</p>
+<p>洒出满天的话雨</p>
+<p>投入你的胸怀</p>
+<p>情形日见明朗，心情日益悲伤</p>
+<p>埋藏心中的伤痛，展颜一笑</p>
+<p>笑中注满渴求与祈望</p>
+<p>Broken heart to dream</p>
+<p>爱人与被爱，真实与幻像</p>
+<p>Broken heart to dream</p>
+<p>献给你，我的热泪满腔</p>
+<p>You are everything to me</p>
+<p>在你视线的彼方</p>
+<p>凝聚着“她”悲伤的身影</p>
+<p>倒映在心湖里，随波涛下上</p>
+<p>只想找一块说话时</p>
+<p>能有温柔之声回应的地方</p>
+<p>Broken heart to dream</p>
+<p>萧瑟冷风中</p>
+<p>绯衣草的花儿摇摆</p>
+<p>Broken heart to dream</p>
+<p>我想在你身旁开放</p>
+<p>You are everything to me</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>

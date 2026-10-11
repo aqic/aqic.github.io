@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="ja"> <!-- HTML根元素 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式视口设置 -->
+    <title>鳥のように（日中対訳） - きまぐれオレンジ☆ロード</title> <!-- 页面标题 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/lyric/lyric.css?v=14">
+    <link rel="icon" href="/image/logo.webp" type="image">
+</head>
+
+<body>
+    <script>
+        // 加载页头
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+        // 加载页脚
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+    <div class="container"> <!-- 主容器 -->
+        <div id="header-container"></div> <!-- 页头加载 -->
+
+        <main class="main-content"> <!-- 主内容区 -->
+            <section class="main-section"> <!-- 主内容区块 -->
+                <div class="LyricBody"> <!-- 歌词正文：整块居中，内部文字左对齐 -->
+                    <div class="LyricProvenance">「きまぐれオレンジロード　あの日にかえりたい」挿入歌 (1988)</div>
+
+                    <div class="LyricTitle">鳥のように（日中対訳）</div>
+                    <hr class="LyricDivider">
+
+                    <div class="LyricPerformer">和田加奈子</div>
+                    <div class="LyricStaff">作詞：和田加奈子<br>作曲、編曲：久石譲</div>
+
+
+                    <div class="LyricText">
+<p>たとえば　空に雲が満ちても<br>
+飛びつづける　鳥のように<br>
+いつまでも　この気持ち<br>
+忘れない</p>
+<p>※あなたのやさしい　愛の中に<br>
+　翼休めていたいけど<br>
+　私は夢追いつづける鳥<br>
+　朽ちはてるまで飛ばせて</p>
+<p>想い出す瞳　私を見つめ<br>
+なぜ僕だけを愛せないと<br>
+責めていた　その気持ち<br>
+忘れない</p>
+<p>あなたに抱きしめられていれば<br>
+涙もしらず暮らすけど<br>
+私ははげしく生きてみたい<br>
+悲しいときは泣かせて</p>
+<p>※くりかえし</p>
+                    
+<div class="LyricCN">
+<div style="color:#FFBBBB;font-size:13px;margin:18px 0 6px;">中文訳</div>
+<p>即便，天空乌云密布，</p>
+<p>我也要继续飞翔，象鸟一样。</p>
+<p>这点心绪，永不会忘。</p>
+<p>好想收起双翼，歇在你温柔的爱里，</p>
+<p>可我是只追梦的鸟，直到地老天荒，</p>
+<p>不停地飞翔。</p>
+<p>脑中浮现的眼，凝视着我，</p>
+<p>为什么不能爱我，字字如针，</p>
+<p>那份情怀，永不会忘。</p>
+<p>被你紧拥，忘记眼泪，</p>
+<p>换取一生风平浪静；</p>
+<p>但我渴望在大风大雨中挣扎，</p>
+<p>悲伤的时候，尽情的哭上一场。</p>
+<p>好想收起双翼，歇在你温柔的爱里，</p>
+<p>可我是只追梦的鸟，不停地飞翔，</p>
+<p>直到地老天荒。</p>
+</div>
+                    </div>
+
+                    <hr class="LyricFootRule">
+
+                    <div class="LyricBack"><a href="0-kimagure-orange-road-index.html">← 曲目一覧</a></div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div> <!-- 页脚通过JavaScript加载 -->
+    </div>
+
+</body>
+</html>
