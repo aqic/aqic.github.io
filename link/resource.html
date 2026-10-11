@@ -22,6 +22,16 @@
             margin: 18px 0 10px;
             text-align: left;
         }
+        /* 邮件列表：默认展开，左右两栏排列（奇数项在左、偶数项在右） */
+        .ml-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0 14px;
+            align-items: start;
+        }
+        @media (max-width: 860px) {
+            .ml-grid { grid-template-columns: 1fr; }
+        }
         .ml-item {
             border: 1px solid #E6D8AE;
             margin: 10px 0;
@@ -43,7 +53,8 @@
         }
         .ml-item[open] > .ml-summary::before { content: '▾'; }
         .ml-name { color: #FFC53B; font-size: 17px; }
-        .ml-detail { padding: 0 12px 12px 32px; }
+        /* 两栏下详情左边距收窄，避免与折叠箭头重叠 */
+        .ml-detail { padding: 4px 12px 12px 26px; }
         .ml-row {
             margin: 5px 0;
             font-size: 15px;
@@ -105,98 +116,103 @@
 
                 <div class="section-title">邮件列表</div>
 
-                <!-- 1 -->
-                <details class="ml-item">
-                    <summary class="ml-summary"><span class="ml-name">相聚一刻 - Maison Ikkoku</span></summary>
-                    <div class="ml-detail">
-                        <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:mi@ML.usagi.org">mi@ML.usagi.org</a></div>
-                        <div class="ml-row"><span class="ml-label">频率</span>5封/天</div>
-                        <div class="ml-row"><span class="ml-label">推荐</span>极力推荐：<span class="ng-star">★★★★★</span></div>
-                        <div class="ml-row"><span class="ml-label">语言</span>英文</div>
-                        <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
-                        <div class="ml-row"><span class="ml-label">简介</span>响子为什么可爱，哪里能找到CD，高桥留美子的浪漫风格是什么……<br>在<a href="http://www.win.or.jp/~doi/ML/" target="_blank" rel="noopener">http://www.win.or.jp/~doi/ML/</a>订阅或退订。</div>
-                    </div>
-                </details>
+                <!-- 邮件列表：默认展开，左右两栏排列 -->
+                <div class="ml-grid">
+                    <!-- 1 -->
+                    <details class="ml-item" open>
+                        <summary class="ml-summary"><span class="ml-name">相聚一刻 - Maison Ikkoku</span></summary>
+                        <div class="ml-detail">
+                            <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:mi@ML.usagi.org">mi@ML.usagi.org</a></div>
+                            <div class="ml-row"><span class="ml-label">频率</span>5封/天</div>
+                            <div class="ml-row"><span class="ml-label">推荐</span>极力推荐：<span class="ng-star">★★★★★</span></div>
+                            <div class="ml-row"><span class="ml-label">语言</span>英文</div>
+                            <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
+                            <div class="ml-row"><span class="ml-label">简介</span>响子为什么可爱，哪里能找到CD，高桥留美子的浪漫风格是什么……<br>在<a href="http://www.win.or.jp/~doi/ML/" target="_blank" rel="noopener">http://www.win.or.jp/~doi/ML/</a>订阅或退订。</div>
+                        </div>
+                    </details>
 
-                <!-- 2 -->
-                <details class="ml-item">
-                    <summary class="ml-summary"><span class="ml-name">橙路 - Kimagure Orange Road</span></summary>
-                    <div class="ml-detail">
-                        <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:kor@gweep.bc.ca">kor@gweep.bc.ca</a></div>
-                        <div class="ml-row"><span class="ml-label">频率</span>2封/天</div>
-                        <div class="ml-row"><span class="ml-label">推荐</span>极力推荐：<span class="ng-star">★★★★★</span></div>
-                        <div class="ml-row"><span class="ml-label">语言</span>英文</div>
-                        <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
-                        <div class="ml-row"><span class="ml-label">简介</span>复杂的人物关系分析、同好小说信息……<br>给<a href="mailto:Majordomo@gweep.bc.ca">Majordomo@gweep.bc.ca</a>去信，正文添 subscribe kor，然后再经过确认就可以了。</div>
-                    </div>
-                </details>
+                    <!-- 2 -->
+                    <details class="ml-item" open>
+                        <summary class="ml-summary"><span class="ml-name">橙路 - Kimagure Orange Road</span></summary>
+                        <div class="ml-detail">
+                            <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:kor@gweep.bc.ca">kor@gweep.bc.ca</a></div>
+                            <div class="ml-row"><span class="ml-label">频率</span>2封/天</div>
+                            <div class="ml-row"><span class="ml-label">推荐</span>极力推荐：<span class="ng-star">★★★★★</span></div>
+                            <div class="ml-row"><span class="ml-label">语言</span>英文</div>
+                            <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
+                            <div class="ml-row"><span class="ml-label">简介</span>复杂的人物关系分析、同好小说信息……<br>给<a href="mailto:Majordomo@gweep.bc.ca">Majordomo@gweep.bc.ca</a>去信，正文添 subscribe kor，然后再经过确认就可以了。</div>
+                        </div>
+                    </details>
 
-                <!-- 3 -->
-                <details class="ml-item">
-                    <summary class="ml-summary"><span class="ml-name">我的女神 - Ah, My Goddess</span></summary>
-                    <div class="ml-detail">
-                        <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:megami@ML.usagi.org">megami@ML.usagi.org</a></div>
-                        <div class="ml-row"><span class="ml-label">频率</span>8封/天</div>
-                        <div class="ml-row"><span class="ml-label">推荐</span>极力推荐：<span class="ng-star">★★★★★</span></div>
-                        <div class="ml-row"><span class="ml-label">语言</span>英文</div>
-                        <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
-                        <div class="ml-row"><span class="ml-label">简介</span>从女神服饰到天使来源，从乌璐的名字到贝璐的年龄、女神们在用什么计算机……<br>在<a href="http://www.win.or.jp/~doi/ML/" target="_blank" rel="noopener">http://www.win.or.jp/~doi/ML/</a>订阅或退订。</div>
-                    </div>
-                </details>
+                    <!-- 3 -->
+                    <details class="ml-item" open>
+                        <summary class="ml-summary"><span class="ml-name">我的女神 - Ah, My Goddess</span></summary>
+                        <div class="ml-detail">
+                            <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:megami@ML.usagi.org">megami@ML.usagi.org</a></div>
+                            <div class="ml-row"><span class="ml-label">频率</span>8封/天</div>
+                            <div class="ml-row"><span class="ml-label">推荐</span>极力推荐：<span class="ng-star">★★★★★</span></div>
+                            <div class="ml-row"><span class="ml-label">语言</span>英文</div>
+                            <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
+                            <div class="ml-row"><span class="ml-label">简介</span>从女神服饰到天使来源，从乌璐的名字到贝璐的年龄、女神们在用什么计算机……<br>在<a href="http://www.win.or.jp/~doi/ML/" target="_blank" rel="noopener">http://www.win.or.jp/~doi/ML/</a>订阅或退订。</div>
+                        </div>
+                    </details>
 
-                <!-- 4 -->
-                <details class="ml-item">
-                    <summary class="ml-summary"><span class="ml-name">高桥联盟</span></summary>
-                    <div class="ml-detail">
-                        <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:gaoqiao@egroups.com">gaoqiao@egroups.com</a></div>
-                        <div class="ml-row"><span class="ml-label">频率</span>0.5封/天</div>
-                        <div class="ml-row"><span class="ml-label">推荐</span>推荐：<span class="ng-star">★★★★</span></div>
-                        <div class="ml-row"><span class="ml-label">语言</span>中文</div>
-                        <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
-                        <div class="ml-row"><span class="ml-label">简介</span>高桥留美子漫画爱好者联盟。<br>订阅：给<a href="mailto:gaoqiao_subscribe@egroups.com">gaoqiao_subscribe@egroups.com</a>发信；退订：给<a href="mailto:gaoqiao_unsubscribe@egroups.com">gaoqiao_unsubscribe@egroups.com</a>发信。</div>
-                    </div>
-                </details>
+                    <!-- 4 -->
+                    <details class="ml-item" open>
+                        <summary class="ml-summary"><span class="ml-name">高桥联盟</span></summary>
+                        <div class="ml-detail">
+                            <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:gaoqiao@egroups.com">gaoqiao@egroups.com</a></div>
+                            <div class="ml-row"><span class="ml-label">频率</span>0.5封/天</div>
+                            <div class="ml-row"><span class="ml-label">推荐</span>推荐：<span class="ng-star">★★★★</span></div>
+                            <div class="ml-row"><span class="ml-label">语言</span>中文</div>
+                            <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
+                            <div class="ml-row"><span class="ml-label">简介</span>高桥留美子漫画爱好者联盟。<br>订阅：给<a href="mailto:gaoqiao_subscribe@egroups.com">gaoqiao_subscribe@egroups.com</a>发信；退订：给<a href="mailto:gaoqiao_unsubscribe@egroups.com">gaoqiao_unsubscribe@egroups.com</a>发信。</div>
+                        </div>
+                    </details>
 
-                <!-- 5 -->
-                <details class="ml-item">
-                    <summary class="ml-summary"><span class="ml-name">天地无用 - Tenchi Muyo</span></summary>
-                    <div class="ml-detail">
-                        <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:tenchi@ML.usagi.org">tenchi@ML.usagi.org</a></div>
-                        <div class="ml-row"><span class="ml-label">频率</span>40封/天</div>
-                        <div class="ml-row"><span class="ml-label">推荐</span>一般：<span class="ng-star">★★★</span></div>
-                        <div class="ml-row"><span class="ml-label">语言</span>英文</div>
-                        <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
-                        <div class="ml-row"><span class="ml-label">简介</span>发信量极大的列表，收了几天后我就吓得退订了。<br>总是说着说着就跑了题……<br>在<a href="http://www.win.or.jp/~doi/ML/" target="_blank" rel="noopener">http://www.win.or.jp/~doi/ML/</a>订阅或退订。</div>
-                    </div>
-                </details>
+                    <!-- 5 -->
+                    <details class="ml-item" open>
+                        <summary class="ml-summary"><span class="ml-name">天地无用 - Tenchi Muyo</span></summary>
+                        <div class="ml-detail">
+                            <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:tenchi@ML.usagi.org">tenchi@ML.usagi.org</a></div>
+                            <div class="ml-row"><span class="ml-label">频率</span>40封/天</div>
+                            <div class="ml-row"><span class="ml-label">推荐</span>一般：<span class="ng-star">★★★</span></div>
+                            <div class="ml-row"><span class="ml-label">语言</span>英文</div>
+                            <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
+                            <div class="ml-row"><span class="ml-label">简介</span>发信量极大的列表，收了几天后我就吓得退订了。<br>总是说着说着就跑了题……<br>在<a href="http://www.win.or.jp/~doi/ML/" target="_blank" rel="noopener">http://www.win.or.jp/~doi/ML/</a>订阅或退订。</div>
+                        </div>
+                    </details>
 
-                <!-- 6 -->
-                <details class="ml-item">
-                    <summary class="ml-summary"><span class="ml-name">Touch</span></summary>
-                    <div class="ml-detail">
-                        <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:touch@ML.usagi.org">touch@ML.usagi.org</a></div>
-                        <div class="ml-row"><span class="ml-label">频率</span>0.1封/天</div>
-                        <div class="ml-row"><span class="ml-label">推荐</span>一般：<span class="ng-star">★★★</span></div>
-                        <div class="ml-row"><span class="ml-label">语言</span>英文</div>
-                        <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
-                        <div class="ml-row"><span class="ml-label">简介</span>几乎不来信了！<br>在<a href="http://www.win.or.jp/~doi/ML/" target="_blank" rel="noopener">http://www.win.or.jp/~doi/ML/</a>订阅或退订。</div>
-                    </div>
-                </details>
+                    <!-- 6 -->
+                    <details class="ml-item" open>
+                        <summary class="ml-summary"><span class="ml-name">Touch</span></summary>
+                        <div class="ml-detail">
+                            <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:touch@ML.usagi.org">touch@ML.usagi.org</a></div>
+                            <div class="ml-row"><span class="ml-label">频率</span>0.1封/天</div>
+                            <div class="ml-row"><span class="ml-label">推荐</span>一般：<span class="ng-star">★★★</span></div>
+                            <div class="ml-row"><span class="ml-label">语言</span>英文</div>
+                            <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
+                            <div class="ml-row"><span class="ml-label">简介</span>几乎不来信了！<br>在<a href="http://www.win.or.jp/~doi/ML/" target="_blank" rel="noopener">http://www.win.or.jp/~doi/ML/</a>订阅或退订。</div>
+                        </div>
+                    </details>
 
-                <!-- 7 -->
-                <details class="ml-item">
-                    <summary class="ml-summary"><span class="ml-name">机动战士高达 - MS Gundam</span></summary>
-                    <div class="ml-detail">
-                        <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:gundam@aeug.org">gundam@aeug.org</a></div>
-                        <div class="ml-row"><span class="ml-label">频率</span>20封/天</div>
-                        <div class="ml-row"><span class="ml-label">推荐</span>一般：<span class="ng-star">★★★</span></div>
-                        <div class="ml-row"><span class="ml-label">语言</span>英文</div>
-                        <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
-                        <div class="ml-row"><span class="ml-label">简介</span>高达的世界、各机型的涂装……也是个大得吓人的列表。<br>我也忘了是怎么订阅的，好象是发信给<a href="mailto:Majordomo@aeug.org">Majordomo@aeug.org</a>然后写 subscribe gundam 来订阅，或写 unsubscribe gundam 退订。</div>
-                    </div>
-                </details>
+                    <!-- 7 -->
+                    <details class="ml-item" open>
+                        <summary class="ml-summary"><span class="ml-name">机动战士高达 - MS Gundam</span></summary>
+                        <div class="ml-detail">
+                            <div class="ml-row"><span class="ml-label">邮件</span><a href="mailto:gundam@aeug.org">gundam@aeug.org</a></div>
+                            <div class="ml-row"><span class="ml-label">频率</span>20封/天</div>
+                            <div class="ml-row"><span class="ml-label">推荐</span>一般：<span class="ng-star">★★★</span></div>
+                            <div class="ml-row"><span class="ml-label">语言</span>英文</div>
+                            <div class="ml-row"><span class="ml-label">类别</span>漫画</div>
+                            <div class="ml-row"><span class="ml-label">简介</span>高达的世界、各机型的涂装……也是个大得吓人的列表。<br>我也忘了是怎么订阅的，好象是发信给<a href="mailto:Majordomo@aeug.org">Majordomo@aeug.org</a>然后写 subscribe gundam 来订阅，或写 unsubscribe gundam 退订。</div>
+                        </div>
+                    </details>
 
-                <div class="section-title">新闻组</div>
+                
+                </div>
+
+<div class="section-title">新闻组</div>
                 <table class="ng-table">
                     <caption>news.gweep.bc.ca</caption>
                     <thead>
