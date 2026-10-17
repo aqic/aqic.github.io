@@ -35,18 +35,19 @@
             width: 100%;
             text-align: left;
         }
-        /* 邮件列表：默认展开，单栏纵向排列。
+        /* 邮件列表：默认展开，左右两栏排列（奇数项在左、偶数项在右）。
            方格内文字一并靠左——需覆盖 .main-section 继承的 text-align:center。 */
         .ml-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1fr);
-            gap: 0;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0 14px;
             align-items: start;
             width: 100%;
             text-align: left;
         }
         @media (max-width: 860px) {
-            .site-grid { grid-template-columns: 1fr; }
+            .site-grid,
+            .ml-grid { grid-template-columns: 1fr; }
         }
         .ml-item {
             border: 1px solid #E6D8AE;
@@ -199,7 +200,7 @@
 
                 </div><!-- /.site-grid -->
 
-                <!-- 邮件列表：默认展开，单栏排列 -->
+                <!-- 邮件列表：默认展开，左右两栏排列 -->
                 <div class="section-title">邮件列表（已失效）</div>
 
                 <div class="ml-grid">
