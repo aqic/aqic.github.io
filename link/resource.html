@@ -14,6 +14,16 @@
             margin: 8px 0 14px;
             font-weight: bold;
         }
+        /* 顶部两大区并列：左＝邮件列表（占 2 份），右＝同好网站（占 1 份）。
+           两区各自内部再排版，互不影响。窄屏整体回落单列。 */
+        .top-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+            gap: 0 20px;
+            align-items: start;
+            width: 100%;
+            text-align: left;
+        }
         /* 分组标题：靠左。
            .main-section 是 flex 列容器且 align-items:center，子元素会收缩到内容宽度，
            故必须显式 width:100% 撑满并覆盖继承来的 text-align:center。 */
@@ -35,6 +45,25 @@
             align-items: start;
             width: 100%;
             text-align: left;
+        }
+        /* 各栏容器：撑满并让子元素能正常按宽度排版 */
+        .top-col {
+            min-width: 0;
+            width: 100%;
+            text-align: left;
+        }
+        /* 同好网站：单栏纵向排列（条目少，逐条往下堆更好读） */
+        .site-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 0;
+            align-items: start;
+            width: 100%;
+            text-align: left;
+        }
+        @media (max-width: 1080px) {
+            /* 顶部分栏太窄时先并成单列，让邮件列表恢复两栏 */
+            .top-grid { grid-template-columns: minmax(0, 1fr); }
         }
         @media (max-width: 860px) {
             .ml-grid { grid-template-columns: 1fr; }
@@ -75,6 +104,54 @@
             width: 56px;
         }
         .ml-row a { color: #66FFFF; }
+
+        /* ---------- 同好网站（样式参照 link/link.html 的友链卡片） ---------- */
+        .site-item {
+            border: 1px solid #E6D8AE;
+            margin: 10px 0;
+            background: rgba(0,0,0,.32);
+        }
+        .site-summary {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 10px;
+            text-align: left;
+            /* 站名区与详情区之间的淡金虚线分隔 */
+            border-bottom: 1px dashed rgba(230,216,174,.35);
+        }
+        .site-banner {
+            height: 31px;
+            width: auto;
+            max-width: 120px;
+            border: 1px solid #E6D8AE;
+            background: #000;
+            object-fit: contain;
+            flex: 0 0 auto;
+        }
+        .site-name {
+            color: #FFC53B;
+            font-size: 17px;
+        }
+        .site-detail {
+            padding: 8px 12px 12px 12px;
+            text-align: left;
+        }
+        .site-row {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #FFFFEE;
+            line-height: 1.6;
+            /* 存档URL 很长，允许在任意处断行，避免撑破窄栏 */
+            overflow-wrap: break-word;
+            word-break: break-all;
+        }
+        .site-label {
+            color: #9999FF;
+            display: inline-block;
+            width: 52px;
+        }
+        .site-row a { color: #66FFFF; }
 
         .ng-table {
             width: 100%;
@@ -122,7 +199,11 @@
             <section class="main-section">
                 <div class="page-title">网上资源</div>
 
-                <div class="section-title">邮件列表</div>
+                <div class="top-grid">
+
+                <!-- 左栏：邮件列表 -->
+                <div class="top-col">
+                <div class="section-title">邮件列表（已失效）</div>
 
                 <!-- 邮件列表：默认展开，左右两栏排列 -->
                 <div class="ml-grid">
@@ -217,10 +298,35 @@
                         </div>
                     </details>
 
-                
-                </div>
+                </div><!-- /.ml-grid -->
+                </div><!-- /.top-col -->
 
-<div class="section-title">新闻组</div>
+                <!-- 右栏：同好网站 -->
+                <div class="top-col">
+
+                <div class="section-title">同好网站</div>
+
+                <div class="site-grid">
+
+                    <!-- 1 -->
+                    <div class="site-item">
+                        <div class="site-summary">
+                            <img class="site-banner" src="https://web.archive.org/web/20030803111322im_/http://tanabata.vis.ne.jp/image/tanabata.gif" alt="七夕传说" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'">
+                            <span class="site-name">七夕传说</span>
+                        </div>
+                        <div class="site-detail">
+                            <div class="site-row"><span class="site-label">地址</span><a href="https://web.archive.org/web/20030803111322/http://tanabata.vis.ne.jp/" target="_blank" rel="noopener">web.archive.org/web/20030803111322/http://tanabata.vis.ne.jp/</a></div>
+                            <div class="site-row"><span class="site-label">说明</span>原站已停止服务，此为网页存档（2003-08-03）。</div>
+                        </div>
+                    </div>
+
+                </div><!-- /.site-grid -->
+                </div><!-- /.top-col -->
+                </div><!-- /.top-grid -->
+
+                
+
+				<div class="section-title">新闻组（已失效）</div>
                 <table class="ng-table">
                     <caption>news.gweep.bc.ca</caption>
                     <thead>
