@@ -460,6 +460,22 @@ footer {
     text-align: center;
 }
 
+/* 容器撑满后 <hr> 会横贯整行，需收回到与横幅/正文等宽才符合原有观感。
+   用 max-width 而非 width，配合 margin:auto 保持居中。 */
+.gm-page > hr {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 0;
+    border-top: 1px solid #E6D8AE;
+}
+
+/* 版权信息上方的分隔线：宽度对齐下方 .ArticleText 正文块（700px） */
+.gm-page > .gm-hr-foot {
+    max-width: 700px;
+    border: 0;
+    border-top: 1px solid #E6D8AE;
+}
+
 /* 容器内的正文块回到左对齐（横幅居中、文字左对齐） */
 .gm-page .ArticleText {
     text-align: left;
