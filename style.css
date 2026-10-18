@@ -472,11 +472,11 @@ footer {
 }
 
 /* <hr> 宽度与下方正文块 .ArticleText（max-width:700px）保持一致。
-   margin 沿用原内联样式的 20px 0，保持原有上下留白不变。 */
+   margin:auto 让横线在容器内居中；上下留白仍为 20px。 */
 .gm-page > hr {
     width: 700px;
     max-width: 100%;
-    margin: 20px 0;
+    margin: 20px auto;
     border: 0;
     border-top: 1px solid #E6D8AE;
 }
@@ -485,7 +485,7 @@ footer {
 .gm-page > .gm-hr-foot {
     width: 700px;
     max-width: 100%;
-    margin: 20px 0;
+    margin: 20px auto;
     border: 0;
     border-top: 1px solid #E6D8AE;
 }
