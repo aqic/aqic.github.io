@@ -432,3 +432,57 @@ footer {
 
     .banner .banner-img { max-width: 200px; }
 }
+
+/* ============================================================
+   galgame 子页面：图文自适应
+   这些页面原本全是裸 <img>（按原始像素渲染）与固定 px 宽容器，
+   窄屏必然横向溢出。HTML 已统一加 .gm-img / .gm-figure，这里给规则。
+   ============================================================ */
+
+/* 文章配图：始终不超出容器宽度，高度按比例缩放 */
+.gm-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 角色页「图-文-图」并排布局：桌面保持左右并置，手机改纵向堆叠 */
+.gm-figure {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 10px;
+}
+
+.gm-figure > div { min-width: 0; }
+
+.gm-figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    /* 窄屏放不下「图-文-图」三栏，改为纵向：图 → 文 → 图 */
+    .gm-figure {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin: 10px 0;
+    }
+
+    .gm-figure > div { width: 100%; }
+
+    /* 配图在手机上再收一档，避免占满整屏把文字挤到折叠线以下 */
+    .gm-figure img { max-width: 70%; }
+}
+
+/* 表格类内容（如Refrain Blue 感想录）在窄屏横向滚动，不撑破页面 */
+.gm-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.gm-table-wrap table {
+    margin: 0 auto;
+}
