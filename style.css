@@ -451,20 +451,23 @@ footer {
 /* 游戏首页的内容容器（kuon / refrainblue）。
    这些页原本是 <div style="margin:20px;">，作为 .main-section 的 flex 子元素
    会收缩到内容宽度。
-   撑满宽度只是为了不让<main-section> 的 align-items:center 把内容挤到中间，
+   撑满宽度用 **align-self:stretch** 而不是 width:100%——
+   .main-section 是 align-items:center 的 flex 列容器，width:100% 在 flex 语境下
+   仍会参与收缩计算，导致内容被挤出/偏移；align-self 才是 flex 里正确的撑满方式。
    **不要设 text-align** —— 那会继承给内部所有元素，
    破坏原有的 <p align="center">、缩进与间距关系。横幅居中由下面的规则单独处理。 */
 .gm-page {
     margin: 20px;
-    width: 100%;
-    max-width: 100%;
+    align-self: stretch;
     min-width: 0;
 }
 
-/* 顶部横幅居中：用margin:auto 而不是 text-align，避免污染继承。
-   保留 inline 布局，图片下方的基线空隙与原版一致。 */
+/* 顶部横幅居中：用 margin:auto 而不是 text-align，避免污染继承。
+   display:block 消掉 inline 基线空隙，横幅下方的间距与原版一致。 */
 .gm-page > img.gm-img {
     display: block;
+    width: auto;
+    max-width: 100%;
     margin: 0 auto;
 }
 
