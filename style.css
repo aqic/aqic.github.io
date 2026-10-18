@@ -450,33 +450,44 @@ footer {
 
 /* 游戏首页的内容容器（kuon / refrainblue）。
    这些页原本是 <div style="margin:20px;">，作为 .main-section 的 flex 子元素
-   会收缩到内容宽度，导致继承来的 text-align:center 无处生效、横幅左贴边。
-   撑满宽度后 text-align 才能真正把图居中。 */
+   会收缩到内容宽度。
+   撑满宽度只是为了不让<main-section> 的 align-items:center 把内容挤到中间，
+   **不要设 text-align** —— 那会继承给内部所有元素，
+   破坏原有的 <p align="center">、缩进与间距关系。横幅居中由下面的规则单独处理。 */
 .gm-page {
     margin: 20px;
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    text-align: center;
 }
 
-/* 容器撑满后 <hr> 会横贯整行，需收回到与横幅/正文等宽才符合原有观感。
-   用 max-width 而非 width，配合 margin:auto 保持居中。 */
+/* 顶部横幅居中：用margin:auto 而不是 text-align，避免污染继承。
+   保留 inline 布局，图片下方的基线空隙与原版一致。 */
+.gm-page > img.gm-img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* <hr> 宽度对齐横幅（title.gif / title.png 均为 400px 宽），
+   margin 沿用原内联样式的 20px 0，只把 auto 换成 0 以保持左对齐起点不变。 */
 .gm-page > hr {
-    max-width: 400px;
-    margin: 20px auto;
+    width: 400px;
+    max-width: 100%;
+    margin: 20px 0;
     border: 0;
     border-top: 1px solid #E6D8AE;
 }
 
 /* 版权信息上方的分隔线：宽度对齐下方 .ArticleText 正文块（700px） */
 .gm-page > .gm-hr-foot {
-    max-width: 700px;
+    width: 700px;
+    max-width: 100%;
+    margin: 20px 0;
     border: 0;
     border-top: 1px solid #E6D8AE;
 }
 
-/* 容器内的正文块回到左对齐（横幅居中、文字左对齐） */
+/* 容器内的正文块回到左对齐并居中摆放（原本靠容器收缩实现居中效果） */
 .gm-page .ArticleText {
     text-align: left;
     margin: 0 auto;
