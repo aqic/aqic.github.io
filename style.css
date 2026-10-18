@@ -121,7 +121,7 @@ header {
 .ArticleText {
     font-size: 15px;
     color: #FFFFEE;
-    text-align=justify;
+    text-align: justify;
     line-height: 24px;
 }
 
@@ -446,6 +446,43 @@ footer {
 .gm-img {
     max-width: 100%;
     height: auto;
+}
+
+/* 游戏首页的内容容器（kuon / refrainblue）。
+   这些页原本是 <div style="margin:20px;">，作为 .main-section 的 flex 子元素
+   会收缩到内容宽度，导致继承来的 text-align:center 无处生效、横幅左贴边。
+   撑满宽度后 text-align 才能真正把图居中。 */
+.gm-page {
+    margin: 20px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    text-align: center;
+}
+
+/* 容器内的正文块回到左对齐（横幅居中、文字左对齐） */
+.gm-page .ArticleText {
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* .ArticleText 原本写的是 text-align=justify（等号笔误，整条声明失效），
+   已修正为合法的 justify。但这些页面正文大量使用 <br> 硬换行，
+   两端对齐会把每行字距拉伸，故显式回到左对齐，只保留横幅居中。 */
+.ArticleText {
+    text-align: left;
+}
+
+/* 子页面顶部横幅（refrainblue 各页的 title.gif）居中。
+   这些横幅是 .ArticleText 的首个 <a> 子元素，居中后紧跟其后的 <hr> 仍撑满不受影响。
+   用 :first-child 而非 :has()——后者在老浏览器上不生效。 */
+.ArticleText > a:first-child {
+    display: block;
+    text-align: center;
+}
+
+.ArticleText > a:first-child > img.gm-img {
+    display: inline-block;
 }
 
 /* 角色页「图-文-图」并排布局：桌面保持左右并置，手机改纵向堆叠 */
