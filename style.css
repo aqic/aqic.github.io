@@ -439,11 +439,13 @@ footer {
    窄屏必然横向溢出。HTML 已统一加 .gm-img / .gm-figure，这里给规则。
    ============================================================ */
 
-/* 文章配图：始终不超出容器宽度，高度按比例缩放 */
+/* 文章配图：始终不超出容器宽度，高度按比例缩放。
+   注意不要加 display:block —— 部分老页面用 <p align="center"> 包住图片
+   靠 text-align 居中（kuon / refrainblue 首页的标题图），
+   改成块级会让 text-align 失效、图片左贴边。 */
 .gm-img {
     max-width: 100%;
     height: auto;
-    display: block;
 }
 
 /* 角色页「图-文-图」并排布局：桌面保持左右并置，手机改纵向堆叠 */
@@ -456,9 +458,12 @@ footer {
 
 .gm-figure > div { min-width: 0; }
 
+/* 并排布局里的图片：此处单独设为块级，消除 inline 基线下方空隙。
+   上下文限定在 .gm-figure 内，不影响靠 text-align 居中的标题图。 */
 .gm-figure img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 @media (max-width: 700px) {
