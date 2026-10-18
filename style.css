@@ -468,10 +468,10 @@ footer {
     margin: 0 auto;
 }
 
-/* <hr> 宽度对齐横幅（title.gif / title.png 均为 400px 宽），
-   margin 沿用原内联样式的 20px 0，只把 auto 换成 0 以保持左对齐起点不变。 */
+/* <hr> 宽度与下方正文块 .ArticleText（max-width:700px）保持一致。
+   margin 沿用原内联样式的 20px 0，保持原有上下留白不变。 */
 .gm-page > hr {
-    width: 400px;
+    width: 700px;
     max-width: 100%;
     margin: 20px 0;
     border: 0;
