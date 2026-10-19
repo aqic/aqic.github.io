@@ -9,18 +9,28 @@
     <style>
         /* 分组标题：靠左 + 左侧竖条（样式参照 link/link.html 的 .cat-title）。
            .main-section 是 flex 列容器且 align-items:center，子元素会收缩到内容宽度，
-           故必须显式 width:100% 撑满并覆盖继承来的 text-align:center。 */
+           故必须显式 width:100% 撑满并覆盖继承来的 text-align:center。
+           竖条用 ::before 伪元素绘制而非 border-left —— border 会贴在 flex 容器
+           padding 的最左缘，视觉上像是被 .main-section 的金线边框"吃掉"，
+           伪元素则可精确内缩一个可控距离。 */
         .section-title {
             color: #FFC53B;
             font-size: 18px;
-            /* 竖条：贴左显示，故取消 padding-top，改由竖条自身撑出间距 */
-            border-left: 4px solid #E6D8AE;
-            padding-left: 10px;
-            padding-top: 10px;
             margin: 18px 0 10px;
+            padding: 10px 0 10px 14px;
             text-align: left;
             width: 100%;
             box-sizing: border-box;
+            position: relative;
+        }
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            bottom: 8px;
+            width: 4px;
+            background: #E6D8AE;
         }
         /* 同好网站：两栏卡片，条目多时更紧凑（窄屏回落单栏） */
         .site-grid {
@@ -85,18 +95,18 @@
         .ml-row a { color: #66FFFF; }
 
         /* ---------- 同好网站（样式参照 link/link.html 的友链卡片） ---------- */
-        /* 同好网站卡片：左侧竖条 + 黑底半透，替代原来的四边金线框 */
+        /* 同好网站卡片：黑底半透 + 四边金线框（不要左侧竖条，竖条只用于分组标题） */
         .site-item {
-            border-left: 4px solid #E6D8AE;
+            border: 1px solid #E6D8AE;
             margin: 10px 0;
-            padding-left: 10px;
+            padding: 4px 10px;
             background: rgba(0,0,0,.32);
         }
         .site-summary {
             display: flex;
             align-items: center;
             gap: 12px;
-            padding: 8px 10px 8px 0;
+            padding: 8px 10px;
             text-align: left;
             /* 站名区与详情区之间的淡金虚线分隔 */
             border-bottom: 1px dashed rgba(230,216,174,.35);
@@ -115,7 +125,7 @@
             font-size: 17px;
         }
         .site-detail {
-            padding: 8px 12px 12px 0;
+            padding: 8px 12px 12px;
             text-align: left;
         }
         .site-row {
