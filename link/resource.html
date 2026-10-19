@@ -7,30 +7,24 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="/image/logo.webp" type="image">
     <style>
-        /* 分组标题：靠左 + 左侧竖条（样式参照 link/link.html 的 .cat-title）。
-           .main-section 是 flex 列容器且 align-items:center，子元素会收缩到内容宽度，
-           故必须显式 width:100% 撑满并覆盖继承来的 text-align:center。
-           竖条用 ::before 伪元素绘制而非 border-left —— border 会贴在 flex 容器
-           padding 的最左缘，视觉上像是被 .main-section 的金线边框"吃掉"，
-           伪元素则可精确内缩一个可控距离。 */
+        /* 主内容区：与 link/link.html 保持一致。
+           style.css 里的 .main-section 是 align-items:center（子元素收缩到内容宽度、
+           并继承 text-align:center），会导致分组标题的左侧竖条贴到容器最边缘、
+           视觉上被 .main-section 的金线边框吃掉。改为 stretch + 左对齐，
+           子元素撑满且文字靠左，竖条位置才正常。 */
+        .main-section {
+            text-align: left;
+            align-items: stretch;
+            justify-content: flex-start;
+        }
+        /* 分组标题：靠左 + 左侧竖条（样式参照 link/link.html 的 .cat-title） */
         .section-title {
             color: #FFC53B;
             font-size: 18px;
-            margin: 18px 0 10px;
-            padding: 10px 0 10px 14px;
-            text-align: left;
-            width: 100%;
-            box-sizing: border-box;
-            position: relative;
-        }
-        .section-title::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 8px;
-            bottom: 8px;
-            width: 4px;
-            background: #E6D8AE;
+            font-weight: bold;
+            margin: 22px 0 4px;
+            padding-left: 10px;
+            border-left: 4px solid #E6D8AE;
         }
         /* 同好网站：两栏卡片，条目多时更紧凑（窄屏回落单栏） */
         .site-grid {
@@ -38,8 +32,6 @@
             grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 0 14px;
             align-items: start;
-            width: 100%;
-            text-align: left;
         }
         /* 邮件列表：默认展开，左右两栏排列（奇数项在左、偶数项在右）。
            方格内文字一并靠左——需覆盖 .main-section 继承的 text-align:center。 */
@@ -48,15 +40,13 @@
             grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 0 14px;
             align-items: start;
-            width: 100%;
-            text-align: left;
         }
         @media (max-width: 860px) {
             .site-grid,
             .ml-grid { grid-template-columns: 1fr; }
         }
         /* 首个分组紧贴顶部（原页面级大标题已删除，需收窄上边距） */
-        .section-title:first-of-type { margin-top: 4px; }
+        .section-title:first-of-type { margin-top: 10px; }
         .ml-item {
             border: 1px solid #E6D8AE;
             margin: 10px 0;
