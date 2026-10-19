@@ -47,6 +47,12 @@
         }
         /* 首个分组紧贴顶部（原页面级大标题已删除，需收窄上边距） */
         .section-title:first-of-type { margin-top: 4px; }
+        /* 「同好网站」作为页面首个区块不要竖条 —— 竖条与其上方内容之间无分隔语境，
+           且它下面就是卡片网格，竖条会显得多余 */
+        .section-title:first-of-type {
+            border-left: none;
+            padding-left: 0;
+        }
         .ml-item {
             border: 1px solid #E6D8AE;
             margin: 10px 0;
