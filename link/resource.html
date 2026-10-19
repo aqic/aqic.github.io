@@ -47,12 +47,6 @@
         }
         /* 首个分组紧贴顶部（原页面级大标题已删除，需收窄上边距） */
         .section-title:first-of-type { margin-top: 4px; }
-        /* 「同好网站」作为页面首个区块不要竖条 —— 竖条与其上方内容之间无分隔语境，
-           且它下面就是卡片网格，竖条会显得多余 */
-        .section-title:first-of-type {
-            border-left: none;
-            padding-left: 0;
-        }
         .ml-item {
             border: 1px solid #E6D8AE;
             margin: 10px 0;
@@ -91,16 +85,18 @@
         .ml-row a { color: #66FFFF; }
 
         /* ---------- 同好网站（样式参照 link/link.html 的友链卡片） ---------- */
+        /* 同好网站卡片：左侧竖条 + 黑底半透，替代原来的四边金线框 */
         .site-item {
-            border: 1px solid #E6D8AE;
+            border-left: 4px solid #E6D8AE;
             margin: 10px 0;
+            padding-left: 10px;
             background: rgba(0,0,0,.32);
         }
         .site-summary {
             display: flex;
             align-items: center;
             gap: 12px;
-            padding: 8px 10px;
+            padding: 8px 10px 8px 0;
             text-align: left;
             /* 站名区与详情区之间的淡金虚线分隔 */
             border-bottom: 1px dashed rgba(230,216,174,.35);
@@ -119,7 +115,7 @@
             font-size: 17px;
         }
         .site-detail {
-            padding: 8px 12px 12px 12px;
+            padding: 8px 12px 12px 0;
             text-align: left;
         }
         .site-row {
