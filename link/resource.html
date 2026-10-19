@@ -7,24 +7,20 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="/image/logo.webp" type="image">
     <style>
-        .page-title {
-            color: #FFC53B;
-            font-size: 22px;
-            text-align: center;
-            margin: 8px 0 14px;
-            font-weight: bold;
-        }
-        /* 分组标题：靠左。
+        /* 分组标题：靠左 + 左侧竖条（样式参照 link/link.html 的 .cat-title）。
            .main-section 是 flex 列容器且 align-items:center，子元素会收缩到内容宽度，
            故必须显式 width:100% 撑满并覆盖继承来的 text-align:center。 */
         .section-title {
             color: #FFC53B;
             font-size: 18px;
-            border-top: 1px solid #E6D8AE;
-            padding-top: 14px;
+            /* 竖条：贴左显示，故取消 padding-top，改由竖条自身撑出间距 */
+            border-left: 4px solid #E6D8AE;
+            padding-left: 10px;
+            padding-top: 10px;
             margin: 18px 0 10px;
             text-align: left;
             width: 100%;
+            box-sizing: border-box;
         }
         /* 同好网站：两栏卡片，条目多时更紧凑（窄屏回落单栏） */
         .site-grid {
@@ -49,6 +45,8 @@
             .site-grid,
             .ml-grid { grid-template-columns: 1fr; }
         }
+        /* 首个分组紧贴顶部（原页面级大标题已删除，需收窄上边距） */
+        .section-title:first-of-type { margin-top: 4px; }
         .ml-item {
             border: 1px solid #E6D8AE;
             margin: 10px 0;
@@ -178,8 +176,6 @@
 
         <main class="main-content">
             <section class="main-section">
-                <div class="page-title">网上资源</div>
-
                 <!-- 同好网站：放在最上方 -->
 
                 <div class="section-title">同好网站</div>
