@@ -46,11 +46,19 @@
             /* 站名区与详情区之间加一道淡金分隔线 */
             border-bottom: 1px dashed rgba(230, 216, 174, .35);
         }
+        /* 站徽图：默认无边框。
+           图片未加载时 width:auto 会塌成 0，若此时带 border，就会显示为
+           一根 1px 宽、31px 高的金色竖条（外链站徽加载慢/失败时可见）。
+           故边框改为「加载成功后才加」，由 .is-loaded 提供。
+           与 link/resource.html 的 .site-banner 同一处理。 */
         .friend-banner {
             height: 31px;
             width: auto;
-            border: 1px solid #E6D8AE;
+            border: 0;
             background: #000;
+        }
+        .friend-banner.is-loaded {
+            border: 1px solid #E6D8AE;
         }
         .friend-name {
             color: #FFC53B;
@@ -78,16 +86,43 @@
         }
         /* 地址等正文链接：青色（原 link-memo 已如此，统一全卡片） */
         .friend-row a { color: #66FFFF; }
-        /* 底部申请说明 */
+        /* 底部申请说明：左文字 / 右本站 LOGO 两栏。
+           border-bottom 即它与下方「曾经的友情链接」之间的分隔线。 */
         .link-memo {
             border-top: 1px solid #E6D8AE;
+            border-bottom: 1px solid #E6D8AE;
             margin-top: 22px;
-            padding-top: 12px;
+            padding: 12px 0;
             color: #bbbbaa;
             font-size: 14px;
             line-height: 1.8;
+            display: flex;
+            align-items: center;
+            gap: 18px;
         }
         .link-memo a { color: #66FFFF; }
+        .memo-text { flex: 1 1 auto; min-width: 0; }
+        .memo-sitename { color: #FFB400; }
+        .memo-logos {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .memo-logos img {
+            width: 96px;
+            height: 96px;
+            object-fit: contain;
+            display: block;
+        }
+        /* 窄屏：改为上下堆叠，LOGO 略缩小 */
+        @media (max-width: 700px) {
+            .link-memo {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .memo-logos img { width: 80px; height: 80px; }
+        }
         /* 「曾经的友情链接」：整体降饱和+ 半透明，与仍在连载的友链拉开层次 */
         .closed .cat-title {
             color: #bbbbaa;
@@ -99,7 +134,7 @@
             opacity: .78;
         }
         .closed .friend-name { color: #ddd9c4; }
-        .closed .friend-banner { border-color: #555540; }
+        .closed .friend-banner.is-loaded { border-color: #555540; }
         .closed .friend-summary {
             border-bottom-color: rgba(85, 85, 64, .5);
         }
@@ -128,7 +163,7 @@
                     <!-- 1-A 樱花飞舞的季节 -->
                     <div class="friend-item">
                         <div class="friend-summary">
-                            <img class="friend-banner" src="pic/sakuralogo.gif" alt="樱花飞舞的季节">
+                            <img class="friend-banner" src="pic/sakuralogo.gif" alt="樱花飞舞的季节" onload="this.classList.add('is-loaded')" onerror="this.style.display='none'">
                             <span class="friend-name">樱花飞舞的季节<br><span class="friend-webmaster">(雨晨)</span></span>
                         </div>
                         <div class="friend-detail">
@@ -143,7 +178,7 @@
                     <!-- 1-B lalalll's Blog结月小站 -->
                     <div class="friend-item">
                         <div class="friend-summary">
-                            <img class="friend-banner" src="https://lalalll-lalalll.github.io/images/MerpisMe.png" alt="lalalll's Blog结月小站">
+                            <img class="friend-banner" src="https://lalalll-lalalll.github.io/images/MerpisMe.png" alt="lalalll's Blog结月小站" onload="this.classList.add('is-loaded')" onerror="this.style.display='none'">
                             <span class="friend-name">lalalll's Blog结月小站<br><span class="friend-webmaster">(lalalll)</span></span>
                         </div>
                         <div class="friend-detail">
@@ -158,11 +193,17 @@
                 </div>
 
                 <div class="link-memo">
-                    如果您愿意和我们交换联接，请给我们<a href="mailto:orangestar@btamail.net.cn">来信</a>或是在留言版上留言！<br>
-                    希望您能留下如下信息：<br>
-                    ——88*31的站标，jpg/gif/swf均可；<br>
-                    ——站名，站长名，地址，主要内容，简介。<br>
-                    我们站现在的站名是<span style="color:#FFB400;">橙色流星</span>。
+                    <div class="memo-text">
+                        如果您愿意和我们交换联接，请给我们<a href="mailto:akinouta@126.com">来信</a>或是在留言版上留言（已失效）！<br>
+                        希望您能留下如下信息：<br>
+                        ——88*31的站标，jpg/gif/swf均可；<br>
+                        ——站名，站长名，地址，主要内容，简介。<br>
+                        本站现在的站名是<span class="memo-sitename">橙色流星</span>，LOGO见右图。
+                    </div>
+                    <div class="memo-logos">
+                        <img src="/image/logo.webp" alt="橙色流星">
+                        <img src="/image/logo.jpeg" alt="橙色流星">
+                    </div>
                 </div>
 
                 <!-- 第二类：曾经的友情链接（有保留图片的排前，未保留的排后） -->
@@ -172,7 +213,7 @@
                 <!-- 2-1 -->
                 <div class="friend-item">
                     <div class="friend-summary">
-                        <img class="friend-banner" src="pic/banner1-full.gif" alt="Kimagure Productions">
+                        <img class="friend-banner" src="pic/banner1-full.gif" alt="Kimagure Productions" onload="this.classList.add('is-loaded')" onerror="this.style.display='none'">
                         <span class="friend-name">Kimagure Productions <span class="friend-webmaster">(Stephen Tsai)</span></span>
                     </div>
                     <div class="friend-detail">
@@ -187,7 +228,7 @@
                 <!-- 2-2 -->
                 <div class="friend-item">
                     <div class="friend-summary">
-                        <img class="friend-banner" src="pic/banner2-full.jpg" alt="春日恭介">
+                        <img class="friend-banner" src="pic/banner2-full.jpg" alt="春日恭介" onload="this.classList.add('is-loaded')" onerror="this.style.display='none'">
                         <span class="friend-name">??? <span class="friend-webmaster">(春日恭介)</span></span>
                     </div>
                     <div class="friend-detail">
@@ -202,7 +243,7 @@
                 <!-- 2-3 -->
                 <div class="friend-item">
                     <div class="friend-summary">
-                        <img class="friend-banner" src="pic/banner5.gif" alt="永远的扉">
+                        <img class="friend-banner" src="pic/banner5.gif" alt="永远的扉" onload="this.classList.add('is-loaded')" onerror="this.style.display='none'">
                         <span class="friend-name">永远的扉 <span class="friend-webmaster">(猫之眼)</span></span>
                     </div>
                     <div class="friend-detail">
@@ -217,7 +258,7 @@
                 <!-- 2-4 -->
                 <div class="friend-item">
                     <div class="friend-summary">
-                        <img class="friend-banner" src="pic/banner7.gif" alt="白色的独角兽">
+                        <img class="friend-banner" src="pic/banner7.gif" alt="白色的独角兽" onload="this.classList.add('is-loaded')" onerror="this.style.display='none'">
                         <span class="friend-name">白色的独角兽 <span class="friend-webmaster">(JUNO)</span></span>
                     </div>
                     <div class="friend-detail">
@@ -232,7 +273,7 @@
                 <!-- 2-5 -->
                 <div class="friend-item">
                     <div class="friend-summary">
-                        <img class="friend-banner" src="pic/banner8-full.gif" alt="Abcb web site">
+                        <img class="friend-banner" src="pic/banner8-full.gif" alt="Abcb web site" onload="this.classList.add('is-loaded')" onerror="this.style.display='none'">
                         <span class="friend-name">Abcb web site <span class="friend-webmaster">(Jyh Lih)</span></span>
                     </div>
                     <div class="friend-detail">
@@ -247,7 +288,7 @@
                 <!-- 2-6 -->
                 <div class="friend-item">
                     <div class="friend-summary">
-                        <img class="friend-banner" src="pic/banner11.jpg" alt="回忆的街角">
+                        <img class="friend-banner" src="pic/banner11.jpg" alt="回忆的街角" onload="this.classList.add('is-loaded')" onerror="this.style.display='none'">
                         <span class="friend-name">回忆的街角 <span class="friend-webmaster">(Metalyuki)</span></span>
                     </div>
                     <div class="friend-detail">
