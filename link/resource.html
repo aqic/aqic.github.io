@@ -101,14 +101,21 @@
             /* 站名区与详情区之间的淡金虚线分隔 */
             border-bottom: 1px dashed rgba(230,216,174,.35);
         }
+        /* 站徽图：默认无边框。
+           图片未加载时 width:auto 会塌成 0，若此时带 border，就会显示为
+           一根 1px 宽、31px 高的金色竖条（archive.org 加载慢/失败时常可见）。
+           故边框改为「加载成功后才加」，由 .is-loaded 提供。 */
         .site-banner {
             height: 31px;
             width: auto;
             max-width: 120px;
-            border: 1px solid #E6D8AE;
+            border: 0;
             background: #000;
             object-fit: contain;
             flex: 0 0 auto;
+        }
+        .site-banner.is-loaded {
+            border: 1px solid #E6D8AE;
         }
         .site-name {
             color: #FFC53B;
@@ -187,7 +194,7 @@
                     <!-- 1 -->
                     <div class="site-item">
                         <div class="site-summary">
-                            <img class="site-banner" src="https://web.archive.org/web/20030803111322im_/http://tanabata.vis.ne.jp/image/tanabata.gif" alt="七夕传说" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'">
+                            <img class="site-banner" src="https://web.archive.org/web/20030803111322im_/http://tanabata.vis.ne.jp/image/tanabata.gif" alt="七夕传说" loading="lazy" referrerpolicy="no-referrer" onload="this.classList.add('is-loaded')" onerror="this.style.display='none'">
                             <span class="site-name">七夕传说</span>
                         </div>
                         <div class="site-detail">
